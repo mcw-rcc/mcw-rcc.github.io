@@ -74,8 +74,8 @@ markdown_extensions:
 # Page tree
 nav:
   - About:
-  - Overview: index.md
-  - FAQ: faq.md
-  - Recent News: news.md
-  - Grant Boilerplate: grants.md
-  - Publications: pubs.md
+    - Overview: index.md
+    - FAQ: faq.md
+    - Recent News: news.md
+    - Grant Boilerplate: grants.md
+    - Publications: pubs.md
