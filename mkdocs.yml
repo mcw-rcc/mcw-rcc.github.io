@@ -44,6 +44,11 @@ extra:
   social:
     - icon: fontawesome/brands/github
 
+# Plugins
+plugins:
+  - macros
+  - search
+
 # Extensions
 markdown_extensions:
   - abbr
