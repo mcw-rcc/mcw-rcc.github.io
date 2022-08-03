@@ -18,3 +18,64 @@ theme:
   icon:
     logo: material/bookshelf
 
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+
+# Custom
+extra:
+  support_email: <help-rcc@mcw.edu>
+  hpc_name: HPC
+  srce_name: SRCE
+  consent:
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: false
+  social:
+    - icon: fontawesome/brands/github
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - fontawesome_markdown
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: "#"
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tilde
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# Page tree
+nav:
+  - About:
+  - Overview: index.md
+  - FAQ: faq.md
+  - Recent News: news.md
+  - Grant Boilerplate: grants.md
+  - Publications: pubs.md
