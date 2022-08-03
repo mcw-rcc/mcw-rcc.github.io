@@ -1,0 +1,20 @@
+# Site information
+site_name:        MCW Research Computing
+site_description: A site for documenting MCW Research Computing systems and services.
+site_author:      Matthew Flister
+site_url: https://mcw-rcc.github.io
+repo_name: github/mcw-rcc/docs
+repo_url: https://github.com/mcw-rcc/mcw-rcc.github.io/tree/src
+edit_uri: docs/
+remote_branch: main
+strict: false
+
+# Configuration
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/bookshelf
+
