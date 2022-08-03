@@ -1,0 +1,10 @@
+:root {
+    --md-primary-fg-color:#005A96;
+}
+.author {
+    color: grey;
+}
+.branding{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.75em;
+}
