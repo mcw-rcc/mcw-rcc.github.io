@@ -56,11 +56,6 @@ Many MCW labs have large amounts of research data. If a lab requires more than t
 ### Subscription Cost
 The cost is $60/TB/year. All fees must be prepaid. Minimum subscription size is 1TB. Minimum subscription duration is 1 year or the number of months until the start of the next subscription year. RGS subscriptions are based on calendar year (January 1 to December 31). Subscriptions purchased in mid-year will be charged a prorated fee according to the number of months until January 1. RCC will not refund RGS fees for any reason.
 
-#### Example Fee Calculations
-:   Purchase a 3TB subscription on June 1, 2021 with minimum duration (i.e. # of mos until Jan 1). The fee will be \$105 (\$5/mo/TB x 7mos x 3TB), with renewal date of Jan 1, 2022. New total quota limit is 4TB.
-
-:   Purchase a 5TB subscription on March 1, 2021 with 3 year duration (i.e. # of mos until Jan 1, plus 3yrs). The fee will be \$1150 (\$5/mo/TB x 10mos duration x 5TB + \$60/yr/TB x 3yr x 5TB), with a renewal date of Jan 1, 2025. New total quota limit is 6TB.
-
 #### Unpaid Fees
 If RGS fees are unpaid, RCC admins will change your storage directory to **read-only** (i.e. no new data can be written). The PI will have until March 31 to pay any fees that are due or move the data off of RGS.
 

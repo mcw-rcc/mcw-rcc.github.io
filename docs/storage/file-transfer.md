@@ -45,7 +45,7 @@ $ rsync -avz local_directory user@login-hpc.rcc.mcw.edu:/path/to/target-director
 
 File from HPC Cluster:
 ```
-$ rsync -avz  user@login.rcc.mcw.edu:/path/to/remote_file /path/to/local/target-directory
+$ rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_file /path/to/local/target-directory
 ```
 
 Directory from HPC Cluster:
