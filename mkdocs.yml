@@ -108,3 +108,14 @@ nav:
     - storage/file-recovery.md
     - storage/file-transfer.md
     - storage/ref-data.md
+  - Software:
+    - Using Modules: software/modules.md
+    - Requesting Software: software/module-request.md
+    - Guides:
+      - software/R.md
+      - software/python.md
+      - software/tensorflow.md
+      - software/pytorch.md
+      - software/matlab.md
+      - software/schrodinger.md
+      - software/singularity.md
