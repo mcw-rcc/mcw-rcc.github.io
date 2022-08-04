@@ -1,9 +1,9 @@
 # Site information
-site_name:        MCW Research Computing
+site_name: MCW Research Computing
 site_description: A site for documenting MCW Research Computing systems and services.
-site_author:      Matthew Flister
+site_author: Matthew Flister
 site_url: https://mcw-rcc.github.io
-repo_name: github/mcw-rcc/docs
+repo_name: mcw-rcc/docs
 repo_url: https://github.com/mcw-rcc/mcw-rcc.github.io/tree/src
 edit_uri: docs/
 remote_branch: main
@@ -41,7 +41,17 @@ extra:
     property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
   social:
     - icon: fontawesome/brands/github
-
+  consent:
+    title: Cookie consent
+    description: >
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mcw-rcc
+      
 # CSS
 extra_css:
   - stylesheets/extra.css
