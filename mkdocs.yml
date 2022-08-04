@@ -88,3 +88,25 @@ nav:
     - Recent News: news.md
     - Grant Boilerplate: grants.md
     - Publications: pubs.md
+  - User Guide: 
+    - Quick Start: user-guide/quickstart.md
+    - Getting an Account: user-guide/accounts.md
+    - User Etiquette: user-guide/etiquette.md
+    - Connecting:
+      - Logging in: user-guide/access/login.md
+      - Open OnDemand: user-guide/access/ondemand.md
+      - SSH Connection: user-guide/access/ssh.md
+      - Remote Access: user-guide/access/remote-access.md
+    - Running Jobs: 
+      - Submitting SLURM Jobs: user-guide/jobs/running-jobs.md
+      - Staging Data: user-guide/jobs/storage-job.md
+      - Software in a Job: user-guide/jobs/software-job.md 
+      - Troubleshoot Jobs: user-guide/jobs/troubleshoot.md
+      - Job Metrics: user-guide/jobs/xdmod.md
+  - Data Storage:
+    - storage/overview.md 
+    - storage/research-group-storage.md
+    - storage/file-cleanup.md
+    - storage/file-recovery.md
+    - storage/file-transfer.md
+    - storage/ref-data.md
