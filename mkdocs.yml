@@ -36,11 +36,9 @@ extra:
   support_email: <help-rcc@mcw.edu>
   hpc_name: HPC
   srce_name: SRCE
-  consent:
-    cookies:
-      analytics:
-        name: Google Analytics
-        checked: false
+  analytics:
+    provider: google
+    property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
   social:
     - icon: fontawesome/brands/github
 
