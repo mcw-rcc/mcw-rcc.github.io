@@ -17,6 +17,7 @@ theme:
     code: Roboto Mono
   icon:
     logo: material/bookshelf
+  custom_dir: overrides
 
   features:
     - announce.dismiss
