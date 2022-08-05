@@ -90,7 +90,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - About:
+  - Home:
     - Overview: index.md
     - FAQ: faq.md
     - Recent News: news.md
