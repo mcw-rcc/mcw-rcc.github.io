@@ -1,8 +1,8 @@
 # Site information
 site_name: MCW Research Computing
 site_description: A site for documenting MCW Research Computing systems and services.
-site_author: Matthew Flister
-site_url: https://mcw-rcc.github.io
+site_author: MCW RCC
+site_url: https://docs.rcc.mcw.edu
 repo_name: mcw-rcc/docs
 repo_url: https://github.com/mcw-rcc/mcw-rcc.github.io/tree/src
 edit_uri: docs/
@@ -51,7 +51,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/mcw-rcc
-      
+
 # CSS
 extra_css:
   - stylesheets/extra.css
