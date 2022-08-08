@@ -268,7 +268,7 @@ singularity exec Python.sif python hello_world.py
 
 Submit the job:
 ```
-[maflister@ln01 ~]$ sbatch container.sh
+$ sbatch container.sh
 ```
 
 This job will execute the `hello_world.py` script within the `Python.sif` container on a compute node. The output file should contain `Hello, World!`.

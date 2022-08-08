@@ -14,20 +14,10 @@ To connect to Open OnDemand point your browser to <https://ondemand.rcc.mcw.edu>
 
 After login, the *Dashboard* will appear. The menu includes apps to manage files, submit jobs, monitor jobs, open a terminal session, or launch interactive apps. To end your session, click **Log Out** at the top right.
 
-![OnDemand menu](../../img/Ondemand_menu.png)
-
 ### Off Campus
-Open OnDemand is available for remote work through Citrix.
+Open OnDemand is available for remote work through Citrix. Please see the [remote access guide](remote-access.md) for details.
 
-To access Open OnDemand, first login to Citrix. From the Citrix home page, select **Browsers**.
-
-![Citrix homepage](../../img/Citrix_homepage.png)
-
-Select your Citrix web browser of choice. Open OnDemand is most stable in **Google Chrome**.
-
-![Citrix browser](../../img/Citrix_browser.png)
-
-Point your Citrix web browser to <https://ondemand.rcc.mcw.edu>.
+To access Open OnDemand, point your Citrix web browser to <https://ondemand.rcc.mcw.edu>.
 
 ## Shell Access
 Shell access is available to cluster login nodes. From the **Dashboard** menu, select **Clusters > Cluster Shell Access** A new window will open and you will be logged in to a cluster login node. This shell access is the same as if you had used a Terminal app from your desktop (i.e. Putty, SSH Secure Shell, MobaXterm, etc.).
@@ -35,15 +25,11 @@ Shell access is available to cluster login nodes. From the **Dashboard** menu, s
 !!! tip "The shell app now supports themes!"
     You can customize the them of your OOD shell by selecting a new option from the themes drop-down menu in the upper right-hand corner of the window.
 
-[[File:Shell access hpc cluster.PNG|800px]]
-
 !!! warning "Logout!"
     When you are done with your shell, please logout with the `exit` or `quit` commands.
 
 ## File Management
 The **Files** menu contains links to common storage locations. Clicking one of the file links opens the **File Explorer** in a new browser tab.
-
-[[File:Files_app_ood_2.PNG|800px]]
 
 | Button      | Function                             |
 | ----------- | ------------------------------------ |
@@ -58,11 +44,7 @@ The **Files** menu contains links to common storage locations. Clicking one of t
 | `Show Dotfiles` | Toggle the display of dotfiles (files starting by a ., which are usually hidden) |
 | `Filter` | Filter files/folders by pattern |
 
-**Folder options**:
-[[File:Files app folder options.PNG|800px]]
-
-**File options**:
-[[File:Files app file options.PNG|800px]]
+Each file and folder will have additional options. Select the `⋮` dropdown menu to rename, download, delete, view (file only), or edit (file only) a single item.
 
 ### Upload a File
 To upload a file, select the **Upload** button. Then use the file selector to choose a file to upload. Please note that this only works for individual files. If you need to upload a folder, see [Upload a Folder](#upload-a-folder).
@@ -84,8 +66,6 @@ Jobs can be created from previous jobs or job templates. See [OSC's Job Manageme
 ### Create a New Job
 In the **Job Composer** app, select the **Jobs** tab. To create a new job script, click the **+ New Job** button and select **From Default Template** You'll see a new job script entry with status **Not Submitted**. On the right hand side you'll see the **Job Details**, including the location and name of the job script.
 
-[[File:Job composer.PNG|800px]]
-
 #### Edit a Job Script
 The default job template creates a new generic job script. You'll need to edit this job script so that it contains the workflow you'll submit to the cluster. To edit a job script, click the **Open Editor** button at the lower right.
 
@@ -100,13 +80,16 @@ To submit a job, select a job and click the green **Submit** button. A message a
 ### Monitor Jobs
 From the **Dashboard** menu, select **Jobs > Active Jobs** for a live view of the cluster queue. You can view all jobs, your own jobs, and select by cluster.
 
-[[File:Job_monitor.PNG|800px]]
-
 ## Interactive Applications
 Open OnDemand features several interactive applications that run on cluster nodes and are accessed through the web interface. This allows you to run interactive apps directly in your web browser.
 
-### Jupyter Notebooks
-To start a Jupyter Notebook on a cluster:
+!!! tip "GUI Apps"
+    Some Open OnDemand apps require a Graphical User Interface (GUI). One example is the **Remote Desktop** app. When starting a GUI app, you can select **Compression** and **Image Quality** settings before connecting. Most sessions will run best with minimum compression and maximum image quality. If you have a slow network connection, you can maximize compression and minimize image quality.
+
+### Jupyter Notebook Example
+Here we focus on the Jupyter Notebook app as a popular example, but there are many apps to choose from. Check the [full app list](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sessions) for details.
+
+To start a Jupyter Notebook on a cluster server:
 
 1. From the **Dashboard** menu, select **Interactive Apps > Jupyter Notebook**. You'll see two categories in the **Interactive Apps** drop-down menu. Select for the resource you need.
 2. The **My Interactive Sessions** screen will open. Select for the resource parameters that you need. You can also select to be notified by email when your session will start.<br>
@@ -123,35 +106,5 @@ To start a Jupyter Notebook on a cluster:
     $ source activate myenv
     $ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
     ```
-
-### RStudio
-To start an RStudio session on a cluster:
-
-1. From the **Dashboard** menu, select **Interactive Apps > RStudio Server**. You'll see two categories in the **Interactive Apps** drop-down menu. Select for the resource you need.
-2. The **My Interactive Sessions** screen will open. Select for the resource parameters that you need. You can also select to be notified by email when your session will start.
-3. Click the **Launch** button to start your RStudio session. You may have to wait for cluster resources to become available.
-4. Once the session starts, click the **Connect to RStudio Server** button. An RStudio session will open in a new window.
-5. To terminate your RStudio session, go back to the **My Interactive Sessions** page and click the red **Delete** button.
-
-### IGV
-To start an IGV session:
-
-1. From the **Dashboard** menu, select **Interactive Apps > IGV**.
-2. The **My Interactive Sessions** screen will open. Select for the resource parameters that you need. You can also select to be notified by email when your session will start.
-3. Click the **Launch** button to start your IGV session. You may have to wait for cluster resources to become available.
-4. Once the session starts, select your **Compression** and **Image Quality** settings. Most sessions will run best with minimum compression and maximum Image Quality. If you have a slow network connection, maximize compression and minimize Image Quality.
-5. :[[File:IGV_menu.png|700px]]
-6. To start IGV, select the **Launch IGV** button. An IGV session will open in a new window.
-7. To terminate your IGV session, go back to the **My Interactive Sessions** page and click the red **Delete** button.
-
-### TensorBoard
-To start a TensorBoard session:
-
-1. From the **Dashboard** menu, select **Interactive Apps > TensorBoard**.
-2. The **My Interactive Sessions** screen will open. Select for the resource parameters that you need. Please note that a **Log Directory** is required. You can also select to be notified by email when your session will start.<br>
-![Tensorboard app](../../img/Tensorboard_menu.png){ width="350" }<br>
-3. Click the **Launch** button to start your TensorBoard session. You may have to wait for cluster resources to become available.<br>
-4. To start TensorBoard, select the **Connect to TensorBoard** button. A TensorBoard session will open in a new window.<br>
-5. To terminate your TensorBoard session, go back to the **My Interactive Sessions** page and click the red **Delete** button.
 
 --8<-- "includes/abbreviations.md"
