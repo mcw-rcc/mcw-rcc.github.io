@@ -20,7 +20,6 @@ Each login hostname follows a common naming convention, ***login-clustername.rcc
 Depending on your permissions, you may login to the following clusters:
 
 - **login-hpc.rcc.mcw.edu** - primary SLURM cluster
-- **login-srce.rcc.mcw.edu** - dbGaP-aligned SLURM cluster
 
 ### Username
 
