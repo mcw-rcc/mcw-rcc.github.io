@@ -39,3 +39,6 @@ In a command-line session:
 ```bash
 $ ssh netid@login-clustername.rcc.mcw.edu
 ```
+
+!!! tip "Hidden Password"
+    Most SSH client applications will hide your password as you type. This is a security feature, not an error. 

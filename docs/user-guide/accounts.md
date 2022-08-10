@@ -2,7 +2,7 @@
 
 A user account is required for access to Research Computing resources, including the clusters. To obtain RCC access, you must be a PI or sponsored by a PI, and have an active MCW account. A PI may sponsor students, postdoctoral fellows, staff, or colleagues with whom they are collaborating on research. Please note, a PI sponsor must have an active RCC account. 
 
-!!! important "PI required"
+!!! info 
     For RCC purposes, a PI is a full-time MCW faculty member.
 
 [Request an Account](https://forms.office.com/r/98QNm6cAyt){ .md-button .md-button--primary }

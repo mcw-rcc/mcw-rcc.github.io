@@ -17,6 +17,8 @@ theme:
     code: Roboto Mono
   icon:
     logo: material/bookshelf
+    admonition:
+      tip: material/lightbulb-outline
   custom_dir: overrides
 
   features:
@@ -40,8 +42,6 @@ extra:
   analytics:
     provider: google
     property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-  social:
-    - icon: fontawesome/brands/github
   consent:
     title: Cookie consent
     description: >
