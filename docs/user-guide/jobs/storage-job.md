@@ -1,6 +1,6 @@
 # Staging Data
 
-RCC storage includes a persistent <code>/group</code> space and a transient <code>/scratch</code> space. The <code>/group</code> storage is not available on compute nodes, for performance reasons. Therefore, it is necessary to stage your data into and out of <code>/scratch</code>. If your job has a large input dataset, we suggest to copy the data before the job. If input data is relatively small, you can add the staging step to the job.
+RCC storage includes a persistent `/group` space and a transient `/scratch` space. The `/group` storage is not available on compute nodes, for performance reasons. Therefore, it is necessary to stage your data into and out of `/scratch`. If your job has a large input dataset, we suggest to copy the data before the job. If input data is relatively small, you can add the staging step to the job.
 
 !!! warning "Data staging required"
     Your job will fail and/or you will lose your job output if you do not properly stage your data to and from scratch. Contact {{ support_email }} for help with data staging.

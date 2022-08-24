@@ -7,7 +7,7 @@ Below are descriptions of RCC services that can be used when preparing the resou
 
 ## Overview
 
-The MCW Research Computing Center (RCC) is a division within MCW Information Services. RCC provides campus-wide access to high performance computing (HPC) resources required for computationally-intensive biomedical research. RCC is institutionally supported and available to all MCW students, staff, and faculty. RCC services and operations are governed by representatives of the MCW Faculty in partnership with RCC leadership. 
+The MCW Research Computing Center (RCC) is a division within MCW Information Services. RCC provides campus-wide access to high performance computing (HPC) resources required for computationally-intensive biomedical research. RCC is institutionally supported and available to all MCW students, staff, and faculty. RCC services and operations are governed by representatives of the MCW Faculty in partnership with RCC leadership.
 
 ## High Performance Computing
 
@@ -18,6 +18,7 @@ The HPC environment includes 68 computational nodes, 3264 processor cores, 28.3 
 !!! info "Coming soon!"
 
 ## Data Storage
+
 The system includes a 215 TB NVMe scratch file system enabling high-performance file I/O during job processing. A second 1.77 PB file system provides persistent storage for active projects. A 100 Gbps network provides fast data transfer between file systems.
 
 RCC provides 1 TB of persistent storage to any MCW faculty member for free. Additional persistent storage is available for $60 per TB per year.

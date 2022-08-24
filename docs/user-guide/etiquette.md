@@ -1,4 +1,5 @@
 # User Etiquette
+
 RCC clusters are shared resources. Please be respectful of your computational neighbors and adhere to the following guidelines.
 
 ## Guidelines
@@ -20,6 +21,7 @@ RCC clusters are shared resources. Please be respectful of your computational ne
     Do not request more resources than are needed to complete your job. Most jobs are not parallel. Requesting multiple cores when your job cannot use them wastes resources that might be used by other users. This is a very common problem! Do your best and ask for help if you're unsure.
 
 ## Enforcement
+
 RCC does enforce usage on the cluster login nodes through a service named Arbiter. This service leverages Linux cgroups in order to monitor cpu and  memory usage.
 
 !!! info "Login node per-user limit is 8 CPU cores and 40 GB memory."

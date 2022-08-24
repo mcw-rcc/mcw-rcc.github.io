@@ -30,15 +30,15 @@ When asked for your username, please use your MCW NetID, which is used for most 
 When asked for your password, please use your MCW password, which is used for most MCW resources including email login.
 
 !!! danger " Never share your password"
-    MCW corporate policy stricly prohibits sharing of passwords. Research Computing staff never has access to your password, and we will never ask you for your password. 
+    MCW corporate policy stricly prohibits sharing of passwords. Research Computing staff never has access to your password, and we will never ask you for your password.
 
 ### Example login
 
 In a command-line session:
 
 ```bash
-$ ssh netid@login-clustername.rcc.mcw.edu
+ssh netid@login-clustername.rcc.mcw.edu
 ```
 
 !!! tip "Hidden Password"
-    Most SSH client applications will hide your password as you type. This is a security feature, not an error. 
+    Most SSH client applications will hide your password as you type. This is a security feature, not an error.

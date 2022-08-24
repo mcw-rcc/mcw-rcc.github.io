@@ -1,5 +1,7 @@
 # Frequently Asked Questions
+
 ## Access & Login
+
 ??? question "How do I get an RCC account?"
     Submit an [Account Request](https://forms.office.com/r/98QNm6cAyt) form.
 ??? question "How do I login?"
@@ -19,25 +21,26 @@
     Ask the collaborator PI to contact {{ support_email }} to request the access.
 
 ??? question "How do I add a student to my Research Group Storage security group?"
-    * PIs should contact {{ support_email }} with the username of your new student. 
+    * PIs should contact {{ support_email }} with the username of your new student.
     * Non-PIs should contact {{ support_email }} with your username, the PI's username, and the username of the new student.
 
 ??? question "How do I reset my password?"
     RCC uses the same credentials as MCW's other services. If you need to reset your password, use the [Self Service Password Reset](https://infoscope.mcw.edu/is/services/sspr.htm).
 
 ## Job Management
+
 ??? question "How do I submit a job to the HPC cluster?"
     You can submit a job to the HPC cluster with the `sbatch` command.
     ```bash
     $ sbatch hpc-run.slurm
     Submitted batch job 6782
-    ```
+```
 
 ??? question "How do I run an interactive job on the cluster?"
     You can start an interactive job on the HPC cluster using the SLURM `srun` command.
     ```bash
     $ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --pty bash
-    ```
+```
 
 ??? question "How do I check the status of my job?"
     You can find the current status of your job with the `squeue` command.
@@ -45,7 +48,7 @@
     $ squeue -j 6696
                 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                     1234    normal Testing user  R      37:09      1 cn59
-    ```
+```
 
 ??? question "How can I see the status of the HPC cluster?"
     You can find the current status of the HPC cluster resources with the `slurminfo` command.
@@ -56,7 +59,7 @@
             normal   1715   2880     34     60        0        0     7-00:00       48     360 -
             bigmem      0     96      0      2        0        0     7-00:00       48    1500 -
             gpu    279    288      3      6        0        0     7-00:00       48     360 gpu:v100(4)
-    ```
+```
 
 ??? question "Why is my job not running?"
     There are several reasons that your job might not be running.
@@ -75,6 +78,7 @@
     Yes. After you start the job, email the job number and time extension request to {{ support_email }}.
 
 ## Software
+
 ??? question "What software is available on the HPC cluster?"
     You can list all available software on the cluster with the `module avail` command. See the [cluster software guide](software/modules.md) for details.
 
@@ -94,6 +98,7 @@
     No. Docker is not installed or allowed on RCC systems due to security. However, RCC does provide a container solution called [Singularity](software/singularity.md), which can import Docker containers to run on the cluster.
 
 ## Data Transfer & Storage
+
 ??? question "How do I check my available storage directories and utilization?"
     You can easily find your available storage directories and current utilization with the `mydisks` command.
     ```bash
@@ -104,7 +109,7 @@
     932G  158G  774G  17% /group/pi
     4.6T     0  4.6T   0% /scratch/u/user
     4.6T     0  4.6T   0% /scratch/g/pi
-    ```
+```
 
 ??? question "Why does my quota show as less space?"
     Your computer reports storage utilization in **base-2 math** and the storage system quotas use **base-10 math**. So, if your quota is 1TB, the `mydisks` command will show 932GB. *Please note that this is a difference in mathematical representation of the same value.* While the `mydisks` command shows less space, you are still able to use your full quota.
@@ -131,7 +136,7 @@
     total 8
     drwxrws---. 3 root sg-pi-zephyr 512 Mar 26 13:52 zephyr
     drwxrws---. 4 root sg-pi       1024 May 19 14:04 work
-    ```
+```
 
     In addition to the usual `work` directory, there is now a `zephyr` project directory, which is controlled by the `sg-pi-zephyr` security group. Project data would go in that directory, and any number of collaborators (MCW researchers) can be added to the security group.
 
@@ -143,6 +148,7 @@
     * Remount the storage using this guide <https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d>. In step #4, make sure to select `Connect using different credentials` during that process. If you are on a non-MCW managed computer, please enter your MCW username with the "MCWCORP\" domain prefix (example MCWCORP\jsmith).
 
 ## Open OnDemand
+
 ??? question "Why does the Open OnDemand web page not load?"
     Open OnDemand supports most modern browsers. However, there is no IE 11 support. To have the best experience using Open OnDemand, use the latest versions of Google Chrome, Mozilla Firefox or Microsoft Edge.
 
@@ -156,6 +162,7 @@
     Yes, [Open OnDemand](https://ondemand.rcc.mcw.edu) does have a virtual desktop app built-in. However, since the cluster compute nodes are not designed or built for desktop use, functionality may be limited.
 
 ## About RCC
+
 ??? question "What is RCC?"
     The Research Computing Center (RCC) provides infrastructure and campus-wide access to resources required for computationally intensive biomedical research. This includes shared hardware and research-specific software which is supported by MCW and research grants.
 

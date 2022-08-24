@@ -1,36 +1,42 @@
 # R
 
 ## Package Installation
-R uses a central package library that contains many common packages. The location of this library is `$R_HOME/library`. Users may also install their own packages locally. The default location for local package installation is `$HOME/R/x86_64-pc-linux-gnu-library/4.1`. 
+
+R uses a central package library that contains many common packages. The location of this library is `$R_HOME/library`. Users may also install their own packages locally. The default location for local package installation is `$HOME/R/x86_64-pc-linux-gnu-library/4.2`.
 
 !!! warning "Check first!"
     Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding.
 
 ### User Package Install
+
 First load the R module:
+
 ```bash
-$ module load R
+module load R
 ```
 
 Launch R:
+
 ```bash
-$ R
+R
 ```
 
 Run the install command:
+
 ```R
 > install.packages('SomePkg')
 ```
 
-The first attempt will warn about writing to the central library. It will ask you to create and use a personal library. Answer **yes** to both. 
+The first attempt will warn about writing to the central library. It will ask you to create and use a personal library. Answer **yes** to both.
+
 ```R
-Installing package into ‘/hpc/apps/R/4.0.4/lib64/R/library’
+Installing package into ‘/hpc/apps/R/4.2.1/lib64/R/library’
 (as ‘lib’ is unspecified)
 Warning in install.packages("ggplot2") :
-  'lib = "/hpc/apps/R/4.0.4/lib64/R/library"' is not writable
+  'lib = "/hpc/apps/R/4.2.1/lib64/R/library"' is not writable
 Would you like to use a personal library instead? (yes/No/cancel) yes
 Would you like to create a personal library
-‘~/R/x86_64-pc-linux-gnu-library/4.0’
+‘~/R/x86_64-pc-linux-gnu-library/4.2’
 to install packages into? (yes/No/cancel) yes
 ```
 
@@ -42,25 +48,31 @@ Your package will be installed to your home directory. This package can be remov
 * The package manager does not check if the package is already installed centrally. If you install a package in your user directory, you may be installing a package that is already available. This is unnecessary use of space and resources. Always check if a package is already installed using the `library(package)` command.
 
 ### Request Package Install
+
 Upon request, RCC will install or update R packages in the central library. As shown above, you may install your own packages and are not required to notify RCC. We do ask that if you need a package that currently or potentially has wide use at MCW, then please notify {{ support_email }} RCC to install centrally.
 
 ## Running R Jobs
+
 R can be run in batch or interactive jobs. Please do not run long or resource intensive R scripts on the login node.  
 
 ### Small Interactive Jobs
+
 Small interactive jobs include light plotting, simple analysis of small data sets, etc. These jobs never take more than one core, a few GB of memory, and never last more than a few minutes. These small, fast jobs are allowed on a  login node. However, use caution when running these jobs and double-check that they will not use larger resources. If you need to run an interactive R workflow that is more resource intensive, please use an interactive cluster job.
 
 To get an interactive session to run R on the cluster:
+
 ```bash
-$ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --pty bash
+srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --pty bash
 ```
 
 ### Multi-core Jobs
+
 Multi-core jobs should be run on the cluster compute nodes using the Torque queuing system. There are several options for running these jobs in Torque, including the Rscript command and the BatchJobs library. Both methods interface R with Torque, however, their use cases are different. The Rscript command should be used when you have written an R program .r file and would like to run this script on the cluster. The BatchJobs library should be used when you would like to test individual functions in a semi-interactive way and submit this work to the cluster.
 
 Example SLURM submission script:
 === "R-test.slurm"
-```bash
+
+```txt
 #!/bin/bash
 #SBATCH --job-name=R-test
 #SBATCH --ntasks=1
@@ -68,14 +80,15 @@ Example SLURM submission script:
 #SBATCH --time=00:01:00
 #SBATCH --output=%x-%j.out
  
-module load R/4.0.4
+module load R/4.2.1
  
 Rscript Rtest.r  
 ```
 
 Submit the job:
+
 ```bash
-$ sbatch myRtest.sh
+sbatch myRtest.sh
 ```
 
 <!--===BatchJobs===
@@ -148,6 +161,7 @@ Results files:
 -->
 
 ## Help
+
 If you have questions about running R on the HPC cluster, please contact {{ support_email }} for assistance.
 
 --8<-- "includes/abbreviations.md"

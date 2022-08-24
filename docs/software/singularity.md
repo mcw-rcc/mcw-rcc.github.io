@@ -1,10 +1,13 @@
 # Singularity
 
 ## Overview
+
 [Singularity](https://sylabs.io/guides/3.7/user-guide/) is a container solution designed for high-performance computing systems. A Singularity container is a collection of application and dependency files, which is packaged as a single portable image file. Containers are independent from the host operating system, allowing applications that are not natively supported to run on a variety of HPC resources. They are conceptually similar to Docker, but focus more on HPC. Singularity containers can be shared and distributed to support reproducible research and can be run on most HPC systems without modification as long as Singularity is installed.
 
 ## Singularity Commands
+
 Singularity uses a series of subcommands and options controlled by a wrapper script called `singularity`. The `-h` option displays the command-line help documentation:
+
 ```bash
 $ module load singularity
 $ singularity -h
@@ -50,12 +53,15 @@ CONTAINER USAGE OPTIONS:
 For more information see the [Singularity Quick Start](https://sylabs.io/guides/3.7/user-guide/quick_start.html#interact-with-images).
 
 ### Download Pre-built Containers
+
 Many software packages already have containers built by other users. These containers are available from external sites such as Singularity Hub or Docker Hub.
 
 The `singularity pull` command is used to download existing containers.
 
 #### Pull from Singularity Hub
+
 To download a container from Singularity Hub:
+
 ```bash
 $ singularity pull shub://vsoch/hello-world 
 Progress |===================================| 100.0%
@@ -65,6 +71,7 @@ RaawwWWWWWRRRR!!
 ```
 
 You can also download and rename containers:
+
 ```bash
 $ singularity pull --name myContainer.sif shub://vsoch/hello-world
 Progress |===================================| 100.0%
@@ -74,7 +81,9 @@ RaawwWWWWWRRRR!!
 ```
 
 #### Pull from Docker Hub
+
 To download a container from Docker Hub:
+
 ```bash
 $ singularity pull docker://godlovedc/lolcow
 WARNING: pull for Docker Hub is not guaranteed to produce the
@@ -107,7 +116,9 @@ $ ./lolcow.img
 The pull command downloads the container from Docker, converts it to Singularity format, and builds a the container. This is different than pulling an image from Singularity Hub, where the pull command simply downloads the image. Singularity includes warnings about this fact. Since a pull from Docker Hub induces a build process, the downloaded container is not guaranteed to be the same each time. If strict reproducibility is needed, pull from Singularity Hub.
 
 #### Build from Singularity Hub
+
 The `singularity build` command can also be used to download existing containers.
+
 ```bash
 $ singularity build hello-world.sif shub://vsoch/hello-world
 Cache folder set to /home/user/.singularity/shub
@@ -123,6 +134,7 @@ RaawwWWWWWRRRR!!
 When using the build command, you must specify a name for your container. The build command differs from pull in that it will download and then build your image using the latest Singularity image format. Additional functionality of the build command is discussed in [Build a Container](../software/singularity.md#build-a-container).
 
 #### Build from Docker Hub
+
 ```bash
 $ singularity build lolcow.sif docker://godlovedc/lolcow
 Docker image path: index.docker.io/godlovedc/lolcow:latest
@@ -145,12 +157,15 @@ $ ./lolcow.sif
 ```
 
 ### Build a Container
+
 The primary function of the build command is to create new containers either from scratch or based on existing containers. It is also used to convert between container formats. Full documentation of the build command is available at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/build_a_container.html). Here we include an example definition file and build process for a Python container.
 
 #### Definition File
-First we write a definition file for the new container. A definition file defines the container build process including software installation, runtime functionality, etc. This file can be named how you like, but it is recommended to denote definition files with the `.def` extension. We will call our definition file `Python.def`. 
+
+First we write a definition file for the new container. A definition file defines the container build process including software installation, runtime functionality, etc. This file can be named how you like, but it is recommended to denote definition files with the `.def` extension. We will call our definition file `Python.def`.
 
 === "container.def"
+
 ```bash
 Bootstrap: docker
 From: ubuntu:20.04
@@ -201,15 +216,19 @@ This container includes Python.
 Full documentation of definition files at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/definition_files.html).
 
 #### Build
+
 Build the container using the definition file:
+
 ```bash
-$ sudo singularity build Python.sif Python.def
+sudo singularity build Python.sif Python.def
 ```
 
 Build requires `root` or `sudo` permissions. The syntax is always `singularity build` followed by the new container name, denoted by the `.sif` extension, and the definition file.
 
 #### Test
+
 Copy your container file to your RCC home directory and run a test:
+
 ```bash
 $ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --account={PI_NetID} --pty bash
 $ module load singularity
@@ -220,20 +239,25 @@ Python 2.7.15
 Here we print the version of Python installed in the container. The exec command executes a command (i.e., `python --version`) within the container.
 
 ## Containers in Jobs
+
 Singularity containers were designed to be run on HPC systems. RCC maintains containers for several software packages on the clusters. The following examples show an RCC built Singularity container which can be run in an interactive or batch job.
 
 ### Example Interactive job
+
 Start an interactive job on the cluster:
+
 ```bash
-$ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --account={PI_NetID} --pty bash
+srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --account={PI_NetID} --pty bash
 ```
 
 Load the Singularity module:
+
 ```bash
-$ module load singularity
+module load singularity
 ```
 
 Run a command in your container:
+
 ```bash
 $ singularity exec Python.sif python hello_world.py
 Hello, World!
@@ -242,6 +266,7 @@ Hello, World!
 The exec command is used to execute the `hello_world.py` script within the container.
 
 Alternatively, shell into the container and run a command:
+
 ```bash
 $ singularity shell Python.sif 
 Singularity: Invoking an interactive shell within container...
@@ -253,8 +278,10 @@ Hello, World!
 If your container has a **%runscript** section defined, then you could also use the `singularity run` command. Choose the method that works best for you.
 
 ### Example Batch Job
+
 === "container.sh"
-```
+
+```txt
 #!/bin/bash
 #SBATCH --job-name=Testing
 #SBATCH --ntasks=1
@@ -267,32 +294,38 @@ singularity exec Python.sif python hello_world.py
 ```
 
 Submit the job:
-```
-$ sbatch container.sh
+
+```txt
+sbatch container.sh
 ```
 
 This job will execute the `hello_world.py` script within the `Python.sif` container on a compute node. The output file should contain `Hello, World!`.
 
 ## Singularity on RCC
+
 RCC uses Singularity to install and maintain software packages that would not otherwise be available on the compute clusters. This is often due to incompatible libraries or unsupported operating system. In some cases Singularity is used to control access or functionality of an application. RCC-built containers are designed to interact with RCC clusters. They include necessary file mount points, special libraries (e.g., CUDA), and custom wrapper commands. Here we will discuss the elements needed to make your containers compatible with RCC systems.
 
 A set of useful directories are mounted by default on RCC clusters. The following file mounts should be included for non-GPU containers:
-```
+
+```txt
 /hpc
 /scratch
 ```
 
 Add to the `%post` section of your definition file:
-```
- mkdir -p /hpc /scratch
+
+```bash
+mkdir -p /hpc /scratch
 ```
 
 ## Singularity and Docker
-Singularity is conceptually similar to Docker and easily supports Docker images. We've shown above that Singularity can be used to download and Singularity-ize Docker images. It can also be used to build containers starting from a Docker image base (RCC does this). This allows RCC to support a wide variety of software that is already containerized with Docker. If you can find a container on Docker Hub, chances are that it will be supported through Singularity. If you already use Docker to containerize your software, then you can continue developing in Docker knowing that Singularity will easily import your images. 
+
+Singularity is conceptually similar to Docker and easily supports Docker images. We've shown above that Singularity can be used to download and Singularity-ize Docker images. It can also be used to build containers starting from a Docker image base (RCC does this). This allows RCC to support a wide variety of software that is already containerized with Docker. If you can find a container on Docker Hub, chances are that it will be supported through Singularity. If you already use Docker to containerize your software, then you can continue developing in Docker knowing that Singularity will easily import your images.
 
 Full information on Singularity and Docker at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/).
 
 ## Getting Help
+
 Contact {{ support_email }} for assistance with containers.
 
 --8<-- "includes/abbreviations.md"

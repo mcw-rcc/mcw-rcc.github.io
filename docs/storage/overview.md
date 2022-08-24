@@ -1,8 +1,9 @@
 # Storage Overview
 
-RCC offers multiple types of storage to all users. Each storage type has a unique path on the cluster, and a unique use-case. Some storage is meant only for use with the cluster, while other storage like [Research Group Storage](research-group-storage.md) can be used as generalized Windows storage. 
+RCC offers multiple types of storage to all users. Each storage type has a unique path on the cluster, and a unique use-case. Some storage is meant only for use with the cluster, while other storage like [Research Group Storage](research-group-storage.md) can be used as generalized Windows storage.
 
 !!! tip "You can easily find your available storage directories and current utilization on the cluster  with the `mydisks` command."
+
     ```bash
     $ mydisks
     =====My Lab=====
@@ -18,7 +19,7 @@ RCC offers multiple types of storage to all users. Each storage type has a uniqu
 The storage systems provide large scale data storage at high performance, including an NVMe all-flash scratch space for the cluster and a scale out NAS storage for research group data. Data storage is controlled by quotas that provide a certain amount of storage for free. Additionally, the scale-out NAS storage features snapshots to avoid data loss from accidental deletion. However, none of the storage is backed up, i.e. there is no disaster recovery.
 
 |                       | HPC Scratch | [Research Group Storage](research-group-storage.md) |
-| --------------------- | ----------- | ----------------------------- | 
+| --------------------- | ----------- | ----------------------------- |
 | Vendor | Qumulo | Qumulo |
 | Type | Tier0 NVMe All Flash | Tier2 Scale-out NAS |
 | Year Purchased | 2020 | 2020 |
@@ -40,26 +41,9 @@ Every user has a home directory located at `/home/{NetID}`. The home directory i
 
 [Research Group Storage](../storage/research-group-storage.md), located at `/group`, is meant for active research files that need to be shared by members of a research group. Each participating PI will have a free 1TB storage directory. Additional storage capacity may be purchased with a [Research Group Storage subscription](../storage/research-group-storage.md#paid-additional-storage).
 
-**Features:**
-
-* PI-specific storage directory `/group/{PI_NetID}` with environment variable `$GROUP` (new cluster only), not world-readable
-
-* Pre-made `/group/{PI_NetID}/work` research group work directory with permissions group `sg-{PI_NetID}`, controlled by PI, environment variable `$WORK` (new cluster only)
-
-* By request `/group/{PI_NetID}/{Project_Name}` project directories with permissions groups `sg-{PI_NetID}-{Project_Name}`, controlled by PI
-
-- Per-PI single quota limit on `/group/{PI_NetID}` with 1TB free and billed above 1TB
-
-    * 1TB free quota limit
-    * Billed above 1TB
-    * Single quota applies to `/group/{PI_NetID}` and all subdirectories
-
-* 7 days of snapshots
-
-* Mounted on the cluster via NFS or computers on MCW network via SMB, but not both
-
 !!! tip "Do you need to collaborate outside your lab group?"
     Your lab group storage can be used to collaborate with non-lab members. This is done with by-request project directories. For example, if lab `pi` would like to collaborate with some data for a project called `zephyr`, then the lab PI would contact RCC to create a project directory.
+
     ```bash
     $ ls -l /group/pi
     total 8
@@ -80,7 +64,7 @@ Scratch space is intended for data that is read/written during jobs running on t
 
 A 480GB local scratch disk is available on each compute node at `/tmp`.
 !!! tip "`/tmp` is fast, but limited space."
-    Local scratch disk may be the fastest computing option to store your job runtime files. This may be true with jobs that are heavily I/O dependent (i.e. lots of files are read/written). However, there is a time penalty to transfer your files from your global scratch directory to local scratch, and the space is limited (480GB). Please contact <nobr>{{ support_email }}</nobr> with questions.
+    Local scratch disk may be the fastest computing option to store your job runtime files. This may be true with jobs that are heavily I/O dependent (i.e. lots of files are read/written). However, there is a time penalty to transfer your files from your global scratch directory to local scratch, and the space is limited (480GB). Please contact {{ support_email }} with questions.
 
 ### Using Storage with Jobs
 

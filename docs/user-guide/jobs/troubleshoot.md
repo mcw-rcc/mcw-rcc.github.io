@@ -7,13 +7,15 @@ It is often the case that your job will fail, or not do what you intended. This 
 The command-line has many powerful tools to monitor your jobs and diagnose issues. The first tool is the `squeue` command, which prints the current set of jobs in the queue. Monitoring the queue is best practice after you submit any job. It will quickly tell you if your job is running, where it is running, and for how long. When the cluster is busy, or you violate a scheduler policy, your job may be stuck in the queue. This will tell you the status of your job(s), and give reasons for any related issues.
 
 To list only your jobs:
+
 ```bash
-$ squeue -u NetID
+squeue -u NetID
 ```
 
 Another useful command is `seff`, which prints the workload efficiency metrics for a job. Although you can run this tool during a job, it is best used after your job is finished. The output will give an estimate of CPU and memory efficiency, and is very useful when benchmarking a workload for memory limit.
 
 To list only your jobs:
+
 ```bash
 $ seff 250
 Job ID: 250
@@ -35,7 +37,7 @@ You may want to access the compute that is running your job to see further infor
 
 While direct SSH to a compute node is prohibited, there are other ways to pull real-time diagnostics from the compute node(s) that are running your job. For instance, you can run an additional command within an already running job with the `srun` command.
 
-Suppose that we already have a running job on the cluster. 
+Suppose that we already have a running job on the cluster.
 
 ``` bash
 $ squeue -u NetID

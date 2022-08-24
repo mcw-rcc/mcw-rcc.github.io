@@ -32,7 +32,8 @@ The clusters use SLURM to manage jobs. Most jobs are scheduled using batch job s
 The SLURM job script syntax is shown below. Just like previous clusters, every job needs a job script, which tells the scheduler how and when to run your workload. The following is a simple SLURM batch job script example.
 
 === "test-job.slurm"
-```bash
+
+```txt
 #!/bin/bash
 #SBATCH --job-name=test-job
 #SBATCH --ntasks=1
@@ -49,19 +50,22 @@ echo "I have ${SLURM_CPUS_ON_NODE} CPUs on compute node $(hostname -s)"
 ```
 
 ### Submit the job
+
 Now I can submit my example job:
+
 ```bash
-$ sbatch test-job.slurm
+sbatch test-job.slurm
 ```
 
 Then I can check my job status:
+
 ```bash
-$ squeue
+squeue
 ```
 
 ## More info
 
-This guide has links to additional information about each topic. We strongly recommend to review all documentation. 
+This guide has links to additional information about each topic. We strongly recommend to review all documentation.
 
 Need help getting started? Send us an email at {{ support_email }}.
 
