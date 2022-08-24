@@ -48,6 +48,7 @@ sacct -j jobId # jobId is the job number
 !!! tip "RCC provides an additional command `slurminfo`."
     Use this command to see cluster info and a summary of SLURM stats.
 
+    <!-- markdownlint-disable MD046 -->
     ```bash
     $ slurminfo
            QUEUE   FREE  TOTAL   FREE  TOTAL   RESORC    OTHER  MAXJOBTIME    CORES    NODE  GPU
@@ -56,6 +57,7 @@ sacct -j jobId # jobId is the job number
           bigmem      0     96      0      2        0        0     7-00:00       48    1500 -
              gpu    279    288      3      6        0        0     7-00:00       48     360 gpu:v100(4)
     ```
+    <!-- markdownlint-enable MD046 -->
 
 ## Managing Job Input/Output Files
 
@@ -173,7 +175,7 @@ Fairshare effectively allows infrequent users a fair chance to run their jobs on
 Job scripts are required to run jobs in the queueing system. A job script is a text file using shell script syntax, denoted by the required first line, `#!/bin/bash`. It can be broken into two sections; resource requests and executable commands. Each section will be explained using the following example SLURM job script that can be used as a starting template for your jobs.
 === "test-job.slurm"
 
-```bash
+```txt
 #!/bin/bash
 #SBATCH --job-name=test-job
 #SBATCH --ntasks=1
@@ -241,11 +243,13 @@ An account is **required** for your job to run. The `--account` option should be
 
 !!! tip "You can easily find your accounts with the `myaccts` command."
 
-    ```txt
+    <!-- markdownlint-disable MD046 -->
+    ```bash
     $ myaccts
     Account        Partition
     pi             bigmem,dev,gpu,normal
     ```
+    <!-- markdownlint-enable MD046 -->
 
 #### Partition
 

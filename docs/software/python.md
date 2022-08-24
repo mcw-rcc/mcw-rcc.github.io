@@ -102,8 +102,9 @@ To exit your Python virtual environment:
 ```bash
 deactivate 
 ```
-
+<!-- markdownlint-disable MD024 -->
 ### Installing Packages
+<!-- markdownlint-enable MD024 -->
 
 Packages can be installed in a Python virtual environment using `pip` or `setup.py`.
 
@@ -157,7 +158,9 @@ To use your Miniconda virtual environment:
 source activate myenv
 ```
 
+<!-- markdownlint-disable MD024 -->
 ### Installing Packages
+<!-- markdownlint-enable MD024 -->
 
 To install packages in your conda virtual environment:
 
@@ -171,8 +174,9 @@ conda install numpy
 
 You may want to use your personal Python environment in a SLURM job on the cluster. Please review the [Writing a Job Script](../user-guide/jobs/running-jobs.md#writing-a-job-script) guide before proceeding. The following examples show various methods to use your personal Python environment.
 
+<!-- markdownlint-disable MD046 -->
 === "py-venv.slurm"
-    ```bash
+    ```txt
     #!/bin/bash
     #SBATCH --job-name=Python
     #SBATCH --ntasks=1
@@ -186,7 +190,7 @@ You may want to use your personal Python environment in a SLURM job on the clust
     ```
 
 === "conda-venv.slurm"
-    ```bash
+    ```txt
     #!/bin/bash
     #SBATCH --job-name=Miniconda
     #SBATCH --ntasks=1
@@ -198,5 +202,6 @@ You may want to use your personal Python environment in a SLURM job on the clust
     source activate myenv
     python myPythonScript.py
     ```
+<!-- markdownlint-enable MD046 -->
 
 --8<-- "includes/abbreviations.md"

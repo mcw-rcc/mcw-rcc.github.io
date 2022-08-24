@@ -105,6 +105,7 @@ Please review the MathWorks [tutorial](https://www.mathworks.com/help/distcomp/r
 
 The **parpool** command creates a pool of workers in a job on the cluster. It creates an interactive session using remote cluster nodes to run the pool of workers. The **parpool** command does require that enough workers are available on the cluster before the pool will start. If you do not need to run commands interactively, and/or have your code in a script, please try the [batch](#batch) example.
 
+<!-- markdownlint-disable MD024 -->
 #### Number of Workers
 
 The **parpool** command can be submitted with variable pool size, where **N** is the number of workers. Please try to use **parpool** sizes that are multiples of 12.
@@ -114,6 +115,7 @@ The **parpool** command can be submitted with variable pool size, where **N** is
 ```
 
 #### Job Time
+<!-- markdownlint-enable MD024 -->
 
 Each parpool job is submitted to the HPC cluster with **default max walltime of 7 days** There are times (near maintenance windows) that this may not work for every job. You can add a unique time limit to your job by using **AdditionalSubmitArgs**.
 

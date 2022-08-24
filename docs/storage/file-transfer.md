@@ -17,25 +17,25 @@ Secure copy (scp) is a tool for secure data transfer between UNIX-like systems u
 File to HPC Cluster:
 
 ```bash
-$ scp local_file user@login-hpc.rcc.mcw.edu:/path/to/remote/target-directory
+scp local_file user@login-hpc.rcc.mcw.edu:/path/to/remote/target-directory
 ```
 
 Directory to HPC Cluster:
 
 ```bash
-$ scp -r local_directory user@login-hpc.rcc.mcw.edu:/path/to/remote/target-directory
+scp -r local_directory user@login-hpc.rcc.mcw.edu:/path/to/remote/target-directory
 ```
 
 File from HPC Cluster:
 
 ```bash
-$ scp user@login-hpc.rcc.mcw.edu:/path/to/remote_file /path/to/local/target-directory
+scp user@login-hpc.rcc.mcw.edu:/path/to/remote_file /path/to/local/target-directory
 ```
 
 Directory from HPC Cluster:
 
 ```bash
-$ scp -r user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/target-directory
+scp -r user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/target-directory
 ```
 
 ### rsync
@@ -45,25 +45,25 @@ Remote sync (rsync) is a fast and secure data transfer tool. Available on Linux 
 File to HPC Cluster:
 
 ```bash
-$ rsync -avz local_file user@login-hpc.rcc.mcw.edu:/path/to/target-directory
+rsync -avz local_file user@login-hpc.rcc.mcw.edu:/path/to/target-directory
 ```
 
 Directory to HPC Cluster:
 
 ```bash
-$ rsync -avz local_directory user@login-hpc.rcc.mcw.edu:/path/to/target-directory
+rsync -avz local_directory user@login-hpc.rcc.mcw.edu:/path/to/target-directory
 ```
 
 File from HPC Cluster:
 
 ```bash
-$ rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_file /path/to/local/target-directory
+rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_file /path/to/local/target-directory
 ```
 
 Directory from HPC Cluster:
 
 ```bash
-$ rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/target-directory
+rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/target-directory
 ```
 
 ## Desktop Clients

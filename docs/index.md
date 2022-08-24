@@ -40,7 +40,7 @@ Contact Research Computing support at {{ support_email }}.
 
 RCC is planning workshops on a variety of topics. These are meant to include multiple levels of expertise and cover such topics as HPC, scripting, containers, etc. If you have a suggestion for a new workshop, please contact {{ support_email }}.
 
-| Title	| Level | Slides |
+| Title | Level | Slides |
 | ----- | ----- | ------ |
 | HPC Cluster Onboarding | Introductory | [Download](files/HPC_Cluster_Onboarding_2022.pdf) |
 

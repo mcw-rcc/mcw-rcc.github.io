@@ -22,6 +22,7 @@
 
 ??? question "How do I add a student to my Research Group Storage security group?"
     * PIs should contact {{ support_email }} with the username of your new student.
+
     * Non-PIs should contact {{ support_email }} with your username, the PI's username, and the username of the new student.
 
 ??? question "How do I reset my password?"
@@ -31,35 +32,39 @@
 
 ??? question "How do I submit a job to the HPC cluster?"
     You can submit a job to the HPC cluster with the `sbatch` command.
+
     ```bash
     $ sbatch hpc-run.slurm
     Submitted batch job 6782
-```
+    ```
 
 ??? question "How do I run an interactive job on the cluster?"
     You can start an interactive job on the HPC cluster using the SLURM `srun` command.
+
     ```bash
     $ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --pty bash
-```
+    ```
 
 ??? question "How do I check the status of my job?"
     You can find the current status of your job with the `squeue` command.
+
     ```bash
     $ squeue -j 6696
                 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                     1234    normal Testing user  R      37:09      1 cn59
-```
+    ```
 
 ??? question "How can I see the status of the HPC cluster?"
     You can find the current status of the HPC cluster resources with the `slurminfo` command.
+
     ```bash
     $ slurminfo
             QUEUE   FREE  TOTAL   FREE  TOTAL   RESORC    OTHER  MAXJOBTIME    CORES    NODE  GPU
         PARTITION  CORES  CORES  NODES  NODES  PENDING  PENDING   DAY-HR:MN  PERNODE  MEM-GB (COUNT)
             normal   1715   2880     34     60        0        0     7-00:00       48     360 -
             bigmem      0     96      0      2        0        0     7-00:00       48    1500 -
-            gpu    279    288      3      6        0        0     7-00:00       48     360 gpu:v100(4)
-```
+            gpu       279    288      3      6        0        0     7-00:00       48     360 gpu:v100(4)
+    ```
 
 ??? question "Why is my job not running?"
     There are several reasons that your job might not be running.
@@ -101,6 +106,7 @@
 
 ??? question "How do I check my available storage directories and utilization?"
     You can easily find your available storage directories and current utilization with the `mydisks` command.
+
     ```bash
     $ mydisks
     ======My Lab======
@@ -109,7 +115,7 @@
     932G  158G  774G  17% /group/pi
     4.6T     0  4.6T   0% /scratch/u/user
     4.6T     0  4.6T   0% /scratch/g/pi
-```
+    ```
 
 ??? question "Why does my quota show as less space?"
     Your computer reports storage utilization in **base-2 math** and the storage system quotas use **base-10 math**. So, if your quota is 1TB, the `mydisks` command will show 932GB. *Please note that this is a difference in mathematical representation of the same value.* While the `mydisks` command shows less space, you are still able to use your full quota.
@@ -131,12 +137,13 @@
 
 ??? question "How do I use my group storage for collaboration outside my lab?"
     Your lab group storage can be used to collaborate with non-lab members. This is done with by-request project directories. For example, if lab `pi` would like to collaborate with some data for a project called `zephyr`, then the lab PI would contact RCC to create a project directory.
+
     ```bash
     $ ls -l /group/pi
     total 8
     drwxrws---. 3 root sg-pi-zephyr 512 Mar 26 13:52 zephyr
     drwxrws---. 4 root sg-pi       1024 May 19 14:04 work
-```
+    ```
 
     In addition to the usual `work` directory, there is now a `zephyr` project directory, which is controlled by the `sg-pi-zephyr` security group. Project data would go in that directory, and any number of collaborators (MCW researchers) can be added to the security group.
 

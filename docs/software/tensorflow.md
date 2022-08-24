@@ -4,18 +4,35 @@ TensorFlow on HPC can be run in batch, interactive, or Jupyter Notebook.
 
 ## TensorFlow interactive job
 
+Start the job.
+
 ```bash
 srun --job-name=tensorflow --ntasks=1 --time=1:00:00 --gres=gpu:1 --pty bash
-module load tensorflow
-python
-exit
 ```
 
-The example above is run as a normal interactive SLURM job. SLURM will assign a node for interactive use, in this case `gn03`. The TensorFlow software environment is loaded using `module load tensorflow` command. A Python instance is used to run a simple *Hello, TensorFlow!* example. Lastly, exit the python interpreter and close the interactive job. When the interactive job ends, SLURM exits the shell back to the original login shell.
+Load the TensorFlow module.
+
+```bash
+module load tensorflow
+```
+
+Start your training or other commands.
+
+```bash
+python train.py options input output
+```
+
+When your commands end, always remember to end the interactive job.
+
+```bash
+exit
+```
 
 ## TensorFlow batch job
 
 This is an example of running a Python script in a SLURM batch job.
+
+<!-- markdownlint-disable MD046 -->
 === "learning-ml.py"
 
     ```python
@@ -40,6 +57,7 @@ This is an example of running a Python script in a SLURM batch job.
     module load tensorflow
     python /scratch/u/user/learning-ml.py >> output.log  
     ```
+<!-- markdownlint-enable MD046 -->
 
 Save these scripts to your scratch directory, and submit the job:
 

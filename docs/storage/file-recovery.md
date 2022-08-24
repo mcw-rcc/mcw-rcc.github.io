@@ -25,13 +25,15 @@ RCC uses snapshots on the `/group` and `/home` file paths. The RCC file system c
 To recover files in your directory, use the `.snapshot` directory.
 !!! tip "Commands must reference `.snapshot` directly."
     The `.snapshot/` directory is hidden from standard Linux tools. Consider the following example:
+
     ```bash
     $ ls -la /home/user # will not show .snapshot/
     $ ls -la /home/user/.snapshot/ # displays the contents of .snapshot/
-```
+    ```
 
-Then select a snapshot directory. Snapshot directories are numbered with the largest number being the latest snapshot. However, if you would like to see the time points, use command `ls -l`. Once you select a snapshot directory, you can navigate your files. Then copy back the file you need.
+Then select a snapshot directory. Snapshot directories are numbered with the largest number being the latest snapshot. Once you select a snapshot directory, you can navigate your files. Then copy back the file you need.
 
+<!-- markdownlint-disable MD046 -->
 ```bash
 $ ls -l .snapshot/
 total 112
@@ -49,6 +51,7 @@ $ cp .snapshot/555_Home Directory_homefs/file1 /home/user
 $ ls /home/user/
 file1
 ```
+<!-- markdownlint-enable MD046 -->
 
 ### Windows
 

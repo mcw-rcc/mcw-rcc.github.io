@@ -14,8 +14,9 @@ git clone https://github.com/pytorch/examples.git
 
 Now that you have the examples, use the following job script to train the network.
 
+<!-- markdownlint-disable MD046 -->
 === "pytorch-mnist.slurm"
-    ```bash
+    ```txt
     #!/bin/bash
     #SBATCH --job-name=pytorch
     #SBATCH --ntasks=1
@@ -28,11 +29,12 @@ Now that you have the examples, use the following job script to train the networ
     module load pytorch
     python examples/mnist/main.py >> output.log  
     ```
+<!-- markdownlint-enable MD046 -->
 
 Submit the job:
 
 ```bash
-cd /scratch/u/<NetID>/pytorch-test && sbatch pytorch.sh
+cd /scratch/u/netid/pytorch-test && sbatch pytorch.sh
 ```
 
 ## PyTorch Jupyter Notebook
