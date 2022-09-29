@@ -22,7 +22,7 @@ RCC clusters are shared resources. Please be respectful of your computational ne
 
 ## Enforcement
 
-RCC does enforce usage on the cluster login nodes through a service named Arbiter. This service leverages Linux cgroups in order to monitor cpu and  memory usage.
+Each login node has a safety mechanism built-in to prevent a user from crashing the server or other users' processes. This per-user limit is **4 CPU cores** and **20 GB memory**. When a user is at or above their limit, the system will throttle their processes. Users will receive email messages when violations occur.
 
-!!! info "Login node per-user limit is 8 CPU cores and 40 GB memory."
-    When a user is at or above the threshold limit, they start to accrue a "badness score". If a user remains at or above the threshold limit, the badness score increases until it results in a "penalty" condition, which further limits the CPU and memory usage accessible to the user. The penalty condition will throttle usage in order to not violate the established usage policy. Arbiter also maintains a history of penalty status, resulting in a time period before previous behavior is not a factor on new penalties. Users will receive an email message when they enter and exit penalty status. The email will include a listing of their high impact processes, and a graph that shows their CPU and memory usage over a period of time.
+!!! danger "Intensive computing on a login node is prohibited."
+    If a command requires more than 1 core, then it should be submitted in a job to the scheduler. The 4 core limit is a safety mechanism to prevent accidentally crashing a login node, not an approval to run a small computational workflow.

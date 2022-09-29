@@ -10,101 +10,113 @@ Please include the following acknowledgement in any publication resulting from w
 
 ## 2022
 
-**[Conformational selection guides b-arrestin recruitment at a biased G protein–coupled receptor](https://www.science.org/doi/10.1126/science.abj4922)**  
+**[Multi-Omic Integration by Machine Learning (MIMaL)](https://doi.org/10.1093/bioinformatics/btac631)**
+Dickinson Q, Aufschnaiter A, Ott M, Meyer JG
+{: .author}
+
+**[Group 3 innate lymphoid cells require BATF to regulate gut homeostasis in mice](https://doi.org/10.1084/jem.20211861)**
+Wu X, Khatun A, Kasmani MY, Chen Y, Zheng S, Atkinson S, Nguyen C, Burns R, Taparowsky EJ, Salzman NH, Hand TW, Cui W
+{: .author}
+
+**[S097: a single, peri-operative antibiotic can persistently alter the post-operative gut microbiome after Roux-en-Y gastric bypass](https://doi.org/10.1007/s00464-022-09387-4)**  
+Fernando DG, Saravia FL, Atkinson SN, Barron M, Kirby JR, Kindel TL
+{: .author}
+
+**[Bias or biology? Importance of model interpretation in machine learning studies from electronic health records](https://doi.org/10.1093/jamiaopen/ooac063)**  
+Momenzadeh A, Shamsa A, Meyer JG
+{: .author}
+
+**[Conformational selection guides b-arrestin recruitment at a biased G protein–coupled receptor](https://doi.org/10.1126/science.abj4922)**  
 Kleist AB, Jenjak S, Sente A, Laskowski LJ, Szpakowska M, Calkins MM, Anderson EI, McNally LM, Heukers R, Bobkov V, Peterson FC, Thomas MA, Chevigne A, Smit MJ, McCorvy JD, Babu MM, Volkman BF
 {: .author}
 
-**[Autoreactive CD8 T cells in NOD mice exhibit phenotypic heterogeneity but restricted TCR gene usage](https://www.life-science-alliance.org/content/5/10/e202201503.abstract)**  
+**[Autoreactive CD8 T cells in NOD mice exhibit phenotypic heterogeneity but restricted TCR gene usage](https://doi.org/10.26508/lsa.202201503)**  
 Kasmani MY, Ciecko AE, Brown AK, Petrova G, Gorski J, Chen Y, Cui W
 {: .author}
 
-**[Single-cell immune profiling reveals a developmentally distinct CD4+ GM-CSF+ T-cell lineage that induces GI tract GVHD](https://ashpublications.org/bloodadvances/article/6/9/2791/483432/Single-cell-immune-profiling-reveals-a)**  
+**[Single-cell immune profiling reveals a developmentally distinct CD4+ GM-CSF+ T-cell lineage that induces GI tract GVHD](https://doi.org/10.1182/bloodadvances.2021006084)**  
 Piper C, Hainstock E, Yin-Yuan C, Chen Y, Khatun A, Kasmani MY, Evans J, Miller JA, Gorski J, Cui W, Drobyski, WR
 {: .author}
 
-**[Tfh-cell-derived interleukin 21 sustains effector CD8+ T cell responses during chronic viral infection](https://www.sciencedirect.com/science/article/pii/S1074761322000474)**  
+**[Tfh-cell-derived interleukin 21 sustains effector CD8+ T cell responses during chronic viral infection](https://doi.org/10.1016/j.immuni.2022.01.018)**  
 Zander R, Kasmani MY, Chen Y, Topchyan P, Shen J, Zheng S, Burns R, Ingram J, Cui C, Joshi N, Craft J
 {: .author }
 
-**[Cytokine and Nitric Oxide-Dependent Gene Regulation in Islet Endocrine and Nonendocrine Cells](https://academic.oup.com/function/article-abstract/3/1/zqab063/6447539)**  
+**[Cytokine and Nitric Oxide-Dependent Gene Regulation in Islet Endocrine and Nonendocrine Cells](https://doi.org/10.1093/function/zqab063)**  
 Stancill JS, Kasmani MY, Khatun A, Cui W, Corbett JA
 {: .author }
 
-**[The non-ELR CXC chemokine encoded by human cytomegalovirus UL146 genotype 5 contains a C-terminal β-hairpin and induces neutrophil migration as a selective CXCR2 agonist](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010355)**  
+**[The non-ELR CXC chemokine encoded by human cytomegalovirus UL146 genotype 5 contains a C-terminal β-hairpin and induces neutrophil migration as a selective CXCR2 agonist](https://doi.org/10.1371/journal.ppat.1010355)**  
 Berg C, Wedemeyer MJ, Melynis M, Schlimgen RR, Hansen LH, Våbenø J, Peterson FC, Volkman BF, Rosenkilde MM, Lüttichau HR
 {: .author }
 
-**[Investigating the overlapping associations of prior concussion, default mode connectivity, and executive function-based symptoms](https://link.springer.com/article/10.1007/s11682-021-00617-2)**  
+**[Investigating the overlapping associations of prior concussion, default mode connectivity, and executive function-based symptoms](https://doi.org/10.1007/s11682-021-00617-2)**  
 Brett BL, Bryant AM, España LY, Mayer AR, Meier TB
 {: .author }
 
-**[BATF promotes group 2 innate lymphoid cell–mediated lung tissue protection during acute respiratory virus infection](https://www.science.org/doi/abs/10.1126/sciimmunol.abc9934)**  
+**[BATF promotes group 2 innate lymphoid cell–mediated lung tissue protection during acute respiratory virus infection](https://doi.org/10.1126/sciimmunol.abc9934)**  
 Wu X, Kasmani MY, Zheng S, Khatun A, Chen Y, Winkler W, Zander R, Burns R, Taparowsky EJ, Sun J, Cui W
 {: .author }
 
-**[Enhanced interpretation of 935 hotspot and non-hotspot RAS variants using evidence-based structural bioinformatics](https://www.sciencedirect.com/science/article/pii/S2001037021005158)**  
+**[Enhanced interpretation of 935 hotspot and non-hotspot RAS variants using evidence-based structural bioinformatics](https://doi.org/10.1016/j.csbj.2021.12.007)**  
 Tripathi S, Dsouza NR, Mathison AJ, Leverence E, Urrutia R, Zimmermann MT
 {: .author }
 
-**[Improved prediction of older adult discharge after trauma using a novel machine learning paradigm](https://www.sciencedirect.com/science/article/pii/S0022480421005485)**  
+**[Improved prediction of older adult discharge after trauma using a novel machine learning paradigm](https://doi.org/10.1016/j.jss.2021.08.021)**  
 Morris RS, Tignanelli CJ, deRoon-Cassini T, Laud P, Sparapani R
 {: .author }
 
-**[Clinical interpretation of machine learning models for prediction of diabetic complications using electronic health records](https://www.medrxiv.org/content/10.1101/2022.03.11.22272039v1)**  
-Momenzadeh A, Shamsa A, Meyer JG
-{: .author }
-
-**[The association between concussion history and increased symptom severity reporting is independent of common medical comorbidities, personality factors, and sleep quality in collegiate athletes](https://journals.lww.com/headtraumarehab/Abstract/9000/The_Association_Between_Concussion_History_and.99226.aspx)**  
+**[The association between concussion history and increased symptom severity reporting is independent of common medical comorbidities, personality factors, and sleep quality in collegiate athletes](https://doi.org/10.1097/HTR.0000000000000724)**  
 Brett BL, Nelson LD, Meier TB
 {: .author }
 
-**[Positional SHAP (PoSHAP) for Interpretation of machine learning models trained from biological sequences](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009736)**  
+**[Positional SHAP (PoSHAP) for Interpretation of machine learning models trained from biological sequences](https://doi.org/10.1371/journal.pcbi.1009736)**  
 Dickinson Q, Meyer JG
 {: .author }
 
 ## 2021
 
-**[Interpreting Sequence Variation in PDAC-Predisposing Genes Using a Multi-Tier Annotation Approach Performed at the Gene, Patient, and Cohort Level](https://www.frontiersin.org/articles/10.3389/fonc.2021.606820/full)**  
+**[Interpreting Sequence Variation in PDAC-Predisposing Genes Using a Multi-Tier Annotation Approach Performed at the Gene, Patient, and Cohort Level](https://doi.org/10.3389/fonc.2021.606820)**  
 Zimmermann MT, Mathison AJ, Stodola T, Evans DB, Abrudan JL, Demos W, Tschannen M, Aldakkak M, Geurts J, Lomberk G, Tsai S
 {: .author }
 
-**[Structural bioinformatics enhances mechanistic interpretation of genomic variation, demonstrated through the analyses of 935 distinct RAS family mutations](https://academic.oup.com/bioinformatics/article/37/10/1367/5998662)**  
+**[Structural bioinformatics enhances mechanistic interpretation of genomic variation, demonstrated through the analyses of 935 distinct RAS family mutations](https://doi.org/10.1093/bioinformatics/btaa972)**  
 Tripathi S, Dsouza NR, Urrutia R, Zimmermann MT
 {: .author }
 
-**[Association of Previous Concussion with Hippocampal Volume and Symptoms in Collegiate-Aged Athletes](https://www.liebertpub.com/doi/full/10.1089/neu.2020.7143)**  
+**[Association of Previous Concussion with Hippocampal Volume and Symptoms in Collegiate-Aged Athletes](https://doi.org/10.1089/neu.2020.7143)**  
 Meier TB, España LY, Kirk AJ, Nader AM, Powell JE, Nelson LD, Mayer AR, Brett BL
 {: .author }
 
-**[Association of Head Impact Exposure with White Matter Macrostructure and Microstructure Metrics](https://www.liebertpub.com/doi/full/10.1089/neu.2020.7376)**  
+**[Association of Head Impact Exposure with White Matter Macrostructure and Microstructure Metrics](https://doi.org/10.1089/neu.2020.7376)**  
 Brett BL, Koch KM, Muftuler LT, Budde M, McCrea MA, Meier TB
 {: .author }
 
-**[Acute post-concussive assessments of brain tissue magnetism using magnetic resonance imaging](https://www.liebertpub.com/doi/full/10.1089/neu.2020.7322)**  
+**[Acute post-concussive assessments of brain tissue magnetism using magnetic resonance imaging](https://doi.org/10.1089/neu.2020.7322)**  
 Koch KM, Nencka AS, Swearingen B, Bauer A, Meier TB, McCrea M
 {: .author }
 
-**[P2T2: Protein Panoramic annoTation Tool for the interpretation of protein coding genetic variants](https://academic.oup.com/jamiaopen/article/4/3/ooab065/6344810)**  
+**[P2T2: Protein Panoramic annoTation Tool for the interpretation of protein coding genetic variants](https://doi.org/10.1093/jamiaopen/ooab065)**  
 DeVoe E, Oliver GR, Zenka R, Blackburn PR, Cousin MA, Boczek NJ, Kocher JA, Urrutia R, Klee EW, Zimmermann MT
 {: .author }
 
-**[Influence of cervical spine sagittal alignment on range of motion after corpectomy: a finite element study](https://link.springer.com/article/10.1007/s00701-020-04619-9)**  
+**[Influence of cervical spine sagittal alignment on range of motion after corpectomy: a finite element study](https://doi.org10.1007/s00701-020-04619-9)**  
 John JD, Kumar GS, Yoganandan N, Rajshekhar V
 {: .author }
 
-**[BATF regulates progenitor to cytolytic effector CD8+ T cell transition during chronic viral infection](https://www.nature.com/articles/s41590-021-00965-7)**  
+**[BATF regulates progenitor to cytolytic effector CD8+ T cell transition during chronic viral infection](https://doi.org/10.1038/s41590-021-00965-7)**  
 Chen Y, Zander RA, Wu X, Schauder DM, Kasmani MY, Shen J, Zheng S, Burns R, Taparowsky EJ, Cui W
 {: .author }
 
-**[E2A-regulated epigenetic landscape promotes memory CD8 T cell differentiation](https://www.pnas.org/doi/10.1073/pnas.2013452118)**  
+**[E2A-regulated epigenetic landscape promotes memory CD8 T cell differentiation](https://doi.org/10.1073/pnas.2013452118)**  
 Schauder DM, Shen J, Chen Y, Kasmani MY, Kudek MR, Burns R, Cui W
 {: .author }
 
-**[Single-cell RNA sequencing of mouse islets exposed to proinflammatory cytokines](https://www.life-science-alliance.org/content/4/6/e202000949.abstract)**  
+**[Single-cell RNA sequencing of mouse islets exposed to proinflammatory cytokines](https://doi.org/10.26508/lsa.202000949)**  
 Stancill JS, Kasmani MY, Khatun A, Cui W, Corbett JA
 {: .author }
 
-**[Suppressive neutrophils require PIM1 for metabolic fitness and survival during chronic viral infection](https://www.sciencedirect.com/science/article/pii/S2211124721005027)**  
+**[Suppressive neutrophils require PIM1 for metabolic fitness and survival during chronic viral infection](https://doi.org/10.1016/j.celrep.2021.109160)**  
 Volberding PJ, Xin G, Kasmani MY, Khatun A, Brown AK, Nguyen C, Stancill JS, Martinez E, Corbett JA, Cui W
 {: .author }
 
@@ -234,6 +246,6 @@ Olp MD, Zhu N, Smith BC
 
 ## 2016
 
-**[Mechanism of Sirt1 NAD+-dependent Protein Deacetylase Inhibition by Cysteine S-Nitrosation](https://www.jbc.org/article/S0021-9258(20)34533-6/fulltext)**  
+**[Mechanism of Sirt1 NAD+-dependent Protein Deacetylase Inhibition by Cysteine S-Nitrosation](https://doi.org/10.1074/jbc.M116.754655)**  
 Kalous KS, Wynia-Smith SL, Olp MD, Smith BC
 {: .author }

@@ -4,7 +4,7 @@ RCC offers multiple types of storage to all users. Each storage type has a uniqu
 
 !!! tip "You can easily find your available storage directories and current utilization on the cluster  with the `mydisks` command."
 
-    ```bash
+    ```txt
     $ mydisks
     =====My Lab=====
     Size  Used Avail Use% File

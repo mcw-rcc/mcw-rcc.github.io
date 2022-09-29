@@ -1,3 +1,5 @@
+# Abbreviations
+
 *[GPU]: Graphical Processing Unit
 *[CPU]: Central Processing Unit
 *[I/O]: Input Output
