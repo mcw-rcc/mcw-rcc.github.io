@@ -10,11 +10,11 @@ Please include the following acknowledgement in any publication resulting from w
 
 ## 2022
 
-**[Multi-Omic Integration by Machine Learning (MIMaL)](https://doi.org/10.1093/bioinformatics/btac631)**
+**[Multi-Omic Integration by Machine Learning (MIMaL)](https://doi.org/10.1093/bioinformatics/btac631)**  
 Dickinson Q, Aufschnaiter A, Ott M, Meyer JG
 {: .author}
 
-**[Group 3 innate lymphoid cells require BATF to regulate gut homeostasis in mice](https://doi.org/10.1084/jem.20211861)**
+**[Group 3 innate lymphoid cells require BATF to regulate gut homeostasis in mice](https://doi.org/10.1084/jem.20211861)**  
 Wu X, Khatun A, Kasmani MY, Chen Y, Zheng S, Atkinson S, Nguyen C, Burns R, Taparowsky EJ, Salzman NH, Hand TW, Cui W
 {: .author}
 

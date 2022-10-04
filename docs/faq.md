@@ -121,10 +121,10 @@
     Your computer reports storage utilization in **base-2 math** and the storage system quotas use **base-10 math**. So, if your quota is 1TB, the `mydisks` command will show 932GB. *Please note that this is a difference in mathematical representation of the same value.* While the `mydisks` command shows less space, you are still able to use your full quota.
 
 ??? question "What types of storage are available?"
-    RCC offers multiple types of storage to all users. Each storage type has a unique path on the cluster, and a unique use-case. Some storage is meant only for use with the cluster, while other storage like [Research Group Storage](storage/research-group-storage.md) can be used as generalized Windows storage. Please see [Storage Overview](storage/overview.md) for details.
+    RCC offers multiple types of storage to all users. Each storage type has a unique path on the cluster, and a unique use-case. Some storage is meant only for use with the cluster, while other storage like [Research Group Storage](storage/paid-storage.md) can be used as generalized Windows storage. Please see the [Storage Overview](storage/rcc-storage.md) for details.
 
 ??? question "Can I increase my storage limits?"
-    Your home directory limit cannot be increased. You scratch directory limit may be increase upon request but this is subject to availability. Your `/group` Research Group Storage directory may be increased by [purchasing additional space](storage/research-group-storage.md#paid-additional-storage).
+    Your home directory limit cannot be increased. You scratch directory limit may be increase upon request but this is subject to availability. Your `/group` Research Group Storage directory may be increased by [purchasing additional space](storage/paid-storage.md).
 
 ??? question "Why is `/group` not available on HPC cluster compute nodes?"
     The file system that contains `/group` is not designed for performance computing. In order to preserve every user's experience with `/group`, it is not available on compute nodes. You should follow the [scratch directory procedures](user-guide/quickstart.md#using-storage-with-jobs) to make sure your data is available to your cluster job.
