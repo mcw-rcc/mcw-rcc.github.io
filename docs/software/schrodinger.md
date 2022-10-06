@@ -13,17 +13,17 @@ RCC has licensed the Small-Molecule Drug Discovery Suite by [Schrodinger](https:
 
 1. Download 2022-1 software from <https://www.schrodinger.com> and run the installer.
 2. Locate the schrodinger.hosts file.
-: Windows
+: **Windows**  
     `$INSTALLDIR\Schrodinger 2022-1\schrodinger.hosts`
-: !!! tip "Mac"
+: **Mac**  
     `/opt/schrodinger/suites2022-1/schrodinger.hosts`
 
 3. Download the [server schrodinger.hosts file](https://mcw.box.com/shared/static/aa5gq2ndgejsn8htvyvshpehbjf4jvjz.hosts). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
 4. Setup remote connection to the cluster.
-: !!! tip "Windows"
-    Open the **Remote Login Configuration** tool. Select **Generate Keys**. Select **Initialize Host Access**. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select **Initialize**.
-: !!! tip "Mac"
+: **Windows**  
+    Open the `Remote Login Configuration` tool. Select `Generate Keys`. Select `Initialize Host Access`. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select `Initialize`.
+: **Mac**  
     Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html).
 
 5. Contact {{ support_email }} for license information. Then open the **Configure Licensing** tool. Select **I can identify my license server** from the **Add Licenses** drop-down menu. Enter the Host Name and Port provided by Research Computing. Click Save Server.
