@@ -51,7 +51,7 @@ MATLAB requires that the Parallel Server version match the client version. RCC a
 ## Upgrading
 
 !!! tip "RCC will periodically update the MATLAB Parallel Server software to the next B version."
-    To update, first desktop software to match the new cluster version. Then follow the steps above to configure the new version. Please note that your client software must be equal version or older than cluster version.}}
+    To update, first desktop software to match the new cluster version. Then follow the steps above to configure the new version. Please note that your client software must be equal version or older than cluster version.
 
 ## Using the Cluster
 
@@ -68,19 +68,6 @@ The **batch** command can be submitted as a pool job, where **N** is the number 
 ```matlab
 >> job = batch('mytest','Pool',N)
 ```
-<!--A batch job requires 1 extra worker to run the pool. Therefore, the number of workers **N** is defined as **N-1**.
-
-Examples:
- Incorrect job with 48 workers.
- >> job = batch('mytest','Pool',48)
-This job will be rejected. The **batch** command adds 1 worker to run the pool and the total pool size is incorrect, 49 workers.
- Correct job with 48 workers.
- >> job = batch('mytest','Pool',47)
-This job will be submitted. The **batch** command adds 1 worker to run the pool and the total pool size is correct.
- Correct job with 100 workers.
- >> job = batch('mytest','Pool',99)
-This job will be submitted. The **batch** command adds 1 worker to run the pool and the total pool size is correct.
--->
 
 #### Job Time
 
@@ -211,109 +198,5 @@ The HPC Cluster is a shared resource. Please only use whatever resources are nee
 Review Mathwork's [Batch Processing](https://www.mathworks.com/help/distcomp/batch-processing.html) and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html) documentation.
 
 If you have questions/concerns please contact {{ support_email }}
-
-<!--Create a cluster object.
- c = parcluster('WilesMatlabCluster')
-
-Create a job object associated with the cluster object.
- j = createJob(c)
-
-Create tasks for the job. Here we create 5 tasks that each generate a 3x3 matrix of random numbers.
- createTask(j, @rand, 1, {3,3});
- createTask(j, @rand, 1, {3,3});
- createTask(j, @rand, 1, {3,3});
- createTask(j, @rand, 1, {3,3});
- createTask(j, @rand, 1, {3,3});
-
-Submit your task to the cluster.
- submit(j)
-
-Use the wait function to wait for the job to end or select Home > Parallel > Monitor Jobs to open the job monitor.
- wait(j)
-
-Gather the results.
- results = fetchOutputs(j);
-
-Print the results from each task.
- results{1:5}
--->
-
-<!--Old setup
-==Installation for Non-Interactive Use==
-
-Using Wiles in non-interactive mode is the most efficient use of the cluster. In non-interactive use, the user can send their job from their local machine to the remote cluster for processing. The results are then copied back to the user's local machine. This requires setup of a Cluster Profile in your installation of MATLAB. Some steps are marked according to your chosen platform.
-
-* '''Step 1:''' Obtain RCC user account with Wiles MATLAB Cluster access enabled.
-----
-* '''Step 2:''' Obtain MATLAB R2016a Client software. Available for purchase from the [https://infoscope.mcw.edu/RCC/Software-Catalog/Mathworks-Matlab.htm RCC Software Catalog].
----- 
-* '''Step 3:''' Follow the link in your MATLAB purchase email to download the WilesCluster Profile to your desktop. 
-----
-* '''Step 4:''' Windows - Copy the files in:
- WilesCluster/config 
-to:
- $MATLABINSTALLDIR/toolbox/local
-----
-* '''Step 4:''' Mac - Right click MATLAB_R2016a in the Applications directory and select Show Package Contents.
-
-[[File:Mac_File_Install.png|500px|MATLAB install directory location.]]
-
-Copy the files in:
- WilesCluster/config 
-to:
-
-[[File:Mac_File_Location.png|400px|MATLAB install directory location.]]
- $MATLABINSTALLDIR/toolbox/local
-
-Copy WilesCluster Profile:
- WilesCluster/config/WilesCluster.settings
-to:
-
-[[File:Mac_Cluster_Profile.png|400px|MATLAB Cluster profile location.]]
-----
-* '''Step 5:''' Launch the MATLAB application, open the Parallel tab, and select Manage Cluster Profiles.
-[[File:MATLAB_Menu.png|600px|MATLAB client program parallel menu.]]
-----
-:* '''Step 5a:''' Select Import.
-
-[[File:MATLAB_Import.png|600px|MATLAB client program import menu.]] 
-----
-:* '''Step 5b:''' Windows - Add the WilesCluster.settings file found here:
- $MATLABINSTALLDIR/toolbox/local/WilesCluster.settings
-----
-:* '''Step 5b:''' Mac - Add the WilesCluster.settings file found here:
-
-[[File:Mac_Cluster_Profile.png|400px|MATLAB Cluster profile location.]]
-----
-:* '''Step 5c:''' Click edit. In the IndependentSubmitFcn and CommunicatingSubmitFcn, replace username in with your RCC username. Click Done.
-
-[[File:MATLAB_Username.png|600px|MATLAB client program replace username.]]
-----
-* '''Step 6:''' Test your connectivity to the Wiles MATLAB Cluster, click Validate, enter your Research Computing username and password (do not use identity file), the tests may take a few min. Please note that test 5 “Parallel pool test (parpool)” will fail. This is normal since “parpool” is for interactive jobs.
-----
-* '''Step 7:''' Set WilesCluster as your default profile:
-
-[[File:MATLAB_Profile.png|600px|MATLAB client program select profile.]]
-
-==Interactive Use==
-
-Mac (requires XQuartz) and Linux users login directly to the head node with your Research Computing username and password by the following command:
-
- $ ssh –X username@<nowiki>wiles.rcc.mcw.ed</nowiki>u
-
-Windows users login directly to the head node with your Research Computing username and password using X-Win32 or similar x-windows program. (Contact Research Computing for more information.)
-
-Once logged in to the head node, run the following command:
-
- $ matlab
-
-Import the cluster profile. The <nowiki>WilesCluster.se</nowiki>ttings file is in: 
-
- $ /usr/local/MATLAB/R2016a
-
-Set the WilesCluster profile as default profile. To test the cluster profile, click Validate, the tests will run for a few min. All tests should complete without error.
-
-==Example Use==
-An example script for running your scripts on the Wiles Matlab Cluster is available in the WilesCluster/scripts folder. Additional information on Matlab non-interactive batch job submission is available from [http://www.mathworks.com/help/distcomp/batch.html Mathworks].-->
 
 --8<-- "includes/abbreviations.md"

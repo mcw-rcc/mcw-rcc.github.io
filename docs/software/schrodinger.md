@@ -13,7 +13,7 @@ RCC has licensed the Small-Molecule Drug Discovery Suite by [Schrodinger](https:
 
 1. Download 2022-1 software from <https://www.schrodinger.com> and run the installer.
 2. Locate the schrodinger.hosts file.
-: !!! tip "Windows"
+: Windows
     `$INSTALLDIR\Schrodinger 2022-1\schrodinger.hosts`
 : !!! tip "Mac"
     `/opt/schrodinger/suites2022-1/schrodinger.hosts`

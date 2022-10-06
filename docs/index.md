@@ -26,10 +26,6 @@ In addition to the cluster's scratch storage, RCC also provides general purpose 
 
 Cluster software installation and tuning services are available to all users. We will help install most supported software packages on the clusters, and when able, will advise on best use for our clusters. This might include advice on data staging, parallelization, memory utilization, etc. Please note that team members are not domain knowledge experts in the sciences, and will not advise you on the accuracy or applicability of any software package for your research. You can [request software installation](software/module-request.md) today.
 
-### Secure Computing
-
-!!! info "Coming soon!"
-
 ### Consulting
 
 We are glad to help with your research data and computing needs. Consulting topics might include how best to use the cluster for a workflow, software install, research data management, help with grants, security, etc. Project time, software development, paid support, and other dedicated resources are not available.
