@@ -14,9 +14,13 @@ Research Computing provides services and support for computational research at M
 
 The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster consists of **3,264** CPU cores in **68** compute nodes. This includes large memory nodes and GPUs. All compute nodes are connected by a 100Gbps RoCEv2 network (ethernet equivalent to Infiniband). The cluster also includes a **215TB** NVMe scratch storage filesystem. Please see the [Quick Start guide](user-guide/quickstart.md) for more detail.
 
+### ResHPC
+
+**Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA), including dbGaP projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider security requirements. Please see the [ResHPC overview](secure-computing/reshpc.md) to get started.
+
 ### Data Storage
 
-In addition to the cluster's scratch storage, RCC also provides general purpose research storage with a **1.8PB** filesystem. This persistent storage is mounted on the cluster via NFS, or provided directly to user's via NFS and SMB. Please see the [Storage Overview](storage/overview.md) for more detail.
+In addition to the cluster's scratch storage, RCC also provides general purpose research storage with a **1.8PB** filesystem. This persistent storage is mounted on the cluster via NFS, or provided directly to user's via NFS and SMB. Please see the [Storage Overview](storage/rcc-storage.md) for more detail.
 
 ### Software
 

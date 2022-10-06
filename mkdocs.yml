@@ -113,12 +113,17 @@ nav:
       - Troubleshoot Jobs: user-guide/jobs/troubleshoot.md
       - Job Metrics: user-guide/jobs/xdmod.md
   - Data Storage:
-    - storage/overview.md 
-    - storage/research-group-storage.md
-    - storage/file-cleanup.md
-    - storage/file-recovery.md
-    - storage/file-transfer.md
+    - storage/rcc-storage.md
+    - storage/paid-storage.md 
     - storage/ref-data.md
+    - storage/mcw-storage.md
+    - Access & Sharing:
+      - storage/data-access.md
+      - storage/data-sharing.md
+    - Manage:
+      - storage/file-cleanup.md
+      - storage/file-recovery.md
+      - storage/file-transfer.md
   - Software:
     - Using Modules: software/modules.md
     - Requesting Software: software/module-request.md
@@ -130,3 +135,10 @@ nav:
       - software/matlab.md
       - software/schrodinger.md
       - software/singularity.md
+  - ResHPC:
+    - Overview: secure-computing/reshpc.md
+    - Accounts & Projects: secure-computing/project-account.md
+    - Logging in: secure-computing/mfa-login.md
+    - Storage: secure-computing/project-storage.md
+    - Run a Job: secure-computing/workflow.md
+    - Software: secure-computing/software.md

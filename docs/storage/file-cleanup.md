@@ -6,7 +6,7 @@ There are several tools and commands available to help you manage your data, inc
 
 You can easily find your available storage directories and current utilization on the clusters with the `mydisks` command.
 
-```bash
+```txt
 $ mydisks
 =====My Lab=====
 Size  Used Avail Use% File
@@ -18,11 +18,8 @@ Size  Used Avail Use% File
 
 ## Finding Large Files and Directories
 
-The following commands are available from the Linux command-line on all clusteres.
+Several tools exist to help identify file size and type. Here we discuss use of `du`.
 
-### du
-
-du is a tool to estimate file space usage.
 To list the top 20 files/directories, sorted by size:
 
 ```bash
@@ -39,21 +36,19 @@ du -h --max-depth=1
 
 So now you have identified some folders that you don't immediately need.  You can compress and archive those directories or files using `tar` and `gzip`.
 
-### tar
-
-Use the following command to compress an entire directory while in your SSH terminal.  It'll recursively compress every file and directory inside the path you specify.
+To recursively compress every file and directory inside the path you specify:
 
 ```bash
 tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
 ```
 
-Here are what the switches mean:
+The `tar` command has many switches. We used the most common set in the previous command:
 
 ```txt
--c: Create an archive.
--z: Compress the archive with gzip.
--v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
--f: Allows you to specify the filename of the archive.
+-c Create an archive.  
+-z Compress the archive with gzip.  
+-v Display progress in the terminal while creating the archive, also known as “verbose” mode.  
+-f Allows you to specify the filename of the archive.
 ```
 
 If you have a directory called **myproject** in your current home directory that you want to compress and archive, you can run the following.
@@ -85,7 +80,9 @@ tar -xzvf myproject.tar.gz
 
 The `-x` flags tells tar to extract.  Once the command completes, you will now have the folder **myproject** available in your current directory.
 
-### Creating a manifest/list of files in an archive
+### Creating a file manifest
+
+When archiving a dataset, it is often helpful to have a full manifest, or list, of the original file hierarchy. A file manifest is also a key piece of metadata.
 
 To list files in an .tar.gz achive:
 
@@ -99,39 +96,22 @@ To create a manifest file of the listing, run the same command, but pipe it to a
 tar -tf myarchive.tar.gz > myarchive.manifest
 ```
 
-### Using zip to split archives into smaller chunks
+### Managing archive file size
 
-Sometimes may want to limit the max size the output archive file, for example to split it up into many smaller archives to make uploading to a share site easier.  In this example, we'll use a zip command to split a 150GB directory into smaller 50GB archive files.
+Some file archives can be quite large. If you're uploading your archive to a repository, there may be a max single file upload size. In this case it is useful to split the archive file into smaller chunks.
 
-To create a split zip archive of a folder called **my150GBproject** with the max size of each zip file being 50GB:
-
-```bash
-zip -r -s 50g my150GBproject.zip my150GBproject/
-```
-
-To unzip this archive, you have to do two steps.  The first will combine the parts into a single zip file.  The second will unzip it and create your original directory back.
+To split a `.tar.gz` archive into smaller chunksize:
 
 ```bash
-unzip -s 0 my150GBproject.zip --out unsplit.zip   # this combines the split files back into one zip
-unzip unsplit.zip   # this will exact the files
+split -b 500M myarchive.tar.gz "myarchive.tar.gz.part"
 ```
 
-### gzip
+Now you should have a set of 500M files.
 
-You can compress individual files by running `gzip` on the original file.  For example
+To join the file chunks and recreate the full archive:
 
 ```bash
-gzip myfile.txt
+cat myarchive.tar.gz.parta* > myarchive.tar.gz.joined
 ```
-
-This creates a new compressed file called **myfile.txt.gz** in your current directory.
-
-If you later need to access that file again, you can decompress it using this command.
-
-```bash
-gunzip myfile.txt.gz
-```
-
-You now have the original **myfile.txt** available.
 
 --8<-- "includes/abbreviations.md"
