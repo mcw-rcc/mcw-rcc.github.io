@@ -4,15 +4,11 @@ MCW offers multiple campus-wide storage options.
 
 ## MCW-IS Storage
 
-Most users with MCW-owned or managed machines will recognize this storage as a `H:\` or `G:\` drive on their Windows computer. This storage is free and backed up, but limited in size and performance, and meant for productivity data, i.e., documents, spreadsheets, etc. Please send questions to the MCW-IS help desk.
+Most users with MCW-owned or managed machines will recognize this storage as a `H:\` or `G:\` drive on their Windows computer. This storage is free and backed up, but limited in size and performance, and meant for productivity data, i.e., documents, spreadsheets, etc. Please do not store raw research data. Contact MCW-IS help desk with questions.
 
-## Box
+## Box and OneDrive
 
-Every MCW user has a finite amount of space available and a max single file upload size. This storage is free to all users, but should not be considered backed up, i.e., do not make Box your only data copy. Additionally, this storage is limited in size and performance, and meant for productivity data. Data sharing is possible. Please send questions to the MCW-IS help desk.
-
-## OneDrive
-
-Every MCW user has a finite amount of space available and a max single file upload size. This storage is free to all users, but should not be considered backed up, i.e., do not make Box your only data copy. Additionally, this storage is limited in size and performance, and meant for productivity data. Data sharing is possible. Please send questions to the MCW-IS help desk.
+Every MCW user has a finite amount of free space available on Box and OneDrive. Both solutions are cloud based, and utilize your MCW credentials for access. These solutions are suitable for productivity data, i.e., documents, spreadsheets, presentations, etc. Please do not store raw research data. In addition, both have a max file upload sizes, and an option to share data. Contact MCW-IS help desk with questions.
 
 ## Electronic Lab Notebook
 

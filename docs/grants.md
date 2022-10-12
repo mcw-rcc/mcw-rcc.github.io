@@ -11,11 +11,11 @@ The MCW Research Computing Center (RCC) is a division within MCW Information Ser
 
 ## High Performance Computing
 
-The HPC environment includes 68 computational nodes, 3264 processor cores, 28.3 TB of memory, and 24 graphical processing units (GPUs). The nodes are interconnected by 100 Gb/s Ethernet, allowing efficient parallel computing for both CPU and GPU intensive workloads. Job submission and scheduling is controlled by the Simple Linux Utility for Resource Management (SLURM). SLURM is an open-source HPC scheduling system that automates job submission, controls resource access, and maintains fair use of all systems. Each compute node includes a standardized operating system image, set of compilers, math libraries, and system software. RCC also supports a variety of open-source software and containerized workloads are supported.
+The **H**igh **P**erformance **C**omputing (HPC) environment includes 68 computational nodes, 3264 processor cores, 28.3 TB of memory, and 24 graphical processing units (GPUs). The nodes are interconnected by 100 Gb/s Ethernet, allowing efficient parallel computing for both CPU and GPU intensive workloads. Job submission and scheduling is controlled by the Simple Linux Utility for Resource Management (SLURM). SLURM is an open-source HPC scheduling system that automates job submission, controls resource access, and maintains fair use of all systems. Each compute node includes a standardized operating system image, set of compilers, math libraries, and system software. RCC also supports a variety of open-source software and containerized workloads are supported.
 
-## Secure Computing
+## Restricted HPC
 
-!!! info "Coming soon!"
+**Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed with security enhancements for restricted datasets that have a defined Data Use Agreement (DUA), including dbGaP projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories.
 
 ## Data Storage
 
