@@ -20,13 +20,13 @@ RCC has licensed the Small-Molecule Drug Discovery Suite by [Schrodinger](https:
 
 3. Download the [server schrodinger.hosts file](https://mcw.box.com/shared/static/aa5gq2ndgejsn8htvyvshpehbjf4jvjz.hosts). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
-4. Setup remote connection to the cluster.
+4. Contact {{ support_email }} for license information. Then open the **Configure Licensing** tool. Select **I can identify my license server** from the **Add Licenses** drop-down menu. Enter the `Host Name` and `Port` provided by Research Computing. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
+
+5. Setup remote connection to the cluster.
 : **Windows**  
     Open the `Remote Login Configuration` tool. Select `Generate Keys`. Select `Initialize Host Access`. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select `Initialize`.
 : **Mac**  
     Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html).
-
-5. Contact {{ support_email }} for license information. Then open the **Configure Licensing** tool. Select **I can identify my license server** from the **Add Licenses** drop-down menu. Enter the Host Name and Port provided by Research Computing. Click Save Server.
 
 6. Launch the Maestro application.
 
