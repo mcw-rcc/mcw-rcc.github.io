@@ -140,7 +140,7 @@ The **normal** partition contains the CPU-only nodes, cn01-cn60. This is the def
 
 The **bigmem** partition contains the large memory nodes, hm01-hm02. Each node in this partition has **48 cores**, **1.5TB RAM**, and a **480GB SSD** for local scratch. Use the `#SBATCH --partition=bigmem` directive to have your job run on a large memory server.
 
-#### Gpu
+#### GPU
 
 The **gpu** partition contains the gpu nodes, gn01-gn06. Each node in this partition has **48 cores**, **360GB RAM**, **4 V100 GPUs**, and a **480GB SSD** for local scratch. Use the `#SBATCH --partition=gpu` and `#SBATCH --gres=gpu:1` directives to have your job run on a gpu node.
 
@@ -212,7 +212,7 @@ A CPU resource request is **required** and tells the queueing system how to allo
 #SBATCH --ntasks=1
 ```
 
-Please see [Nodes, Cores & Tasks](#nodes-cores-tasks) for more information.
+Please see [Nodes, Cores & Tasks](#nodes-cores--tasks) for more information.
 
 #### Memory
 

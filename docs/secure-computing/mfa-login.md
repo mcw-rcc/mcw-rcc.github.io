@@ -5,6 +5,14 @@ ResHPC access requires a project user account, which is based on your MCW NetID 
 !!! warning "Network Access"
     ResHPC is available from **Citrix** and **MCW-managed machines**.
 
+## ResHPC OnDemand
+
+If you're new to using a cluster, ResHPC OnDemand offers web browser-based access. You can manage files and start a remote desktop session on the cluster. All of this is possible without logging in via a traditional SSH terminal.
+
+To login, point your browser to <https://ood-reshpc.rcc.mcw.edu>, enter your password, select a Duo MFA option, and complete the login.
+
+## SSH Connection
+
 ResHPC login requires Duo MFA. For Windows users, we recommend a multi-factor compatible terminal client such as [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Mac and Linux users may use their OS provided terminal clients.
 
 To login, use the ResHPC login hostname `login-reshpc.rcc.mcw.edu`, enter your password, select a Duo MFA option, and complete the login process.
