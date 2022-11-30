@@ -2,7 +2,7 @@
 
 ## Access & Login
 
-??? question "How do I get an RCC account?"
+??? question "How do I get an account?"
     Submit an [Account Request](https://forms.office.com/r/98QNm6cAyt) form.
 ??? question "How do I login?"
     The method you use to login depends on your computer and use case. We suggest you start with the [quickstart guide](user-guide/quickstart.md#logging-in).
@@ -113,7 +113,6 @@
     Size  Used Avail Use% File
     47G   29G   19G  61% /home/user
     932G  158G  774G  17% /group/pi
-    4.6T     0  4.6T   0% /scratch/u/user
     4.6T     0  4.6T   0% /scratch/g/pi
     ```
 

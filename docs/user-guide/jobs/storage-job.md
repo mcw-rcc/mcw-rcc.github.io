@@ -7,8 +7,8 @@ RCC storage includes a persistent `/group` space and a transient `/scratch` spac
 
 ## Workflow
 
-1. User copies job input/supporting files from an RGS directory within `/group/{PI_NetID}/...` to their scratch directory `/scratch/u/{NetID}` or `/scratch/g/{PI_NetID}`
+1. User copies job input/supporting files from an RGS directory within `/group/{PI_NetID}/...` to their scratch directory `/scratch/g/{PI_NetID}`
 2. User submits job that computes with the staged job input/supporting files
-3. Job finishes and user copies results from `/scratch/u/{NetID}` or `/scratch/g/{PI_NetID}`, back to `/group/{PI_NetID}/...`
+3. Job finishes and user copies results from `/scratch/g/{PI_NetID}` back to `/group/{PI_NetID}/...`
 4. User continues with further computations with the job input/supporting files
 5. User finishes computations and deletes unneeded job input/supporting files from `/scratch/u/{NetID}` or `/scratch/g/{PI_NetID}`

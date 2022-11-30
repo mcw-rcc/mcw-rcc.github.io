@@ -15,6 +15,19 @@ Login is available both on and off campus via SSH and Open OnDemand. Please see 
 !!! warning "Clusters are shared resources."
     Please be respectful of all other users. Do not start resource-intensive scripts on a login node. Do not request more resources than your job can use. For more info see [User Etiquette](etiquette.md).
 
+## Cluster Storage
+
+Your account has access to a set of storage directories by default. You can easily find your available storage paths and current utilization on the cluster with the `mydisks` command. Please see the [storage guide](../storage/rcc-storage.md) for details.
+
+```txt
+$ mydisks
+=====My Lab=====
+Size  Used Avail Use% File
+47G   29G   19G  61% /home/user
+932G  158G  774G  17% /group/pi
+4.6T     0  4.6T   0% /scratch/g/pi
+```
+
 ## Transferring Files
 
 Most users will need to transfer files to cluster storage. Several methods are available depending on your need. These include Open OnDemand, SSH (command-line), and desktop client software. Please see the [file transfer guide](../storage/file-transfer.md) for details.

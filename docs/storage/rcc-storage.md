@@ -12,7 +12,6 @@ All storage is connected via high speed link to the cluster and available via Li
     Size  Used Avail Use% File
     47G   29G   19G  61% /home/user
     932G  158G  774G  17% /group/pi
-    4.6T     0  4.6T   0% /scratch/u/user
     4.6T     0  4.6T   0% /scratch/g/pi
     ```
 
