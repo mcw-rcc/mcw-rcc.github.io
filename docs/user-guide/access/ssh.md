@@ -27,10 +27,10 @@ When asked for your username, please use your MCW NetID, which is used for most 
 
 ### Password
 
-When asked for your password, please use your MCW password, which is used for most MCW resources including email login.
+When prompted, enter your MCW password, which is used for most MCW resources including email login.
 
-!!! danger " Never share your password"
-    MCW corporate policy stricly prohibits sharing of passwords. Research Computing staff never has access to your password, and we will never ask you for your password.
+!!! danger "Never share your password"
+    MCW policy prohibits sharing of passwords. Research Computing staff never has access to your password, and will never ask you for your password.
 
 ### Example login
 

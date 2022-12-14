@@ -123,6 +123,7 @@ nav:
       - storage/file-cleanup.md
       - storage/file-recovery.md
       - storage/file-transfer.md
+      - storage/file-permissions.md
   - Software:
     - Using Modules: software/modules.md
     - Requesting Software: software/module-request.md

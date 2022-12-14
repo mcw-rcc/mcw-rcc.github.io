@@ -51,11 +51,11 @@ sacct -j jobId # jobId is the job number
     <!-- markdownlint-disable MD046 -->
     ```bash
     $ slurminfo
-           QUEUE   FREE  TOTAL   FREE  TOTAL   RESORC    OTHER  MAXJOBTIME    CORES    NODE  GPU
-       PARTITION  CORES  CORES  NODES  NODES  PENDING  PENDING   DAY-HR:MN  PERNODE  MEM-GB (COUNT)
-          normal   1715   2880     34     60        0        0     7-00:00       48     360 -
-          bigmem      0     96      0      2        0        0     7-00:00       48    1500 -
-             gpu    279    288      3      6        0        0     7-00:00       48     360 gpu:v100(4)
+           QUEUE   FREE  TOTAL   FREE  TOTAL   RESORC    OTHER  MAXJOBTIME    CORES    NODE  GPU      
+       PARTITION  CORES  CORES  NODES  NODES  PENDING  PENDING   DAY-HR:MN    /NODE  MEM-GB (COUNT)
+          normal   2066   2880     41     60        0      144     7-00:00       48     360 -         
+          bigmem     48     96      0      2        0        0     7-00:00       48    1500 -         
+             gpu    223    384      1      8        0       12     7-00:00       48 360-480 gpu:v100:4(S:0-1)(6),gpu:a40:4(S:0-3)(2)
     ```
     <!-- markdownlint-enable MD046 -->
 
@@ -142,7 +142,10 @@ The **bigmem** partition contains the large memory nodes, hm01-hm02. Each node i
 
 #### GPU
 
-The **gpu** partition contains the gpu nodes, gn01-gn06. Each node in this partition has **48 cores**, **360GB RAM**, **4 V100 GPUs**, and a **480GB SSD** for local scratch. Use the `#SBATCH --partition=gpu` and `#SBATCH --gres=gpu:1` directives to have your job run on a gpu node.
+The **gpu** partition contains the gpu nodes. Nodes gn01-gn06 each have **48 cores**, **360GB RAM**, **4 V100 GPUs**, and a **480GB SSD** for local scratch. Nodes gn07-gn08 each have **48 cores**, **480GB RAM**, **4 A40 GPUs**, and a **3.84TB NVMe SSD** for local scratch. Use the `#SBATCH --partition=gpu` and `#SBATCH --gres=gpu:1` directives to have your job run on a gpu node.
+
+!!! tip "GPU Type"
+    To use a specific GPU type, use `#SBATCH --gres=gpu:type:1`, where ***type*** is either `v100` or `a40`. Please note that most jobs will not benefit from specifying a GPU type, and this may delay scheduling of your job.
 
 ### QOS
 
@@ -158,7 +161,7 @@ Job scheduling policies include resource limits on partitions and QOS's, and a f
 | --------- | ------------------ | -------------- | -------------- | ------------- | ---------------------- | -------- |
 | normal    | 7 days (2 hrs)     | 30             | 1440           | N/A           | 7.5GB (7.5GB)          | 10       |
 | bigmem    | 7 days (2 hrs)     | 1              | 48             | N/A           | 31GB (31GB)            | 10       |
-| gpu       | 7 days (2 hrs)     | 3              | 144            | 12            | 7.5GB (7.5GB)          | 10       |
+| gpu       | 7 days (2 hrs)     | 4              | 192            | 16            | 10GB (7.5GB)           | 10       |
 
 | QOS       | Max Time           | Max Nodes/User | Max Cores/User | Max GPUs/User | Max Mem/Core (default) | Priority |
 | --------- | ------------------ | -------------- | -------------- | ------------- | ---------------------- | -------- |
@@ -374,6 +377,7 @@ scancel 1000_3
 ```
 
 Example: We want to run the same code on 50 different input files. The input files are conveniently named `input-1`, `input-2`, etc. The following script will process all 50 input files, 5 at a time.
+
 === "test-array-job.slurm"
 
 ```bash
