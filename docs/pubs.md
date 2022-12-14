@@ -10,6 +10,26 @@ Please include the following acknowledgement in any publication resulting from w
 
 ## 2022
 
+**[Structural studies of human fission protein FIS1 reveal a dynamic region important for GTPase DRP1 recruitment and mitochondrial fission](https://doi.org/10.1016/j.jbc.2022.102620)**  
+Egner JM, Nolden KA, Cleland Harwig M, Bonate RP, De Anda J, Tessmer MH, Noey EL, Ihenacho UK, Liu Z, Peterson FC, Wong GCL, Widlansky ME, Hill RB
+{: .author}
+
+**[Spatial transcriptomics demonstrates the role of CD4 T cells in effector CD8 T cell differentiation during chronic viral infection](https://doi.org/10.1016/j.celrep.2022.111736)**  
+Topchyan P, Zander R, Kasmani MY, Nguyen C, Brown A, Lin S, Burns R, Cui W
+{: .author}
+
+**[Clonal lineage tracing reveals mechanisms skewing CD8+ T cell fate decisions in chronic infection](https://doi.org/10.1084/jem.20220679)**  
+Kasmani MY,Zander R, Chung HK, Chen Y, Khatun A, Damo M, Topchyan P, Johnson KE, Levashova D, Burns R, Lorenz UM, Tarakanova VL, Joshi NS, Kaech SM, Cui W
+{: .author}
+
+**[Tension-bending risk curves for the ATD lower lumbar spine subjected to oblique impact under FAA emergency landing conditions](https://doi.org/10.1080/13588265.2022.2130611)**  
+Somasundaram K, Humm JR, Yoganandan N, Moorcroft DM, Pintar FA
+{: .author}
+
+**[Occupant Injury and Response on Oblique-Facing Aircraft Seats: A Computational Study](https://doi.org/10.1115/1.4055511)**  
+Somasundaram K, Humm JR, Khandelwal P, Umale S, Moorcroft DM, Pintar FA
+{: .author}
+
 **[Multi-Omic Integration by Machine Learning (MIMaL)](https://doi.org/10.1093/bioinformatics/btac631)**  
 Dickinson Q, Aufschnaiter A, Ott M, Meyer JG
 {: .author}
@@ -18,7 +38,7 @@ Dickinson Q, Aufschnaiter A, Ott M, Meyer JG
 Wu X, Khatun A, Kasmani MY, Chen Y, Zheng S, Atkinson S, Nguyen C, Burns R, Taparowsky EJ, Salzman NH, Hand TW, Cui W
 {: .author}
 
-**[S097: a single, peri-operative antibiotic can persistently alter the post-operative gut microbiome after Roux-en-Y gastric bypass](https://doi.org/10.1007/s00464-022-09387-4)**  
+**[A single, peri-operative antibiotic can persistently alter the post-operative gut microbiome after Roux-en-Y gastric bypass](https://doi.org/10.1007/s00464-022-09387-4)**  
 Fernando DG, Saravia FL, Atkinson SN, Barron M, Kirby JR, Kindel TL
 {: .author}
 
