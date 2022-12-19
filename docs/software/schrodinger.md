@@ -11,14 +11,14 @@ RCC has licensed the Small-Molecule Drug Discovery Suite by [Schrodinger](https:
 
 ## Installation & Configuration
 
-1. Download 2022-1 software from <https://www.schrodinger.com> and run the installer.
+1. Download 2022-4 software from <https://www.schrodinger.com> and run the installer.
 2. Locate the schrodinger.hosts file.
 : **Windows**  
-    `$INSTALLDIR\Schrodinger 2022-1\schrodinger.hosts`
+    `$INSTALLDIR\Schrodinger 2022-4\schrodinger.hosts`
 : **Mac**  
-    `/opt/schrodinger/suites2022-1/schrodinger.hosts`
+    `/opt/schrodinger/suites2022-4/schrodinger.hosts`
 
-3. Download the [server schrodinger.hosts file](https://mcw.box.com/shared/static/aa5gq2ndgejsn8htvyvshpehbjf4jvjz.hosts). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
+3. Download the [server schrodinger.hosts file](https://mcw.box.com/s/cc1rafcj0cvhp54d6d7prhl7gw2rb55g). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
 4. Contact {{ support_email }} for license information. Then open the **Configure Licensing** tool. Select **I can identify my license server** from the **Add Licenses** drop-down menu. Enter the `Host Name` and `Port` provided by Research Computing. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
 
@@ -58,7 +58,7 @@ Some Schrodinger scripts are not included in the Maestro interface and must be r
 To see the options for a particular **script.py** on the cluster:
 
 ```bash
-/hpc/apps/schrodinger/2022-1/run script.py -h
+/hpc/apps/schrodinger/2022-4/run script.py -h
 ```
 
 To run the **script** in a job on the cluster, adapt the following job submission script to your specific command:
@@ -71,7 +71,7 @@ To run the **script** in a job on the cluster, adapt the following job submissio
 #SBATCH --time=01:00:00
 #SBATCH --output=%x-%j.out
 
-/hpc/apps/schrodinger/2022-1/run script.py
+/hpc/apps/schrodinger/2022-4/run script.py
 ```
 
 ## Troubleshooting
@@ -84,7 +84,7 @@ Schrodinger can be sensitive to changes in networking. This is often an issue fo
 In this case, you should reset your connection to the Schrodinger server using the following steps.
 
 !!! warning "Mac OS X only"
-    This solution works on Mac OS X and assumes that you have installed Schrodinger 2022-1. Modify the version number if you have an older version installed.
+    This solution works on Mac OS X and assumes that you have installed Schrodinger 2022-4. Modify the version number if you have an older version installed.
 
 On your laptop/desktop:
 
@@ -92,10 +92,10 @@ On your laptop/desktop:
 * Open terminal and run the following commands:
 
 ```bash
-/opt/schrodinger/suites2022-1/utilities/jserver -shutdown
-/opt/schrodinger/suites2022-1/utilities/jserver -cleanall
-/opt/schrodinger/suites2022-1/utilities/jserver -proxy -shutdown
-/opt/schrodinger/suites2022-1/utilities/jserver -proxy -cleanall
+/opt/schrodinger/suites2022-4/utilities/jserver -shutdown
+/opt/schrodinger/suites2022-4/utilities/jserver -cleanall
+/opt/schrodinger/suites2022-4/utilities/jserver -proxy -shutdown
+/opt/schrodinger/suites2022-4/utilities/jserver -proxy -cleanall
 ```
 
 On the cluster:
@@ -103,10 +103,10 @@ On the cluster:
 * Run the following commands:
 
 ```bash
-/hpc/apps/schrodinger/2022-1/utilities/jserver -shutdown
-/hpc/apps/schrodinger/2022-1/utilities/jserver -cleanall
-/hpc/apps/schrodinger/2022-1/utilities/jserver -proxy -shutdown
-/hpc/apps/schrodinger/2022-1/utilities/jserver -proxy -cleanall
+/hpc/apps/schrodinger/2022-4/utilities/jserver -shutdown
+/hpc/apps/schrodinger/2022-4/utilities/jserver -cleanall
+/hpc/apps/schrodinger/2022-4/utilities/jserver -proxy -shutdown
+/hpc/apps/schrodinger/2022-4/utilities/jserver -proxy -cleanall
 ```
 
 ## Help
