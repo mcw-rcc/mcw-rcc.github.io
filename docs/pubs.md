@@ -8,7 +8,17 @@ Please include the following acknowledgement in any publication resulting from w
     technical support provided by the Research Computing Center at the 
     Medical College of Wisconsin.
 
+## 2023
+
+**[Comparison of Various Metrics of Repetitive Head Impact Exposure And Their Associations With Neurocognition in Collegiate-Aged Athletes](https://doi.org/10.1093/arclin/acac107)**  
+Amadon GK, Goeckner BD, Brett BL, Meier TB
+{: .author}
+
 ## 2022
+
+**[Natural variation in the binding pocket of a parasitic flatworm TRPM channel resolves the basis for praziquantel sensitivity](https://doi.org/10.1073/pnas.2217732120)**  
+Rohr CM, Sprague DJ, Park S, Marchant JS
+{: .author}
 
 **[Structural studies of human fission protein FIS1 reveal a dynamic region important for GTPase DRP1 recruitment and mitochondrial fission](https://doi.org/10.1016/j.jbc.2022.102620)**  
 Egner JM, Nolden KA, Cleland Harwig M, Bonate RP, De Anda J, Tessmer MH, Noey EL, Ihenacho UK, Liu Z, Peterson FC, Wong GCL, Widlansky ME, Hill RB
