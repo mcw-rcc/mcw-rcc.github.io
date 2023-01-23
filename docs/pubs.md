@@ -1,12 +1,12 @@
 # Publications supported by Research Computing
 
-Please include the following acknowledgement in any publication resulting from work on Research Computing resources:
+Acknowledging Research Computing is easy to do and helps people understand how important RCC resources are to you and MCW.
+
+All you have to do is include the following statement in your publication:
 
 !!! example "Acknowledgement"
 
-    This research was completed in part with computational resources and 
-    technical support provided by the Research Computing Center at the 
-    Medical College of Wisconsin.
+    This research was completed in part with computational resources and technical support provided by the Research Computing Center at the Medical College of Wisconsin.
 
 ## 2023
 
@@ -69,7 +69,7 @@ Piper C, Hainstock E, Yin-Yuan C, Chen Y, Khatun A, Kasmani MY, Evans J, Miller 
 {: .author}
 
 **[Tfh-cell-derived interleukin 21 sustains effector CD8+ T cell responses during chronic viral infection](https://doi.org/10.1016/j.immuni.2022.01.018)**  
-Zander R, Kasmani MY, Chen Y, Topchyan P, Shen J, Zheng S, Burns R, Ingram J, Cui C, Joshi N, Craft J
+Zander R, Kasmani MY, Chen Y, Topchyan P, Shen J, Zheng S, Burns R, Ingram J, Cui C, Joshi N, Craft J, Zajac A, Cui W
 {: .author }
 
 **[Cytokine and Nitric Oxide-Dependent Gene Regulation in Islet Endocrine and Nonendocrine Cells](https://doi.org/10.1093/function/zqab063)**  
@@ -107,7 +107,7 @@ Dickinson Q, Meyer JG
 ## 2021
 
 **[Interpreting Sequence Variation in PDAC-Predisposing Genes Using a Multi-Tier Annotation Approach Performed at the Gene, Patient, and Cohort Level](https://doi.org/10.3389/fonc.2021.606820)**  
-Zimmermann MT, Mathison AJ, Stodola T, Evans DB, Abrudan JL, Demos W, Tschannen M, Aldakkak M, Geurts J, Lomberk G, Tsai S
+Zimmermann MT, Mathison AJ, Stodola T, Evans DB, Abrudan JL, Demos W, Tschannen M, Aldakkak M, Geurts J, Lomberk G, Tsai S, Urrutia RA
 {: .author }
 
 **[Structural bioinformatics enhances mechanistic interpretation of genomic variation, demonstrated through the analyses of 935 distinct RAS family mutations](https://doi.org/10.1093/bioinformatics/btaa972)**  
@@ -123,14 +123,14 @@ Brett BL, Koch KM, Muftuler LT, Budde M, McCrea MA, Meier TB
 {: .author }
 
 **[Acute post-concussive assessments of brain tissue magnetism using magnetic resonance imaging](https://doi.org/10.1089/neu.2020.7322)**  
-Koch KM, Nencka AS, Swearingen B, Bauer A, Meier TB, McCrea M
+Koch KM, Nencka AS, Swearingen B, Bauer A, Meier TB, McCrea MA
 {: .author }
 
 **[P2T2: Protein Panoramic annoTation Tool for the interpretation of protein coding genetic variants](https://doi.org/10.1093/jamiaopen/ooab065)**  
 DeVoe E, Oliver GR, Zenka R, Blackburn PR, Cousin MA, Boczek NJ, Kocher JA, Urrutia R, Klee EW, Zimmermann MT
 {: .author }
 
-**[Influence of cervical spine sagittal alignment on range of motion after corpectomy: a finite element study](https://doi.org10.1007/s00701-020-04619-9)**  
+**[Influence of cervical spine sagittal alignment on range of motion after corpectomy: a finite element study](https://doi.org/10.1007/s00701-020-04619-9)**  
 John JD, Kumar GS, Yoganandan N, Rajshekhar V
 {: .author }
 
@@ -153,7 +153,7 @@ Volberding PJ, Xin G, Kasmani MY, Khatun A, Brown AK, Nguyen C, Stancill JS, Mar
 ## 2020
 
 **[Conditional Deletion of PGC-1α Results in Energetic and Functional Defects in NK Cells](https://doi.org/10.1016/j.isci.2020.101454)**  
-Gerbec ZJ, Hashemi E, Nanbakhsh A, Holzhauer S, Yang C, Mei A, Tsaih SW, Lemke A, Flister MJ, Riese MJ, Thakar MS
+Gerbec ZJ, Hashemi E, Nanbakhsh A, Holzhauer S, Yang C, Mei A, Tsaih SW, Lemke A, Flister MJ, Riese MJ, Thakar MS, Malarkannan S
 {: .author }
 
 **[The chemokine X-factor: Structure-function analysis of the CXC motif at CXCR4 and ACKR3](https://doi.org/10.1074/jbc.RA120.014244)**  
@@ -173,7 +173,7 @@ Bohorquez-Montoya L, España LY, Nader AM, Furger RE, Mayer AR, Meier TB
 {: .author }
 
 **[Accurate segmentation of prostate cancer histomorphometric features using a weakly supervised convolutional neural network](https://doi.org/10.1117/1.jmi.7.5.057501)**  
-Bukowy JD, Foss H, McGarry SD, Lowman AK, Hurrell SL, Iczkowski KA, Banerjee A, Bobholz SA, Barrington A, Dayton A, Unteriner JG
+Bukowy JD, Foss H, McGarry SD, Lowman AK, Hurrell SL, Iczkowski KA, Banerjee A, Bobholz SA, Barrington A, Dayton A, Unteriner JG, Jacobsohn KM, See WA, Nevalainen MT, Nencka AS, Ethridge T, Jarrard DF, LaViolette PS
 {: .author }
 
 **[Systemic inflammation moderates the association of prior concussion with hippocampal volume and episodic memory in high school and collegiate athletes](https://doi.org/10.1016/j.bbi.2020.07.024)**  
@@ -181,7 +181,7 @@ Brett BL, Savitz J, Nitta M, Espana L, Teague TK, Nelson LD, McCrea MA, Meier TB
 {: .author }
 
 **[Genetic variants in DGAT1 cause diverse clinical presentations of malnutrition through a specific molecular mechanism](https://doi.org/10.1016/j.ejmg.2019.103817)**  
-Gupta A, Dsouza NR, Zarate YA, Lombardo R, Hopkin R, Linehan AR, Simpson J, McCarrier J, Agre KE, Gavrilova RH, Stephens MC
+Gupta A, Dsouza NR, Zarate YA, Lombardo R, Hopkin R, Linehan AR, Simpson J, McCarrier J, Agre KE, Gavrilova RH, Stephens MC, Grothe RM, Monaghan KG, Xie Y, Basel D, Urrutia RA, Cole CR, Klee EW, Zimmermann MT
 {: .author }
 
 **[Cumulative effects of prior concussion and primary sport participation on brain morphometry in collegiate athletes: a study from the NCAA–DoD CARE consortium](https://doi.org/10.3389/fneur.2020.00673)**  
@@ -189,7 +189,7 @@ Brett BL, Bobholz SA, España LY, Huber DL, Mayer AR, Harezlak J, Broglio SP, Mc
 {: .author }
 
 **[Resting-state fMRI metrics in acute sport-related concussion and their association with clinical recovery: a study from the NCAA-DOD CARE Consortium](https://doi.org/10.1089/neu.2019.6471)**  
-Meier TB, Giraldo-Chica M, España LY, Mayer AR, Harezlak J, Nencka AS, Wang Y, Koch KM, Wu YC, Saykin AJ, Giza CC
+Meier TB, Giraldo-Chica M, España LY, Mayer AR, Harezlak J, Nencka AS, Wang Y, Koch KM, Wu YC, Saykin AJ, Giza CC, Goldman J, DiFiori JP, Guskiewicz KM, Mihalik JP, Brooks A, Broglio SP, McAllister T, McCrea MA
 {: .author }
 
 **[Novel destabilizing Dynactin variant (DCTN1 p. Tyr78His) in patient with Perry syndrome](https://doi.org/10.1016/j.parkreldis.2020.06.006)**  
@@ -223,7 +223,7 @@ Wedemeyer MJ, Mueller BK, Bender BJ, Meiler J, Volkman BF
 {: .author }
 
 **[Prevalence of potentially clinically significant MRI findings in athletes with and without sport-related concussion](https://doi.org/10.1089/neu.2018.6055)**  
-Klein AP, Tetzlaff JE, Bonis JM, Nelson LD, Mayer A, Huber DL, Harezlak J, Mathews VP, Ulmer JL, Sinson GP, Nencka AS, Koch KM, Wu YC, Saykin AJ, DiFiori JP, Giza CC, Goldman J, Guskiewicz KK, Mihalik J, Duma SM, Rowson S, Brooks A, Broglio SP, McAllister T, McCrea M, Meier T
+Klein AP, Tetzlaff JE, Bonis JM, Nelson LD, Mayer A, Huber DL, Harezlak J, Mathews VP, Ulmer JL, Sinson GP, Nencka AS, Koch KM, Wu YC, Saykin AJ, DiFiori JP, Giza CC, Goldman J, Guskiewicz KK, Mihalik J, Duma SM, Rowson S, Brooks A, Broglio SP, McAllister T, McCrea MA, Meier TB
 {: .author }
 
 **[Identification and verification of ubiquitin-activated bacterial phospholipases](https://doi.org/10.1128/jb.00623-18)**  

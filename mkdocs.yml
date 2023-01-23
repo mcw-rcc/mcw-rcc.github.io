@@ -22,7 +22,6 @@ theme:
   custom_dir: overrides
 
   features:
-    - announce.dismiss
     - content.code.annotate
     - navigation.instant
     - navigation.tabs
@@ -38,7 +37,6 @@ theme:
 extra:
   support_email: <help-rcc@mcw.edu>
   hpc_name: HPC
-  srce_name: SRCE
   analytics:
     provider: google
     property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
@@ -92,10 +90,10 @@ markdown_extensions:
 nav:
   - Home:
     - Overview: index.md
-    - FAQ: faq.md
     - Recent News: news.md
     - Grant Boilerplate: grants.md
     - Publications: pubs.md
+    - FAQ: faq.md
   - User Guide: 
     - Quick Start: user-guide/quickstart.md
     - Getting an Account: user-guide/accounts.md
