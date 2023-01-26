@@ -1,9 +1,9 @@
 # Schrodinger
 
-!!! warning "RCC will no longer centrally fund and purchase Schrodinger"
-    Schrodinger will continue to be free to all users during the current license term 01/17/2022-01/16/2023. To continue using Schrodinger after 01/16/2023, existing users will have to acquire their own license. Please email {{ support_email}} with questions/concerns.
+!!! info "Schrodinger is licensed by the Department of Biochemistry and available to all MCW investigators."
+    Users interested in contributing funds or discussing Schrodinger licensing at MCW should contact Dawn Wenzel (dwenzel@mcw.edu) and Brian Smith (brismith@mcw.edu).
 
-RCC has licensed the Small-Molecule Drug Discovery Suite by [Schrodinger](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite). The software includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the new HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
+The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite) includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
 
 ## Requirements
 
@@ -20,7 +20,10 @@ RCC has licensed the Small-Molecule Drug Discovery Suite by [Schrodinger](https:
 
 3. Download the [server schrodinger.hosts file](https://mcw.box.com/s/cc1rafcj0cvhp54d6d7prhl7gw2rb55g). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
-4. Contact {{ support_email }} for license information. Then open the **Configure Licensing** tool. Select **I can identify my license server** from the **Add Licenses** drop-down menu. Enter the `Host Name` and `Port` provided by Research Computing. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
+4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Enter `lic01.rcc.mcw.edu` as the Host Name and `27008` as the Port. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
+
+    !!! warning
+        The license server hostname has changed. If you used Schrodinger prior to 2023, you will need to update your client with the new license information.
 
 5. Setup remote connection to the cluster.
 : **Windows**  
@@ -32,11 +35,7 @@ RCC has licensed the Small-Molecule Drug Discovery Suite by [Schrodinger](https:
 
 ## Upgrading
 
-Upgrading your Schrodinger installation is easy and can be done in two steps using the included Uninstall programs for your platform. After you uninstall Schrodinger, install the new version. This process should find all of the previous configuration. You will need to update your schrodinger.hosts file as it appears above. If you have issues upgrading, please contact {{ support_email }}.
-
-## License
-
-The RCC Schrodinger license includes 25 tokens for the Small-Molecule Drug Discovery Suite. An additional 20 tokens are available for the Glide docking program. Each job requires a number of tokens for each program in use. Please see the following guide for token usage information.
+To upgrade your Schrodinger installation, first uninstall the current version. The uninstall process should leave your configuration intact. Then install the upgraded version of Schrodinger and remember to update your schrodinger.hosts file as it appears above. If you have issues upgrading, please contact {{ support_email }}.
 
 ## Usage
 
