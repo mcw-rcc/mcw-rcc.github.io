@@ -2,7 +2,7 @@
 
 Traditional SSH connection is available for all clusters. However, we do recommend to use [Open OnDemand](ondemand.md) if possible.
 
-## SSH Clients
+## SSH clients
 
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) - simplest SSH client for Windows and requires no install
 - Mac Terminal App - built-in terminal app available on all Mac computers
@@ -42,3 +42,25 @@ ssh netid@login-clustername.rcc.mcw.edu
 
 !!! tip "Hidden Password"
     Most SSH client applications will hide your password as you type. This is a security feature, not an error.
+
+## SSH options
+
+OpenSSH has many configuration options that you can use to customize your login experience. Custom SSH options are added to `~/.ssh/config` on your local computer.
+
+### Custom hostnames
+
+You can customize and simplify the login hostnames with a host entry in `~/.ssh/config`.
+
+```txt
+Host login-hpc
+    HostName login-hpc.rcc.mcw.edu
+    User netid
+```
+
+This will simplify:
+
+`ssh netid@login-hpc.rcc.mcw.edu`
+
+to:
+
+`ssh login-hpc`

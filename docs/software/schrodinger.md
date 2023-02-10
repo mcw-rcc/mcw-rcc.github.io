@@ -1,7 +1,7 @@
 # Schrodinger
 
 !!! info "Schrodinger is licensed by the Department of Biochemistry and available to all MCW investigators."
-    Users interested in contributing funds or discussing Schrodinger licensing at MCW should contact Dawn Wenzel (dwenzel@mcw.edu) and Brian Smith (brismith@mcw.edu).
+    Users interested in contributing funds or discussing Schrodinger licensing at MCW should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
 
 The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite) includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
 
@@ -11,16 +11,16 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
 
 ## Installation & Configuration
 
-1. Download 2022-4 software from <https://www.schrodinger.com> and run the installer.
+1. Download 2023-1 software from <https://www.schrodinger.com> and run the installer.
 2. Locate the schrodinger.hosts file.
 : **Windows**  
-    `$INSTALLDIR\Schrodinger 2022-4\schrodinger.hosts`
+    `$INSTALLDIR\Schrodinger 2023-1\schrodinger.hosts`
 : **Mac**  
-    `/opt/schrodinger/suites2022-4/schrodinger.hosts`
+    `/opt/schrodinger/suites2023-1/schrodinger.hosts`
 
-3. Download the [server schrodinger.hosts file](https://mcw.box.com/s/cc1rafcj0cvhp54d6d7prhl7gw2rb55g). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
+3. Download the [server schrodinger.hosts file](https://mcw.box.com/s/zz6t4al7q31vz9ywaquuy0arhjc2n06j). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
-4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Enter `lic01.rcc.mcw.edu` as the Host Name and `27008` as the Port. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
+4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Locate the hostname and port in the [licensing info](https://mcw.box.com/s/9wlkkv0x1ca8odhkyxcuvw2mdwngo32t). Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
 
     !!! warning
         The license server hostname has changed. If you used Schrodinger prior to 2023, you will need to update your client with the new license information.
@@ -57,7 +57,7 @@ Some Schrodinger scripts are not included in the Maestro interface and must be r
 To see the options for a particular **script.py** on the cluster:
 
 ```bash
-/hpc/apps/schrodinger/2022-4/run script.py -h
+/hpc/apps/schrodinger/2023-1/run script.py -h
 ```
 
 To run the **script** in a job on the cluster, adapt the following job submission script to your specific command:
@@ -70,7 +70,7 @@ To run the **script** in a job on the cluster, adapt the following job submissio
 #SBATCH --time=01:00:00
 #SBATCH --output=%x-%j.out
 
-/hpc/apps/schrodinger/2022-4/run script.py
+/hpc/apps/schrodinger/2023-1/run script.py
 ```
 
 ## Troubleshooting
@@ -83,7 +83,7 @@ Schrodinger can be sensitive to changes in networking. This is often an issue fo
 In this case, you should reset your connection to the Schrodinger server using the following steps.
 
 !!! warning "Mac OS X only"
-    This solution works on Mac OS X and assumes that you have installed Schrodinger 2022-4. Modify the version number if you have an older version installed.
+    This solution works on Mac OS X and assumes that you have installed Schrodinger 2023-1. Modify the version number if you have an older version installed.
 
 On your laptop/desktop:
 
@@ -91,10 +91,10 @@ On your laptop/desktop:
 * Open terminal and run the following commands:
 
 ```bash
-/opt/schrodinger/suites2022-4/utilities/jserver -shutdown
-/opt/schrodinger/suites2022-4/utilities/jserver -cleanall
-/opt/schrodinger/suites2022-4/utilities/jserver -proxy -shutdown
-/opt/schrodinger/suites2022-4/utilities/jserver -proxy -cleanall
+/opt/schrodinger/suites2023-1/utilities/jserver -shutdown
+/opt/schrodinger/suites2023-1/utilities/jserver -cleanall
+/opt/schrodinger/suites2023-1/utilities/jserver -proxy -shutdown
+/opt/schrodinger/suites2023-1/utilities/jserver -proxy -cleanall
 ```
 
 On the cluster:
@@ -102,10 +102,10 @@ On the cluster:
 * Run the following commands:
 
 ```bash
-/hpc/apps/schrodinger/2022-4/utilities/jserver -shutdown
-/hpc/apps/schrodinger/2022-4/utilities/jserver -cleanall
-/hpc/apps/schrodinger/2022-4/utilities/jserver -proxy -shutdown
-/hpc/apps/schrodinger/2022-4/utilities/jserver -proxy -cleanall
+/hpc/apps/schrodinger/2023-1/utilities/jserver -shutdown
+/hpc/apps/schrodinger/2023-1/utilities/jserver -cleanall
+/hpc/apps/schrodinger/2023-1/utilities/jserver -proxy -shutdown
+/hpc/apps/schrodinger/2023-1/utilities/jserver -proxy -cleanall
 ```
 
 ## Help
