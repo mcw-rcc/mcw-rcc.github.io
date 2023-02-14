@@ -1,0 +1,16 @@
+name: Request Edit
+description: Request an edit to add a topic, fix an inaccuracy, or update information.
+labels: ["req: edit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking time to fill out this report!
+  - type: textarea
+    id: description
+    attributes:
+      label: What should we edit?
+      description: Please describe the edit, including location, text, and any images or links.
+      placeholder: Tell us what you would like to see!
+    validations:
+      required: true
