@@ -3,8 +3,8 @@ site_name: MCW Research Computing
 site_description: A site for documenting MCW Research Computing systems and services.
 site_author: MCW RCC
 site_url: https://docs.rcc.mcw.edu
-repo_url: https://github.com/mcw-rcc/mcw-rcc.github.io/tree/src
-edit_uri: docs/
+repo_url: https://github.com/mcw-rcc/mcw-rcc.github.io/
+edit_uri: edit/main/docs/
 
 # Configuration
 theme:
