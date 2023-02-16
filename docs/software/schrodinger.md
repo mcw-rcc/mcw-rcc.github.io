@@ -28,6 +28,8 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
 5. Setup remote connection to the cluster.
 : **Windows**  
     Open the `Remote Login Configuration` tool. Select `Generate Keys`. Select `Initialize Host Access`. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select `Initialize`.
+    !!! warning "Known issue"
+        The 2023-1 Remote Login Configuration tool may error due to missing files. This is a known issue. To work around this issue, launch the `Schrodinger Command Prompt` and run command `run SchrodingerPlinkWizard`. Contact {{ support_email }} with questions.
 : **Mac**  
     Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html).
 
