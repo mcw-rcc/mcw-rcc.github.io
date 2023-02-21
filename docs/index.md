@@ -1,8 +1,8 @@
 # Research Computing Documentation
 
-!!! info "Welcome!"
-
-    This site is a complete rewrite of our documentation and we are actively working on this process. Some page links or formatting may not work as intended. Please report any issues to {{ support_email }}.
+!!! tip "Announcements"
+    - March 1, 2023: Maintenance from 9PM-12AM. Open OnDemand will not be available and all jobs will be blocked on the cluster. Access to
+         storage may also be disrupted.
 
 ## Introduction
 
