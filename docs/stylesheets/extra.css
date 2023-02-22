@@ -1,10 +1,14 @@
+/* main color */
 :root {
     --md-primary-fg-color:#005A96;
 }
+
+/* publications */
 .author {
     color: grey;
 }
-.branding {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.75em;
+
+/* page width */
+.md-grid {
+    max-width: 1800px;
 }

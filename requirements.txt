@@ -4,3 +4,4 @@ pymdown-extensions
 mkdocs-macros-plugin
 mkdocs-git-revision-date-localized-plugin
 fontawesome_markdown
+mkdocs-glightbox
