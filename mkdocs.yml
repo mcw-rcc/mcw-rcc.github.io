@@ -19,7 +19,6 @@ theme:
   custom_dir: overrides
 
   features:
-    - content.code.annotate
     - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
@@ -56,6 +55,8 @@ extra_css:
 plugins:
   - macros
   - search
+  - glightbox:
+      closeOnOutsideClick: true
 
 # Extensions
 markdown_extensions:
