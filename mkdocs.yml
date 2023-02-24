@@ -124,6 +124,7 @@ nav:
     - Using Modules: software/modules.md
     - Requesting Software: software/module-request.md
     - Guides:
+      - software/AlphaFold.md
       - software/R.md
       - software/python.md
       - software/tensorflow.md
