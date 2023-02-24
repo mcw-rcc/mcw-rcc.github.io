@@ -9,14 +9,8 @@ is a working alternative to the native docker container they provide,
 since we are unable to run docker on the RCC.
 
 For information on running alphafold (similar to these wiki
-instructions), check their
-
-<html>
-<a href="https://github.com/amorehead/alphafold_non_docker">website</a>
-</html>
-
-, and you can also get module help information with
-`module help alphafold/2.1.2`.
+instructions), check their <html><a href="https://github.com/amorehead/alphafold_non_docker">website</a> </html>.
+You can also get module help information with 'module help alphafold/2.1.2`.
 
 # Reference Files
 
