@@ -1,7 +1,8 @@
 ## AlphaFold 2.1.2
 
 <https://github.com/deepmind/alphafold>
-Fork we are using since we don't support Docker: <[https://github.com/amorehead/alphafold_non_docker](https://github.com/dialvarezs/alphafold)>
+
+Fork we are using since we don't support Docker: <[https://github.com/amorehead/alphafold_non_docker](https://github.com/amorehead/alphafold_non_docker)>
 
 03/11/2022: Version 2.1.2 including multimer support. AlphaFold is
 installed on the HPC Cluster using Miniconda3 virtual environments. This
