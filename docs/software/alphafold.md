@@ -1,9 +1,7 @@
-## Website
+## AlphaFold 2.1.2
 
-<https://github.com/deepmind/alphafold> Fork we are using since we don't
-support Docker: <https://github.com/amorehead/alphafold_non_docker>
-
-# HPC Cluster Updates
+<https://github.com/deepmind/alphafold>
+Fork we are using since we don't support Docker: <[https://github.com/amorehead/alphafold_non_docker](https://github.com/dialvarezs/alphafold)>
 
 03/11/2022: Version 2.1.2 including multimer support. AlphaFold is
 installed on the HPC Cluster using Miniconda3 virtual environments. This
@@ -14,13 +12,11 @@ For information on running alphafold (similar to these wiki
 instructions), check their
 
 <html>
-
 <a href="https://github.com/amorehead/alphafold_non_docker">website</a>
-
 </html>
 
 , and you can also get module help information with
-`module help alphafold`.
+`module help alphafold/2.1.2`.
 
 # Reference Files
 
@@ -32,7 +28,7 @@ software/module as the default when you use the -d $DOWNLOAD_DIR
 
 ``` bash
 [bgizelar@ln01 ~]$ srun --job-name=alphafold_test --ntasks=8 --mem=30gb --time=8:00:00 --gres=gpu:1 --pty bash
-[bgizelar@gn03 ~]$ module load alphafold
+[bgizelar@gn03 ~]$ module load alphafold/2.1.2
 [bgizelar@gn03 ~]$ export NVIDIA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
 [bgizelar@gn03 ~]$ run_alphafold.sh -d $DOWNLOAD_DIR -f /scratch/u/{NetID}/alphatest/some.fasta -t 2020-05-14 -o /scratch/u/{NetID}/alphatest/output
 [bgizelar@gn03 ~]$ exit
@@ -41,7 +37,7 @@ software/module as the default when you use the -d $DOWNLOAD_DIR
 
 The example above is run as a normal interactive SLURM job. SLURM will
 assign a GPU node for interactive use, in this case `gn03`. The
-alphafold software environment is loaded using `module load alphafold`
+alphafold software environment is loaded using `module load alphafold/2.1.2`
 command. When the interactive job ends, SLURM exits the shell back to
 the original login shell. Please make sure to insert your username for
 `{NetID}`.
@@ -71,5 +67,5 @@ Submit the job:
 
 The example above is a job request for 1 node, 8 processors, and 1 gpu.
 Notice that the job is run within the user's scratch directory. Please
-make sure to insert your username for `{NetID}.`. Alphafold doesn't
+make sure to insert your username for `{NetID}.`. Alphafold 2.1.2 doesn't
 parallelize on GPUs so you should only run on 1 GPU.
