@@ -125,13 +125,15 @@ nav:
     - Requesting Software: software/module-request.md
     - Guides:
       - software/alphafold.md
-      - software/R.md
-      - software/python.md
-      - software/tensorflow.md
-      - software/pytorch.md
+      - software/ansys.md
+      - software/lsdyna.md
       - software/matlab.md
+      - software/python.md
+      - software/pytorch.md
+      - software/R.md 
       - software/schrodinger.md
       - software/singularity.md
+      - software/tensorflow.md      
   - ResHPC:
     - Overview: secure-computing/reshpc.md
     - Accounts & Projects: secure-computing/project-account.md
