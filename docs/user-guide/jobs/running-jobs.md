@@ -142,10 +142,7 @@ The **bigmem** partition contains the large memory nodes, hm01-hm02. Each node i
 
 #### GPU
 
-The **gpu** partition contains the gpu nodes. Nodes gn01-gn06 each have **48 cores**, **360GB RAM**, **4 V100 GPUs**, and a **480GB SSD** for local scratch. Nodes gn07-gn08 each have **48 cores**, **480GB RAM**, **4 A40 GPUs**, and a **3.84TB NVMe SSD** for local scratch. Use the `#SBATCH --partition=gpu` and `#SBATCH --gres=gpu:1` directives to have your job run on a gpu node.
-
-!!! tip "GPU Type"
-    To use a specific GPU type, use `#SBATCH --gres=gpu:type:1`, where ***type*** is either `v100` or `a40`. Please note that most jobs will not benefit from specifying a GPU type, and this may delay scheduling of your job.
+The **gpu** partition contains the gpu nodes. Nodes gn01-gn06 each have **48 cores**, **360GB RAM**, **4 V100 GPUs**, and a **480GB SSD** for local scratch. Nodes gn07-gn08 each have **48 cores**, **480GB RAM**, **4 A40 GPUs**, and a **3.84TB NVMe SSD** for local scratch. See [GPU Jobs](#gpu-jobs) below for more details.
 
 ### QOS
 
@@ -320,7 +317,7 @@ exit
 
 ## GPU Jobs
 
-The new HPC system includes 6 compute nodes that each have 4 V100 accelerators. There is no need to login to a separate cluster as in the past. You can add a GPU to your batch or interactive job submission with the `--gres=gpu:<N>` command, where ***N*** is the number of GPUs.
+The cluster includes 8 compute nodes that each have 4 GPUs. Nodes gn01-gn06 each have 48 cores, 360GB RAM, 4 V100 GPUs, and a 480GB SSD for local scratch. Nodes gn07-gn08 each have 48 cores, 480GB RAM, 4 A40 GPUs, and a 3.84TB NVMe SSD for local scratch You can add a GPU to your batch or interactive job submission with the `--gres=gpu:N` flag, where ***N*** is the number of GPUs.
 
 In a job script add:
 
@@ -335,9 +332,21 @@ Interactive job command:
 srun --ntasks=1 --mem-per-cpu=4GB --gres=gpu:1 --time=01:00:00 --job-name=interactive --partition=gpu --account=PI_NetID --pty bash
 ```
 
+Use the `#SBATCH --partition=gpu` and `#SBATCH --gres=gpu:1` directives to have your job run on a gpu node.
+
+### GPU Type
+
+To use a specific GPU type, use `--gres=gpu:type:1`, where ***type*** is either `v100` or `a40`. Please note that most jobs will not benefit from specifying a GPU type, and this may delay scheduling of your job.
+
+### GPU Compute Mode
+
+Your workload may require a specific GPU compute mode (***not common***). If this is required, Research Computing staff will provide instructions for that software either in the software pages on this site, or the software's `module help` output.
+
+For reference, you can specify GPU compute mode with `--gpu_cmode=mode`, where ***mode*** is `shared` or `exclusive`. Run command `srun --help` to see additional information.`
+
 ## Debug/Dev Jobs
 
-The new HPC system includes a special `dev` QOS. Any job using this QOS will have a higher priority than non-QOS jobs. The goal is for a interactive/dev/debug job to start running quicker, to speed up the developer's work. While this QOS will attempt to move your job to the top of the queue, it does not guarantee the job will start immediately. This can be combined with any of the other partition and gres requests.
+The cluster includes a special `dev` QOS. Any job using this QOS will have a higher priority than non-QOS jobs. The goal is for a interactive/dev/debug job to start running quicker, to speed up the developer's work. While this QOS will attempt to move your job to the top of the queue, it does not guarantee the job will start immediately. This can be combined with any of the other partition and gres requests.
 
 In a job script add:
 
