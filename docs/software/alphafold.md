@@ -1,8 +1,8 @@
 # AlphaFold
 
 !!! info "Updates"
-    03/06/2023: Version 2.3.1 Adds new --cpus option to speed up tasks.  [Github](https://github.com/deepmind/alphafold/releases/tag/v2.3.0)
-    RCC is using this folk of alphafold to add singularity support: [GitHub](https://github.com/dialvarezs/alphafold)
+    03/06/2023: Version 2.3.1 Adds new `--cpus` option to speed up tasks: <https://github.com/deepmind/alphafold/releases/tag/v2.3.0>  
+    RCC is using this fork of alphafold to add singularity support: <https://github.com/dialvarezs/alphafold>
 
 AlphaFold can accurately predict 3D models of protein structures and is accelerating research in nearly every field of biology.
 
@@ -65,7 +65,10 @@ Submit the job:
 cd /scratch/g/PI_NetID/alphatest && sbatch alphafold.slurm
 ```
 
-The example above is a job request for 1 node, 12 processors, and 1 gpu. The #SBATCH --gpu_cmode=shared slurm header is required or your job will fail halfway through. **Alphafold 2.3.1 doesn't parallelize on GPUs so you should only run on 1 GPU**
+The example above is a job request for 1 node, 12 processors, and 1 gpu.  
+
+!!! info "GPU Compute Mode"
+    The `#SBATCH --gpu_cmode=shared` slurm header is required or your job will fail halfway through. Alphafold 2.3.1 doesn't parallelize on GPUs so you should only run on 1 GPU.
 
 ## Help
 
