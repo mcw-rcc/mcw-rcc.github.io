@@ -10,6 +10,10 @@ All you have to do is include the following statement in your publication:
 
 ## 2023
 
+**[Fragment-based drug discovery of small molecule ligands for the human chemokine CCL28](https://doi.org/10.1016/j.slasd.2023.02.004)**  
+Zhou AL, Jensen DR, Peterson FC, Thomas MA, Schlimgen RR, Dwinell MB, Smith BC, Volkman BF
+{: .author}
+
 **[Comparison of Various Metrics of Repetitive Head Impact Exposure And Their Associations With Neurocognition in Collegiate-Aged Athletes](https://doi.org/10.1093/arclin/acac107)**  
 Amadon GK, Goeckner BD, Brett BL, Meier TB
 {: .author}
