@@ -37,38 +37,42 @@ It is very important to understand memory usage within LS-DYNA and how that corr
 
 When submitting a job, there are 3 memory values to keep in mind:
 
-- SLURM job memory limit
-: The standard compute node max memory is 360GB. Do not exceed the memory limit.
-- LS-DYNA memory1
-: This is the amount of memory dedicated to the master process to decompose the model. This value is specified in mega-words (m) and must be less than or equal to the SLURM job memory limit.
-- LS-DYNA memory2
-: This is the amount of memory used by all CPU cores to solve the decomposed problem. This value is specified in mega-words (m) and must be less than or equal to the SLURM job memory limit divided by the number of cores used in the simulation.
+- **SLURM job memory limit**  
+The standard compute node max memory is 360GB. Do not exceed the memory limit. If you need additional memory, use the large memory nodes.
+- **LS-DYNA memory1**  
+This is the amount of memory dedicated to the master process to decompose the model. This value is specified in mega-words (m). A mega-word is 4 bytes in single precision, or 8 bytes in double precision. Memory1 is dependent on your model size.
+- **LS-DYNA memory2**  
+This is the amount of memory used by each CPU core to solve the decomposed problem. Memory2 is dependent on the number of cores requested. More cores means less memory required per core.
 
 ## CPU Allocation
 
-Matching a simulation to the correct node is important for both CPU use and memory allocation.
-
-The HPC Cluster has nodes with the following CPU core counts:
-
-- Standard compute node - 48 cores
+Every cluster node has 48 cores. Please remember that more cores does not always mean faster.
 
 ## Example
 
-Simulation requiring 1 node, 48 cores, and 360GiB. The HPC cluster automatically assigns 7.5GiB memory per core by default.
+Simulation using 1 node, 48 cores, and 360GB.
 
 ```txt
-sbatch-dyna -i testing.k -j testrun -m testuser@mcw.edu -n 1 -c 48 -l 2 -p d -y "memory1=48240m memory2=1005m"
+sbatch-dyna -i testing.k -j testrun -m netid@mcw.edu -n 1 -c 48 -l 2 -p d -y "memory1=16000m memory2=1005m"
 ```
 
-- `-n` flag is used to request 1 node
-- `-c`flag is used to request 48 cores
-- `memory1` is set to 48240m
-: 1GiB is approximately 134m. Total memory is (134m * 360GiB = 48240m).
-- `memory2` is set to 1005m
-: Divide the total memory request by number of cores (48240m / 48 cores = 1005m).
+- `memory1`  
+We request 16000m (16,000 mega-word) for model decomposition, or 128GB in double precision.
+
+$$
+16000 \text{mega-word} \times \frac{1e^6 \text{word}}{1 \text{mega-word}} \times \frac{8 \text{byte}}{1 \text{word}} \times \frac{1\text{gigabyte}}{1e^9 \text{byte}} = 128\text{GB}
+$$
+
+- `memory2`  
+We request 333m (333 mega-words) per CPU core, or ~2.67GB per CPU core. Total memory allocated to all CPU cores is ~128GB. The remaining 104GB is available for dynamic memory allocation.
+
+$$
+333 \text{mega-word} \times \frac{1e^6 \text{word}}{1 \text{mega-word}} \times \frac{8 \text{byte}}{1 \text{word}} \times \frac{1\text{gigabyte}}{1e^9 \text{byte}} = 2.67\text{GB}
+$$
+
+!!! tip "Additional memory guidance"
+    The example above is just an example. Please adjust for the memory needs of your simulation. You may need more or less memory depending on size of model. You may also need to substitute `4 bytes` into the calculations if you use single precision. The process of determining memory utilization should be iterative. For more advice on LS-DYNA memory, see please see <https://www.d3view.com/a-few-words-on-memory-settings-in-ls-dyna/>.
 
 ## Getting Help
 
-For more information about LS-DYNA memory settings please see <https://www.d3view.com/2006/10/a-few-words-on-memory-settings-in-ls-dyna/>.
-
-If you have questions/concerns please email {{ support_email }}.
+If you have questions about the `sbatch-dyna` command or the HPC cluster, please email {{ support_email }}. Please email the software vendor for LS-DYNA questions.
