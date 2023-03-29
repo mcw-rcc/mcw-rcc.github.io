@@ -1,8 +1,7 @@
 # Research Computing Documentation
 
 !!! tip "Announcements"
-    - March 1, 2023: Maintenance from 9PM-12AM. Open OnDemand will not be available and all jobs will be blocked on the cluster. Access to
-         storage may also be disrupted.
+    - April 5, 2023: Maintenance from 9PM-12AM. Cluster jobs will be blocked during maintenance. Login nodes will be rebooted. Open OnDemand will be rebooted. Access to storage may be disrupted.
 
 ## Introduction
 
