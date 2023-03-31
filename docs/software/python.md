@@ -1,11 +1,6 @@
 # Python
 
-!!! abstract "Summary"
-    Here we present several ways to use and customize your Python environment. As you will see, there are multiple ways to achieve the same goal. Some are more elaborate and time consuming, but also offer more choice in customization. It will be up to you to decide which solution best suits your needs. However, a few ideas here may help you along the way. We'll discuss the following methods starting with the simplest and increasing in difficulty and depth of customization.
-
-The fastest way to start installing and using your own Python packages is to follow the [Installing Packages](#installing-packages) guide. You will be able to install, uninstall, and start using packages quickly. If you're looking for a testing environment, you should try [Python Virtual Environments](#python-virtual-environment). Virtualenvs allow you to quickly setup a reusable container that can be started, stopped, and easily deleted if needed. Best of all, you can have as many separate Python virtualenvs as you'd like. Finally, you may find that a package or script requires Python itself to be installed with some custom options. This can be done without system administrator privileges using the [custom local Python](#custom-local-python) guide.
-
-Python is an excellent programming and data analysis tool that is widely used in many areas of computational science. You'll find many ways to solve problems as we've shown here. If you have any questions about Python, please contact {{ support_email }}.
+Python is an object-oriented programming language that is easy to write and read. It is widely used in many areas of computational science and has many useful packages built-in or available for installation.
 
 !!! warning "Python2 Deprecated"
     Python2 is deprecated. The developers are no longer maintaining the source code. It is recommended that all users migrate their scripts from Python2 to Python3. At the least, users should not write new scripts in for Python2.
@@ -17,15 +12,13 @@ The HPC cluster includes Python3.9 and Intel Python3. Use `module avail python` 
 To use Python3:
 
 ```bash
-module load python/3.9.1 
-python
+module load python/3.9.1
 ```
 
 To use Intel Python3:
 
 ```bash
 module load python/intel-2021.1
-python
 ```
 
 ## List Installed Packages
@@ -35,7 +28,6 @@ Many common scientific Python packages (i.e., **NumPy**, **SciPy**, **Pandas**) 
 To view all installed packages:
 
 ```bash
-module load python/3.9.1
 pip freeze
 ```
 
@@ -47,54 +39,62 @@ pip freeze | grep 'scipy'
 
 ## Installing Packages
 
-Most packages can be installed in your home directory without any assistance from a system administrator. This allows you to maintain a set of local packages, built on top of the central Python installation.
+We recommend to install python packages in virtual environments or conda environments. Try to avoid installing with sytem Python, will place the package files in your home directory. While this does work, it can be difficult to know what has been installed, and even more difficult to update or remove.
 
-To install packages to your home directory:
+### Conda Virtual Environment
+
+Conda is a package management system that quickly installs many useful packages and their dependencies. We use a lightweight version called Miniconda. It is mainly used for Python virtual environments, but includes many more packages including open-source research software and dependencies.
+
+For more information, see [Conda Docs](https://conda.io/projects/conda/en/stable/index.html).
+
+!!! warning "Installing your own Conda"
+    If you install your own Conda, this will often modify your `.bashrc` file. This will cause your base Conda env to load every time you login. This is very useful if you're working on your own Linux machine. But it is very un-useful on a cluster, where we also use modulefiles to load software. In fact, your Conda installation can cause your jobs to fail in many instances. If you would like to use Conda, then please use the centrally installed Miniconda3. If you must use your own Conda, please turn off the auto activate with `conda config --set auto_activate_base false`. You can then manually activate your Conda with `source /path/to/my/conda/etc/profile.d/conda.sh && conda activate`.
+
+To get started, load miniconda3:
+
+```bash
+module load miniconda3
+```
+
+To create a new virtual environment (e.g., **myenv**) with the `conda` command:
+
+```bash
+conda create -n myenv
+```
+
+To use your Miniconda virtual environment:
+
+```bash
+conda activate myenv
+```
+
+To install packages in your conda virtual environment:
+
+```bash
+conda activate myenv
+conda install numpy
+```
+
+### Python Virtual Environment
+
+A Python virtual environment is an independent set of Python packages contained in a directory. To create an environment, we use the `venv` Python module. Within an environment, we use standard package installation methods. With Python virtual environments, everything is self-contained, reproducible, and easy to manage. For more information on Python virtual environments, see the [venv guide](https://docs.python.org/3/library/venv.html).
+
+To get started, load Python:
 
 ```bash
 module load python/3.9.1 
-pip install --user myPackage 
 ```
 
-The `--user` flag installs packages to a default directory `~/.local/bin` in your home directory.
-
-Then add your local Python package directory to your `$PATH` variable. Edit your `~/.bashrc` file and add the following:
+To create a new virtual environment:
 
 ```bash
-PATH=~/.local/bin:$PATH
-export PATH
+python -m venv pythonEnv
 ```
 
-Then source your updated setting:
+To use your virtual environment:
 
 ```bash
-source ~/.bashrc
-```
-
-## Python Virtual Environment
-
-Users can install any Python package using `virtualenv`, which creates a virtual environment within your home directory. A Python virtual environment allows a user to locally install any package using traditional Python package installation methods. For more information on Python virtual environments, see the [Virtualenv User Guide](https://virtualenv.pypa.io/en/stable/userguide/).
-
-### Setup
-
-To get started with Python `virtualenv`, load a Python modulefile:
-
-```bash
-module load python/3.9.1 
-```
-
-Create a new virtual environment:
-
-```bash
-virtualenv myPython39venv
-```
-
-The `virtualenv` command automatically creates a new directory (e.g., **myPython39venv**). It then installs Python and the necessary packages **setuptools**, **pip**, and **wheel**.
-
-To use your Python virtual environment:
-
-```bash
-source myPython39venv/bin/activate
+source pythonEnv/bin/activate
 ```
 
 To exit your Python virtual environment:
@@ -102,11 +102,6 @@ To exit your Python virtual environment:
 ```bash
 deactivate 
 ```
-<!-- markdownlint-disable MD024 -->
-### Installing Packages
-<!-- markdownlint-enable MD024 -->
-
-Packages can be installed in a Python virtual environment using `pip` or `setup.py`.
 
 To install a package using `pip`:
 
@@ -121,54 +116,11 @@ Packages from the system-wide Python installations can also be included in your 
 To create and use a Python virtual environment with system-wide packages:
 
 ```bash
-virtualenv --system-site-packages Python39withSysPkgs
-source Python39withSysPkgs/bin/activate
-...
+python -m venv --system-site-packages pythonEnvSysPkgs
+source pythonEnvSysPkgs/bin/activate
 ```
 
-The Python virtual environment (e.g., **Python39withSysPkgs**) now includes all packages from the system-wide Python3.6. The `pip freeze` command shows the list of packages. You could now install new packages as shown above, creating a virtual extension to the system-wide Python installations.
-
-## Miniconda Python
-
-Miniconda is a lightweight installation of Anaconda. It is built on the conda package manager and includes many relevant scientific computing packages. The HPC Cluster has Miniconda3 installed.
-
-For more information, see [Conda Docs](https://conda.io/docs/index.html).
-
-!!! warning "Installing your own Conda"
-    If you install your own Conda, this will often modify your `.bashrc` file. This will cause your base Conda env to load every time you login. This is very useful if you're working on your own Linux machine. But it is very un-useful on a cluster, where we also use modulefiles to load software. In fact, your Conda installation can cause your jobs to fail in many instances. If you would like to use Conda, then please use the centrally installed Miniconda3. If you must use your own Conda, please turn off the auto activate with `conda config --set auto_activate_base false`. You can then manually activate your Conda with `source /path/to/my/conda/etc/profile.d/conda.sh && conda activate`.
-
-### Use Miniconda Python
-
-```bash
-module load miniconda3
-python
-```
-
-### Virtual Environments
-
-Create a new virtual environment (e.g., **myenv** with the `conda` command:
-
-```bash
-conda create -n myenv
-```
-
-To use your Miniconda virtual environment:
-
-```bash
-source activate myenv
-```
-
-<!-- markdownlint-disable MD024 -->
-### Installing Packages
-<!-- markdownlint-enable MD024 -->
-
-To install packages in your conda virtual environment:
-
-```bash
-module load miniconda3
-source activate myenv
-conda install numpy
-```
+The Python virtual environment (e.g., **pythonEnvSysPkgs**) now includes all packages from the system-wide `python/3.9.1`. The `pip freeze` command shows the list of packages. You could now install new packages as shown above, creating a virtual extension to the system-wide Python installations.
 
 ## Python in a Job Script
 
@@ -185,8 +137,8 @@ You may want to use your personal Python environment in a SLURM job on the clust
     #SBATCH --output=%x-%j.out
 
     module load python/3.9.1
-    source myPython36venv/bin/activate
-    python myPythonScript.py
+    source pythonEnv/bin/activate
+    python script.py
     ```
 
 === "conda-venv.slurm"
@@ -199,7 +151,7 @@ You may want to use your personal Python environment in a SLURM job on the clust
     #SBATCH --output=%x-%j.out
 
     module load miniconda3
-    source activate myenv
+    conda activate myenv
     python myPythonScript.py
     ```
 <!-- markdownlint-enable MD046 -->
