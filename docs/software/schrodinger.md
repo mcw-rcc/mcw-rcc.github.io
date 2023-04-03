@@ -39,9 +39,9 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
 
 To upgrade your Schrodinger installation, first uninstall the current version. The uninstall process should leave your configuration intact. Then install the upgraded version of Schrodinger and remember to update your schrodinger.hosts file as it appears above. If you have issues upgrading, please contact {{ support_email }}.
 
-## Usage
+## Remote Job Submission
 
-Included in your install are configurations for the remote server connection to HPC Cluster. These settings are used as follows:
+Included in your install are configurations for the remote server connection to HPC Cluster. This allows you to send large or computationally intensive workloads to the cluster from your desktop. The cluster will run the job and return the results.
 
 : **server_cpu** - HPC Cluster connection for Schrodinger CPU jobs
 : **server_gpu** - HPC Cluster connection for Schrodinger GPU jobs
@@ -52,14 +52,41 @@ When running Schrodinger jobs, please follow these guidelines:
 
 * Run docking, MD, etc. jobs with remote connection to HPC Cluster.
 
-## Schrodinger Command-Line
+## Direct Job Submission
 
-Some Schrodinger scripts are not included in the Maestro interface and must be run from the command line. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) for a complete list and details.
-
-To see the options for a particular **script.py** on the cluster:
+You can also submit jobs directly from the cluster command line. This is helpful for submitting large numbers of jobs, where using the desktop launch interface might be repetitive. All direct jobs are launched from a cluster login node using Schrodinger to submit the job to the SLURM job scheduler. Please follow this syntax using the `server_cpu` or `server_gpu` for `-HOST` as appropriate.
 
 ```bash
-/hpc/apps/schrodinger/2023-1/run script.py -h
+# print the command-line options for Desmond (molecular dynamics package)
+/hpc/apps/schrodinger/2023-1/desmond -h
+
+# submit a desmond job to the SLURM job scheduler
+/hpc/apps/schrodinger/2023-1/desmond -HOST server_gpu -c x.cfg -in x.cms
+```
+
+!!! warning "Mistakes to avoid"
+    - Do not run the Schrodinger apps in a job script. Schrodinger will submit the job to SLURM for you.
+    - Do not use `localhost` as the `-HOST` setting. This will cause the job to run on the login node and/or bypass the license checking. Either case will cause your job and other jobs to fail.
+
+## Schrodinger Utility Scripts
+
+Schrodinger includes additional utility scripts that are not included in the Maestro interface and must be run directly within a job script. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) for a complete list and details.
+
+!!! info "Why are utility scripts submitted via job script?"
+    These utility scripts do not have the advanced job submission options that the Schrodinger apps (Desmond, Epik, etc.) include. Therefore, we have to write a separate SLURM job script for submission.
+
+To see the options for a particular script on the cluster:
+
+```bash
+# script has no requirements
+/hpc/apps/schrodinger/2023-1/run entropy_calc.py -h
+```
+
+Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) page **Requires** column.
+
+```bash
+# run a script requiring the Desmond app
+/hpc/apps/schrodinger/2023-1/run -FROM desmond trj_center.py -h
 ```
 
 To run the **script** in a job on the cluster, adapt the following job submission script to your specific command:
