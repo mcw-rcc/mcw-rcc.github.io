@@ -1,5 +1,5 @@
 ---
-version: R2021b
+version: R2022b
 ---
 # MATLAB Parallel Server
 
@@ -7,51 +7,56 @@ The MATLAB Parallel Server software is an extension of the Parallel Computing To
 
 ## Requirements
 
-* RCC user account
-* MATLAB {{ version }}
-!!! warning "Desktop client"
-    To use MATLAB Parallel Server, your desktop client must be licensed through MCW.
+- RCC user account
+- MATLAB {{ version }} (purchased from MCW)
 
-## Installation
+## Setup
 
-MATLAB requires that the Parallel Server version match the client version. RCC attempts to update the MATLAB Parallel Server software whenever the central MCW license server is updated. The current version is {{ version }}. Please install the correct client version before proceeding with the Client-to-Cluster configuration.
+!!! warning "Version requirement"
+    MATLAB requires that the Parallel Server version match the client version. Please make sure your client MATLAB version is {{ version }}.
 
-### Configuration
+### Download Plugin Files
 
-1. Download the [HPC Cluster setup files](https://mcw.box.com/shared/static/piynswhbqjvonqn4k0gs56xtrn5rw6j7.zip). Unzip and save this folder to a location of your choice. Please note, this folder is necessary for the cluster setup and should be saved in a location so that it will not be erased.
-2. Open outbound firewall ports '''14384-14448''' for the MATLAB program on your computer. This will require administrator privileges on your computer. Contact your department IT worker for assistance.
-3. Save the following script as `startup.m` in a location on the MATLAB path that will not be deleted.
-:
-    === "startup.m"
+Download the [scheduler plugin files](https://mcw.box.com/shared/static/u3pyc0elqy9dn5movaa6sqv4ypc273kp.zip) that help connect your MATLAB client to the HPC cluster. Unzip and save this folder to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
 
-    ```matlab
-    % startup.m
-    % Startup script identifies available interfaces, 
-    % and selects correct interface.
-     
-    e = java.net.NetworkInterface.getNetworkInterfaces();
-    while(e.hasMoreElements())
-        ee = e.nextElement().getInetAddresses();
-        while (ee.hasMoreElements())
-            i = ee.nextElement().getHostAddress().toString();
-            if contains(i,java.lang.String('141.106'))
-                pctconfig('hostname',char(i));
-            end
+### Add Startup Script
+
+Save the following script as `startup.m` in a location on the MATLAB path that will not be deleted.
+
+=== "startup.m"
+
+```matlab
+% startup.m
+% Startup script identifies available interfaces, 
+% and selects correct interface.
+ 
+e = java.net.NetworkInterface.getNetworkInterfaces();
+while(e.hasMoreElements())
+    ee = e.nextElement().getInetAddresses();
+    while (ee.hasMoreElements())
+        i = ee.nextElement().getHostAddress().toString();
+        if contains(i,java.lang.String('141.106'))
+            pctconfig('hostname',char(i));
         end
     end
-    ```
+end
+```
 
-4. Launch the MATLAB application and navigate to **Home > Parallel > Create and Manage Clusters**.
-5. Open the **Cluster Profile Manager** and select **Import**.
-6. Browse to the location of the **MATLAB_R2021b_Client2Cluster** folder and select the **HPC_Cluster.mlsettings** file.
-7. Select the profile in the Cluster Profile Manager and click **Edit**. Scroll down to the **Scheduler Plugin** section of the profile and change the **PluginScriptsLocation** property to point to the location of your copy of the **MATLAB_R2021b_Client2Cluster** folder. Locate the Additional Properties table. Edit the **RemoteJobStorageLocation** and **Username** properties by replacing **NetID** with your MCW username.
-8. Select the **HPC Cluster** profile in the Cluster Profile Manager and select the **Validation** tab. Change the Number of workers to use to **1**. Select **Validate**. Enter your MCW password. All tests should pass.
-9. Finally select the profile in the Cluster Profile Manager and select **Set as Default**.
+### Add Cluster Profile
+
+1. Launch the MATLAB application and select **Home > Parallel > Create and Manage Clusters** to open the **Cluster Profile Manager** window. Select **Import**, browse to the location of the **MATLAB_{{ version }}_Client2Cluster** folder, and select the **HPC_Cluster.mlsettings** file.
+2. Locate **HPC Cluster** profile in the Cluster Profile Manager and select **Edit**.
+    - Locate the **Scheduler Plugin** section of the profile. Set the **PluginScriptsLocation** property to location of the **MATLAB_{{ version }}_Client2Cluster** folder.
+    - Locate the **Additional Properties** table. Set the **RemoteJobStorageLocation** property to `/scratch/g/PI_NetID`, where `PI_NetID` is your PI's username. Set the **Username** property to your MCW username.  
+3. Select **Done** editing and set the new profile as default.
+
+### Validation
+
+Select the **Validation** tab. Change the **Number of workers to use** to **1**. Select **Validate** and enter your MCW password when prompted. All tests should pass.
 
 ## Upgrading
 
-!!! tip "RCC will periodically update the MATLAB Parallel Server software to the next B version."
-    To update, first desktop software to match the new cluster version. Then follow the steps above to configure the new version. Please note that your client software must be equal version or older than cluster version.
+RCC will periodically update the MATLAB Parallel Server software to the next B version. After you upgrade your client to match, follow the steps above to configure the new version.
 
 ## Using the Cluster
 
@@ -61,17 +66,13 @@ There are several ways to interact with the cluster using the Parallel Computing
 
 The **batch** command also creates a pool of workers in a job on the cluster. It creates a remote pool of workers on the cluster that can run your script when workers are available. In comparison to the [parpool option](#parpool) option, the **batch** command does not require that you wait for a pool of workers. Instead, your script is submitted to the cluster to be run in a batch pool when workers are available.
 
-#### Number of Workers
-
 The **batch** command can be submitted as a pool job, where **N** is the number of workers.
 
 ```matlab
 >> job = batch('mytest','Pool',N)
 ```
 
-#### Job Time
-
-Each batch job is submitted to the HPC cluster with **default max walltime of 7 days** There are times (near maintenance windows) that this may not work for every job. You can add a unique time limit to your job by using **AdditionalSubmitArgs**.
+Your batch jobs are submitted to the HPC cluster with **default max walltime of 8 hours**. There are times (near maintenance windows) that this may not work for every job. You can add a unique time limit to your job by using **AdditionalSubmitArgs**.
 
 ```matlab
 >> % Select cluster
@@ -84,25 +85,18 @@ Each batch job is submitted to the HPC cluster with **default max walltime of 7 
 
 A specific time limit can be added to any job. Max time is **7 days**. For example, a job with a 10 hour time limit would set **c.AdditionalProperties.AdditionalSubmitArgs = '--time=10:00:00';**.
 
-#### Documentation
-
-Please review the MathWorks [tutorial](https://www.mathworks.com/help/distcomp/run-a-batch-job.html) explaining batch parallel jobs:
+!!! info "Additional Information"
+    Please review the MathWorks [tutorial](https://www.mathworks.com/help/distcomp/run-a-batch-job.html) explaining batch parallel jobs.
 
 ### Parpool
 
 The **parpool** command creates a pool of workers in a job on the cluster. It creates an interactive session using remote cluster nodes to run the pool of workers. The **parpool** command does require that enough workers are available on the cluster before the pool will start. If you do not need to run commands interactively, and/or have your code in a script, please try the [batch](#batch) example.
-
-<!-- markdownlint-disable MD024 -->
-#### Number of Workers
 
 The **parpool** command can be submitted with variable pool size, where **N** is the number of workers. Please try to use **parpool** sizes that are multiples of 12.
 
 ```matlab
 >> parpool(N)
 ```
-
-#### Job Time
-<!-- markdownlint-enable MD024 -->
 
 Each parpool job is submitted to the HPC cluster with **default max walltime of 7 days** There are times (near maintenance windows) that this may not work for every job. You can add a unique time limit to your job by using **AdditionalSubmitArgs**.
 
@@ -115,15 +109,7 @@ Each parpool job is submitted to the HPC cluster with **default max walltime of 
 >> p = c.parpool(12);
 ```
 
-A specific time limit can be added to any job. Max time is **7 days** For example, a job with a 10 hour time limit would set **c.AdditionalProperties.AdditionalSubmitArgs = '--time=10:00:00';**.
-
-#### Start Pool
-
-To start a **parpool** on default cluster with **N** workers:
-
-```matlab
->> parpool(N);
-```
+A specific time limit can be added to any job. Max time is **7 days** For example, a job with a 10 hour time limit would set `c.AdditionalProperties.AdditionalSubmitArgs = '--time=10:00:00';`.
 
 To start **parpool** on **HPC Cluster** with **N** workers:
 
@@ -131,14 +117,12 @@ To start **parpool** on **HPC Cluster** with **N** workers:
 >> parpool('HPC Cluster',N);
 ```
 
-Start a **parpool** object on a cluster with **N** workers and attach a file **myfile.m**:
+Start a **parpool** object on a cluster with **N** workers and attach a file `myfile.m`:
 
 ```matlab
 >> poolobj = parpool('HPC Cluster',N);
 >> addAttachedFiles(poolobj,{'mytest.m'});
 ```
-
-#### Run Code
 
 Now that the **parpool** is started, you can run your code. The code can be run interactively or using a script.
 
@@ -157,6 +141,7 @@ Plot output:
 ```
 
 To run code with a script, create a new script:
+
 === "mytest.m"
 
 ```matlab
@@ -177,9 +162,7 @@ Plot output:
 >> plot(A)
 ```
 
-#### Shutdown Pool
-
-Please make sure to shutdown your parpool when you're done computing. To use **gcp** to shutdown your parpool:
+Please make sure to shutdown your parpool when you're done:
 
 ```matlab
 >> delete(gcp(poolobj))
