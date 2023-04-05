@@ -53,7 +53,7 @@ Every cluster node has 48 cores. Please remember that more cores does not always
 Simulation using 1 node, 48 cores, and 360GB.
 
 ```txt
-sbatch-dyna -i testing.k -j testrun -m netid@mcw.edu -n 1 -c 48 -l 2 -p d -y "memory1=16000m memory2=1005m"
+sbatch-dyna -i testing.k -j testrun -m netid@mcw.edu -n 1 -c 48 -l 2 -p d -y "memory1=16000m memory2=333m"
 ```
 
 - `memory1`  
