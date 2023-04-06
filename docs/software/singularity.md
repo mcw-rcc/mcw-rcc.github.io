@@ -223,7 +223,10 @@ Build the container using the definition file:
 sudo singularity build Python.sif Python.def
 ```
 
-Build requires `root` or `sudo` permissions. The syntax is always `singularity build` followed by the new container name, denoted by the `.sif` extension, and the definition file.
+The syntax is always `singularity build` followed by the new container name, denoted by the `.sif` extension, and the definition file.
+
+!!! info "root or sudo required"
+    Building from a definition file requires `root` or `sudo` permissions. This is not possible on the HPC cluster. Instead we recommend to use a virtual machine running on your desktop.
 
 #### Test
 
