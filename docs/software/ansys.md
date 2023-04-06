@@ -25,7 +25,7 @@ We need a journal file to tell Fluent how to proceed. Create a file `/scratch/g/
 ```txt
 /file/read-case-data "/scratch/g/PI_NetID/example-job/cas-files/test_fluent_case"
 /solve/iterate 1000
-/file/write-case ""/scratch/g/PI_NetID/example-job/output/test_fluent_case.cas"
+/file/write-case "/scratch/g/PI_NetID/example-job/output/test_fluent_case.cas"
 /file/write-data "/scratch/g/PI_NetID/example-job/output/test_fluent_case.data"
 /parallel timer usage
 /exit
