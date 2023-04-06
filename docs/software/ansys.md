@@ -54,7 +54,7 @@ export SCHEDULER_TIGHT_COUPLING=1
 FL_SCHEDULER_HOST_FILE=slurm.${SLURM_JOB_ID}.hosts  
 /bin/rm -rf ${FL_SCHEDULER_HOST_FILE}               
 scontrol show hostnames "$SLURM_JOB_NODELIST" >> $FL_SCHEDULER_HOST_FILE 
-time fluent -g 3ddp -t${SLURM_NTASKS} -i fluent-mpi.jou -cnf=${FL_SCHEDULER_HOST_FILE}
+time fluent -g 3ddp -t${SLURM_NTASKS} -i fluent-test.jou -cnf=${FL_SCHEDULER_HOST_FILE}
 ```
 
 Submit the job:
