@@ -6,7 +6,7 @@ Need help getting started? Send us an email at {{ support_email }}.
 
 ## Getting an account
 
-You need an RCC account to get started. Please see the [Accounts guide](accounts.md) for details.
+You need an RCC account to get started. Please see [Getting an Account]](accounts.md) for details.
 
 ## Logging in
 

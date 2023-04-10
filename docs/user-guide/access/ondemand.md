@@ -23,9 +23,9 @@ Open OnDemand is available for remote work through Citrix. Please see the [remot
 
 To access Open OnDemand, point your Citrix web browser to <https://ondemand.rcc.mcw.edu>.
 
-## Shell Access
+## Command-line Terminal
 
-Shell access is available to cluster login nodes. From the **Dashboard** menu, select **Clusters > Cluster Shell Access** A new window will open and you will be logged in to a cluster login node. This shell access is the same as if you had used a Terminal app from your desktop (i.e. Putty, SSH Secure Shell, MobaXterm, etc.).
+Open OnDemand includes a command-line terminal app that connects you to the HPC cluster login node via SSH. From the **Dashboard** menu, select **Clusters > Cluster Shell Access** A new window will open and you will be logged in to a cluster login node. This shell access is the same as if you had used a Terminal app from your desktop (i.e. Putty, SSH Secure Shell, MobaXterm, etc.).
 
 !!! tip "The shell app now supports themes!"
     You can customize the them of your OOD shell by selecting a new option from the themes drop-down menu in the upper right-hand corner of the window.

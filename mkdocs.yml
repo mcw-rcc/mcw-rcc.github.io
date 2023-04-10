@@ -106,7 +106,6 @@ nav:
     - Connecting:
       - Logging in: user-guide/access/login.md
       - Open OnDemand: user-guide/access/ondemand.md
-      - SSH Connection: user-guide/access/ssh.md
       - Remote Access: user-guide/access/remote-access.md
     - Running Jobs: 
       - Submitting SLURM Jobs: user-guide/jobs/running-jobs.md
