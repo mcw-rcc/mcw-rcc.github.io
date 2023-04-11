@@ -25,7 +25,7 @@ We need a journal file to tell Fluent how to proceed. Create a file `/scratch/g/
 ```txt
 /file/read-case-data "/scratch/g/PI_NetID/example-job/cas-files/test_fluent_case"
 /solve/iterate 1000
-/file/write-case ""/scratch/g/PI_NetID/example-job/output/test_fluent_case.cas"
+/file/write-case "/scratch/g/PI_NetID/example-job/output/test_fluent_case.cas"
 /file/write-data "/scratch/g/PI_NetID/example-job/output/test_fluent_case.data"
 /parallel timer usage
 /exit
@@ -54,7 +54,7 @@ export SCHEDULER_TIGHT_COUPLING=1
 FL_SCHEDULER_HOST_FILE=slurm.${SLURM_JOB_ID}.hosts  
 /bin/rm -rf ${FL_SCHEDULER_HOST_FILE}               
 scontrol show hostnames "$SLURM_JOB_NODELIST" >> $FL_SCHEDULER_HOST_FILE 
-time fluent -g 3ddp -t${SLURM_NTASKS} -i fluent-mpi.jou -cnf=${FL_SCHEDULER_HOST_FILE}
+time fluent -g 3ddp -t${SLURM_NTASKS} -i fluent-test.jou -cnf=${FL_SCHEDULER_HOST_FILE}
 ```
 
 Submit the job:
