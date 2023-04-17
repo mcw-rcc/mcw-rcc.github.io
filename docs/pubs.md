@@ -10,6 +10,14 @@ All you have to do is include the following statement in your publication:
 
 ## 2023
 
+**[Lymphocytic Choriomeningitis Virus Clone 13 Infection Results in CD8 T Cell–Mediated Host Mortality in Diacylglycerol Kinase α–Deficient Mice](https://doi.org/10.4049/jimmunol.2101011)**  
+Kudek MR, Xin G, Alson D, Holzhauer S, Shen J, Kasmani MY, Riese M, Cui W
+{: .author}
+
+**[Nonparametric failure time: Time-to-event machine learning with heteroskedastic bayesian additive regression trees and low information omnibus dirichlet process mixtures](https://doi.org/10.1111/biom.13857)**  
+Sparapani RA, Logan BR, Maiers MJ, Laud PW, McCulloch RE
+{: .author}
+
 **[Fragment-based drug discovery of small molecule ligands for the human chemokine CCL28](https://doi.org/10.1016/j.slasd.2023.02.004)**  
 Zhou AL, Jensen DR, Peterson FC, Thomas MA, Schlimgen RR, Dwinell MB, Smith BC, Volkman BF
 {: .author}
