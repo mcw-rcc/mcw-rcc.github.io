@@ -10,6 +10,10 @@ All you have to do is include the following statement in your publication:
 
 ## 2023
 
+**[The effects of cytomegalovirus on brain structure following sport-related concussion](https://doi.org/10.1093/brain/awad126)**  
+Savitz J, Goeckner BD, Ford BN, Teague TK, Zheng H, Harezlak J, Mannix R, Muftuler LT, Brett BL, McCrea MA, Meier TB
+{: .author}
+
 **[Lymphocytic Choriomeningitis Virus Clone 13 Infection Results in CD8 T Cell–Mediated Host Mortality in Diacylglycerol Kinase α–Deficient Mice](https://doi.org/10.4049/jimmunol.2101011)**  
 Kudek MR, Xin G, Alson D, Holzhauer S, Shen J, Kasmani MY, Riese M, Cui W
 {: .author}
