@@ -15,7 +15,7 @@ Nextflow pipelines require a master process that controls each part. You can con
 
 ### Interactive job
 
-We'll start with a simple `"Hello world!"` pipeline. To get started, launch an interactive job.
+We'll start with a simple `Hello world!` pipeline. To get started, launch an interactive job.
 
 ```txt
 srun --job-name=nextflow --time=1:00:00 --ntasks=1 --pty bash
@@ -45,7 +45,7 @@ Hello world!
 Hola world!
 ```
 
-That simple workflow printed `"Hello world!` in four languages. Notice that the executor was set to local, which uses the resources of the interactive job on the same server. The local executor works for many workflows but may not be appropriate in all cases. For resource intensive workflows, such as genomics pipelines, use the SLURM executor to run each part its own new and separate SLURM job.
+That simple workflow printed `Hello world!` in four languages. Notice that the executor was set to local, which uses the resources of the interactive job on the same server. The local executor works for many workflows but may not be appropriate in all cases. For resource intensive workflows, such as genomics pipelines, use the SLURM executor to run each part its own new and separate SLURM job.
 
 !!! warning "Understand your pipeline!"
     Take time to read the Nextflow documentation before you submit a pipeline using the SLURM executor. A misconfigured pipeline could submit many thousands of unwanted jobs and adversely affect the cluster scheduler.
@@ -63,7 +63,7 @@ profiles {
         process.executor = 'slurm'
         // our cluster requires time limit for every job
         // you may need to modify for your needs
-        process.executor = '1:00:00'
+        process.time = '1:00:00'
     }
 }
 ```
