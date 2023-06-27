@@ -134,6 +134,7 @@ nav:
       - software/ansys.md
       - software/lsdyna.md
       - software/matlab.md
+      - software/nextflow.md
       - software/python.md
       - software/pytorch.md
       - software/R.md 
