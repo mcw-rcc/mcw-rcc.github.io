@@ -109,7 +109,7 @@ To install a package using `pip`:
 pip install numpy
 ```
 
-The `pip` command will install packages (e.g., **NumPy** to the **site-packages** directory in your virtual environment. Installed packages can be listed with the `pip freeze` command.
+The `pip` command will install packages to the **site-packages** directory in your virtual environment. Installed packages can be listed with the `pip freeze` command.
 
 Packages from the system-wide Python installations can also be included in your Python virtual environment. This must be done when creating the virtual environment.
 

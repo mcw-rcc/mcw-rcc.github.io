@@ -1,7 +1,7 @@
 # Research Computing Documentation
 
 !!! tip "Announcements"
-    - June 7, 2023: Maintenance from 9PM-12AM. Cluster jobs will be blocked during maintenance. Login nodes will be rebooted. Open OnDemand will be rebooted. Access to storage may be disrupted.
+    - August 2, 2023: Maintenance from 9PM-12AM. Cluster jobs will be blocked during maintenance. Login nodes will be rebooted. Open OnDemand will be rebooted. Access to storage may be disrupted.
 
 ## Introduction
 

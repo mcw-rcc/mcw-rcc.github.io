@@ -10,6 +10,18 @@ All you have to do is include the following statement in your publication:
 
 ## 2023
 
+**[Effect of muscle activation scheme in human head-neck model on estimating cervical spine ligament strain from military volunteer frontal impact data](https://doi.org/10.1016/j.aap.2023.107157)**  
+Gerringer JW, Somasundaram K, Pintar FA
+{: .author}
+
+**[Conformational changes in the activation loop of a bacterial PASTA kinase](https://doi.org/10.1002/pro.4697)**  
+Bluma MS, Schultz KM, Kristich CJ, Klug CS
+{: .author}
+
+**[Loss of PBAF promotes expansion and effector differentiation of CD8+ T cells during chronic viral infection and cancer](https://doi.org/10.1016/j.celrep.2023.112649)**  
+Kharel A, Shen J, Brown R, Chen Y, Nguyen C, Alson D, Bluemn T, Fan J, Gai K, Zhang B, Kudek M, Zhu N, Cui W
+{: .author}
+
 **[The effects of cytomegalovirus on brain structure following sport-related concussion](https://doi.org/10.1093/brain/awad126)**  
 Savitz J, Goeckner BD, Ford BN, Teague TK, Zheng H, Harezlak J, Mannix R, Muftuler LT, Brett BL, McCrea MA, Meier TB
 {: .author}
