@@ -42,9 +42,6 @@ Additional storage capacity may be purchased through our Research Group Storage 
 
 Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB. Scratch space may be increased by request with justification.
 
-!!! tip "Do you need more scratch storage?"
-    Scratch storage may be increased beyond the 5TiB limit. To increase scratch storage, send an email to {{ support_email }} with the amount and justification.
-
 ### Local Scratch
 
 **Quota**: No quota, limited to size of disk (440GiB)  
