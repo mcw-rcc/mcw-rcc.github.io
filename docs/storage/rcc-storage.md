@@ -20,7 +20,7 @@ All storage is connected via high speed link to the cluster and available via Li
 ### Home
 
 **Quota**: 50 GiB  
-**Snapshot**: daily @ 12PM, 7 day lifetime  
+**Snapshot**: 14 daily @ 12PM, 6 weekly @ 1PM Sunday  
 **Replication**: continuous with snapshot
 
 Every user has a home directory located at `/home/netid`. The home directory is used for storing user-installed software, user-written scripts, etc. Each home directory is only accessible by its owner. This directory is not suitable for sharing files. The quota limit is 50GiB.
@@ -28,7 +28,7 @@ Every user has a home directory located at `/home/netid`. The home directory is 
 ### Group
 
 **Quota**: 1 TiB, paid additional  
-**Snapshot**: daily @ 2PM, 7 day lifetime  
+**Snapshot**: 14 daily @ 2PM, 6 weekly @ 3PM Sunday  
 **Replication**: continuous with snapshot
 
 Every lab is eligible for a group directory at `/group/pi_netid` with a free 1TiB limit. This space is meant for research data in active projects. This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes.
@@ -37,13 +37,10 @@ Additional storage capacity may be purchased through our Research Group Storage 
 
 ### Scratch
 
-**Quota**: 5 TiB, expandable to 10 TiB  
-**Purge**: files may be deleted after 180 days
+**Quota**: 5 TiB  
+**Purge**: files may be deleted by admin after 180 days
 
-Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every user has a directory at `/scratch/u/netid` with quota limit 5TiB. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB. Scratch space may be increased by request with justification.
-
-!!! tip "Do you need more scratch storage?"
-    Scratch storage may be increased beyond the 5TiB limit. To increase scratch storage, send an email to {{ support_email }} with the amount and justification.
+Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB. Scratch space may be increased by request with justification.
 
 ### Local Scratch
 
