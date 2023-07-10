@@ -8,7 +8,7 @@ Citrix is the recommended method of remote access to RCC resources. Citrix is av
 
 ### PuTTY in Citrix
 
-PuTTY is a well-documented terminal application used for SSH access to Linux systems. Contact the MCW-IS help desk to request PuTTY for your Citrix account.
+[PuTTY](putty.md) is a well-documented terminal application used for SSH access to Linux systems. Contact the MCW-IS help desk to request PuTTY for your Citrix account.
 
 To access PuTTY, first login to Citrix. From the Citrix home page, select **Admin Tools**, then select **PuTTY**.
 

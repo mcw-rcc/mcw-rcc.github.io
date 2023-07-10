@@ -18,7 +18,7 @@ You will see a terminal prompt `login as:`. Type in your MCW username and press 
 
 ## File Transfer
 
-The built-in SFTP client will start and load on the left side of the MobaXterm window. The default location is your cluster home directory. However, all of the folders that you normally access from the command-line are available.
+The built-in SFTP client will start and load on the left side of the MobaXterm window when you login. The default location is your cluster home directory. However, all of the folders that you normally access from the command-line are available.
 
 ## X11 Windowed Apps
 

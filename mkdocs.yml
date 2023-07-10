@@ -107,7 +107,9 @@ nav:
       - Logging in: user-guide/access/login.md
       - Open OnDemand: user-guide/access/ondemand.md
       - Remote Access: user-guide/access/remote-access.md
-      - MobaXterm: user-guide/access/mobaxterm.md
+      - SSH Clients:
+        - MobaXterm: user-guide/access/mobaxterm.md
+        - PuTTY: user-guide/access/putty.md
     - Running Jobs: 
       - Submitting SLURM Jobs: user-guide/jobs/running-jobs.md
       - Staging Data: user-guide/jobs/storage-job.md

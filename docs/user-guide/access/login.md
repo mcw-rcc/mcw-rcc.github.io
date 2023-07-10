@@ -16,7 +16,7 @@ Open OnDemand is a web browser-based interface to RCC computing resources. You c
 
 ### From Windows
 
-Windows users will need a SSH client application installed on the desktop. Research Computing recommends [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) which includes a terminal emulator, file browser, and X11 server. [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) is another option and can be made available in Citrix.
+Windows users will need a SSH client application installed on the desktop. Research Computing recommends [MobaXterm](mobaxterm.md) which includes a terminal emulator, file browser, and X11 server. [PuTTY](putty.md) is another option and can be made available in Citrix.
 
 ### From Mac or Linux
 
@@ -58,7 +58,7 @@ ssh netid@login-clustername.rcc.mcw.edu
 
 ## Using SSH with X11
 
-X11 allows you to run a windowed application on a remote server and transmit the graphical view back to your computer. This is helpful if you want to run a graphical application that is installed on the cluster, but do not want to use a compute node or go through Open OnDemand. Mac users will need Xquartz installed. Windows users should use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html).
+X11 allows you to run a windowed application on a remote server and transmit the graphical view back to your computer. This is helpful if you want to run a graphical application that is installed on the cluster, but do not want to use a compute node or go through Open OnDemand. Mac users will need Xquartz installed. Windows users should use [MobaXterm](mobaxterm.md).
 
 !!! warning "User experience"
     Running a windowed application via SSH with X11 can be a very slow, and sometimes unusable experience. When possible, avoid using X11 over VPN or WiFi.
