@@ -27,7 +27,7 @@ Every user has a home directory located at `/home/netid`. The home directory is 
 
 ### Group
 
-**Quota**: 1 TiB, paid additional  
+**Quota**: 1 TiB, expandable with payment  
 **Snapshot**: 14 daily @ 2PM, 6 weekly @ 3PM Sunday  
 **Replication**: continuous with snapshot
 
