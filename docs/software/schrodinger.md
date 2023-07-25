@@ -3,7 +3,7 @@
 !!! info "Schrodinger is licensed by the Department of Biochemistry and available to all MCW investigators."
     Users interested in contributing funds or discussing Schrodinger licensing at MCW should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
 
-The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite) includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
+The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite){:target="_blank"} includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
 
 ## Requirements
 
@@ -11,16 +11,16 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
 
 ## Installation & Configuration
 
-1. Download 2023-1 software from <https://www.schrodinger.com> and run the installer.
+1. Download 2023-1 software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
 2. Locate the schrodinger.hosts file.
 : **Windows**  
     `$INSTALLDIR\Schrodinger 2023-1\schrodinger.hosts`
 : **Mac**  
     `/opt/schrodinger/suites2023-1/schrodinger.hosts`
 
-3. Download the [server schrodinger.hosts file](https://mcw.box.com/s/zz6t4al7q31vz9ywaquuy0arhjc2n06j). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
+3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EfqC_VXnjglKu10OzbrrXsMBlHwAHqXHkN3UxOo59a_CVA?e=Te8BbG){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
-4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Locate the hostname and port in the [licensing info](https://mcw.box.com/s/9wlkkv0x1ca8odhkyxcuvw2mdwngo32t). Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
+4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Locate the hostname and port in the [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
 
     !!! warning
         The license server hostname has changed. If you used Schrodinger prior to 2023, you will need to update your client with the new license information.
@@ -31,7 +31,7 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
     !!! warning "Known issue"
         The 2023-1 Remote Login Configuration tool may error due to missing files. This is a known issue. To work around this issue, launch the `Schrodinger Command Prompt` and run command `run SchrodingerPlinkWizard`. Contact {{ support_email }} with questions.
 : **Mac**  
-    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html).
+    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}.
 
 6. Launch the Maestro application.
 
@@ -70,7 +70,7 @@ You can also submit jobs directly from the cluster command line. This is helpful
 
 ## Schrodinger Utility Scripts
 
-Schrodinger includes additional utility scripts that are not included in the Maestro interface and must be run directly within a job script. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) for a complete list and details.
+Schrodinger includes additional utility scripts that are not included in the Maestro interface and must be run directly within a job script. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter){:target="_blank"} for a complete list and details.
 
 !!! info "Why are utility scripts submitted via job script?"
     These utility scripts do not have the advanced job submission options that the Schrodinger apps (Desmond, Epik, etc.) include. Therefore, we have to write a separate SLURM job script for submission.
@@ -82,7 +82,7 @@ To see the options for a particular script on the cluster:
 /hpc/apps/schrodinger/2023-1/run entropy_calc.py -h
 ```
 
-Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) page **Requires** column.
+Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter){:target="_blank"} page **Requires** column.
 
 ```bash
 # run a script requiring the Desmond app
@@ -141,8 +141,8 @@ On the cluster:
 
 Having issues installing? Contact {{ support_email }} to schedule a support session.
 
-For general Schrodinger questions, see <https://www.schrodinger.com/kb>.
+For general Schrodinger questions, see <https://www.schrodinger.com/kb>{:target="_blank"}.
 
-For training opportunities, see <https://www.schrodinger.com/seminars/current> and <https://www.schrodinger.com/training>.
+For training opportunities, see <https://www.schrodinger.com/seminars/current>{:target="_blank"} and <https://www.schrodinger.com/training>{:target="_blank"}.
 
 --8<-- "includes/abbreviations.md"
