@@ -31,7 +31,7 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
     !!! warning "Known issue"
         The 2023-1 Remote Login Configuration tool may error due to missing files. This is a known issue. To work around this issue, launch the `Schrodinger Command Prompt` and run command `run SchrodingerPlinkWizard`. Contact {{ support_email }} with questions.
 : **Mac**  
-    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}.
+    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html).
 
 6. Launch the Maestro application.
 
@@ -70,7 +70,7 @@ You can also submit jobs directly from the cluster command line. This is helpful
 
 ## Schrodinger Utility Scripts
 
-Schrodinger includes additional utility scripts that are not included in the Maestro interface and must be run directly within a job script. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter){:target="_blank"} for a complete list and details.
+Schrodinger includes additional utility scripts that are not included in the Maestro interface and must be run directly within a job script. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) for a complete list and details.
 
 !!! info "Why are utility scripts submitted via job script?"
     These utility scripts do not have the advanced job submission options that the Schrodinger apps (Desmond, Epik, etc.) include. Therefore, we have to write a separate SLURM job script for submission.
@@ -82,7 +82,7 @@ To see the options for a particular script on the cluster:
 /hpc/apps/schrodinger/2023-1/run entropy_calc.py -h
 ```
 
-Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter){:target="_blank"} page **Requires** column.
+Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) page **Requires** column.
 
 ```bash
 # run a script requiring the Desmond app
@@ -141,8 +141,8 @@ On the cluster:
 
 Having issues installing? Contact {{ support_email }} to schedule a support session.
 
-For general Schrodinger questions, see <https://www.schrodinger.com/kb>{:target="_blank"}.
+For general Schrodinger questions, see <https://www.schrodinger.com/kb>.
 
-For training opportunities, see <https://www.schrodinger.com/seminars/current>{:target="_blank"} and <https://www.schrodinger.com/training>{:target="_blank"}.
+For training opportunities, see <https://www.schrodinger.com/seminars/current> and <https://www.schrodinger.com/training>.
 
 --8<-- "includes/abbreviations.md"
