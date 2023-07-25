@@ -14,4 +14,4 @@ If you are having trouble remounting your drive, please first right-click on the
 
 ### MacOS
 
-In the Finder menu, select `Go` and `Connect to Server`. In the Server Address box, enter `smb://qfs2.rcc.mcw.edu/pi_netid`. You'll be prompted for your MCW username and password when you connect. Make sure to select `Registered User` and preface your MCW username with `mcwcorp\`.
+In the Finder menu, select `Go` and `Connect to Server`. In the Server Address box, enter your drive path, which will be in the form `smb://qfs2.rcc.mcw.edu/pi_netid`. You will be prompted for your MCW username and password when you connect. Make sure to select `Registered User` and preface your MCW username with `mcwcorp\`.
