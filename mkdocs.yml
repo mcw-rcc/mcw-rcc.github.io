@@ -135,6 +135,7 @@ nav:
     - Guides:
       - software/alphafold.md
       - software/ansys.md
+      - software/git.md
       - software/lsdyna.md
       - software/matlab.md
       - software/nextflow.md
