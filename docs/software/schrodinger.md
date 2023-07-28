@@ -3,7 +3,7 @@
 !!! info "Schrodinger is licensed by the Department of Biochemistry and available to all MCW investigators."
     Users interested in contributing funds or discussing Schrodinger licensing at MCW should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
 
-The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite){:target="_blank"} includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
+The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite) includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
 
 ## Requirements
 
