@@ -3,7 +3,7 @@
 ## Access & Login
 
 ??? question "How do I get an account?"
-    Submit an [Account Request](https://forms.office.com/r/98QNm6cAyt){:target="_blank"} form.
+    Submit an [Account Request](https://forms.office.com/r/98QNm6cAyt) form.
 ??? question "How do I login?"
     The method you use to login depends on your computer and use case. We suggest you start with the [quickstart guide](user-guide/quickstart.md#logging-in).
 

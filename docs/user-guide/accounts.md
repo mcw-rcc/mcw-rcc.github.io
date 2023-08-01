@@ -5,7 +5,7 @@ A user account is required for access to Research Computing resources, including
 !!! info
     For RCC purposes, a PI is a full-time MCW faculty member.
 
-[Request an Account](https://forms.office.com/r/98QNm6cAyt){ :target="_blank" .md-button .md-button--primary }
+[Request an Account](https://forms.office.com/r/98QNm6cAyt){ .md-button .md-button--primary }
 
 ## Terms of Use
 

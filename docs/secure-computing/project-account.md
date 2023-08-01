@@ -27,4 +27,4 @@ We strongly suggest to email {{ support_email }} prior to requesting or signing 
 
 If you're ready to proceed, use the link below.
 
-[Request a ResHPC Project Account](https://forms.office.com/r/qVmFJrBzQr){:target="_blank" .md-button .md-button--primary }
+[Request a ResHPC Project Account](https://forms.office.com/r/qVmFJrBzQr){ .md-button .md-button--primary }
