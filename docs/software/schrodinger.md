@@ -11,16 +11,16 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
 
 ## Installation & Configuration
 
-1. Download 2023-1 software from <https://www.schrodinger.com> and run the installer.
+1. Download 2023-1 software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
 2. Locate the schrodinger.hosts file.
 : **Windows**  
     `$INSTALLDIR\Schrodinger 2023-1\schrodinger.hosts`
 : **Mac**  
     `/opt/schrodinger/suites2023-1/schrodinger.hosts`
 
-3. Download the [server schrodinger.hosts file](https://mcw.box.com/s/zz6t4al7q31vz9ywaquuy0arhjc2n06j). Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
+3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EfqC_VXnjglKu10OzbrrXsMBlHwAHqXHkN3UxOo59a_CVA?e=Te8BbG){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
-4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Locate the hostname and port in the [licensing info](https://mcw.box.com/s/9wlkkv0x1ca8odhkyxcuvw2mdwngo32t). Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
+4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Locate the hostname and port in the [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
 
     !!! warning
         The license server hostname has changed. If you used Schrodinger prior to 2023, you will need to update your client with the new license information.
