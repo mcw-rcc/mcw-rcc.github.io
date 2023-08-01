@@ -1,4 +1,4 @@
-# Using Git and GitHub
+# Git and GitHub
 
 This is a beginner's guide to using Git and GitHub for your research. Git is a well-known version control software. GitHub is a web service used to host and manage git repositories. This may sound complicated, but this guide will cover these topics step by step, starting with version control.
 

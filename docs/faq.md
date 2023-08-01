@@ -100,7 +100,7 @@
     You can install your own Python packages using the system Python, a local Python, a virtual environment, or a conda environment. See the [Python guide](software/python.md) for details. Please also that RCC has centrally installed many packages that are either commonly used, or difficult to install. We suggest to check first if your package is already installed. Please contact {{ support_email }} for assistance or to have RCC install the package for you.
 
 ??? question "Can I use Docker on the cluster?"
-    No. Docker is not installed or allowed on RCC systems due to security. However, RCC does provide a container solution called [Singularity](software/singularity.md), which can import Docker containers to run on the cluster.
+    No. Docker is not installed or allowed on RCC systems due to security. However, RCC does provide a container solution called [Singularity](software/containers.md), which can import Docker containers to run on the cluster.
 
 ## Data Transfer & Storage
 

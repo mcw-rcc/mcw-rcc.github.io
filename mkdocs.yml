@@ -135,7 +135,6 @@ nav:
     - Guides:
       - software/alphafold.md
       - software/ansys.md
-      - software/git.md
       - software/lsdyna.md
       - software/matlab.md
       - software/nextflow.md
@@ -143,8 +142,10 @@ nav:
       - software/pytorch.md
       - software/R.md 
       - software/schrodinger.md
-      - software/singularity.md
-      - software/tensorflow.md      
+      - software/tensorflow.md
+    - Tools:
+      - software/containers.md
+      - software/git.md      
   - ResHPC:
     - Overview: secure-computing/reshpc.md
     - Accounts & Projects: secure-computing/project-account.md
