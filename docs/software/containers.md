@@ -1,4 +1,4 @@
-# Singularity
+# Software Containers
 
 ## Overview
 
