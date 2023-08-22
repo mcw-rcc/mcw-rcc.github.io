@@ -38,14 +38,17 @@ Additional storage capacity may be purchased through our Research Group Storage 
 ### Scratch
 
 **Quota**: 5 TiB  
-**Purge**: files may be deleted by admin after 180 days
+**Purge**: files may be deleted by admin after 90 days
 
-Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB. Scratch space may be increased by request with justification.
+Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB.
+
+!!! warning "Do not store data in scratch unless you are running a SLURM job."
+    If you are not running a job, you should not have any data in scratch. Please remember that scratch storage is limited and must be cleaned up regularly. Failure to do so could result in jobs failing for all users and/or deletion of your scratch data by Research Computing.
 
 ### Local Scratch
 
 **Quota**: No quota, limited to size of disk (440GiB)  
-**Purge**: files deleted after every job
+**Purge**: files deleted automatically after every job
 
 Local scratch disk may be the fastest computing option to store your job runtime files, especially for jobs that are heavily I/O dependent (i.e. lots of files are read/written). However, it does take some time to transfer your files from your global scratch directory to local scratch, and the space is limited (440GiB).
 

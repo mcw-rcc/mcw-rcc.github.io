@@ -22,7 +22,7 @@ Where noted below, encryption is required. This is an important step in ensuring
 ## Project Directory
 
 **Quota**: inherited from [/group](../storage/rcc-storage.md#group)  
-**Snapshot**: daily @ 2PM, 7 day lifetime  
+**Snapshot**: 14 daily @ 2PM, 6 weekly @ 3PM Sunday  
 **Replication**: continuous with snapshot
 
 Each project has a unique directory located at `/group/{PINetID}/{ProjID}`. Within each project's `/group` directory, source and results data must be kept separate. You will find the following spaces in your `/group/{PINetID}/{ProjID}` directory:
@@ -38,7 +38,7 @@ Users must keep source and results separate. Most DUAs are time limited and Rese
 ## Home Directory
 
 **Quota**: 5 GiB  
-**Snapshot**: daily @ 12PM, 7 day lifetime  
+**Snapshot**: 14 daily @ 12PM, 6 weekly @ 1PM Sunday  
 **Replication**: continuous with snapshot
 
 Every project user account has a home directory located at `/home/{NetID}.{ProjID}`. The home directory is a requirement of hte cluster's Linux operating system. You should not store data in your home directory.
@@ -49,9 +49,9 @@ Every project user account has a home directory located at `/home/{NetID}.{ProjI
 ## Scratch Directory
 
 **Quota**: inherited from [/scratch](../storage/rcc-storage.md#scratch)  
-**Purge**: files may be deleted after 180 days
+**Purge**: files may be deleted by admin after 90 days
 
-Each project has a unique scratch directory located at `/scratch/g/{PINetID}/{ProjID}`. You may mix source and results files within your project scratch directory. However, you must delete all data in your scratch when your job is done.
+Each project has a unique scratch directory located at `/scratch/g/{PINetID}/{ProjID}`. Please note, you must delete all data in your project scratch when your job is done.
 
 !!! warning "Encryption required"
     Restricted source data may only be decrypted in the project's scratch directory, and only as needed for analysis. Do not leave unencrypted data in project's scratch directory. For example, if you're going on vacation, delete the unencrypted data.
