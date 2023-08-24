@@ -111,10 +111,10 @@ To start a Jupyter Notebook on a cluster server:
 
 1. From the **Dashboard** menu, select **Interactive Apps > Jupyter Notebook**. You'll see two categories in the **Interactive Apps** drop-down menu. Select for the resource you need.
 2. The **My Interactive Sessions** screen will open. Select for the resource parameters that you need. You can also select to be notified by email when your session will start.  
-![Jupyter notebook app](../../img/Jupyter_notebook_app.png)  
+![Jupyter notebook app](../../_static/img/Jupyter_notebook_app.png)  
 3. Click the **Launch** button to start your Jupyter Notebook session. You may have to wait for cluster resources to become available.
 4. Once the session starts, click the **Connect to Jupyter** button. A Jupyter Notebook will open in a new window.  
-![Jupyter notebook app](../../img/Jupyter_notebook_app_launch.png)  
+![Jupyter notebook app](../../_static/img/Jupyter_notebook_app_launch.png)  
 5. To terminate your Jupyter Notebook session, go back to the **My Interactive Sessions** page and click the red **Delete** button.
 
 !!! tip "Did you know you can also use your own Python environment in your Jupyter Notebook session?"

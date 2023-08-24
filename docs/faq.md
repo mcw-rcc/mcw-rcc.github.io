@@ -73,6 +73,8 @@
 
     * Your job might be requesting resources that don't exist. Check the output of <nobr>`squeue -j JobID`</nobr>, where ***JobID*** is your SLURM job number. In the final column '''Nodelist (Reason)''' you might see '''PD''' followed by a reason. This could indicate that your job is temporarily waiting for resources (see above) or is blocked.
 
+    * Your job might be blocked by a maintenance window. For details see [Job Scheduling and Maintenance](user-guide/jobs/running-jobs.md#job-scheduling-and-maintenance).
+
 ??? question "Can I run a task/script on a login node?"
     Yes, but you should make sure you know exactly how many cores and memory the task will use. Additionally, you should make sure this task will not run for more than **30 min**. Examples of allowed tasks might be a pre- or post- processing task for your input/output files. This might also include compiling or installing software. In general, please try to run all computationally intensive tasks on on the cluster compute nodes. For details see the [User Etiquette Guide](user-guide/etiquette.md).
 
