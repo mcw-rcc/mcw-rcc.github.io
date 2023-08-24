@@ -61,9 +61,9 @@ sacct -j jobId # jobId is the job number
 
 ## Managing Job Input/Output Files
 
-The new HPC system requires a specific job workflow:
+The HPC cluster requires a specific job workflow:
 
-1. Copy job input/supporting files from your RGS directory within `/group/PI_NetID/...` to your scratch directory `/scratch/u/NetID` or `/scratch/g/PI_NetID`
+1. Copy job input/supporting files from your RGS directory within `/group/PI_NetID/...` to your scratch directory `/scratch/g/PI_NetID`
 2. Submit a job from your `/scratch/...` directory that utilizes the staged job input/supporting files. **You must make sure the job I/O runs in your scratch directory.** The easiest way is to run the sbatch command in your `/scratch/...` directory.
 3. When job finishes, copy results from `/scratch/...` back to `/group/PI_NetID/`....
 4. If there are further computations, continues utilizing the job input/supporting files
@@ -90,7 +90,7 @@ Most applications do not use more than one CPU core. Single-thread jobs that req
 
 #### Multi-thread
 
-A multi-thread application is able to use multiple cores on a single system by spawning multiple threads from a single process. Each thread uses one CPU core, and all share memory. For a multi-thread application, we can use a single task, and specify multiple cpus per task.
+A multi-thread application is able to use multiple cores on a single server by spawning multiple threads from a single process. Each thread uses one CPU core, and all share memory. For a multi-thread application, we can use a single task, and specify multiple cpus per task.
 
 ```txt
 #SBATCH --ntasks=1
@@ -99,7 +99,7 @@ A multi-thread application is able to use multiple cores on a single system by s
 
 In this case, the job requests one task that can use 4 CPU cores. The user's application should then start one process that runs 4 threads.
 
-Since all CPU cores are attached to one process, multi-thread applications cannot use more than one system. Multi-thread jobs that request multiple nodes, waste resources. If your application does not say MPI, please do not request more than one node. If your application does not mention multi-thread, multi-core, or MPI, please do not request more than one CPU core.
+Since all CPU cores are attached to one process, multi-thread applications cannot use more than one server. Multi-thread jobs that request multiple nodes, waste resources. If your application does not say MPI, please do not request more than one node. If your application does not mention multi-thread, multi-core, or MPI, please do not request more than one CPU core.
 When in doubt, contact RCC for clarification.
 
 #### Multi-process
@@ -127,10 +127,10 @@ Please note that there are far fewer MPI applications than single- or multi-thre
 
 ### Partitions
 
-SLURM partitions are equivalent to Torque queues. Partitions organize nodes in groups by type, and allow for scheduling, priority, fairshare, and more. The new HPC system uses 3 partitions, normal, bigmem, and gpu. The partition configuration is a work in progress as we adjust resource limits.
+SLURM partitions (aka queues) organize nodes in groups by type, and allow for scheduling, priority, fairshare, and more. The HPC cluster uses 3 partitions, normal, bigmem, and gpu. The partition configuration is a work in progress and we adjust resource limits as needed.
 
 !!! tip "Default Partition"
-    The `--partition` flag is not required for jobs.
+    The default **normal** partition is applied automatically and the `--partition` flag is not required for jobs.
 
 #### Normal
 
@@ -146,7 +146,7 @@ The **gpu** partition contains the gpu nodes. Nodes gn01-gn06 each have **48 cor
 
 ### QOS
 
-A Quality Of Service (QOS) modifier combines additional job resource limits and settings to existing partitions. The **dev** QOS is meant to allow interactive, development, and/or debugging jobs to be more responsive on the new cluster. This QOS has more restricted limits for these jobs, since dev/debug jobs are not considered production jobs. However, the benefit of **dev** QOS is the higher priority setting, which in many cases will float your job to the top of the queue, potentially allowing it to run quicker. The **dev** QOS can be combined with any partition, so that these jobs can be combined with specialized resources such as high memory or GPU.
+A Quality Of Service (QOS) modifier combines additional job resource limits and settings to existing partitions. The **dev** QOS is meant to allow interactive, development, and/or debugging jobs to be more responsive on the cluster. This QOS has more restricted limits for these jobs, since dev/debug jobs are not considered production jobs. However, the benefit of **dev** QOS is the higher priority setting, which in many cases will float your job to the top of the queue, potentially allowing it to run quicker. The **dev** QOS can be combined with any partition, so that these jobs can be combined with specialized resources such as high memory or GPU.
 
 ## Job Scheduling Policies
 
@@ -172,7 +172,8 @@ Fairshare effectively allows infrequent users a fair chance to run their jobs on
 
 ## Writing a Job Script
 
-Job scripts are required to run jobs in the queueing system. A job script is a text file using shell script syntax, denoted by the required first line, `#!/bin/bash`. It can be broken into two sections; resource requests and executable commands. Each section will be explained using the following example SLURM job script that can be used as a starting template for your jobs.
+A job script tells the scheduler what resources are required to run a specific set of workload commands. It is a text file using shell script syntax, denoted by the required first line, `#!/bin/bash`. It can be broken into two sections; resource requests and executable commands. Each section will be explained using the following example SLURM job script that can be used as a starting template for your jobs.
+
 === "test-job.slurm"
 
 ```txt
@@ -206,7 +207,7 @@ A job name is **required** and is set with the `#SBATCH --job-name=` option. You
 
 #### CPU Resources
 
-A CPU resource request is **required** and tells the queueing system how to allocate processes. CPU resources can include `--ntasks`, `--cpus-per-task`, `--nodes`, or `--ntasks-per-node`.
+A CPU resource request is **required** and tells the job scheduler how to allocate processes. CPU resources can include `--ntasks`, `--cpus-per-task`, `--nodes`, or `--ntasks-per-node`.
 
 ```txt
 #SBATCH --ntasks=1
@@ -216,7 +217,7 @@ Please see [Nodes, Cores & Tasks](#nodes-cores--tasks) for more information.
 
 #### Memory
 
-A memory request is **required** and tells the queueing system how much memory to allocate to processes. SLURM has default- and maximum-memory-per-core settings. If your job is single-thread, please use the `--mem` flag. If your job is multi-thread or MPI, please use the `--mem-per-cpu` flag. Please note that SLURM enforces memory per core and total memory. Your job will fail if your application exceeds the memory you requested, or the total available memory.
+A memory request is **required** and tells the job scheduler how much memory to allocate to processes. SLURM has default- and maximum-memory-per-core settings. If your job is single-thread, please use the `--mem` flag. If your job is multi-thread or MPI, please use the `--mem-per-cpu` flag. Please note that SLURM enforces memory per core and total memory. Your job will fail if your application exceeds the memory you requested, or the total available memory.
 
 ```txt
 #SBATCH --mem=1gb
@@ -224,7 +225,7 @@ A memory request is **required** and tells the queueing system how much memory t
 
 #### Time
 
-A time request is **required** and tells SLURM how long your job will run. This is equivalent to Torque walltime. The `--time` flag sets the max time, in DD-HH:MM:SS, that your job can run. If your job exceeds that time limit, it will fail. SLURM is also configured with default and max time limits.
+A time request is **required** and tells SLURM how long your job will run. The `--time` flag sets the max time, in DD-HH:MM:SS, that your job can run. If your job exceeds that time limit, it will fail. SLURM is also configured with default and max time limits.
 
 ```txt
 #SBATCH --time=00:01:00
@@ -269,7 +270,7 @@ A job output flag is not required. By default SLURM will send job output to `slu
 
 #### Notifications
 
-Notifications are **optional** and can be sent from the queueing system to an email address of your choice. Many types are supported, but common options include when a job begins `#SBATCH --mail-type=BEGIN`, when a job ends `#SBATCH --mail-type=END`, and when a job fails `#SBATCH --mail-type=FAIL`. Options may be combined, i.e. `#SBATCH --mail-type=BEGIN,END`. There is also an option to send all notifications `#SBATCH --mail-type=ALL` The recipient email is specified with `#SBATCH --mail-user=NetID@mcw.edu`. RCC recommends using notifications during job debugging. Adding notifications as a default may result in email spam, especially if you're submitting many jobs.
+Notifications are **optional** and can be sent from the job scheduler to an email address of your choice. Many types are supported, but common options include when a job begins `#SBATCH --mail-type=BEGIN`, when a job ends `#SBATCH --mail-type=END`, and when a job fails `#SBATCH --mail-type=FAIL`. Options may be combined, i.e. `#SBATCH --mail-type=BEGIN,END`. There is also an option to send all notifications `#SBATCH --mail-type=ALL` The recipient email is specified with `#SBATCH --mail-user=NetID@mcw.edu`. RCC recommends using notifications during job debugging. Adding notifications as a default may result in email spam, especially if you're submitting many jobs.
 
 ```txt
 #SBATCH --mail-type=ALL ### OPTIONAL
@@ -401,5 +402,22 @@ Example: We want to run the same code on 50 different input files. The input fil
 
 command input-${SLURM_ARRAY_TASK_ID}
 ```
+
+## Job Scheduling and Maintenance
+
+If you submit a job before a maintenance window and the job is sitting in the queue, first check to see why with `squeue`. In the output, you'll see the last column `NODELIST(REASON)`. If your job is held for maintenance, you'll see `(ReqNodeNotAvail, Reserved for maintenance)`.
+
+Each job has a [walltime request](#time). The walltime request sets the amount of time that your job will be allowed to run on the cluster. On the HPC cluster, the maximum allowed walltime is 7 days.
+
+If you submit your job with X hours walltime request, and the maintenance window starts in less than X hours, the job will be held until after the maintenance window closes. The reason is that the scheduler cannot guarantee your job will finish before maintenance begins.
+
+To make the job run, resubmit your job with a walltime request that ensures the job will finish before the maintenance window. We can use a simple formula to find that walltime.
+
+`walltime = ( $maint_start_time - $current_time )`
+
+To simplify the process, use the `maxwalltime` command, which provides the maximum walltime request that will also allow your job to run before maintenance.
+
+!!! info
+    Please note, RCC schedules maintenance windows every first Wednesday of the month from 9PM-12AM.
 
 --8<-- "includes/abbreviations.md"

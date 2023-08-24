@@ -34,7 +34,7 @@ Now that you have the examples, use the following job script to train the networ
 Submit the job:
 
 ```bash
-cd /scratch/u/netid/pytorch-test && sbatch pytorch.sh
+cd /scratch/g/pi_netid/pytorch-test && sbatch pytorch.sh
 ```
 
 ## PyTorch Jupyter Notebook

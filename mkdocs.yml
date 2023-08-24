@@ -19,7 +19,8 @@ theme:
   custom_dir: overrides
 
   features:
-    - navigation.instant
+  #  - navigation.instant
+    - navigation.indexes
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
@@ -49,10 +50,10 @@ extra:
 
 # CSS
 extra_css:
-  - stylesheets/extra.css
+  - _static/css/extra.css
   
 extra_javascript:
-  - javascripts/mathjax.js
+  - _static/js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
@@ -60,8 +61,13 @@ extra_javascript:
 plugins:
   - macros
   - search
-  - glightbox:
-      closeOnOutsideClick: true
+  - glightbox
+  - blog:
+      post_date_format: medium
+      pagination_per_page: 5 
+      blog_dir: news
+      archive: false
+      categories: false
 
 # Extensions
 markdown_extensions:
@@ -95,7 +101,7 @@ markdown_extensions:
 nav:
   - Home:
     - Overview: index.md
-    - Recent News: news.md
+    - Recent News: news/index.md
     - Grant Boilerplate: grants.md
     - Publications: pubs.md
     - FAQ: faq.md
@@ -153,3 +159,4 @@ nav:
     - Storage: secure-computing/project-storage.md
     - Run a Job: secure-computing/workflow.md
     - Software: secure-computing/software.md
+    

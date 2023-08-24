@@ -11,4 +11,4 @@ RCC storage includes a persistent `/group` space and a transient `/scratch` spac
 2. User submits job that computes with the staged job input/supporting files
 3. Job finishes and user copies results from `/scratch/g/{PI_NetID}` back to `/group/{PI_NetID}/...`
 4. User continues with further computations with the job input/supporting files
-5. User finishes computations and deletes unneeded job input/supporting files from `/scratch/u/{NetID}` or `/scratch/g/{PI_NetID}`
+5. User finishes computations and deletes unneeded job input/supporting files from `/scratch/g/{PI_NetID}`

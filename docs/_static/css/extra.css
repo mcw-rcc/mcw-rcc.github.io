@@ -12,3 +12,8 @@
 .md-grid {
     max-width: 1800px;
 }
+
+/* nav/heading readability */
+:root {
+    --md-default-fg-color--light: #414141;
+}

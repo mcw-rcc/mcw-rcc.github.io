@@ -11,15 +11,15 @@ XDMoD (XSEDE Metrics on Demand) is a NSF-funded open source tool that provides a
 
 Access RCC's XDMoD site at <https://xdmod.rcc.mcw.edu>. Click **Sign in** in the upper left corner.
 
-![XDMoD Signin](../../img/Xdmod_signin.png){ width="600" }
+![XDMoD Signin](../../_static/img/Xdmod_signin.png){ width="600" }
 
 A login window will appear. Click the MCW logo.
 
-![XDMoD Signin](../../img/Xdmod_signin2.png){ width="300" }
+![XDMoD Signin](../../_static/img/Xdmod_signin2.png){ width="300" }
 
 You will be redirected to a login page. Enter your MCW credentials.
 
-![XDMoD Signin](../../img/Xdmod_signin3.png){ width="400" }
+![XDMoD Signin](../../_static/img/Xdmod_signin3.png){ width="400" }
 
 ## User Guide
 
