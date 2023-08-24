@@ -1,4 +1,4 @@
-# Singularity
+# Software Containers
 
 ## Overview
 
@@ -131,7 +131,7 @@ $ ./hello-world.sif
 RaawwWWWWWRRRR!!
 ```
 
-When using the build command, you must specify a name for your container. The build command differs from pull in that it will download and then build your image using the latest Singularity image format. Additional functionality of the build command is discussed in [Build a Container](../software/singularity.md#build-a-container).
+When using the build command, you must specify a name for your container. The build command differs from pull in that it will download and then build your image using the latest Singularity image format. Additional functionality of the build command is discussed in [Build a Container](#build-a-container).
 
 #### Build from Docker Hub
 
