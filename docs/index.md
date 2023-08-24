@@ -1,8 +1,5 @@
 # Research Computing Documentation
 
-!!! tip "Announcements"
-    - August 2, 2023: Maintenance from 9PM-12AM. Cluster jobs will be blocked during maintenance. Login nodes will be rebooted. Open OnDemand will be rebooted. Access to storage may be disrupted.
-
 ## Introduction
 
 Research Computing provides services and support for computational research at MCW. Our primary focus is High Performance Computing (HPC) and research data storage. We also work with MCW investigators to facilitate adoption and use of these advanced computational resources.
@@ -35,21 +32,17 @@ We are glad to help with your research data and computing needs. Consulting topi
 
 Contact Research Computing support at {{ support_email }}.
 
+### Virtual Office Hours
+
+Virtual office hours are availble via Zoom. Please email {{ support_email }} to schedule an appointment.
+
 ### Workshops
 
 RCC is planning workshops on a variety of topics. These are meant to include multiple levels of expertise and cover such topics as HPC, scripting, containers, etc. If you have a suggestion for a new workshop, please contact {{ support_email }}.
 
 | Title | Level | Slides |
 | ----- | ----- | ------ |
-| HPC Cluster Onboarding | Introductory | [Download](files/HPC_Cluster_Onboarding_2022.pdf) |
-
-### Virtual Office Hours
-
-Virtual office hours are held every Tuesday and Thursday 10AM-11AM.
-
-[Join Us on Zoom](https://mcw-edu.zoom.us/j/96853733420?pwd=Rm4ycHVzMGVJQ0o0dERyYXRBbUt2QT09) (only available during meeting)
-
-After login, please use Chat to provide your username and a description of your question/issue.
+| HPC Cluster Onboarding | Introductory | [Download](_static/files/HPC_Cluster_Onboarding_2022.pdf) |
 
 ## Acknowledgement
 

@@ -56,7 +56,7 @@ module load alphafold/2.3.1
 module load python/3.9.1
   
 export NVIDIA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
-run_alphafold.py -d $DOWNLOAD_DIR --cpus 12 -f /scratch/g/PI_NetID/alphatest/some.fasta -t 2020-05-14 -o /scratch/u/PI_NetID/alphatest/output
+run_alphafold.py -d $DOWNLOAD_DIR --cpus 12 -f /scratch/g/PI_NetID/alphatest/some.fasta -t 2020-05-14 -o /scratch/g/PI_NetID/alphatest/output
 ```
 
 Submit the job:

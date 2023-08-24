@@ -55,7 +55,7 @@ This is an example of running a Python script in a SLURM batch job.
     #SBATCH --output=%x-%j.out
 
     module load tensorflow
-    python /scratch/u/user/learning-ml.py >> output.log  
+    python /scratch/g/pi_netid/learning-ml.py >> output.log  
     ```
 <!-- markdownlint-enable MD046 -->
 
