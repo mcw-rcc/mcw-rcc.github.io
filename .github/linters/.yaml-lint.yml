@@ -2,3 +2,4 @@ extends: relaxed
 rules:
   line-length:
     max: 100
+  trailing-spaces: disable
