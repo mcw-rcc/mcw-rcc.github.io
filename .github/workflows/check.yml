@@ -4,13 +4,10 @@ name: check
 # Start the job on all push #
 #############################
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
-  pull_request_target:
-    branches:
-      - main
+    branches-ignore: main
+  pull_request:
+    branches: main
 
 ###############
 # Set the Job #
