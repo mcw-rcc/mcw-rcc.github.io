@@ -10,7 +10,7 @@ on:
       - main
   pull_request_target:
     branches:
-      - "*"
+      - main
 
 ###############
 # Set the Job #
