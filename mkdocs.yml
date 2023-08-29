@@ -68,6 +68,10 @@ plugins:
       blog_dir: news
       archive: false
       categories: false
+  - rss:
+      match_path: news/posts/.*
+      date_from_meta:
+        as_creation: date
 
 # Extensions
 markdown_extensions:
