@@ -59,7 +59,9 @@ extra_javascript:
 
 # Plugins
 plugins:
-  - macros
+  - macros:
+      include_yaml:
+        - includes/modules.yml
   - search
   - glightbox
   - blog:
@@ -72,6 +74,7 @@ plugins:
       match_path: news/posts/.*
       date_from_meta:
         as_creation: date
+  - git-revision-date-localized
 
 # Extensions
 markdown_extensions:
@@ -143,6 +146,7 @@ nav:
   - Software:
     - Using Modules: software/modules.md
     - Requesting Software: software/module-request.md
+    - Software List: software/software-list.md
     - Guides:
       - software/alphafold.md
       - software/ansys.md
