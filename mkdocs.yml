@@ -59,7 +59,10 @@ extra_javascript:
 
 # Plugins
 plugins:
-  - macros
+  - macros:
+      include_yaml:
+        - includes/modules.yml
+        - includes/r-packages.yml
   - search
   - glightbox
   - blog:
@@ -72,6 +75,7 @@ plugins:
       match_path: news/posts/.*
       date_from_meta:
         as_creation: date
+  - git-revision-date-localized
 
 # Extensions
 markdown_extensions:
@@ -151,9 +155,12 @@ nav:
       - software/nextflow.md
       - software/python.md
       - software/pytorch.md
-      - software/R.md 
+      - software/R.md
       - software/schrodinger.md
       - software/tensorflow.md
+    - Installed Software:
+      - Cluster Packages: software/cluster-pkg-list.md
+      - R Packages: software/r-pkg-list.md
     - Tools:
       - software/containers.md
       - software/git.md
