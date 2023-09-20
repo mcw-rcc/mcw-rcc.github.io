@@ -62,6 +62,7 @@ plugins:
   - macros:
       include_yaml:
         - includes/modules.yml
+        - includes/r-packages.yml
   - search
   - glightbox
   - blog:
@@ -146,7 +147,6 @@ nav:
   - Software:
     - Using Modules: software/modules.md
     - Requesting Software: software/module-request.md
-    - Software List: software/software-list.md
     - Guides:
       - software/alphafold.md
       - software/ansys.md
@@ -155,9 +155,12 @@ nav:
       - software/nextflow.md
       - software/python.md
       - software/pytorch.md
-      - software/R.md 
+      - software/R.md
       - software/schrodinger.md
       - software/tensorflow.md
+    - Installed Software:
+      - Cluster Packages: software/cluster-pkg-list.md
+      - R Packages: software/r-pkg-list.md
     - Tools:
       - software/containers.md
       - software/git.md
