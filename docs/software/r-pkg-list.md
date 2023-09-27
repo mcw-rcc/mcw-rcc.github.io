@@ -4,7 +4,7 @@ version: 4.3.1
 
 # Installed R packages
 
-The following list of packages is installed in R {{ version }}.
+The following {{ packages | length }} packages are installed with R {{ version }}.
 
 Last updated: _{{ git_revision_date_localized }}_
 
