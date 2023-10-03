@@ -168,7 +168,8 @@ nav:
   - ResHPC:
     - Overview: secure-computing/reshpc.md
     - Accounts & Projects: secure-computing/project-account.md
-    - Logging in: secure-computing/mfa-login.md
     - Storage: secure-computing/project-storage.md
+    - Logging in: secure-computing/mfa-login.md
+    - Data Transfer: secure-computing/mfa-data-transfer.md
     - Run a Job: secure-computing/workflow.md
     - Software: secure-computing/software.md
