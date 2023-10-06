@@ -12,13 +12,26 @@ If you downloaded the portable version, make sure to save it in a place that is 
 
 ## Cluster Login
 
-Start MobaXterm and select `Sessions > New Session` from the top menu. This will open the `Session Settings` window. Select `SSH`, fill in the remote host box with **login-hpc.rcc.mcw.edu**, and select `Ok`.
+To get started, start MobaXterm and select `Session > SSH`. In the session settings, enter `login-hpc.rcc.mcw.edu` for the **Remote host**, and enter your MCW username for the **Username**. To login, select `Ok`.
 
-You will see a terminal prompt `login as:`. Type in your MCW username and press enter. You will see a prompt for your password. Type in your MCW password and press enter. Please note that the password is hidden as you type for security purposes.
+![MobaXterm SSH](../../_static/img/MobaXterm-SSH.png){ width="600" }
+
+You will see a prompt for your password. Type in your MCW password and press enter. Please note that the password is hidden or security purposes.
+
+!!! tip "Local terminal"
+    Alternatively, you may select **Start local terminal** on the MobaXterm startup screen. This will create a local terminal on your Windows computer, which you could use to login to the cluster via traditional SSH commands.
 
 ## File Transfer
 
-The built-in SFTP client will start and load on the left side of the MobaXterm window when you login. The default location is your cluster home directory. However, all of the folders that you normally access from the command-line are available.
+The built-in SFTP client will start and load on the left side of the MobaXterm window when you login to a remote host. This will show you your files on the remote host. In the case of the cluster, it will show your cluster home directory. Additionally, all of the folders that you normally access from the cluster command-line are available.
+
+MobaXterm also has a standalone SFTP client application. To start the SFTP client, select `Session > SFTP` and fill in the **Remote host** and **Username**.
+
+### Multi-factor Authentication
+
+To transfer data to secure systems such as ResHPC, you will need to enable multi-factor authentication (MFA) for the MobaXterm SFTP client. In non-CLI cases such as MobaXterm SFTP, the dialogue interface for MFA requires additional configuration. To enable MFA for SFTP using MobaXterm, select `Session > SFTP > Advanced Sftp settings`. Enter the **Remote host**, **Username**, and make sure the **2-steps authentication** box is checked.
+
+![MobaXterm SFTP 2FA](../../_static/img/MobaXterm-SFTP-2FA.png){ width="600" }
 
 ## X11 Windowed Apps
 
@@ -39,3 +52,7 @@ igv
 ```
 
 IGV should open in a new window on your desktop.
+
+## SSH Keys
+
+Please see the MobaXterm section in the [SSH keys guide](ssh-keys.md#mobaxterm-cli).

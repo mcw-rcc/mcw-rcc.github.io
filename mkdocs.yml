@@ -124,6 +124,7 @@ nav:
       - SSH Clients:
         - MobaXterm: user-guide/access/mobaxterm.md
         - PuTTY: user-guide/access/putty.md
+      - SSH Keys: user-guide/access/ssh-keys.md
     - Running Jobs: 
       - Submitting SLURM Jobs: user-guide/jobs/running-jobs.md
       - Staging Data: user-guide/jobs/storage-job.md
@@ -167,7 +168,8 @@ nav:
   - ResHPC:
     - Overview: secure-computing/reshpc.md
     - Accounts & Projects: secure-computing/project-account.md
-    - Logging in: secure-computing/mfa-login.md
     - Storage: secure-computing/project-storage.md
+    - Logging in: secure-computing/mfa-login.md
+    - Data Transfer: secure-computing/mfa-data-transfer.md
     - Run a Job: secure-computing/workflow.md
     - Software: secure-computing/software.md
