@@ -3,5 +3,5 @@ site/
 includes/data/
 old/
 dev/
-venv
-.github/super-linter.env
+venv/
+.vscode/

@@ -1,29 +1,63 @@
 # MCW Research Computing documentation
 
-Using mkdocs and github to host our documentation.
+Using MkDocs and GitHub to host our documentation.
 
 ## Contributing
 
-### Setup local web server
+### Prerequisites
+
+Setting up an IDE is optional but we recommend the following tools.
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [GitHub Desktop](https://desktop.github.com/)
+- [Git for Windows](https://gitforwindows.org/) (Mac/Linux use system Git)
+
+### Obtain the code
+
+You need your own copy of the code to get started. This does require a GitHub account and you should sign up for a free account if you don't already have one.
+
+To obtain a copy of the code, fork the main repo by clicking the **Fork** button on the main repo page <https://github.com/mcw-rcc/mcw-rcc.github.io>. This will create a copy of the main repository under your user account.
+
+Finally, clone (i.e. download) the forked repository to your local machine using GitHub Desktop.
+
+### Setup local environment
 
 - Clone the repo from `https://github.com/mcw-rcc/mcw-rcc.github.io`
 - Create a new feature branch. **Do not make changes to the main branch.**
 - Setup a Python virtual environment
 
     ```bash
-    python3 -m install virtualenv
+    # MacOS/Linux terminal instructions
     python3 -m venv venv
     source venv/bin/activate
-    pip install -r requirements.txt
+    python -m pip install -r requirements.txt
     ```
 
-- Deploy locally
+    or
 
     ```bash
+    # Windows command prompt instructions
+    python.exe -m venv venv
+    venv\Scripts\activate.bat
+    python.exe -m pip install -r requirements.txt
+    ```
+
+- Start local server
+
+    ```bash
+    # MacOS/Linux
     mkdocs serve
     ```
 
-- Open a browser and enter `https://localhost:8000`
+    or
+
+    ```bash
+    # Windows command prompt
+    # Modify path to your venv
+    python.exe -X utf8 D:\mcw-rcc.github.io\venv\Scripts\mkdocs.exe serve
+    ```
+
+- Open a browser and enter `http://localhost:8000`
 
 ### Adding a new page
 
@@ -56,7 +90,7 @@ For our Github page:
 # Learning GitHub
 ```
 
-Remember to refresh your `https://localhost:8000` browser session to preview your changes.
+Remember to refresh your `http://localhost:8000` browser session to preview your changes.
 
 ### Style Guide
 
