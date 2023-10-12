@@ -6,3 +6,4 @@ mkdocs-git-revision-date-localized-plugin
 fontawesome_markdown
 mkdocs-glightbox
 mkdocs-rss-plugin
+mkdocs-table-reader-plugin

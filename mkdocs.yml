@@ -60,10 +60,6 @@ extra_javascript:
 
 # Plugins
 plugins:
-  - macros:
-      include_yaml:
-        - includes/modules.yml
-        - includes/r-packages.yml
   - search
   - glightbox
   - blog:
@@ -77,7 +73,12 @@ plugins:
       date_from_meta:
         as_creation: date
   - git-revision-date-localized
-
+  - table-reader
+  - macros:
+      include_yaml:
+        - includes/modules.yml
+        - includes/r-packages.yml
+        
 # Extensions
 markdown_extensions:
   - abbr
@@ -118,6 +119,7 @@ nav:
     - Quick Start: user-guide/quickstart.md
     - Getting an Account: user-guide/accounts.md
     - User Etiquette: user-guide/etiquette.md
+    - Hardware Specs: user-guide/hardware.md
     - Connecting:
       - Logging in: user-guide/access/login.md
       - Open OnDemand: user-guide/access/ondemand.md
