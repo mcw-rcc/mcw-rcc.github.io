@@ -38,19 +38,32 @@ Additional storage capacity may be purchased through our Research Group Storage 
 ### Scratch
 
 **Quota**: 5 TiB  
-**Purge**: files may be deleted by admin after 90 days
+**Retention**: files deleted automatically after 90 days
 
-Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB. Data on `/scratch` is **not backed up**. Please see the [data staging](../user-guide/jobs/storage-job.md) guide for best practice in working with `/scratch`.
+Scratch storage is intended for temporary job files. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB.
 
-!!! warning "Do not store data in scratch unless you are running a SLURM job."
+!!! info "Do not store data in scratch unless you are running a SLURM job."
+
     If you are not running a job, you should not have any data in scratch. Please remember that scratch storage is limited and must be cleaned up regularly. Failure to do so could result in jobs failing for all users and/or deletion of your scratch data by Research Computing.
+
+#### Retention
+
+Any file older than 90 days will be automatically marked for deletion by a process that runs daily. Files marked for deletion are moved to a daily trash folder. Any trash folder older than 14 days will be automatically deleted. This means that the scratch file system will be cleaned up every day, and you will have the opportunity to retrieve those old files for an additional 14 days.
+
+!!! warning "Scratch storage is temporary."
+
+    Do not use scratch storage for long-term project data. Files older than 90 days are deleted. Failure to adhere to this policy may result in loss of your data located on scratch.
 
 ### Local Scratch
 
 **Quota**: No quota, limited to size of disk (440GiB)  
-**Purge**: files deleted automatically after every job
+**Retention**: files deleted automatically after every job
 
 Local scratch disk may be the fastest computing option to store your job runtime files, especially for jobs that are heavily I/O dependent (i.e. lots of files are read/written). However, it does take some time to transfer your files from your global scratch directory to local scratch, and the space is limited (440GiB).
+
+!!! tip "Some GPU nodes have more local scratch."
+
+    Compute nodes gn07 and gn08 have 17TiB of local storage and gn09 has 7TiB. These nodes are intended for large scale AI jobs that require local fast storage.
 
 ## Permissions
 
