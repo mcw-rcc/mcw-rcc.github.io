@@ -11,14 +11,14 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
 
 ## Installation & Configuration
 
-1. Download 2023-1 software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
+1. Download 2023-4 software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
 2. Locate the schrodinger.hosts file.
 : **Windows**  
-    `$INSTALLDIR\Schrodinger 2023-1\schrodinger.hosts`
+    `$INSTALLDIR\Schrodinger 2023-4\schrodinger.hosts`
 : **Mac**  
-    `/opt/schrodinger/suites2023-1/schrodinger.hosts`
+    `/opt/schrodinger/suites2023-4/schrodinger.hosts`
 
-3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EfqC_VXnjglKu10OzbrrXsMBlHwAHqXHkN3UxOo59a_CVA?e=Te8BbG){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
+3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EdxdsukkMPpFseFg2BTZoG4BRmcnkHG_m39DnwklAOSACw?e=JklrdP){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
 4. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Locate the hostname and port in the [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Click **Save Server**. *If you see a remote license server warning, this can be ignored.*
 
@@ -29,7 +29,7 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
 : **Windows**  
     Open the `Remote Login Configuration` tool. Select `Generate Keys`. Select `Initialize Host Access`. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select `Initialize`.
     !!! warning "Known issue"
-        The 2023-1 Remote Login Configuration tool may error due to missing files. This is a known issue. To work around this issue, launch the `Schrodinger Command Prompt` and run command `run SchrodingerPlinkWizard`. Contact {{ support_email }} with questions.
+        The 2023-4 Remote Login Configuration tool may error due to missing files. This is a known issue. To work around this issue, launch the `Schrodinger Command Prompt` and run command `run SchrodingerPlinkWizard`. Contact {{ support_email }} with questions.
 : **Mac**  
     Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html).
 
@@ -58,10 +58,10 @@ You can also submit jobs directly from the cluster command line. This is helpful
 
 ```bash
 # print the command-line options for Desmond (molecular dynamics package)
-/hpc/apps/schrodinger/2023-1/desmond -h
+/hpc/apps/schrodinger/2023-4/desmond -h
 
 # submit a desmond job to the SLURM job scheduler
-/hpc/apps/schrodinger/2023-1/desmond -HOST server_gpu -c x.cfg -in x.cms
+/hpc/apps/schrodinger/2023-4/desmond -HOST server_gpu -c x.cfg -in x.cms
 ```
 
 !!! warning "Mistakes to avoid"
@@ -79,14 +79,14 @@ To see the options for a particular script on the cluster:
 
 ```bash
 # script has no requirements
-/hpc/apps/schrodinger/2023-1/run entropy_calc.py -h
+/hpc/apps/schrodinger/2023-4/run entropy_calc.py -h
 ```
 
 Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) page **Requires** column.
 
 ```bash
 # run a script requiring the Desmond app
-/hpc/apps/schrodinger/2023-1/run -FROM desmond trj_center.py -h
+/hpc/apps/schrodinger/2023-4/run -FROM desmond trj_center.py -h
 ```
 
 To run the **script** in a job on the cluster, adapt the following job submission script to your specific command:
@@ -99,7 +99,7 @@ To run the **script** in a job on the cluster, adapt the following job submissio
 #SBATCH --time=01:00:00
 #SBATCH --output=%x-%j.out
 
-/hpc/apps/schrodinger/2023-1/run script.py
+/hpc/apps/schrodinger/2023-4/run script.py
 ```
 
 ## Troubleshooting
@@ -112,7 +112,7 @@ Schrodinger can be sensitive to changes in networking. This is often an issue fo
 In this case, you should reset your connection to the Schrodinger server using the following steps.
 
 !!! warning "Mac OS X only"
-    This solution works on Mac OS X and assumes that you have installed Schrodinger 2023-1. Modify the version number if you have an older version installed.
+    This solution works on Mac OS X and assumes that you have installed Schrodinger 2023-4. Modify the version number if you have an older version installed.
 
 On your laptop/desktop:
 
@@ -120,10 +120,10 @@ On your laptop/desktop:
 * Open terminal and run the following commands:
 
 ```bash
-/opt/schrodinger/suites2023-1/utilities/jserver -shutdown
-/opt/schrodinger/suites2023-1/utilities/jserver -cleanall
-/opt/schrodinger/suites2023-1/utilities/jserver -proxy -shutdown
-/opt/schrodinger/suites2023-1/utilities/jserver -proxy -cleanall
+/opt/schrodinger/suites2023-4/utilities/jserver -shutdown
+/opt/schrodinger/suites2023-4/utilities/jserver -cleanall
+/opt/schrodinger/suites2023-4/utilities/jserver -proxy -shutdown
+/opt/schrodinger/suites2023-4/utilities/jserver -proxy -cleanall
 ```
 
 On the cluster:
@@ -131,10 +131,10 @@ On the cluster:
 * Run the following commands:
 
 ```bash
-/hpc/apps/schrodinger/2023-1/utilities/jserver -shutdown
-/hpc/apps/schrodinger/2023-1/utilities/jserver -cleanall
-/hpc/apps/schrodinger/2023-1/utilities/jserver -proxy -shutdown
-/hpc/apps/schrodinger/2023-1/utilities/jserver -proxy -cleanall
+/hpc/apps/schrodinger/2023-4/utilities/jserver -shutdown
+/hpc/apps/schrodinger/2023-4/utilities/jserver -cleanall
+/hpc/apps/schrodinger/2023-4/utilities/jserver -proxy -shutdown
+/hpc/apps/schrodinger/2023-4/utilities/jserver -proxy -cleanall
 ```
 
 ## Help
