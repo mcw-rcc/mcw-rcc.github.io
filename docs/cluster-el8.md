@@ -33,6 +33,13 @@ Remaining nodes will be upgraded to the new operating system on May 1, 2024. We 
 
 ## Next steps for you
 
-When the testing phase begins, please take time to make sure your software functions in the new environment. Please remember to be respectful of all users. Many users will be testing software compatibility on a relatively small set of cluster nodes. Run some jobs to make sure your software functions, but please do not run full-scale workloads that would monopolize the resources.
+When the testing phase begins, please take time to make sure your software functions in the new environment. Please remember to be respectful of all users. Many users will be testing software compatibility on a relatively small set of cluster nodes. Run some jobs to make sure your software works as expected, but please do not shift all of your work.
 
 Report any problems to {{ support_email }}.
+
+## FAQ
+
+??? question "Will this upgrade to Rocky Linux 8 affect reproducibility of my work?"
+    Yes, its possible. A change in operating system means updated system libraries, which may affect the performance and output of your code.
+
+    Concerned users should test their code during the scheduled testing phases as outlined above.
