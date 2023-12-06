@@ -40,7 +40,7 @@ Additional storage capacity may be purchased through our Research Group Storage 
 **Quota**: 5 TiB  
 **Purge**: files may be deleted by admin after 90 days
 
-Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB.
+Scratch space is intended for data that is read/written during jobs running on the cluster. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB. Data on `/scratch` is **not backed up**. Please see the [data staging](../user-guide/jobs/storage-job.md) guide for best practice in working with `/scratch`.
 
 !!! warning "Do not store data in scratch unless you are running a SLURM job."
     If you are not running a job, you should not have any data in scratch. Please remember that scratch storage is limited and must be cleaned up regularly. Failure to do so could result in jobs failing for all users and/or deletion of your scratch data by Research Computing.
