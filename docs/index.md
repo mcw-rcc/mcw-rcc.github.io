@@ -10,6 +10,9 @@ Research Computing provides services and support for computational research at M
 
 The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster consists of **3,360** CPU cores in **70** compute nodes. This includes large memory nodes and GPUs. All compute nodes are connected by a 100Gbps RoCEv2 network (ethernet equivalent to Infiniband). The cluster also includes a **215TB** NVMe scratch storage filesystem. Please see the [Quick Start guide](user-guide/quickstart.md) for more detail.
 
+!!! info "Operating System Upgrade"
+    The operating system of the HPC cluster will be upgraded from CentOS 7 to Rocky Linux 8. For more information see [HPC cluster upgrade](cluster-el8.md).
+
 ### ResHPC
 
 **Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA), including dbGaP projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider security requirements. Please see the [ResHPC overview](secure-computing/reshpc.md) to get started.
