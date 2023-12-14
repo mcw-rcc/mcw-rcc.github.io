@@ -6,30 +6,41 @@ We are currently working on a smooth upgrade path that will minimize downtime an
 
 ## Potential issues
 
-- Python2 will no longer be installed. Python2 has been end-of-life and unsupported since 2020. If you have workflows built on Python2, you will have to upgrade to Python3 or reinstall yourself.
+- System Python2 will no longer be installed. Python2 has been end-of-life and unsupported since 2020. If you have workflows built on Python2, upgrade the code to Python3. If you must use Python2, you may use the centrally installed modulefile `python/2.7.18`.
 - System library versions will change. System libraries such as GCC will have newer versions in Rocky Linux 8. If you have compiled your workflow with system default libraries, you will need to rebuild.
 
 ## Timeline
 
-Please check regularly for updates.
+The scheduled dates below are subject to change. Please check regularly for updates.
 
 ### User testing phase
 
-***November 6, 2023 - March 5, 2024***
+***December 13, 2023 - April 3, 2024***
 
 A login node and a small number of cluster nodes will be upgraded to enable testing starting November 6, 2023.
 
+To login to this testing system:
+
+```bash
+ssh login-rocky.rcc.mcw.edu
+```
+
+We have new partitions (queues) to test your workflows. To run a job on a CPU compute node, use `--partition=rocky`. To run a job on a GPU compute node, use `--partition=rocky-gpu`. At this time, large memory nodes are not included in this test. Please use the CPU nodes to test those workflows. Contact {{ support_email }} for assistance.
+
 ### Upgrade and extended testing
 
-***March 6, 2024 - April 30, 2024***
+***April 3, 2024 - June 5, 2024***
 
-Most login nodes and cluster nodes will be upgraded March 6, 2024. A login node and small number of cluster nodes will remain on the legacy CentOS 7 operating system until April 30, 2024. This will ensure backwards compatibility for those users that have not fixed software issues prior to upgrade.
+On April 3, 2024, we will upgrade a majority of login and cluster nodes. We will continue to maintain a login node and small number of cluster nodes on the legacy CentOS 7 operating system. This will ensure backwards compatibility for those users that have not fixed software issues prior to upgrade.
 
 ### Final upgrade
 
-***May 1, 2024***
+***June 5, 2024***
 
-Remaining nodes will be upgraded to the new operating system on May 1, 2024. We may provide further backwards compatibility in the form of a CentOS 7 container.
+The remaining login and cluster nodes will be upgraded to the new operating system on June 5, 2024. This will conlude the upgrade process.
+
+!!! info
+    We may provide further backwards compatibility in the form of a CentOS 7 container. This will not be guaranteed to support your legacy workflow. Contact {{ support_email }} with questions/concerns.
 
 ## Next steps for you
 
@@ -40,6 +51,10 @@ Report any problems to {{ support_email }}.
 ## FAQ
 
 ??? question "Will this upgrade to Rocky Linux 8 affect reproducibility of my work?"
-    Yes, its possible. A change in operating system means updated system libraries, which may affect the performance and output of your code.
+    Yes, its possible. A change in operating system means updated system libraries, which may affect the performance and output of your code. Concerned users should test their code during the scheduled testing phases as outlined above.
 
-    Concerned users should test their code during the scheduled testing phases as outlined above.
+??? question "Will this change the way I submit my jobs?"
+    No, we are not changing SLURM as part of this upgrade.
+
+??? question "Will this change how I use OnDemand?"
+    No, we are not changing how you interact with OnDemand. However, we will update OnDemand (which we do regularly) and this may update the interface and features.
