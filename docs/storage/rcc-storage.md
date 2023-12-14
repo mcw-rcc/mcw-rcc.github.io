@@ -1,8 +1,14 @@
 # Storage Overview
 
-Research Computing provides storage in two tiers meant to support both large scale and high performance. Every MCW lab is eligible for a limited amount of free storage. For many labs, this amount of free storage is sufficient for their research. For labs with large data needs, additional storage is available for fee.
+Research Computing provides storage with a dedicated purpose to hold and support analysis of raw research data. Every MCW lab is eligible for a limited amount of free storage. For many labs, this amount of free storage is sufficient for their research. For labs with large data needs, additional storage is available for fee.
 
-All storage is connected via high speed link to the cluster and available via Linux command-line, SFTP, or Open OnDemand. In addition, some storage is available directly to users via Windows or NFS shares.
+All storage is connected via high speed link to the cluster and available to you via Linux command-line, SFTP, or Open OnDemand.
+
+Each user will the same set of default storage paths:
+
+- [`Home`](#home) - account configuration and scripts
+- [`Group`](#group) - shared raw research data
+- [`Scratch`](#scratch) - temporary job files
 
 ??? tip "You can easily find your available storage paths and current utilization on the cluster  with the `mydisks` command."
 
@@ -19,21 +25,18 @@ All storage is connected via high speed link to the cluster and available via Li
 
 ### Home
 
-**Quota**: 100 GiB  
-**Snapshot**: 14 daily @ 12PM, 6 weekly @ 1PM Sunday  
-**Replication**: continuous with snapshot
+The home directory is your starting place every time you login to the cluster. It's location is `/home/netid`, where `netid` is your MCW username. The purpose of a home directory is storing user-installed software, user-written scripts, configuration files, etc. Each home directory is only accessible by its owner and is not suitable for sharing. Home is also not appropriate for large scale research data or temporary job files.
 
-Every user has a home directory located at `/home/netid`. The home directory is used for storing user-installed software, user-written scripts, etc. Each home directory is only accessible by its owner. This directory is not suitable for sharing files. The quota limit is 100 GiB.
+The quota limit is 100GiB and data protection includes replication[^1] and snapshots[^2].
 
 ### Group
 
-**Quota**: 1 TiB, expandable with payment  
-**Snapshot**: 14 daily @ 2PM, 6 weekly @ 3PM Sunday  
-**Replication**: continuous with snapshot
+Group storage is a shared space for labs to store research data in active projects. Each lab receives 1TiB for free, with [additional storage](../storage/paid-storage.md) available for $60/TiB/year. This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes. Data protection includes replication[^1] and snapshots[^3].
 
-Every lab is eligible for a group directory at `/group/pi_netid` with a free 1TiB limit. This space is meant for research data in active projects. This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes.
+This space is organized by lab group. Each folder in `/group` represents a lab, and is named using the PI's NetID (username). For example, a PI with username "jsmith" would have a group directory located at `/group/jsmith`. Directories within that lab space are organized by purpose and controlled by unique security groups. For example, there is a default `/group/pi_netid/work` directory, which is shared space restricted to lab users. Other shared directories can be created for projects that require unique permissions. Additionally, you may have data directories related to your use of a MCW core. These directories will be named for the core and located at `/group/pi_netid/cores`. For example, a Mellowes Center project would be delivered to your group storage and located at `/group/pi_netid/cores/mellowes/example_project1`.
 
-Additional storage capacity may be purchased through our Research Group Storage service in 1TiB increments for $60/TiB/year. Please see [Paid Additional Storage](../storage/paid-storage.md) for details.
+!!! info "Directory Structure"
+    Group storage is highly organized but can be complex. To simplify, consider two aspects of the storage organization, quota and access. For example, consider the storage path `/group/pi_netid/work/data`. We can think of this as `/group/(level-of-quota)/(level-of-access)/data`. So, each group has a level of quota (and payment) that is tied to the PI, and a level of access that controls access to data.
 
 ### Scratch
 
@@ -83,5 +86,9 @@ All Research Computing storage systems are highly resilient, allowing for multip
 
 !!! info "Disclaimer"
     Research Computing is not responsible for any loss of data. We strongly encourage all users to follow best practice data management strategies.
+
+[^1]: Replication copies all data from the primary system to a secondary system in another datacenter.
+[^2]: Home snapshots - 14 daily @ 12PM, 6 weekly @ 1PM Sunday
+[^3]: Group snapshots - 14 daily @ 2PM, 6 weekly @ 3PM Sunday
 
 --8<-- "includes/abbreviations.md"
