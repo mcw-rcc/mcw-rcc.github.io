@@ -78,7 +78,7 @@ plugins:
       include_yaml:
         - includes/modules.yml
         - includes/r-packages.yml
-        
+
 # Extensions
 markdown_extensions:
   - abbr
@@ -180,4 +180,3 @@ nav:
     - Software: secure-computing/software.md
   - Other Resources:
     - MCW Cores: resources/cores.md
-    
