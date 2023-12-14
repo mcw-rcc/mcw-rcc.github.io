@@ -38,7 +38,7 @@ Additional storage capacity may be purchased through our Research Group Storage 
 ### Scratch
 
 **Quota**: 5 TiB  
-**Retention**: files deleted automatically after 90 days
+**Retention**: files deleted automatically after 60 days
 
 Scratch storage is intended for temporary job files. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB.
 
@@ -48,11 +48,11 @@ Scratch storage is intended for temporary job files. It is located on all comput
 
 #### Retention
 
-Any file older than 90 days will be automatically marked for deletion by a process that runs daily. Files marked for deletion are moved to a daily trash folder. Any trash folder older than 14 days will be automatically deleted. This means that the scratch file system will be cleaned up every day, and you will have the opportunity to retrieve those old files for an additional 14 days.
+Any file older than 60 days will be automatically marked for deletion by a process that runs daily. Files marked for deletion are moved to a daily trash folder. Any trash folder older than 14 days will be automatically deleted. This means that the scratch file system will be cleaned up every day, and you will have the opportunity to retrieve those old files for an additional 14 days.
 
 !!! warning "Scratch storage is temporary."
 
-    Do not use scratch storage for long-term project data. Files older than 90 days are deleted. Failure to adhere to this policy may result in loss of your data located on scratch.
+    Do not use scratch storage for long-term project data. Files older than 60 days are deleted. Failure to adhere to this policy may result in loss of your data located on scratch.
 
 ### Local Scratch
 
