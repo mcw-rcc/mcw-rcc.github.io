@@ -10,6 +10,14 @@ All you have to do is include the following statement in your publication:
 
 ## 2023
 
+**[Tensor-valued diffusion MRI of human acute stroke](https://doi.org/10.1002/mrm.29975)**  
+Zhou M, Stobbe R, Szczepankiewicz F, Budde M, Buck B, Kate M, Lloret M, Fairall P, Butcher K, Shuaib A, Emery D, Nilsson M, Westin C, Beaulieu C
+{: .author}
+
+**[Associations of prior concussion severity with brain microstructure using mean apparent propagator magnetic resonance imaging](https://doi.org/10.1002/hbm.26556)**  
+Goeckner BD, Brett BL, Mayer AR, España LY, Banerjee A, Muftuler LT, Meier TB
+{: .author}
+
 **[Molecular and cellular basis of praziquantel action in the cardiovascular system](https://doi.org/10.1152/ajpcell.00520.2022)**  
 Yahya NA, Lanham JK, Sprague DJ, Palygin O, McCorvy JD, Marchant JS
 {: .author}
