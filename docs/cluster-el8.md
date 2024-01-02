@@ -37,7 +37,7 @@ On April 3, 2024, we will upgrade a majority of login and cluster nodes. We will
 
 ***June 5, 2024***
 
-The remaining login and cluster nodes will be upgraded to the new operating system on June 5, 2024. This will conlude the upgrade process.
+The remaining login and cluster nodes will be upgraded to the new operating system on June 5, 2024. This will conclude the upgrade process.
 
 !!! info
     We may provide further backwards compatibility in the form of a CentOS 7 container. This will not be guaranteed to support your legacy workflow. Contact {{ support_email }} with questions/concerns.

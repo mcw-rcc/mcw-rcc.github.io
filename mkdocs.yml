@@ -37,7 +37,7 @@ extra:
   hpc_name: HPC
   analytics:
     provider: google
-    property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+    property: G-50ZTKYWP10
   consent:
     title: Cookie consent
     description: >
