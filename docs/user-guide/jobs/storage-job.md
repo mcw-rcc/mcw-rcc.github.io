@@ -13,7 +13,7 @@ Many workflows have specific needs (covered below), but there are some best prac
 
 !!! warning "Avoid high I/O on `/group`"
 
-    High input/output processes are those that read from, and write to the file system very often. This can cause issues with the `/group` file system, which is not designed for high I/O. These issues might include slowing down the file system for all users, or worse.
+    High input/output processes are those that read from, and write to the file system very often. This can cause issues with the `/group` file system, which is not designed for high I/O. These issues might include slowing down the file system for all users, or worse. RCC admins will kill any job or process that causes high I/O on the `/group` file system.
 
 ### General
 

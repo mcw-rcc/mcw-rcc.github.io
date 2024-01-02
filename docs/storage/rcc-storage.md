@@ -19,11 +19,11 @@ All storage is connected via high speed link to the cluster and available via Li
 
 ### Home
 
-**Quota**: 50 GiB  
+**Quota**: 100 GiB  
 **Snapshot**: 14 daily @ 12PM, 6 weekly @ 1PM Sunday  
 **Replication**: continuous with snapshot
 
-Every user has a home directory located at `/home/netid`. The home directory is used for storing user-installed software, user-written scripts, etc. Each home directory is only accessible by its owner. This directory is not suitable for sharing files. The quota limit is 50GiB.
+Every user has a home directory located at `/home/netid`. The home directory is used for storing user-installed software, user-written scripts, etc. Each home directory is only accessible by its owner. This directory is not suitable for sharing files. The quota limit is 100 GiB.
 
 ### Group
 
@@ -37,10 +37,10 @@ Additional storage capacity may be purchased through our Research Group Storage 
 
 ### Scratch
 
-**Quota**: 5 TiB  
+**Quota**: 10 TiB  
 **Retention**: files deleted automatically after 60 days
 
-Scratch storage is intended for temporary job files. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5TiB.
+Scratch storage is intended for temporary job files. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 10 TiB.
 
 !!! info "Do not store data in scratch unless you are running a SLURM job."
 
@@ -52,7 +52,7 @@ Any file older than 60 days will be automatically marked for deletion by a proce
 
 !!! warning "Scratch storage is temporary."
 
-    Do not use scratch storage for long-term project data. Files older than 60 days are deleted. Failure to adhere to this policy may result in loss of your data located on scratch.
+    Do not use scratch storage for long-term project data. Failure to adhere to this policy may result in loss of your data located on scratch.
 
 ### Local Scratch
 
