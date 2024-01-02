@@ -37,10 +37,10 @@ Additional storage capacity may be purchased through our Research Group Storage 
 
 ### Scratch
 
-**Quota**: 10 TiB  
+**Quota**: 5 TiB  
 **Retention**: files deleted automatically after 60 days
 
-Scratch storage is intended for temporary job files. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 10 TiB.
+Scratch storage is intended for temporary job files. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5 TiB.
 
 !!! info "Do not store data in scratch unless you are running a SLURM job."
 
