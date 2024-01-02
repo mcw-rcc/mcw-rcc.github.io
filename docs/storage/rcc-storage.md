@@ -4,11 +4,13 @@ Research Computing provides storage with a dedicated purpose to hold and support
 
 All storage is connected via high speed link to the cluster and available to you via Linux command-line, SFTP, or Open OnDemand.
 
-Each user will the same set of default storage paths:
+Each user has the same set of default storage paths:
 
-- [`Home`](#home) - account configuration and scripts
-- [`Group`](#group) - shared raw research data
-- [`Scratch`](#scratch) - temporary job files
+| Type                  | Path                | Quota                          | Protection            | Description                       |
+| --------------------- | ------------------- | ------------------------------ | --------------------- | --------------------------------- |
+| [`Home`](#home)       | /home/netid         | 100 GiB                        | snapshot, replication | account configuration and scripts |
+| [`Group`](#group)     | /group/pi_netid     | 1 TiB, expandable with payment | snapshot, replication | shared raw research data          |
+| [`Scratch`](#scratch) | /scratch/g/pi_netid | 5 TiB                          | none                  | temporary job files               |
 
 ??? tip "You can easily find your available storage paths and current utilization on the cluster  with the `mydisks` command."
 
