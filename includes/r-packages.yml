@@ -1,5 +1,4 @@
-The YAML file is:
-generated: 2023-09-19T22:12:11-0500
+generated: 2024-01-05T09:48:25-0600
 packages:
 - Package: abind
   Title: Combine Multidimensional Arrays
@@ -320,6 +319,9 @@ packages:
 - Package: cluster
   Title: '"Finding Groups in Data": Cluster Analysis Extended Rousseeuw et al.'
   Version: 2.1.4
+- Package: clustermole
+  Title: Unbiased Single-Cell Transcriptomic Data Cell Type Identification
+  Version: 1.1.0
 - Package: clusterProfiler
   Title: A universal enrichment tool for interpreting omics data
   Version: 4.8.2
@@ -395,6 +397,9 @@ packages:
 - Package: credentials
   Title: Tools for Managing SSH and Git Credentials
   Version: 1.3.2
+- Package: crossmatch
+  Title: The Cross-match Test
+  Version: 1.3-1
 - Package: crosstalk
   Title: Inter-Widget Interactivity for HTML Widgets
   Version: 1.2.0
@@ -655,6 +660,9 @@ packages:
 - Package: fastcluster
   Title: Fast Hierarchical Clustering Routines for R and 'Python'
   Version: 1.2.3
+- Package: fastDummies
+  Title: Fast Creation of Dummy (Binary) Columns and Rows from Categorical Variables
+  Version: 1.7.3
 - Package: fastICA
   Title: FastICA Algorithms to Perform ICA and Projection Pursuit
   Version: 1.2-3
@@ -1520,6 +1528,10 @@ packages:
 - Package: multicool
   Title: Permutations of Multisets in Cool-Lex Order
   Version: 0.1-12
+- Package: multicross
+  Title: A Graph-Based Test for Comparing Multivariate Distributions in the Multi
+    Sample Framework
+  Version: 2.1.0
 - Package: multtest
   Title: Resampling-based multiple hypothesis testing
   Version: 2.56.0
@@ -1535,6 +1547,9 @@ packages:
 - Package: mvtnorm
   Title: Multivariate Normal and t Distributions
   Version: 1.2-2
+- Package: nbpMatching
+  Title: Functions for Optimal Non-Bipartite Matching
+  Version: 1.5.4
 - Package: ncdf4
   Title: Interface to Unidata netCDF (Version 4 or Earlier) Format Data Files
   Version: '1.21'
@@ -2212,6 +2227,9 @@ packages:
 - Package: scatterplot3d
   Title: 3D Scatter Plot
   Version: 0.3-44
+- Package: SCPA
+  Title: Single Cell Pathway Analysis
+  Version: 1.5.4
 - Package: sctransform
   Title: Variance Stabilizing Transformations for Single Cell UMI Data
   Version: 0.3.5
