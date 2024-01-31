@@ -30,23 +30,23 @@ software_modules:
         markedDefault: False
         versionName: 6.0.2
     - categories: biology, genomics
-      defaultVersionName: 1.1.3
-      description: SvABA - Structural variation and indel analysis by assembly.
-      package: svaba
-      url: https://github.com/walaj/svaba
+      defaultVersionName: 0.15.0
+      description: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation
+      package: seqkit
+      url: https://github.com/shenwei356/seqkit
       versions:
-      - description: SvABA - Structural variation and indel analysis by assembly.
+      - description: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation
         markedDefault: False
-        versionName: 1.1.3
+        versionName: 0.15.0
     - categories: biology, genomics
-      defaultVersionName: 0.6.6
-      description: CrossMap is a program for genome coordinates conversion between different assemblies (such as hg18 (NCBI36) <=> hg19 (GRCh37)). It supports commonly used file formats including BAM, CRAM, SAM, Wiggle, BigWig, BED, GFF, GTF, MAF VCF, and gVCF.
-      package: crossmap
-      url: https://crossmap.sourceforge.net/
+      defaultVersionName: 2.1.1
+      description: TopHat is a fast splice junction mapper for RNA-Seq reads.
+      package: tophat
+      url: https://ccb.jhu.edu/software/tophat/index.shtml
       versions:
-      - description: CrossMap is a program for genome coordinates conversion between different assemblies (such as hg18 (NCBI36) <=> hg19 (GRCh37)). It supports commonly used file formats including BAM, CRAM, SAM, Wiggle, BigWig, BED, GFF, GTF, MAF VCF, and gVCF.
+      - description: TopHat is a fast splice junction mapper for RNA-Seq reads.
         markedDefault: False
-        versionName: 0.6.6
+        versionName: 2.1.1
     - categories: biology, genomics
       defaultVersionName: 1.0.0
       description: The two programs in this project display variant data, motif data (via highlights).
@@ -203,15 +203,6 @@ software_modules:
       - description: RELION (for REgularised LIkelihood OptimisatioN, pronounce rely-on) is a software package that employs an empirical Bayesian approach for electron cryo-microscopy (cryo-EM) structure determination.
         markedDefault: False
         versionName: 3.1.3
-    - categories: biology, genomics
-      defaultVersionName: 2021-07-01
-      description: The NCBI Prokaryotic Genome Annotation Pipeline is designed to annotate bacterial and archaeal genomes (chromosomes and plasmids).
-      package: pgap
-      url: https://github.com/ncbi/pgap
-      versions:
-      - description: The NCBI Prokaryotic Genome Annotation Pipeline is designed to annotate bacterial and archaeal genomes (chromosomes and plasmids).
-        markedDefault: False
-        versionName: 2021-07-01
     - categories: biology, neuroimaging
       defaultVersionName: 3.2.5
       description: SimNIBS is a free and open source software package for the Simulation of Non-invasive Brain Stimulation.
@@ -272,15 +263,6 @@ software_modules:
       - description: Short read aligner for DNA and RNA-seq data.
         markedDefault: False
         versionName: 39.01
-    - categories: biology, genomics
-      defaultVersionName: 1.1.0
-      description: CONCOCT “bins” metagenomic contigs. Metagenomic binning is the process of clustering sequences into clusters corresponding to operational taxonomic units of some level.
-      package: concoct
-      url: https://concoct.readthedocs.io/en/latest/
-      versions:
-      - description: CONCOCT “bins” metagenomic contigs. Metagenomic binning is the process of clustering sequences into clusters corresponding to operational taxonomic units of some level.
-        markedDefault: False
-        versionName: 1.1.0
     - categories: biology, neuroimaging
       defaultVersionName: 6.0.4
       description: FSL is a comprehensive library of analysis tools for FMRI, MRI and DTI brain imaging data.
@@ -344,15 +326,18 @@ software_modules:
       - description: IMPUTE 5 is a genotype imputation method that can scale to reference panels with millions of samples.
         markedDefault: False
         versionName: 1.1.5
-    - categories: biology, imaging
-      defaultVersionName: 3.0
-      description: MitoGraph is a fully automated image processing method and software dedicated to calculating the three-dimensional morphology of mitochondria in live cells.
-      package: mitograph
-      url: https://github.com/vianamp/MitoGraph
+    - categories: biology, genomics
+      defaultVersionName: 2.2.3
+      description: Mining viral signal from microbial genomic data.
+      package: virsorter
+      url: https://github.com/simroux/VirSorter
       versions:
-      - description: MitoGraph is a fully automated image processing method and software dedicated to calculating the three-dimensional morphology of mitochondria in live cells.
+      - description: Mining viral signal from microbial genomic data.
         markedDefault: False
-        versionName: 3.0
+        versionName: 1.0.6
+      - description: Mining viral signal from microbial genomic data.
+        markedDefault: False
+        versionName: 2.2.3
     - categories: biology, neuroimaging
       defaultVersionName: 1.0.1
       description: The siemens_to_ismrmrd convertor is used to convert data from Siemens raw data format into ISMRMRD raw data format.
@@ -395,15 +380,15 @@ software_modules:
       - description: HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for Motif Discovery and next-gen sequencing analysis.
         markedDefault: False
         versionName: 4.11.1
-    - categories: biology, neuroimaging
-      defaultVersionName: 0.22.0
-      description: Open-source Python package for exploring, visualizing, and analyzing human neurophysiological data; MEG, EEG, sEEG, ECoG, NIRS, and more.
-      package: mne
-      url: https://mne.tools/stable/index.html
+    - categories: biology, genomics
+      defaultVersionName: 1.14.6
+      description: Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files.
+      package: prokka
+      url: https://github.com/tseemann/prokka
       versions:
-      - description: Open-source Python package for exploring, visualizing, and analyzing human neurophysiological data; MEG, EEG, sEEG, ECoG, NIRS, and more.
+      - description: Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files.
         markedDefault: False
-        versionName: 0.22.0
+        versionName: 1.14.6
     - categories: biology, genomics
       defaultVersionName: 0.7.4
       description: Haplotype-based variant calling
@@ -432,7 +417,7 @@ software_modules:
         markedDefault: False
         versionName: 3.697
     - categories: biology, genomics
-      defaultVersionName: 7
+      defaultVersionName: 8.0.0
       description: Anvi’o is an open-source, community-driven analysis and visualization platform for microbial ‘omics.
       package: anvio
       url: https://anvio.org/
@@ -440,6 +425,9 @@ software_modules:
       - description: Anvi’o is an open-source, community-driven analysis and visualization platform for microbial ‘omics.
         markedDefault: False
         versionName: 7
+      - description: Anvi’o is an open-source, community-driven analysis and visualization platform for microbial ‘omics.
+        markedDefault: False
+        versionName: 8.0.0
     - categories: biology, genomics
       defaultVersionName: 1.0
       description: A method to identify Circular DNA (Micro DNA) from pair-end high-throughput sequencing data.
@@ -479,6 +467,15 @@ software_modules:
       - description: FIX attempts to auto-classify ICA components into good vs bad components, so that the bad components can be removed from the 4D FMRI data.
         markedDefault: False
         versionName: 1.06
+    - categories: biology, genomics
+      defaultVersionName: 1.5.0
+      description: Magic-BLAST is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
+      package: magicblast
+      url: https://ncbi.github.io/magicblast/
+      versions:
+      - description: Magic-BLAST is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
+        markedDefault: False
+        versionName: 1.5.0
     - categories: biology, genomics
       defaultVersionName: 1.2.4
       description: DRAM (Distilled and Refined Annotation of Metabolism) is a tool for annotating metagenomic assembled genomes and VirSorter identified viral contigs.
@@ -527,15 +524,15 @@ software_modules:
       - description: The BaseSpace Sequence Hub CLI supports scripting and programmatic access to BaseSpace Sequence Hub for automation, bulk operations, and other routine functions.
         markedDefault: False
         versionName: 1.3.0
-    - categories: biology, neuroimaging
-      defaultVersionName: 1.4.2
-      description: Connectome Workbench is an open source, freely available visualization and discovery tool used to map neuroimaging data
-      package: workbench
-      url: https://www.humanconnectome.org/software/connectome-workbench
+    - categories: biology, genomics
+      defaultVersionName: 2.5.1
+      description: C++ API and a command-line toolkit for reading, writing, and manipulating BAM (genome alignment) files.
+      package: bamtools
+      url: https://github.com/pezmaster31/bamtools
       versions:
-      - description: Connectome Workbench is an open source, freely available visualization and discovery tool used to map neuroimaging data
+      - description: C++ API and a command-line toolkit for reading, writing, and manipulating BAM (genome alignment) files.
         markedDefault: False
-        versionName: 1.4.2
+        versionName: 2.5.1
     - categories: biology, genomics
       defaultVersionName: 0.13.5
       description: HTSeq is a Python package for analysis of high-throughput sequencing data.
@@ -545,15 +542,15 @@ software_modules:
       - description: HTSeq is a Python package for analysis of high-throughput sequencing data.
         markedDefault: False
         versionName: 0.13.5
-    - categories: biology, genomics
-      defaultVersionName: 7.3.8
-      description: The Snakemake workflow management system is a tool to create reproducible and scalable data analyses. Workflows are described via a human readable, Python based language. They can be seamlessly scaled to server, cluster, grid and cloud environments, without the need to modify the workflow definition. Finally, Snakemake workflows can entail a description of required software, which will be automatically deployed to any execution environment.
-      package: snakemake
-      url: https://snakemake.readthedocs.io/en/stable/index.html
+    - categories: biology, neuroimaging
+      defaultVersionName: 1.7.1
+      description: NVIDIA Clara Train SDK provides a training framework to help accelerate deep learning training and inference for medical imaging use cases.
+      package: clara-train-sdk
+      url: https://docs.nvidia.com/clara/clara-train-sdk/index.html
       versions:
-      - description: The Snakemake workflow management system is a tool to create reproducible and scalable data analyses. Workflows are described via a human readable, Python based language. They can be seamlessly scaled to server, cluster, grid and cloud environments, without the need to modify the workflow definition. Finally, Snakemake workflows can entail a description of required software, which will be automatically deployed to any execution environment.
+      - description: NVIDIA Clara Train SDK provides a training framework to help accelerate deep learning training and inference for medical imaging use cases.
         markedDefault: False
-        versionName: 7.3.8
+        versionName: 1.7.1
     - categories: biology, genomics
       defaultVersionName: 0.8.1
       description: Sambamba is a high performance highly parallel robust and fast tool (and library), written in the D programming language, for working with SAM and BAM files.
@@ -581,15 +578,6 @@ software_modules:
       - description: BICseq2-seg is for detecting CNVs based on the normalized data given by BICseq2-norm.
         markedDefault: False
         versionName: 0.7.2
-    - categories: biology, genomics
-      defaultVersionName: 2.904
-      description: SHAPEIT is a fast and accurate method for estimation of haplotypes (aka phasing) from genotype or sequencing data.
-      package: shapeit
-      url: https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html
-      versions:
-      - description: SHAPEIT is a fast and accurate method for estimation of haplotypes (aka phasing) from genotype or sequencing data.
-        markedDefault: False
-        versionName: 2.904
     - categories: biology, genomics
       defaultVersionName: 0.15.2
       description: FastQ Screen allows you to screen a library of sequences in FastQ format against a set of sequence databases so you can see if the composition of the library matches with what you expect.
@@ -935,15 +923,6 @@ software_modules:
       - description: The GATK is the industry standard for identifying SNPs and indels in germline DNA and RNAseq data.
         markedDefault: False
         versionName: 4.4.0.0
-    - categories: biology, neuroimaging
-      defaultVersionName: 1.0
-      description: Camino is an open-source software toolkit for diffusion MRI processing.
-      package: camino
-      url: http://camino.cs.ucl.ac.uk/
-      versions:
-      - description: Camino is an open-source software toolkit for diffusion MRI processing.
-        markedDefault: False
-        versionName: 1.0
     - categories: biology, genomics
       defaultVersionName: 3.38
       description: Metagenomic sequences can be analyzed by MetaGeneMark , the program optimized for speed.
@@ -1014,6 +993,15 @@ software_modules:
         markedDefault: False
         versionName: latest
     - categories: biology, genomics
+      defaultVersionName: 0.7.17
+      description: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
+      package: bwa
+      url: http://bio-bwa.sourceforge.net/
+      versions:
+      - description: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
+        markedDefault: False
+        versionName: 0.7.17
+    - categories: biology, genomics
       defaultVersionName: 3.0.10
       description: Sequence Read Archive Toolkit(SRA)
       package: sratoolkit
@@ -1029,23 +1017,26 @@ software_modules:
         markedDefault: False
         versionName: 3.0.10
     - categories: biology, genomics
-      defaultVersionName: 0.7.17
-      description: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
-      package: bwa
-      url: http://bio-bwa.sourceforge.net/
+      defaultVersionName: 2.25.0
+      description: A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
+      package: picard
+      url: https://github.com/broadinstitute/picard
       versions:
-      - description: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
+      - description: A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
         markedDefault: False
-        versionName: 0.7.17
+        versionName: 2.6.0
+      - description: A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
+        markedDefault: False
+        versionName: 2.25.0
     - categories: biology, genomics
-      defaultVersionName: 0.9.1
-      description: Dynamitic analysis of Alternative PolyAdenylation from RNA-seq
-      package: dapars
-      url: https://github.com/ZhengXia/dapars
+      defaultVersionName: 2.904
+      description: SHAPEIT is a fast and accurate method for estimation of haplotypes (aka phasing) from genotype or sequencing data.
+      package: shapeit
+      url: https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html
       versions:
-      - description: Dynamitic analysis of Alternative PolyAdenylation from RNA-seq
+      - description: SHAPEIT is a fast and accurate method for estimation of haplotypes (aka phasing) from genotype or sequencing data.
         markedDefault: False
-        versionName: 0.9.1
+        versionName: 2.904
     - categories: biology, genomics
       defaultVersionName: 0.1.5
       description: vcf-split splits a combined-sample VCF stream into single-sample VCF files.
@@ -1065,15 +1056,6 @@ software_modules:
         markedDefault: False
         versionName: 1.4.4
     - categories: biology, genomics
-      defaultVersionName: 4.0.2
-      description: MIRA is a whole genome shotgun and EST sequence assembler for Sanger, 454, Solexa (Illumina), IonTorrent data and PacBio.
-      package: mira
-      url: https://sourceforge.net/p/mira-assembler/wiki/Home/
-      versions:
-      - description: MIRA is a whole genome shotgun and EST sequence assembler for Sanger, 454, Solexa (Illumina), IonTorrent data and PacBio.
-        markedDefault: False
-        versionName: 4.0.2
-    - categories: biology, genomics
       defaultVersionName: 2.0.1
       description: Evolutionary Scale Modeling (esm). Pretrained language models for proteins.
       package: esm
@@ -1082,6 +1064,15 @@ software_modules:
       - description: Evolutionary Scale Modeling (esm). Pretrained language models for proteins.
         markedDefault: False
         versionName: 2.0.1
+    - categories: biology, genomics
+      defaultVersionName: 4.0.2
+      description: MIRA is a whole genome shotgun and EST sequence assembler for Sanger, 454, Solexa (Illumina), IonTorrent data and PacBio.
+      package: mira
+      url: https://sourceforge.net/p/mira-assembler/wiki/Home/
+      versions:
+      - description: MIRA is a whole genome shotgun and EST sequence assembler for Sanger, 454, Solexa (Illumina), IonTorrent data and PacBio.
+        markedDefault: False
+        versionName: 4.0.2
     - categories: biology, genomics
       defaultVersionName: 0.14.2
       description: A Practical and Efficient NCBI Taxonomy Toolkit also supports creating NCBI style taxdump files for custom taxonomies.
@@ -1092,32 +1083,50 @@ software_modules:
         markedDefault: False
         versionName: 0.14.2
     - categories: biology, genomics
-      defaultVersionName: 0.8a1
-      description: HASLR is a tool for rapid genome assembly of long sequencing reads.
-      package: haslr
-      url: https://github.com/vpc-ccg/haslr
+      defaultVersionName: 072018
+      description: A new algorithmic tool for detecting known viruses and their integration sites using next-generation sequencing of human cancer tissue.
+      package: virusseq
+      url: https://odin.mdacc.tmc.edu/~xsu1/VirusSeq.html
       versions:
-      - description: HASLR is a tool for rapid genome assembly of long sequencing reads.
+      - description: A new algorithmic tool for detecting known viruses and their integration sites using next-generation sequencing of human cancer tissue.
         markedDefault: False
-        versionName: 0.8a1
+        versionName: 072018
     - categories: biology, genomics
-      defaultVersionName: 1.5.0
-      description: Magic-BLAST is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
-      package: magicblast
-      url: https://ncbi.github.io/magicblast/
+      defaultVersionName: 0.5.8
+      description: Metagenomics classifier with unique k-mer counting for more specific results.
+      package: krakenuniq
+      url: https://github.com/fbreitwieser/krakenuniq
       versions:
-      - description: Magic-BLAST is a tool for mapping large next-generation RNA or DNA sequencing runs against a whole genome or transcriptome.
+      - description: Metagenomics classifier with unique k-mer counting for more specific results.
         markedDefault: False
-        versionName: 1.5.0
+        versionName: 0.5.8
+    - categories: biology, neuroimaging
+      defaultVersionName: 1.4.2
+      description: Connectome Workbench is an open source, freely available visualization and discovery tool used to map neuroimaging data
+      package: workbench
+      url: https://www.humanconnectome.org/software/connectome-workbench
+      versions:
+      - description: Connectome Workbench is an open source, freely available visualization and discovery tool used to map neuroimaging data
+        markedDefault: False
+        versionName: 1.4.2
     - categories: biology, genomics
-      defaultVersionName: 2.5.1
-      description: C++ API and a command-line toolkit for reading, writing, and manipulating BAM (genome alignment) files.
-      package: bamtools
-      url: https://github.com/pezmaster31/bamtools
+      defaultVersionName: 2.0.1
+      description: CLIPper is a tool to define peaks in your CLIP-seq dataset.
+      package: clipper
+      url: https://github.com/YeoLab/clipper/wiki/CLIPper-Home
       versions:
-      - description: C++ API and a command-line toolkit for reading, writing, and manipulating BAM (genome alignment) files.
+      - description: CLIPper is a tool to define peaks in your CLIP-seq dataset.
         markedDefault: False
-        versionName: 2.5.1
+        versionName: 2.0.1
+    - categories: biology, genomics
+      defaultVersionName: 1.0
+      description: Rewrite paired end fastq files to make sure that all reads have a mate and to separate out singletons..
+      package: fastq-pair
+      url: https://github.com/linsalrob/fastq-pair
+      versions:
+      - description: Rewrite paired end fastq files to make sure that all reads have a mate and to separate out singletons..
+        markedDefault: False
+        versionName: 1.0
     - categories: biology, genomics
       defaultVersionName: 1.1.2
       description: Parse's single cell kits facilitate scalable single cell RNA-seq, enabling you to go all the way from samples in a single cell suspension to sequencing data.
@@ -1172,27 +1181,24 @@ software_modules:
       - description: Open-source command-line toolkit that performs highly efficient and scalable Boolean and other set operations, statistical calculations, archiving, conversion and other management of genomic data of arbitrary scale.
         markedDefault: False
         versionName: 2.4.41
-    - categories: biology, genomics
-      defaultVersionName: 0.5.0
-      description: DCC is a python package intended to detect and quantify circRNAs with high specificity. DCC works with the STAR (Dobin et al., 2013) chimeric.out.junction files which contains chimerically aligned reads including circRNA junction spanning reads.
-      package: dcc
-      url: https://github.com/dieterich-lab/DCC
+    - categories: biology, computational biology
+      defaultVersionName: 3.4.0
+      description: The Bio Chemical Library (BCL) is a software package that provides unique tools for biological research, such as protein structure determination from sparse experimental data.
+      package: bcl
+      url: http://www.meilerlab.org/index.php/bclcommons/show/b_apps_id/1
       versions:
-      - description: DCC is a python package intended to detect and quantify circRNAs with high specificity. DCC works with the STAR (Dobin et al., 2013) chimeric.out.junction files which contains chimerically aligned reads including circRNA junction spanning reads.
+      - description: The Bio Chemical Library (BCL) is a software package that provides unique tools for biological research, such as protein structure determination from sparse experimental data.
         markedDefault: False
-        versionName: 0.5.0
-    - categories: biology, genomics
-      defaultVersionName: 1.15.1
-      description: Samtools is a suite of programs for interacting with high-throughput sequencing data.
-      package: samtools
-      url: http://www.htslib.org/
+        versionName: 3.4.0
+    - categories: biology, neuroimaging
+      defaultVersionName: 1.1.0
+      description: FSLeyes (pronounced fossilise) is the new FSL image viewer for 3D and 4D data (replacing FSLView). It does not perform any processing or analysis of images - that is done by separate tools.
+      package: fsleyes
+      url: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes
       versions:
-      - description: Samtools is a suite of programs for interacting with high-throughput sequencing data.
+      - description: FSLeyes (pronounced fossilise) is the new FSL image viewer for 3D and 4D data (replacing FSLView). It does not perform any processing or analysis of images - that is done by separate tools.
         markedDefault: False
-        versionName: 1.11
-      - description: Samtools is a suite of programs for interacting with high-throughput sequencing data.
-        markedDefault: False
-        versionName: 1.15.1
+        versionName: 1.1.0
     - categories: biology, genomics
       defaultVersionName: 2.12.0
       description: The Basic Local Alignment Search Tool (BLAST) finds regions of local similarity between sequences.
@@ -1205,15 +1211,15 @@ software_modules:
       - description: The Basic Local Alignment Search Tool (BLAST) finds regions of local similarity between sequences.
         markedDefault: False
         versionName: 2.12.0
-    - categories: biology, genomics
-      defaultVersionName: 0.2.64
-      description: Hail is an open-source library for scalable data exploration and analysis, with a particular emphasis on genomics.
-      package: hail
-      url: https://hail.is/docs/0.2/index.html
+    - categories: biology, imaging 
+      defaultVersionName: 2.2
+      description: Markerless pose estimation of user-defined features with deep learning for all animals including humans 
+      package: deeplabcutnogui
+      url: https://github.com/DeepLabCut 
       versions:
-      - description: Hail is an open-source library for scalable data exploration and analysis, with a particular emphasis on genomics.
+      - description: Markerless pose estimation of user-defined features with deep learning for all animals including humans 
         markedDefault: False
-        versionName: 0.2.64
+        versionName: 2.2
     - categories: biology, genomics
       defaultVersionName: 1.2.4
       description: Clustal Omega is a new multiple sequence alignment program that uses seeded guide trees and HMM profile-profile techniques to generate alignments between three or more sequences.
@@ -1224,14 +1230,14 @@ software_modules:
         markedDefault: False
         versionName: 1.2.4
     - categories: biology, genomics
-      defaultVersionName: 1.10.1
-      description: STAR-Fusion further processes the output generated by the STAR aligner to map junction reads and spanning reads to a reference annotation set.
-      package: star-fusion
-      url: https://github.com/STAR-Fusion/STAR-Fusion/wiki
+      defaultVersionName: 1.2.1
+      description: A bioinformatics pipeline to analyze mtDNA from NGS data.
+      package: mtoolbox
+      url: https://github.com/mitoNGS/MToolBox
       versions:
-      - description: STAR-Fusion further processes the output generated by the STAR aligner to map junction reads and spanning reads to a reference annotation set.
+      - description: A bioinformatics pipeline to analyze mtDNA from NGS data.
         markedDefault: False
-        versionName: 1.10.1
+        versionName: 1.2.1
     - categories: biology, genomics
       defaultVersionName: 1.0
       description: A multithread-enabled quickstart tool for AmpliconArchitect.
@@ -1251,35 +1257,50 @@ software_modules:
         markedDefault: False
         versionName: 0.0.4
     - categories: biology, genomics
-      defaultVersionName: 1.14.6
-      description: Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files.
-      package: prokka
-      url: https://github.com/tseemann/prokka
+      defaultVersionName: 1.15.1
+      description: Samtools is a suite of programs for interacting with high-throughput sequencing data.
+      package: samtools
+      url: http://www.htslib.org/
       versions:
-      - description: Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files.
+      - description: Samtools is a suite of programs for interacting with high-throughput sequencing data.
         markedDefault: False
-        versionName: 1.14.6
+        versionName: 1.11
+      - description: Samtools is a suite of programs for interacting with high-throughput sequencing data.
+        markedDefault: False
+        versionName: 1.15.1
     - categories: biology, genomics
-      defaultVersionName: 2.2.3
-      description: Mining viral signal from microbial genomic data.
-      package: virsorter
-      url: https://github.com/simroux/VirSorter
+      defaultVersionName: 4.0
+      description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
+      package: cutadapt
+      url: https://cutadapt.readthedocs.io/en/stable/
       versions:
-      - description: Mining viral signal from microbial genomic data.
+      - description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
         markedDefault: False
-        versionName: 1.0.6
-      - description: Mining viral signal from microbial genomic data.
+        versionName: 3.2
+      - description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
         markedDefault: False
-        versionName: 2.2.3
+        versionName: 3.4
+      - description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
+        markedDefault: False
+        versionName: 4.0
     - categories: biology, genomics
-      defaultVersionName: 0.1.0
-      description: Geneformer is a foundation transformer model pretrained on a large-scale corpus of ~30 million single cell transcriptomes to enable context-aware predictions in settings with limited data in network biology.
-      package: geneformer
-      url: https://huggingface.co/ctheodoris/Geneformer
+      defaultVersionName: 1.1.0
+      description: CONCOCT “bins” metagenomic contigs. Metagenomic binning is the process of clustering sequences into clusters corresponding to operational taxonomic units of some level.
+      package: concoct
+      url: https://concoct.readthedocs.io/en/latest/
       versions:
-      - description: Geneformer is a foundation transformer model pretrained on a large-scale corpus of ~30 million single cell transcriptomes to enable context-aware predictions in settings with limited data in network biology.
+      - description: CONCOCT “bins” metagenomic contigs. Metagenomic binning is the process of clustering sequences into clusters corresponding to operational taxonomic units of some level.
         markedDefault: False
-        versionName: 0.1.0
+        versionName: 1.1.0
+    - categories: biology, neuroimaging
+      defaultVersionName: 1.0
+      description: Camino is an open-source software toolkit for diffusion MRI processing.
+      package: camino
+      url: http://camino.cs.ucl.ac.uk/
+      versions:
+      - description: Camino is an open-source software toolkit for diffusion MRI processing.
+        markedDefault: False
+        versionName: 1.0
     - categories: biology, genomics
       defaultVersionName: 2.0.2
       description: The IDR (Irreproducible Discovery Rate) framework is a uniﬁed approach to measure the reproducibility of ﬁndings identiﬁed from replicate experiments and provide highly stable thresholds based on reproducibility.
@@ -1290,15 +1311,6 @@ software_modules:
         markedDefault: False
         versionName: 2.0.2
     - categories: biology, genomics
-      defaultVersionName: 1.3.1
-      description: A deep learning-based tool to identify splice variants.
-      package: spliceai
-      url: https://github.com/Illumina/SpliceAI
-      versions:
-      - description: A deep learning-based tool to identify splice variants.
-        markedDefault: False
-        versionName: 1.3.1
-    - categories: biology, genomics
       defaultVersionName: 1.2.1
       description: The Flux Simulator aims at modeling RNA-Seq experiments in silico. Sequencing reads are produced from a reference genome according annotated transcripts.
       package: fluxsimulator
@@ -1308,14 +1320,14 @@ software_modules:
         markedDefault: False
         versionName: 1.2.1
     - categories: biology, genomics
-      defaultVersionName: 0.3
-      description: Merging paired-end reads and removing sequencing adapters
-      package: ngmerge
-      url: https://github.com/jsh58/NGmerge
+      defaultVersionName: 1.3.1
+      description: A deep learning-based tool to identify splice variants.
+      package: spliceai
+      url: https://github.com/Illumina/SpliceAI
       versions:
-      - description: Merging paired-end reads and removing sequencing adapters
+      - description: A deep learning-based tool to identify splice variants.
         markedDefault: False
-        versionName: 0.3
+        versionName: 1.3.1
     - categories: biology, genomics
       defaultVersionName: 2.0.0
       description: PLINK is a free, open-source whole genome association analysis toolset, designed to perform a range of basic, large-scale analyses in a computationally efficient manner.
@@ -1329,14 +1341,14 @@ software_modules:
         markedDefault: False
         versionName: 2.0.0
     - categories: biology, genomics
-      defaultVersionName: 0.2.4
-      description: BICseq2-norm is for normalizing potential biases in the sequencing data.
-      package: bicseq2-norm
-      url: http://compbio.med.harvard.edu/BIC-seq/
+      defaultVersionName: 2.20
+      description: The Illumina bcl2fastq2 Conversion Software v2.20 demultiplexes sequencing data and converts base call (BCL) files into FASTQ files.
+      package: bcl2fastq2
+      url: https://support.illumina.com/downloads/bcl2fastq-conversion-software-v2-20.html
       versions:
-      - description: BICseq2-norm is for normalizing potential biases in the sequencing data.
+      - description: The Illumina bcl2fastq2 Conversion Software v2.20 demultiplexes sequencing data and converts base call (BCL) files into FASTQ files.
         markedDefault: False
-        versionName: 0.2.4
+        versionName: 2.20
     - categories: biology, genomics
       defaultVersionName: 072017
       description: ANNOVAR is an efficient software tool to utilize update-to-date information to functionally annotate genetic variants detected from diverse genomes.
@@ -1349,15 +1361,6 @@ software_modules:
       - description: ANNOVAR is an efficient software tool to utilize update-to-date information to functionally annotate genetic variants detected from diverse genomes.
         markedDefault: False
         versionName: 072017
-    - categories: biology, genomics
-      defaultVersionName: 2.0.1
-      description: CLIPper is a tool to define peaks in your CLIP-seq dataset.
-      package: clipper
-      url: https://github.com/YeoLab/clipper/wiki/CLIPper-Home
-      versions:
-      - description: CLIPper is a tool to define peaks in your CLIP-seq dataset.
-        markedDefault: False
-        versionName: 2.0.1
     - categories: biology, genomics
       defaultVersionName: 103.1
       description: VEP determines the effect of your variants (SNPs, insertions, deletions, CNVs or structural variants) on genes, transcripts, and protein sequence, as well as regulatory regions.
@@ -1377,32 +1380,41 @@ software_modules:
         markedDefault: False
         versionName: 1.1.0
     - categories: biology, genomics
-      defaultVersionName: 1.2.1
-      description: A bioinformatics pipeline to analyze mtDNA from NGS data.
-      package: mtoolbox
-      url: https://github.com/mitoNGS/MToolBox
+      defaultVersionName: 0.8a1
+      description: HASLR is a tool for rapid genome assembly of long sequencing reads.
+      package: haslr
+      url: https://github.com/vpc-ccg/haslr
       versions:
-      - description: A bioinformatics pipeline to analyze mtDNA from NGS data.
+      - description: HASLR is a tool for rapid genome assembly of long sequencing reads.
         markedDefault: False
-        versionName: 1.2.1
+        versionName: 0.8a1
     - categories: biology, genomics
-      defaultVersionName: 1.7.2
-      description: Kaiju is a program for the taxonomic classification of high-throughput sequencing reads, e.g., Illumina or Roche/454, from whole-genome sequencing of metagenomic DNA.
-      package: kaiju
-      url: https://github.com/bioinformatics-centre/kaiju
+      defaultVersionName: 2020.11
+      description: Qiime2 is a next-generation microbiome bioinformatics platform.
+      package: qiime2
+      url: https://qiime2.org/
       versions:
-      - description: Kaiju is a program for the taxonomic classification of high-throughput sequencing reads, e.g., Illumina or Roche/454, from whole-genome sequencing of metagenomic DNA.
+      - description: Qiime2 is a next-generation microbiome bioinformatics platform.
         markedDefault: False
-        versionName: 1.7.2
-    - categories: biology, imaging 
-      defaultVersionName: 2.2
-      description: Markerless pose estimation of user-defined features with deep learning for all animals including humans 
-      package: deeplabcutnogui
-      url: https://github.com/DeepLabCut 
+        versionName: 2020.11
+    - categories: biology, genomics
+      defaultVersionName: 0.1.0
+      description: CWL-defined pipeline for using IDR to produce a set of peaks given two replicate eCLIP peaks.
+      package: eclipidrmergepeaks
+      url: https://github.com/YeoLab/merge_peaks
       versions:
-      - description: Markerless pose estimation of user-defined features with deep learning for all animals including humans 
+      - description: CWL-defined pipeline for using IDR to produce a set of peaks given two replicate eCLIP peaks.
         markedDefault: False
-        versionName: 2.2
+        versionName: 0.1.0
+    - categories: biology, genomics
+      defaultVersionName: 2.10.0
+      description: Provides a comprehensive set of functions for processing MAF files and to perform most commonly used analyses in cancer genomics.
+      package: maftools
+      url: https://github.com/PoisonAlien/maftools
+      versions:
+      - description: Provides a comprehensive set of functions for processing MAF files and to perform most commonly used analyses in cancer genomics.
+        markedDefault: False
+        versionName: 2.10.0
     - categories: biology, genomics
       defaultVersionName: 0.1.26
       description: samblaster is a fast and flexible program for marking duplicates in read-id grouped1 paired-end SAM files.
@@ -1422,15 +1434,6 @@ software_modules:
         markedDefault: False
         versionName: 1.0
     - categories: biology, genomics
-      defaultVersionName: 4.2.21
-      description: PhiSpy identifies prophages in Bacterial (and probably Archaeal) genomes. Given an annotated genome it will use several approaches to identify the most likely prophage regions..
-      package: phispy
-      url: https://github.com/linsalrob/PhiSpy
-      versions:
-      - description: PhiSpy identifies prophages in Bacterial (and probably Archaeal) genomes. Given an annotated genome it will use several approaches to identify the most likely prophage regions..
-        markedDefault: False
-        versionName: 4.2.21
-    - categories: biology, genomics
       defaultVersionName: 0.12.1
       description: pySCENIC is a lightning-fast python implementation of the SCENIC pipeline which enables biologists to infer transcription factors, gene regulatory networks and cell types from single-cell RNA-seq data.
       package: pyscenic
@@ -1449,23 +1452,14 @@ software_modules:
         markedDefault: False
         versionName: 0.38
     - categories: biology, genomics
-      defaultVersionName: 2.10.0
-      description: Provides a comprehensive set of functions for processing MAF files and to perform most commonly used analyses in cancer genomics.
-      package: maftools
-      url: https://github.com/PoisonAlien/maftools
+      defaultVersionName: 0.2.64
+      description: Hail is an open-source library for scalable data exploration and analysis, with a particular emphasis on genomics.
+      package: hail
+      url: https://hail.is/docs/0.2/index.html
       versions:
-      - description: Provides a comprehensive set of functions for processing MAF files and to perform most commonly used analyses in cancer genomics.
+      - description: Hail is an open-source library for scalable data exploration and analysis, with a particular emphasis on genomics.
         markedDefault: False
-        versionName: 2.10.0
-    - categories: biology, genomics
-      defaultVersionName: 0.1.16
-      description: A set of tools written in Perl and C++ for working with VCF files, such as those generated by the 1000 Genomes Project.
-      package: vcftools
-      url: https://vcftools.github.io/
-      versions:
-      - description: A set of tools written in Perl and C++ for working with VCF files, such as those generated by the 1000 Genomes Project.
-        markedDefault: False
-        versionName: 0.1.16
+        versionName: 0.2.64
     - categories: biology, genomics
       defaultVersionName: 3.6.1
       description: Get_Homologues is a versatile software package for pan-genome analysis.
@@ -1476,14 +1470,14 @@ software_modules:
         markedDefault: False
         versionName: 3.6.1
     - categories: biology, genomics
-      defaultVersionName: 072018
-      description: A new algorithmic tool for detecting known viruses and their integration sites using next-generation sequencing of human cancer tissue.
-      package: virusseq
-      url: https://odin.mdacc.tmc.edu/~xsu1/VirusSeq.html
+      defaultVersionName: 4.2.21
+      description: PhiSpy identifies prophages in Bacterial (and probably Archaeal) genomes. Given an annotated genome it will use several approaches to identify the most likely prophage regions..
+      package: phispy
+      url: https://github.com/linsalrob/PhiSpy
       versions:
-      - description: A new algorithmic tool for detecting known viruses and their integration sites using next-generation sequencing of human cancer tissue.
+      - description: PhiSpy identifies prophages in Bacterial (and probably Archaeal) genomes. Given an annotated genome it will use several approaches to identify the most likely prophage regions..
         markedDefault: False
-        versionName: 072018
+        versionName: 4.2.21
     - categories: biology, genomics
       defaultVersionName: 2021.10.13
       description: Java utilities for bioinformatics.
@@ -1527,6 +1521,15 @@ software_modules:
         markedDefault: False
         versionName: 0.15.96
     - categories: biology, genomics
+      defaultVersionName: 2.2.2
+      description: Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples.
+      package: cufflinks
+      url: https://github.com/cole-trapnell-lab/cufflinks
+      versions:
+      - description: Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples.
+        markedDefault: False
+        versionName: 2.2.2
+    - categories: biology, genomics
       defaultVersionName: 1.0.0
       description: K2Mem is a variant of Kraken 2 taxonomic sequence classification system that can learn from the previous classifications.
       package: k2mem
@@ -1536,15 +1539,6 @@ software_modules:
         markedDefault: False
         versionName: 1.0.0
     - categories: biology, genomics
-      defaultVersionName: 0.11.9
-      description: FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines.
-      package: fastqc
-      url: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-      versions:
-      - description: FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines.
-        markedDefault: False
-        versionName: 0.11.9
-    - categories: biology, genomics
       defaultVersionName: 0.9.0891
       description: MOSAIK is a reference-guided aligner for next-generation sequencing technologies.
       package: mosaik
@@ -1553,6 +1547,15 @@ software_modules:
       - description: MOSAIK is a reference-guided aligner for next-generation sequencing technologies.
         markedDefault: False
         versionName: 0.9.0891
+    - categories: biology, genomics
+      defaultVersionName: 0.11.9
+      description: FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines.
+      package: fastqc
+      url: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+      versions:
+      - description: FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines.
+        markedDefault: False
+        versionName: 0.11.9
     - categories: biology, imaging
       defaultVersionName: 11.0.3
       description: The MIPAV (Medical Image Processing, Analysis, and Visualization) application enables quantitative analysis and visualization of medical images of numerous modalities such as PET, MRI, CT, or microscopy.
@@ -1575,14 +1578,23 @@ software_modules:
         markedDefault: False
         versionName: 3.0.0
     - categories: biology, genomics
-      defaultVersionName: 0.46.1
-      description: kallisto is a program for quantifying abundances of transcripts from RNA-Seq data, or more generally of target sequences using high-throughput sequencing reads.
-      package: kallisto
-      url: https://github.com/pachterlab/kallisto
+      defaultVersionName: 0.3
+      description: Merging paired-end reads and removing sequencing adapters
+      package: ngmerge
+      url: https://github.com/jsh58/NGmerge
       versions:
-      - description: kallisto is a program for quantifying abundances of transcripts from RNA-Seq data, or more generally of target sequences using high-throughput sequencing reads.
+      - description: Merging paired-end reads and removing sequencing adapters
         markedDefault: False
-        versionName: 0.46.1
+        versionName: 0.3
+    - categories: biology, computational biology
+      defaultVersionName: 1.7.0
+      description: The PDBFixer is an easy to use application for fixing problems in Protein Data Bank files
+      package: pdbfixer
+      url: https://github.com/openmm/pdbfixer
+      versions:
+      - description: The PDBFixer is an easy to use application for fixing problems in Protein Data Bank files
+        markedDefault: False
+        versionName: 1.7.0
     - categories: biology, genomics
       defaultVersionName: latest
       description: PacBio Secondary Analysis Tools on Bioconda
@@ -1610,15 +1622,21 @@ software_modules:
       - description: A single molecule sequence assembler for genomes large and small.
         markedDefault: False
         versionName: 1.8
-    - categories: biology, computational biology
-      defaultVersionName: 1.7.0
-      description: The PDBFixer is an easy to use application for fixing problems in Protein Data Bank files
-      package: pdbfixer
-      url: https://github.com/openmm/pdbfixer
+    - categories: biology, genomics
+      defaultVersionName: 6.1.0
+      description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
+      package: antismash
+      url: https://github.com/antismash/antismash
       versions:
-      - description: The PDBFixer is an easy to use application for fixing problems in Protein Data Bank files
+      - description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
         markedDefault: False
-        versionName: 1.7.0
+        versionName: 5.0.0
+      - description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
+        markedDefault: False
+        versionName: 6.0.1
+      - description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
+        markedDefault: False
+        versionName: 6.1.0
     - categories: biology, genomics
       defaultVersionName: 2.0.23
       description: The GISTIC module identifies regions of the genome that are significantly amplified or deleted across a set of samples.
@@ -1629,15 +1647,6 @@ software_modules:
         markedDefault: False
         versionName: 2.0.23
     - categories: biology, genomics
-      defaultVersionName: 0.15.0
-      description: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation
-      package: seqkit
-      url: https://github.com/shenwei356/seqkit
-      versions:
-      - description: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation
-        markedDefault: False
-        versionName: 0.15.0
-    - categories: biology, genomics
       defaultVersionName: 1.1
       description: Viral Integration caller (VIcaller) is a bioinformatics tool designed for identifying viral integration events using high-throughput sequencing (HTS) data.
       package: vicaller
@@ -1647,14 +1656,23 @@ software_modules:
         markedDefault: False
         versionName: 1.1
     - categories: biology, genomics
-      defaultVersionName: 0.3.0
-      description: VIRify is a recently developed pipeline for the detection, annotation, and taxonomic classification of viral contigs in metagenomic and metatranscriptomic assemblies.
-      package: emg-viral-pipeline
-      url: https://github.com/EBI-Metagenomics/emg-viral-pipeline
+      defaultVersionName: 0.6.6
+      description: CrossMap is a program for genome coordinates conversion between different assemblies (such as hg18 (NCBI36) <=> hg19 (GRCh37)). It supports commonly used file formats including BAM, CRAM, SAM, Wiggle, BigWig, BED, GFF, GTF, MAF VCF, and gVCF.
+      package: crossmap
+      url: https://crossmap.sourceforge.net/
       versions:
-      - description: VIRify is a recently developed pipeline for the detection, annotation, and taxonomic classification of viral contigs in metagenomic and metatranscriptomic assemblies.
+      - description: CrossMap is a program for genome coordinates conversion between different assemblies (such as hg18 (NCBI36) <=> hg19 (GRCh37)). It supports commonly used file formats including BAM, CRAM, SAM, Wiggle, BigWig, BED, GFF, GTF, MAF VCF, and gVCF.
         markedDefault: False
-        versionName: 0.3.0
+        versionName: 0.6.6
+    - categories: biology, genomics
+      defaultVersionName: 1.1.3
+      description: SvABA - Structural variation and indel analysis by assembly.
+      package: svaba
+      url: https://github.com/walaj/svaba
+      versions:
+      - description: SvABA - Structural variation and indel analysis by assembly.
+        markedDefault: False
+        versionName: 1.1.3
     - categories: biology, genomics
       defaultVersionName: 1.1.7
       description: Reference implementation of the BGEN format, written in C++.
@@ -1710,14 +1728,14 @@ software_modules:
         markedDefault: False
         versionName: 3.13
     - categories: biology, genomics
-      defaultVersionName: 2.1.1
-      description: TopHat is a fast splice junction mapper for RNA-Seq reads.
-      package: tophat
-      url: https://ccb.jhu.edu/software/tophat/index.shtml
+      defaultVersionName: 0.9.4
+      description: OncoIMPACT is a first-in-class algorithmic framework that nominates patient-specific driver genes by integratively modeling genomic mutations (point, structural and copy-number) and the resulting perturbations in transcriptional programs via defined molecular networks.
+      package: oncoimpact
+      url: https://github.com/CSB5/OncoIMPACT
       versions:
-      - description: TopHat is a fast splice junction mapper for RNA-Seq reads.
+      - description: OncoIMPACT is a first-in-class algorithmic framework that nominates patient-specific driver genes by integratively modeling genomic mutations (point, structural and copy-number) and the resulting perturbations in transcriptional programs via defined molecular networks.
         markedDefault: False
-        versionName: 2.1.1
+        versionName: 0.9.4
     - categories: biology, computational biology
       defaultVersionName: 1.0.1
       description: CookHLA is an accurate and efficient HLA imputation method.
@@ -1755,15 +1773,6 @@ software_modules:
         markedDefault: False
         versionName: 4.0.1-1
     - categories: biology, genomics
-      defaultVersionName: 2.1.2
-      description: Kinship-based INference for Gwas
-      package: king
-      url: https://www.kingrelatedness.com/
-      versions:
-      - description: Kinship-based INference for Gwas
-        markedDefault: False
-        versionName: 2.1.2
-    - categories: biology, genomics
       defaultVersionName: 1.5.1
       description: eXpress is a streaming tool for quantifying the abundances of a set of target sequences from sampled subsequences.
       package: express
@@ -1772,6 +1781,15 @@ software_modules:
       - description: eXpress is a streaming tool for quantifying the abundances of a set of target sequences from sampled subsequences.
         markedDefault: False
         versionName: 1.5.1
+    - categories: biology, genomics
+      defaultVersionName: 2.1.2
+      description: Kinship-based INference for Gwas
+      package: king
+      url: https://www.kingrelatedness.com/
+      versions:
+      - description: Kinship-based INference for Gwas
+        markedDefault: False
+        versionName: 2.1.2
     - categories: biology, genomics
       defaultVersionName: 1.2.3
       description: CAVA (Clinical Annotation of VAriants) is a lightweight, fast, flexible and easy-to-use Next Generation Sequencing (NGS) variant annotation tool.
@@ -1836,6 +1854,15 @@ software_modules:
         markedDefault: False
         versionName: 4.8.1
     - categories: biology, genomics
+      defaultVersionName: 2.3.3
+      description: Polygenic Risk Score software.
+      package: prsice2
+      url: https://choishingwan.github.io/PRS-Tutorial/prsice/
+      versions:
+      - description: Polygenic Risk Score software.
+        markedDefault: False
+        versionName: 2.3.3
+    - categories: biology, genomics
       defaultVersionName: 0.8.0
       description: Utility that runs on a BAM or CRAM file and generates low-level information about sequencing data at specific nucleotide positions.
       package: bam-readcount
@@ -1845,23 +1872,23 @@ software_modules:
         markedDefault: False
         versionName: 0.8.0
     - categories: biology, genomics
-      defaultVersionName: 1.0.0
-      description: Gossamer is an application for doing de novo assembly of high throughput sequencing data. 
-      package: gossamer
-      url: https://github.com/data61/gossamer
+      defaultVersionName: 0.8.5
+      description: Pipeline for estimating molecular count matrices for droplet-based single-cell RNA-seq measurements.
+      package: dropest
+      url: https://github.com/kharchenkolab/dropEst
       versions:
-      - description: Gossamer is an application for doing de novo assembly of high throughput sequencing data. 
+      - description: Pipeline for estimating molecular count matrices for droplet-based single-cell RNA-seq measurements.
         markedDefault: False
-        versionName: 1.0.0
+        versionName: 0.8.5
     - categories: biology, genomics
-      defaultVersionName: 3.1.1
-      description: regenie is a C++ program for whole genome regression modelling of large genome-wide association studies.
-      package: regenie
-      url: https://rgcgithub.github.io/regenie/
+      defaultVersionName: 1.10.1
+      description: STAR-Fusion further processes the output generated by the STAR aligner to map junction reads and spanning reads to a reference annotation set.
+      package: star-fusion
+      url: https://github.com/STAR-Fusion/STAR-Fusion/wiki
       versions:
-      - description: regenie is a C++ program for whole genome regression modelling of large genome-wide association studies.
+      - description: STAR-Fusion further processes the output generated by the STAR aligner to map junction reads and spanning reads to a reference annotation set.
         markedDefault: False
-        versionName: 3.1.1
+        versionName: 1.10.1
     - categories: biology, computational biology
       defaultVersionName: 5.50-84.0
       description: Functional analysis of proteins by classifying them into families and predicting domains and important sites.
@@ -1875,14 +1902,14 @@ software_modules:
         markedDefault: False
         versionName: 5.50-84.0
     - categories: biology, genomics
-      defaultVersionName: 0.8.5
-      description: Pipeline for estimating molecular count matrices for droplet-based single-cell RNA-seq measurements.
-      package: dropest
-      url: https://github.com/kharchenkolab/dropEst
+      defaultVersionName: 1.0.0
+      description: Gossamer is an application for doing de novo assembly of high throughput sequencing data. 
+      package: gossamer
+      url: https://github.com/data61/gossamer
       versions:
-      - description: Pipeline for estimating molecular count matrices for droplet-based single-cell RNA-seq measurements.
+      - description: Gossamer is an application for doing de novo assembly of high throughput sequencing data. 
         markedDefault: False
-        versionName: 0.8.5
+        versionName: 1.0.0
     - categories: biology, genomics
       defaultVersionName: 2.1.4
       description: High-performance read alignment, quantification and mutation discovery, next-gen sequencing data.
@@ -1910,27 +1937,15 @@ software_modules:
       - description: In-Silico Modeling of Metabolic Heterogeneity using Single-Cell Transcriptomes
         markedDefault: False
         versionName: 0.9.10.2
-    - categories: biology, neuroimaging
-      defaultVersionName: 22.0.2
-      description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
-      package: fmriprep
-      url: https://fmriprep.org/en/stable/
+    - categories: biology, genomics
+      defaultVersionName: 1.1.4
+      description: Circle-Map takes as input an alignment of reads to a reference genome (e.g. a BWA-MEM generated BAM file) and like other methods, it will use those alignments to detect cases were the read has been split into two segments (e.g. split reads) to detect genomic rearrangements supporting a circular DNA structure.
+      package: circlemap
+      url: https://github.com/iprada/Circle-Map
       versions:
-      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
+      - description: Circle-Map takes as input an alignment of reads to a reference genome (e.g. a BWA-MEM generated BAM file) and like other methods, it will use those alignments to detect cases were the read has been split into two segments (e.g. split reads) to detect genomic rearrangements supporting a circular DNA structure.
         markedDefault: False
-        versionName: 20.2.1
-      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
-        markedDefault: False
-        versionName: 20.2.3
-      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
-        markedDefault: False
-        versionName: 21.0.2
-      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
-        markedDefault: False
-        versionName: 22.0.1
-      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
-        markedDefault: False
-        versionName: 22.0.2
+        versionName: 1.1.4
     - categories: biology, genomics
       defaultVersionName: 2.6.3
       description: Fast, reliable protein-coding gene prediction for prokaryotic genomes.
@@ -1967,15 +1982,27 @@ software_modules:
       - description: CIRCexplorer2 is a comprehensive and integrative circular RNA analysis toolset.
         markedDefault: False
         versionName: 2.3.6
-    - categories: biology, genomics
-      defaultVersionName: 1.1.4
-      description: Circle-Map takes as input an alignment of reads to a reference genome (e.g. a BWA-MEM generated BAM file) and like other methods, it will use those alignments to detect cases were the read has been split into two segments (e.g. split reads) to detect genomic rearrangements supporting a circular DNA structure.
-      package: circlemap
-      url: https://github.com/iprada/Circle-Map
+    - categories: biology, neuroimaging
+      defaultVersionName: 22.0.2
+      description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
+      package: fmriprep
+      url: https://fmriprep.org/en/stable/
       versions:
-      - description: Circle-Map takes as input an alignment of reads to a reference genome (e.g. a BWA-MEM generated BAM file) and like other methods, it will use those alignments to detect cases were the read has been split into two segments (e.g. split reads) to detect genomic rearrangements supporting a circular DNA structure.
+      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
         markedDefault: False
-        versionName: 1.1.4
+        versionName: 20.2.1
+      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
+        markedDefault: False
+        versionName: 20.2.3
+      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
+        markedDefault: False
+        versionName: 21.0.2
+      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
+        markedDefault: False
+        versionName: 22.0.1
+      - description: fMRIPrep is a functional magnetic resonance imaging (fMRI) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting.
+        markedDefault: False
+        versionName: 22.0.2
     - categories: biology, genomics
       defaultVersionName: 1.0
       description: A software to detect viral infection and integration sites for different viruses. FastViFi relies on ViFi and Kraken2 tools.
@@ -1995,6 +2022,15 @@ software_modules:
         markedDefault: False
         versionName: 072018
     - categories: biology, genomics
+      defaultVersionName: 3.1.1
+      description: regenie is a C++ program for whole genome regression modelling of large genome-wide association studies.
+      package: regenie
+      url: https://rgcgithub.github.io/regenie/
+      versions:
+      - description: regenie is a C++ program for whole genome regression modelling of large genome-wide association studies.
+        markedDefault: False
+        versionName: 3.1.1
+    - categories: biology, genomics
       defaultVersionName: 2.0.87
       description: This package contains some tools for processing BAM files.
       package: biobambam2
@@ -2003,15 +2039,6 @@ software_modules:
       - description: This package contains some tools for processing BAM files.
         markedDefault: False
         versionName: 2.0.87
-    - categories: biology, genomics
-      defaultVersionName: 2.3.3
-      description: Polygenic Risk Score software.
-      package: prsice2
-      url: https://choishingwan.github.io/PRS-Tutorial/prsice/
-      versions:
-      - description: Polygenic Risk Score software.
-        markedDefault: False
-        versionName: 2.3.3
     - categories: biology, genomics
       defaultVersionName: 1.15
       description: BCFtools is a program for variant calling and manipulating files in the Variant Call Format (VCF) and its binary counterpart BCF.
@@ -2049,14 +2076,14 @@ software_modules:
         markedDefault: False
         versionName: 1.5
     - categories: biology, genomics
-      defaultVersionName: 0.9.4
-      description: OncoIMPACT is a first-in-class algorithmic framework that nominates patient-specific driver genes by integratively modeling genomic mutations (point, structural and copy-number) and the resulting perturbations in transcriptional programs via defined molecular networks.
-      package: oncoimpact
-      url: https://github.com/CSB5/OncoIMPACT
+      defaultVersionName: 1.1.2
+      description: Glow is an open-source toolkit for working with genomic data at biobank-scale and beyond. 
+      package: glow
+      url: https://glow.readthedocs.io/en/latest/index.html
       versions:
-      - description: OncoIMPACT is a first-in-class algorithmic framework that nominates patient-specific driver genes by integratively modeling genomic mutations (point, structural and copy-number) and the resulting perturbations in transcriptional programs via defined molecular networks.
+      - description: Glow is an open-source toolkit for working with genomic data at biobank-scale and beyond. 
         markedDefault: False
-        versionName: 0.9.4
+        versionName: 1.1.2
     - categories: biology, genomics
       defaultVersionName: 4.1.0
       description: MiXCR is a universal software for fast and accurate analysis of raw T- or B- cell receptor repertoire sequencing data.
@@ -2070,15 +2097,6 @@ software_modules:
         markedDefault: False
         versionName: 4.1.0
     - categories: biology, genomics
-      defaultVersionName: 1.1.2
-      description: Glow is an open-source toolkit for working with genomic data at biobank-scale and beyond. 
-      package: glow
-      url: https://glow.readthedocs.io/en/latest/index.html
-      versions:
-      - description: Glow is an open-source toolkit for working with genomic data at biobank-scale and beyond. 
-        markedDefault: False
-        versionName: 1.1.2
-    - categories: biology, genomics
       defaultVersionName: 1.6.1
       description: Illumina Array Analysis Platform cli
       package: gdc-client
@@ -2088,14 +2106,14 @@ software_modules:
         markedDefault: False
         versionName: 1.6.1
     - categories: biology, genomics
-      defaultVersionName: 2.20
-      description: The Illumina bcl2fastq2 Conversion Software v2.20 demultiplexes sequencing data and converts base call (BCL) files into FASTQ files.
-      package: bcl2fastq2
-      url: https://support.illumina.com/downloads/bcl2fastq-conversion-software-v2-20.html
+      defaultVersionName: 0.46.1
+      description: kallisto is a program for quantifying abundances of transcripts from RNA-Seq data, or more generally of target sequences using high-throughput sequencing reads.
+      package: kallisto
+      url: https://github.com/pachterlab/kallisto
       versions:
-      - description: The Illumina bcl2fastq2 Conversion Software v2.20 demultiplexes sequencing data and converts base call (BCL) files into FASTQ files.
+      - description: kallisto is a program for quantifying abundances of transcripts from RNA-Seq data, or more generally of target sequences using high-throughput sequencing reads.
         markedDefault: False
-        versionName: 2.20
+        versionName: 0.46.1
     - categories: biology, genomics
       defaultVersionName: 072018
       description: ViFi is a tool for detecting viral integration and fusion mRNA sequences from Next Generation Sequencing data.
@@ -2133,6 +2151,18 @@ software_modules:
         markedDefault: False
         versionName: 1.0
     - categories: biology, genomics
+      defaultVersionName: 2.0.0
+      description: VIRify is a recently developed pipeline for the detection, annotation, and taxonomic classification of viral contigs in metagenomic and metatranscriptomic assemblies.
+      package: emg-viral-pipeline
+      url: https://github.com/EBI-Metagenomics/emg-viral-pipeline
+      versions:
+      - description: VIRify is a recently developed pipeline for the detection, annotation, and taxonomic classification of viral contigs in metagenomic and metatranscriptomic assemblies.
+        markedDefault: False
+        versionName: 0.3.0
+      - description: VIRify is a recently developed pipeline for the detection, annotation, and taxonomic classification of viral contigs in metagenomic and metatranscriptomic assemblies.
+        markedDefault: False
+        versionName: 2.0.0
+    - categories: biology, genomics
       defaultVersionName: 0.9.14
       description: DIAMOND is a sequence aligner for protein and translated DNA searches, designed for high performance analysis of big sequence data.
       package: diamond
@@ -2142,20 +2172,14 @@ software_modules:
         markedDefault: False
         versionName: 0.9.14
     - categories: biology, genomics
-      defaultVersionName: 6.1.0
-      description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
-      package: antismash
-      url: https://github.com/antismash/antismash
+      defaultVersionName: 2.3.2
+      description: IMPUTE version 2 is a genotype imputation and haplotype phasing program.
+      package: impute
+      url: https://mathgen.stats.ox.ac.uk/impute/impute_v2.html
       versions:
-      - description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
+      - description: IMPUTE version 2 is a genotype imputation and haplotype phasing program.
         markedDefault: False
-        versionName: 5.0.0
-      - description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
-        markedDefault: False
-        versionName: 6.0.1
-      - description: antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes.
-        markedDefault: False
-        versionName: 6.1.0
+        versionName: 2.3.2
     - categories: biology, genomics
       defaultVersionName: 0.17
       description: Velocyto is a library for the analysis of RNA velocity.
@@ -2166,14 +2190,14 @@ software_modules:
         markedDefault: False
         versionName: 0.17
     - categories: biology, genomics
-      defaultVersionName: 2.2.2
-      description: Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples.
-      package: cufflinks
-      url: https://github.com/cole-trapnell-lab/cufflinks
+      defaultVersionName: 3
+      description: Lep-MAP3 (LM3) is a novel linkage map construction software suite.
+      package: lep-map
+      url: https://sourceforge.net/p/lep-map3/wiki/LM3%20Home/
       versions:
-      - description: Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples.
+      - description: Lep-MAP3 (LM3) is a novel linkage map construction software suite.
         markedDefault: False
-        versionName: 2.2.2
+        versionName: 3
     - categories: biology, genomics
       defaultVersionName: 5.2
       description: SnpEff is a variant annotation and effect prediction tool.
@@ -2187,14 +2211,14 @@ software_modules:
         markedDefault: False
         versionName: 5.2
     - categories: biology, genomics
-      defaultVersionName: 2.3.2
-      description: IMPUTE version 2 is a genotype imputation and haplotype phasing program.
-      package: impute
-      url: https://mathgen.stats.ox.ac.uk/impute/impute_v2.html
+      defaultVersionName: 1.7.2
+      description: Kaiju is a program for the taxonomic classification of high-throughput sequencing reads, e.g., Illumina or Roche/454, from whole-genome sequencing of metagenomic DNA.
+      package: kaiju
+      url: https://github.com/bioinformatics-centre/kaiju
       versions:
-      - description: IMPUTE version 2 is a genotype imputation and haplotype phasing program.
+      - description: Kaiju is a program for the taxonomic classification of high-throughput sequencing reads, e.g., Illumina or Roche/454, from whole-genome sequencing of metagenomic DNA.
         markedDefault: False
-        versionName: 2.3.2
+        versionName: 1.7.2
     - categories: biology, computational biology
       defaultVersionName: 20120117
       description: Efficient tool for finding structural candidate decoys generated from Ab Initio protein structure prediction methods.
@@ -2214,23 +2238,14 @@ software_modules:
         markedDefault: False
         versionName: 0.8.0
     - categories: biology, genomics
-      defaultVersionName: 3
-      description: Lep-MAP3 (LM3) is a novel linkage map construction software suite.
-      package: lep-map
-      url: https://sourceforge.net/p/lep-map3/wiki/LM3%20Home/
+      defaultVersionName: 2021-07-01
+      description: The NCBI Prokaryotic Genome Annotation Pipeline is designed to annotate bacterial and archaeal genomes (chromosomes and plasmids).
+      package: pgap
+      url: https://github.com/ncbi/pgap
       versions:
-      - description: Lep-MAP3 (LM3) is a novel linkage map construction software suite.
+      - description: The NCBI Prokaryotic Genome Annotation Pipeline is designed to annotate bacterial and archaeal genomes (chromosomes and plasmids).
         markedDefault: False
-        versionName: 3
-    - categories: biology, neuroimaging
-      defaultVersionName: 1.7.1
-      description: NVIDIA Clara Train SDK provides a training framework to help accelerate deep learning training and inference for medical imaging use cases.
-      package: clara-train-sdk
-      url: https://docs.nvidia.com/clara/clara-train-sdk/index.html
-      versions:
-      - description: NVIDIA Clara Train SDK provides a training framework to help accelerate deep learning training and inference for medical imaging use cases.
-        markedDefault: False
-        versionName: 1.7.1
+        versionName: 2021-07-01
     - categories: biology, computational biology
       defaultVersionName: 1.0.5
       description: Software pipeline for automating omics-scale protein modeling and simulation setup.
@@ -2262,23 +2277,32 @@ software_modules:
         markedDefault: False
         versionName: 0.9.9
     - categories: biology, genomics
-      defaultVersionName: 0.1.0
-      description: CWL-defined pipeline for using IDR to produce a set of peaks given two replicate eCLIP peaks.
-      package: eclipidrmergepeaks
-      url: https://github.com/YeoLab/merge_peaks
+      defaultVersionName: 0.2.4
+      description: BICseq2-norm is for normalizing potential biases in the sequencing data.
+      package: bicseq2-norm
+      url: http://compbio.med.harvard.edu/BIC-seq/
       versions:
-      - description: CWL-defined pipeline for using IDR to produce a set of peaks given two replicate eCLIP peaks.
+      - description: BICseq2-norm is for normalizing potential biases in the sequencing data.
+        markedDefault: False
+        versionName: 0.2.4
+    - categories: biology, genomics
+      defaultVersionName: 0.1.0
+      description: Geneformer is a foundation transformer model pretrained on a large-scale corpus of ~30 million single cell transcriptomes to enable context-aware predictions in settings with limited data in network biology.
+      package: geneformer
+      url: https://huggingface.co/ctheodoris/Geneformer
+      versions:
+      - description: Geneformer is a foundation transformer model pretrained on a large-scale corpus of ~30 million single cell transcriptomes to enable context-aware predictions in settings with limited data in network biology.
         markedDefault: False
         versionName: 0.1.0
-    - categories: biology, genomics
-      defaultVersionName: 2020.11
-      description: Qiime2 is a next-generation microbiome bioinformatics platform.
-      package: qiime2
-      url: https://qiime2.org/
+    - categories: biology, imaging
+      defaultVersionName: 3.0
+      description: MitoGraph is a fully automated image processing method and software dedicated to calculating the three-dimensional morphology of mitochondria in live cells.
+      package: mitograph
+      url: https://github.com/vianamp/MitoGraph
       versions:
-      - description: Qiime2 is a next-generation microbiome bioinformatics platform.
+      - description: MitoGraph is a fully automated image processing method and software dedicated to calculating the three-dimensional morphology of mitochondria in live cells.
         markedDefault: False
-        versionName: 2020.11
+        versionName: 3.0
     - categories: biology, genomics
       defaultVersionName: 1.10
       description: MAGMA is a tool for gene analysis and generalized gene-set analysis of GWAS data. It can be used to analyse both raw genotype data as well as summary SNP p-values from a previous GWAS or meta-analysis.
@@ -2303,30 +2327,24 @@ software_modules:
       - description: SPAdes is an assembly toolkit containing various assembly pipelines.
         markedDefault: False
         versionName: 3.15.4
+    - categories: biology, neuroimaging
+      defaultVersionName: 0.22.0
+      description: Open-source Python package for exploring, visualizing, and analyzing human neurophysiological data; MEG, EEG, sEEG, ECoG, NIRS, and more.
+      package: mne
+      url: https://mne.tools/stable/index.html
+      versions:
+      - description: Open-source Python package for exploring, visualizing, and analyzing human neurophysiological data; MEG, EEG, sEEG, ECoG, NIRS, and more.
+        markedDefault: False
+        versionName: 0.22.0
     - categories: biology, genomics
-      defaultVersionName: 4.0
-      description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
-      package: cutadapt
-      url: https://cutadapt.readthedocs.io/en/stable/
+      defaultVersionName: 0.1.16
+      description: A set of tools written in Perl and C++ for working with VCF files, such as those generated by the 1000 Genomes Project.
+      package: vcftools
+      url: https://vcftools.github.io/
       versions:
-      - description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
+      - description: A set of tools written in Perl and C++ for working with VCF files, such as those generated by the 1000 Genomes Project.
         markedDefault: False
-        versionName: 3.2
-      - description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
-        markedDefault: False
-        versionName: 3.4
-      - description: Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.
-        markedDefault: False
-        versionName: 4.0
-    - categories: biology, computational biology
-      defaultVersionName: 3.4.0
-      description: The Bio Chemical Library (BCL) is a software package that provides unique tools for biological research, such as protein structure determination from sparse experimental data.
-      package: bcl
-      url: http://www.meilerlab.org/index.php/bclcommons/show/b_apps_id/1
-      versions:
-      - description: The Bio Chemical Library (BCL) is a software package that provides unique tools for biological research, such as protein structure determination from sparse experimental data.
-        markedDefault: False
-        versionName: 3.4.0
+        versionName: 0.1.16
     - categories: biology, genomics
       defaultVersionName: 2.13.2
       description: GRIDSS is a module software suite containing tools useful for the detection of genomic rearrangements.
@@ -2336,6 +2354,15 @@ software_modules:
       - description: GRIDSS is a module software suite containing tools useful for the detection of genomic rearrangements.
         markedDefault: False
         versionName: 2.13.2
+    - categories: biology, genomics
+      defaultVersionName: 0.5.0
+      description: DCC is a python package intended to detect and quantify circRNAs with high specificity. DCC works with the STAR (Dobin et al., 2013) chimeric.out.junction files which contains chimerically aligned reads including circRNA junction spanning reads.
+      package: dcc
+      url: https://github.com/dieterich-lab/DCC
+      versions:
+      - description: DCC is a python package intended to detect and quantify circRNAs with high specificity. DCC works with the STAR (Dobin et al., 2013) chimeric.out.junction files which contains chimerically aligned reads including circRNA junction spanning reads.
+        markedDefault: False
+        versionName: 0.5.0
     - categories: biology, neuroimaging
       defaultVersionName: 122015
       description: dcm2nii is a popular tool for converting images from the complicated formats used by scanner manufacturers (DICOM, PAR/REC) to the simple NIfTI format used by many scientific tools.
@@ -2355,15 +2382,6 @@ software_modules:
         markedDefault: False
         versionName: 2.3.1
     - categories: biology, genomics
-      defaultVersionName: 1.0
-      description: Rewrite paired end fastq files to make sure that all reads have a mate and to separate out singletons..
-      package: fastq-pair
-      url: https://github.com/linsalrob/fastq-pair
-      versions:
-      - description: Rewrite paired end fastq files to make sure that all reads have a mate and to separate out singletons..
-        markedDefault: False
-        versionName: 1.0
-    - categories: biology, genomics
       defaultVersionName: 0.4.0
       description: Phenolyzer is a software that implements phenotype-based prioritization of candidate genes for human diseases.
       package: phenolyzer
@@ -2381,15 +2399,18 @@ software_modules:
       - description: SEACR. Sparse Enrichment Analysis for CUT&RUN 
         markedDefault: False
         versionName: 1.3
-    - categories: biology, genomics
-      defaultVersionName: 0.5.8
-      description: Metagenomics classifier with unique k-mer counting for more specific results.
-      package: krakenuniq
-      url: https://github.com/fbreitwieser/krakenuniq
+    - categories: biology, computational biology
+      defaultVersionName: 1.0.3
+      description: AlphaPulldown is a Python package that streamlines protein-protein interaction screens and high-throughput modelling of higher-order oligomers using AlphaFold-Multimer.
+      package: alphapulldown
+      url: https://github.com/KosinskiLab/AlphaPulldown/tree/main
       versions:
-      - description: Metagenomics classifier with unique k-mer counting for more specific results.
+      - description: AI system developed by DeepMind that predicts a protein’s 3D structure from its amino acid sequence.
         markedDefault: False
-        versionName: 0.5.8
+        versionName: test_alphafold
+      - description: AlphaPulldown is a Python package that streamlines protein-protein interaction screens and high-throughput modelling of higher-order oligomers using AlphaFold-Multimer.
+        markedDefault: False
+        versionName: 1.0.3
     - categories: biology, genomics
       defaultVersionName: 3.3.2
       description: HMMER is used for searching sequence databases for sequence homologs, and for making sequence alignments.
@@ -2399,27 +2420,15 @@ software_modules:
       - description: HMMER is used for searching sequence databases for sequence homologs, and for making sequence alignments.
         markedDefault: False
         versionName: 3.3.2
-    - categories: biology, neuroimaging
-      defaultVersionName: 1.1.0
-      description: FSLeyes (pronounced fossilise) is the new FSL image viewer for 3D and 4D data (replacing FSLView). It does not perform any processing or analysis of images - that is done by separate tools.
-      package: fsleyes
-      url: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes
-      versions:
-      - description: FSLeyes (pronounced fossilise) is the new FSL image viewer for 3D and 4D data (replacing FSLView). It does not perform any processing or analysis of images - that is done by separate tools.
-        markedDefault: False
-        versionName: 1.1.0
     - categories: biology, genomics
-      defaultVersionName: 2.25.0
-      description: A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
-      package: picard
-      url: https://github.com/broadinstitute/picard
+      defaultVersionName: 7.3.8
+      description: The Snakemake workflow management system is a tool to create reproducible and scalable data analyses. Workflows are described via a human readable, Python based language. They can be seamlessly scaled to server, cluster, grid and cloud environments, without the need to modify the workflow definition. Finally, Snakemake workflows can entail a description of required software, which will be automatically deployed to any execution environment.
+      package: snakemake
+      url: https://snakemake.readthedocs.io/en/stable/index.html
       versions:
-      - description: A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
+      - description: The Snakemake workflow management system is a tool to create reproducible and scalable data analyses. Workflows are described via a human readable, Python based language. They can be seamlessly scaled to server, cluster, grid and cloud environments, without the need to modify the workflow definition. Finally, Snakemake workflows can entail a description of required software, which will be automatically deployed to any execution environment.
         markedDefault: False
-        versionName: 2.6.0
-      - description: A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
-        markedDefault: False
-        versionName: 2.25.0
+        versionName: 7.3.8
     - categories: biology, genomics
       defaultVersionName: 1.94.1
       description: a tool for Genome-wide Complex Trait Analysis
@@ -2438,6 +2447,15 @@ software_modules:
       - description: SHAPEIT4 is a fast and accurate method for estimation of haplotypes (aka phasing) for SNP array and high coverage sequencing data. The version 4 is a refactored and improved version of the SHAPEIT algorithm with multiple key additional features.
         markedDefault: False
         versionName: 4.2.2
+    - categories: biology, genomics
+      defaultVersionName: 0.9.1
+      description: Dynamitic analysis of Alternative PolyAdenylation from RNA-seq
+      package: dapars
+      url: https://github.com/ZhengXia/dapars
+      versions:
+      - description: Dynamitic analysis of Alternative PolyAdenylation from RNA-seq
+        markedDefault: False
+        versionName: 0.9.1
     - categories: biology, genomics
       defaultVersionName: 20141127
       description: SNPhylo users can construct a phylogenetic tree from a file containing huge SNP data.
@@ -2458,6 +2476,15 @@ software_modules:
       - description: Open Babel is a chemical toolbox designed to speak the many languages of chemical data.
         markedDefault: False
         versionName: 2.4.1
+    - categories: chemistry, electrostatics
+      defaultVersionName: 1.5
+      description: APBS (Adaptive Poisson-Boltzmann Solver) solves the equations of continuum electrostatics for large biomolecular assemblages.
+      package: apbs
+      url: https://www.poissonboltzmann.org/
+      versions:
+      - description: APBS (Adaptive Poisson-Boltzmann Solver) solves the equations of continuum electrostatics for large biomolecular assemblages.
+        markedDefault: False
+        versionName: 1.5
     - categories: chemistry, computational chemistry
       defaultVersionName: 2023-1
       description: Small Molecule Drug Discovery Suite
@@ -2485,15 +2512,6 @@ software_modules:
       - description: NAMD is a parallel molecular dynamics code designed for high-performance simulation of large biomolecular systems.
         markedDefault: False
         versionName: 2.14
-    - categories: chemistry, molecular dynamics
-      defaultVersionName: 4.0
-      description: Catdcd functions much like the Unix cat command; it concatenates DCD files into a single DCD file.
-      package: catdcd
-      url: https://www.ks.uiuc.edu/Development/MDTools/catdcd/
-      versions:
-      - description: Catdcd functions much like the Unix cat command; it concatenates DCD files into a single DCD file.
-        markedDefault: False
-        versionName: 4.0
     - categories: chemistry, molecular modelling
       defaultVersionName: 7.7.0
       description: A high-performance toolkit for molecular simulation. Use it as an application, a library, or a flexible programming environment. 
@@ -2506,15 +2524,15 @@ software_modules:
       - description: A high-performance toolkit for molecular simulation. Use it as an application, a library, or a flexible programming environment. 
         markedDefault: False
         versionName: 7.7.0
-    - categories: chemistry, molecular modelling
-      defaultVersionName: 1.15
-      description: UCSF Chimera is a program for the interactive visualization and analysis of molecular structures and related data, including density maps, trajectories, and sequence alignments.
-      package: chimera
-      url: https://www.cgl.ucsf.edu/chimera/
+    - categories: chemistry, molecular dynamics
+      defaultVersionName: 4.0
+      description: Catdcd functions much like the Unix cat command; it concatenates DCD files into a single DCD file.
+      package: catdcd
+      url: https://www.ks.uiuc.edu/Development/MDTools/catdcd/
       versions:
-      - description: UCSF Chimera is a program for the interactive visualization and analysis of molecular structures and related data, including density maps, trajectories, and sequence alignments.
+      - description: Catdcd functions much like the Unix cat command; it concatenates DCD files into a single DCD file.
         markedDefault: False
-        versionName: 1.15
+        versionName: 4.0
     - categories: chemistry, molecular dynamics
       defaultVersionName: 2020.5
       description: Random Acceleration Molecular Dynamics (RAMD)
@@ -2524,6 +2542,15 @@ software_modules:
       - description: Random Acceleration Molecular Dynamics (RAMD)
         markedDefault: False
         versionName: 2020.5
+    - categories: chemistry, molecular modelling
+      defaultVersionName: 1.15
+      description: UCSF Chimera is a program for the interactive visualization and analysis of molecular structures and related data, including density maps, trajectories, and sequence alignments.
+      package: chimera
+      url: https://www.cgl.ucsf.edu/chimera/
+      versions:
+      - description: UCSF Chimera is a program for the interactive visualization and analysis of molecular structures and related data, including density maps, trajectories, and sequence alignments.
+        markedDefault: False
+        versionName: 1.15
     - categories: chemistry, molecular dynamics
       defaultVersionName: 2023.0
       description: A free and open-source software suite for high-performance molecular dynamics and output analysis.
@@ -2575,6 +2602,15 @@ software_modules:
       - description: VMD is a molecular visualization program for displaying, animating, and analyzing large biomolecular systems using 3-D graphics and built-in scripting.
         markedDefault: False
         versionName: 1.9.3
+    - categories: chemistry, electrostatics
+      defaultVersionName: 2.1.1
+      description: PDB2PQR - determining titration states, adding missing atoms, and assigning charges/radii to biomolecules.
+      package: pdb2pqr
+      url: https://github.com/Electrostatics/pdb2pqr
+      versions:
+      - description: PDB2PQR - determining titration states, adding missing atoms, and assigning charges/radii to biomolecules.
+        markedDefault: False
+        versionName: 2.1.1
     - categories: chemistry, molecular dynamics
       defaultVersionName: 2.9.0
       description: The community-developed PLUgin for MolEcular Dynamics
@@ -2590,28 +2626,10 @@ software_modules:
       - description: The community-developed PLUgin for MolEcular Dynamics
         markedDefault: False
         versionName: 2.9.0
-    - categories: chemistry, electrostatics
-      defaultVersionName: 2.1.1
-      description: PDB2PQR - determining titration states, adding missing atoms, and assigning charges/radii to biomolecules.
-      package: pdb2pqr
-      url: https://github.com/Electrostatics/pdb2pqr
-      versions:
-      - description: PDB2PQR - determining titration states, adding missing atoms, and assigning charges/radii to biomolecules.
-        markedDefault: False
-        versionName: 2.1.1
-    - categories: chemistry, electrostatics
-      defaultVersionName: 1.5
-      description: APBS (Adaptive Poisson-Boltzmann Solver) solves the equations of continuum electrostatics for large biomolecular assemblages.
-      package: apbs
-      url: https://www.poissonboltzmann.org/
-      versions:
-      - description: APBS (Adaptive Poisson-Boltzmann Solver) solves the equations of continuum electrostatics for large biomolecular assemblages.
-        markedDefault: False
-        versionName: 1.5
   - name: math
     packages:
     - categories: math, statistics
-      defaultVersionName: 2023.06.0-421
+      defaultVersionName: 2023.12.0-369
       description: RStudio Server enables you to provide a browser based interface to a version of R running on a remote Linux server, bringing the power and productivity of the RStudio IDE to server-based deployments of R.
       package: rstudio-server
       url: https://posit.co/download/rstudio-server/
@@ -2625,15 +2643,18 @@ software_modules:
       - description: RStudio Server enables you to provide a browser based interface to a version of R running on a remote Linux server, bringing the power and productivity of the RStudio IDE to server-based deployments of R.
         markedDefault: False
         versionName: 2023.06.0-421
-    - categories: math, gis
-      defaultVersionName: 5.1.0
-      description: PROJ is a generic coordinate transformation software that transforms geospatial coordinates from one coordinate reference system (CRS) to another.
-      package: proj
-      url: https://proj.org/
-      versions:
-      - description: PROJ is a generic coordinate transformation software that transforms geospatial coordinates from one coordinate reference system (CRS) to another.
+      - description: RStudio Server enables you to provide a browser based interface to a version of R running on a remote Linux server, bringing the power and productivity of the RStudio IDE to server-based deployments of R.
         markedDefault: False
-        versionName: 5.1.0
+        versionName: 2023.12.0-369
+    - categories: math, statistics
+      defaultVersionName: 4.3.1
+      description: Just another Gibbs sampler (JAGS) is a program for simulation from Bayesian hierarchical models using Markov chain Monte Carlo (MCMC).
+      package: jags
+      url: https://mcmc-jags.sourceforge.io/
+      versions:
+      - description: Just another Gibbs sampler (JAGS) is a program for simulation from Bayesian hierarchical models using Markov chain Monte Carlo (MCMC).
+        markedDefault: False
+        versionName: 4.3.1
     - categories: math, data analytics
       defaultVersionName: hadoop3.2/3.1.2
       description: Apache Spark™ is a unified analytics engine for large-scale data processing
@@ -2652,6 +2673,18 @@ software_modules:
       - description: NLopt is a free/open-source library for nonlinear optimization.
         markedDefault: False
         versionName: 2.7.1
+    - categories: math, lib
+      defaultVersionName: 3.3.9
+      description: Numerical library, contains discrete Fourier transformation
+      package: fftw/impi/intel/64
+      url: http://www.fftw.org
+      versions:
+      - description: Numerical library, contains discrete Fourier transformation
+        markedDefault: False
+        versionName: 2.1.5
+      - description: Numerical library, contains discrete Fourier transformation
+        markedDefault: False
+        versionName: 3.3.9
     - categories: math, deep learning
       defaultVersionName: 2.0.1
       description: PyTorch - An open source machine learning framework that accelerates the path from research prototyping to production deployment.
@@ -2721,15 +2754,6 @@ software_modules:
       - description: GDAL is a translator library for raster and vector geospatial data formats
         markedDefault: False
         versionName: 2.4.4
-    - categories: math, simulation
-      defaultVersionName: 10.4.2
-      description: Geant4 is a toolkit for the simulation of the passage of particles through matter.
-      package: geant4
-      url: https://geant4.web.cern.ch/
-      versions:
-      - description: Geant4 is a toolkit for the simulation of the passage of particles through matter.
-        markedDefault: False
-        versionName: 10.4.2
     - categories: math, gis
       defaultVersionName: 3.9.1
       description: GEOS is a C/C++ library for computational geometry with a focus on algorithms used in geographic information systems (GIS) software.
@@ -2778,18 +2802,15 @@ software_modules:
       - description: Mplus is a latent variable modeling program
         markedDefault: False
         versionName: 8.3
-    - categories: math, lib
-      defaultVersionName: 3.3.9
-      description: Numerical library, contains discrete Fourier transformation
-      package: fftw/impi/intel/64
-      url: http://www.fftw.org
+    - categories: math, gis
+      defaultVersionName: 5.1.0
+      description: PROJ is a generic coordinate transformation software that transforms geospatial coordinates from one coordinate reference system (CRS) to another.
+      package: proj
+      url: https://proj.org/
       versions:
-      - description: Numerical library, contains discrete Fourier transformation
+      - description: PROJ is a generic coordinate transformation software that transforms geospatial coordinates from one coordinate reference system (CRS) to another.
         markedDefault: False
-        versionName: 2.1.5
-      - description: Numerical library, contains discrete Fourier transformation
-        markedDefault: False
-        versionName: 3.3.9
+        versionName: 5.1.0
     - categories: math, numerical library
       defaultVersionName: 3.9.0
       description: The BLAS (Basic Linear Algebra Subprograms) are routines that provide standard building blocks for performing basic vector and matrix operations.
@@ -2799,15 +2820,6 @@ software_modules:
       - description: The BLAS (Basic Linear Algebra Subprograms) are routines that provide standard building blocks for performing basic vector and matrix operations.
         markedDefault: False
         versionName: 3.9.0
-    - categories: math, statistics
-      defaultVersionName: 4.3.1
-      description: Just another Gibbs sampler (JAGS) is a program for simulation from Bayesian hierarchical models using Markov chain Monte Carlo (MCMC).
-      package: jags
-      url: https://mcmc-jags.sourceforge.io/
-      versions:
-      - description: Just another Gibbs sampler (JAGS) is a program for simulation from Bayesian hierarchical models using Markov chain Monte Carlo (MCMC).
-        markedDefault: False
-        versionName: 4.3.1
     - categories: math, deep learning
       defaultVersionName: 0.5.0
       description: The AI Fairness 360 toolkit is an extensible open-source library containing techniques developed by the research community to help detect and mitigate bias in machine learning models throughout the AI application lifecycle.
@@ -2847,24 +2859,6 @@ software_modules:
       - description: The RAPIDS suite of open source software libraries gives you the freedom to execute end-to-end data science and analytics pipelines entirely on GPUs.
         markedDefault: False
         versionName: 21.12
-    - categories: math, lib
-      defaultVersionName: 3.3.9
-      description: Numerical library, contains discrete Fourier transformation
-      package: fftw/openmpi/gcc/64
-      url: http://www.fftw.org
-      versions:
-      - description: Numerical library, contains discrete Fourier transformation
-        markedDefault: False
-        versionName: 3.3.9
-    - categories: math, analytics
-      defaultVersionName: 4.0.0
-      description: Apache Arrow defines a language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware like CPUs and GPUs.
-      package: arrow
-      url: https://arrow.apache.org/
-      versions:
-      - description: Apache Arrow defines a language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware like CPUs and GPUs.
-        markedDefault: False
-        versionName: 4.0.0
     - categories: math, gis
       defaultVersionName: 2.2.28
       description: The UDUNITS-2 package provides support for units of physical quantities.
@@ -2874,6 +2868,15 @@ software_modules:
       - description: The UDUNITS-2 package provides support for units of physical quantities.
         markedDefault: False
         versionName: 2.2.28
+    - categories: math, analytics
+      defaultVersionName: 4.0.0
+      description: Apache Arrow defines a language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware like CPUs and GPUs.
+      package: arrow
+      url: https://arrow.apache.org/
+      versions:
+      - description: Apache Arrow defines a language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware like CPUs and GPUs.
+        markedDefault: False
+        versionName: 4.0.0
     - categories: math, numerical library
       defaultVersionName: 2021.1.1
       description: Intel oneAPI Math Kernel Library
@@ -2883,6 +2886,15 @@ software_modules:
       - description: Intel oneAPI Math Kernel Library
         markedDefault: False
         versionName: 2021.1.1
+    - categories: math, numerical library
+      defaultVersionName: 0.3.13
+      description: OpenBLAS is an optimized BLAS (Basic Linear Algebra Subprograms) library based on GotoBLAS2 1.13 BSD version.
+      package: openblas
+      url: https://github.com/xianyi/OpenBLAS
+      versions:
+      - description: OpenBLAS is an optimized BLAS (Basic Linear Algebra Subprograms) library based on GotoBLAS2 1.13 BSD version.
+        markedDefault: False
+        versionName: 0.3.13
     - categories: math, statistics
       defaultVersionName: 12
       description: The SPM software package has been designed for the analysis of brain imaging data sequences.
@@ -2919,15 +2931,6 @@ software_modules:
       - description: The MATLAB Runtime is a standalone set of shared libraries that enables the execution of compiled MATLAB, Simulink applications, or components.
         markedDefault: False
         versionName: v717
-    - categories: math, statistics
-      defaultVersionName: 2022.02.1-461
-      description: RStudio is an integrated development environment (IDE) for R.
-      package: rstudio
-      url: https://www.rstudio.com/products/rstudio/
-      versions:
-      - description: RStudio is an integrated development environment (IDE) for R.
-        markedDefault: False
-        versionName: 2022.02.1-461
     - categories: math, finite element analysis
       defaultVersionName: 4.8.17
       description: finite element analysis
@@ -2946,15 +2949,6 @@ software_modules:
       - description: A truly open source deep learning framework suited for flexible research prototyping and production.
         markedDefault: False
         versionName: 1.8.0
-    - categories: math, numerical library
-      defaultVersionName: 0.3.13
-      description: OpenBLAS is an optimized BLAS (Basic Linear Algebra Subprograms) library based on GotoBLAS2 1.13 BSD version.
-      package: openblas
-      url: https://github.com/xianyi/OpenBLAS
-      versions:
-      - description: OpenBLAS is an optimized BLAS (Basic Linear Algebra Subprograms) library based on GotoBLAS2 1.13 BSD version.
-        markedDefault: False
-        versionName: 0.3.13
     - categories: math, finite element analysis
       defaultVersionName: 12.0.0
       description: finite element analysis
@@ -2982,6 +2976,24 @@ software_modules:
       - description: finite element analysis
         markedDefault: False
         versionName: 12.0.0
+    - categories: math, statistics
+      defaultVersionName: 2022.02.1-461
+      description: RStudio is an integrated development environment (IDE) for R.
+      package: rstudio
+      url: https://www.rstudio.com/products/rstudio/
+      versions:
+      - description: RStudio is an integrated development environment (IDE) for R.
+        markedDefault: False
+        versionName: 2022.02.1-461
+    - categories: math, lib
+      defaultVersionName: 3.3.9
+      description: Numerical library, contains discrete Fourier transformation
+      package: fftw/openmpi/gcc/64
+      url: http://www.fftw.org
+      versions:
+      - description: Numerical library, contains discrete Fourier transformation
+        markedDefault: False
+        versionName: 3.3.9
     - categories: math, statistics
       defaultVersionName: 94-15.2
       description: Providing a scalable, integrated software environment designed for data access, transformation, and reporting.
@@ -3012,6 +3024,15 @@ software_modules:
       - description: GPU-accelerated library of primitives for deep neural networks.
         markedDefault: False
         versionName: 8.9.3-11.x
+    - categories: math, simulation
+      defaultVersionName: 10.4.2
+      description: Geant4 is a toolkit for the simulation of the passage of particles through matter.
+      package: geant4
+      url: https://geant4.web.cern.ch/
+      versions:
+      - description: Geant4 is a toolkit for the simulation of the passage of particles through matter.
+        markedDefault: False
+        versionName: 10.4.2
     - categories: math, deep learning
       defaultVersionName: 2.9.1
       description: TensorFlow is an end-to-end open source platform for machine learning.
@@ -3192,18 +3213,6 @@ software_modules:
         markedDefault: False
         versionName: impi/intel/1.75.0
     - categories: devel, language
-      defaultVersionName: 17.0.5.8
-      description: Java™ is the world's leading programming language and platform. AdoptOpenJDK uses infrastructure, build and test scripts to produce prebuilt binaries from OpenJDK™ class libraries and a choice of either OpenJDK or the Eclipse OpenJ9 VM..
-      package: openjdk
-      url: https://github.com/AdoptOpenJDK
-      versions:
-      - description: Java™ is the world's leading programming language and platform. AdoptOpenJDK uses infrastructure, build and test scripts to produce prebuilt binaries from OpenJDK™ class libraries and a choice of either OpenJDK or the Eclipse OpenJ9 VM..
-        markedDefault: False
-        versionName: 16.0.1
-      - description: Java™ is the world's leading programming language and platform. AdoptOpenJDK uses infrastructure, build and test scripts to produce prebuilt binaries from OpenJDK™ class libraries and a choice of either OpenJDK or the Eclipse OpenJ9 VM..
-        markedDefault: False
-        versionName: 17.0.5.8
-    - categories: devel, language
       defaultVersionName: 5.26.1
       description: Perl is a highly capable, feature-rich programming language with over 30 years of development.
       package: perl
@@ -3308,6 +3317,18 @@ software_modules:
       - description: NetCDF (Network Common Data Form) is a set of software libraries and machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.
         markedDefault: False
         versionName: 4.7.4
+    - categories: devel, language
+      defaultVersionName: 17.0.5.8
+      description: Java™ is the world's leading programming language and platform. AdoptOpenJDK uses infrastructure, build and test scripts to produce prebuilt binaries from OpenJDK™ class libraries and a choice of either OpenJDK or the Eclipse OpenJ9 VM..
+      package: openjdk
+      url: https://github.com/AdoptOpenJDK
+      versions:
+      - description: Java™ is the world's leading programming language and platform. AdoptOpenJDK uses infrastructure, build and test scripts to produce prebuilt binaries from OpenJDK™ class libraries and a choice of either OpenJDK or the Eclipse OpenJ9 VM..
+        markedDefault: False
+        versionName: 16.0.1
+      - description: Java™ is the world's leading programming language and platform. AdoptOpenJDK uses infrastructure, build and test scripts to produce prebuilt binaries from OpenJDK™ class libraries and a choice of either OpenJDK or the Eclipse OpenJ9 VM..
+        markedDefault: False
+        versionName: 17.0.5.8
   - name: system
     packages:
     - categories: system, checkpointing
@@ -3364,6 +3385,15 @@ software_modules:
       - description: Miniconda is a small, bootstrap version of Anaconda.
         markedDefault: False
         versionName: 4.9.2
+    - categories: system, profiling
+      defaultVersionName: 2.1.3
+      description: A simple cross-platform system resource monitor.
+      package: monitor
+      url: https://resource-monitor.readthedocs.io/en/latest/index.html
+      versions:
+      - description: A simple cross-platform system resource monitor.
+        markedDefault: False
+        versionName: 2.1.3
     - categories: system, build
       defaultVersionName: 2.7.6
       description: Patch takes a patch file containing a difference listing produced by the diff program and applies those differences to one or more original files, producing patched versions.
@@ -3373,6 +3403,15 @@ software_modules:
       - description: Patch takes a patch file containing a difference listing produced by the diff program and applies those differences to one or more original files, producing patched versions.
         markedDefault: False
         versionName: 2.7.6
+    - categories: system, tools
+      defaultVersionName: 20210122
+      description: GNU parallel is a shell tool for executing jobs in parallel using one or more computers.
+      package: parallel
+      url: https://www.gnu.org/software/parallel/
+      versions:
+      - description: GNU parallel is a shell tool for executing jobs in parallel using one or more computers.
+        markedDefault: False
+        versionName: 20210122
     - categories: system, file transfer
       defaultVersionName: 1.57.0
       description: Rclone is a command line program to manage files on cloud storage.
@@ -3385,15 +3424,15 @@ software_modules:
       - description: Rclone is a command line program to manage files on cloud storage.
         markedDefault: False
         versionName: 1.57.0
-    - categories: system, tools
-      defaultVersionName: 20210122
-      description: GNU parallel is a shell tool for executing jobs in parallel using one or more computers.
-      package: parallel
-      url: https://www.gnu.org/software/parallel/
+    - categories: system, lib
+      defaultVersionName: 2.0.22
+      description: The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached.
+      package: libevent
+      url: https://libevent.org/
       versions:
-      - description: GNU parallel is a shell tool for executing jobs in parallel using one or more computers.
+      - description: The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached.
         markedDefault: False
-        versionName: 20210122
+        versionName: 2.0.22
     - categories: system, containers
       defaultVersionName: 3.7.1
       description: A tool for running containers on a hpc system.
@@ -3454,6 +3493,15 @@ software_modules:
       - description: ttyd is a simple command-line tool for sharing terminal over the web.
         markedDefault: False
         versionName: 1.6.3
+    - categories: system, library
+      defaultVersionName: 6.2.p5
+      description: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
+      package: readline
+      url: https://ftp.gnu.org/gnu/readline/
+      versions:
+      - description: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
+        markedDefault: False
+        versionName: 6.2.p5
     - categories: system, scm
       defaultVersionName: 2.30.0
       description: Fast Version Control System
@@ -3463,6 +3511,15 @@ software_modules:
       - description: Fast Version Control System
         markedDefault: False
         versionName: 2.30.0
+    - categories: system, file transfer
+      defaultVersionName: 3.2.2
+      description: Globus Connect Personal turns your laptop or other personal computer into a Globus endpoint and allows you to transfer and share files easily.
+      package: globusconnect
+      url: https://www.globus.org/globus-connect-personal
+      versions:
+      - description: Globus Connect Personal turns your laptop or other personal computer into a Globus endpoint and allows you to transfer and share files easily.
+        markedDefault: False
+        versionName: 3.2.2
     - categories: system, remote display
       defaultVersionName: 3.0
       description: VirtualGL is an open source toolkit that gives any Unix or Linux remote display software the ability to run OpenGL applications with full 3D hardware acceleration.
@@ -3475,24 +3532,6 @@ software_modules:
       - description: VirtualGL is an open source toolkit that gives any Unix or Linux remote display software the ability to run OpenGL applications with full 3D hardware acceleration.
         markedDefault: False
         versionName: 3.0
-    - categories: system, file transfer
-      defaultVersionName: 3.2.2
-      description: Globus Connect Personal turns your laptop or other personal computer into a Globus endpoint and allows you to transfer and share files easily.
-      package: globusconnect
-      url: https://www.globus.org/globus-connect-personal
-      versions:
-      - description: Globus Connect Personal turns your laptop or other personal computer into a Globus endpoint and allows you to transfer and share files easily.
-        markedDefault: False
-        versionName: 3.2.2
-    - categories: system, profiling
-      defaultVersionName: 2.1.3
-      description: A simple cross-platform system resource monitor.
-      package: monitor
-      url: https://resource-monitor.readthedocs.io/en/latest/index.html
-      versions:
-      - description: A simple cross-platform system resource monitor.
-        markedDefault: False
-        versionName: 2.1.3
     - categories: system, pipeline
       defaultVersionName: 23.04.1
       description: Software pipeline for automating omics-scale protein modeling and simulation setup.  http://ensembler.readthedocs.org/
@@ -3529,15 +3568,6 @@ software_modules:
       - description: Use ImageMagick to create, edit, compose, or convert digital images.
         markedDefault: False
         versionName: 7.1.1
-    - categories: system, lib
-      defaultVersionName: 1.11.2
-      description: Libfabric OFI
-      package: libfabric
-      url: https://ofiwg.github.io/libfabric/
-      versions:
-      - description: Libfabric OFI
-        markedDefault: False
-        versionName: 1.11.2
     - categories: system, file transfer
       defaultVersionName: 3.11.2.63
       description: High-performance transfer client
@@ -3547,6 +3577,15 @@ software_modules:
       - description: High-performance transfer client
         markedDefault: False
         versionName: 3.11.2.63
+    - categories: system, lib
+      defaultVersionName: 1.11.2
+      description: Libfabric OFI
+      package: libfabric
+      url: https://ofiwg.github.io/libfabric/
+      versions:
+      - description: Libfabric OFI
+        markedDefault: False
+        versionName: 1.11.2
     - categories: system, ide
       defaultVersionName: 5.1.5
       description: Spyder is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
@@ -3557,29 +3596,17 @@ software_modules:
         markedDefault: False
         versionName: 5.1.5
     - categories: system, ide
-      defaultVersionName: 4.12.0
+      defaultVersionName: 4.20.0
       description: Run VS Code on any machine anywhere and access it in the browser.
       package: code-server
       url: https://github.com/coder/code-server
       versions:
       - description: Run VS Code on any machine anywhere and access it in the browser.
         markedDefault: False
-        versionName: 3.8.0
-      - description: Run VS Code on any machine anywhere and access it in the browser.
-        markedDefault: False
-        versionName: 3.9.3
-      - description: Run VS Code on any machine anywhere and access it in the browser.
-        markedDefault: False
-        versionName: 3.11.1
-      - description: Run VS Code on any machine anywhere and access it in the browser.
-        markedDefault: False
-        versionName: 4.0.2
-      - description: Run VS Code on any machine anywhere and access it in the browser.
-        markedDefault: False
-        versionName: 4.11.0
-      - description: Run VS Code on any machine anywhere and access it in the browser.
-        markedDefault: False
         versionName: 4.12.0
+      - description: Run VS Code on any machine anywhere and access it in the browser.
+        markedDefault: False
+        versionName: 4.20.0
     - categories: system, profiling
       defaultVersionName: 1.8.5
       description: REsource MOnitoring for Remote Applications
@@ -3592,15 +3619,6 @@ software_modules:
       - description: REsource MOnitoring for Remote Applications
         markedDefault: False
         versionName: 1.8.5
-    - categories: system, library
-      defaultVersionName: 6.2.p5
-      description: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
-      package: readline
-      url: https://ftp.gnu.org/gnu/readline/
-      versions:
-      - description: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
-        markedDefault: False
-        versionName: 6.2.p5
     - categories: system, tools
       defaultVersionName: 3.7.0.0
       description: The Persistence of Vision Raytracer is a high-quality, Free Software tool for creating stunning three-dimensional graphics.
@@ -3649,15 +3667,6 @@ software_modules:
       - description: This is the google-cloud SDK for google cloud computing and cli access using gcloud
         markedDefault: False
         versionName: 393.0.0
-    - categories: system, lib
-      defaultVersionName: 2.0.22
-      description: The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached.
-      package: libevent
-      url: https://libevent.org/
-      versions:
-      - description: The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached.
-        markedDefault: False
-        versionName: 2.0.22
   - name: viz
     packages:
     - categories: viz, graphics
