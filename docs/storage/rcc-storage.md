@@ -1,8 +1,16 @@
 # Storage Overview
 
-Research Computing provides storage in two tiers meant to support both large scale and high performance. Every MCW lab is eligible for a limited amount of free storage. For many labs, this amount of free storage is sufficient for their research. For labs with large data needs, additional storage is available for fee.
+Research Computing provides storage with a dedicated purpose to hold and support analysis of raw research data. Every MCW lab is eligible for a limited amount of free storage. For many labs, this amount of free storage is sufficient for their research. For labs with large data needs, additional storage is available for fee.
 
-All storage is connected via high speed link to the cluster and available via Linux command-line, SFTP, or Open OnDemand. In addition, some storage is available directly to users via Windows or NFS shares.
+All storage is connected via high speed link to the cluster and available to you via Linux command-line, SFTP, or Open OnDemand.
+
+Each user has the same set of default storage paths:
+
+| Type                  | Path                | Quota                          | Protection            | Description                       |
+| --------------------- | ------------------- | ------------------------------ | --------------------- | --------------------------------- |
+| [`Home`](#home)       | /home/netid         | 100 GiB                        | snapshot, replication | account configuration and scripts |
+| [`Group`](#group)     | /group/pi_netid     | 1 TiB, expandable with payment | snapshot, replication | shared raw research data          |
+| [`Scratch`](#scratch) | /scratch/g/pi_netid | 5 TiB                          | none                  | temporary job files               |
 
 ??? tip "You can easily find your available storage paths and current utilization on the cluster  with the `mydisks` command."
 
@@ -19,32 +27,19 @@ All storage is connected via high speed link to the cluster and available via Li
 
 ### Home
 
-**Quota**: 100 GiB  
-**Snapshot**: 14 daily @ 12PM, 6 weekly @ 1PM Sunday  
-**Replication**: continuous with snapshot
+The home directory is your starting place every time you login to the cluster. It's location is `/home/netid`, where `netid` is your MCW username. The purpose of a home directory is storing user-installed software, user-written scripts, configuration files, etc. Each home directory is only accessible by its owner and is not suitable for data sharing. Home is also not appropriate for large scale research data or temporary job files.
 
-Every user has a home directory located at `/home/netid`. The home directory is used for storing user-installed software, user-written scripts, etc. Each home directory is only accessible by its owner. This directory is not suitable for sharing files. The quota limit is 100 GiB.
+The quota limit is 100GiB and data protection includes replication[^1] and snapshots[^2].
 
 ### Group
 
-**Quota**: 1 TiB, expandable with payment  
-**Snapshot**: 14 daily @ 2PM, 6 weekly @ 3PM Sunday  
-**Replication**: continuous with snapshot
+Group storage is a shared space for labs to store research data in active projects. Each lab receives 1TiB for free, with [additional storage](../storage/paid-storage.md) available for $60/TiB/year. This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes. Data protection includes replication[^1] and snapshots[^3].
 
-Every lab is eligible for a group directory at `/group/pi_netid` with a free 1TiB limit. This space is meant for research data in active projects. This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes.
-
-Additional storage capacity may be purchased through our Research Group Storage service in 1TiB increments for $60/TiB/year. Please see [Paid Additional Storage](../storage/paid-storage.md) for details.
+This space is organized by lab group. Each folder in `/group` represents a lab, and is named using the PI's NetID (username). For example, a PI with username "jsmith" would have a group directory located at `/group/jsmith`. Directories within that lab space are organized by purpose and controlled by unique security groups. For example, there is a default `/group/pi_netid/work` directory, which is shared space restricted to lab users. Other shared directories can be created by request for projects that require unique permissions. Additionally, you may have data directories related to your use of a MCW core. These directories will be named for the core and located at `/group/pi_netid/cores`. For example, a Mellowes Center project could be delivered to your group storage and located at `/group/pi_netid/cores/mellowes/example_project1`.
 
 ### Scratch
 
-**Quota**: 5 TiB  
-**Retention**: files deleted automatically after 60 days
-
-Scratch storage is intended for temporary job files. It is located on all compute nodes at `/scratch`. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5 TiB.
-
-!!! info "Do not store data in scratch unless you are running a SLURM job."
-
-    If you are not running a job, you should not have any data in scratch. Please remember that scratch storage is limited and must be cleaned up regularly. Failure to do so could result in jobs failing for all users and/or deletion of your scratch data by Research Computing.
+Scratch storage is intended for temporary job files. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5 TiB. Files on scratch storage are subject to retention limits, which is discussed below. In general, you should avoid storing files on scratch unless you are running a job. Please remember that scratch storage is limited and shared among all groups.
 
 #### Retention
 
@@ -52,14 +47,15 @@ Any file older than 60 days will be automatically marked for deletion by a proce
 
 !!! warning "Scratch storage is temporary."
 
-    Do not use scratch storage for long-term project data. Failure to adhere to this policy may result in loss of your data located on scratch.
+    Do not use scratch storage for long-term project data. If you are not running a job, you should not have any data in scratch. Failure to adhere to this policy may result in loss of your data located on scratch.
 
 ### Local Scratch
 
-**Quota**: No quota, limited to size of disk (440GiB)  
-**Retention**: files deleted automatically after every job
+Every compute node has a local scratch space to be used for runtime files. Each job will have a unique folder that appears as `/tmp`, which is only accessible to processes within the SLURM job. Please note, this space is cleaned (data deleted) after each of your jobs.
 
-Local scratch disk may be the fastest computing option to store your job runtime files, especially for jobs that are heavily I/O dependent (i.e. lots of files are read/written). However, it does take some time to transfer your files from your global scratch directory to local scratch, and the space is limited (440GiB).
+Local scratch may be the fastest option to store your job runtime files, especially for jobs that are heavily I/O dependent (i.e. lots of files are read/written). However, the speed of the disk should be weighed against the additional time to transfer files from your global scratch directory.
+
+All compute nodes have 440GiB of local scratch storage, except as noted below.
 
 !!! tip "Some GPU nodes have more local scratch."
 
@@ -83,5 +79,9 @@ All Research Computing storage systems are highly resilient, allowing for multip
 
 !!! info "Disclaimer"
     Research Computing is not responsible for any loss of data. We strongly encourage all users to follow best practice data management strategies.
+
+[^1]: Replication copies all data from the primary system to a secondary system in another datacenter.
+[^2]: Home snapshots - 14 daily @ 12PM, 6 weekly @ 1PM Sunday
+[^3]: Group snapshots - 14 daily @ 2PM, 6 weekly @ 3PM Sunday
 
 --8<-- "includes/abbreviations.md"
