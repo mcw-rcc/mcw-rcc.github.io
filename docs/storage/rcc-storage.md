@@ -43,7 +43,7 @@ Scratch storage is intended for temporary job files. Every group has a directory
 
 #### Retention
 
-Any file older than 60 days will be automatically marked for deletion by a process that runs daily. Files marked for deletion are moved to a daily trash folder. Any trash folder older than 14 days will be automatically deleted. This means that the scratch file system will be cleaned up every day, and you will have the opportunity to retrieve those old files for an additional 14 days.
+Any file that has not been accessed or modified for 60 days will be automatically marked for deletion by a process that runs daily. Files marked for deletion are moved to a daily trash folder. Any trash folder older than 14 days will be automatically deleted. This means that the scratch file system will be cleaned up every day, and you will have the opportunity to retrieve those old files for an additional 14 days.
 
 !!! warning "Scratch storage is temporary."
 
