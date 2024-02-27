@@ -1,5 +1,7 @@
 # File Recovery
 
+This guide explains how you might recover a file using a data protection feature called a snapshot. Snapshots are available on your home and group directories. For reference, a snapshot is an on-disk reference point of file changes from a time period. It is very similar to file versions in Microsoft products. This feature allows you to look back at previous versions of your files, and recover when needed. Below you'll find info on how to recover a file, when possible.
+
 !!! warning "This procedure will not work in every case!"
     Sometimes a file is created and deleted before a snapshot can be completed. For example, home directories are snapshotted once daily. If you cannot locate your file with the following procedures, contact {{ support_email }}.
 
