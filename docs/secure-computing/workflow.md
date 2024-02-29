@@ -6,9 +6,7 @@ Here we discuss running jobs, unique workflow features for ResHPC, and reference
 
 ## Submitting Jobs
 
-Job submission and management uses the same commands and syntax as the HPC cluster. However, ResHPC SLURM accounts are slightly different. When submitting a ResHPC job, the SLURM account is the project ID, not the PI's NetID.
-
-For details on submitting and managing SLURM jobs, please see [Submitting SLURM Jobs](../user-guide/jobs/running-jobs.md).
+Job submission and management uses the same commands and syntax as the HPC cluster. For details on submitting and managing SLURM jobs, please see [Submitting SLURM Jobs](../user-guide/jobs/running-jobs.md).
 
 ## Encrypting Restricted Data
 
