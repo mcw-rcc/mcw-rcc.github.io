@@ -7,13 +7,13 @@ ResHPC access is based on projects. Each project corresponds to a protected data
 
 ## Project ID
 
-Each ResHPC project is identified within the environment by a unique project ID beginning with the letter **p** followed by a unique 5-digit code.
+Each ResHPC project is identified within the environment by a unique project ID beginning with the letter **p** followed by a unique 4-digit code.
 
 ## Project User Account
 
-ResHPC access requires a project user account, which is an extension of your MCW NetID (username) account. For example, you may be a member of project **p12345**, with project user account **jsmith.p12345**. For login, the project user account uses the same password and Duo 2FA authentication as the MCW NetID (**jsmith** in our example).
+ResHPC access requires a project user account, which is an extension of your MCW NetID (username) account. For example, you may be a member of project **p1234**, with project user account **jsmith.p1234**. For login, the project user account uses the same password and Duo 2FA authentication as the MCW NetID (**jsmith** in our example).
 
-Multiple users may have access to the same project, each with their own unique project user account (i.e. **jsmith.p12345**, **bstevens.p12345**, **mbradley.p12345**). A MCW investigator may also be a member of multiple projects, with multiple corresponding project user accounts (i.e. **jsmith.p12345**, **jsmith.p23456**, **jsmith.p34567**).
+Multiple users may have access to the same project, each with their own unique project user account (i.e. **jsmith.p1234**, **bstevens.p1234**, **mbradley.p1234**). A MCW investigator may also be a member of multiple projects, with multiple corresponding project user accounts (i.e. **jsmith.p1234**, **jsmith.p2345**, **jsmith.p3456**).
 
 ## Project Access
 

@@ -1,6 +1,6 @@
 # Logging in
 
-ResHPC access requires a project user account, which is based on your MCW NetID and password. Your project username will be a combination of your NetID and a project identifier (example, **jsmith.p12345**). Your password and Duo MFA credentials are the same that you use to access Citrix and other MCW resources.
+ResHPC access requires a project user account, which is based on your MCW NetID and password. Your project username will be a combination of your NetID and a project identifier (example, **jsmith.p1234**). Your password and Duo MFA credentials are the same that you use to access Citrix and other MCW resources.
 
 !!! warning "Network Access"
     ResHPC is available from **Citrix** and **MCW-managed machines**.
@@ -23,9 +23,9 @@ To login, use the ResHPC login hostname `login-reshpc.rcc.mcw.edu`, enter your p
 Example login flow:
 
 ```txt
-$ ssh jsmith.p12345@login-reshpc.rcc.mcw.edu
-(jsmith.p12345@login-reshpc.rcc.mcw.edu) Password:
-(jsmith.p12345@login-reshpc.rcc.mcw.edu) Duo two-factor login for jsmith
+$ ssh jsmith.p1234@login-reshpc.rcc.mcw.edu
+(jsmith.p1234@login-reshpc.rcc.mcw.edu) Password:
+(jsmith.p1234@login-reshpc.rcc.mcw.edu) Duo two-factor login for jsmith
 
 Enter a passcode or select one of the following options:
 

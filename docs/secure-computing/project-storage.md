@@ -2,7 +2,7 @@
 
 Each ResHPC project has project-specific storage directories in `/group/PINetID` and `/scratch/g/PINetID`, secured with a project-specific security group. **Please note that ResHPC users do not have user scratch directories.**
 
-For example, **jsmith** is PI for project **p12345**, with project directories `/group/jsmith/p12345` and `/scratch/g/jsmith/p12345`.
+For example, **jsmith** is PI for project **p1234**, with project directories `/group/jsmith/p1234` and `/scratch/g/jsmith/p1234`.
 
 ??? tip "You can easily find your available project storage and current utilization with the `mydisks` command."
 
@@ -10,9 +10,9 @@ For example, **jsmith** is PI for project **p12345**, with project directories `
     $ mydisks
     =====My Storage=====
      Size  Used Avail Use% File
-     4.7G     0  4.7G   0% /home/user.p12345
-     932G  158G  774G  17% /group/PINetID/p12345
-     4.6T   62G  4.5T   2% /scratch/g/PINetID/p12345
+     4.7G     0  4.7G   0% /home/user.p1234
+     932G  158G  774G  17% /group/PINetID/p1234
+     4.6T   62G  4.5T   2% /scratch/g/PINetID/p1234
     ```
 
 ## Encryption Requirement
