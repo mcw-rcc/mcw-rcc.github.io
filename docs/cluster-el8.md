@@ -25,7 +25,7 @@ To login to this testing system:
 ssh login-rocky.rcc.mcw.edu
 ```
 
-We have new partitions (queues) to test your workflows. To run a job on a CPU compute node, use `--partition=rocky`. To run a job on a GPU compute node, use `--partition=rocky-gpu`. At this time, large memory nodes are not included in this test. Please use the CPU nodes to test those workflows. Contact {{ support_email }} for assistance.
+We have new partitions (queues) to test your workflows. To run a job on a CPU compute node, use `--partition=rocky`. To run a job on a GPU compute node, use `--partition=rocky-gpu`. To run a job on a large memory node, use `--partition=rocky-bigmem`. Please use the CPU nodes to test those workflows. Contact {{ support_email }} for assistance.
 
 ### Upgrade and extended testing
 
