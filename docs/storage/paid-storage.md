@@ -27,9 +27,10 @@ A RCC account is required for RGS. If you do not already have an RCC account, [s
 Payment can be made through the MCW-IS service desk website using the following guide.
 
 1. Proceed to <https://servicedesk.mcw.edu> and login.
-2. Select **RCC Software**, then **Research Group Storage - 1TiB**.
+2. Select **Software > RCC Software**, then **Research Group Storage - 1TiB**.
 3. To pay for 1TiB, select **Add to Cart**. If you are paying for multiple TiBs, select **Add Multiple** and enter the quantity.
-4. Finally, select **Place Your Order** and enter your 16-17 Digit Account Number.
+4. Select **Place Your Order** and enter your 16-17 Digit Account Number.
+5. Finally, you'll be asked to enter PI information. Use this if you're a non-PI requesting the storage on behalf of a PI.
 
 !!! note "Questions?"
     If you have questions about your quota limit, please email {{ support_email }}. If you have questions about the self-service payment process, please contact the MCW-IS help desk.
