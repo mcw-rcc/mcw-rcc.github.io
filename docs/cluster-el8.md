@@ -31,7 +31,7 @@ To access the legacy system:
 ssh login-centos7.rcc.mcw.edu
 ```
 
-We have legacy partitions (queues) setup to support workflows that do not work on Rocky Linux 8. To run a job on a job with legacy CentOS 7 on a CPU compute node, use `--partition=centos7`. To run a job on a job with legacy CentOS 7 on a GPU compute node, use `--partition=centos7-gpu`. To run a job on a job with legacy CentOS 7 on a large memory compute node, use `--partition=centos7-bigmem`.
+We have legacy partitions (queues) setup to support workflows that do not work on Rocky Linux 8. To run a job on a job with legacy CentOS 7 on a CPU compute node, use `--partition=centos`. To run a job on a job with legacy CentOS 7 on a GPU compute node, use `--partition=centos-gpu`. To run a job on a job with legacy CentOS 7 on a large memory compute node, use `--partition=centos-bigmem`.
 
 !!! warning "Legacy CentOS 7"
     The legacy queues exist to support workflows temporarily. If you did not test your workflows in the previous phase, we suggest you do that and then use the normal queues that now run on Rocky Linux 8. Do not use these queues as a permanent fix for not testing your workflows. If you find your workflow does not work on the upgraded cluster, please contact {{ support_email }} for assistance.
