@@ -13,25 +13,28 @@ We are currently working on a smooth upgrade path that will minimize downtime an
 
 The scheduled dates below are subject to change. Please check regularly for updates.
 
-### User testing phase
+### User testing phase (closed)
 
 ***December 13, 2023 - April 3, 2024***
 
-A login node and a small number of cluster nodes will be upgraded to enable testing starting November 6, 2023.
+This phase is now closed.
 
-To login to this testing system:
-
-```bash
-ssh login-rocky.rcc.mcw.edu
-```
-
-We have new partitions (queues) to test your workflows. To run a job on a CPU compute node, use `--partition=rocky`. To run a job on a GPU compute node, use `--partition=rocky-gpu`. To run a job on a large memory node, use `--partition=rocky-bigmem`. Please use the CPU nodes to test those workflows. Contact {{ support_email }} for assistance.
-
-### Upgrade and extended testing
+### Upgrade and extended testing (Active now)
 
 ***April 3, 2024 - June 5, 2024***
 
-On April 3, 2024, we will upgrade a majority of login and cluster nodes. We will continue to maintain a login node and small number of cluster nodes on the legacy CentOS 7 operating system. This will ensure backwards compatibility for those users that have not fixed software issues prior to upgrade.
+A majority of login and cluster nodes are now running Rocky Linux 8. We will maintain a login node and small number of cluster nodes on the legacy CentOS 7 operating system for the duration of this phase. This allows backwards compatibility for users that did not test their workflows in the previous phase.
+
+To access the legacy system:
+
+```bash
+ssh login-centos7.rcc.mcw.edu
+```
+
+We have legacy partitions (queues) setup to support workflows that do not work on Rocky Linux 8. To run a job on a job with legacy CentOS 7 on a CPU compute node, use `--partition=centos7`. To run a job on a job with legacy CentOS 7 on a GPU compute node, use `--partition=centos7-gpu`. To run a job on a job with legacy CentOS 7 on a large memory compute node, use `--partition=centos7-bigmem`.
+
+!!! warning "Legacy CentOS 7"
+    The legacy queues exist to support workflows temporarily. If you did not test your workflows in the previous phase, we suggest you do that and then use the normal queues that now run on Rocky Linux 8. Do not use these queues as a permanent fix for not testing your workflows. If you find your workflow does not work on the upgraded cluster, please contact {{ support_email }} for assistance.
 
 ### Final upgrade
 
