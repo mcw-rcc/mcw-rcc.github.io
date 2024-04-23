@@ -1,5 +1,5 @@
 ---
-version: 4.3.1
+version: 4.3.3
 ---
 
 # Installed R packages
@@ -17,7 +17,7 @@ Last updated: _{{ git_revision_date_localized }}_
 {% macro package_line(p) -%}
     {{- p.Package }} | {{ p.Version }} | {{ p.Title }}
 {%- endmacro %}
-
+<!-- markdownlint-disable MD056 -->
 Package | Version | Description
 :------ | :------ | :----------
 {% for p in packages | sort(attribute="Package") -%}

@@ -37,7 +37,7 @@ _We currently provide {{ all_packages | count }} software modules, in {{software
 {% for c in software_modules.categories|sort(attribute='name') %}
 
 ### **{{ c.name  }}**
-
+<!-- markdownlint-disable MD045 MD056 -->
 Field | Module Name<img style="min-width:110px"/> | Version(s)<img style="min-width:90px"/> | URL | Description
 :---- | :----------- | :----------- | :-- | :----------
   {% for p in c.packages | sort(attribute="categories,package") -%}
