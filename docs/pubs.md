@@ -8,7 +8,25 @@ All you have to do is include the following statement in your publication:
 
     This research was completed in part with computational resources and technical support provided by the Research Computing Center at the Medical College of Wisconsin.
 
+## 2024
+
+**[Bhlhe40 Promotes CD4+ T Helper 1 Cell and Suppresses T Follicular Helper Cell Differentiation during Viral Infection](https://doi.org/10.4049/jimmunol.2300355)**  
+Nguyen C, Kudek M, Zander R, Niu H, Shen J, Bauer A, Alson D, Khatun A, Chen Y, Sun J, Drobyski W, Edelson BT, Cui W
+{: .author}
+
+**[Single Cell RNAseq analysis of cytokine-treated human islets: Association of cellular stress with impaired cytokine responsiveness](https://doi.org/10.1093/function/zqae015)**  
+Stancill JS, Kasmani MY, Cui W, Corbett JA
+{: .author}
+
+**[Structural and Dynamic Analyses of Pathogenic Variants in PIK3R1 Reveal a Shared Mechanism Associated among Cancer, Undergrowth, and Overgrowth Syndromes](https://doi.org/10.3390/life14030297)**  
+Dsouza NR, Cottrell CE, Davies OMT, Tollefson MM, Frieden IJ, Basel D, Urrutia R, Drolet BA, Zimmermann MT
+{: .author}
+
 ## 2023
+
+**[Bi-allelic variants in HMGCR cause an autosomal-recessive progressive limb-girdle muscular dystrophy](https://doi.org/10.1016/j.ajhg.2023.04.006)**  
+Morales-Rosado JA, Schwab TL, Macklin-Mantia SK, Zimmermann MT, Wierenga KJ, Bönnemann CG, Klee EW
+{: .author}
 
 **[Tensor-valued diffusion MRI of human acute stroke](https://doi.org/10.1002/mrm.29975)**  
 Zhou M, Stobbe R, Szczepankiewicz F, Budde M, Buck B, Kate M, Lloret M, Fairall P, Butcher K, Shuaib A, Emery D, Nilsson M, Westin C, Beaulieu C
