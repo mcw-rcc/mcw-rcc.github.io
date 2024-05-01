@@ -1,8 +1,9 @@
 # HPC Cluster Operating System Upgrade
 
-The HPC cluster operating system, CentOS 7, will be end-of-life in June 2024 and we are beginning a project to upgrade. This will allow us to maintain ongoing security patching and compatibility with new software through the cluster lifetime. To that end, we have chosen to upgrade the HPC cluster to Rocky Linux 8.
+!!! tip "Project complete"
+    Research Computing completed this project on May 1, 2024. This page will remain available for a short time as a reference to users.
 
-We are currently working on a smooth upgrade path that will minimize downtime and disruption to workflow. This includes testing most centrally installed software packages for compatibility. When necessary, we will rebuild those software packages while maintaining version if possible. We do anticipate that certain workflows will be disrupted, especially for users that have installed their own software.
+The HPC cluster operating system, CentOS 7, will be end-of-life in June 2024 and we decided to upgrade to Rocky Linux 8. Research Computing completed the upgrade on May 1, 2024.
 
 ## Potential issues
 
@@ -13,13 +14,13 @@ We are currently working on a smooth upgrade path that will minimize downtime an
 
 The scheduled dates below are subject to change. Please check regularly for updates.
 
-### User testing phase (closed)
+### User testing phase (completed)
 
 ***December 13, 2023 - April 3, 2024***
 
 This phase is now closed.
 
-### Upgrade and extended testing (Active now)
+### Upgrade and extended testing (completed)
 
 ***April 3, 2024 - {--June 5, 2024--} May 1, 2024***
 
@@ -36,28 +37,19 @@ We have legacy partitions (queues) setup to support workflows that do not work o
 !!! warning "Legacy CentOS 7"
     The legacy queues exist to support workflows temporarily. If you did not test your workflows in the previous phase, we suggest you do that and then use the normal queues that now run on Rocky Linux 8. Do not use these queues as a permanent fix for not testing your workflows. If you find your workflow does not work on the upgraded cluster, please contact {{ support_email }} for assistance.
 
-### Final upgrade
+### Final upgrade (completed)
 
 ***{--June 5, 2024--} May 1, 2024***
 
 The remaining login and cluster nodes will be upgraded to the new operating system on May 1, 2024. This will conclude the upgrade process.
 
-!!! info
-    We may provide further backwards compatibility in the form of a CentOS 7 container. This will not be guaranteed to support your legacy workflow. Contact {{ support_email }} with questions/concerns.
-
-## Next steps for you
-
-When the testing phase begins, please take time to make sure your software functions in the new environment. Please remember to be respectful of all users. Many users will be testing software compatibility on a relatively small set of cluster nodes. Run some jobs to make sure your software works as expected, but please do not shift all of your work.
-
-Report any problems to {{ support_email }}.
-
 ## FAQ
 
-??? question "Will this upgrade to Rocky Linux 8 affect reproducibility of my work?"
-    Yes, its possible. A change in operating system means updated system libraries, which may affect the performance and output of your code. Concerned users should test their code during the scheduled testing phases as outlined above.
+??? question "Does the upgrade to Rocky Linux 8 affect reproducibility of my work?"
+    Yes, its possible. A change in operating system means updated system libraries, which may affect the performance and output of your code.
 
-??? question "Will this change the way I submit my jobs?"
-    No, we are not changing SLURM as part of this upgrade.
+??? question "Does this change the way I submit my jobs?"
+    No, we did not change how you interact with SLURM. However, we did update SLURM (which we do regularly).
 
-??? question "Will this change how I use OnDemand?"
-    No, we are not changing how you interact with OnDemand. However, we will update OnDemand (which we do regularly) and this may update the interface and features.
+??? question "Did this change how I use OnDemand?"
+    No, we did not change how you interact with OnDemand. However, we did update OnDemand (which we do regularly).
