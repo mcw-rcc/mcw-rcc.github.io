@@ -25,7 +25,6 @@ You will setup a new collection, i.e. endpoint. Enter a **Collection Display Nam
     globus gcp create mapped "Cluster Dirs"
     ```
 
-
 The next step requires the cluster command-line. Make sure you have SSH access to a cluster login node. To proceed, load the Globus module and run the setup.
 
 ```bash
