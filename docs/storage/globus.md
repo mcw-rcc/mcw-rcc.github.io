@@ -17,6 +17,13 @@ You will setup a new collection, i.e. endpoint. Enter a **Collection Display Nam
 
 ![Globus Key Setup](../_static/img/globus-key.png){ width="600" }
 
+!!! warning "As of 5/1/2024, we have identified an issue with Globus producing empty keys with the above step, and they have been notified and are working on the issue."
+    The workaround is to create the collection and get the setup key via the globus CLI.  Run the following in a SSH session on a RCC cluster login node:
+    ```bash
+    module load globusconnect
+    globus login
+    globus gcp create mapped "Cluster Dirs"
+    ```
 The next step requires the cluster command-line. Make sure you have SSH access to a cluster login node. To proceed, load the Globus module and run the setup.
 
 ```bash
