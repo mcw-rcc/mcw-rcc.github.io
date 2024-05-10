@@ -1,11 +1,17 @@
+---
+r_version: 4.4.0
+r_path_version: 4.4
+---
 # R
+
+[R](https://www.r-project.org/about.html){:target="_blank"} is a language and environment for statistical computing and graphics. The cluster has multiple versions installed with a variety of commonly used packages pre-installed.
 
 ## Package Installation
 
-R uses a central package library that contains many common packages. The location of this library is `$R_HOME/library`. Users may also install their own packages locally. The default location for local package installation is `$HOME/R/x86_64-pc-linux-gnu-library/4.3`.
+R uses a central package library that contains many common packages. The location of this library is `$R_HOME/library`. Users may also install their own packages locally. The default location for local package installation is `$HOME/R/x86_64-pc-linux-gnu-library/{{ r_path_version }}`.
 
-!!! warning "Check first!"
-    Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding.
+!!! warning "Check installed package list first!"
+    Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding. RCC provides an up-to-date [list of installed R packages](r-pkg-list.md) for the most recent version.
 
 ### User Package Install
 
@@ -30,26 +36,24 @@ Run the install command:
 The first attempt will warn about writing to the central library. It will ask you to create and use a personal library. Answer **yes** to both.
 
 ```R
-Installing package into ‘/hpc/apps/R/4.3.1/lib64/R/library’
+Installing package into ‘/hpc/apps/R/{{ r_version }}/lib64/R/library’
 (as ‘lib’ is unspecified)
 Warning in install.packages("ggplot2") :
-  'lib = "/hpc/apps/R/4.3.1/lib64/R/library"' is not writable
+  'lib = "/hpc/apps/R/{{ r_version }}/lib64/R/library"' is not writable
 Would you like to use a personal library instead? (yes/No/cancel) yes
 Would you like to create a personal library
-‘~/R/x86_64-pc-linux-gnu-library/4.3’
+‘~/R/x86_64-pc-linux-gnu-library/{{ r_path_version }}’
 to install packages into? (yes/No/cancel) yes
 ```
 
 Your package will be installed to your home directory. This package can be removed or updated using the standard R commands.
 
-### Issues
-
-* Some packages require system-wide packages or libraries in order to install correctly. If you see errors when you're installing a package, contact {{ support_email }} for assistance.
-* The package manager does not check if the package is already installed centrally. If you install a package in your user directory, you may be installing a package that is already available. This is unnecessary use of space and resources. Always check if a package is already installed using the `library(package)` command.
+!!! warning "Did you check the installed package list first?"
+    Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding. RCC provides an up-to-date [list of installed R packages](r-pkg-list.md) for the most recent version.
 
 ### Request Package Install
 
-Upon request, RCC will install or update R packages in the central library. As shown above, you may install your own packages and are not required to notify RCC. We do ask that if you need a package that currently or potentially has wide use at MCW, then please notify {{ support_email }} RCC to install centrally.
+Some packages require system libraries and/or advanced dependencies in order to install correctly. If you see errors when you're installing a package, send a package install request to {{ support_email }} and RCC will update the central library.
 
 ## Running R Jobs
 
@@ -80,7 +84,7 @@ Example SLURM submission script:
 #SBATCH --time=00:01:00
 #SBATCH --output=%x-%j.out
  
-module load R/4.3.1
+module load R/{{ r_version }}
  
 Rscript Rtest.r  
 ```
