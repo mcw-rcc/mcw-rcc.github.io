@@ -1,4 +1,4 @@
-generated: 2024-04-22T20:29:16-0500
+generated: 2024-05-07T15:25:52-0500
 packages:
 - {Package: abind, Title: Combine Multidimensional Arrays, Version: 1.4-5}
 - {Package: ade4, Title: 'Analysis of Ecological Data: Exploratory and Euclidean Methods
@@ -14,20 +14,13 @@ packages:
 - {Package: amap, Title: Another Multidimensional Analysis Package, Version: 0.8-19}
 - {Package: annotate, Title: Annotation for microarrays, Version: 1.80.0}
 - {Package: AnnotationDbi, Title: Manipulation of SQLite-based annotations in Bioconductor,
-  Version: 1.64.1}
-- {Package: AnnotationFilter, Title: Facilities for Filtering Bioconductor Annotation
-    Resources, Version: 1.26.0}
-- {Package: AnnotationHub, Title: Client to access AnnotationHub resources, Version: 3.10.1}
-- {Package: ANTsR, Title: 'ANTs in R: Quantification Tools for Biomedical Images',
-  Version: 0.6.0}
-- {Package: ANTsRCore, Title: Core Software Infrastructure for 'ANTsR', Version: 0.8.0}
+  Version: 1.66.0}
 - {Package: anytime, Title: Anything to 'POSIXct' or 'Date' Converter, Version: 0.3.9}
 - {Package: aod, Title: Analysis of Overdispersed Data, Version: 1.3.3}
-- {Package: ape, Title: Analyses of Phylogenetics and Evolution, Version: 5.7-1}
+- {Package: ape, Title: Analyses of Phylogenetics and Evolution, Version: '5.8'}
 - {Package: apeglm, Title: Approximate posterior estimation for GLM coefficients,
   Version: 1.24.0}
 - {Package: aplot, Title: Decorate a 'ggplot' with Associated Information, Version: 0.2.2}
-- {Package: ArchR, Title: Analyzing single-cell regulatory chromatin in R., Version: 1.0.2}
 - {Package: argparser, Title: Command-Line Argument Parser, Version: 0.7.2}
 - {Package: arm, Title: Data Analysis Using Regression and Multilevel/Hierarchical
     Models, Version: 1.14-4}
@@ -37,14 +30,12 @@ packages:
   Version: 2.2-63}
 - {Package: askpass, Title: 'Password Entry Utilities for R, Git, and SSH', Version: 1.2.0}
 - {Package: assertthat, Title: Easy Pre and Post Assertions, Version: 0.2.1}
-- {Package: AUCell, Title: 'AUCell: Analysis of ''gene set'' activity in single-cell
-    RNA-seq data (e.g. identify cells with specific gene signatures)', Version: 1.24.0}
 - {Package: babelgene, Title: Gene Orthologs for Model Organisms in a Tidy Data Format,
   Version: '22.9'}
 - {Package: backbone, Title: Extracts the Backbone from Graphs, Version: 2.1.3}
 - {Package: backports, Title: Reimplementations of Functions Introduced Since R-3.0.0,
   Version: 1.4.1}
-- {Package: base, Title: The R Base Package, Version: 4.3.3}
+- {Package: base, Title: The R Base Package, Version: 4.4.0}
 - {Package: base64enc, Title: Tools for base64 encoding, Version: 0.1-3}
 - {Package: base64url, Title: Fast and URL-Safe Base64 Encoder and Decoder, Version: '1.4'}
 - {Package: basefun, Title: Infrastructure for Computing with Basis Functions, Version: 1.1-4}
@@ -71,23 +62,23 @@ packages:
 - {Package: bigmemory.sri, Title: A Shared Resource Interface for Bigmemory Project
     Packages, Version: 0.1.8}
 - {Package: bio3d, Title: Biological Structure Analysis, Version: 2.4-4}
-- {Package: Biobase, Title: 'Biobase: Base functions for Bioconductor', Version: 2.62.0}
+- {Package: Biobase, Title: 'Biobase: Base functions for Bioconductor', Version: 2.64.0}
 - {Package: BiocFileCache, Title: Manage Files Across Sessions, Version: 2.10.2}
-- {Package: BiocGenerics, Title: S4 generic functions used in Bioconductor, Version: 0.48.1}
+- {Package: BiocGenerics, Title: S4 generic functions used in Bioconductor, Version: 0.50.0}
 - {Package: BiocIO, Title: Standard Input and Output for Bioconductor Packages, Version: 1.12.0}
 - {Package: BiocManager, Title: Access the Bioconductor Project Package Repository,
-  Version: 1.30.22}
+  Version: 1.30.23}
 - {Package: BiocNeighbors, Title: Nearest Neighbor Detection for Bioconductor Packages,
   Version: 1.20.2}
 - {Package: BiocParallel, Title: Bioconductor facilities for parallel evaluation,
-  Version: 1.36.0}
+  Version: 1.38.0}
 - {Package: BiocSingular, Title: Singular Value Decomposition for Bioconductor Packages,
   Version: 1.18.0}
 - {Package: BiocVersion, Title: Set the appropriate version of Bioconductor packages,
-  Version: 3.18.1}
+  Version: 3.19.1}
 - {Package: biocViews, Title: Categorized views of R package repositories, Version: 1.70.0}
 - {Package: biomaRt, Title: Interface to BioMart databases (i.e. Ensembl), Version: 2.58.2}
-- {Package: Biostrings, Title: Efficient manipulation of biological strings, Version: 2.70.3}
+- {Package: Biostrings, Title: Efficient manipulation of biological strings, Version: 2.72.0}
 - {Package: biovizBase, Title: Basic graphic utilities for visualization of genomic
     data., Version: 1.50.0}
 - {Package: bit, Title: Classes and Methods for Fast Memory-Efficient Boolean Selections,
@@ -104,7 +95,7 @@ packages:
 - {Package: brew, Title: Templating Framework for Report Generation, Version: 1.0-10}
 - {Package: bridgesampling, Title: Bridge Sampling for Marginal Likelihoods and Bayes
     Factors, Version: 1.1-2}
-- {Package: brio, Title: Basic R Input Output, Version: 1.1.4}
+- {Package: brio, Title: Basic R Input Output, Version: 1.1.5}
 - {Package: brms, Title: Bayesian Regression Models using 'Stan', Version: 2.21.0}
 - {Package: Brobdingnag, Title: Very Large Numbers in R, Version: 1.2-9}
 - {Package: broom, Title: Convert Statistical Objects into Tidy Tibbles, Version: 1.0.5}
@@ -122,7 +113,7 @@ packages:
 - {Package: calibrate, Title: Calibration of Scatterplot and Biplot Axes, Version: 1.7.7}
 - {Package: callr, Title: Call R from R, Version: 3.7.6}
 - {Package: candisc, Title: Visualizing Generalized Canonical Discriminant and Canonical
-    Correlation Analysis, Version: 0.8-6}
+    Correlation Analysis, Version: 0.9.0}
 - {Package: car, Title: Companion to Applied Regression, Version: 3.1-2}
 - {Package: carData, Title: Companion to Applied Regression Data Sets, Version: 3.0-5}
 - {Package: caret, Title: Classification and Regression Training, Version: 6.0-94}
@@ -150,11 +141,10 @@ packages:
 - {Package: clue, Title: Cluster Ensembles, Version: 0.3-65}
 - {Package: cluster, Title: '"Finding Groups in Data": Cluster Analysis Extended Rousseeuw
     et al.', Version: 2.1.6}
-- {Package: clustermole, Title: Unbiased Single-Cell Transcriptomic Data Cell Type
-    Identification, Version: 1.1.1}
 - {Package: clusterProfiler, Title: A universal enrichment tool for interpreting omics
     data, Version: 4.10.1}
 - {Package: clustree, Title: Visualise Clusterings at Different Resolutions, Version: 0.5.1}
+- {Package: cmprsk, Title: Subdistribution Analysis of Competing Risks, Version: 2.2-11}
 - {Package: CNEr, Title: CNE Detection and Visualization, Version: 1.38.0}
 - {Package: cocor, Title: Comparing Correlations, Version: 1.1-4}
 - {Package: coda, Title: Output Analysis and Diagnostics for MCMC, Version: 0.19-4.1}
@@ -167,7 +157,7 @@ packages:
 - {Package: commonmark, Title: High Performance CommonMark and Github Markdown Rendering
     in R, Version: 1.9.1}
 - {Package: comorbidity, Title: Computing Comorbidity Scores, Version: 1.0.7}
-- {Package: compiler, Title: The R Compiler Package, Version: 4.3.3}
+- {Package: compiler, Title: The R Compiler Package, Version: 4.4.0}
 - {Package: ComplexHeatmap, Title: Make Complex Heatmaps, Version: 2.15.4}
 - {Package: conflicted, Title: An Alternative Conflict Resolution Strategy, Version: 1.2.0}
 - {Package: conquer, Title: Convolution-Type Smoothed Quantile Regression, Version: 1.3.3}
@@ -184,24 +174,24 @@ packages:
 - {Package: credentials, Title: Tools for Managing SSH and Git Credentials, Version: 2.0.1}
 - {Package: crossmatch, Title: The Cross-match Test, Version: 1.3-1}
 - {Package: crosstalk, Title: Inter-Widget Interactivity for HTML Widgets, Version: 1.2.1}
-- {Package: crul, Title: HTTP Client, Version: 1.4.0}
+- {Package: crul, Title: HTTP Client, Version: 1.4.2}
 - {Package: csaw, Title: ChIP-Seq Analysis with Windows, Version: 1.36.1}
 - {Package: cubature, Title: Adaptive Multivariate Integration over Hypercubes, Version: 2.1.0}
 - {Package: curl, Title: A Modern and Flexible Web Client for R, Version: 5.2.1}
-- {Package: datasets, Title: The R Datasets Package, Version: 4.3.3}
 - {Package: data.table, Title: Extension of `data.frame`, Version: 1.15.4}
 - {Package: data.tree, Title: General Purpose Hierarchical Data Structure, Version: 1.1.0}
+- {Package: datasets, Title: The R Datasets Package, Version: 4.4.0}
 - {Package: datawizard, Title: Easy Data Wrangling and Statistical Transformations,
   Version: 0.10.0}
 - {Package: DBI, Title: R Database Interface, Version: 1.2.2}
-- {Package: dbparser, Title: Drugs Databases Parser, Version: 2.0.2}
+- {Package: dbparser, Title: Drugs Databases Parser, Version: 2.0.3}
 - {Package: dbplyr, Title: A 'dplyr' Back End for Databases, Version: 2.5.0}
 - {Package: dbscan, Title: Density-Based Spatial Clustering of Applications with Noise
     (DBSCAN) and Related Algorithms, Version: 1.1-12}
 - {Package: DDRTree, Title: Learning Principal Graphs with DDRTree, Version: 0.1.5}
 - {Package: decor, Title: Retrieve Code Decorations, Version: 1.0.2}
 - {Package: DelayedArray, Title: A unified framework for working transparently with
-    on-disk and in-memory array-like datasets, Version: 0.28.0}
+    on-disk and in-memory array-like datasets, Version: 0.30.0}
 - {Package: DelayedMatrixStats, Title: Functions that Apply to Rows and Columns of
     'DelayedMatrix' Objects, Version: 1.24.0}
 - {Package: deldir, Title: Delaunay Triangulation and Dirichlet (Voronoi) Tessellation,
@@ -293,7 +283,7 @@ packages:
 - {Package: factoextra, Title: Extract and Visualize the Results of Multivariate Data
     Analyses, Version: 1.0.7}
 - {Package: FactoMineR, Title: Multivariate Exploratory Data Analysis and Data Mining,
-  Version: '2.10'}
+  Version: '2.11'}
 - {Package: fANCOVA, Title: Nonparametric Analysis of Covariance, Version: 0.6-1}
 - {Package: fansi, Title: ANSI Control Sequence Aware String Functions, Version: 1.0.6}
 - {Package: farver, Title: High Performance Colour Space Manipulation, Version: 2.1.1}
@@ -319,7 +309,7 @@ packages:
     or Censored Data, Version: 1.1-11}
 - {Package: flashClust, Title: Implementation of optimal hierarchical clustering,
   Version: 1.01-2}
-- {Package: flextable, Title: Functions for Tabular Reporting, Version: 0.9.5}
+- {Package: flextable, Title: Functions for Tabular Reporting, Version: 0.9.6}
 - {Package: fmsb, Title: Functions for Medical Statistics Book with some Demographic
     Data, Version: 0.7.6}
 - {Package: FNN, Title: Fast Nearest Neighbor Search Algorithms and Applications,
@@ -341,7 +331,7 @@ packages:
 - {Package: freesurferformats, Title: Read and Write 'FreeSurfer' Neuroimaging File
     Formats, Version: 0.1.18}
 - {Package: fresh, Title: Create Custom 'Bootstrap' Themes to Use in 'Shiny', Version: 0.2.0}
-- {Package: fs, Title: Cross-Platform File System Operations Based on 'libuv', Version: 1.6.3}
+- {Package: fs, Title: Cross-Platform File System Operations Based on 'libuv', Version: 1.6.4}
 - {Package: fsbrain, Title: Managing and Visualizing Brain Surface Data, Version: 0.5.5}
 - {Package: fslr, Title: Wrapper Functions for 'FSL' ('FMRIB' Software Library) from
     Functional MRI of the Brain ('FMRIB'), Version: 2.25.2}
@@ -373,14 +363,14 @@ packages:
 - {Package: GENIE3, Title: GEne Network Inference with Ensemble of trees, Version: 1.22.0}
 - {Package: genio, Title: Genetics Input/Output Functions, Version: 1.1.2}
 - {Package: GenomeInfoDb, Title: 'Utilities for manipulating chromosome names, including
-    modifying them to follow a particular naming style', Version: 1.38.8}
+    modifying them to follow a particular naming style', Version: 1.40.0}
 - {Package: GenomeInfoDbData, Title: Species and taxonomy ID look up tables used by
-    GenomeInfoDb, Version: 1.2.11}
+    GenomeInfoDb, Version: 1.2.12}
 - {Package: GenomicAlignments, Title: Representation and manipulation of short genomic
-    alignments, Version: 1.38.2}
+    alignments, Version: 1.40.0}
 - {Package: GenomicFeatures, Title: Conveniently import and query gene models, Version: 1.54.4}
 - {Package: GenomicRanges, Title: Representation and manipulation of genomic intervals,
-  Version: 1.54.1}
+  Version: 1.56.0}
 - {Package: GenSA, Title: R Functions for Generalized Simulated Annealing, Version: 1.1.14}
 - {Package: geojsonsf, Title: GeoJSON to Simple Feature Converter, Version: 2.0.3}
 - {Package: geometries, Title: Convert Between R Objects and Geometric Structures,
@@ -401,7 +391,7 @@ packages:
 - {Package: ggnetwork, Title: Geometries to Plot Networks with 'ggplot2', Version: 0.5.13}
 - {Package: ggnewscale, Title: Multiple Fill and Colour Scales in 'ggplot2', Version: 0.4.10}
 - {Package: ggplot2, Title: Create Elegant Data Visualisations Using the Grammar of
-    Graphics, Version: 3.5.0}
+    Graphics, Version: 3.5.1}
 - {Package: ggplotify, Title: Convert Plot to 'grob' or 'ggplot' Object, Version: 0.1.2}
 - {Package: ggpubr, Title: '''ggplot2'' Based Publication Ready Plots', Version: 0.6.0}
 - {Package: ggraph, Title: An Implementation of Grammar of Graphics for Graphs and
@@ -446,31 +436,31 @@ packages:
 - {Package: GPfit, Title: Gaussian Processes Modeling, Version: 1.0-8}
 - {Package: gplots, Title: Various R Programming Tools for Plotting Data, Version: 3.1.3.1}
 - {Package: gprofiler2, Title: 'Interface to the ''g:Profiler'' Toolset', Version: 0.2.3}
-- {Package: graph, Title: 'graph: A package to handle graph data structures', Version: 1.80.0}
-- {Package: graphics, Title: The R Graphics Package, Version: 4.3.3}
+- {Package: graph, Title: 'graph: A package to handle graph data structures', Version: 1.82.0}
+- {Package: graphics, Title: The R Graphics Package, Version: 4.4.0}
 - {Package: graphite, Title: GRAPH Interaction from pathway Topological Environment,
   Version: 1.48.0}
 - {Package: graphlayouts, Title: Additional Layout Algorithms for Network Visualizations,
   Version: 1.1.1}
 - {Package: grDevices, Title: The R Graphics Devices and Support for Colours and Fonts,
-  Version: 4.3.3}
-- {Package: grid, Title: The Grid Graphics Package, Version: 4.3.3}
+  Version: 4.4.0}
+- {Package: grid, Title: The Grid Graphics Package, Version: 4.4.0}
 - {Package: gridBase, Title: Integration of base and grid graphics, Version: 0.4-7}
 - {Package: gridExtra, Title: Miscellaneous Functions for "Grid" Graphics, Version: '2.3'}
 - {Package: gridGraphics, Title: Redraw Base Graphics Using 'grid' Graphics, Version: 0.5-1}
 - {Package: gridtext, Title: Improved Text Rendering Support for 'Grid' Graphics,
   Version: 0.1.5}
 - {Package: grr, Title: Alternative Implementations of Base R Functions, Version: 0.9.5}
-- {Package: GSA, Title: Gene Set Analysis, Version: 1.03.2}
-- {Package: GSEABase, Title: Gene set enrichment data structures and methods, Version: 1.64.0}
+- {Package: GSA, Title: Gene Set Analysis, Version: 1.03.3}
+- {Package: GSEABase, Title: Gene set enrichment data structures and methods, Version: 1.66.0}
 - {Package: gson, Title: Base Class and Methods for 'gson' Format, Version: 0.1.0}
 - {Package: gstat, Title: 'Spatial and Spatio-Temporal Geostatistical Modelling, Prediction
     and Simulation', Version: 2.1-1}
 - {Package: gsubfn, Title: Utilities for Strings and Function Arguments, Version: '0.7'}
 - {Package: GSVA, Title: Gene Set Variation Analysis for Microarray and RNA-Seq Data,
-  Version: 1.50.2}
+  Version: 1.52.0}
 - {Package: gt, Title: Easily Create Presentation-Ready Display Tables, Version: 0.10.1}
-- {Package: gtable, Title: Arrange 'Grobs' in Tables, Version: 0.3.4}
+- {Package: gtable, Title: Arrange 'Grobs' in Tables, Version: 0.3.5}
 - {Package: gtools, Title: Various R Programming Tools, Version: 3.9.5}
 - {Package: gtsummary, Title: Presentation-Ready Data Summary and Analytic Result
     Tables, Version: 1.7.2}
@@ -488,14 +478,14 @@ packages:
   Version: 2.2.6.3}
 - {Package: haven, Title: 'Import and Export ''SPSS'', ''Stata'' and ''SAS'' Files',
   Version: 2.5.4}
-- {Package: HDF5Array, Title: HDF5 backend for DelayedArray objects, Version: 1.30.1}
+- {Package: HDF5Array, Title: HDF5 backend for DelayedArray objects, Version: 1.32.0}
 - {Package: hdf5r, Title: Interface to the 'HDF5' Binary Data Format, Version: 1.3.10}
 - {Package: HDO.db, Title: A set of annotation maps describing the entire Human Disease
     Ontology, Version: 0.99.1}
 - {Package: heatmaply, Title: Interactive Cluster Heat Maps Using 'plotly' and 'ggplot2',
   Version: 1.5.0}
 - {Package: heplots, Title: Visualizing Hypothesis Tests in Multivariate Linear Models,
-  Version: 1.6.2}
+  Version: 1.7.0}
 - {Package: here, Title: A Simpler Way to Find Your Files, Version: 1.0.1}
 - {Package: hexbin, Title: Hexagonal Binning Routines, Version: 1.28.3}
 - {Package: highr, Title: Syntax Highlighting for R Source Code, Version: '0.10'}
@@ -516,7 +506,7 @@ packages:
 - {Package: ica, Title: Independent Component Analysis, Version: 1.0-3}
 - {Package: ids, Title: Generate Random Identifiers, Version: 1.0.1}
 - {Package: igraph, Title: Network Analysis and Visualization, Version: 2.0.3}
-- {Package: imager, Title: Image Processing Library Based on 'CImg', Version: 0.45.8}
+- {Package: imager, Title: Image Processing Library Based on 'CImg', Version: 1.0.1}
 - {Package: impute, Title: 'impute: Imputation for microarray data', Version: 1.76.0}
 - {Package: infer, Title: Tidy Statistical Inference, Version: 1.0.7}
 - {Package: influenceR, Title: Software Tools to Quantify Structural Importance of
@@ -534,7 +524,7 @@ packages:
 - {Package: iotools, Title: I/O Tools for Streaming, Version: 0.3-5}
 - {Package: ipred, Title: Improved Predictors, Version: 0.9-14}
 - {Package: IRanges, Title: Foundation of integer range manipulation in Bioconductor,
-  Version: 2.36.0}
+  Version: 2.38.0}
 - {Package: IRdisplay, Title: '''Jupyter'' Display Machinery', Version: '1.1'}
 - {Package: IRkernel, Title: Native R Kernel for the 'Jupyter Notebook', Version: 1.3.2}
 - {Package: irlba, Title: Fast Truncated Singular Value Decomposition and Principal
@@ -561,7 +551,7 @@ packages:
 - {Package: KEGGgraph, Title: 'KEGGgraph: A graph approach to KEGG PATHWAY in R and
     Bioconductor', Version: 1.62.0}
 - {Package: KEGGREST, Title: Client-side REST access to the Kyoto Encyclopedia of
-    Genes and Genomes (KEGG), Version: 1.42.0}
+    Genes and Genomes (KEGG), Version: 1.44.0}
 - {Package: kernlab, Title: Kernel-Based Machine Learning Lab, Version: 0.9-32}
 - {Package: KernSmooth, Title: Functions for Kernel Smoothing Supporting Wand & Jones
     (1995), Version: 2.23-22}
@@ -574,7 +564,7 @@ packages:
 - {Package: ks, Title: Kernel Smoothing, Version: 1.14.2}
 - {Package: kutils, Title: Project Management Tools, Version: '1.73'}
 - {Package: labeling, Title: Axis Labeling, Version: 0.4.3}
-- {Package: labelled, Title: Manipulating Labelled Data, Version: 2.12.0}
+- {Package: labelled, Title: Manipulating Labelled Data, Version: 2.13.0}
 - {Package: laeken, Title: Estimation of Indicators on Social Exclusion and Poverty,
   Version: 0.5.3}
 - {Package: lambda.r, Title: Modeling Data with Functional Programming, Version: 1.2.4}
@@ -598,12 +588,12 @@ packages:
     Function, Version: 0.1.27}
 - {Package: lhs, Title: Latin Hypercube Samples, Version: 1.1.6}
 - {Package: lifecycle, Title: Manage the Life Cycle of your Package Functions, Version: 1.0.4}
-- {Package: limma, Title: Linear Models for Microarray Data, Version: 3.58.1}
+- {Package: limma, Title: Linear Models for Microarray Data, Version: 3.60.0}
 - {Package: linkcomm, Title: 'Tools for Generating, Visualizing, and Analysing Link
     Communities in Networks', Version: 1.0-14}
 - {Package: lisrelToR, Title: Import Output from LISREL into R, Version: '0.3'}
 - {Package: listenv, Title: Environments Behaving (Almost) as Lists, Version: 0.9.1}
-- {Package: lme4, Title: Linear Mixed-Effects Models using 'Eigen' and S4, Version: 1.1-35.2}
+- {Package: lme4, Title: Linear Mixed-Effects Models using 'Eigen' and S4, Version: 1.1-35.3}
 - {Package: lmerTest, Title: Tests in Linear Mixed Effects Models, Version: 3.1-3}
 - {Package: lmom, Title: L-Moments, Version: '3.0'}
 - {Package: lmtest, Title: Testing Linear Regression Models, Version: 0.9-40}
@@ -625,18 +615,20 @@ packages:
 - {Package: maps, Title: Draw Geographical Maps, Version: 3.4.2}
 - {Package: mapview, Title: Interactive Viewing of Spatial Data in R, Version: 2.11.2}
 - {Package: marginaleffects, Title: 'Predictions, Comparisons, Slopes, Marginal Means,
-    and Hypothesis Tests', Version: 0.18.0}
+    and Hypothesis Tests', Version: 0.20.0}
 - {Package: markdown, Title: Render Markdown with 'commonmark', Version: '1.12'}
 - {Package: MASS, Title: Support Functions and Datasets for Venables and Ripley's
-    MASS, Version: 7.3-60.0.1}
+    MASS, Version: 7.3-60.2}
 - {Package: mathjaxr, Title: Using 'Mathjax' in Rd Files, Version: 1.6-0}
-- {Package: Matrix, Title: Sparse and Dense Matrix Classes and Methods, Version: 1.6-5}
+- {Package: Matrix, Title: Sparse and Dense Matrix Classes and Methods, Version: 1.7-0}
+- {Package: Matrix.utils, Title: Data.frame-Like Operations on Sparse and Dense Matrix
+    Objects, Version: 0.9.7}
 - {Package: matrixcalc, Title: Collection of Functions for Matrix Calculations, Version: 1.0-6}
 - {Package: MatrixGenerics, Title: S4 Generic Summary Statistic Functions that Operate
-    on Matrix-Like Objects, Version: 1.14.0}
+    on Matrix-Like Objects, Version: 1.16.0}
 - {Package: MatrixModels, Title: Modelling with Sparse and Dense Matrices, Version: 0.5-3}
 - {Package: matrixStats, Title: Functions that Apply to Rows and Columns of Matrices
-    (and to Vectors), Version: 1.2.0}
+    (and to Vectors), Version: 1.3.0}
 - {Package: maxLik, Title: Maximum Likelihood Estimation and Related Tools, Version: 1.5-2.1}
 - {Package: maxstat, Title: Maximally Selected Rank Statistics, Version: 0.7-25}
 - {Package: mbend, Title: Matrix Bending, Version: 1.3.1}
@@ -644,7 +636,7 @@ packages:
 - {Package: mclogit, Title: 'Multinomial Logit Models, with or without Random Effects
     or Overdispersion', Version: 0.9.6}
 - {Package: mclust, Title: 'Gaussian Mixture Modelling for Model-Based Clustering,
-    Classification, and Density Estimation', Version: '6.1'}
+    Classification, and Density Estimation', Version: 6.1.1}
 - {Package: memisc, Title: Management of Survey Data and Presentation of Analysis
     Results, Version: 0.99.31.7}
 - {Package: memoise, Title: '''Memoisation'' of Functions', Version: 2.0.1}
@@ -652,7 +644,7 @@ packages:
 - {Package: metadat, Title: Meta-Analysis Datasets, Version: 1.2-0}
 - {Package: metafor, Title: Meta-Analysis Package for R, Version: 4.6-0}
 - {Package: metapod, Title: Meta-Analyses on P-Values of Differential Analyses, Version: 1.10.1}
-- {Package: methods, Title: Formal Methods and Classes, Version: 4.3.3}
+- {Package: methods, Title: Formal Methods and Classes, Version: 4.4.0}
 - {Package: mgcv, Title: Mixed GAM Computation Vehicle with Automatic Smoothness Estimation,
   Version: 1.9-1}
 - {Package: mgm, Title: Estimating Time-Varying k-Order Mixed Graphical Models, Version: 1.2-14}
@@ -729,24 +721,24 @@ packages:
 - {Package: odbc, Title: Connect to ODBC Compatible Databases (using the DBI Interface),
   Version: 1.4.2}
 - {Package: officer, Title: Manipulation of Microsoft Word and PowerPoint Documents,
-  Version: 0.6.5}
+  Version: 0.6.6}
 - {Package: oligo, Title: Preprocessing tools for oligonucleotide arrays, Version: 1.66.0}
 - {Package: oligoClasses, Title: Classes for high-throughput arrays supported by oligo
     and crlmm, Version: 1.64.0}
 - {Package: OpenMx, Title: Extended Structural Equation Modelling, Version: 2.21.11}
 - {Package: openssl, Title: 'Toolkit for Encryption, Signatures and Certificates Based
-    on OpenSSL', Version: 2.1.1}
+    on OpenSSL', Version: 2.1.2}
 - {Package: openxlsx, Title: 'Read, Write and Edit xlsx Files', Version: 4.2.5.2}
 - {Package: operator.tools, Title: Utilities for Working with R's Operators, Version: 1.6.3}
 - {Package: optimx, Title: Expanded Replacement and Extension of the 'optim' Function,
   Version: 2023-10.21}
-- {Package: optparse, Title: Command Line Option Parser, Version: 1.7.4}
+- {Package: optparse, Title: Command Line Option Parser, Version: 1.7.5}
 - {Package: orca, Title: Computation of Graphlet Orbit Counts in Sparse Graphs, Version: 1.1-2}
 - {Package: ordinal, Title: Regression Models for Ordinal Data, Version: 2023.12-4}
-- {Package: OrganismDbi, Title: Software to enable the smooth interfacing of different
-    database packages, Version: 1.44.0}
 - {Package: org.Hs.eg.db, Title: Genome wide annotation for Human, Version: 3.18.0}
 - {Package: org.Mm.eg.db, Title: Genome wide annotation for Mouse, Version: 3.18.0}
+- {Package: OrganismDbi, Title: Software to enable the smooth interfacing of different
+    database packages, Version: 1.44.0}
 - {Package: oro.nifti, Title: 'Rigorous - ''NIfTI'' + ''ANALYZE'' + ''AFNI'' : Input
     / Output', Version: 0.11.4}
 - {Package: orthopolynom, Title: Collection of Functions for Orthogonal and Orthonormal
@@ -758,12 +750,12 @@ packages:
   Version: '1.8'}
 - {Package: pan, Title: Multiple Imputation for Multivariate Panel or Clustered Data,
   Version: '1.9'}
-- {Package: parallel, Title: Support for Parallel Computation in R, Version: 4.3.3}
+- {Package: parallel, Title: Support for Parallel Computation in R, Version: 4.4.0}
 - {Package: parallelly, Title: Enhancing the 'parallel' Package, Version: 1.37.1}
 - {Package: parallelMap, Title: Unified Interface to Parallelization Back-Ends, Version: 1.5.1}
 - {Package: ParamHelpers, Title: 'Helpers for Parameters in Black-Box Optimization,
     Tuning and Machine Learning', Version: 1.14.1}
-- {Package: paran, Title: Horn's Test of Principal Components/Factors, Version: 1.5.2}
+- {Package: paran, Title: Horn's Test of Principal Components/Factors, Version: 1.5.3}
 - {Package: parsnip, Title: A Common API to Modeling and Analysis Functions, Version: 1.2.1}
 - {Package: patchwork, Title: The Composer of Plots, Version: 1.2.0}
 - {Package: pathview, Title: a tool set for pathway based data integration and visualization,
@@ -783,10 +775,10 @@ packages:
 - {Package: pheatmap, Title: Pretty Heatmaps, Version: 1.0.12}
 - {Package: phia, Title: Post-Hoc Interaction Analysis, Version: 0.3-1}
 - {Package: pillar, Title: Coloured Formatting for Columns, Version: 1.9.0}
-- {Package: pixmap, Title: Bitmap Images / Pixel Maps, Version: 0.4-12}
+- {Package: pixmap, Title: Bitmap Images / Pixel Maps, Version: 0.4-13}
 - {Package: pkgbuild, Title: Find Tools Needed to Build R Packages, Version: 1.4.4}
 - {Package: pkgconfig, Title: Private Configuration for 'R' Packages, Version: 2.0.3}
-- {Package: pkgdown, Title: Make Static HTML Documentation for a Package, Version: 2.0.7}
+- {Package: pkgdown, Title: Make Static HTML Documentation for a Package, Version: 2.0.9}
 - {Package: pkgfilecache, Title: Download and Manage Optional Package Data, Version: 0.1.5}
 - {Package: pkgload, Title: Simulate Package Installation and Attach, Version: 1.3.4}
 - {Package: PKI, Title: Public Key Infrastucture for R Based on the X.509 Standard,
@@ -850,9 +842,17 @@ packages:
 - {Package: QuickJSR, Title: Interface for the 'QuickJS' Lightweight 'JavaScript'
     Engine, Version: 1.1.3}
 - {Package: qvalue, Title: Q-value estimation for false discovery rate control, Version: 2.34.0}
+- {Package: R.cache, Title: Fast and Light-Weight Caching (Memoization) of Objects
+    and Results to Speed Up Computations, Version: 0.16.0}
+- {Package: R.matlab, Title: Read and Write MAT Files and Call MATLAB from Within
+    R, Version: 3.7.0}
+- {Package: R.methodsS3, Title: S3 Methods Simplified, Version: 1.8.2}
+- {Package: R.oo, Title: R Object-Oriented Programming with or without References,
+  Version: 1.26.0}
+- {Package: R.utils, Title: Various Programming Utilities, Version: 2.12.3}
 - {Package: R2HTML, Title: HTML Exportation for R Objects, Version: 2.3.3}
 - {Package: R6, Title: Encapsulated Classes with Reference Semantics, Version: 2.5.1}
-- {Package: ragg, Title: Graphic Devices Based on AGG, Version: 1.3.0}
+- {Package: ragg, Title: Graphic Devices Based on AGG, Version: 1.3.1}
 - {Package: randomForest, Title: Breiman and Cutler's Random Forests for Classification
     and Regression, Version: 4.7-1.1}
 - {Package: randomForestSRC, Title: 'Fast Unified Random Forests for Survival, Regression,
@@ -867,8 +867,6 @@ packages:
 - {Package: RBGL, Title: An interface to the BOOST graph library, Version: 1.78.0}
 - {Package: rbibutils, Title: Read 'Bibtex' Files and Convert Between Bibliography
     Formats, Version: 2.2.16}
-- {Package: R.cache, Title: Fast and Light-Weight Caching (Memoization) of Objects
-    and Results to Speed Up Computations, Version: 0.16.0}
 - {Package: RcisTarget, Title: RcisTarget Identify transcription factor binding motifs
     enriched on a list of genes or genomic regions, Version: 1.22.0}
 - {Package: rcmdcheck, Title: Run 'R CMD check' from 'R' and Capture Results, Version: 1.4.0}
@@ -877,7 +875,7 @@ packages:
 - {Package: RcppAnnoy, Title: '''Rcpp'' Bindings for ''Annoy'', a Library for Approximate
     Nearest Neighbors', Version: 0.0.22}
 - {Package: RcppArmadillo, Title: '''Rcpp'' Integration for the ''Armadillo'' Templated
-    Linear Algebra Library', Version: 0.12.8.2.0}
+    Linear Algebra Library', Version: 0.12.8.2.1}
 - {Package: RcppEigen, Title: '''Rcpp'' Integration for the ''Eigen'' Templated Linear
     Algebra Library', Version: 0.3.4.0.0}
 - {Package: RcppGSL, Title: '''Rcpp'' Integration for ''GNU GSL'' Vectors and Matrices',
@@ -912,7 +910,7 @@ packages:
 - {Package: rematch2, Title: Tidy Output from Regular Expression Matching, Version: 2.1.2}
 - {Package: remotes, Title: 'R Package Installation from Remote Repositories, Including
     ''GitHub''', Version: 2.5.0}
-- {Package: renv, Title: Project Environments, Version: 1.0.5}
+- {Package: renv, Title: Project Environments, Version: 1.0.7}
 - {Package: repr, Title: Serializable Representations, Version: 1.1.7}
 - {Package: reprex, Title: Prepare Reproducible Example Code via the Clipboard, Version: 2.1.0}
 - {Package: reshape, Title: Flexibly Reshape Data, Version: 0.8.9}
@@ -921,19 +919,19 @@ packages:
 - {Package: ResidualMatrix, Title: Creating a DelayedMatrix of Regression Residuals,
   Version: 1.12.0}
 - {Package: restfulr, Title: R Interface to RESTful Web Services, Version: 0.0.15}
-- {Package: reticulate, Title: Interface to 'Python', Version: 1.35.0}
+- {Package: reticulate, Title: Interface to 'Python', Version: 1.36.1}
 - {Package: rex, Title: Friendly Regular Expressions, Version: 1.2.1}
 - {Package: rgl, Title: 3D Visualization Using OpenGL, Version: 1.3.1}
 - {Package: Rgraphviz, Title: Provides plotting capabilities for R graph objects,
   Version: 2.46.0}
 - {Package: rGREAT, Title: GREAT Analysis - Functional Enrichment on Genomic Regions,
   Version: 2.4.0}
-- {Package: rhdf5, Title: R Interface to HDF5, Version: 2.46.1}
-- {Package: rhdf5filters, Title: HDF5 Compression Filters, Version: 1.14.1}
-- {Package: Rhdf5lib, Title: hdf5 library as an R package, Version: 1.24.2}
+- {Package: rhdf5, Title: R Interface to HDF5, Version: 2.48.0}
+- {Package: rhdf5filters, Title: HDF5 Compression Filters, Version: 1.16.0}
+- {Package: Rhdf5lib, Title: hdf5 library as an R package, Version: 1.26.0}
 - {Package: RhpcBLASctl, Title: Control the Number of Threads on 'BLAS', Version: 0.23-42}
 - {Package: Rhtslib, Title: HTSlib high-throughput sequencing library as an R package,
-  Version: 2.4.1}
+  Version: 3.0.0}
 - {Package: RInside, Title: C++ Classes to Embed R in C++ (and C) Applications, Version: 0.2.18}
 - {Package: rintrojs, Title: Wrapper for the 'Intro.js' Library, Version: 0.3.4}
 - {Package: rio, Title: A Swiss-Army Knife for Data I/O, Version: 1.0.1}
@@ -950,9 +948,7 @@ packages:
 - {Package: rlist, Title: A Toolbox for Non-Tabular Data Manipulation, Version: 0.4.6.2}
 - {Package: RMariaDB, Title: Database Interface and MariaDB Driver, Version: 1.3.1}
 - {Package: rmarkdown, Title: Dynamic Documents for R, Version: '2.26'}
-- {Package: R.matlab, Title: Read and Write MAT Files and Call MATLAB from Within
-    R, Version: 3.7.0}
-- {Package: R.methodsS3, Title: S3 Methods Simplified, Version: 1.8.2}
+- {Package: Rmpi, Title: Interface (Wrapper) to MPI (Message-Passing Interface), Version: 0.7-2}
 - {Package: Rnanoflann, Title: Extremely Fast Nearest Neighbor Search, Version: 0.0.2}
 - {Package: rngtools, Title: Utility Functions for Working with Random Number Generators,
   Version: 1.5.2}
@@ -960,8 +956,6 @@ packages:
 - {Package: robustbase, Title: Basic Robust Statistics, Version: 0.99-2}
 - {Package: rockchalk, Title: Regression Estimation and Presentation, Version: 1.8.157}
 - {Package: ROCR, Title: Visualizing the Performance of Scoring Classifiers, Version: 1.0-11}
-- {Package: R.oo, Title: R Object-Oriented Programming with or without References,
-  Version: 1.26.0}
 - {Package: rootSolve, Title: 'Nonlinear Root Finding, Equilibrium and Steady-State
     Analysis of Ordinary Differential Equations', Version: 1.8.2.4}
 - {Package: ROpenCVLite, Title: Helper Package for Installing OpenCV with R, Version: 4.90.1}
@@ -972,7 +966,7 @@ packages:
 - {Package: rprojroot, Title: Finding Files in Project Subdirectories, Version: 2.0.4}
 - {Package: rsample, Title: General Resampling Infrastructure, Version: 1.2.1}
 - {Package: Rsamtools, Title: 'Binary alignment (BAM), FASTA, variant call (BCF),
-    and tabix file import', Version: 2.18.0}
+    and tabix file import', Version: 2.20.0}
 - {Package: rsconnect, Title: 'Deploy Docs, Apps, and APIs to ''Posit Connect'', ''shinyapps.io'',
     and ''RPubs''', Version: 1.2.2}
 - {Package: RSpectra, Title: Solvers for Large-Scale Eigenvalue and SVD Problems,
@@ -992,7 +986,6 @@ packages:
     Implementation, Version: '0.17'}
 - {Package: Rttf2pt1, Title: '''ttf2pt1'' Program', Version: 1.3.12}
 - {Package: RUnit, Title: R Unit Test Framework, Version: 0.4.33}
-- {Package: R.utils, Title: Various Programming Utilities, Version: 2.12.3}
 - {Package: rvcheck, Title: R/Package Version Check, Version: 0.2.1}
 - {Package: RVenn, Title: Set Operations for Many Sets, Version: 1.1.0}
 - {Package: rversions, Title: 'Query ''R'' Versions, Including ''r-release'' and ''r-oldrel''',
@@ -1001,9 +994,9 @@ packages:
 - {Package: s2, Title: Spherical Geometry Operators Using the S2 Geometry Library,
   Version: 1.1.6}
 - {Package: S4Arrays, Title: Foundation of array-like containers in Bioconductor,
-  Version: 1.2.1}
+  Version: 1.4.0}
 - {Package: S4Vectors, Title: Foundation of vector-like and list-like containers in
-    Bioconductor, Version: 0.40.2}
+    Bioconductor, Version: 0.42.0}
 - {Package: safetensors, Title: Safetensors File Format, Version: 0.1.2}
 - {Package: samr, Title: 'SAM: Significance Analysis of Microarrays', Version: '3.0'}
 - {Package: sandwich, Title: Robust Covariance Matrix Estimators, Version: 3.1-0}
@@ -1012,7 +1005,7 @@ packages:
 - {Package: satuRn, Title: Scalable Analysis of Differential Transcript Usage for
     Bulk and Single-Cell RNA-sequencing Applications, Version: 1.10.0}
 - {Package: ScaledMatrix, Title: Creating a DelayedMatrix of Scaled and Centered Values,
-  Version: 1.10.0}
+  Version: 1.12.0}
 - {Package: scales, Title: Scale Functions for Visualization, Version: 1.3.0}
 - {Package: scater, Title: Single-Cell Analysis Toolkit for Gene Expression Data in
     R, Version: 1.30.1}
@@ -1028,7 +1021,7 @@ packages:
     UMI Data, Version: 0.4.1}
 - {Package: scuttle, Title: Single-Cell RNA-Seq Analysis Utilities, Version: 1.12.0}
 - {Package: segmented, Title: Regression Models with Break-Points / Change-Points
-    Estimation (with Possibly Random Effects), Version: 2.0-3}
+    Estimation (with Possibly Random Effects), Version: 2.0-4}
 - {Package: selectr, Title: Translate CSS Selectors to XPath Expressions, Version: 0.4-2}
 - {Package: sem, Title: Structural Equation Models, Version: 3.1-15}
 - {Package: semPlot, Title: Path Diagrams and Visual Analysis of Various SEM Packages'
@@ -1039,7 +1032,7 @@ packages:
 - {Package: seqminer, Title: 'Efficiently Read Sequence Data (VCF Format, BCF Format,
     METAL Format and BGEN Format) into R', Version: '9.4'}
 - {Package: seriation, Title: Infrastructure for Ordering Objects Using Seriation,
-  Version: 1.5.4}
+  Version: 1.5.5}
 - {Package: servr, Title: A Simple HTTP Server to Serve Static Files or Dynamic Documents,
   Version: '0.30'}
 - {Package: sessioninfo, Title: R Session Information, Version: 1.2.2}
@@ -1067,13 +1060,13 @@ packages:
 - {Package: shinystan, Title: Interactive Visual and Numerical Diagnostics and Posterior
     Analysis for Bayesian Models, Version: 2.6.0}
 - {Package: shinythemes, Title: Themes for Shiny, Version: 1.2.0}
-- {Package: shinyWidgets, Title: Custom Inputs Widgets for Shiny, Version: 0.8.4}
+- {Package: shinyWidgets, Title: Custom Inputs Widgets for Shiny, Version: 0.8.6}
 - {Package: ShortRead, Title: FASTQ input and manipulation, Version: 1.60.0}
 - {Package: simdistr, Title: Assessment of Data Trial Distributions According to the
     Carlisle-Stouffer Method, Version: 1.0.1}
-- {Package: SingleCellExperiment, Title: S4 Classes for Single Cell Data, Version: 1.24.0}
+- {Package: SingleCellExperiment, Title: S4 Classes for Single Cell Data, Version: 1.26.0}
 - {Package: SingleR, Title: Reference-Based Single-Cell RNA-Seq Annotation, Version: 2.4.1}
-- {Package: singscore, Title: Rank-based single-sample gene set scoring method, Version: 1.22.0}
+- {Package: singscore, Title: Rank-based single-sample gene set scoring method, Version: 1.24.0}
 - {Package: sitmo, Title: Parallel Pseudo Random Number Generator (PPRNG) 'sitmo'
     Header Files, Version: 2.0.2}
 - {Package: SKAT, Title: SNP-Set (Sequence) Kernel Association Test, Version: 2.2.5}
@@ -1093,19 +1086,21 @@ packages:
     plots Summarised Over Grouped Genomic Intervals', Version: 1.34.0}
 - {Package: sourcetools, Title: 'Tools for Reading, Tokenizing and Parsing R Code',
   Version: 0.1.7-1}
-- {Package: sp, Title: Classes and Methods for Spatial Data, Version: 2.1-3}
+- {Package: sp, Title: Classes and Methods for Spatial Data, Version: 2.1-4}
 - {Package: spacetime, Title: Classes and Methods for Spatio-Temporal Data, Version: 1.3-1}
 - {Package: spam, Title: SPArse Matrix, Version: 2.10-0}
-- {Package: SparseArray, Title: Efficient in-memory representation of multidimensional
-    sparse arrays, Version: 1.2.4}
+- {Package: SparseArray, Title: High-performance sparse data representation and manipulation
+    in R, Version: 1.4.0}
 - {Package: SparseM, Title: Sparse Linear Algebra, Version: '1.81'}
 - {Package: sparseMatrixStats, Title: Summary Statistics for Rows and Columns of Sparse
-    Matrices, Version: 1.14.0}
+    Matrices, Version: 1.16.0}
 - {Package: sparsesvd, Title: Sparse Truncated Singular Value Decomposition (from
     'SVDLIBC'), Version: 0.2-2}
 - {Package: SPAtest, Title: Score Test and Meta-Analysis Based on Saddlepoint Approximation,
   Version: 3.1.2}
 - {Package: spatial, Title: Functions for Kriging and Point Pattern Analysis, Version: 7.3-17}
+- {Package: SpatialExperiment, Title: S4 Class for Spatially Resolved -omics Data,
+  Version: 1.14.0}
 - {Package: spatstat, Title: 'Spatial Point Pattern Analysis, Model-Fitting, Simulation,
     Tests', Version: 3.0-8}
 - {Package: spatstat.data, Title: Datasets for 'spatstat' Family, Version: 3.0-4}
@@ -1126,33 +1121,33 @@ packages:
 - {Package: spdep, Title: 'Spatial Dependence: Weighting Schemes, Statistics', Version: 1.3-3}
 - {Package: speedglm, Title: Fitting Linear and Generalized Linear Models to Large
     Data Sets, Version: 0.3-5}
-- {Package: splines, Title: Regression Spline Functions and Classes, Version: 4.3.3}
+- {Package: splines, Title: Regression Spline Functions and Classes, Version: 4.4.0}
 - {Package: sqldf, Title: Manipulate R Data Frames Using SQL, Version: 0.4-11}
 - {Package: SQUAREM, Title: Squared Extrapolation Methods for Accelerating EM-Like
     Monotone Algorithms, Version: '2021.1'}
 - {Package: squash, Title: Color-Based Plots for Multivariate Visualization, Version: 1.0.9}
-- {Package: StanHeaders, Title: C++ Header Files for Stan, Version: 2.32.6}
+- {Package: StanHeaders, Title: C++ Header Files for Stan, Version: 2.32.7}
 - {Package: stapler, Title: Simultaneous Truth and Performance Level Estimation, Version: 0.7.1}
 - {Package: stars, Title: 'Spatiotemporal Arrays, Raster and Vector Data Cubes', Version: 0.6-5}
 - {Package: statmod, Title: Statistical Modeling, Version: 1.5.0}
 - {Package: statnet.common, Title: Common R Scripts and Utilities Used by the Statnet
     Project Software, Version: 4.9.0}
-- {Package: stats, Title: The R Stats Package, Version: 4.3.3}
-- {Package: stats4, Title: Statistical Functions using S4 Classes, Version: 4.3.3}
+- {Package: stats, Title: The R Stats Package, Version: 4.4.0}
+- {Package: stats4, Title: Statistical Functions using S4 Classes, Version: 4.4.0}
 - {Package: STRINGdb, Title: STRINGdb - Protein-Protein Interaction Networks and Functional
     Enrichment Analysis, Version: 2.14.3}
 - {Package: stringdist, Title: 'Approximate String Matching, Fuzzy Text Search, and
     String Distance Functions', Version: 0.9.12}
 - {Package: stringi, Title: Fast and Portable Character String Processing Facilities,
-  Version: 1.8.3}
+  Version: 1.8.4}
 - {Package: stringr, Title: 'Simple, Consistent Wrappers for Common String Operations',
   Version: 1.5.1}
 - {Package: StructuralVariantAnnotation, Title: Variant annotations for structural
     variants, Version: 1.18.0}
 - {Package: styler, Title: Non-Invasive Pretty Printing of R Code, Version: 1.10.3}
-- {Package: SummarizedExperiment, Title: SummarizedExperiment container, Version: 1.32.0}
+- {Package: SummarizedExperiment, Title: SummarizedExperiment container, Version: 1.34.0}
 - {Package: survey, Title: Analysis of Complex Survey Samples, Version: 4.4-2}
-- {Package: survival, Title: Survival Analysis, Version: 3.5-8}
+- {Package: survival, Title: Survival Analysis, Version: 3.6-4}
 - {Package: survminer, Title: Drawing Survival Curves using 'ggplot2', Version: 0.4.9}
 - {Package: survMisc, Title: Miscellaneous Functions for Survival Data, Version: 0.5.6}
 - {Package: sva, Title: Surrogate Variable Analysis, Version: 3.50.0}
@@ -1164,11 +1159,11 @@ packages:
 - {Package: systemfonts, Title: System Native Font Finding, Version: 1.0.6}
 - {Package: systemPipeR, Title: 'systemPipeR: workflow management and report generation
     environment', Version: 2.8.0}
-- {Package: tcltk, Title: Tcl/Tk Interface, Version: 4.3.3}
+- {Package: tcltk, Title: Tcl/Tk Interface, Version: 4.4.0}
 - {Package: tensor, Title: Tensor product of arrays, Version: '1.5'}
 - {Package: tensorA, Title: Advanced Tensor Arithmetic with Named Indices, Version: 0.36.2.1}
 - {Package: terra, Title: Spatial Data Analysis, Version: 1.7-71}
-- {Package: testthat, Title: Unit Testing for R, Version: 3.2.1}
+- {Package: testthat, Title: Unit Testing for R, Version: 3.2.1.1}
 - {Package: textshaping, Title: Bindings to the 'HarfBuzz' and 'Fribidi' Libraries
     for Text Shaping, Version: 0.3.7}
 - {Package: TFBSTools, Title: Software Package for Transcription Factor Binding Site
@@ -1181,6 +1176,7 @@ packages:
 - {Package: threejs, Title: 'Interactive 3D Scatter Plots, Networks and Globes', Version: 0.3.3}
 - {Package: tibble, Title: Simple Data Frames, Version: 3.2.1}
 - {Package: tidybayes, Title: Tidy Data and 'Geoms' for Bayesian Models, Version: 3.0.6}
+- {Package: tidycmprsk, Title: Competing Risks Estimation, Version: 1.0.0}
 - {Package: tidygraph, Title: A Tidy API for Graph Manipulation, Version: 1.3.1}
 - {Package: tidymodels, Title: Easily Install and Load the 'Tidymodels' Packages,
   Version: 1.2.0}
@@ -1193,7 +1189,7 @@ packages:
 - {Package: timechange, Title: Efficient Manipulation of Date-Times, Version: 0.3.0}
 - {Package: timeDate, Title: Rmetrics - Chronological and Calendar Objects, Version: '4032.109'}
 - {Package: tinytex, Title: 'Helper Functions to Install and Maintain TeX Live, and
-    Compile LaTeX Documents', Version: '0.50'}
+    Compile LaTeX Documents', Version: '0.51'}
 - {Package: tippy, Title: Add Tooltips to 'R markdown' Documents or 'Shiny' Apps,
   Version: 0.1.0}
 - {Package: tmap, Title: Thematic Maps, Version: 3.3-4}
@@ -1201,7 +1197,7 @@ packages:
 - {Package: TMB, Title: 'Template Model Builder: A General Random Effect Tool Inspired
     by ''ADMB''', Version: 1.9.11}
 - {Package: tmvnsim, Title: Truncated Multivariate Normal Simulation, Version: 1.0-2}
-- {Package: tools, Title: Tools for Package Development, Version: 4.3.3}
+- {Package: tools, Title: Tools for Package Development, Version: 4.4.0}
 - {Package: topGO, Title: Enrichment Analysis for Gene Ontology, Version: 2.54.0}
 - {Package: torch, Title: Tensors and Neural Networks with 'GPU' Acceleration, Version: 0.12.0}
 - {Package: treeio, Title: Base Classes and Functions for Phylogenetic Tree Input
@@ -1209,7 +1205,7 @@ packages:
 - {Package: triebeard, Title: '''Radix'' Trees in ''Rcpp''', Version: 0.4.1}
 - {Package: truncnorm, Title: Truncated Normal Distribution, Version: 1.0-9}
 - {Package: TSP, Title: Traveling Salesperson Problem (TSP), Version: 1.2-4}
-- {Package: tune, Title: Tidy Tuning Tools, Version: 1.2.0}
+- {Package: tune, Title: Tidy Tuning Tools, Version: 1.2.1}
 - {Package: twang, Title: Toolkit for Weighting and Analysis of Nonequivalent Groups,
   Version: '2.6'}
 - {Package: tweenr, Title: Interpolate Data for Smooth Animations, Version: 2.0.3}
@@ -1228,6 +1224,8 @@ packages:
 - {Package: tzdb, Title: Time Zone Database Information, Version: 0.4.0}
 - {Package: ucminf, Title: General-Purpose Unconstrained Non-Linear Optimization,
   Version: 1.2.1}
+- {Package: UCSC.utils, Title: Low-level utilities to retrieve data from the UCSC
+    Genome Browser, Version: 1.0.0}
 - {Package: UCSCXenaTools, Title: Download and Explore Datasets from UCSC Xena Data
     Hubs, Version: 1.4.8}
 - {Package: umap, Title: Uniform Manifold Approximation and Projection, Version: 0.2.10.0}
@@ -1240,10 +1238,10 @@ packages:
 - {Package: useful, Title: 'A Collection of Handy, Useful Functions', Version: 1.2.6.1}
 - {Package: usethis, Title: Automate Package and Project Setup, Version: 2.2.3}
 - {Package: utf8, Title: Unicode Text Processing, Version: 1.2.4}
-- {Package: utils, Title: The R Utils Package, Version: 4.3.3}
+- {Package: utils, Title: The R Utils Package, Version: 4.4.0}
 - {Package: uuid, Title: Tools for Generating and Handling of UUIDs, Version: 1.2-0}
 - {Package: uwot, Title: The Uniform Manifold Approximation and Projection (UMAP)
-    Method for Dimensionality Reduction, Version: 0.1.16}
+    Method for Dimensionality Reduction, Version: 0.2.2}
 - {Package: V8, Title: Embedded JavaScript and WebAssembly Engine for R, Version: 4.4.2}
 - {Package: variables, Title: Variable Descriptions, Version: 1.1-1}
 - {Package: variancePartition, Title: Quantify and interpret drivers of variation
@@ -1289,18 +1287,18 @@ packages:
 - {Package: XML, Title: Tools for Parsing and Generating XML Within R and S-Plus,
   Version: 3.99-0.16.1}
 - {Package: xml2, Title: Parse XML, Version: 1.3.6}
-- {Package: xopen, Title: 'Open System Files, ''URLs'', Anything', Version: 1.0.0}
+- {Package: xopen, Title: 'Open System Files, ''URLs'', Anything', Version: 1.0.1}
 - {Package: xtable, Title: Export Tables to LaTeX or HTML, Version: 1.8-4}
 - {Package: xts, Title: eXtensible Time Series, Version: 0.13.2}
 - {Package: XVector, Title: Foundation of external vector representation and manipulation
-    in Bioconductor, Version: 0.42.0}
+    in Bioconductor, Version: 0.44.0}
 - {Package: yaml, Title: Methods to Convert R Data to YAML and Back, Version: 2.3.8}
 - {Package: yardstick, Title: Tidy Characterizations of Model Performance, Version: 1.3.1}
 - {Package: yulab.utils, Title: Supporting Functions for Packages Maintained by 'YuLab-SMU',
   Version: 0.1.4}
 - {Package: zip, Title: Cross-Platform 'zip' Compression, Version: 2.3.1}
-- {Package: zlibbioc, Title: An R packaged zlib-1.2.5, Version: 1.48.2}
+- {Package: zlibbioc, Title: An R packaged zlib-1.2.5, Version: 1.50.0}
 - {Package: zoo, Title: S3 Infrastructure for Regular and Irregular Time Series (Z's
     Ordered Observations), Version: 1.8-12}
-version: R version 4.3.3 (2024-02-29)
+version: R version 4.4.0 (2024-04-24)
 
