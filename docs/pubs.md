@@ -10,6 +10,10 @@ All you have to do is include the following statement in your publication:
 
 ## 2024
 
+**[Structural basis for selectivity and antagonism in extracellular GPCR-nanobodies](https://doi.org/10.1038/s41467-024-49000-x)**  
+Schlimgen RR, Peterson FC, Heukers R, Smit MJ, McCorvy JD, Volkman BF
+{:.author}
+
 **[Bhlhe40 Promotes CD4+ T Helper 1 Cell and Suppresses T Follicular Helper Cell Differentiation during Viral Infection](https://doi.org/10.4049/jimmunol.2300355)**  
 Nguyen C, Kudek M, Zander R, Niu H, Shen J, Bauer A, Alson D, Khatun A, Chen Y, Sun J, Drobyski W, Edelson BT, Cui W
 {: .author}
