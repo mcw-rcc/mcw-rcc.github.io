@@ -55,4 +55,4 @@ IGV should open in a new window on your desktop.
 
 ## SSH Keys
 
-Please see the MobaXterm section in the [SSH keys guide](ssh-keys.md#mobaxterm-cli).
+Please see the MobaXterm section in the [SSH keys guide](ssh-keys.md#mobaxterm-cli){:target="_blank"}.

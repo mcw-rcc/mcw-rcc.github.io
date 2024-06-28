@@ -33,7 +33,7 @@ Memory Efficiency: 0.00% of 30.00 GB (30.00 GB/node)
 
 ### Accessing Compute Node
 
-You may want to access the compute that is running your job to see further information in real-time. Direct compute node access via SSH is prohibited. If you need to access a compute node command-line during your job, you should run the job interactively. Please see [interactive jobs](running-jobs.md#submit-an-interactive-job) for details.
+You may want to access the compute that is running your job to see further information in real-time. Direct compute node access via SSH is prohibited. If you need to access a compute node command-line during your job, you should run the job interactively. Please see [interactive jobs](running-jobs.md#submit-an-interactive-job){:target="_blank"} for details.
 
 While direct SSH to a compute node is prohibited, there are other ways to pull real-time diagnostics from the compute node(s) that are running your job. For instance, you can run an additional command within an already running job with the `srun` command.
 
@@ -67,4 +67,4 @@ Passing inline commands to `srun` is limited. However, you can pass a script to 
 
 XDMoD collects job accounting data and node level metrics during all cluster jobs. This data can be used for troubleshooting in the event of a crashed job.
 
-Please see the [XDMoD guide](xdmod.md) for more info.
+Please see the [XDMoD guide](xdmod.md){:target="_blank"} for more info.

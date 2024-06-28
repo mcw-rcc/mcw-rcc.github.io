@@ -22,7 +22,7 @@ Storage availability is not guaranteed. Requests for subscription greater than 5
 
 ## Sign-up & Payment
 
-A RCC account is required for RGS. If you do not already have an RCC account, [submit a request](https://forms.office.com/r/98QNm6cAyt). RCC will then process your account and provision the storage. If you are not a PI, your PI must also have an RCC account.
+A RCC account is required for RGS. If you do not already have an RCC account, [submit a request](https://forms.office.com/r/98QNm6cAyt){:target="_blank"}. RCC will then process your account and provision the storage. If you are not a PI, your PI must also have an RCC account.
 
 Payment can be made through the MCW-IS service desk website using the following guide.
 

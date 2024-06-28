@@ -45,7 +45,7 @@ We recommend to install python packages in virtual environments or conda environ
 
 Conda is a package management system that quickly installs many useful packages and their dependencies. We use a lightweight version called Miniconda. It is mainly used for Python virtual environments, but includes many more packages including open-source research software and dependencies.
 
-For more information, see [Conda Docs](https://conda.io/projects/conda/en/stable/index.html).
+For more information, see [Conda Docs](https://conda.io/projects/conda/en/stable/index.html){:target="_blank"}.
 
 !!! warning "Installing your own Conda"
     If you install your own Conda, this will often modify your `.bashrc` file. This will cause your base Conda env to load every time you login. This is very useful if you're working on your own Linux machine. But it is very un-useful on a cluster, where we also use modulefiles to load software. In fact, your Conda installation can cause your jobs to fail in many instances. If you would like to use Conda, then please use the centrally installed Miniconda3. If you must use your own Conda, please turn off the auto activate with `conda config --set auto_activate_base false`. You can then manually activate your Conda with `source /path/to/my/conda/etc/profile.d/conda.sh && conda activate`.
@@ -77,7 +77,7 @@ conda install numpy
 
 ### Python Virtual Environment
 
-A Python virtual environment is an independent set of Python packages contained in a directory. To create an environment, we use the `venv` Python module. Within an environment, we use standard package installation methods. With Python virtual environments, everything is self-contained, reproducible, and easy to manage. For more information on Python virtual environments, see the [venv guide](https://docs.python.org/3/library/venv.html).
+A Python virtual environment is an independent set of Python packages contained in a directory. To create an environment, we use the `venv` Python module. Within an environment, we use standard package installation methods. With Python virtual environments, everything is self-contained, reproducible, and easy to manage. For more information on Python virtual environments, see the [venv guide](https://docs.python.org/3/library/venv.html){:target="_blank"}.
 
 To get started, load Python:
 
@@ -124,7 +124,7 @@ The Python virtual environment (e.g., **pythonEnvSysPkgs**) now includes all pac
 
 ## Python in a Job Script
 
-You may want to use your personal Python environment in a SLURM job on the cluster. Please review the [Writing a Job Script](../user-guide/jobs/running-jobs.md#writing-a-job-script) guide before proceeding. The following examples show various methods to use your personal Python environment.
+You may want to use your personal Python environment in a SLURM job on the cluster. Please review the [Writing a Job Script](../user-guide/jobs/running-jobs.md#writing-a-job-script){:target="_blank"} guide before proceeding. The following examples show various methods to use your personal Python environment.
 
 <!-- markdownlint-disable MD046 -->
 === "py-venv.slurm"

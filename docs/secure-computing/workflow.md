@@ -6,7 +6,7 @@ Here we discuss running jobs, unique workflow features for ResHPC, and reference
 
 ## Submitting Jobs
 
-Job submission and management uses the same commands and syntax as the HPC cluster. For details on submitting and managing SLURM jobs, please see [Submitting SLURM Jobs](../user-guide/jobs/running-jobs.md).
+Job submission and management uses the same commands and syntax as the HPC cluster. For details on submitting and managing SLURM jobs, please see [Submitting SLURM Jobs](../user-guide/jobs/running-jobs.md){:target="_blank"}.
 
 ## Encrypting Restricted Data
 

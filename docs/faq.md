@@ -3,14 +3,14 @@
 ## Access & Login
 
 ??? question "How do I get an account?"
-    Submit an [Account Request](https://forms.office.com/r/98QNm6cAyt){:target="_blank"} form.
+    Please go to the [Account Request page](https://docs.rcc.mcw.edu/user-guide/accounts/){:target="_blank"} and click "Request an Accout". Fill in the form and we will process your request. We will inform you once your account has been created or if we need further information.
 ??? question "How do I login?"
-    The method you use to login depends on your computer and use case. We suggest you start with the [quickstart guide](user-guide/quickstart.md#logging-in).
+    The method you use to login depends on your computer and use case. We suggest you start with the [quickstart guide](user-guide/quickstart.md#logging-in){:target="_blank"}.
 
 ??? question "Why can't I login?"
     * You might not have an account.
 
-    * You aren't using your MCW email username and password to login.
+    * You aren't using your MCW NetID and password to login. Remember that if you are a student, your NetID might be different to your email login.
 
     * You followed a guide and are using the word ''NetID'' as your username.
 
@@ -26,7 +26,7 @@
     * Non-PIs should contact {{ support_email }} with your username, the PI's username, and the username of the new student.
 
 ??? question "How do I reset my password?"
-    RCC uses the same credentials as MCW's other services. If you need to reset your password, use the [Self Service Password Reset](https://infoscope.mcw.edu/is/services/sspr.htm).
+    RCC uses the same credentials as MCW's other services. If you need to reset your password, use the [Self Service Password Reset](https://infoscope.mcw.edu/is/services/sspr.htm){:target="_blank"}.
 
 ## Job Management
 
@@ -38,20 +38,30 @@
     Submitted batch job 6782
     ```
 
+    For more information about how to write and submit jobs to the cluster, visit the [Running Jobs documentation](https://docs.rcc.mcw.edu/user-guide/jobs/running-jobs/){:target="_blank"}.
+
 ??? question "How do I run an interactive job on the cluster?"
-    You can start an interactive job on the HPC cluster using the SLURM `srun` command.
+    You can start an interactive job on the HPC cluster using the SLURM `srun` command. The arguments are the same that you would use in the heather of a script that you would submit as a job. Make sure to add `--pty bash` at the end. To stop the interactive job, use the `exit` command.
 
     ```bash
     $ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --pty bash
     ```
 
 ??? question "How do I check the status of my job?"
-    You can find the current status of your job with the `squeue` command.
+    You can find the current status of your job with the `squeue` command followed by `-j` and the jobID. If you want to find the current status of all the jobs that you are currently running, use `-u` instead followed by your username.
 
     ```bash
     $ squeue -j 6696
                 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                     1234    normal Testing user  R      37:09      1 cn59
+    ```
+
+    ```bash
+    $ squeue -u user
+                JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+                    1234    normal Testing1 user  R      37:09      1 cn59
+                    5678    normal Testing2 user  R      42:01      1 cn58
+                    9123    normal Testing3 user  R      25:19      1 cn57
     ```
 
 ??? question "How can I see the status of the HPC cluster?"
@@ -69,14 +79,14 @@
 ??? question "Why is my job not running?"
     There are several reasons that your job might not be running.
 
-    * First, the cluster could be busy and your job might be waiting for resources to become available. The cluster is a shared resource and some wait time, while often short or non-existent, can be expected.
+    * First, the cluster could be busy and your job might be waiting for resources to become available. The cluster is a shared resource and some wait time, while often short or non-existent, can be expected. 
 
-    * Your job might be requesting resources that don't exist. Check the output of <nobr>`squeue -j JobID`</nobr>, where ***JobID*** is your SLURM job number. In the final column '''Nodelist (Reason)''' you might see '''PD''' followed by a reason. This could indicate that your job is temporarily waiting for resources (see above) or is blocked.
+    * Your job might be requesting resources that are not currently available. Check the output of <nobr>`squeue -j JobID`</nobr>, where **JobID** is your SLURM job number. In the output, check the final column '''Nodelist (Reason)'''. You might see '''PD''' followed by a reason why the job is not running. This could indicate that your job is temporarily waiting for resources (see above) or is blocked. The more resources that you request, the higher chance that your job might sit in queue waiting for those resources to become available. Try to limit the amount of resources you request to only the ones you really need.
 
-    * Your job might be blocked by a maintenance window. For details see [Job Scheduling and Maintenance](user-guide/jobs/running-jobs.md#job-scheduling-and-maintenance).
+    * Your job might be blocked by a maintenance window. For details see [Job Scheduling and Maintenance](user-guide/jobs/running-jobs.md#job-scheduling-and-maintenance){:target="_blank"}.
 
 ??? question "Can I run a task/script on a login node?"
-    Yes, but you should make sure you know exactly how many cores and memory the task will use. Additionally, you should make sure this task will not run for more than **30 min**. Examples of allowed tasks might be a pre- or post- processing task for your input/output files. This might also include compiling or installing software. In general, please try to run all computationally intensive tasks on on the cluster compute nodes. For details see the [User Etiquette Guide](user-guide/etiquette.md).
+    Yes, but you should make sure you know exactly how many cores and memory the task will use. Additionally, you should make sure this task will not run for more than **30 min**. Examples of allowed tasks might be a pre- or post- processing task for your input/output files. This might also include compiling or installing software. In general, please try to run all computationally intensive tasks on on the cluster compute nodes. For details see the [User Etiquette Guide](user-guide/etiquette.md){:target="_blank"}.
 
 ??? question "Can I have root or sudo access on a compute node?"
     No. RCC does not allow root and/or sudo access on any system.
@@ -87,7 +97,7 @@
 ## Software
 
 ??? question "What software is available on the HPC cluster?"
-    You can list all available software on the cluster with the `module avail` command. See the [cluster software guide](software/modules.md) for details.
+    You can list all available software on the cluster with the `module avail` command. See the [cluster software guide](software/modules.md){:target="_blank"} for details.
 
 ??? question "Can I install my own software?"
     Yes, you may install your own software. The process will vary depending on the type of software. Please contact {{ support_email }} if you need assistance.
@@ -96,13 +106,17 @@
     You may request to have RCC install your software on the cluster. RCC will make a best effort but cannot guarantee that your software will run on the cluster. Please send software installation requests to {{ support_email }}.
 
 ??? question "How do I install an R package?"
-    You can install your own R packages. See the [R guide](software/R.md) for details. Please also that RCC has centrally installed many packages that are either commonly used, or difficult to install. We suggest to check first if your package is already installed. Please contact {{ support_email }} for assistance or to have RCC install the package for you.
+    You can install your own R packages. See the [R guide](software/R.md){:target="_blank"} for details. Please note that RCC has centrally installed many packages that are either commonly used, or difficult to install. We suggest to check first if your package is already installed. Please contact {{ support_email }} for assistance or to have RCC install the package for you.
 
 ??? question "How do I install a Python package?"
-    You can install your own Python packages using the system Python, a local Python, a virtual environment, or a conda environment. See the [Python guide](software/python.md) for details. Please also that RCC has centrally installed many packages that are either commonly used, or difficult to install. We suggest to check first if your package is already installed. Please contact {{ support_email }} for assistance or to have RCC install the package for you.
+    You can install your own Python packages using the system Python, a local Python, a virtual environment, or a conda environment. See the [Python guide](software/python.md){:target="_blank"} for details. Please note that RCC has centrally installed many packages that are either commonly used, or difficult to install. We suggest to check first if your package is already installed. Please contact {{ support_email }} for assistance or to have RCC install the package for you.
 
 ??? question "Can I use Docker on the cluster?"
-    No. Docker is not installed or allowed on RCC systems due to security. However, RCC does provide a container solution called [Singularity](software/containers.md), which can import Docker containers to run on the cluster.
+    No. Docker is not installed or allowed on RCC systems due to security. However, RCC does provide a container solution called [Singularity](software/containers.md){:target="_blank"}, which can import Docker containers to run on the cluster. You can also build a singularity image from a docker tar file:
+
+    ```bash
+    $ singularity build my_container.sif docker-archive://dockername.tar
+    ```
 
 ## Data Transfer & Storage
 
@@ -122,19 +136,19 @@
     Your computer reports storage utilization in **base-2 math** and the storage system quotas use **base-10 math**. So, if your quota is 1TB, the `mydisks` command will show 932GB. *Please note that this is a difference in mathematical representation of the same value.* While the `mydisks` command shows less space, you are still able to use your full quota.
 
 ??? question "What types of storage are available?"
-    RCC offers multiple types of storage to all users. Each storage type has a unique path on the cluster, and a unique use-case. Some storage is meant only for use with the cluster, while other storage like [Research Group Storage](storage/paid-storage.md) can be used as generalized Windows storage. Please see the [Storage Overview](storage/rcc-storage.md) for details.
+    RCC offers multiple types of storage to all users. Each storage type has a unique path on the cluster, and a unique use-case. Some storage is meant only for use with the cluster, while other storage like [Research Group Storage](storage/paid-storage.md){:target="_blank"} can be used as generalized Windows storage. Please see the [Storage Overview](storage/rcc-storage.md){:target="_blank"} for details.
 
 ??? question "Can I increase my storage limits?"
-    Your home directory limit cannot be increased. You scratch directory limit may be increase upon request but this is subject to availability. Your `/group` Research Group Storage directory may be increased by [purchasing additional space](storage/paid-storage.md).
+    Your home directory limit cannot be increased. You scratch directory limit may be increase upon request but this is subject to availability. Your `/group` Research Group Storage directory may be increased by [purchasing additional space](storage/paid-storage.md){:target="_blank"}.
 
 ??? question "Why is `/group` not available on HPC cluster compute nodes?"
-    The file system that contains `/group` is not designed for performance computing. In order to preserve every user's experience with `/group`, it is not available on compute nodes. You should follow the [scratch directory procedures](user-guide/quickstart.md#using-storage-with-jobs) to make sure your data is available to your cluster job.
+    The file system that contains `/group` is not designed for performance computing. In order to preserve every user's experience with `/group`, it is not available on compute nodes. You should follow the [scratch directory procedures](user-guide/quickstart.md#using-storage-with-jobs){:target="_blank"} to make sure your data is available to your cluster job.
 
 ??? question "Can I mount my own storage to the cluster?"
     No. RCC provides storage that is mounted to the cluster. This storage is specifically designed to work within the cluster network and meets performance requirements.
 
 ??? question "Where can I store reference data?"
-    Reference data will be stored at `/hpc/refdata` upon request. Please see [Reference Data](storage/ref-data.md) for more information.
+    Reference data will be stored at `/hpc/refdata` upon request. Please see [Reference Data](storage/ref-data.md){:target="_blank"} for more information.
 
 ??? question "How do I use my group storage for collaboration outside my lab?"
     Your lab group storage can be used to collaborate with non-lab members. This is done with by-request project directories. For example, if lab `pi` would like to collaborate with some data for a project called `zephyr`, then the lab PI would contact RCC to create a project directory.
@@ -153,21 +167,21 @@
 
     * Open Windows File Explorer and right-click on the drive, then select Disconnect.
 
-    * Remount the storage using this guide <https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d>. In step #4, make sure to select `Connect using different credentials` during that process. If you are on a non-MCW managed computer, please enter your MCW username with the "MCWCORP\" domain prefix (example MCWCORP\jsmith).
+    * Remount the storage using this [guide](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d){:target="_blank"}. In step #4, make sure to select `Connect using different credentials` during that process. If you are on a non-MCW managed computer, please enter your MCW username with the "MCWCORP\" domain prefix (example MCWCORP\jsmith).
 
 ## Open OnDemand
 
 ??? question "Why does the Open OnDemand web page not load?"
-    Open OnDemand supports most modern browsers. However, there is no IE 11 support. To have the best experience using Open OnDemand, use the latest versions of Google Chrome, Mozilla Firefox or Microsoft Edge.
+    Open OnDemand supports most modern browsers. However, there is no IE 11 support. To have the best experience using Open OnDemand, use the latest versions of [Google Chrome](https://www.google.com/chrome/dr/download/?brand=AYYF&ds_kid=43700075934933114&gad_source=1&gclid=CjwKCAjwvvmzBhA2EiwAtHVrb0yYgJPqjqfBsmpPda0Mf4C-n8RbyHkYbbxCYbuvMwbpnxy0YJA1tBoC0Y0QAvD_BwE&gclsrc=aw.ds){:target="_blank"}, [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/){:target="_blank"} or [Microsoft Edge](https://www.microsoft.com/en-us/edge?ep=379&es=79&dlb=M022&form=MM1476&ef_id=_k_CjwKCAjwvvmzBhA2EiwAtHVrbxgyCIW6TIN1sWLG6w76yvtF_edw0IT_iOK-vDymC7_u5qEbjNs1ABoCOeoQAvD_BwE_k_&OCID=AIDcmmm6jz4jsn_SEM__k_CjwKCAjwvvmzBhA2EiwAtHVrbxgyCIW6TIN1sWLG6w76yvtF_edw0IT_iOK-vDymC7_u5qEbjNs1ABoCOeoQAvD_BwE_k_&gad_source=1&gclid=CjwKCAjwvvmzBhA2EiwAtHVrbxgyCIW6TIN1sWLG6w76yvtF_edw0IT_iOK-vDymC7_u5qEbjNs1ABoCOeoQAvD_BwE){:target="_blank"}.
 
 ??? question "How do I use RStudio on the cluster?"
-    Open OnDemand has a built-in RStudio app. You can use this to get a RStudio session on a compute node that you can access via your web browser. See the [RStudio on Open OnDemand guide](user-guide/access/ondemand.md#rstudio) for details.
+    Open OnDemand has a built-in RStudio app. You can use this to get a RStudio session on a compute node that you can access via your web browser. See the [RStudio on Open OnDemand guide](user-guide/access/ondemand.md#rstudio){:target="_blank"} for details.
 
 ??? question "How do I get a Jupyter Notebook on the cluster?"
-    Open OnDemand has a built-in Jupyter Notebook app. You can use this to get a Jupyter Notebook on a compute node that you can access via your web browser. See the [Jupyter on Open OnDemand guide](user-guide/access/ondemand.md#jupyter-notebooks) for details.
+    Open OnDemand has a built-in Jupyter Notebook app. You can use this to get a Jupyter Notebook on a compute node that you can access via your web browser. See the [Jupyter on Open OnDemand guide](user-guide/access/ondemand.md#jupyter-notebooks){:target="_blank"} for details.
 
 ??? question "Can I get a virtual desktop on the cluster?"
-    Yes, [Open OnDemand](https://ondemand.rcc.mcw.edu) does have a virtual desktop app built-in. However, since the cluster compute nodes are not designed or built for desktop use, functionality may be limited.
+    Yes, [Open OnDemand](https://ondemand.rcc.mcw.edu){:target="_blank"} does have a virtual desktop app built-in. However, since the cluster compute nodes are not designed or built for desktop use, functionality may be limited.
 
 ## About RCC
 
@@ -184,6 +198,6 @@
     Check out the list of publications to see how Research Computing is enabling science at MCW. The list of publications is updated periodically. Please contact {{ support_email }} to add your publication.
 
 ??? question "Where can I find RCC information for my grant submission?"
-    RCC provides boilerplate language for all current systems including cluster, storage, network, staffing, etc. See [Grant Assistance](grants.md) for details. Please note that RCC will also provide a letter of support upon request.
+    RCC provides boilerplate language for all current systems including cluster, storage, network, staffing, etc. See [Grant Assistance](grants.md){:target="_blank"} for details. Please note that RCC will also provide a letter of support upon request.
 
 --8<-- "includes/abbreviations.md"

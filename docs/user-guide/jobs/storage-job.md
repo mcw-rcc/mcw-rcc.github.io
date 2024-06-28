@@ -1,6 +1,6 @@
 # Using Data in a Job
 
-You will find storage paths that are common on all cluster compute nodes. These include `/tmp` and `/scratch`, which can be used for job files. If you would like more detail about Research Computing storage, please see the [storage guide](../../storage/rcc-storage.md).
+You will find storage paths that are common on all cluster compute nodes. These include `/tmp` and `/scratch`, which can be used for job files. If you would like more detail about Research Computing storage, please see the [storage guide](../../storage/rcc-storage.md){:target="_blank"}.
 
 ## Workflow
 

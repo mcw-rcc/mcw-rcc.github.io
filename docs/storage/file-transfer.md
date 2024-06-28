@@ -1,10 +1,10 @@
 # File Transfer
 
-Several methods are available for transferring data to/from the HPC Cluster. These include [Open OnDemand](../user-guide/access/ondemand.md), command-line, and desktop client software. RCC recommends Open OnDemand for all users, especially for remote work.
+Several methods are available for transferring data to/from the HPC Cluster. These include [Open OnDemand](../user-guide/access/ondemand.md){:target="_blank"}, command-line, and desktop client software. RCC recommends Open OnDemand for all users, especially for remote work.
 
 ## Open OnDemand
 
-Open OnDemand is a web portal for using HPC and includes a file management app. For more information, see [Open OnDemand Files App](../user-guide/access/ondemand.md#file-management).
+Open OnDemand is a web portal for using HPC and includes a file management app. For more information, see [Open OnDemand Files App](../user-guide/access/ondemand.md#file-management){:target="_blank"}.
 
 ## Command-line
 
@@ -70,9 +70,9 @@ rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/
 
 Several software packages are available for data transfer using the secure file transfer protocol (SFTP).
 
-- [CoreFTP](https://servicedesk.mcw.edu/) is recommended and licensed by MCW-IS. Use the link to login and search for CoreFTP in the Software section.
-- [MobaXterm](../user-guide/access/mobaxterm.md#file-transfer) has a built-in SFTP client.
-- [WinSCP](https://winscp.net/eng/index.php) is a popular SFTP client for Windows.
-- [Cyberduck](https://cyberduck.io/) is a secure data transfer client available for Windows and Mac OS X users.
+- [CoreFTP](https://servicedesk.mcw.edu/){:target="_blank"} is recommended and licensed by MCW-IS. Use the link to login and search for CoreFTP in the Software section.
+- [MobaXterm](../user-guide/access/mobaxterm.md#file-transfer){:target="_blank"} has a built-in SFTP client.
+- [WinSCP](https://winscp.net/eng/index.php){:target="_blank"} is a popular SFTP client for Windows.
+- [Cyberduck](https://cyberduck.io/){:target="_blank"} is a secure data transfer client available for Windows and Mac OS X users.
 
 --8<-- "includes/abbreviations.md"

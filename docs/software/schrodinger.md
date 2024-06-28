@@ -3,7 +3,7 @@
 !!! info "Schrodinger is licensed by the Department of Biochemistry and available to all MCW investigators."
     Users interested in contributing funds or discussing Schrodinger licensing at MCW should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
 
-The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite) includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
+The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite){:target="_blank"} includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ The [Schrodinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.co
     !!! warning "Known issue"
         The 2024-1 Remote Login Configuration tool may error due to missing files. This is a known issue. To work around this issue, launch the `Schrodinger Command Prompt` and run command `run SchrodingerPlinkWizard`. Contact {{ support_email }} with questions.
 : **Mac**  
-    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html).
+    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}.
 
 6. Launch the Maestro application.
 
@@ -70,7 +70,7 @@ You can also submit jobs directly from the cluster command line. This is helpful
 
 ## Schrodinger Utility Scripts
 
-Schrodinger includes additional utility scripts that are not included in the Maestro interface and must be run directly within a job script. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) for a complete list and details.
+Schrodinger includes additional utility scripts that are not included in the Maestro interface and must be run directly within a job script. See [Schrodinger scripts](https://www.schrodinger.com/scriptcenter){:target="_blank"} for a complete list and details.
 
 !!! info "Why are utility scripts submitted via job script?"
     These utility scripts do not have the advanced job submission options that the Schrodinger apps (Desmond, Epik, etc.) include. Therefore, we have to write a separate SLURM job script for submission.
@@ -82,7 +82,7 @@ To see the options for a particular script on the cluster:
 /hpc/apps/schrodinger/2024-1/run entropy_calc.py -h
 ```
 
-Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter) page **Requires** column.
+Some scripts are dependent on a specific Schrodinger app. Check the [Schrodinger scripts](https://www.schrodinger.com/scriptcenter){:target="_blank"} page **Requires** column.
 
 ```bash
 # run a script requiring the Desmond app
