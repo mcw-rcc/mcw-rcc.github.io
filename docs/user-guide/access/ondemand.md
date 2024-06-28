@@ -4,7 +4,7 @@
 
 ## Documentation
 
-This documentation is specific for RCC's Open OnDemand instance. Open OnDemand was created by the [Ohio Supercomputer Center](https://www.osc.edu/), which provides [full documentation](https://osc.github.io/ood-documentation/latest/).
+This documentation is specific for RCC's Open OnDemand instance. Open OnDemand was created by the [Ohio Supercomputer Center](https://www.osc.edu/){:target="_blank"}, which provides [full documentation](https://osc.github.io/ood-documentation/latest/){:target="_blank"}.
 
 ## Connecting to Open OnDemand
 
@@ -19,7 +19,7 @@ After login, the *Dashboard* will appear. The menu includes apps to manage files
 
 ### Off Campus
 
-Open OnDemand is available for remote work through Citrix. Please see the [remote access guide](remote-access.md) for details.
+Open OnDemand is available for remote work through Citrix. Please see the [remote access guide](remote-access.md){:target="_blank"} for details.
 
 To access Open OnDemand, point your Citrix web browser to <https://ondemand.rcc.mcw.edu>.
 
@@ -54,7 +54,7 @@ Each file and folder will have additional options. Select the `⋮` dropdown men
 
 ### Upload a File
 
-To upload a file, select the **Upload** button. Then use the file selector to choose a file to upload. Please note that this only works for individual files. If you need to upload a folder, see [Upload a Folder](#upload-a-folder).
+To upload a file, select the **Upload** button. Then use the file selector to choose a file to upload. Please note that this only works for individual files. If you need to upload a folder, see [Upload a Folder](#upload-a-folder){:target="_blank"}.
 
 ### Upload a Folder
 
@@ -72,7 +72,7 @@ Jobs can be created, submitted, and monitored via the Jobs Menu. This is an alte
 
 From the **Dashboard** menu, select **Jobs > Job Composer** which will open in a new window. The **Job Composer** app has two tabs: **Jobs** and **Templates** The **Jobs** tab contains a list of all jobs previously submitted through Open OnDemand. The **Templates** tab allows you to create your own job templates.
 
-Jobs can be created from previous jobs or job templates. See [OSC's Job Management Guide](https://www.osc.edu/resources/online_portals/ondemand/job_management) for more information.
+Jobs can be created from previous jobs or job templates. See [OSC's Job Management Guide](https://www.osc.edu/resources/online_portals/ondemand/job_management){:target="_blank"} for more information.
 
 ### Create a New Job
 
@@ -82,7 +82,7 @@ In the **Job Composer** app, select the **Jobs** tab. To create a new job script
 
 The default job template creates a new generic job script. You'll need to edit this job script so that it contains the workflow you'll submit to the cluster. To edit a job script, click the **Open Editor** button at the lower right.
 
-This will open a job editor in a new tab. You should write your job script following the normal SLURM job syntax. For information on writing SLURM job scripts, see the [Job Script Guide](../jobs/running-jobs.md#writing-a-job-script). After editing the job script, save the script and close the editor window.
+This will open a job editor in a new tab. You should write your job script following the normal SLURM job syntax. For information on writing SLURM job scripts, see the [Job Script Guide](../jobs/running-jobs.md#writing-a-job-script){:target="_blank"}. After editing the job script, save the script and close the editor window.
 
 #### Edit job options
 
@@ -105,7 +105,7 @@ Open OnDemand features several interactive applications that run on cluster node
 
 ### Jupyter Notebook Example
 
-Here we focus on the Jupyter Notebook app as a popular example, but there are many apps to choose from. Check the [full app list](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sessions) for details.
+Here we focus on the Jupyter Notebook app as a popular example, but there are many apps to choose from. Check the [full app list](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sessions){:target="_blank"} for details.
 
 To start a Jupyter Notebook on a cluster server:
 

@@ -17,7 +17,7 @@ The MATLAB Parallel Server software is an extension of the Parallel Computing To
 
 ### Download Plugin Files
 
-Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EUWQCfvxJS5Kve_51iYJMEUBkw3_o0a3v_Gm-I_FOy79OA?e=SaLY6k){:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save this folder to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
+Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EUWQCfvxJS5Kve_51iYJMEUBkw3_o0a3v_Gm-I_FOy79OA?e=SaLY6k){:target="_blank"}{:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save this folder to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
 
 ### Add Startup Script
 
@@ -60,11 +60,11 @@ RCC will periodically update the MATLAB Parallel Server software to the next B v
 
 ## Using the Cluster
 
-There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the Mathworks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html) and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html).
+There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the Mathworks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"}.
 
 ### Batch
 
-The **batch** command also creates a pool of workers in a job on the cluster. It creates a remote pool of workers on the cluster that can run your script when workers are available. In comparison to the [parpool option](#parpool) option, the **batch** command does not require that you wait for a pool of workers. Instead, your script is submitted to the cluster to be run in a batch pool when workers are available.
+The **batch** command also creates a pool of workers in a job on the cluster. It creates a remote pool of workers on the cluster that can run your script when workers are available. In comparison to the [parpool option](#parpool){:target="_blank"} option, the **batch** command does not require that you wait for a pool of workers. Instead, your script is submitted to the cluster to be run in a batch pool when workers are available.
 
 The **batch** command can be submitted as a pool job, where **N** is the number of workers.
 
@@ -86,11 +86,11 @@ Your batch jobs are submitted to the HPC cluster with **default max walltime of 
 A specific time limit can be added to any job. Max time is **7 days**. For example, a job with a 10 hour time limit would set **c.AdditionalProperties.AdditionalSubmitArgs = '--time=10:00:00';**.
 
 !!! info "Additional Information"
-    Please review the MathWorks [tutorial](https://www.mathworks.com/help/distcomp/run-a-batch-job.html) explaining batch parallel jobs.
+    Please review the MathWorks [tutorial](https://www.mathworks.com/help/distcomp/run-a-batch-job.html){:target="_blank"} explaining batch parallel jobs.
 
 ### Parpool
 
-The **parpool** command creates a pool of workers in a job on the cluster. It creates an interactive session using remote cluster nodes to run the pool of workers. The **parpool** command does require that enough workers are available on the cluster before the pool will start. If you do not need to run commands interactively, and/or have your code in a script, please try the [batch](#batch) example.
+The **parpool** command creates a pool of workers in a job on the cluster. It creates an interactive session using remote cluster nodes to run the pool of workers. The **parpool** command does require that enough workers are available on the cluster before the pool will start. If you do not need to run commands interactively, and/or have your code in a script, please try the [batch](#batch){:target="_blank"} example.
 
 The **parpool** command can be submitted with variable pool size, where **N** is the number of workers. Please try to use **parpool** sizes that are multiples of 12.
 
@@ -170,7 +170,7 @@ Please make sure to shutdown your parpool when you're done:
 
 ## File Transfer and Management
 
-The Matlab Parallel Computing Toolbox has multiple ways to handle file transfrer and access. For small files, the files can be auto-attached and transfer to the remote cluster at job submission. However, if your workflow requires large files, the transfer at job time becomes inconvenient. In this case, it is better to transfer files to the cluster before job submission, see [File Transfer](../storage/file-transfer.md). For more information about using data in Batch jobs, please see [Share Code with the Workers](https://www.mathworks.com/help/distcomp/share-code-with-the-workers.html).
+The Matlab Parallel Computing Toolbox has multiple ways to handle file transfrer and access. For small files, the files can be auto-attached and transfer to the remote cluster at job submission. However, if your workflow requires large files, the transfer at job time becomes inconvenient. In this case, it is better to transfer files to the cluster before job submission, see [File Transfer](../storage/file-transfer.md){:target="_blank"}. For more information about using data in Batch jobs, please see [Share Code with the Workers](https://www.mathworks.com/help/distcomp/share-code-with-the-workers.html){:target="_blank"}.
 
 ## Cluster Usage Policy
 
@@ -178,7 +178,7 @@ The HPC Cluster is a shared resource. Please only use whatever resources are nee
 
 ## Getting Help
 
-Review Mathwork's [Batch Processing](https://www.mathworks.com/help/distcomp/batch-processing.html) and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html) documentation.
+Review Mathwork's [Batch Processing](https://www.mathworks.com/help/distcomp/batch-processing.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"} documentation.
 
 If you have questions/concerns please contact {{ support_email }}
 

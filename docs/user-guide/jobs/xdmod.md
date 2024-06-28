@@ -23,7 +23,7 @@ You will be redirected to a login page. Enter your MCW credentials.
 
 ## User Guide
 
-Please see the [XDMoD User Guide](https://xdmod.rcc.mcw.edu/user_manual/) for details on site features and navigation.
+Please see the [XDMoD User Guide](https://xdmod.rcc.mcw.edu/user_manual/){:target="_blank"} for details on site features and navigation.
 
 ## Example Use - Troubleshooting a Job
 

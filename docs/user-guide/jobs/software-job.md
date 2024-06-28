@@ -14,4 +14,4 @@ ml load R/4.1.1
 Rscript ...
 ```
 
-Please see the [software modules guide](../../software/modules.md) for more detail.
+Please see the [software modules guide](../../software/modules.md){:target="_blank"} for more detail.

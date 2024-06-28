@@ -41,6 +41,6 @@ cd /scratch/g/pi_netid/pytorch-test && sbatch pytorch.sh
 
 This functionality is now provided by Open OnDemand!
 
-See [Jupyter on Open OnDemand](../user-guide/access/ondemand.md#jupyter-notebooks) for more info.
+See [Jupyter on Open OnDemand](../user-guide/access/ondemand.md#jupyter-notebooks){:target="_blank"} for more info.
 
 --8<-- "includes/abbreviations.md"

@@ -11,7 +11,7 @@ r_path_version: 4.4
 R uses a central package library that contains many common packages. The location of this library is `$R_HOME/library`. Users may also install their own packages locally. The default location for local package installation is `$HOME/R/x86_64-pc-linux-gnu-library/{{ r_path_version }}`.
 
 !!! warning "Check installed package list first!"
-    Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding. RCC provides an up-to-date [list of installed R packages](r-pkg-list.md) for the most recent version.
+    Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding. RCC provides an up-to-date [list of installed R packages](r-pkg-list.md){:target="_blank"} for the most recent version.
 
 ### User Package Install
 
@@ -49,7 +49,7 @@ to install packages into? (yes/No/cancel) yes
 Your package will be installed to your home directory. This package can be removed or updated using the standard R commands.
 
 !!! warning "Did you check the installed package list first?"
-    Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding. RCC provides an up-to-date [list of installed R packages](r-pkg-list.md) for the most recent version.
+    Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding. RCC provides an up-to-date [list of installed R packages](r-pkg-list.md){:target="_blank"} for the most recent version.
 
 ### Request Package Install
 

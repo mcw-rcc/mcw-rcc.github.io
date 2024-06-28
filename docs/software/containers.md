@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Singularity](https://sylabs.io/guides/3.7/user-guide/) is a container solution designed for high-performance computing systems. A Singularity container is a collection of application and dependency files, which is packaged as a single portable image file. Containers are independent from the host operating system, allowing applications that are not natively supported to run on a variety of HPC resources. They are conceptually similar to Docker, but focus more on HPC. Singularity containers can be shared and distributed to support reproducible research and can be run on most HPC systems without modification as long as Singularity is installed.
+[Singularity](https://sylabs.io/guides/3.7/user-guide/){:target="_blank"} is a container solution designed for high-performance computing systems. A Singularity container is a collection of application and dependency files, which is packaged as a single portable image file. Containers are independent from the host operating system, allowing applications that are not natively supported to run on a variety of HPC resources. They are conceptually similar to Docker, but focus more on HPC. Singularity containers can be shared and distributed to support reproducible research and can be run on most HPC systems without modification as long as Singularity is installed.
 
 ## Singularity Commands
 
@@ -50,7 +50,7 @@ CONTAINER USAGE OPTIONS:
     see singularity help <command>
 ```
 
-For more information see the [Singularity Quick Start](https://sylabs.io/guides/3.7/user-guide/quick_start.html#interact-with-images).
+For more information see the [Singularity Quick Start](https://sylabs.io/guides/3.7/user-guide/quick_start.html#interact-with-images){:target="_blank"}.
 
 ### Download Pre-built Containers
 
@@ -158,7 +158,7 @@ $ ./lolcow.sif
 
 ### Build a Container
 
-The primary function of the build command is to create new containers either from scratch or based on existing containers. It is also used to convert between container formats. Full documentation of the build command is available at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/build_a_container.html). Here we include an example definition file and build process for a Python container.
+The primary function of the build command is to create new containers either from scratch or based on existing containers. It is also used to convert between container formats. Full documentation of the build command is available at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/build_a_container.html){:target="_blank"}. Here we include an example definition file and build process for a Python container.
 
 #### Definition File
 
@@ -213,7 +213,7 @@ This container includes Python.
     /opt/python/bin/python --version
 ```
 
-Full documentation of definition files at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/definition_files.html).
+Full documentation of definition files at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/definition_files.html){:target="_blank"}.
 
 #### Build
 
@@ -325,7 +325,7 @@ mkdir -p /hpc /scratch
 
 Singularity is conceptually similar to Docker and easily supports Docker images. We've shown above that Singularity can be used to download and Singularity-ize Docker images. It can also be used to build containers starting from a Docker image base (RCC does this). This allows RCC to support a wide variety of software that is already containerized with Docker. If you can find a container on Docker Hub, chances are that it will be supported through Singularity. If you already use Docker to containerize your software, then you can continue developing in Docker knowing that Singularity will easily import your images.
 
-Full information on Singularity and Docker at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/).
+Full information on Singularity and Docker at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/){:target="_blank"}.
 
 ## Getting Help
 

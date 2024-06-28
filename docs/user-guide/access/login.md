@@ -1,26 +1,26 @@
 # Logging in
 
-Login is available via web browser app and traditional SSH connection. All logins require your MCW username and password. [Remote access](remote-access.md) via these methods is also available with the addition of MCW Citrix or VPN.
+Login is available via web browser app and traditional SSH connection. All logins require your MCW username and password. [Remote access](remote-access.md){:target="_blank"} via these methods is also available with the addition of MCW Citrix or VPN.
 
 ## Web Browser
 
 Open OnDemand is a web browser-based interface to RCC computing resources. You can manage files, submit and monitor jobs, and run pre-configured interactive apps such as Jupyter and RStudio. All of this is possible without logging in via a traditional SSH client.
 
-**This is the recommended login method for most users.** For more info, see [Open OnDemand](ondemand.md).
+**This is the recommended login method for most users.** For more info, see [Open OnDemand](ondemand.md){:target="_blank"}.
 
 ## SSH Connection
 
 ### Web-based
 
-[Open OnDemand](ondemand.md#command-line-terminal) includes a command-line terminal app that connects you to the cluster via SSH. This is the simplest method for users connecting from Windows computers. However, this method does not account for X11. If you plan to run windowed applications, please see the [X11](#using-ssh-with-x11) guide below.
+[Open OnDemand](ondemand.md#command-line-terminal){:target="_blank"} includes a command-line terminal app that connects you to the cluster via SSH. This is the simplest method for users connecting from Windows computers. However, this method does not account for X11. If you plan to run windowed applications, please see the [X11](#using-ssh-with-x11){:target="_blank"} guide below.
 
 ### From Windows
 
-Windows users will need a SSH client application installed on the desktop. Research Computing recommends [MobaXterm](mobaxterm.md) which includes a terminal emulator, file browser, and X11 server. [PuTTY](putty.md) is another option and can be made available in Citrix.
+Windows users will need a SSH client application installed on the desktop. Research Computing recommends [MobaXterm](mobaxterm.md){:target="_blank"} which includes a terminal emulator, file browser, and X11 server. [PuTTY](putty.md){:target="_blank"} is another option and can be made available in Citrix.
 
 ### From Mac or Linux
 
-Mac and Linux users also need a SSH client but benefit from built-in options within the operating system. Additional options exist that will include more features. For example, the [iTerm2](https://www.iterm2.com/) application for Mac users is an alternative to the built-in Terminal app.
+Mac and Linux users also need a SSH client but benefit from built-in options within the operating system. Additional options exist that will include more features. For example, the [iTerm2](https://www.iterm2.com/){:target="_blank"} application for Mac users is an alternative to the built-in Terminal app.
 
 ## Using SSH to login
 
@@ -58,7 +58,7 @@ ssh netid@login-clustername.rcc.mcw.edu
 
 ## Using SSH with X11
 
-X11 allows you to run a windowed application on a remote server and transmit the graphical view back to your computer. This is helpful if you want to run a graphical application that is installed on the cluster, but do not want to use a compute node or go through Open OnDemand. Mac users will need Xquartz installed. Windows users should use [MobaXterm](mobaxterm.md).
+X11 allows you to run a windowed application on a remote server and transmit the graphical view back to your computer. This is helpful if you want to run a graphical application that is installed on the cluster, but do not want to use a compute node or go through Open OnDemand. Mac users will need Xquartz installed. Windows users should use [MobaXterm](mobaxterm.md){:target="_blank"}.
 
 !!! warning "User experience"
     Running a windowed application via SSH with X11 can be a very slow, and sometimes unusable experience. When possible, avoid using X11 over VPN or WiFi.

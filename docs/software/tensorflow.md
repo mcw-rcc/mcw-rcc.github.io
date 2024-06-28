@@ -71,7 +71,7 @@ This simple job should print *Hello, TensorFlow!* to your output file.
 
 This functionality is provided by Open OnDemand!
 
-See [Jupyter on Open OnDemand](../user-guide/access/ondemand.md#jupyter-notebook-example) for details.
+See [Jupyter on Open OnDemand](../user-guide/access/ondemand.md#jupyter-notebook-example){:target="_blank"} for details.
 
 ## TensorBoard Job
 

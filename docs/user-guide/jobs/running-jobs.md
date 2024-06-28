@@ -3,7 +3,7 @@
 We use **SLURM** (Simple Linux Utility for Resource Management) for submitting, scheduling, and monitoring workloads, which we call jobs. Each job consists of resource requests and a set of commands to run. SLURM helps to schedule these jobs to run on the cluster using efficient methods to maximize throughput and minimize waiting. From the moment you submit a job, SLURM will make many decisions about priority of your workload, fair utilization of the cluster, and which resource is best to complete your job.
 
 !!! tip "Clusters are shared resources."
-    Please be respectful of all other users. Do not start resource-intensive scripts on a login node. Do not request more resources than your job can use. For more info see [User Etiquette](../etiquette.md).
+    Please be respectful of all other users. Do not start resource-intensive scripts on a login node. Do not request more resources than your job can use. For more info see [User Etiquette](../etiquette.md){:target="_blank"}.
 
 Need help scheduling your job? Send us an email at {{ support_email }}.
 
@@ -213,7 +213,7 @@ A CPU resource request is **required** and tells the job scheduler how to alloca
 #SBATCH --ntasks=1
 ```
 
-Please see [Nodes, Cores & Tasks](#nodes-cores--tasks) for more information.
+Please see [Nodes, Cores & Tasks](#nodes-cores--tasks){:target="_blank"} for more information.
 
 #### Memory
 
@@ -297,7 +297,7 @@ Most jobs that run on HPC are batch jobs. A batch job is submitted with the `sba
 sbatch test-job.slurm
 ```
 
-A job script is required. If you haven't already, please review [Writing a Job Script](#writing-a-job-script).
+A job script is required. If you haven't already, please review [Writing a Job Script](#writing-a-job-script){:target="_blank"}.
 
 ## Submit an Interactive Job
 
@@ -314,7 +314,7 @@ exit
 ```
 
 !!! tip "Open OnDemand"
-    We encourage all users to make use of [Open OnDemand](https://ondemand.rcc.mcw.edu/) for interactive sessions.
+    We encourage all users to make use of [Open OnDemand](https://ondemand.rcc.mcw.edu/){:target="_blank"} for interactive sessions.
 
 ## GPU Jobs
 
