@@ -126,4 +126,10 @@ To start a Jupyter Notebook on a cluster server:
     $ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
     ```
 
+## Known Issues
+
+### Proxy Error
+
+If you use Open OnDemand for long periods without logging out, you may see a `Proxy Error` web page. To diagnose the issue, try an [incognito browser session](https://support.google.com/chrome/answer/95464?hl=en&co=GENIE.Platform%3DDesktop). If that fixes your issue temporarily, proceed to [clear your browser cache](https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop) as a permanent fix. To prevent this issue, logout of Open OnDemand at the end of each day when you finish working.
+
 --8<-- "includes/abbreviations.md"
