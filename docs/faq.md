@@ -160,6 +160,9 @@
 ??? question "Why does the Open OnDemand web page not load?"
     Open OnDemand supports most modern browsers. However, there is no IE 11 support. To have the best experience using Open OnDemand, use the latest versions of Google Chrome, Mozilla Firefox or Microsoft Edge.
 
+??? question "How do I fix Open OnDemand if it stops working and shows a `Proxy Error` web page?"
+    The proxy error web page is a common issue that occurs when Open OnDemand is used for a long time without logging out. To diagnose the issue, try an [incognito browser session](https://support.google.com/chrome/answer/95464?hl=en&co=GENIE.Platform%3DDesktop). If that fixes your issue temporarily, proceed to [clear your browser cache](https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop) as a permanent fix.
+
 ??? question "How do I use RStudio on the cluster?"
     Open OnDemand has a built-in RStudio app. You can use this to get a RStudio session on a compute node that you can access via your web browser. See the [RStudio on Open OnDemand guide](user-guide/access/ondemand.md#rstudio) for details.
 
