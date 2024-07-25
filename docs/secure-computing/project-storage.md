@@ -1,8 +1,8 @@
 # Project Storage
 
-Each ResHPC project has project-specific storage directories in `/group/PINetID` and `/scratch/g/PINetID`, secured with a project-specific security group. **Please note that ResHPC users do not have user scratch directories.**
+Each ResHPC project has project-specific storage directories in `/group/{PINetID}/reshpc` and `/scratch/g/{PINetID}/reshpc`, secured with a project-specific security group.
 
-For example, **jsmith** is PI for project **p1234**, with project directories `/group/jsmith/p1234` and `/scratch/g/jsmith/p1234`.
+For example, **jsmith** is PI for project **p1234**, with project directories `/group/jsmith/reshpc/p1234` and `/scratch/g/jsmith/reshpc/p1234`.
 
 ??? tip "You can easily find your available project storage and current utilization with the `mydisks` command."
 
@@ -11,8 +11,8 @@ For example, **jsmith** is PI for project **p1234**, with project directories `/
     =====My Storage=====
      Size  Used Avail Use% File
      4.7G     0  4.7G   0% /home/user.p1234
-     932G  158G  774G  17% /group/PINetID/p1234
-     4.6T   62G  4.5T   2% /scratch/g/PINetID/p1234
+     932G  158G  774G  17% /group/PINetID/reshpc/p1234
+     4.6T   62G  4.5T   2% /scratch/g/PINetID/reshpc/p1234
     ```
 
 ## Encryption Requirement
@@ -25,7 +25,7 @@ Where noted below, encryption is required. This is an important step in ensuring
 **Snapshot**: 14 daily @ 2PM, 6 weekly @ 3PM Sunday  
 **Replication**: continuous with snapshot
 
-Each project has a unique directory located at `/group/{PINetID}/{ProjID}`. Within each project's `/group` directory, source and results data must be kept separate. You will find the following spaces in your `/group/{PINetID}/{ProjID}` directory:
+Each project has a unique directory located at `/group/{PINetID}/reshpc/{ProjID}`. Within each project's group directory, source and results data must be kept separate. You will find the following spaces in your `/group/{PINetID}/reshpc/{ProjID}` directory:
 
 : `source` - used for protected dataset from data provider
 : `results` - used for derivative results data and anything non-source
@@ -51,7 +51,7 @@ Every project user account has a home directory located at `/home/{NetID}.{ProjI
 **Quota**: inherited from [/scratch](../storage/rcc-storage.md#scratch)  
 **Purge**: files may be deleted by admin after 90 days
 
-Each project has a unique scratch directory located at `/scratch/g/{PINetID}/{ProjID}`. Please note, you must delete all data in your project scratch when your job is done.
+Each project has a unique scratch directory located at `/scratch/g/{PINetID}/reshpc/{ProjID}`. Please note, you must delete all data in your project scratch when your job is done.
 
 !!! warning "Encryption required"
     Restricted source data may only be decrypted in the project's scratch directory, and only as needed for analysis. Do not leave unencrypted data in project's scratch directory. For example, if you're going on vacation, delete the unencrypted data.
