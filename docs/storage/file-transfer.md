@@ -70,9 +70,9 @@ rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/
 
 Several software packages are available for data transfer using the secure file transfer protocol (SFTP).
 
-- [CoreFTP](https://servicedesk.mcw.edu/) is recommended and licensed by MCW-IS. Use the link to login and search for CoreFTP in the Software section.
+- [CoreFTP](https://servicedesk.mcw.edu/){:target="_blank"} is recommended and licensed by MCW-IS. Use the link to login and search for CoreFTP in the Software section.
 - [MobaXterm](../user-guide/access/mobaxterm.md#file-transfer) has a built-in SFTP client.
-- [WinSCP](https://winscp.net/eng/index.php) is a popular SFTP client for Windows.
-- [Cyberduck](https://cyberduck.io/) is a secure data transfer client available for Windows and Mac OS X users.
+- [WinSCP](https://winscp.net/eng/index.php){:target="_blank"} is a popular SFTP client for Windows.
+- [Cyberduck](https://cyberduck.io/){:target="_blank"} is a secure data transfer client available for Windows and Mac OS X users.
 
 --8<-- "includes/abbreviations.md"

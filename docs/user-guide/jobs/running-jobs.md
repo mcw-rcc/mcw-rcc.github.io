@@ -314,7 +314,7 @@ exit
 ```
 
 !!! tip "Open OnDemand"
-    We encourage all users to make use of [Open OnDemand](https://ondemand.rcc.mcw.edu/) for interactive sessions.
+    We encourage all users to make use of [Open OnDemand](https://ondemand.rcc.mcw.edu/){:target="_blank"} for interactive sessions.
 
 ## GPU Jobs
 

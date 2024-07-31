@@ -45,7 +45,7 @@ RCC is planning workshops on a variety of topics. These are meant to include mul
 
 | Title | Level | Slides |
 | ----- | ----- | ------ |
-| HPC Cluster Onboarding | Introductory | [Download](_static/files/HPC_Cluster_Onboarding_2022.pdf) |
+| HPC Cluster Onboarding | Introductory | [Download](_static/files/HPC_Cluster_Onboarding_2022.pdf){:target="_blank"} |
 
 ## Acknowledgement
 

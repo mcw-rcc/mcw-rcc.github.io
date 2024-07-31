@@ -4,7 +4,7 @@
 
 ## Documentation
 
-This documentation is specific for RCC's Open OnDemand instance. Open OnDemand was created by the [Ohio Supercomputer Center](https://www.osc.edu/), which provides [full documentation](https://osc.github.io/ood-documentation/latest/).
+This documentation is specific for RCC's Open OnDemand instance. Open OnDemand was created by the [Ohio Supercomputer Center](https://www.osc.edu/){:target="_blank"}, which provides [full documentation](https://osc.github.io/ood-documentation/latest/){:target="_blank"}.
 
 ## Connecting to Open OnDemand
 
@@ -72,7 +72,7 @@ Jobs can be created, submitted, and monitored via the Jobs Menu. This is an alte
 
 From the **Dashboard** menu, select **Jobs > Job Composer** which will open in a new window. The **Job Composer** app has two tabs: **Jobs** and **Templates** The **Jobs** tab contains a list of all jobs previously submitted through Open OnDemand. The **Templates** tab allows you to create your own job templates.
 
-Jobs can be created from previous jobs or job templates. See [OSC's Job Management Guide](https://www.osc.edu/resources/online_portals/ondemand/job_management) for more information.
+Jobs can be created from previous jobs or job templates. See [OSC's Job Management Guide](https://www.osc.edu/resources/online_portals/ondemand/job_management){:target="_blank"} for more information.
 
 ### Create a New Job
 
@@ -105,7 +105,7 @@ Open OnDemand features several interactive applications that run on cluster node
 
 ### Jupyter Notebook Example
 
-Here we focus on the Jupyter Notebook app as a popular example, but there are many apps to choose from. Check the [full app list](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sessions) for details.
+Here we focus on the Jupyter Notebook app as a popular example, but there are many apps to choose from. Check the [full app list](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sessions){:target="_blank"} for details.
 
 To start a Jupyter Notebook on a cluster server:
 
