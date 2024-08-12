@@ -1,6 +1,6 @@
 # ResHPC Overview
 
-**Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA), including [dbGaP](https://www.ncbi.nlm.nih.gov/gap/) projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider requirements.
+**Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA), including [dbGaP](https://www.ncbi.nlm.nih.gov/gap/){:target="_blank"} projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider requirements.
 
 ## Project Eligibility
 
@@ -21,7 +21,7 @@ It is part of your role as data steward to comply with any DUA or related polici
 
 Helpful links:
 
-* [MCW dbGaP policy](https://infoscope.mcw.edu/Corporate-Policies/dbGaP-Data-Use-Security.htm)
+* [MCW dbGaP policy](https://infoscope.mcw.edu/Corporate-Policies/dbGaP-Data-Use-Security.htm){:target="_blank"}
 
 ## Support
 

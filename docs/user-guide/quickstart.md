@@ -34,7 +34,7 @@ Most users will need to transfer files to cluster storage. Several methods are a
 
 ## Using Software
 
-Software is managed by modules using [Lmod](https://lmod.readthedocs.io/en/latest/). The modules contain information about an application's version, executable, libraries, and documentation. Using module commands, users can add, remove, or switch versions of a application. Please see the [cluster software guide](../software/modules.md) for more information.
+Software is managed by modules using [Lmod](https://lmod.readthedocs.io/en/latest/){:target="_blank"}. The modules contain information about an application's version, executable, libraries, and documentation. Using module commands, users can add, remove, or switch versions of a application. Please see the [cluster software guide](../software/modules.md) for more information.
 
 ## Running a SLURM Job
 

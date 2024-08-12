@@ -70,7 +70,7 @@ So far we have covered the git version control software. But everything we've do
 
 ## About GitHub
 
-[GitHub](https://github.com/) is a web service used to host and manage repositories. It offers public and private repository hosting for free. Another popular and free solution is [GitLab](https://about.gitlab.com/).
+[GitHub](https://github.com/){:target="_blank"} is a web service used to host and manage repositories. It offers public and private repository hosting for free. Another popular and free solution is [GitLab](https://about.gitlab.com/){:target="_blank"}.
 
 !!! tip " GitHub account"
     You will need a free GitHub account for the tutorial below.
@@ -105,4 +105,4 @@ Also consider the code you might clone from other users on GitHub. Use caution t
 
 Git and GitHub are very well-documented and popular tools. There are many great tutorials to make using git easier. We encourage you to seek out more tutorials as needed.
 
-There are also many software tools to help work with Git and GitHub. These include [GitHub Desktop](https://desktop.github.com/) and [VS Code](https://code.visualstudio.com/), among many others.
+There are also many software tools to help work with Git and GitHub. These include [GitHub Desktop](https://desktop.github.com/){:target="_blank"} and [VS Code](https://code.visualstudio.com/){:target="_blank"}, among many others.

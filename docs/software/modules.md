@@ -1,6 +1,6 @@
 # Software Modules
 
-We use [Lmod](https://lmod.readthedocs.io/en/latest/) to manage installed software. Each software package installed on the cluster has a corresponding modulefile, which contains information about an application's version, executable, libraries, and documentation. Using the module commands, users can add, remove, or switch versions of an application.
+We use [Lmod](https://lmod.readthedocs.io/en/latest/){:target="_blank"} to manage installed software. Each software package installed on the cluster has a corresponding modulefile, which contains information about an application's version, executable, libraries, and documentation. Using the module commands, users can add, remove, or switch versions of an application.
 
 ## Module Help
 
