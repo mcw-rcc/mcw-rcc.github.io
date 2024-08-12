@@ -3,7 +3,7 @@
 ## Access & Login
 
 ??? question "How do I get an account?"
-    Submit an [Account Request](https://forms.office.com/r/98QNm6cAyt){:target="_blank"} form.
+    Please go to the [Account Request page](https://docs.rcc.mcw.edu/user-guide/accounts/){:target="_blank"} and click "Request an Accout". Fill in the form and we will process your request. We will inform you once your account has been created or if we need further information.
 ??? question "How do I login?"
     The method you use to login depends on your computer and use case. We suggest you start with the [quickstart guide](user-guide/quickstart.md#logging-in).
 
