@@ -38,7 +38,7 @@
     Submitted batch job 6782
     ```
 
-For more information about how to write and submit jobs to the cluster, visit the [Running Jobs documentation](https://docs.rcc.mcw.edu/user-guide/jobs/running-jobs/){:target="_blank"}.
+    For more information about how to write and submit jobs to the cluster, visit the [Running Jobs documentation](https://docs.rcc.mcw.edu/user-guide/jobs/running-jobs/){:target="_blank"}.
 
 ??? question "How do I run an interactive job on the cluster?"
     You can start an interactive job on the HPC cluster using the SLURM `srun` command. The arguments are the same that you would use in the heather of a script that you would submit as a job. Make sure to add `--pty bash` at the end. To stop the interactive job, use the `exit` command.
