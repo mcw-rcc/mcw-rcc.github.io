@@ -10,7 +10,7 @@
 ??? question "Why can't I login?"
     * You might not have an account.
 
-    * You aren't using your MCW email username and password to login.
+    * You aren't using your MCW NetID and password to login. Remember that if you are a student, your NetID might be different to your email login.
 
     * You followed a guide and are using the word ''NetID'' as your username.
 
