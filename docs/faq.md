@@ -71,7 +71,7 @@
 
     * First, the cluster could be busy and your job might be waiting for resources to become available. The cluster is a shared resource and some wait time, while often short or non-existent, can be expected.
 
-    * Your job might be requesting resources that don't exist. Check the output of <nobr>`squeue -j JobID`</nobr>, where ***JobID*** is your SLURM job number. In the final column '''Nodelist (Reason)''' you might see '''PD''' followed by a reason. This could indicate that your job is temporarily waiting for resources (see above) or is blocked.
+    * Your job might be requesting resources that are not currently available. Check the output of `squeue -j JobID`, where **JobID** is your SLURM job number. In the output, check the final column '''Nodelist (Reason)'''. You might see '''PD''' followed by a reason why the job is not running. This could indicate that your job is temporarily waiting for resources (see above) or is blocked. The more resources that you request, the higher chance that your job might sit in queue waiting for those resources to become available. Try to limit the amount of resources you request to only the ones you really need.
 
     * Your job might be blocked by a maintenance window. For details see [Job Scheduling and Maintenance](user-guide/jobs/running-jobs.md#job-scheduling-and-maintenance).
 
