@@ -158,7 +158,7 @@
 ## Open OnDemand
 
 ??? question "Why does the Open OnDemand web page not load?"
-    Open OnDemand supports most modern browsers. However, there is no IE 11 support. To have the best experience using Open OnDemand, use the latest versions of Google Chrome, Mozilla Firefox or Microsoft Edge.
+    Open OnDemand supports most modern browsers. However, there is no IE 11 support. To have the best experience using Open OnDemand, use the latest versions of [Google Chrome](https://www.google.com/chrome/dr/download/?brand=AYYF&ds_kid=43700075934933114&gad_source=1&gclid=CjwKCAjwvvmzBhA2EiwAtHVrb0yYgJPqjqfBsmpPda0Mf4C-n8RbyHkYbbxCYbuvMwbpnxy0YJA1tBoC0Y0QAvD_BwE&gclsrc=aw.ds){:target="_blank"}, [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/){:target="_blank"} or [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ){:target="_blank"}.
 
 ??? question "How do I use RStudio on the cluster?"
     Open OnDemand has a built-in RStudio app. You can use this to get a RStudio session on a compute node that you can access via your web browser. See the [RStudio on Open OnDemand guide](user-guide/access/ondemand.md#rstudio) for details.
