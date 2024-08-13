@@ -39,7 +39,7 @@
     ```
 
 ??? question "How do I run an interactive job on the cluster?"
-    You can start an interactive job on the HPC cluster using the SLURM `srun` command.
+    You can start an interactive job on the HPC cluster using the SLURM `srun` command. For more information about how to write and submit jobs to the cluster, visit the [Running Jobs documentation](https://docs.rcc.mcw.edu/user-guide/jobs/running-jobs/){:target="_blank"}.
 
     ```bash
     $ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --pty bash
