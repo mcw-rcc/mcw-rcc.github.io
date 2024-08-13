@@ -21,7 +21,7 @@ It is part of your role as data steward to comply with any DUA or related polici
 
 Helpful links:
 
-* [MCW dbGaP policy](https://infoscope.mcw.edu/Corporate-Policies/dbGaP-Data-Use-Security.htm)
+* [MCW dbGaP policy](https://infoscope.mcw.edu/Corporate-Policies/dbGaP-Data-Use-Security.htm){:target="_blank"}
 
 ## Support
 
