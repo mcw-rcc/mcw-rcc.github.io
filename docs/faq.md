@@ -167,7 +167,7 @@
     Open OnDemand has a built-in Jupyter Notebook app. You can use this to get a Jupyter Notebook on a compute node that you can access via your web browser. See the [Jupyter on Open OnDemand guide](user-guide/access/ondemand.md#jupyter-notebooks) for details.
 
 ??? question "Can I get a virtual desktop on the cluster?"
-    Yes, [Open OnDemand](https://ondemand.rcc.mcw.edu) does have a virtual desktop app built-in. However, since the cluster compute nodes are not designed or built for desktop use, functionality may be limited.
+    Yes, [Open OnDemand](https://ondemand.rcc.mcw.edu){:target="_blank"} does have a virtual desktop app built-in. However, since the cluster compute nodes are not designed or built for desktop use, functionality may be limited.
 
 ## About RCC
 
