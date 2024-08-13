@@ -47,7 +47,7 @@ Create a file `/scratch/g/PI_NetID/alphatest/alphafold.slurm` containing the fol
 #SBATCH --gpu_cmode=shared  
 #SBATCH --partition=gpu
   
-module load alphafold/2.3.1
+module load alphafold/2.3.2
 module load python/3.9.1
   
 export NVIDIA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
@@ -63,8 +63,8 @@ cd /scratch/g/PI_NetID/alphatest && sbatch alphafold.slurm
 The example above is a job request for 1 node, 12 processors, and 1 gpu.  
 
 !!! info "GPU Compute Mode"
-    The `#SBATCH --gpu_cmode=shared` slurm header is required or your job will fail halfway through. Alphafold 2.3.1 doesn't parallelize on GPUs so you should only run on 1 GPU.
+    The `#SBATCH --gpu_cmode=shared` slurm header is required or your job will fail halfway through. Alphafold 2.3.2 doesn't parallelize on GPUs so you should only run on 1 GPU.
 
 ## Help
 
-Specific help information is available on [GitHub](https://github.com/dialvarezs/alphafold). Additional command-line help can be printed with `module help alphafold/2.3.1`.
+Specific help information is available on [GitHub](https://github.com/dialvarezs/alphafold){:target="_blank"}. Additional command-line help can be printed with `module help alphafold/2.3.2`.
