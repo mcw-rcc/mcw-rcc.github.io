@@ -17,7 +17,7 @@ AlphaFold downloaded reference files are located at `/hpc/refdata/alphafold/2.3`
 srun --job-name=alphafold_test --ntasks=1 --cpus-per-task=12 --mem=30gb --time=8:00:00 --gres=gpu:1 --gpu_cmode=shared --pty bash
 
 # load required modules on the gpu node
-module load alphafold/2.3.1
+module load alphafold/2.3.2
 module load python/3.9.1
 
 # tell alphafold about the GPU
