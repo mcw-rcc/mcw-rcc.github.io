@@ -1,9 +1,5 @@
 # AlphaFold
 
-!!! info "Updates"
-    03/06/2023: Version 2.3.1 Adds new `--cpus` option to speed up tasks: <https://github.com/deepmind/alphafold/releases/tag/v2.3.0>  
-    RCC is using this fork of alphafold to add singularity support: <https://github.com/dialvarezs/alphafold>
-
 AlphaFold can accurately predict 3D models of protein structures and is accelerating research in nearly every field of biology.
 
 ***- [Deepmind](https://www.deepmind.com/research/highlighted-research/alphafold)***
