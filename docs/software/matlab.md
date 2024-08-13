@@ -178,7 +178,7 @@ The HPC Cluster is a shared resource. Please only use whatever resources are nee
 
 ## Getting Help
 
-Review Mathwork's [Batch Processing](https://www.mathworks.com/help/distcomp/batch-processing.html) and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html) documentation.
+Review Mathwork's [Batch Processing](https://www.mathworks.com/help/distcomp/batch-processing.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"} documentation.
 
 If you have questions/concerns please contact {{ support_email }}
 
