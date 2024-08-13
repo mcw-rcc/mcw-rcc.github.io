@@ -153,7 +153,7 @@
 
     * Open Windows File Explorer and right-click on the drive, then select Disconnect.
 
-    * Remount the storage using this guide <https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d>. In step #4, make sure to select `Connect using different credentials` during that process. If you are on a non-MCW managed computer, please enter your MCW username with the "MCWCORP\" domain prefix (example MCWCORP\jsmith).
+    * Remount the storage using this [guide](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d). In step #4, make sure to select `Connect using different credentials` during that process. If you are on a non-MCW managed computer, please enter your MCW username with the "MCWCORP\" domain prefix (example MCWCORP\jsmith).
 
 ## Open OnDemand
 
