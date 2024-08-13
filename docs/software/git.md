@@ -77,7 +77,7 @@ So far we have covered the git version control software. But everything we've do
 
 ## Host a repository on GitHub
 
-To get started, create a new remote repository at <https://github.com/new>. Fill in the repository name, select public or private, and create repository.
+To get started, [create a new remote repository](https://github.com/new). Fill in the repository name, select public or private, and create repository.
 
 Now we connect your local repository to the remote GitHub repository and push our changes.
 
