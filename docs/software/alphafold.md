@@ -27,8 +27,7 @@ export NVIDIA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
 run_alphafold.py -d $DOWNLOAD_DIR --cpus 12 -f /scratch/g/PI_NetID/alphatest/some.fasta -t 2020-05-14 -o /scratch/g/PI_NetID/alphatest/output
 ```
 
-The example above is run as a normal interactive SLURM job. SLURM will assign a GPU node for interactive use. The alphafold software environment is loaded using `module load alphafold/2.3.1` command. Please make sure to insert your username for
-`PI_NetID`.
+The example above is run as a normal interactive SLURM job. SLURM will assign a GPU node for interactive use. The alphafold software environment is loaded using `module load alphafold/2.3.2` command. Please make sure to insert your username for `PI_NetID`.
 
 ## Example AlphaFold batch job
 
