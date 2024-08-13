@@ -31,7 +31,7 @@
 ## Job Management
 
 ??? question "How do I submit a job to the HPC cluster?"
-    You can submit a job to the HPC cluster with the `sbatch` command.
+    You can submit a job to the HPC cluster with the `sbatch` command. For more information about how to write and submit jobs to the cluster, visit the [Running Jobs documentation](https://docs.rcc.mcw.edu/user-guide/jobs/running-jobs/){:target="_blank"}.
 
     ```bash
     $ sbatch hpc-run.slurm
