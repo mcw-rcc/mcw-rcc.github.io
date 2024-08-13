@@ -26,7 +26,7 @@
     * Non-PIs should contact {{ support_email }} with your username, the PI's username, and the username of the new student.
 
 ??? question "How do I reset my password?"
-    RCC uses the same credentials as MCW's other services. If you need to reset your password, use the [Self Service Password Reset](https://infoscope.mcw.edu/is/services/sspr.htm).
+    RCC uses the same credentials as MCW's other services. If you need to reset your password, use the [Self Service Password Reset](https://infoscope.mcw.edu/is/services/sspr.htm){:target="_blank"}.
 
 ## Job Management
 
