@@ -70,7 +70,7 @@ So far we have covered the git version control software. But everything we've do
 
 ## About GitHub
 
-[GitHub](https://github.com/){:target="_blank"} is a web service used to host and manage repositories. It offers public and private repository hosting for free. Another popular and free solution is [GitLab](https://about.gitlab.com/).
+[GitHub](https://github.com/){:target="_blank"} is a web service used to host and manage repositories. It offers public and private repository hosting for free. Another popular and free solution is [GitLab](https://about.gitlab.com/){:target="_blank"}.
 
 !!! tip " GitHub account"
     You will need a free GitHub account for the tutorial below.
