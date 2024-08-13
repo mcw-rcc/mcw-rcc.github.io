@@ -60,7 +60,7 @@ RCC will periodically update the MATLAB Parallel Server software to the next B v
 
 ## Using the Cluster
 
-There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the Mathworks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"}.
+There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the Mathworks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html) and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html).
 
 ### Batch
 
@@ -86,7 +86,7 @@ Your batch jobs are submitted to the HPC cluster with **default max walltime of 
 A specific time limit can be added to any job. Max time is **7 days**. For example, a job with a 10 hour time limit would set **c.AdditionalProperties.AdditionalSubmitArgs = '--time=10:00:00';**.
 
 !!! info "Additional Information"
-    Please review the MathWorks [tutorial](https://www.mathworks.com/help/distcomp/run-a-batch-job.html){:target="_blank"} explaining batch parallel jobs.
+    Please review the MathWorks [tutorial](https://www.mathworks.com/help/distcomp/run-a-batch-job.html) explaining batch parallel jobs.
 
 ### Parpool
 
@@ -170,7 +170,7 @@ Please make sure to shutdown your parpool when you're done:
 
 ## File Transfer and Management
 
-The Matlab Parallel Computing Toolbox has multiple ways to handle file transfrer and access. For small files, the files can be auto-attached and transfer to the remote cluster at job submission. However, if your workflow requires large files, the transfer at job time becomes inconvenient. In this case, it is better to transfer files to the cluster before job submission, see [File Transfer](../storage/file-transfer.md). For more information about using data in Batch jobs, please see [Share Code with the Workers](https://www.mathworks.com/help/distcomp/share-code-with-the-workers.html){:target="_blank"}.
+The Matlab Parallel Computing Toolbox has multiple ways to handle file transfrer and access. For small files, the files can be auto-attached and transfer to the remote cluster at job submission. However, if your workflow requires large files, the transfer at job time becomes inconvenient. In this case, it is better to transfer files to the cluster before job submission, see [File Transfer](../storage/file-transfer.md). For more information about using data in Batch jobs, please see [Share Code with the Workers](https://www.mathworks.com/help/distcomp/share-code-with-the-workers.html).
 
 ## Cluster Usage Policy
 
@@ -178,7 +178,7 @@ The HPC Cluster is a shared resource. Please only use whatever resources are nee
 
 ## Getting Help
 
-Review Mathwork's [Batch Processing](https://www.mathworks.com/help/distcomp/batch-processing.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"} documentation.
+Review Mathwork's [Batch Processing](https://www.mathworks.com/help/distcomp/batch-processing.html) and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html) documentation.
 
 If you have questions/concerns please contact {{ support_email }}
 
