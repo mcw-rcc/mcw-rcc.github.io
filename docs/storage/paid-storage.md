@@ -22,11 +22,11 @@ Storage availability is not guaranteed. Requests for subscription greater than 5
 
 ## Sign-up & Payment
 
-A RCC account is required for RGS. If you do not already have an RCC account, [submit a request](https://forms.office.com/r/98QNm6cAyt). RCC will then process your account and provision the storage. If you are not a PI, your PI must also have an RCC account.
+A RCC account is required for RGS. If you do not already have an RCC account, [submit a request](https://forms.office.com/r/98QNm6cAyt){:target="_blank"}. RCC will then process your account and provision the storage. If you are not a PI, your PI must also have an RCC account.
 
 Payment can be made through the MCW-IS service desk website using the following guide.
 
-1. Proceed to <https://servicedesk.mcw.edu> and login.
+1. Proceed to <https://servicedesk.mcw.edu>{:target="_blank"} and login.
 2. Select **Software > RCC Software**, then **Research Group Storage - 1TiB**.
 3. To pay for 1TiB, select **Add to Cart**. If you are paying for multiple TiBs, select **Add Multiple** and enter the quantity.
 4. Select **Place Your Order** and enter your 16-17 Digit Account Number.
