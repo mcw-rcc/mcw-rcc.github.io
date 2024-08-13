@@ -1,6 +1,6 @@
 # Nextflow
 
-Nextflow is a workflow software used to manage data and compute-intensive pipelines. It is commonly used in genomic workflows but is generally applicable. See <https://www.nextflow.io/> for more information and [tutorials](https://www.nextflow.io/blog/2023/learn-nextflow-in-2023.html).
+Nextflow is a workflow software used to manage data and compute-intensive pipelines. It is commonly used in genomic workflows but is generally applicable. See <https://www.nextflow.io/> for more information and [tutorials](https://www.nextflow.io/blog/2023/learn-nextflow-in-2023.html){:target="_blank"}.
 
 ## Finding pipelines
 
