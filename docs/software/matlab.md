@@ -60,7 +60,7 @@ RCC will periodically update the MATLAB Parallel Server software to the next B v
 
 ## Using the Cluster
 
-There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the Mathworks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html) and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html).
+There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the Mathworks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"}.
 
 ### Batch
 
