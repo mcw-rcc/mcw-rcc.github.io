@@ -2,7 +2,7 @@
 
 AlphaFold can accurately predict 3D models of protein structures and is accelerating research in nearly every field of biology.
 
-***- [Deepmind](https://www.deepmind.com/research/highlighted-research/alphafold)***
+***- [Deepmind](https://www.deepmind.com/research/highlighted-research/alphafold){:target="_blank"}***
 
 AlphaFold is installed on the HPC Cluster using Singularity images. The [code version](https://github.com/dialvarezs/alphafold) we use is an alternative to the native docker container they provide.
 
