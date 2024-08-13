@@ -20,7 +20,7 @@ Windows users will need a SSH client application installed on the desktop. Resea
 
 ### From Mac or Linux
 
-Mac and Linux users also need a SSH client but benefit from built-in options within the operating system. Additional options exist that will include more features. For example, the [iTerm2](https://www.iterm2.com/) application for Mac users is an alternative to the built-in Terminal app.
+Mac and Linux users also need a SSH client but benefit from built-in options within the operating system. Additional options exist that will include more features. For example, the [iTerm2](https://www.iterm2.com/){:target="_blank"} application for Mac users is an alternative to the built-in Terminal app.
 
 ## Using SSH to login
 
