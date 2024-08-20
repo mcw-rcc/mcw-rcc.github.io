@@ -38,43 +38,9 @@ Software is managed by modules using [Lmod](https://lmod.readthedocs.io/en/lates
 
 ## Running a SLURM Job
 
-The clusters use SLURM to manage jobs. Most jobs are scheduled using batch job scripts. A batch job script includes a request for cluster resources, and the commands to run in the job. Each batch job is submitted by the user for remote execution on a compute node. The SLURM scheduler decides where the job should run, based on the requested and available resources. Please see the [SLURM job guide](jobs/running-jobs.md) for details.
+The clusters use SLURM to manage jobs. Most jobs are scheduled using batch job scripts. A batch job script includes a request for cluster resources, and the commands to run in the job. Each batch job is submitted by the user for remote execution on a compute node. The SLURM scheduler decides where the job should run, based on the requested and available resources.
 
-### Write a job script
-
-The SLURM job script syntax is shown below. Just like previous clusters, every job needs a job script, which tells the scheduler how and when to run your workload. The following is a simple SLURM batch job script example.
-
-=== "test-job.slurm"
-
-```txt
-#!/bin/bash
-#SBATCH --job-name=test-job
-#SBATCH --ntasks=1
-#SBATCH --mem-per-cpu=1gb
-#SBATCH --time=00:01:00
-#SBATCH --account=PI_NetID
-#SBATCH --output=%x-%j.out
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=NetID@mcw.edu # NetID is your username
-
-echo "Starting at $(date)"
-echo "Job name: ${SLURM_JOB_NAME}, Job ID: ${SLURM_JOB_ID}"
-echo "I have ${SLURM_CPUS_ON_NODE} CPUs on compute node $(hostname -s)"
-```
-
-### Submit the job
-
-Now I can submit my example job:
-
-```bash
-sbatch test-job.slurm
-```
-
-Then I can check my job status:
-
-```bash
-squeue
-```
+Please see the [SLURM job guide](jobs/running-jobs.md) for details on how to write, submit and monitor a job script.
 
 ## More info
 

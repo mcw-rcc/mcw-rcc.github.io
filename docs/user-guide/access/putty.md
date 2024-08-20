@@ -17,3 +17,5 @@ PuTTY features profile management so that the login node hostname can be reused.
 Now you can select Open to initiate an SSH connection to the cluster. The first time you connect, you'll be asked to accept the cluster's security key. Select Yes to accept the key and continue.
 
 You will see a terminal prompt `login as:`. Type in your MCW username and press enter. You will see a prompt for your password. Type in your MCW password and press enter. Please note that the password is hidden as you type for security purposes.
+
+For a detailed guide on how to access the cluster through PuTTY in onDemand, please see this [video guide](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EbyTZSUepX9DvlstxkTeT2sByG-OoNDAr_MzqtprvcP-Cg?e=gnZWJR).

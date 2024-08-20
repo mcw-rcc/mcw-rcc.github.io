@@ -8,6 +8,8 @@ This documentation is specific for RCC's Open OnDemand instance. Open OnDemand w
 
 ## Connecting to Open OnDemand
 
+onDemand is the most recommended way to connect to the RCC and access your resources.
+
 !!! important "Browser Support"
     No IE 11 support. To have the best experience using Open OnDemand, use the latest versions of Google Chrome, Mozilla Firefox or Microsoft Edge.
 
@@ -17,11 +19,15 @@ To connect to Open OnDemand point your browser to <https://ondemand.rcc.mcw.edu>
 
 After login, the *Dashboard* will appear. The menu includes apps to manage files, submit jobs, monitor jobs, open a terminal session, or launch interactive apps. To end your session, click **Log Out** at the top right.
 
+For a more detailed guide on how to connect to onDemand while on campus or remote through a VPN, please watch this video: [how to connect to onDemand on campus](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EZJSocR675pNt5DUoyXCysgB850fa5Iefs0SexoFuS9Uag?e=DjXVIl).
+
 ### Off Campus
 
 Open OnDemand is available for remote work through Citrix. Please see the [remote access guide](remote-access.md) for details.
 
 To access Open OnDemand, point your Citrix web browser to <https://ondemand.rcc.mcw.edu>.
+
+For a more detailed guide on how to connect to onDemand off campus without a VPN, please watch this video: [how to connect to on demand off campus](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EfXDm8gXht9PvYueoig7SSgBCTEm7i6WT29zqZF7nM9oIQ?e=1vikFK).
 
 ## Command-line Terminal
 
@@ -66,35 +72,9 @@ To upload a folder, drag and drop the folder from your local desktop to your OnD
 
 If you're off-campus, you'll be accessing OnDemand via Citrix browser. To upload a folder, drag and drop the folder from your Windows File Explorer (Citrix app) to your OnDemand Files app (Citrix browser window). Again, as you drag the folder to the window, your cursor should show a copy indicator.
 
-## Job Submission
+## Creating, submitting and managing jobs
 
-Jobs can be created, submitted, and monitored via the Jobs Menu. This is an alternative to creating and submitting job scripts in the command line.
-
-From the **Dashboard** menu, select **Jobs > Job Composer** which will open in a new window. The **Job Composer** app has two tabs: **Jobs** and **Templates** The **Jobs** tab contains a list of all jobs previously submitted through Open OnDemand. The **Templates** tab allows you to create your own job templates.
-
-Jobs can be created from previous jobs or job templates. See [OSC's Job Management Guide](https://www.osc.edu/resources/online_portals/ondemand/job_management){:target="_blank"} for more information.
-
-### Create a New Job
-
-In the **Job Composer** app, select the **Jobs** tab. To create a new job script, click the **+ New Job** button and select **From Default Template** You'll see a new job script entry with status **Not Submitted**. On the right hand side you'll see the **Job Details**, including the location and name of the job script.
-
-#### Edit a Job Script
-
-The default job template creates a new generic job script. You'll need to edit this job script so that it contains the workflow you'll submit to the cluster. To edit a job script, click the **Open Editor** button at the lower right.
-
-This will open a job editor in a new tab. You should write your job script following the normal SLURM job syntax. For information on writing SLURM job scripts, see the [Job Script Guide](../jobs/running-jobs.md#writing-a-job-script). After editing the job script, save the script and close the editor window.
-
-#### Edit job options
-
-Click the blue **Job Options** button. Here you can change the job name and the cluster where the job will run. Click **Save** or **Back** to close the job options window.
-
-### Submit a Job
-
-To submit a job, select a job and click the green **Submit** button. A message at the top of the window will indicate if the job submission was successful or not. After job submission, the job status will change to **Queued** or **Running** When the job completes, the status will show **Completed**
-
-### Monitor Jobs
-
-From the **Dashboard** menu, select **Jobs > Active Jobs** for a live view of the cluster queue. You can view all jobs, your own jobs, and select by cluster.
+Jobs can be created, submitted, and monitored through the command line terminal inside onDemand. For a detailed guide on how to do this see our [Job Script Guide](../jobs/running-jobs.md#writing-a-job-script) or [OSC's Job Management Guide](https://www.osc.edu/resources/online_portals/ondemand/job_management){:target="_blank"}.
 
 ## Interactive Applications
 
