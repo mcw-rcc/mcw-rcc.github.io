@@ -128,7 +128,7 @@
     Your home directory limit cannot be increased. You scratch directory limit may be increase upon request but this is subject to availability. Your `/group` Research Group Storage directory may be increased by [purchasing additional space](storage/paid-storage.md).
 
 ??? question "Why is `/group` not available on HPC cluster compute nodes?"
-    The file system that contains `/group` is not designed for performance computing. In order to preserve every user's experience with `/group`, it is not available on compute nodes. You should follow the [scratch directory procedures](user-guide/quickstart.md#using-storage-with-jobs) to make sure your data is available to your cluster job.
+    The file system that contains `/group` is not designed for performance computing. In order to preserve every user's experience with `/group`, it is not available on compute nodes. You should follow the [scratch directory procedures](user-guide/jobs/storage-job.md) to make sure your data is available to your cluster job.
 
 ??? question "Can I mount my own storage to the cluster?"
     No. RCC provides storage that is mounted to the cluster. This storage is specifically designed to work within the cluster network and meets performance requirements.
@@ -164,13 +164,13 @@
     This error is most probably related to the browser cache. First, make sure that you are using one of the explorers specified in the previous question (preferably Google Chrome). Then, open an incognito window and go to [OnDemand](https:/ondemand.rcc.mcw.edu){:target="_blank"}. If it works, that will confirm that it was a problem with the cache. To solve the problem, [empty the cache](https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop){:target="_blank"} in chrome and now you should be able to navigate normally to OnDemand. If the problem persists, please contact us.
 
 ??? question "How do I use RStudio on the cluster?"
-    Open OnDemand has a built-in RStudio app. You can use this to get a RStudio session on a compute node that you can access via your web browser. See the [RStudio on Open OnDemand guide](user-guide/access/ondemand.md#rstudio) for details.
+    Open OnDemand has a built-in [RStudio app](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sys/bc_hpc_rstudio_server/session_contexts/new){:target="_blank"}. You can use this to get a RStudio session on a compute node that you can access via your web browser.
 
 ??? question "How do I get a Jupyter Notebook on the cluster?"
-    Open OnDemand has a built-in Jupyter Notebook app. You can use this to get a Jupyter Notebook on a compute node that you can access via your web browser. See the [Jupyter on Open OnDemand guide](user-guide/access/ondemand.md#jupyter-notebooks) for details.
+    Open OnDemand has a built-in [Jupyter Notebook app](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sys/bc_hpc_jupyter/session_contexts/new){:target="_blank"}. You can use this to get a Jupyter Notebook on a compute node that you can access via your web browser.
 
 ??? question "Can I get a virtual desktop on the cluster?"
-    Yes, [Open OnDemand](https://ondemand.rcc.mcw.edu){:target="_blank"} does have a virtual desktop app built-in. However, since the cluster compute nodes are not designed or built for desktop use, functionality may be limited.
+    Yes, Open OnDemand does have a [virtual desktop app](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sys/bc_hpc_remote_desktop/session_contexts/new){:target="_blank"} built-in. However, since the cluster compute nodes are not designed or built for desktop use, functionality may be limited.
 
 ## About RCC
 
