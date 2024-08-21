@@ -4,7 +4,7 @@ As a cluster workload manager, SLURM has three key functions. First, it allocate
 
 ## Nodes, Cores & Tasks
 
-It is important to understand how resources are requested and allocated through SLURM on HPC. SLURM uses three `#SBATCH` directives, `--ntasks`, `--nodes`, and `--cpus-per-task`, which can be used to run a job with a specific set of resources. SLURM uses the concept of tasks, which are processes that can use one or more CPU cores to run a copy of a program. Below we'll discuss how nodes, cores, and tasks are used by single-thread, multi-thread, multi-process, and MPI applications.
+SLURM uses three `#SBATCH` directives, `--ntasks`, `--nodes`, and `--cpus-per-task`, which can be used to run a job with a specific set of resources. SLURM uses the concept of tasks, which are processes that can use one or more CPU cores to run a copy of a program. Below we'll discuss how nodes, cores, and tasks are used by single-thread, multi-thread, multi-process, and MPI applications.
 
 ### Single-thread
 
