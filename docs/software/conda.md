@@ -1,4 +1,4 @@
-# Conda Virtual Environment
+# Conda
 
 Conda is a package management system that quickly installs many useful packages and their dependencies. We use a lightweight version called Miniconda. It is mainly used for Python virtual environments, but includes many more packages including open-source research software and dependencies.
 

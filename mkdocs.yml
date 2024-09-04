@@ -73,11 +73,11 @@ plugins:
       date_from_meta:
         as_creation: date
   - git-revision-date-localized
+  - table-reader
   - macros:
       include_yaml:
         - includes/modules.yml
         - includes/r-packages.yml
-  - table-reader
   
 # Extensions
 markdown_extensions:
@@ -160,6 +160,7 @@ nav:
       - software/matlab.md
       - software/nextflow.md
       - software/python.md
+      - software/conda.md
       - software/pytorch.md
       - software/R.md
       - software/schrodinger.md
