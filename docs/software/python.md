@@ -39,41 +39,7 @@ pip freeze | grep 'scipy'
 
 ## Installing Packages
 
-We recommend to install python packages in virtual environments or conda environments. Try to avoid installing with sytem Python, will place the package files in your home directory. While this does work, it can be difficult to know what has been installed, and even more difficult to update or remove.
-
-### Conda Virtual Environment
-
-Conda is a package management system that quickly installs many useful packages and their dependencies. We use a lightweight version called Miniconda. It is mainly used for Python virtual environments, but includes many more packages including open-source research software and dependencies.
-
-For more information, see [Conda Docs](https://conda.io/projects/conda/en/stable/index.html){:target="_blank"}.
-
-!!! warning "Installing your own Conda"
-    If you install your own Conda, this will often modify your `.bashrc` file. This will cause your base Conda env to load every time you login. This is very useful if you're working on your own Linux machine. But it is very un-useful on a cluster, where we also use modulefiles to load software. In fact, your Conda installation can cause your jobs to fail in many instances. If you would like to use Conda, then please use the centrally installed Miniconda3. If you must use your own Conda, please turn off the auto activate with `conda config --set auto_activate_base false`. You can then manually activate your Conda with `source /path/to/my/conda/etc/profile.d/conda.sh && conda activate`.
-
-To get started, load miniconda3:
-
-```bash
-module load miniconda3
-```
-
-To create a new virtual environment (e.g., **myenv**) with the `conda` command:
-
-```bash
-conda create -n myenv
-```
-
-To use your Miniconda virtual environment:
-
-```bash
-conda activate myenv
-```
-
-To install packages in your conda virtual environment:
-
-```bash
-conda activate myenv
-conda install numpy
-```
+We recommend to install python packages in virtual environments or conda environments. Try to avoid installing with system Python, which will place the package files in your home directory. While this does work, it can be difficult to know what has been installed, and even more difficult to update or remove. Also, using conda will allow you to create different environments for specific software and share them with other people. For example, one program that you might need can have certain dependencies that conflict with the dependencies of another program. You can solve this by using different conda environments. For more information please visit our [Conda Guide](conda.md).
 
 ### Python Virtual Environment
 
