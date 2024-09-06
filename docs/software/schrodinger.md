@@ -141,8 +141,8 @@ On the cluster:
 
 Having issues installing? Contact {{ support_email }} to schedule a support session.
 
-For general Schrodinger questions, see <https://www.schrodinger.com/kb>.
+For general Schrodinger questions, see <https://www.schrodinger.com/kb>{:target="_blank"}.
 
-For training opportunities, see <https://www.schrodinger.com/seminars/current> and <https://www.schrodinger.com/training>.
+For training opportunities, see <https://www.schrodinger.com/seminars/current>{:target="_blank"} and <https://www.schrodinger.com/training>{:target="_blank"}.
 
 --8<-- "includes/abbreviations.md"

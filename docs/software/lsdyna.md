@@ -3,7 +3,7 @@
 LS-DYNA is a general purpose finite element analysis software.
 
 !!! info "Licensed Software"
-    LS-DYNA is resticted to licensed users. Please contact {{ support_email }} with questions.
+    LS-DYNA is restricted to licensed users. Please contact {{ support_email }} with questions.
 
 ## Running LS-DYNA
 
@@ -71,7 +71,7 @@ $$
 $$
 
 !!! tip "Additional memory guidance"
-    The example above is just an example. Please adjust for the memory needs of your simulation. You may need more or less memory depending on size of model. You may also need to substitute `4 bytes` into the calculations if you use single precision. The process of determining memory utilization should be iterative. For more advice on LS-DYNA memory, see please see <https://www.d3view.com/a-few-words-on-memory-settings-in-ls-dyna/>.
+    The example above is just an example. Please adjust for the memory needs of your simulation. You may need more or less memory depending on size of model. You may also need to substitute `4 bytes` into the calculations if you use single precision. The process of determining memory utilization should be iterative. For more advice on LS-DYNA memory, see please see <https://www.d3view.com/a-few-words-on-memory-settings-in-ls-dyna/>{:target="_blank"}.
 
 ## Getting Help
 

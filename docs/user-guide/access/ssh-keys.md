@@ -90,7 +90,7 @@ Adjust the default settings so that key type is **RSA**, and key length is **409
 
 ![MobaKeyGen-generate](../../_static/img/MobaKeyGen-generate.png){ width="400" }
 
-You should see key information. Enter an optional comment and a secure passpphrase. Use a strong password with complexity and length. Lastly, save your public and private keys.
+You should see key information. Enter an optional comment and a secure passphrase. Use a strong password with complexity and length. Lastly, save your public and private keys.
 
 ![MobaKeyGen-save](../../_static/img/MobaKeyGen-save.png){ width="400" }
 

@@ -37,7 +37,7 @@ Contact Research Computing support at {{ support_email }}.
 
 ### Virtual Office Hours
 
-Virtual office hours are availble via Zoom. Please email {{ support_email }} to schedule an appointment.
+Virtual office hours are available via Zoom. Please email {{ support_email }} to schedule an appointment.
 
 ### Workshops
 

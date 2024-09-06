@@ -3,13 +3,13 @@
 ANSYS is a simulation software with a variety of functions including finite-element analysis and computational fluid dynamics.
 
 !!! info "Licensed Software"
-    ANSYS is resticted to licensed users. Please contact {{ support_email }} with questions.
+    ANSYS is restricted to licensed users. Please contact {{ support_email }} with questions.
 
 ## Multi-node Fluent job
 
 Fluent should be run from the ANSYS Workbench if possible, as this is the easiest method. However, if you need more resources than 1 node with 48 cores, you can run Fluent in a batch job on the cluster.
 
-To get started, setup some file structure. Everytime we run a simulation, we should start with a new parent folder, which is `example-job` in this case. Make sure this is meaningful, since it will help you identify your simulations later.
+To get started, setup some file structure. Every time we run a simulation, we should start with a new parent folder, which is `example-job` in this case. Make sure this is meaningful, since it will help you identify your simulations later.
 
 ```bash
 cd /scratch/g/PI_NetID
