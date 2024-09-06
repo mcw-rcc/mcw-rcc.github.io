@@ -9,7 +9,7 @@ ResHPC access requires a project user account, which is based on your MCW NetID 
 
 If you're new to using a cluster, ResHPC OnDemand offers web browser-based access. You can manage files and start a remote desktop session on the cluster. All of this is possible without logging in via a traditional SSH terminal.
 
-To login, point your browser to <https://ood-reshpc.rcc.mcw.edu>, enter your password, select a Duo MFA option, and complete the login.
+To login, point your browser to <https://ood-reshpc.rcc.mcw.edu>{:target="_blank"}, enter your password, select a Duo MFA option, and complete the login.
 
 !!! tip "Additional info"
     Much of the functionality of ResHPC OnDemand is shared with the standard Open OnDemand site. Please consult the [OnDemand app guides](../user-guide/access/ondemand.md#command-line-terminal) for additional help and detail.

@@ -3,7 +3,7 @@
 ## Access & Login
 
 ??? question "How do I get an account?"
-    Please go to the [Account Request page](https://docs.rcc.mcw.edu/user-guide/accounts/){:target="_blank"} and click "Request an Accout". Fill in the form and we will process your request. We will inform you once your account has been created or if we need further information.
+    Please go to the [Account Request page](https://docs.rcc.mcw.edu/user-guide/accounts/){:target="_blank"} and click "Request an Account". Fill in the form and we will process your request. We will inform you once your account has been created or if we need further information.
 ??? question "How do I login?"
     The method you use to login depends on your computer and use case. We suggest you start with the [quickstart guide](user-guide/quickstart.md#logging-in).
 
@@ -153,7 +153,7 @@
 
     * Open Windows File Explorer and right-click on the drive, then select Disconnect.
 
-    * Remount the storage using this [guide](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d). In step #4, make sure to select `Connect using different credentials` during that process. If you are on a non-MCW managed computer, please enter your MCW username with the "MCWCORP\" domain prefix (example MCWCORP\jsmith).
+    * Remount the storage using this [guide](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d){:target="_blank"}. In step #4, make sure to select `Connect using different credentials` during that process. If you are on a non-MCW managed computer, please enter your MCW username with the "MCWCORP\" domain prefix (example MCWCORP\jsmith).
 
 ## Open OnDemand
 

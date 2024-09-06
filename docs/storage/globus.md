@@ -9,7 +9,7 @@ Globus is a secure file transfer tool for research data. It is popular at resear
 
 We will use Globus Connect Personal running on a cluster login node, which will allow transfer of data to/from storage locations on the cluster. This is a one-time setup with future sessions requiring only to start Globus.
 
-To get started, open your browser to <https://app.globus.org/collections/gcp?generate_key>. You will be prompted to login and may have to create your account the first time. Select Medical College of Wisconsin from the drop-down menu and continue to login with your MCW credentials.
+To get started, open your browser to <https://app.globus.org/collections/gcp?generate_key>{:target="_blank"}. You will be prompted to login and may have to create your account the first time. Select Medical College of Wisconsin from the drop-down menu and continue to login with your MCW credentials.
 
 ![Globus Login](../_static/img/globus-login.png){ width="600" }
 

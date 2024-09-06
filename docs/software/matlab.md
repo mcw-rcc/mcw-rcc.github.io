@@ -170,7 +170,7 @@ Please make sure to shutdown your parpool when you're done:
 
 ## File Transfer and Management
 
-The Matlab Parallel Computing Toolbox has multiple ways to handle file transfrer and access. For small files, the files can be auto-attached and transfer to the remote cluster at job submission. However, if your workflow requires large files, the transfer at job time becomes inconvenient. In this case, it is better to transfer files to the cluster before job submission, see [File Transfer](../storage/file-transfer.md). For more information about using data in Batch jobs, please see [Share Code with the Workers](https://www.mathworks.com/help/distcomp/share-code-with-the-workers.html){:target="_blank"}.
+The Matlab Parallel Computing Toolbox has multiple ways to handle file transfer and access. For small files, the files can be auto-attached and transfer to the remote cluster at job submission. However, if your workflow requires large files, the transfer at job time becomes inconvenient. In this case, it is better to transfer files to the cluster before job submission, see [File Transfer](../storage/file-transfer.md). For more information about using data in Batch jobs, please see [Share Code with the Workers](https://www.mathworks.com/help/distcomp/share-code-with-the-workers.html){:target="_blank"}.
 
 ## Cluster Usage Policy
 
