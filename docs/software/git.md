@@ -97,7 +97,7 @@ git clone https://github.com/octocat/Hello-World.git
 
 ## Security considerations
 
-You should not store sensitive information in any remote repository, including GitHub, GitLab, etc. In fact, you should avoid sensitive information in your research files at all times. This includes PHI, passwords, etc. Remember, most of the data you upload to GitHub will be publically accessible. It is very easy to accidentally leave a password or sensitive file in your code, which you then upload.
+You should not store sensitive information in any remote repository, including GitHub, GitLab, etc. In fact, you should avoid sensitive information in your research files at all times. This includes PHI, passwords, etc. Remember, most of the data you upload to GitHub will be publicly accessible. It is very easy to accidentally leave a password or sensitive file in your code, which you then upload.
 
 Also consider the code you might clone from other users on GitHub. Use caution to avoid downloading malicious software.
 

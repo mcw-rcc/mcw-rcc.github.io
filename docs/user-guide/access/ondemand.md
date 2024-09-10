@@ -13,7 +13,7 @@ This documentation is specific for RCC's Open OnDemand instance. Open OnDemand w
 
 ### On Campus
 
-To connect to Open OnDemand point your browser to <https://ondemand.rcc.mcw.edu>. Open OnDemand is configured to use your MCW username and password. Access does require you have an RCC user account.
+To connect to Open OnDemand point your browser to <https://ondemand.rcc.mcw.edu>{:target="_blank"}. Open OnDemand is configured to use your MCW username and password. Access does require you have an RCC user account.
 
 After login, the *Dashboard* will appear. The menu includes apps to manage files, submit jobs, monitor jobs, open a terminal session, or launch interactive apps. To end your session, click **Log Out** at the top right.
 
@@ -21,7 +21,7 @@ After login, the *Dashboard* will appear. The menu includes apps to manage files
 
 Open OnDemand is available for remote work through Citrix. Please see the [remote access guide](remote-access.md) for details.
 
-To access Open OnDemand, point your Citrix web browser to <https://ondemand.rcc.mcw.edu>.
+To access Open OnDemand, point your Citrix web browser to <https://ondemand.rcc.mcw.edu>{:target="_blank"}.
 
 ## Command-line Terminal
 

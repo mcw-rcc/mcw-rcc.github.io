@@ -18,6 +18,6 @@ Use the web browser in Citrix to access RCC's Open OnDemand service. This is a w
 
 To access Open OnDemand, first login to Citrix. From the Citrix home page, select **Browsers**, and select your Citrix web browser of choice. Open OnDemand is most stable in **Google Chrome**.
 
-Point your Citrix web browser to <https://ondemand.rcc.mcw.edu>.
+Point your Citrix web browser to <https://ondemand.rcc.mcw.edu>{:target="_blank"}.
 
 --8<-- "includes/abbreviations.md"

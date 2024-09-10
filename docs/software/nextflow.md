@@ -140,7 +140,7 @@ Here we provide suggested configurations for various pipelines.
 
 ### nf-core/rnaseq
 
-These configurations are the minimum required. You will need to customize and add additional parameters to the `nf-params.json` file as needed for your specific analysis. See <https://nf-co.re/rnaseq/3.12.0/parameters> for details.
+These configurations are the minimum required. You will need to customize and add additional parameters to the `nf-params.json` file as needed for your specific analysis. See <https://nf-co.re/rnaseq/3.12.0/parameters>{:target="_blank"} for details.
 
 <!-- markdownlint-disable MD046 -->
 === "nf-params.json"

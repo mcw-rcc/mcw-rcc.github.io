@@ -23,9 +23,9 @@ The system includes a 215 TB NVMe scratch file system enabling high-performance 
 
 RCC provides 1 TB of persistent storage to any MCW faculty member for free. Additional persistent storage is available for $60 per TB per year.
 
-## Datacenter and Network Facilities
+## Data center and Network Facilities
 
-All RCC hardware is housed in a managed datacenter. This facility includes redundant HVAC cooling systems, redundant power distribution, UPS battery backup, and diesel-powered backup generators. All equipment is on dedicated subnets providing high-capacity redundant (1Gb) networking. The datacenter also has Internet 2 access through WiscNet.
+All RCC hardware is housed in a managed data center. This facility includes redundant HVAC cooling systems, redundant power distribution, UPS battery backup, and diesel-powered backup generators. All equipment is on dedicated subnets providing high-capacity redundant (1Gb) networking. The data center also has Internet 2 access through WiscNet.
 
 ## Staff and Support
 

@@ -80,7 +80,7 @@ All Research Computing storage systems are highly resilient, allowing for multip
 !!! info "Disclaimer"
     Research Computing is not responsible for any loss of data. We strongly encourage all users to follow best practice data management strategies.
 
-[^1]: Replication copies all data from the primary system to a secondary system in another datacenter.
+[^1]: Replication copies all data from the primary system to a secondary system in another data center.
 [^2]: Home snapshots - 14 daily @ 12PM, 6 weekly @ 1PM Sunday
 [^3]: Group snapshots - 14 daily @ 2PM, 6 weekly @ 3PM Sunday
 
