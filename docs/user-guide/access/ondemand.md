@@ -13,19 +13,19 @@ This documentation is specific for RCC's Open OnDemand instance. Open OnDemand w
 
 ### On Campus
 
-To connect to Open OnDemand point your browser to <https://ondemand.rcc.mcw.edu>{:target="_blank"}. Open OnDemand is configured to use your MCW username and password. Access does require you have an RCC user account.
+To connect to Open OnDemand point your browser to <https://ondemand.rcc.mcw.edu>{:target="_blank"}. Open OnDemand is configured to use your MCW username and password. Access does require you have an [RCC user account](../accounts.md).
 
 After login, the *Dashboard* will appear. The menu includes apps to manage files, submit jobs, monitor jobs, open a terminal session, or launch interactive apps. To end your session, click **Log Out** at the top right.
 
+For a more detailed guide on how to connect to OnDemand while on campus or remote through a VPN, please watch this video: [how to connect to OnDemand](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EUR9PjgZlwVLpSNai9MATkkB4tTG6bmzsT7TJ1Qdqz35Wg?e=2NG4k6){:target="_blank"}.
+
 ### Off Campus
 
-Open OnDemand is available for remote work through Citrix. Please see the [remote access guide](remote-access.md) for details.
-
-To access Open OnDemand, point your Citrix web browser to <https://ondemand.rcc.mcw.edu>{:target="_blank"}.
+Open OnDemand is available for remote work through Citrix. Detailed information about Citrix and how to connect is available [here](https://infoscope.mcw.edu/is/services/citrix.htm){:target="_blank"}. Once you are inside Citrix, you can click "All" to view all your apps. Then, click on Google Chrome and point your web browser to <https://ondemand.rcc.mcw.edu>{:target="_blank"} to access Open OnDemand.
 
 ## Command-line Terminal
 
-Open OnDemand includes a command-line terminal app that connects you to the HPC cluster login node via SSH. From the **Dashboard** menu, select **Clusters > Cluster Shell Access** A new window will open and you will be logged in to a cluster login node. This shell access is the same as if you had used a Terminal app from your desktop (i.e. Putty, SSH Secure Shell, MobaXterm, etc.).
+Open OnDemand includes a command-line terminal app that connects you to the HPC cluster login node via SSH. From the **Dashboard** menu, select **Clusters > Cluster Shell Access** A new window will open and you will be logged in to a cluster login node. This shell access is the same as if you had used a Terminal app from your desktop (i.e. Putty, SSH Secure Shell, MobaXterm, etc.). The video on [how to connect to OnDemand](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EUR9PjgZlwVLpSNai9MATkkB4tTG6bmzsT7TJ1Qdqz35Wg?e=2NG4k6){:target="_blank"} also shows how to open and use the Terminal.
 
 !!! tip "The shell app now supports themes!"
     You can customize the them of your OOD shell by selecting a new option from the themes drop-down menu in the upper right-hand corner of the window.
@@ -60,7 +60,7 @@ To upload a file, select the **Upload** button. Then use the file selector to ch
 
 #### On-Campus
 
-To upload a folder, drag and drop the folder from your local desktop to your OnDemand Files app browser window. As you drag the folder to the window, your cursor should show a copy indicator.
+To upload a folder, drag and drop the folder from your local desktop to your OnDemand Files app browser window. As you drag the folder to the window, your cursor should show a copy indicator. The video on [how to connect to OnDemand](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EUR9PjgZlwVLpSNai9MATkkB4tTG6bmzsT7TJ1Qdqz35Wg?e=2NG4k6){:target="_blank"} also includes an example of uploading a folder on-campus.
 
 #### Off-Campus
 
@@ -125,11 +125,5 @@ To start a Jupyter Notebook on a cluster server:
     $ source activate myenv
     $ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
     ```
-
-## Known Issues
-
-### Proxy Error
-
-If you use Open OnDemand for long periods without logging out, you may see a `Proxy Error` web page. To diagnose the issue, try an [incognito browser session](https://support.google.com/chrome/answer/95464?hl=en&co=GENIE.Platform%3DDesktop). If that fixes your issue temporarily, proceed to [clear your browser cache](https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop) as a permanent fix. To prevent this issue, logout of Open OnDemand at the end of each day when you finish working.
 
 --8<-- "includes/abbreviations.md"
