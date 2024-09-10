@@ -160,6 +160,9 @@
 ??? question "Why does the Open OnDemand web page not load?"
     Open OnDemand supports most modern browsers. However, there is no IE 11 support. To have the best experience using Open OnDemand, use the latest versions of [Google Chrome](https://www.google.com/chrome/dr/download/?brand=AYYF&ds_kid=43700075934933114&gad_source=1&gclid=CjwKCAjwvvmzBhA2EiwAtHVrb0yYgJPqjqfBsmpPda0Mf4C-n8RbyHkYbbxCYbuvMwbpnxy0YJA1tBoC0Y0QAvD_BwE&gclsrc=aw.ds){:target="_blank"}, [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/){:target="_blank"} or [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ){:target="_blank"}.
 
+??? question "Why do I get a proxy error when connecting to OnDemand?"
+    This error is most probably related to the browser cache. First, make sure that you are using one of the explorers specified in the previous question (preferably Google Chrome). Then, open an incognito window and go to [OnDemand](https:/ondemand.rcc.mcw.edu){:target="_blank"}. If it works, that will confirm that it was a problem with the cache. To solve the problem, [empty the cache](https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop){:target="_blank"} in chrome and now you should be able to navigate normally to OnDemand. If the problem persists, please contact us.
+
 ??? question "How do I use RStudio on the cluster?"
     Open OnDemand has a built-in RStudio app. You can use this to get a RStudio session on a compute node that you can access via your web browser. See the [RStudio on Open OnDemand guide](user-guide/access/ondemand.md#rstudio) for details.
 
