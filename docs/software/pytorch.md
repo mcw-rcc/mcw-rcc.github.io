@@ -39,8 +39,6 @@ cd /scratch/g/pi_netid/pytorch-test && sbatch pytorch.sh
 
 ## PyTorch Jupyter Notebook
 
-This functionality is now provided by Open OnDemand!
-
-See [Jupyter on Open OnDemand](../user-guide/access/ondemand.md#jupyter-notebooks) for more info.
+This functionality is now provided by Open OnDemand! Use the [Jupyter Notebook app](https://ondemand.rcc.mcw.edu/pun/sys/dashboard/batch_connect/sys/bc_hpc_jupyter/session_contexts/new) to start a PyTorch enabled kernel.
 
 --8<-- "includes/abbreviations.md"

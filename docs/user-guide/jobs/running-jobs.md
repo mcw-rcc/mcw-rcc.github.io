@@ -74,7 +74,7 @@ The HPC cluster requires a specific job workflow:
 
 ## SLURM Concepts
 
-### Nodes, Cores & Tasks
+### Nodes, Cores, and Tasks
 
 Before we discuss writing jobs scripts, or submitting jobs, it is important to understand how resources are requested and allocated through SLURM on HPC. SLURM uses three `#SBATCH` directives, `--ntasks`, `--nodes`, and `--cpus-per-task`, which can be used to run . SLURM uses the concept of tasks, which are processes that can use one or more CPU cores to run a copy of a program. Below we'll discuss how nodes, cores, and tasks are used by single-thread, multi-thread, multi-process, and MPI applications.
 
@@ -213,7 +213,7 @@ A CPU resource request is **required** and tells the job scheduler how to alloca
 #SBATCH --ntasks=1
 ```
 
-Please see [Nodes, Cores & Tasks](#nodes-cores--tasks) for more information.
+Please see [Nodes, Cores, and Tasks](#nodes-cores-and-tasks) for more information.
 
 #### Memory
 
