@@ -2,6 +2,8 @@
 
 Using MkDocs and GitHub to host our documentation.
 
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+
 ## Contributing
 
 ### Prerequisites
