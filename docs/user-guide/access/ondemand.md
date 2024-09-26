@@ -17,7 +17,9 @@ To connect to Open OnDemand point your browser to <https://ondemand.rcc.mcw.edu>
 
 After login, the *Dashboard* will appear. The menu includes apps to manage files, submit jobs, monitor jobs, open a terminal session, or launch interactive apps. To end your session, click **Log Out** at the top right.
 
-For a more detailed guide on how to connect to OnDemand while on campus or remote through a VPN, please watch this video: [how to connect to OnDemand](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EUR9PjgZlwVLpSNai9MATkkB4tTG6bmzsT7TJ1Qdqz35Wg?e=2NG4k6){:target="_blank"}.
+For a more detailed guide on how to connect to OnDemand while on campus or remote through a VPN, please watch this video:
+
+[![how to connect to OnDemand](onDemandThumbnail.jpg)](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EUR9PjgZlwVLpSNai9MATkkB4tTG6bmzsT7TJ1Qdqz35Wg?e=2NG4k6){:target="_blank"}
 
 ### Off Campus
 
