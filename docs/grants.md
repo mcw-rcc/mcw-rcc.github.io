@@ -21,11 +21,11 @@ Restricted HPC (ResHPC) is a secure way to access and utilize the HPC cluster. I
 
 The system includes a 215 TB NVMe scratch file system enabling high-performance file I/O during job processing. A second 1.77 PB file system provides persistent storage for active projects. A 100 Gbps network provides fast data transfer between file systems.
 
-RCC provides 1 TB of persistent storage to any MCW faculty member for free. Additional persistent storage is available for $60 per TB per year.
+RCC provides 1 TB of persistent storage to any MCW faculty member for free. Additional persistent storage is available for a fee.
 
 ## Data center and Network Facilities
 
-All RCC hardware is housed in a managed data center. This facility includes redundant HVAC cooling systems, redundant power distribution, UPS battery backup, and diesel-powered backup generators. All equipment is on dedicated subnets providing high-capacity redundant (1Gb) networking. The data center also has Internet 2 access through WiscNet.
+All RCC hardware is housed in a managed data center. This facility includes redundant HVAC cooling systems, redundant power distribution, UPS battery backup, and diesel-powered backup generators. All equipment is on dedicated subnets providing high-capacity redundant (1 Gbps) networking. The data center also has Internet 2 access through WiscNet.
 
 ## Staff and Support
 
