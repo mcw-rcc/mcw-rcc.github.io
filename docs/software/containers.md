@@ -2,110 +2,98 @@
 
 ## Overview
 
-[Singularity](https://sylabs.io/guides/3.7/user-guide/){:target="_blank"} is a container solution designed for high-performance computing systems. A Singularity container is a collection of application and dependency files, which is packaged as a single portable image file. Containers are independent from the host operating system, allowing applications that are not natively supported to run on a variety of HPC resources. They are conceptually similar to Docker, but focus more on HPC. Singularity containers can be shared and distributed to support reproducible research and can be run on most HPC systems without modification as long as Singularity is installed.
+[Apptainer](https://apptainer.org/docs/user/1.3/){:target="_blank"} (formerly Singularity) is a container solution designed for high-performance computing systems. A container is a collection of application and dependency files, which is packaged as a single portable image file. Containers are independent from the host operating system, allowing applications that are not natively supported to run on a variety of HPC resources. They are conceptually similar to Docker, but focus more on HPC. Apptainer containers can be shared and distributed to support reproducible research and can be run on most HPC systems without modification as long as Apptainer is installed.
 
-## Singularity Commands
+## Apptainer Commands
 
-Singularity uses a series of subcommands and options controlled by a wrapper script called `singularity`. The `-h` option displays the command-line help documentation:
+Apptainer uses a series of subcommands and options controlled by a wrapper script called `apptainer`. The `-h` option displays the command-line help documentation:
 
-```bash
-$ module load singularity
-$ singularity -h
-USAGE: singularity [global options...] <command> [command options...] ...
- 
-GLOBAL OPTIONS:
-    -d|--debug    Print debugging information
-    -h|--help     Display usage summary
-    -s|--silent   Only print errors
-    -q|--quiet    Suppress all normal output
-       --version  Show application version
-    -v|--verbose  Increase verbosity +1
-    -x|--sh-debug Print shell wrapper debugging information
- 
-GENERAL COMMANDS:
-    help       Show additional help for a command or container                  
-    selftest   Run some self tests for singularity install                      
- 
-CONTAINER USAGE COMMANDS:
-    exec       Execute a command within container                               
-    run        Launch a runscript within container                              
-    shell      Run a Bourne shell within container                              
-    test       Launch a testscript within container                           
- 
-CONTAINER MANAGEMENT COMMANDS:
-    apps       List available apps within a container                           
-    bootstrap  *Deprecated* use build instead                                   
-    build      Build a new Singularity container                                
-    check      Perform container lint checks                                    
-    inspect    Display container's metadata                                     
-    mount      Mount a Singularity container image                              
-    pull       Pull a Singularity/Docker container to $PWD                      
- 
-COMMAND GROUPS:
-    image      Container image command group                                    
-    instance   Persistent instance command group                                
+```txt
+$ module load apptainer
+$ apptainer -h
 
- 
-CONTAINER USAGE OPTIONS:
-    see singularity help <command>
+Linux container platform optimized for High Performance Computing (HPC) and
+Enterprise Performance Computing (EPC)
+
+Usage:
+  apptainer [global options...]
+
+Description:
+  Apptainer containers provide an application virtualization layer enabling
+  mobility of compute via both application and environment portability. With
+  Apptainer one is capable of building a root file system that runs on any
+  other Linux system where Apptainer is installed.
+
+Options:
+      --build-config    use configuration needed for building containers
+  -c, --config string   specify a configuration file (for root or
+                        unprivileged installation only) (default
+                        "/hpc/apps/apptainer/1.3.0/etc/apptainer/apptainer.conf")
+  -d, --debug           print debugging information (highest verbosity)
+  -h, --help            help for apptainer
+      --nocolor         print without color output (default False)
+  -q, --quiet           suppress normal output
+  -s, --silent          only print errors
+  -v, --verbose         print additional information
+      --version         version for apptainer
+
+Available Commands:
+  build       Build an Apptainer image
+  cache       Manage the local cache
+  capability  Manage Linux capabilities for users and groups
+  checkpoint  Manage container checkpoint state (experimental)
+  completion  Generate the autocompletion script for the specified shell
+  config      Manage various apptainer configuration (root user only)
+  delete      Deletes requested image from the library
+  exec        Run a command within a container
+  help        Help about any command
+  inspect     Show metadata for an image
+  instance    Manage containers running as services
+  key         Manage OpenPGP keys
+  keyserver   Manage apptainer keyservers
+  oci         Manage OCI containers
+  overlay     Manage an EXT3 writable overlay image
+  plugin      Manage Apptainer plugins
+  pull        Pull an image from a URI
+  push        Upload image to the provided URI
+  registry    Manage authentication to OCI/Docker registries
+  remote      Manage apptainer remote endpoints
+  run         Run the user-defined default command within a container
+  run-help    Show the user-defined help for an image
+  search      Search a Container Library for images
+  shell       Run a shell within a container
+  sif         Manipulate Singularity Image Format (SIF) images
+  sign        Add digital signature(s) to an image
+  test        Run the user-defined tests within a container
+  verify      Verify digital signature(s) within an image
+  version     Show the version for Apptainer
+
+Examples:
+  $ apptainer help <command> [<subcommand>]
+  $ apptainer help build
+  $ apptainer help instance start
+
+
+For additional help or support, please visit https://apptainer.org/help/
 ```
 
-For more information see the [Singularity Quick Start](https://sylabs.io/guides/3.7/user-guide/quick_start.html#interact-with-images){:target="_blank"}.
+For more information see the [Apptainer Quick Start guide](https://apptainer.org/docs/user/1.3/quick_start.html#overview-of-the-apptainer-interface){:target="_blank"}.
 
 ### Download Pre-built Containers
 
-Many software packages already have containers built by other users. These containers are available from external sites such as Singularity Hub or Docker Hub.
+Many software packages already have containers built by developers. These containers are available from external sites such as Docker Hub or ghcr.io. With apptainer you can use the `pull` or `build` commands to download containers.
 
-The `singularity pull` command is used to download existing containers.
+The `apptainer pull` command will download a OCI image from a remote repository, combining the layers to a usable SIF image.
 
-#### Pull from Singularity Hub
-
-To download a container from Singularity Hub:
-
-```bash
-$ singularity pull shub://vsoch/hello-world 
-Progress |===================================| 100.0%
-Done. Container is at: /home/user/vsoch-hello-world-master.sif
-$ ./vsoch-hello-world-master.sif
-RaawwWWWWWRRRR!!
-```
-
-You can also download and rename containers:
-
-```bash
-$ singularity pull --name myContainer.sif shub://vsoch/hello-world
-Progress |===================================| 100.0%
-Done. Container is at: /home/user/myContainer.sif
-$ ./myContainer.sif
-RaawwWWWWWRRRR!!
-```
-
-#### Pull from Docker Hub
-
-To download a container from Docker Hub:
-
-```bash
-$ singularity pull docker://godlovedc/lolcow
-WARNING: pull for Docker Hub is not guaranteed to produce the
-WARNING: same image on repeated pull. Use Singularity Registry
-WARNING: (shub://) to pull exactly equivalent images.
-Docker image path: index.docker.io/godlovedc/lolcow:latest
-Cache folder set to /home/user/.singularity/docker
-[6/6] |===================================| 100.0%
-Importing: base Singularity environment
-Importing: /home/user/.singularity/docker/sha256:9fb6c798fa41e509b58bccc5c29654c3ff4648b608f5daa67c1aab6a7d02c118.tar.gz
-...
-Building Singularity image...
-Singularity container built: ./lolcow.img
-Cleaning up...
-$ ./lolcow.img
- ________________________________________
-/ It is a wise father that knows his own \
-| child.                                 |
-|                                        |
-| -- William Shakespeare, "The Merchant  |
-\ of Venice"                             /
- ----------------------------------------
+```txt
+$ apptainer pull docker://ghcr.io/apptainer/lolcow
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+INFO:    Creating SIF file...
+$ ./lolcow_latest.sif
+ ______________________________
+<                              >
+ ------------------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
@@ -113,42 +101,17 @@ $ ./lolcow.img
                 ||     ||
 ```
 
-The pull command downloads the container from Docker, converts it to Singularity format, and builds a the container. This is different than pulling an image from Singularity Hub, where the pull command simply downloads the image. Singularity includes warnings about this fact. Since a pull from Docker Hub induces a build process, the downloaded container is not guaranteed to be the same each time. If strict reproducibility is needed, pull from Singularity Hub.
+The `apptainer build` command can also be used to download existing containers. The `build` command has many more uses for building containers from scratch or converting formats, which we cover later. For the purpose of downloading a pre-built container, `build` differs from `pull` by converting the image to the latest Apptainer image format after downloading it. Further, `build` allows for custom naming of the downloaded container.
 
-#### Build from Singularity Hub
-
-The `singularity build` command can also be used to download existing containers.
-
-```bash
-$ singularity build hello-world.sif shub://vsoch/hello-world
-Cache folder set to /home/user/.singularity/shub
-Progress |===================================| 100.0%
-Building from local image: /home/user/.singularity/shub/vsoch-hello-world-master.sif
-Building Singularity image...
-Singularity container built: hello-world.sif
-Cleaning up...
-$ ./hello-world.sif
-RaawwWWWWWRRRR!!
-```
-
-When using the build command, you must specify a name for your container. The build command differs from pull in that it will download and then build your image using the latest Singularity image format. Additional functionality of the build command is discussed in [Build a Container](#build-a-container).
-
-#### Build from Docker Hub
-
-```bash
-$ singularity build lolcow.sif docker://godlovedc/lolcow
-Docker image path: index.docker.io/godlovedc/lolcow:latest
-Cache folder set to /home/user/.singularity/docker
-Importing: base Singularity environment
-Importing: /home/user/.singularity/docker/sha256:9fb6c798fa41e509b58bccc5c29654c3ff4648b608f5daa67c1aab6a7d02c118.tar.gz
-...
-Building Singularity image...
-Singularity container built: lolcow.sif
-Cleaning up...
-$ ./lolcow.sif
- ______________________________________ 
-< Today is what happened to yesterday. >
- --------------------------------------
+```txt
+$ apptainer build my_lolcow.sif docker://ghcr.io/apptainer/lolcow
+INFO:    Starting build...
+INFO:    Creating SIF file...
+INFO:    Build complete: my_lolcow.sif
+$ ./my_lolcow.sif
+ ______________________________
+<                              >
+ ------------------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
@@ -158,13 +121,15 @@ $ ./lolcow.sif
 
 ### Build a Container
 
-The primary function of the build command is to create new containers either from scratch or based on existing containers. It is also used to convert between container formats. Full documentation of the build command is available at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/build_a_container.html){:target="_blank"}. Here we include an example definition file and build process for a Python container.
+The `build` command is used to create new containers either from scratch or based on existing containers. It can also used to convert between container formats. As an example, we'll discuss the process of building custom Python container from scratch.
+
+Please see the [Apptainer docs](https://apptainer.org/docs/user/1.3/build_a_container.html){:target="_blank"} for more info.
 
 #### Definition File
 
-First we write a definition file for the new container. A definition file defines the container build process including software installation, runtime functionality, etc. This file can be named how you like, but it is recommended to denote definition files with the `.def` extension. We will call our definition file `Python.def`.
+First we write a definition file for the new container. A definition file defines the container build process including software installation, runtime functionality, etc. This file can be named how you like, but it is recommended to denote definition files with the `.def` extension. We will call our definition file `py_container.def`.
 
-=== "container.def"
+=== "py_container.def"
 
 ```bash
 Bootstrap: docker
@@ -213,20 +178,20 @@ This container includes Python.
     /opt/python/bin/python --version
 ```
 
-Full documentation of definition files at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/definition_files.html){:target="_blank"}.
+Full documentation of definition files at [Apptainer Docs](https://apptainer.org/docs/user/1.3/definition_files.html){:target="_blank"}.
 
 #### Build
 
 Build the container using the definition file:
 
 ```bash
-sudo singularity build Python.sif Python.def
+sudo apptainer build py_container.sif py_container.def
 ```
 
-The syntax is always `singularity build` followed by the new container name, denoted by the `.sif` extension, and the definition file.
+The syntax is always `apptainer build` followed by the new container name, denoted by the `.sif` extension, and the corresponding definition file.
 
 !!! info "root or sudo required"
-    Building from a definition file requires `root` or `sudo` permissions. This is not possible on the HPC cluster. Instead we recommend to use a virtual machine running on your desktop.
+    Building from a definition file requires `root` or `sudo` permissions. This is not possible on the HPC cluster. Instead we recommend to use a virtual machine running on your desktop or send a container build request to {{ support_email }}.
 
 #### Test
 
@@ -234,8 +199,8 @@ Copy your container file to your RCC home directory and run a test:
 
 ```bash
 $ srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --account={PI_NetID} --pty bash
-$ module load singularity
-$ singularity exec Python.sif python --version
+$ module load apptainer
+$ apptainer exec py_container.sif python --version
 Python 2.7.15
 ```
 
@@ -243,7 +208,7 @@ Here we print the version of Python installed in the container. The exec command
 
 ## Containers in Jobs
 
-Singularity containers were designed to be run on HPC systems. RCC maintains containers for several software packages on the clusters. The following examples show an RCC built Singularity container which can be run in an interactive or batch job.
+Apptainer containers were designed to be run on HPC systems. RCC maintains containers for several software packages on the clusters. The following examples show an RCC built container which can be run in an interactive or batch job.
 
 ### Example Interactive job
 
@@ -253,16 +218,16 @@ Start an interactive job on the cluster:
 srun --ntasks=1 --mem-per-cpu=4GB --time=01:00:00 --job-name=interactive --account={PI_NetID} --pty bash
 ```
 
-Load the Singularity module:
+Load the Apptainer module:
 
 ```bash
-module load singularity
+module load apptainer
 ```
 
 Run a command in your container:
 
 ```bash
-$ singularity exec Python.sif python hello_world.py
+$ apptainer exec  py_container.sif python hello_world.py
 Hello, World!
 ```
 
@@ -271,14 +236,12 @@ The exec command is used to execute the `hello_world.py` script within the conta
 Alternatively, shell into the container and run a command:
 
 ```bash
-$ singularity shell Python.sif 
-Singularity: Invoking an interactive shell within container...
-
-Singularity Python.sif:~> python hello_world.py 
+$ apptainer shell  py_container.sif 
+Apptainer> python hello_world.py 
 Hello, World!
 ```
 
-If your container has a **%runscript** section defined, then you could also use the `singularity run` command. Choose the method that works best for you.
+If your container has a **%runscript** section defined, then you could also use the `apptainer run` command. Choose the method that works best for you.
 
 ### Example Batch Job
 
@@ -292,8 +255,8 @@ If your container has a **%runscript** section defined, then you could also use 
 #SBATCH --account=<PI_NetID>
 #SBATCH --output=%x-%j.out
 
-module load singularity
-singularity exec Python.sif python hello_world.py
+module load apptainer
+apptainer exec py_container.sif python hello_world.py
 ```
 
 Submit the job:
@@ -302,11 +265,11 @@ Submit the job:
 sbatch container.sh
 ```
 
-This job will execute the `hello_world.py` script within the `Python.sif` container on a compute node. The output file should contain `Hello, World!`.
+This job will execute the `hello_world.py` script within the `py_container.sif` container on a compute node. The output file should contain `Hello, World!`.
 
-## Singularity on RCC
+## Apptainer on RCC
 
-RCC uses Singularity to install and maintain software packages that would not otherwise be available on the compute clusters. This is often due to incompatible libraries or unsupported operating system. In some cases Singularity is used to control access or functionality of an application. RCC-built containers are designed to interact with RCC clusters. They include necessary file mount points, special libraries (e.g., CUDA), and custom wrapper commands. Here we will discuss the elements needed to make your containers compatible with RCC systems.
+RCC uses Apptainer to install and maintain software packages that would not otherwise be available on the compute clusters. This is often due to incompatible libraries or unsupported operating system. In some cases Apptainer is used to control access or functionality of an application. RCC-built containers are designed to interact with RCC clusters. They include necessary file mount points, special libraries (e.g., CUDA), and custom wrapper commands. Here we will discuss the elements needed to make your containers compatible with RCC systems.
 
 A set of useful directories are mounted by default on RCC clusters. The following file mounts should be included for non-GPU containers:
 
@@ -321,11 +284,11 @@ Add to the `%post` section of your definition file:
 mkdir -p /hpc /scratch
 ```
 
-## Singularity and Docker
+## Apptainer and Docker
 
-Singularity is conceptually similar to Docker and easily supports Docker images. We've shown above that Singularity can be used to download and Singularity-ize Docker images. It can also be used to build containers starting from a Docker image base (RCC does this). This allows RCC to support a wide variety of software that is already containerized with Docker. If you can find a container on Docker Hub, chances are that it will be supported through Singularity. If you already use Docker to containerize your software, then you can continue developing in Docker knowing that Singularity will easily import your images.
+Apptainer is conceptually similar to Docker and easily supports Docker images. We've shown above that Apptainer can be used to download and Apptainer-ize Docker images. It can also be used to build containers starting from a Docker image base (RCC does this). This allows RCC to support a wide variety of software that is already containerized with Docker. If you can find a container on Docker Hub, chances are that it will be supported through Apptainer. If you already use Docker to containerize your software, then you can continue developing in Docker knowing that Apptainer will easily import your images.
 
-Full information on Singularity and Docker at [Singularity Docs](https://sylabs.io/guides/3.7/user-guide/){:target="_blank"}.
+Full information on Apptainer and Docker at [Apptainer Docs](https://apptainer.org/docs/user/1.3/docker_and_oci.html){:target="_blank"}.
 
 ## Getting Help
 
