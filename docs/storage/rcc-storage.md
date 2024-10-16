@@ -43,9 +43,9 @@ Scratch storage is intended for temporary job files. Every group has a directory
 
 #### Retention
 
-Any file that has not been accessed or modified for 60 days will be automatically marked for deletion by a process that runs daily. Files marked for deletion are moved to a daily trash folder. Any trash folder older than 14 days will be automatically deleted. This means that the scratch file system will be cleaned up every day, and you will have the opportunity to retrieve those old files for an additional 14 days.
+Any file that is older than 60 days (based on creation, modification, or access time) may be deleted by RCC admins without notice. RCC sends periodic reminders to clean up scratch storage directories. These reminders will include your percentage of files older than 60 days. A list of these old files can be provided upon request. If the scratch file system becomes full, RCC admins may begin deleting files without notice, starting with files older than 60 days, followed by any other files as needed to free up space.
 
-!!! warning "Scratch storage is temporary."
+!!! warning "Scratch storage is for jobs, not projects."
 
     Do not use scratch storage for long-term project data. If you are not running a job, you should not have any data in scratch. Failure to adhere to this policy may result in loss of your data located on scratch.
 
