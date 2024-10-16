@@ -8,9 +8,9 @@ Each user has the same set of default storage paths:
 
 | Type                  | Path                | Quota                          | Protection            | Description                       |
 | --------------------- | ------------------- | ------------------------------ | --------------------- | --------------------------------- |
-| [`Home`](#home)       | /home/netid         | 100 GiB                        | snapshot, replication | account configuration and scripts |
-| [`Group`](#group)     | /group/pi_netid     | 1 TiB, expandable with payment | snapshot, replication | shared raw research data          |
-| [`Scratch`](#scratch) | /scratch/g/pi_netid | 5 TiB                          | none                  | temporary job files               |
+| [`Home`](#home)       | /home/netid         | 100 GB                        | snapshot, replication | account configuration and scripts |
+| [`Group`](#group)     | /group/pi_netid     | 1 TB, expandable with payment | snapshot, replication | shared raw research data          |
+| [`Scratch`](#scratch) | /scratch/g/pi_netid | 5 TB                          | none                  | temporary job files               |
 
 ??? tip "You can easily find your available storage paths and current utilization on the cluster  with the `mydisks` command."
 
@@ -29,17 +29,17 @@ Each user has the same set of default storage paths:
 
 The home directory is your starting place every time you login to the cluster. It's location is `/home/netid`, where `netid` is your MCW username. The purpose of a home directory is storing user-installed software, user-written scripts, configuration files, etc. Each home directory is only accessible by its owner and is not suitable for data sharing. Home is also not appropriate for large scale research data or temporary job files.
 
-The quota limit is 100GiB and data protection includes replication[^1] and snapshots[^2]. For more info on snapshots, and how you might recover a file, please see [file recovery](file-recovery.md).
+The quota limit is 100 GB and data protection includes replication[^1] and snapshots[^2]. For more info on snapshots, and how you might recover a file, please see [file recovery](file-recovery.md).
 
 ### Group
 
-Group storage is a shared space for labs to store research data in active projects. Each lab receives 1TiB for free, with [additional storage](../storage/paid-storage.md) available for $60/TiB/year. This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes. Data protection includes replication[^1] and snapshots[^3]. For more info on snapshots, and how you might recover a file, please see [file recovery](file-recovery.md).
+Group storage is a shared space for labs to store research data in active projects. Each lab receives 1 TB for free, with [additional paid storage](../storage/paid-storage.md) available at the 2024 rate of $60/TB/year. This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes. Data protection includes replication[^1] and snapshots[^3]. For more info on snapshots, and how you might recover a file, please see [file recovery](file-recovery.md).
 
 This space is organized by lab group. Each folder in `/group` represents a lab, and is named using the PI's NetID (username). For example, a PI with username "jsmith" would have a group directory located at `/group/jsmith`. Directories within that lab space are organized by purpose and controlled by unique security groups. For example, there is a default `/group/pi_netid/work` directory, which is shared space restricted to lab users. Other shared directories can be created by request for projects that require unique permissions. Additionally, you may have data directories related to your use of a MCW core. These directories will be named for the core and located at `/group/pi_netid/cores`. For example, a Mellowes Center project could be delivered to your group storage and located at `/group/pi_netid/cores/mellowes/example_project1`.
 
 ### Scratch
 
-Scratch storage is intended for temporary job files. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5 TiB. Files on scratch storage are subject to retention limits, which is discussed below. In general, you should avoid storing files on scratch unless you are running a job. Please remember that scratch storage is limited and shared among all groups.
+Scratch storage is intended for temporary job files. Every group has a directory at `/scratch/g/pi_netid` with quota limit 5 TB. Files on scratch storage are subject to retention limits, which is discussed below. In general, you should avoid storing files on scratch unless you are running a job. Please remember that scratch storage is limited and shared among all groups.
 
 #### Retention
 
@@ -59,7 +59,7 @@ All compute nodes have 440GiB of local scratch storage, except as noted below.
 
 !!! tip "Some GPU nodes have more local scratch."
 
-    Compute nodes gn07 and gn08 have 17TiB of local storage and gn09 has 7TiB. These nodes are intended for large scale AI jobs that require local fast storage.
+    Compute nodes gn07 and gn08 have 17 TB of local storage and gn09 has 7 TB. These nodes are intended for large scale AI jobs that require local fast storage.
 
 ## Permissions
 

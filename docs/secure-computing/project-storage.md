@@ -37,7 +37,7 @@ Users must keep source and results separate. Most DUAs are time limited and Rese
 
 ## Home Directory
 
-**Quota**: 5 GiB  
+**Quota**: 5 GB  
 **Snapshot**: 14 daily @ 12PM, 6 weekly @ 1PM Sunday  
 **Replication**: continuous with snapshot
 
