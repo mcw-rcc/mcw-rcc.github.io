@@ -90,7 +90,7 @@ The Python virtual environment (e.g., **pythonEnvSysPkgs**) now includes all pac
 
 ## Python in a Job Script
 
-You may want to use your personal Python environment in a SLURM job on the cluster. Please review the [Writing a Job Script](../user-guide/jobs/running-jobs.md#writing-a-job-script) guide before proceeding. The following examples show various methods to use your personal Python environment.
+You may want to use your personal Python environment in a SLURM job on the cluster. Please review the [Writing a Job Script](../cluster/jobs/running-jobs.md#writing-a-job-script) guide before proceeding. The following examples show various methods to use your personal Python environment.
 
 <!-- markdownlint-disable MD046 -->
 === "py-venv.slurm"
