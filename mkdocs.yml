@@ -116,6 +116,7 @@ nav:
     - Recent News: news/index.md
     - Grant Boilerplate: grants.md
     - Publications: pubs.md
+    - Maintenance: maintenance.md
     - FAQ: faq.md
   - User Guide: 
     - Quick Start: user-guide/quickstart.md
