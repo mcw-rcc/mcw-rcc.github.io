@@ -10,6 +10,14 @@ All you have to do is include the following statement in your publication:
 
 ## 2024
 
+**[Expanded Functionality and Portability for the Colvars Library](https://doi.org/10.1021/acs.jpcb.4c05604){:target="_blank"}**  
+Fiorina G, Marinelli F, Forrest LR, Chen H, Chipot C, Kohlmeyer A, Santuz H, Hénin J
+{:.author}
+
+**[Deep learning-based automatic contour quality assurance for auto-segmented abdominal MR-Linac contours](https://doi.org/10.1088/1361-6560/ad87a6){:target="_blank"}**  
+Zarenia M, Zhang Y, Sarosiek C, Conlin R, Amjad A, Paulson ES
+{:.author}
+
 **[Structural basis for selectivity and antagonism in extracellular GPCR-nanobodies](https://doi.org/10.1038/s41467-024-49000-x){:target="_blank"}**  
 Schlimgen RR, Peterson FC, Heukers R, Smit MJ, McCorvy JD, Volkman BF
 {:.author}
