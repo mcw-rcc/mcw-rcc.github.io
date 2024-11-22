@@ -12,7 +12,7 @@ Open OnDemand is a web browser-based interface to RCC computing resources. You c
 
 ### Web-based
 
-[Open OnDemand](ondemand.md#command-line-terminal) includes a command-line terminal app that connects you to the cluster via SSH. This is the simplest method for users connecting from Windows computers. However, this method does not account for X11. If you plan to run windowed applications, please see the [X11](#using-ssh-with-x11) guide below.
+[Open OnDemand](ondemand.md#command-line-terminal) includes a command-line terminal app that connects you to the cluster via SSH. This is the simplest method for users connecting from Windows computers. However, this method does not account for X11. If you plan to run windowed applications, please see the [X11](#using-ssh-with-x11) guide below or use the Remote Desktop inside OnDemand. This video on [how to connect to OnDemand](https://mcw0.sharepoint.com/:v:/s/RCCAdminSite/EUR9PjgZlwVLpSNai9MATkkB4tTG6bmzsT7TJ1Qdqz35Wg?e=2NG4k6){:target="_blank"} also shows how to open the Remote Desktop.
 
 ### From Windows
 

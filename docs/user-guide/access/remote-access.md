@@ -1,6 +1,6 @@
 # Remote Access
 
-Off-campus access to RCC resources is dependent on MCW-IS standard remote access methods. For more information on remote work, see [Remote Work Guide](https://infoscope.mcw.edu/is/virtual.htm){:target="_blank"}. RCC resources are available remotely using Citrix.
+Off-campus access to RCC resources is dependent on MCW-IS standard remote access methods. For more information on remote work, see [Remote Work Guide](https://infoscope.mcw.edu/is/virtual.htm){:target="_blank"}. RCC resources are available remotely using [Citrix](https://infoscope.mcw.edu/is/services/citrix.htm){:target="_blank"}.
 
 ## Citrix
 
