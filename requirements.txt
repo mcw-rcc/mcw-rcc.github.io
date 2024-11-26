@@ -7,3 +7,4 @@ fontawesome_markdown
 mkdocs-glightbox
 mkdocs-rss-plugin
 mkdocs-table-reader-plugin
+mkdocs-redirects

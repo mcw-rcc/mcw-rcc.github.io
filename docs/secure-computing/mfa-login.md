@@ -12,11 +12,11 @@ If you're new to using a cluster, ResHPC OnDemand offers web browser-based acces
 To login, point your browser to <https://ood-reshpc.rcc.mcw.edu>{:target="_blank"}, enter your password, select a Duo MFA option, and complete the login.
 
 !!! tip "Additional info"
-    Much of the functionality of ResHPC OnDemand is shared with the standard Open OnDemand site. Please consult the [OnDemand app guides](../user-guide/access/ondemand.md#command-line-terminal) for additional help and detail.
+    Much of the functionality of ResHPC OnDemand is shared with the standard Open OnDemand site. Please consult the [OnDemand app guides](../cluster/access/ondemand.md#command-line-terminal) for additional help and detail.
 
 ## SSH Connection
 
-ResHPC login requires Duo MFA. For Windows users, we recommend a multi-factor compatible terminal client such as [MobaXterm](../user-guide/access/mobaxterm.md). Mac and Linux users may use their OS provided terminal clients.
+ResHPC login requires Duo MFA. For Windows users, we recommend a multi-factor compatible terminal client such as [MobaXterm](../cluster/access/mobaxterm.md). Mac and Linux users may use their OS provided terminal clients.
 
 To login, use the ResHPC login hostname `login-reshpc.rcc.mcw.edu`, enter your password, select a Duo MFA option, and complete the login process.
 

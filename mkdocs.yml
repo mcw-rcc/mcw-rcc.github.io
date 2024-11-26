@@ -78,7 +78,24 @@ plugins:
         - includes/modules.yml
         - includes/r-packages.yml
   - table-reader
-  
+  - redirects:
+      redirect_maps:
+        'user-guide/quickstart.md': 'cluster/quickstart.md'
+        'user-guide/accounts.md': 'cluster/accounts.md'
+        'user-guide/etiquette.md': 'cluster/etiquette.md'
+        'user-guide/hardware.md': 'cluster/hardware.md'
+        'user-guide/access/login.md': 'cluster/access/login.md'
+        'user-guide/access/ondemand.md': 'cluster/access/ondemand.md'
+        'user-guide/access/remote-access.md': 'cluster/access/remote-access.md'
+        'user-guide/access/mobaxterm.md': 'cluster/access/mobaxterm.md'
+        'user-guide/access/putty.md': 'cluster/access/putty.md'
+        'user-guide/access/ssh-keys.md': 'cluster/access/ssh-keys.md'
+        'user-guide/jobs/running-jobs.md': 'cluster/jobs/running-jobs.md'
+        'user-guide/jobs/storage-job.md': 'cluster/jobs/storage-job.md'
+        'user-guide/jobs/software-job.md': 'cluster/jobs/software-job.md'
+        'user-guide/jobs/troubleshoot.md': 'cluster/jobs/troubleshoot.md'
+        'user-guide/jobs/xdmod.md': 'cluster/jobs/xdmod.md'
+
 # Extensions
 markdown_extensions:
   - abbr
@@ -118,25 +135,25 @@ nav:
     - Publications: pubs.md
     - Maintenance: maintenance.md
     - FAQ: faq.md
-  - User Guide: 
-    - Quick Start: user-guide/quickstart.md
-    - Getting an Account: user-guide/accounts.md
-    - User Etiquette: user-guide/etiquette.md
-    - Hardware Specs: user-guide/hardware.md
+  - Cluster: 
+    - Quick Start: cluster/quickstart.md
+    - Getting an Account: cluster/accounts.md
+    - User Etiquette: cluster/etiquette.md
+    - Hardware Specs: cluster/hardware.md
     - Connecting:
-      - Logging in: user-guide/access/login.md
-      - Open OnDemand: user-guide/access/ondemand.md
-      - Remote Access: user-guide/access/remote-access.md
+      - Logging in: cluster/access/login.md
+      - Open OnDemand: cluster/access/ondemand.md
+      - Remote Access: cluster/access/remote-access.md
       - SSH Clients:
-        - MobaXterm: user-guide/access/mobaxterm.md
-        - PuTTY: user-guide/access/putty.md
-      - SSH Keys: user-guide/access/ssh-keys.md
+        - MobaXterm: cluster/access/mobaxterm.md
+        - PuTTY: cluster/access/putty.md
+      - SSH Keys: cluster/access/ssh-keys.md
     - Running Jobs: 
-      - Submitting SLURM Jobs: user-guide/jobs/running-jobs.md
-      - Using Data in a Job: user-guide/jobs/storage-job.md
-      - Software in a Job: user-guide/jobs/software-job.md 
-      - Troubleshoot Jobs: user-guide/jobs/troubleshoot.md
-      - Job Metrics: user-guide/jobs/xdmod.md
+      - Submitting SLURM Jobs: cluster/jobs/running-jobs.md
+      - Using Data in a Job: cluster/jobs/storage-job.md
+      - Software in a Job: cluster/jobs/software-job.md 
+      - Troubleshoot Jobs: cluster/jobs/troubleshoot.md
+      - Job Metrics: cluster/jobs/xdmod.md
   - Data Storage:
     - storage/rcc-storage.md
     - storage/paid-storage.md 
