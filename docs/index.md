@@ -8,10 +8,7 @@ Research Computing provides services and support for computational research at M
 
 ### HPC Cluster
 
-The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster contains over **3,800** CPU cores in a variety of compute node architectures, including large memory and GPUs. All compute nodes are connected by a 100Gbps RoCEv2 network (ethernet equivalent to Infiniband). The cluster also includes a **215TB** NVMe scratch storage filesystem. Please see the [Quick Start guide](cluster/quickstart.md) for more detail.
-
-!!! info "Operating System Upgrade"
-    The operating system of the HPC cluster will be upgraded from CentOS 7 to Rocky Linux 8. For more information see [HPC cluster upgrade](cluster-el8.md).
+The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster contains over **3,800** CPU cores in a variety of compute node architectures, including large memory and GPUs. All compute nodes are connected by a 100 Gbps RoCEv2 network. The cluster also includes a **467 TB** NVMe scratch storage filesystem. Please see the [Quick Start guide](user-guide/quickstart.md) for more detail.
 
 ### ResHPC
 
@@ -19,7 +16,7 @@ The {{ hpc_name }} cluster is the institution's primary computational resource, 
 
 ### Data Storage
 
-In addition to the cluster's scratch storage, RCC also provides general purpose research storage with a replicated **2.6PB** filesystem. This persistent storage is mounted on the cluster via NFS, or provided directly to user's via NFS and SMB. Please see the [Storage Overview](storage/rcc-storage.md) for more detail.
+In addition to the cluster's scratch storage, RCC also provides general purpose research storage with a replicated **2.6 PB** filesystem. This persistent storage is mounted on the cluster via NFS, or provided directly to user's via NFS and SMB. Please see the [Storage Overview](storage/rcc-storage.md) for more detail.
 
 ### Software
 
