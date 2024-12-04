@@ -8,7 +8,17 @@ All you have to do is include the following statement in your publication:
 
     This research was completed in part with computational resources and technical support provided by the Research Computing Center at the Medical College of Wisconsin.
 
+## 2025
+
+**[Dry powder inhaler deposition in the larynx and the risk of steroid inhaler laryngitis: A computational fluid dynamics study](https://doi.org/10.1016/j.jaerosci.2024.106490){:target="_blank"}**  
+Dey S, Bock JM, Garcia GJM
+{:.author}
+
 ## 2024
+
+**[Systematic analysis of the relationship between fold-dependent flexibility and artificial intelligence protein structure prediction](https://doi.org/10.1371/journal.pone.0313308){:target="_blank"}**  
+Haque N, Wagenknecht JB, Ratnasinghe BD, Zimmermann MT
+{:.author}
 
 **[Expanded Functionality and Portability for the Colvars Library](https://doi.org/10.1021/acs.jpcb.4c05604){:target="_blank"}**  
 Fiorina G, Marinelli F, Forrest LR, Chen H, Chipot C, Kohlmeyer A, Santuz H, Hénin J
