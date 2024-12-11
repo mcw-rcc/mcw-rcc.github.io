@@ -8,7 +8,7 @@ Research Computing provides services and support for computational research at M
 
 ### HPC Cluster
 
-The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster contains over **3,800** CPU cores in a variety of compute node architectures, including large memory and GPUs. All compute nodes are connected by a 100 Gbps RoCEv2 network. The cluster also includes a **467 TB** NVMe scratch storage filesystem. Please see the [Quick Start guide](user-guide/quickstart.md) for more detail.
+The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster contains over **3,800** CPU cores in a variety of compute node architectures, including large memory and GPUs. All compute nodes are connected by a 100 Gbps RoCEv2 network. The cluster also includes a **467 TB** NVMe scratch storage filesystem. Please see the [Quick Start guide](cluster/quickstart.md) for more detail.
 
 ### ResHPC
 
