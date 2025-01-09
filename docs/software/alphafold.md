@@ -107,9 +107,9 @@ AlphaFold3 is an improvement in functionality and performance. Please note the n
 
 ### Obtaining Model Parameters
 
-AlphaFold3 is installed on the cluster but does not include the required model parameters, which are subject to [Terms of Use](https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md){:target="_blank"}. In order to comply, each user wanting to use AlphaFold 3 must [submit a request](https://forms.gle/svvpY4u2jsHEwWYS6) to DeepMind to obtain their own personal copy of the model parameters. Approval of the request is entirely at the discretion of Google DeepMind. Research Computing cannot obtain the model parameters for you. Please ensure that you read and fully understand the Terms of Use agreement prior to request and download.
+AlphaFold3 is installed on the cluster but does not include the required model parameters, which are subject to [Terms of Use](https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md){:target="_blank"}. In order to comply, each user wanting to use AlphaFold 3 must [submit a request](https://forms.gle/svvpY4u2jsHEwWYS6) to DeepMind to obtain their own personal copy of the model parameters. Research Computing cannot obtain the model parameters for you. Please ensure that you read and fully understand the Terms of Use agreement prior to request and download.
 
-If approved, you will receive a download link (~1 GB). Place that in your home directory, e.g. `$HOME/af3`. Per the Terms of Use, you may not share these files with anyone else, including other members of your lab.
+If approved, you will receive a download link to a ~1 GB file. Place that in your home directory, e.g. `$HOME/af3`. Per the Terms of Use, you may not share these files with anyone else, including other members of your lab.
 
 ### Input JSON
 
@@ -152,7 +152,7 @@ module purge
 module load alphafold/3.0.0
 
 # start alphafold software, replace PI_NetID with your username
-apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$ALPHAFOLD_DATA_PATH --json_path=fold_input.json --output_dir=$PWD --norun_inference
+apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_input.json --output_dir=$PWD --norun_inference
 ```
 
 The `--norun_inference` flag causes AlphaFold to run the MSA search only.
@@ -171,7 +171,7 @@ module load alphafold/3.0.0
 export XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
 
 # start alphafold software
-apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$ALPHAFOLD_DATA_PATH --json_path=fold_input.json --output_dir=$PWD --norun_data_pipeline
+apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_input.json --output_dir=$PWD --norun_data_pipeline
 ```
 
 This second job will use the results of first step.
@@ -196,7 +196,7 @@ module load alphafold/3.0.0
 
 apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
-    --db_dir=$ALPHAFOLD_DATA_PATH \
+    --db_dir=$DATABASES_DIR \
     --json_path=fold_input.json \
     --output_dir=$PWD \
     --norun_inference
@@ -224,9 +224,9 @@ module load alphafold/3.0.0
 # for V100 compatibility
 export XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
 
-apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
+apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
-    --db_dir=$ALPHAFOLD_DATA_PATH \
+    --db_dir=$DATABASES_DIR \
     --json_path=fold_input.json \
     --output_dir=$PWD \
     --norun_data_pipeline
