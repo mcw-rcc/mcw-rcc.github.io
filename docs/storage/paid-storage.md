@@ -2,11 +2,11 @@
 
 ## Overview
 
-Additional `/group/PI_NetID` storage is available through a paid Research Group Storage (RGS) subscription.
+Additional research group storage, i.e., `/group/PI_NetID`, is available through a paid subscription.
 
-## Subscription Cost
+## Cost
 
-The 2024 rate is $60/TB/year. All fees must be prepaid. Minimum subscription size is 1 TB. Minimum subscription duration is 1 year or the number of months until the start of the next calendar year. RGS subscriptions are based on calendar year (January 1 to December 31). Subscriptions purchased in mid-year will be charged a prorated fee according to the number of months until January 1. RCC will not refund RGS fees for any reason.
+The 2025 rate is $80/TB/year. All fees must be prepaid and minimum addition is 1 TB. Minimum duration is 1 year (January 1 to December 31), or the number of months until the start of the next calendar year. Fees will be prorated according to the number of months until December 31. Research Computing will not refund storage fees for any reason.
 
 !!! info "Storage price increases"
     The price of storage will increase incrementally starting in 2025 and beyond. The pricing schedule is as follows:
@@ -19,21 +19,21 @@ The 2024 rate is $60/TB/year. All fees must be prepaid. Minimum subscription siz
 
 ## Unpaid Fees
 
-If RGS fees are unpaid, RCC admins will change your storage directory to **read-only** (i.e. no new data can be written). The PI will have until March 31 to pay any fees that are due or move the data off of RGS.
+If fees are unpaid, RCC admins will change your research group storage directory to **read-only** (i.e. no new data can be written). The PI will have until March 31 to pay any fees that are due or remove the data.
 
 ## Ownership
 
-The RGS service is a subscription-based lease of storage space for a finite duration. RCC retains ownership of all hardware associated with RGS.
+This storage service is a subscription-based lease of storage space for a finite duration. RCC retains ownership of all hardware associated with this service.
 
 ## Availability
 
-Storage availability is not guaranteed. Requests for subscription greater than 50 TB will require RCC review.
+Storage availability is not guaranteed. Requests greater than 50 TB will require review. Please contact {{ support_email }} to inquire.
 
 ## Sign-up & Payment
 
-A RCC account is required for RGS. If you do not already have an RCC account, [submit a request](https://forms.office.com/r/98QNm6cAyt){:target="_blank"}. RCC will then process your account and provision the storage. If you are not a PI, your PI must also have an RCC account.
+A RCC account is required. If you do not already have a RCC account, please [submit a request](https://forms.office.com/r/98QNm6cAyt){:target="_blank"}. RCC will then process your account and provision the storage. If you are not a PI, your PI must also have an account.
 
-Payment can be made through the MCW-IS service desk website using the following guide.
+Payment is made through the MCW-IS service desk website using the following guide.
 
 1. Proceed to <https://servicedesk.mcw.edu>{:target="_blank"} and login.
 2. Select **Software > RCC Software**, then **Research Group Storage - 1TB**.
