@@ -66,6 +66,39 @@ Directory from HPC Cluster:
 rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/target-directory
 ```
 
+## rclone
+
+RClone is a command line utility for copying files between cloud servers (i.e. oneDrive, Google Drive, Dropbox, etc) and another server or workstation. All commands should be run from the command-line in a terminal app on your computer. All commands should be run from the command-line in a terminal app on your computer.
+
+Install RClone in your local computer:
+
+```bash
+sudo -v ; curl https://rclone.org/install.sh | sudo bash
+```
+
+Configure the connection to the RCC:
+
+```bash
+rclone config
+```
+
+Then, follow the instructions in the command line, leaving the fields for default as they are. For type of storage, select option 48 (ssh). For host, write login-hpc.rcc.mcw.edu. SSH username is the same you use to ssh to the cluster and for SSH password select y (type in my own password).
+
+Configure the connection to the Cloud:
+
+This configuration depends on the cloud service that you wish to connect, such as oneDrive, Dropbox or Google Drive. For detailed information on your specific server please follow the instructions in this page: [RClone configuration](https://rclone.org/docs/){:target="_blank"}.
+
+File or directory in the cloud to HPC Cluster:
+
+```bash
+rclone copy cloud:/path/to/file_or_folder user@login-hpc.rcc.mcw.edu:/path/to/target-directory
+```
+
+File or directory from HPC Cluster to the cloud:
+```bash
+rclone copy user@login-hpc.rcc.mcw.edu:/path/to/target-directory cloud:/path/to/file_or_folder
+```
+
 ## Desktop Clients
 
 Several software packages are available for data transfer using the secure file transfer protocol (SFTP).
