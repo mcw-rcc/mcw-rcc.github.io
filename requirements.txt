@@ -1,5 +1,5 @@
 mkdocs
-mkdocs-material==9.5.34
+mkdocs-material==9.5.47
 pymdown-extensions
 mkdocs-macros-plugin
 mkdocs-git-revision-date-localized-plugin
@@ -7,3 +7,4 @@ fontawesome_markdown
 mkdocs-glightbox
 mkdocs-rss-plugin
 mkdocs-table-reader-plugin
+mkdocs-redirects
