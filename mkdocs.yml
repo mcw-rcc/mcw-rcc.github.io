@@ -197,3 +197,8 @@ nav:
     - Data Transfer: secure-computing/mfa-data-transfer.md
     - Run a Job: secure-computing/workflow.md
     - Software: secure-computing/software.md
+  - Learning:
+    - Overview: learning/learning.md
+    - HPC Clusters Tutorials: learning/hpc_clusters.md
+    - SLURM Guides: learning/slurm.md
+    - Programming Guides: learning/programming.md
