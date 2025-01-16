@@ -168,7 +168,7 @@ module purge
 module load alphafold/3.0.0
 
 # for V100 compatibility
-export XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
+export APPTAINERENV_XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
 
 # start alphafold software
 apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_input.json --output_dir=$PWD --norun_data_pipeline
@@ -222,7 +222,7 @@ module purge
 module load alphafold/3.0.0
 
 # for V100 compatibility
-export XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
+export APPTAINERENV_XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
 
 apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
