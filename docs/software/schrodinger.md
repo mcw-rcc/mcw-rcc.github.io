@@ -3,8 +3,8 @@ version: 2024-4
 ---
 # Schrödinger
 
-!!! warning "Upcoming Schrödinger licensing change"
-    Starting with version 2025-1, Schrödinger's licensing mechanism will change. Availability of version 2025-1 is expected early in 2025, and Research Computing will promptly install and configure on the cluster. Please note that once 2025-1 is installed on the cluster, versions older than 2024-2 will no longer be supported. Updated documentation will be provided on this page as usual. If you have any concerns about the change, or require continued access to a version older than 2024-2 for any reason, please contact {{ support_email }}. **No action is required from users until the release of 2025-1.**
+!!! warning "Schrödinger licensing change"
+    Starting in January 2025, Schrödinger's license mechanism changed. Please note that versions prior to 2024-2 are no longer be supported.
 
 !!! info "Schrödinger is licensed by the Department of Biochemistry and available to all MCW investigators."
     Users interested in contributing funds or discussing Schrödinger licensing at MCW should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
@@ -35,26 +35,31 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
 3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EYQ4GY5TvnhApwsb40aB7awBLGRZxXuCEmfIptvLq3Qz6g?e=aE5Cz6){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
-4. Disable new Schrödinger License Manager:
+4. If using 2024-2, enable new Schrödinger License Manager (enabled by default on 2024-3 and above):
 
     === "Windows"
 
         Open a Schrödinger Command Prompt or Schrödinger Power Shell and enter:  
         ```
-        feature_flags -d SCHRODINGER_LICENSE_MANAGER
+        feature_flags -e SCHRODINGER_LICENSE_MANAGER
         ```
 
     === "Mac"
 
         Open a terminal and enter:  
         ```
-        /opt/schrodinger/suites2024-3/utilities/feature_flags -d SCHRODINGER_LICENSE_MANAGER
+        /opt/schrodinger/suites2024-3/utilities/feature_flags -e SCHRODINGER_LICENSE_MANAGER
         ```
 
-5. Open the **Configure Licensing** tool and select **I can identify my license server** from the **Add Licenses** drop-down menu. Locate the hostname and port in the [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Click **Save Server**.
+5. Add the license server on your computer:
 
-    !!! info
-        If you see a remote license server warning, this can be ignored.
+    === "Windows"
+
+        Open the **Configure Software** tool and select **Server Identifiers**. Enter the hostname and port found in [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
+
+    === "Mac"
+
+        Open the **Configuration** tool and select **Server Identifiers**. Enter the hostname and port found in [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
 
 6. Setup remote connection to the cluster:
 
