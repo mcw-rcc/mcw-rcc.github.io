@@ -161,7 +161,7 @@ Start a GPU job for model inference and MD:
 
 ```bash
 # start interactive job
-srun --job-name=alphafold_test --ntasks=1 --cpus-per-task=12 --time=8:00:00 --gres=gpu:1 --gpu_cmode=shared --pty bash
+srun --job-name=alphafold_test --ntasks=1 --cpus-per-task=12 --time=8:00:00 --partition=gpu --gres=gpu:1 --gpu_cmode=shared --pty bash
 
 # load required modules
 module purge
