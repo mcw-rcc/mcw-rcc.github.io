@@ -8,6 +8,8 @@ The AlphaFold 2 workflow has two parts, MSA search which is CPU based, and infer
 
 ### Interactive Job
 
+You should only use interactive jobs for testing/debugging.  Please submit batch jobs otherwise.
+
 Start a CPU job for MSA:
 
 ```bash
@@ -28,7 +30,7 @@ Start a GPU job for model inference and MD:
 
 ```bash
 # start interactive job
-srun --job-name=alphafold_test --ntasks=1 --cpus-per-task=12 --time=8:00:00 --gres=gpu:1 --gpu_cmode=shared --pty bash
+srun --job-name=alphafold_test --ntasks=1 --cpus-per-task=12 --time=8:00:00 --partition=gpu --gres=gpu:1 --gpu_cmode=shared --pty bash
 
 # load required modules on the gpu node
 module load alphafold/2.3.2
@@ -139,6 +141,8 @@ Please review the [AlphaFold 3 documentation](https://github.com/google-deepmind
 <!-- markdownlint-disable MD024 -->
 ### Interactive Job
 
+You should only use interactive jobs for testing/debugging.  Please submit batch jobs otherwise.
+
 The syntax and input format has changed in AlphaFold 3. You are required to provide your own model parameters (`--model_dir`) as previously discussed. The `--db_dir` is provided with the install and should not be edited. The `--json_path` will be your JSON format input file as previously discussed. The `--output_dir` can be set to anything, with the default being the current working directory.
 
 Start a CPU job for MSA:
@@ -171,10 +175,11 @@ module load alphafold/3.0.0
 export APPTAINERENV_XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
 
 # start alphafold software
-apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_input.json --output_dir=$PWD --norun_data_pipeline
+
+apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_data.json --output_dir=$PWD --flash_attention_implementation=xla --norun_data_pipeline
 ```
 
-This second job will use the results of first step.
+This second job will use the results data json output from the first step.  The --flash_attention_implementation=xla flag is for V100 GPU compatibility.
 
 ### Batch Job
 
@@ -197,7 +202,7 @@ module load alphafold/3.0.0
 apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
     --db_dir=$DATABASES_DIR \
-    --json_path=fold_input.json \
+    --json_path=fold_data.json \
     --output_dir=$PWD \
     --norun_inference
 ```
@@ -227,7 +232,8 @@ export APPTAINERENV_XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rew
 apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
     --db_dir=$DATABASES_DIR \
-    --json_path=fold_input.json \
+    --json_path=fold_data.json \
     --output_dir=$PWD \
+    --flash_attention_implementation=xla \
     --norun_data_pipeline
 ```
