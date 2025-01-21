@@ -1,7 +1,7 @@
 # Learning Tutorials and Videos
 
-In this section you will find a link to our YouTube channel, in which we will be adding videos about the usage of the cluster, how to write different types of scripts and general information that will guide you through the creation and execution of pipelines in the cluster.
+Welcome to our comprehensive collection of video tutorials designed to guide you through using our HPC cluster. On [our YouTube channel](https://www.youtube.com/channel/UC2FsgYZHYY9kUFuZ_9solEw){:target="_blank"}, you will find detailed videos covering everything from script writing to executing complex pipelines on the cluster. Whether you are new to high-performance computing or looking to sharpen your skills, these videos will provide you with the knowledge you need to get the most out of our system.
 
-This is a work in progress, please be patient while we create more videos. If you have any recommendations about any topic that you would like us to cover, please email us at [rcc_admin@mcw.edu](mailto:rcc_admin@mcw.edu).
+Additionally, we’ve curated a selection of external videos and tutorials from other institutions that use similar clusters, offering valuable insights and techniques to enhance your learning.
 
-You will also find here links to other videos or YouTube channels that we think are useful in learning about how to use a HPC cluster, and tutorials from other institutions that have a similar cluster to ours. If there is any additional content that you would like us to add, email us at [rcc_admin@mcw.edu](mailto:rcc_admin@mcw.edu) with any additional recommendations.
+This resource is continually evolving. If you have any suggestions for additional content or topics you'd like us to cover, please feel free to reach out to us at {{ support_email }}.
