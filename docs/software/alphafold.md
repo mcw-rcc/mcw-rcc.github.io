@@ -232,7 +232,7 @@ export APPTAINERENV_XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rew
 apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
     --db_dir=$DATABASES_DIR \
-    --json_path=fold_input.json \
+    --json_path=fold_data.json \
     --output_dir=$PWD \
     --flash_attention_implementation=xla \
     --norun_data_pipeline
