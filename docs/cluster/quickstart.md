@@ -4,9 +4,14 @@ This guide contains the minimal steps to get started running computational workf
 
 Need help getting started? Send us an email at {{ support_email }}.
 
-## Getting an account
+## Prerequisites
 
-You need an RCC account to get started. Please see [Getting an Account](accounts.md) for details.
+To start using the cluster, you will need:
+
+- an active MCW NetID
+- a Research Computing account (see [Getting an Account](accounts.md))
+- a good understanding of the cluster documentation
+- some familiarity with Linux
 
 ## Logging in
 
