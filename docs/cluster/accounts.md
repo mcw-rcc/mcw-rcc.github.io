@@ -16,7 +16,7 @@ A user account is required for access to Research Computing resources, including
 
 1. I will ensure that the security, access, storage, and use of data on Research Computing systems comply with any agreements or regulations, including but not limited to the MCW code of Conduct, MCW Corporate Policies, or any applicable data-use agreement (i.e. IRB, federal grant regulations, etc.).
 2. I will not store data that is subject to HIPAA on Research Computing systems.
-3. In the event that Research Computing ceases to provide the HPC environment, research group storage, etc., I will transfer the data for which I am the steward to another resource."
+3. In the event that Research Computing ceases to provide the HPC environment, research group storage, etc., I will transfer the data for which I am the steward to another resource.
 
 ### Additional Terms for PI
 
