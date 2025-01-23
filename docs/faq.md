@@ -175,7 +175,7 @@
 ## About RCC
 
 ??? question "What is RCC?"
-    The Research Computing Center (RCC) provides infrastructure and campus-wide access to resources required for computationally intensive biomedical research. This includes shared hardware and research-specific software which is supported by MCW and research grants.
+    The Research Computing Center (RCC) provides infrastructure and campus-wide access to resources required for computationally intensive biomedical research. This includes shared hardware and research-specific software which is supported by MCW and research grants. We use a High Performance Computing cluster (HPC). For more information about HPC visit our [HPC Cluster Tutorials](learning/hpc_clusters.md).
 
 ??? question "How do I acknowledge Research Computing resources in my publication?"
     Please include the following acknowledgement in any publication resulting from work on Research Computing resources:
