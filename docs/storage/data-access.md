@@ -1,8 +1,8 @@
 # Mounting Drives
 
-Research Computing group storage is also available via an SMB mount on your Windows or Mac desktop. This access is convenient, but cannot be used to access files that you have saved via your cluster access. In other words, you can save and utilize data via your cluster access, or via this access, but the data cannot be accessed from both.
+!!! warning "SMB access is not enabled by default."
 
-Contact {{ support_email }} to request SMB access to your storage space.
+    Before mounting an SMB drive, you must request SMB access to your designated storage space by contacting {{ support_email }}. Please note that if you are granted SMB access to a specific folder, you will no longer be able to access that folder through SSH or OnDemand due to differences in file paths and permissions between the cluster's Linux environment and SMB protocols.
 
 ## Mount a SMB Drive
 
