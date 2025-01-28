@@ -153,10 +153,10 @@ srun --job-name=alphafold_test --ntasks=1 --cpus-per-task=12 --time=8:00:00 --pt
 
 # load required modules
 module purge
-module load alphafold/3.0.0
+module load alphafold/3.0.1
 
 # start alphafold software, replace PI_NetID with your username
-apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_input.json --output_dir=$PWD --norun_inference
+apptainer exec /hpc/containers/alphafold_3.0.1.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_input.json --output_dir=$PWD --norun_inference
 ```
 
 The `--norun_inference` flag causes AlphaFold to run the MSA search only.
@@ -169,14 +169,14 @@ srun --job-name=alphafold_test --ntasks=1 --cpus-per-task=12 --time=8:00:00 --pa
 
 # load required modules
 module purge
-module load alphafold/3.0.0
+module load alphafold/3.0.1
 
 # for V100 compatibility
 export APPTAINERENV_XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
 
 # start alphafold software
 
-apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_data.json --output_dir=$PWD --flash_attention_implementation=xla --norun_data_pipeline
+apptainer exec --nv /hpc/containers/alphafold_3.0.1.sif python /app/alphafold/run_alphafold.py --model_dir=$HOME/af3 --db_dir=$DATABASES_DIR --json_path=fold_data.json --output_dir=$PWD --flash_attention_implementation=xla --norun_data_pipeline
 ```
 
 This second job will use the results data json output from the first step.  The --flash_attention_implementation=xla flag is for V100 GPU compatibility.
@@ -197,9 +197,9 @@ Start a CPU job for MSA:
 
 # load required modules
 module purge
-module load alphafold/3.0.0
+module load alphafold/3.0.1
 
-apptainer exec /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
+apptainer exec /hpc/containers/alphafold_3.0.1.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
     --db_dir=$DATABASES_DIR \
     --json_path=fold_data.json \
@@ -224,12 +224,12 @@ Start a GPU job for model inference and MD:
 
 # load required modules
 module purge
-module load alphafold/3.0.0
+module load alphafold/3.0.1
 
 # for V100 compatibility
 export APPTAINERENV_XLA_FLAGS="--xla_disable_hlo_passes=custom-kernel-fusion-rewriter"
 
-apptainer exec --nv /hpc/containers/alphafold_3.0.0.sif python /app/alphafold/run_alphafold.py \
+apptainer exec --nv /hpc/containers/alphafold_3.0.1.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
     --db_dir=$DATABASES_DIR \
     --json_path=fold_data.json \
