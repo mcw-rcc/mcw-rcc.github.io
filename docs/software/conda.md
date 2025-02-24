@@ -1,6 +1,9 @@
 # Conda
 
-Conda is a package management system that quickly installs many useful packages and their dependencies. We use a lightweight version called Miniconda. It is mainly used for Python virtual environments, but includes many more packages including open-source research software and dependencies.
+!!! danger "Do not use Anaconda products without a license"
+    [Anaconda](https://www.anaconda.com/) products, including Anaconda Distribution and Miniconda, rely on proprietary package repositories by default. Anaconda's proprietary package repositories are not free to use, even for academic research, and RCC does not centrally license them for your use. While there are free and open-source package repositories (conda-forge, bioconda, etc.), Anaconda products do not use these by default. Research Computing has moved completely to [Miniforge](https://github.com/conda-forge/miniforge){:target="_blank"} as an alternative. Due to the high risk of violating [Anaconda's Terms of Service](https://legal.anaconda.com/policies/en/){:target="_blank"}, we encourage all users to migrate to Miniforge or equivalent alternative.
+
+Conda is a package management system that quickly installs many useful packages and their dependencies. We use a free and open-source version called [Miniforge](https://github.com/conda-forge/miniforge){:target="_blank"}. It is mainly used for Python virtual environments, but includes many more open-source research software packages and dependencies.
 
 ## Benefits of using a Conda environment
 
@@ -10,33 +13,39 @@ Conda is a package management system that quickly installs many useful packages 
 - Conda has a large community of developers and is very easy to find help in forums whenever you run into any problems.
 - It supports packages written in other languages, so, you can create dedicated environments for certain projects which depend on libraries written in other languages such as R.
 
-For more information, see [Conda Docs](https://conda.io/projects/conda/en/stable/index.html){:target="_blank"}.
+For more information, see [Miniforge Docs](https://conda-forge.org/docs/user/){:target="_blank"}.
 
 !!! warning "Installing your own Conda"
-    If you install your own Conda, this will often modify your `.bashrc` file. This will cause your base Conda env to load every time you login. This is very useful if you're working on your own Linux machine. But it is very un-useful on a cluster, where we also use module files to load software. In fact, your Conda installation can cause your jobs to fail in many instances. If you would like to use Conda, then please use the centrally installed Miniconda3. If you must use your own Conda, please turn off the auto activate with `conda config --set auto_activate_base false`. You can then manually activate your Conda with `source /path/to/my/conda/etc/profile.d/conda.sh && conda activate`.
+    If you install your own Conda, this will often modify your `.bashrc` file. This will cause your base Conda env to load every time you login. This is very useful if you're working on your own Linux machine. But it is very un-useful on a cluster, where we also use module files to load software. In fact, your Conda installation can cause your jobs to fail in many instances. If you would like to use Conda, then please use the centrally installed `miniforge` module. If you must use your own Conda, please turn off the auto activate with `conda config --set auto_activate_base false`. You can then manually activate your Conda with `source /path/to/my/conda/etc/profile.d/conda.sh && conda activate`.
 
-To get started, load miniconda3:
+## Create an environment
+
+To get started, load miniforge:
 
 ```bash
-module load miniconda3
+module load miniforge
 ```
 
-To create a new virtual environment (e.g., **myenv**) with the `conda` command:
+To create a new environment (e.g., **myenv**):
 
 ```bash
 conda create -n myenv
 ```
 
-To use your Miniconda virtual environment:
+## Use an environment
+
+To use your environment:
 
 ```bash
+module load miniforge
 conda activate myenv
 ```
+
+## Install packages in an environment
 
 To install packages in your conda virtual environment:
 
 ```bash
-conda activate myenv
 conda install numpy
 ```
 
@@ -69,6 +78,7 @@ conda uninstall numpy
 ```
 
 To clone an existing conda environment:
+
 Suppose you are starting a new pipeline of a project for which you need a very similar environment to one you created before, with the exception of a few packages that use different versions. You could clone your previous environment and then make the desired changes. Make sure to deactivate the environment your are cloning, clone it and then activate your new environment.
 
 ```bash
