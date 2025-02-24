@@ -174,11 +174,11 @@ nav:
     - Guides:
       - software/alphafold.md
       - software/ansys.md
+      - software/conda.md
       - software/lsdyna.md
       - software/matlab.md
       - software/nextflow.md
       - software/python.md
-      - software/conda.md
       - software/pytorch.md
       - software/R.md
       - software/schrodinger.md
