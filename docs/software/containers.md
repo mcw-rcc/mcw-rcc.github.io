@@ -81,7 +81,7 @@ For more information see the [Apptainer Quick Start guide](https://apptainer.org
 
 ### Download Pre-built Containers
 
-Many software packages already have containers built by developers. These containers are available from external sites such as Docker Hub or ghcr.io. With apptainer you can use the `pull` or `build` commands to download containers.
+Many software packages already have containers built by developers that you can download with the `pull` or `build` commands. These containers are available from external sites such as the [Container Library](https://cloud.sylabs.io/library){:target="_blank"}, [Docker Hub](https://hub.docker.com/){:target="_blank"}, [singularity Hub](https://datasets.datalad.org/?dir=/shub){:target="_blank"} or [Github Actions](https://github.com/features/actions){:target="_blank"}.
 
 The `apptainer pull` command will download a OCI image from a remote repository, combining the layers to a usable SIF image.
 
@@ -101,7 +101,7 @@ $ ./lolcow_latest.sif
                 ||     ||
 ```
 
-The `apptainer build` command can also be used to download existing containers. The `build` command has many more uses for building containers from scratch or converting formats, which we cover later. For the purpose of downloading a pre-built container, `build` differs from `pull` by converting the image to the latest Apptainer image format after downloading it. Further, `build` allows for custom naming of the downloaded container.
+The `build` command has many more uses for building containers from scratch or converting formats, which we cover later. For the purpose of downloading a pre-built container, `build` differs from `pull` by converting the image to the latest Apptainer image format after downloading it. Further, `build` allows for custom naming of the downloaded container.
 
 ```txt
 $ apptainer build my_lolcow.sif docker://ghcr.io/apptainer/lolcow
@@ -119,6 +119,8 @@ $ ./my_lolcow.sif
                 ||     ||
 ```
 
+Because these containers are already built, they are immutable. So, you can run things but not install things inside them. To do this, you would build a container, which is explained in the next section.
+
 ### Build a Container
 
 The `build` command is used to create new containers either from scratch or based on existing containers. It can also used to convert between container formats. As an example, we'll discuss the process of building custom Python container from scratch.
@@ -127,7 +129,7 @@ Please see the [Apptainer docs](https://apptainer.org/docs/user/1.3/build_a_cont
 
 #### Definition File
 
-First we write a definition file for the new container. A definition file defines the container build process including software installation, runtime functionality, etc. This file can be named how you like, but it is recommended to denote definition files with the `.def` extension. We will call our definition file `py_container.def`.
+First we write a definition file for the new container. A definition file defines the container build process including software installation, runtime functionality, etc. This file can be named how you like, but it is recommended to denote definition files with the `.def` extension. We will call our definition file `py_container.def`. See below for an explanation of each section.
 
 === "py_container.def"
 
@@ -136,17 +138,13 @@ Bootstrap: docker
 From: ubuntu:20.04
 
 %help
-# Add information describing your container.
-This container includes Python.
+  This container includes Python.
 
 %environment
-    # Set useful environment variables here. This section is used only at runtime, not during build.
     export PATH=/opt/python/bin:$PATH
     export LD_LIBRARY_PATH=/opt/python/lib:$LD_LIBRARY_PATH
 
 %post
-    # Add build commands here. These commands are only run at build time.
-
     # Create useful bind points for needed file systems. The following are set by default in RCC and should always be included for containers used in RCC.
     mkdir -p /scratch /hpc
 
@@ -178,7 +176,30 @@ This container includes Python.
     /opt/python/bin/python --version
 ```
 
+As you can see in the previous example, a definition file has two parts. First is the heather, which contains information about the base operating system for the container. `Bootstrap` is the first keyword and it's mandatory. It will specify the bootstrap agent. The most common ones are: `library`, `docker`, `shub`, or `localimage`. When using `library` as bootstrap agent, the next keyword must be `From`, followed by the operating system and the version. For example, `From: ubuntu:22.4`.
+
+The second part of a definition file is the sections, which execute commands at different times while the container is built or run. All sections are optional. The following table explains them in detail:
+
+| Section | Explanation |
+| --- | --- |
+| `%files` | Use this section to copy files from the host into the container. Never copy files into /home, /tmp, or any other directories that are binded. |
+| `%appfiles` | This section is equivalent to `%files`, but for a particular app. |
+| `%environment` | Specify variables that will be set **at run** time in this section (NOT available when building the container). Variables set here are global (available to all apps). |
+| `%appenv` | This section is equivalent to `%environment`, but for a particular app. |
+| `%post` | In this section you can: specify variables that will be set **at build time**, download files from the internet with tools like git and wget, install new software and libraries, write configuration files, create new directories. Never install things into /home, /tmp, or any other directories that are binded. |
+| `%appinstall` | This section is equivalent to `%post`, but for a particular app. |
+| `%runscript` | This section is executed when the container is run via the `singularity run` command or by executing the container directly as a command. Any arguments passed to the container will be processed in this section. We can use here variables set in`%environment` or `%post`. |
+| `%apprun` | This section is equivalent to `%runscript`, but for a particular app. |
+| `%startscript` | This section is executed when the container is instantiated via de `singularity instance start` command. This is a more advanced topic that we wont cover here, but you can learn in the [sylabs guide for running services](https://docs.sylabs.io/guides/3.1/user-guide/running_services.html){:target="_blank"}. We can use here variables set in `%environment` or `%post`. |
+| `%test` | This section runs at the end of the build process to validate the container using a method of your choice. |
+| `%labels` | You can add metadata in this section with name-value format such as `Author Me` or `Version v1.0`. |
+| `%applabels` | This section is equivalent to `%labels`, but for a particular app. |
+| `%help` | Use this section to explain to the user how to interact with the container. |
+| `%apphelp` | This section is equivalent to %help, but for a particular app. |
+
 Full documentation of definition files at [Apptainer Docs](https://apptainer.org/docs/user/1.3/definition_files.html){:target="_blank"}.
+
+Examples of definition files: [Sylabs examples](https://github.com/sylabs/examples){:target="_blank"}.
 
 #### Build
 
