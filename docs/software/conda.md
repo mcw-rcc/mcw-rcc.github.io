@@ -13,18 +13,17 @@ Conda is a package management system that quickly installs many useful packages 
 - Conda has a large community of developers and is very easy to find help in forums whenever you run into any problems.
 - It supports packages written in other languages, so, you can create dedicated environments for certain projects which depend on libraries written in other languages such as R.
 
-For more information, see [Miniforge Docs](https://conda-forge.org/docs/user/){:target="_blank"}.
+## Using conda on the cluster
 
-!!! warning "Installing your own Conda"
-    If you install your own Conda, this will often modify your `.bashrc` file. This will cause your base Conda env to load every time you login. This is very useful if you're working on your own Linux machine. But it is very un-useful on a cluster, where we also use module files to load software. In fact, your Conda installation can cause your jobs to fail in many instances. If you would like to use Conda, then please use the centrally installed `miniforge` module. If you must use your own Conda, please turn off the auto activate with `conda config --set auto_activate_base false`. You can then manually activate your Conda with `source /path/to/my/conda/etc/profile.d/conda.sh && conda activate`.
+Research Computing provides a central installation of Miniforge. All users are encouraged to use this module to create custom environments as needed.
 
-## Create an environment
-
-To get started, load miniforge:
+To load Miniforge:
 
 ```bash
 module load miniforge
 ```
+
+## Create an environment
 
 To create a new environment (e.g., **myenv**):
 
@@ -77,7 +76,7 @@ conda activate myenv
 conda uninstall numpy
 ```
 
-To clone an existing conda environment:
+## Clone an environment
 
 Suppose you are starting a new pipeline of a project for which you need a very similar environment to one you created before, with the exception of a few packages that use different versions. You could clone your previous environment and then make the desired changes. Make sure to deactivate the environment your are cloning, clone it and then activate your new environment.
 
@@ -109,3 +108,29 @@ To use a spec file to install packages into an existing environment:
 conda install --name myenv 
 conda activate myenv --file spec-file.txt
 ```
+
+## Remove an environment
+
+To completely remove a conda env:
+
+```bash
+conda remove --name myenv --all
+```
+
+To remove all packages within an environment:
+
+```bash
+conda remove -n myenv --all --keep-env
+```
+
+The `--keep-env` option leaves the environment intact. Use this option if you'd like to start over, but do not want to rename the environment.
+
+## Common issues
+
+Users should avoid mixing conda and non-conda modules in cluster jobs and workflows. For example, a pipeline requiring Python and TensorFlow should use `module load tensorflow` and not `module load tensorflow python`. The first loads the TensorFlow module which is conda based and includes Python already. The second loads the conda-based TensorFlow module and non-conda-based Python module, which may not give the desired version of Python. This simple example can be compounded with job scripts that load many modules.
+
+Users should also avoid using the `conda init` command. If you accidentally setup conda to auto-intialize via your `.bashrc` or `.bash_profile` scripts at login, unintended issues may occur. For example, subsequent module loads may not work, or system commands may conflict with packages within your auto-init conda env. Users that have this issue will see an env name in front of their username at login, i.e. `(myenv) [netid@server ~]`. You can fix this issue with `conda config --set auto_activate_base false`.
+
+## Additional help
+
+The conda docs provide much more information than is practical to include here. Consult the [Managing Environments guide](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html) for more information on conda envs.
