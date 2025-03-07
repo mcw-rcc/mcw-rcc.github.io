@@ -81,7 +81,7 @@ For more information see the [Apptainer Quick Start guide](https://apptainer.org
 
 ### Download Pre-built Containers
 
-Many software packages already have containers built by developers that you can download with the `pull` or `build` commands. These containers are available from external sites such as the [Container Library](https://cloud.sylabs.io/library){:target="_blank"}, [Docker Hub](https://hub.docker.com/){:target="_blank"}, [singularity Hub](https://datasets.datalad.org/?dir=/shub){:target="_blank"} or [Github Actions](https://github.com/features/actions){:target="_blank"}.
+Many software packages already have containers built by developers that you can download with the `pull` or `build` commands. These containers are available from external sites such as the [Container Library](https://cloud.sylabs.io/library){:target="_blank"} or [Docker Hub](https://hub.docker.com/){:target="_blank"}.
 
 The `apptainer pull` command will download a OCI image from a remote repository, combining the layers to a usable SIF image.
 
@@ -176,21 +176,20 @@ From: ubuntu:20.04
     /opt/python/bin/python --version
 ```
 
-As you can see in the previous example, a definition file has two parts. First is the heather, which contains information about the base operating system for the container. `Bootstrap` is the first keyword and it's mandatory. It will specify the bootstrap agent. The most common ones are: `library`, `docker`, `shub`, or `localimage`. When using `library` as bootstrap agent, the next keyword must be `From`, followed by the operating system and the version. For example, `From: ubuntu:22.4`.
+As you can see in the previous example, a definition file has two parts. First is the header, which contains information about the base operating system for the container. `Bootstrap` is the first keyword and it's mandatory. It will specify the bootstrap agent. The most common ones are: `library`, `docker`, `shub`, or `localimage`. When using `library` as bootstrap agent, the next keyword must be `From`, followed by the operating system and the version. For example, `From: ubuntu:22.04`.
 
 The second part of a definition file is the sections, which execute commands at different times while the container is built or run. All sections are optional. The following table explains them in detail:
 
 | Section | Explanation |
 | --- | --- |
-| `%files` | Use this section to copy files from the host into the container. Never copy files into /home, /tmp, or any other directories that are binded. |
+| `%files` | Use this section to copy files from the host into the container. Never copy files into /home, /tmp, or any other directories that are bound at runtime. |
 | `%appfiles` | This section is equivalent to `%files`, but for a particular app. |
 | `%environment` | Specify variables that will be set **at run** time in this section (NOT available when building the container). Variables set here are global (available to all apps). |
 | `%appenv` | This section is equivalent to `%environment`, but for a particular app. |
-| `%post` | In this section you can: specify variables that will be set **at build time**, download files from the internet with tools like git and wget, install new software and libraries, write configuration files, create new directories. Never install things into /home, /tmp, or any other directories that are binded. |
+| `%post` | In this section you can: specify variables that will be set **at build time**, download files from the internet with tools like git and wget, install new software and libraries, write configuration files, create new directories. Never install things into /home, /tmp, or any other directories that are bound at runtime. |
 | `%appinstall` | This section is equivalent to `%post`, but for a particular app. |
-| `%runscript` | This section is executed when the container is run via the `singularity run` command or by executing the container directly as a command. Any arguments passed to the container will be processed in this section. We can use here variables set in`%environment` or `%post`. |
+| `%runscript` | This section is executed when the container is run via the `apptainer run` command or by executing the container directly as a command. Any arguments passed to the container will be processed in this section. We can use here variables set in`%environment` or `%post`. |
 | `%apprun` | This section is equivalent to `%runscript`, but for a particular app. |
-| `%startscript` | This section is executed when the container is instantiated via de `singularity instance start` command. This is a more advanced topic that we wont cover here, but you can learn in the [sylabs guide for running services](https://docs.sylabs.io/guides/3.1/user-guide/running_services.html){:target="_blank"}. We can use here variables set in `%environment` or `%post`. |
 | `%test` | This section runs at the end of the build process to validate the container using a method of your choice. |
 | `%labels` | You can add metadata in this section with name-value format such as `Author Me` or `Version v1.0`. |
 | `%applabels` | This section is equivalent to `%labels`, but for a particular app. |
@@ -199,7 +198,7 @@ The second part of a definition file is the sections, which execute commands at 
 
 Full documentation of definition files at [Apptainer Docs](https://apptainer.org/docs/user/1.3/definition_files.html){:target="_blank"}.
 
-Examples of definition files: [Sylabs examples](https://github.com/sylabs/examples){:target="_blank"}.
+Examples of definition files: [Sylabs examples](https://github.com/apptainer/apptainer/tree/main/examples){:target="_blank"}.
 
 #### Build
 
