@@ -183,18 +183,12 @@ The second part of a definition file is the sections, which execute commands at 
 | Section | Explanation |
 | --- | --- |
 | `%files` | Use this section to copy files from the host into the container. Never copy files into /home, /tmp, or any other directories that are bound at runtime. |
-| `%appfiles` | This section is equivalent to `%files`, but for a particular app. |
 | `%environment` | Specify variables that will be set **at run** time in this section (NOT available when building the container). Variables set here are global (available to all apps). |
-| `%appenv` | This section is equivalent to `%environment`, but for a particular app. |
 | `%post` | In this section you can: specify variables that will be set **at build time**, download files from the internet with tools like git and wget, install new software and libraries, write configuration files, create new directories. Never install things into /home, /tmp, or any other directories that are bound at runtime. |
-| `%appinstall` | This section is equivalent to `%post`, but for a particular app. |
 | `%runscript` | This section is executed when the container is run via the `apptainer run` command or by executing the container directly as a command. Any arguments passed to the container will be processed in this section. We can use here variables set in`%environment` or `%post`. |
-| `%apprun` | This section is equivalent to `%runscript`, but for a particular app. |
 | `%test` | This section runs at the end of the build process to validate the container using a method of your choice. |
 | `%labels` | You can add metadata in this section with name-value format such as `Author Me` or `Version v1.0`. |
-| `%applabels` | This section is equivalent to `%labels`, but for a particular app. |
 | `%help` | Use this section to explain to the user how to interact with the container. |
-| `%apphelp` | This section is equivalent to %help, but for a particular app. |
 
 Full documentation of definition files at [Apptainer Docs](https://apptainer.org/docs/user/1.3/definition_files.html){:target="_blank"}.
 
