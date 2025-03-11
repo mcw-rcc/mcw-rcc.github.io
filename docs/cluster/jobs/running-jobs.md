@@ -300,7 +300,9 @@ sbatch test-job.slurm
 A job script is required. If you haven't already, please review [Writing a Job Script](#writing-a-job-script).
 
 ## Submit an Interactive Job
-!!! tip "Interactive jobs are limited to 8 hours max walltime!." Make sure to request 8 hours or less or your job will not run!
+!!! tip "Interactive jobs are limited to 8 hours max walltime!"
+    Make sure to request 8 hours or less or your job will not run!
+    
 Users may need an interactive session for debugging or related tasks. An interactive job is submitted with the `srun` command. All of the SLURM options that are required in job scripts are required with the `srun` command. In addition, `--qos=dev` is added automatically.
 
 ```bash
