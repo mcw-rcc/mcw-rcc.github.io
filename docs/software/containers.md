@@ -192,7 +192,7 @@ The second part of a definition file is the sections, which execute commands at 
 
 Full documentation of definition files at [Apptainer Docs](https://apptainer.org/docs/user/1.3/definition_files.html){:target="_blank"}.
 
-Examples of definition files: [Sylabs examples](https://github.com/apptainer/apptainer/tree/main/examples){:target="_blank"}.
+Examples of definition files: [Apptainer examples](https://github.com/apptainer/apptainer/tree/main/examples){:target="_blank"}.
 
 #### Build
 
