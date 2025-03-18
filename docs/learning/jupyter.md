@@ -156,7 +156,7 @@ You can run cells as Markdown using the magic command shown in the table above `
 
 ### 6.5. Use Latex to display formulas
 
-You can use Latex to display formulas within Markdown cells. To display Latex code within the current line, surround your expression with a dollar sign on each side. For example: `$x2+y2=8$`. To display the formula in a separate line, wrap it with two dollar signs before and after the Latex code. 
+You can use Latex to display formulas within Markdown cells. To display Latex code within the current line, surround your expression with a dollar sign on each side. For example: `$x2+y2=8$`. To display the formula in a separate line, wrap it with two dollar signs before and after the Latex code.
 
 For example, the following Markdown cell:
 
@@ -168,7 +168,7 @@ Will generate the following output when run:
 
 ### 6.6. Display media inside your notebook
 
-You can display different type of media in your Jupyter Notebook, including images, audio, video or PDF files. 
+You can display different type of media in your Jupyter Notebook, including images, audio, video or PDF files.
 
 The following example displays an image:
 
