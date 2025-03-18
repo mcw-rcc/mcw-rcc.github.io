@@ -189,6 +189,7 @@ nav:
     - Tools:
       - software/containers.md
       - software/git.md
+      - learning/jupyter.md
   - ResHPC:
     - Overview: secure-computing/reshpc.md
     - Accounts & Projects: secure-computing/project-account.md
