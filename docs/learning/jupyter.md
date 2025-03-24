@@ -1,14 +1,14 @@
 # How to use Jupyter Notebook in the cluster
 
-## 1. Connect to OnDemand
+## Connect to OnDemand
 
-To connect to Open OnDemand, please follow our [Connecting Guide](../cluster/access/ondemand.md).
+In our cluster, **Jupyter can only be run through OnDemand**. To connect to Open OnDemand, please follow our [Connecting Guide](../cluster/access/ondemand.md).
 
-## 2. Open the Jupyter Notebook App inside OnDemand
+## Open the Jupyter Notebook App inside OnDemand
 
 To open Jupyter Notebook, please follow the instructions in our [Open OnDemand Guide](./cluster/access/ondemand.md#Jupyter-Notebook-Example).
 
-## 3. Import libraries
+## Import libraries
 
 The same way as when you're using Python in the Terminal or on a script, you can import libraries in Jupyter notebook, you will have access to the same libraries that you have access to in the command line. If you need to install a new library, go to the Terminal and login to the cluster. Then, load the python module and install the corresponding library. For example:
 
@@ -19,7 +19,7 @@ pip install matplotlib --user
 
 **You will need to restart your Kernel** in Jupyter Notebook to capture the changes. In the top menu, click Kernel and then Restart Kernel.
 
-## 4. Activate a python environment
+## Activate a python environment
 
 If you have installed a Python environment in your home directory, you can use it inside Jupyter Notebook. Go to the Terminal and login to the cluster. Then, run the following commands, replacing `myenv` by the name of your python environment. This name should be unique, if another Kernel with the same name exists, it will be replaced. If you get a `No module named ipykernel` error message, install ipykernel in the python environment, like so:
 
@@ -39,7 +39,7 @@ deactivate
 
 Now you can open a new or an existing Jupyter Notebook. In the upper menu, click on Kernel, then Change Kernel, and select "Python (myenv)". Now Jupyter Notebook will use your selected Python environment. You may need to restart the kernel to use updated packages.
 
-## 5. Activate a conda environment
+## Activate a conda environment
 
 If you have a Conda environment in your home directory, you can use it inside Jupyter Notebook. Go to the Terminal and login to the cluster. Then, run the following commands, replacing `mycondaenv` by the name of your conda environment. This name should be unique, if another Kernel with the same name exists, it will be replaced. The last step, deactivating your conda environment, is important. Otherwise, you will have problems opening Jupyter Notebook.
 
@@ -64,7 +64,7 @@ $ conda deactivate
 
 Now you can open a new or an existing Jupyter Notebook. In the upper menu, click on Kernel, then Change Kernel, and select "Python (mycondaenv)". Now Jupyter Notebook will use your selected Python environment. You may need to restart the kernel to use updated packages.
 
-## 6. Using Jupyter Notebook
+## Using Jupyter Notebook
 
 Once you are in Jupyter Notebook, you can type any Python commands into the cells and execute them with the play button or in the upper menu, selecting Run, and then Run Selected Cell, or using the keys shift+return while located over the cell that you want to execute. You can follow this complete [Python guide](https://www.w3schools.com/python/){:target="_blank"} to learn how to program in Python.
 
@@ -72,7 +72,7 @@ One of the advantages of using Jupyter Notebook is to be able to visualize plots
 
 Please visit [The Jupyter Notebook documentation](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html){:target="_blank"} for more details about Jupyter Notebook and how to use it.
 
-### 6.1. Jupyter Notebook Shortcuts
+### Jupyter Notebook Shortcuts
 
 To Enter to Command Mode in the current cell: Esc
 While in Command Mode you can use the following keys:
@@ -106,7 +106,7 @@ While in Edit Mode you can use the following keys:
 | Shift + Control + f | Open/close file menu |
 | Shift + Enter | Runs the current cell and moves to the next one. |
 
-### 6.2. IPython Magic Commands
+### IPython Magic Commands
 
 IPython magic commands provide shortcuts for common tasks. To see the list of all magic commands, type `%lsmagic` in a cell and then run the cell or visit the [IPython Documentation](https://ipython.readthedocs.io/en/stable/interactive/magics.html){:target="_blank"}. Here are a few examples of useful things that can be done using the IPython Magic commands:
 
@@ -129,7 +129,7 @@ IPython magic commands provide shortcuts for common tasks. To see the list of al
 | `%time` | Print the execution time of a line. |
 | `%who` | See list of environment variables. |
 
-### 6.3. Executing shell commands
+### Executing shell commands
 
 As we saw in the table above, you can execute a cell as Bash instead of Python using the `%%bash` magic command. But you can also execute a single line as bash by preceding the line with `!`.
 
@@ -150,11 +150,11 @@ myfiles = !ls
 print(myfiles[2])
 ```
 
-### 6.4. Writing cells using Markdown
+### Writing cells using Markdown
 
 You can run cells as Markdown using the magic command shown in the table above `%%markdown` or selecting Markdown as the language of the current cell. [The Markdown Guide](https://www.markdownguide.org/getting-started/){:target="_blank"} is a great place to start learning Markdown.
 
-### 6.5. Use Latex to display formulas
+### Use Latex to display formulas
 
 You can use Latex to display formulas within Markdown cells. To display Latex code within the current line, surround your expression with a dollar sign on each side. For example: `$x2+y2=8$`. To display the formula in a separate line, wrap it with two dollar signs before and after the Latex code.
 
@@ -166,7 +166,7 @@ Will generate the following output when run:
 
 ![Latex example output](LatexExampleOutput.png)
 
-### 6.6. Display media inside your notebook
+### Display media inside your notebook
 
 You can display different type of media in your Jupyter Notebook, including images, audio, video or PDF files.
 
