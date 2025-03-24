@@ -6,7 +6,7 @@ In our cluster, **Jupyter can only be run through OnDemand**. To connect to Open
 
 ## Open the Jupyter Notebook App inside OnDemand
 
-To open Jupyter Notebook, please follow the instructions in our [Open OnDemand Guide](./cluster/access/ondemand.md#Jupyter-Notebook-Example).
+To open Jupyter Notebook, please follow the instructions in our [Open OnDemand Guide](../cluster/access/ondemand.md#jupyter-notebook-example).
 
 ## Import libraries
 
