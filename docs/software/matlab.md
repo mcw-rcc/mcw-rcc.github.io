@@ -1,5 +1,5 @@
 ---
-version: R2023b
+version: R2024b
 ---
 # MATLAB Parallel Server
 
@@ -17,7 +17,7 @@ The MATLAB Parallel Server software is an extension of the Parallel Computing To
 
 ### Download Plugin Files
 
-Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EUWQCfvxJS5Kve_51iYJMEUBkw3_o0a3v_Gm-I_FOy79OA?e=SaLY6k){:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save this folder to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
+Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EaiUy_hfsD9KkB7BSaONsYcB2NL5tjICvKYQLLM4UyiJ_w){:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save the folder `matlab-parallel-slurm-plugin-{{ version }}` to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
 
 ### Add Startup Script
 
@@ -44,7 +44,7 @@ end
 
 ### Add Cluster Profile
 
-1. Launch the MATLAB application and select **Home > Parallel > Create and Manage Clusters** to open the **Cluster Profile Manager** window. Select **Import**, browse to the location of the **MATLAB_{{ version }}_Client2Cluster** folder, and select the **HPC_Cluster.mlsettings** file.
+1. Launch the MATLAB application and select **Home > Parallel > Create and Manage Clusters** to open the **Cluster Profile Manager** window. Select **Import**, browse to the location of the `matlab-parallel-slurm-plugin-{{ version }}` folder, and select the `HPC_Cluster.mlsettings` file.
 2. Locate **HPC Cluster** profile in the Cluster Profile Manager and select **Edit**.
     - Locate the **Scheduler Plugin** section of the profile. Set the **PluginScriptsLocation** property to location of the **MATLAB_{{ version }}_Client2Cluster** folder.
     - Locate the **Additional Properties** table. Set the **RemoteJobStorageLocation** property to `/scratch/g/PI_NetID`, where `PI_NetID` is your PI's username. Set the **Username** property to your MCW username.  
@@ -60,7 +60,7 @@ RCC will periodically update the MATLAB Parallel Server software to the next B v
 
 ## Using the Cluster
 
-There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the Mathworks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"}.
+There are several ways to interact with the cluster using the Parallel Computing Toolbox. The **parpool** and **batch** commands can be used to create jobs to run your code on the cluster. Examples are provided below. More information is available on the MathWorks website for [Batch Processing](https://www.mathworks.com/help/distcomp/batch.html){:target="_blank"} and [Parpool](https://www.mathworks.com/help/distcomp/parpool.html){:target="_blank"}.
 
 ### Batch
 
