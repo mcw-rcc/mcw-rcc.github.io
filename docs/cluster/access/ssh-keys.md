@@ -33,7 +33,7 @@ ssh-add id_rsa
 To complete this setup for cluster login, copy your public key to the cluster login node.
 
 ```bash
-cat ~/.ssh/id_rsa.pub | ssh NetID@login-hpc.rcc.mcw.edu 'cat >> .ssh/authorized_keys
+cat ~/.ssh/id_rsa.pub | ssh NetID@login-hpc.rcc.mcw.edu 'cat >> ~/.ssh/authorized_keys'
 ```
 
 Test your setup by logging in to the cluster. A successful login should not prompt you for a password.
