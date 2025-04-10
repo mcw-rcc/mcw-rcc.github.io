@@ -26,7 +26,7 @@ An IDE, or Integrated Development Environment, is an application for software de
 
 The most commonly used version control tools by software developers are Git and GitHub. They can be used in research to organize and share scripts, recover from accidental loss of data, create excellent documentation on your projects, showcase your work, and keep track of changes in your code. It is important to note that Git and GitHub are different things even though they work hand by hand. On one hand, Git is a version control tool that can be used outside Github and allows you to track changes in files. On the other hand, GitHub is a web-based platform that hosts repositories and uses Git.
 
-[Our Git and GitHub Guide](../software/git.md): This complete guide will take you through the steps on how to configure git, create a new repository and host it on GitHub, as well as creating and managing branches and merging changes with your main remote branch.
+[Our Git and GitHub Guide](../software/git.md): This beginners guide will take you through the steps on how to configure git, create a new repository and host it on GitHub.
 
 ### Time Management Tools
 
