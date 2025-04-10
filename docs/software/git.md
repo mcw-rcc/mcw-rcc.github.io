@@ -95,6 +95,127 @@ To clone a repository, locate the address. You can always find this using the gr
 git clone https://github.com/octocat/Hello-World.git
 ```
 
+## Using Git Branches
+
+Git branches allow you to create isolated spaces to develop new features, modify code or fix bugs without affecting your main line of development. When the code in the new branch is stable and finished, you can merge it with the main branch. Each repository can have multiple branches and you can switch between them very easily. Remember that the `git` commands that you execute will modify the repository in which you are located. To change repository, navigate to the folder of the corresponding repository.
+
+### Download the latest changes from the remote repository
+
+Before creating a new branch, it is good idea to download the latest changes from the remote repository in order to avoid potential merge conflicts. You can first download the list of commits and changes that have been done in the remote repository using `git fetch`. This will not integrate those changes with your local repository, and will not modify your local files, it will just give you a view of what has happened in your remote repository.
+
+```bash
+# Download the changes in the remote repository
+git fetch origin
+# Visualize the status of the local repository compared to the remote
+git status
+```
+
+If your main branch is up to date with `origin/master` (the remote repository in GitHub), you can safely create a new branch and proceed with the instructions on how to create a new branch. If your local repository is a few commits ahead and no commits behind, you can also continue working on it and merge all your changes when ready. However, if you are a few commits behind the remote branch, you can try to `pull` all changes from the remote repository in order to update the local. If there are no conflicts, your branch will be merged with the remote (locally) and you can now safely create a new branch and do any necessary edits to your code:
+
+```bash
+git pull origin
+```
+
+If there are any conflicts, you must resolve them manually before merging. Please see the section below on how to resolve conflicts.
+
+### Creating a new branch
+
+```bash
+# Create a new branch
+$ git branch test
+# See the list of branches in the current repository
+# The current branch has an asterisk
+$ git branch
+* main
+test
+# Switch to my new branch
+# Any edits that I do after this, will be created on the new branch
+$ git checkout test
+Switched to branch 'test'
+$ git branch
+  main
+* test
+```
+
+You can create a new branch and switch to it in one command:
+
+```bash
+git checkout -b test2
+```
+
+### Updating your remote repository with the new branch
+
+After editing your files, you can use `git status` to see the list of files that have been deleted, created or modified but not yet committed. At this point the changes are local and have not been updated in your remote repository. You might see a list of untracked files, these are those that are new (since the latest commit) and haven't been added yet to your remote repository. In order to commit any changes, you first must add them to the Staging Environment and then commit everything that is in this environment. The Staging Environment tells Git what you want to commit:
+
+```bash
+# Add all modified files to the Staging Environment
+$ git add --all
+# Add a specific file to the Stating Environment
+$ git add myfile.txt
+# Add a specific directory to the Stating Environment
+$ git add mydirectory/
+# Add a list of files to the Staging Environment
+$ git add myfile1.txt myfile2.png myfile2.csv
+# To remove a file from the Staging Environment
+$ git reset HEAD myfile.txt
+# Commit changes to your new branch
+# Add a short message to explain the changes made
+$ git commit -m "Added new functionality to the brain extraction script"
+# Finally, you need to push your commit from the local repository to the remote one in GitHub
+# This will synchronize both repositories
+# origin is the name of your remote connection that points to the clone repository (see the remote add command in the previous section)
+$ git push origin test
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 486 bytes | 486.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'updates' on GitHub by visiting:
+remote:      https://github.com/account/repository/pull/new/test
+remote:
+To https://github.com/account/repository.git
+ * [new branch]      test -> updates
+```
+
+If you get an authentication error, make sure that your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens){:target="_blank"} is not expired. After successfully running the `push` command, your new branch is updates in the remote repository. But remember that it is not yet merged with the main code. Once you are done with any edits, you can merge the branch.
+
+### Merging my local branch with the main remote branch
+
+If the repository belongs to you and you don't need to have anybody review the changes you have made, you are now ready to merge your local and remote branches and publish your updates.
+
+```bash
+# Switch to the main branch
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+# Merge the current branch (main) with test
+$ git merge test
+# Master and test are merged, we can delete test
+$ git branch -d test
+Deleted branch test (was 5f4472c).
+# If you haven't close the command line and decide you didn't want to delete the branch for some reason, you can restore it
+$ git branch test 5f4472c
+# Check the status of the local repository compared to the remote
+$ git status
+# Push the commit to synchronize the repositories
+$ git push origin
+```
+
+On the other hand, if the repository doesn't belong to you or you have collaborators and you need them to check the changes you made before merging with the main branch, you should create a pull request. You can do this by following the link printed when you executed the `git push origin test` command. In this example, that would be `https://github.com/account/repository/pull/new/test`.
+
+### Resolving merge conflicts
+
+You must resolve all conflicts before you can successfully merge your branch with the base branch.
+
+1. Follow the steps in the [GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line){:target="_blank"} page to solve simple merge conflicts in specific files.
+2. If the merge conflict arose because the main branch progressed since you started working on the branch that you want to merge, you will be some commits behind and some commits ahead of the main branch. In this case you will want to obtain the latest changes done to the main branch while keeping the ones done on your current branch. To accomplish this, you will need to [rebase your branch](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=Most%20developers%20like%20to%20use,the%20%E2%80%9Cofficial%E2%80%9D%20project%20history.){:target="_blank"}. You can find in [Github Docs](https://docs.github.com/en/get-started/using-git/about-git-rebase) {:target="_blank"} additional information on rebasing your branch.
+3. To investigate further more complicated conflicts, you can [check the list of commits in the repository's history](https://www.freecodecamp.org/news/git-log-command/){:target="_blank"}.
+4. You might also need to [undo changes](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting#:~:text=For%20this%20reason%2C%20git%20revert,is%20for%20undoing%20uncommitted%20changes.){:target="_blank"} before re-trying to merge, such as reverting some commits.
+5. If you did many changes, it might simplify things to [move some of the uncommited changes to a new branch](https://betterstack.com/community/questions/move-uncommited-work-to-new-branch/){:target="_blank"}.
+
 ## Security considerations
 
 You should not store sensitive information in any remote repository, including GitHub, GitLab, etc. In fact, you should avoid sensitive information in your research files at all times. This includes PHI, passwords, etc. Remember, most of the data you upload to GitHub will be publicly accessible. It is very easy to accidentally leave a password or sensitive file in your code, which you then upload.
