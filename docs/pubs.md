@@ -10,6 +10,26 @@ All you have to do is include the following statement in your publication:
 
 ## 2025
 
+**[Reutericyclin, a specialized metabolite of Limosilactobacillus reuteri, mitigates risperidone-induced weight gain in mice](https://doi.org/10.1080/19490976.2025.2477819){:target="_blank"}**  
+Aboulalazm FA, Kazen AB, deLeon O, Müller S, Saravia FL, Lozada-Fernandez V, Hadiono MA, Keyes RF, Smith BC, Kellogg SL, Grobe JL, Kindel TL, Kirby JR
+{:.author}
+
+**[A realistic FastQ-based framework FastQDesign for ScRNA-seq study design issues](https://doi.org/10.1038/s42003-025-07938-8){:target="_blank"}**  
+Wang Y, Chen Y, Ahn KW, Lin C
+{:.author}
+
+**[Deep learning-based quick MLC sequencing for MRI-guided online adaptive radiotherapy: a feasibility study for pancreatic cancer patients](https://doi.org/10.1088/1361-6560/adb099){:target="_blank"}**  
+Ahunbay A, Paulson E, Ahunbay E, Zhang Y
+{:.author}
+
+**[Discovery of a MET-driven monogenic cause of steatotic liver disease](https://doi.org/10.1097/HEP.0000000000001249){:target="_blank"}**  
+Pinto e Vairo F, Zimmermann MT, Wagenknecht J, Jorge SD, Tian S, Vierkant RA, Luehrs AC, Milech de Assunção T, Mathison A, Atwal PS, Cao Y, Allen AM, Klee EW, Urrutia R, Lazaridis KN
+{:.author}
+
+**[An Analytical Approach that Combines Knowledge from Germline and Somatic Mutations Enhances Tumor Genomic Reanalyses in Precision Oncology](https://doi.org/10.1089/cmb.2023.0461){:target="_blank"}**  
+DeVoe E, Reddi HV, Taylor BW, Stachowiak S, Geurts JL, George B, Shaker R, Urrutia R, Zimmermann MT
+{:.author}
+
 **[Dry powder inhaler deposition in the larynx and the risk of steroid inhaler laryngitis: A computational fluid dynamics study](https://doi.org/10.1016/j.jaerosci.2024.106490){:target="_blank"}**  
 Dey S, Bock JM, Garcia GJM
 {:.author}
