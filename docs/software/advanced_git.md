@@ -18,7 +18,7 @@ Choose a suitable name for your repository and leave everything else as it is. C
 
 ![Step3](../_static/img/gitpages_step3.png)
 
-Clone your repository in your local computer. The URL of your project will be of the form https://github.com/username/projectname.git.
+Clone your repository in your local computer. The URL of your project will be of the form `https://github.com/username/projectname.git`.
 
 ```bash
 git clone https://github.com/drseusslab/DTI_PIPELINE.git
@@ -63,11 +63,11 @@ Under Code and automation, search for Pages. Then, in Build and deployment, unde
 
 ![Step5](../_static/img/gitpages_step5.png)
 
-your site should be live at https://username.github.io/repository_name. Repeat this process for any individual projects.
+your site should be live at `https://username.github.io/repository_name`. Repeat this process for any individual projects.
 
 ### Create the main GitHub page for your lab
 
-Now you can create the main page for your lab and add links to the individual project pages. The process is the same except that the name of the repository **must** be the same as your username. In our example, the repository must be named `drseusslab`. This main page will be hosted at https://username.github.io.
+Now you can create the main page for your lab and add links to the individual project pages. The process is the same except that the name of the repository **must** be the same as your username. In our example, the repository must be named `drseusslab`. This main page will be hosted at `https://username.github.io`.
 
 ## Use Git Branches to edit and collaborate
 
