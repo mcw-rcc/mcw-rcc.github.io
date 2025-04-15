@@ -234,11 +234,3 @@ You can rebase to any other branch, not necessarily has to be `origin`. However,
 ### Undo changes
 
 As merge conflicts get more complicated to resolve, you might need to [reset, checkout or revert](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting#:~:text=For%20this%20reason%2C%20git%20revert,is%20for%20undoing%20uncommitted%20changes.){:target="_blank"} some of the changes and commits that you did in your branch. [Moving some uncommited changes to a new branch](https://betterstack.com/community/questions/move-uncommited-work-to-new-branch/){:target="_blank"} is another option that would allow you to merge some of the changes that you made and separate the more complicated conflicts into a different branch. Finally, to investigate further all conflicts, you can [check the list of commits in the repository's history](https://www.freecodecamp.org/news/git-log-command/){:target="_blank"}.
-
-## Create more advanced pages
-
-https://www.google.com/search?q=can+you+upload+javascript+to+github&rlz=1C5GCCM_en___US1113&oq=can+you+upload+javascript+to&gs_lcrp=EgZjaHJvbWUqBwgBECEYoAEyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRirAjIHCAUQIRirAjIHCAYQIRifBTIHCAcQIRifBTIHCAgQIRifBTIHCAkQIRifBdIBCDc0NTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
-
-https://squidfunk.github.io/mkdocs-material/creating-your-site/
-
-https://tekeye.uk/md_cms/set-a-menu-in-markdown-cms
