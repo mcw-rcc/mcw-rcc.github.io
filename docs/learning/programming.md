@@ -8,7 +8,9 @@ Bash and Python are among the most commonly used programming languages in data s
 
 [Python guide](https://www.w3schools.com/python/){:target="_blank"}: This guide provides everything you need to know to become a Python programmer capable of analyzing, manipulating, and visualizing large datasets. Key topics widely used in data science are covered, including modules such as NumPy, pandas, SciPy, Django, and the Matplotlib library. You'll also find information on machine learning, working with databases, and much more.
 
-[Markdown Guide](https://www.markdownguide.org/getting-started/){:target="_blank"}: This is a comprehensive guide that covers everything from how does it work and its most common applications to explanations of basic and extended syntax and some useful hacks.
+[Markdown guide](https://www.markdownguide.org/getting-started/){:target="_blank"}: This is a comprehensive guide that covers everything from how does it work and its most common applications to explanations of basic and extended syntax and some useful hacks.
+
+[HTML guide](https://www.w3schools.com/Html/){:target="_blank"}: In this tutorial you will find anything you need about html. It is targeted to programmers with any level of experience as it covers a very wide range of topics.
 
 ## Tools
 
@@ -26,7 +28,9 @@ An IDE, or Integrated Development Environment, is an application for software de
 
 The most commonly used version control tools by software developers are Git and GitHub. They can be used in research to organize and share scripts, recover from accidental loss of data, create excellent documentation on your projects, showcase your work, and keep track of changes in your code. It is important to note that Git and GitHub are different things even though they work hand by hand. On one hand, Git is a version control tool that can be used outside Github and allows you to track changes in files. On the other hand, GitHub is a web-based platform that hosts repositories and uses Git.
 
-[Our Git and GitHub Guide](../software/git.md): This complete guide will take you through the steps on how to configure git, create a new repository and host it on GitHub, as well as creating and managing branches and merging changes with your main remote branch.
+[Our Beginners Git and GitHub Guide](../software/git.md): This guide will take you through the steps on how to configure git, create a new repository and host it on GitHub. It is a good place to start if you have no experience with git.
+
+[Our Advanced Git and GitHub Guide](../software/advanced_git.md): This guide covers how to create a GitHub page, use branches to edit your documentation and collaborate with others, and how to resolve merge conflicts and other issues.
 
 ### Time Management Tools
 
