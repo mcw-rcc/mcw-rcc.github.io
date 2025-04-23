@@ -131,7 +131,7 @@ IPython magic commands provide shortcuts for common tasks. To see the list of al
 
 As we saw in the table above, you can execute a cell as Bash instead of Python using the `%%bash` magic command. But you can also execute a single line as bash by preceding the line with `!`.
 
-If the current Kernel is from a [Conda environment](#activate-a-conda-environment), you might get `command not found` errors when trying to run binaries included in your conda environment. This is because the command is not available in the default shell environment used by Jupyter Notebook. Jupyter Notebook will not automatically activate your Conda environment when using shell commands with `!`. In order to do that you would have to add the following code to a cell and then execute it:
+If the current Kernel is from a [Conda environment](#activate-conda-environment), you might get `command not found` errors when trying to run binaries included in your conda environment. This is because the command is not available in the default shell environment used by Jupyter Notebook. Jupyter Notebook will not automatically activate your Conda environment when using shell commands with `!`. In order to do that you would have to add the following code to a cell and then execute it:
 
 ```python
 import os
