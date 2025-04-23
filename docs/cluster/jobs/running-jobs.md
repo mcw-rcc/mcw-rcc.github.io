@@ -90,7 +90,7 @@ Most applications do not use more than one CPU core. Single-thread jobs that req
 
 #### Multi-thread
 
-A multi-thread application is able to use multiple cores on a single server by spawning multiple threads from a single process. Each thread uses one CPU core, and all share memory. For a multi-thread application, we can use a single task, and specify multiple cpus per task.
+A multi-thread application is able to use multiple cores on a single server by spawning multiple threads from a single process. Each thread uses one CPU core, and all share memory. For a multi-thread application, we can use a single task, and specify multiple CPUs per task.
 
 ```txt
 #SBATCH --ntasks=1
@@ -166,7 +166,7 @@ Job scheduling policies include resource limits on partitions and QOS's, and a f
 
 ### Fairshare
 
-Fairshare is a scheduler algorithm that manages job priority, based on a comparison of all cluster utilization, to promote equal use the cluster. Fairshare tracks daily usage and uses data from the previous 7 days to adjust job priority. The effect of fairshare data is reduced each day using a decay factor. In practice, when a user increases their cluster utilization, their job priority is lowered compared to other users.
+Fairshare is a scheduler algorithm that manages job priority, based on a comparison of all cluster utilization, to promote equal use of the cluster. Fairshare tracks daily usage and uses data from the previous 7 days to adjust job priority. The effect of fairshare data is reduced each day using a decay factor. In practice, when a user increases their cluster utilization, their job priority is lowered compared to other users.
 
 Fairshare effectively allows infrequent users a fair chance to run their jobs on the cluster among the many jobs of more frequent users.
 
