@@ -1,10 +1,10 @@
-# How to use Jupyter Notebook in the cluster
+# Jupyter Notebook
 
 ## Connect to OnDemand
 
 In our cluster, **Jupyter can only be run through OnDemand**. To connect to Open OnDemand, please follow our [Connecting Guide](../cluster/access/ondemand.md).
 
-## Open the Jupyter Notebook App inside OnDemand
+## Open the Jupyter Notebook
 
 To open Jupyter Notebook, please follow the instructions in our [Open OnDemand Guide](../cluster/access/ondemand.md#jupyter-notebook-example).
 
@@ -19,7 +19,7 @@ pip install matplotlib --user
 
 **You will need to restart your Kernel** in Jupyter Notebook to capture the changes. In the top menu, click Kernel and then Restart Kernel.
 
-## Activate a python environment
+## Activate python environment
 
 If you have installed a Python environment in your home directory, you can use it inside Jupyter Notebook. Go to the Terminal and login to the cluster. Then, run the following commands, replacing `myenv` by the name of your python environment. This name should be unique, if another Kernel with the same name exists, it will be replaced. If you get a `No module named ipykernel` error message, install ipykernel in the python environment, like so:
 
@@ -39,7 +39,7 @@ deactivate
 
 Now you can open a new or an existing Jupyter Notebook. In the upper menu, click on Kernel, then Change Kernel, and select "Python (myenv)". Now Jupyter Notebook will use your selected Python environment. You may need to restart the kernel to use updated packages.
 
-## Activate a conda environment
+## Activate conda environment
 
 If you have a Conda environment in your home directory, you can use it inside Jupyter Notebook. Go to the Terminal and login to the cluster. Then, run the following commands, replacing `mycondaenv` by the name of your conda environment. This name should be unique, if another Kernel with the same name exists, it will be replaced. The last step, deactivating your conda environment, is important. Otherwise, you will have problems opening Jupyter Notebook.
 
@@ -127,11 +127,11 @@ IPython magic commands provide shortcuts for common tasks. To see the list of al
 | `%time` | Print the execution time of a line. |
 | `%who` | See list of environment variables. |
 
-### Executing shell commands
+### Shell commands
 
 As we saw in the table above, you can execute a cell as Bash instead of Python using the `%%bash` magic command. But you can also execute a single line as bash by preceding the line with `!`.
 
-If the current Kernel is from a [Conda environment](#activate-a-conda-environment), you might get `command not found` errors when trying to run binaries included in your conda environment. This is because the command is not available in the default shell environment used by Jupyter Notebook. Jupyter Notebook will not automatically activate your Conda environment when using shell commands with `!`. In order to do that you would have to add the following code to a cell and then execute it:
+If the current Kernel is from a [Conda environment](#activate-conda-environment), you might get `command not found` errors when trying to run binaries included in your conda environment. This is because the command is not available in the default shell environment used by Jupyter Notebook. Jupyter Notebook will not automatically activate your Conda environment when using shell commands with `!`. In order to do that you would have to add the following code to a cell and then execute it:
 
 ```python
 import os
@@ -148,11 +148,11 @@ myfiles = !ls
 print(myfiles[2])
 ```
 
-### Writing cells using Markdown
+### Markdown cells
 
 You can run cells as Markdown using the magic command shown in the table above `%%markdown` or selecting Markdown as the language of the current cell. [The Markdown Guide](https://www.markdownguide.org/getting-started/){:target="_blank"} is a great place to start learning Markdown.
 
-### Use Latex to display formulas
+### Latex formulas
 
 You can use Latex to display formulas within Markdown cells. To display Latex code within the current line, surround your expression with a dollar sign on each side. For example: `$x2+y2=8$`. To display the formula in a separate line, wrap it with two dollar signs before and after the Latex code.
 
@@ -164,7 +164,7 @@ Will generate the following output when run:
 
 ![Latex example output](LatexExampleOutput.png)
 
-### Display media inside your notebook
+### Display media
 
 You can display different type of media in your Jupyter Notebook, including images, audio, video or PDF files.
 
