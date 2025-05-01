@@ -1,10 +1,8 @@
----
-version: 4.4.2
----
-
 # Installed R packages
 
-The following {{ packages | length }} packages are installed with R {{ version }}.
+<!-- markdownlint-disable MD011 -->
+The following {{ packages | length }} packages are installed with R {{ version.split(' ')[2] }}.
+<!-- markdownlint-enable MD011 -->
 
 Last updated: _{{ git_revision_date_localized }}_
 
@@ -17,6 +15,7 @@ Last updated: _{{ git_revision_date_localized }}_
 {% macro package_line(p) -%}
     {{- p.Package }} | {{ p.Version }} | {{ p.Title }}
 {%- endmacro %}
+
 <!-- markdownlint-disable MD056 -->
 Package | Version | Description
 :------ | :------ | :----------
