@@ -10,6 +10,10 @@ All you have to do is include the following statement in your publication:
 
 ## 2025
 
+**[Validation and application of a finite element model simulating failure thresholds of skin during blunt puncture with varying impactor geometries](https://doi.org/10.1016/j.jmbbm.2025.107035){:target="_blank"}**  
+LeSueur J, Hampton CE, Pintar FA
+{:.author}
+
 **[Molecular basis of pyruvate transport and inhibition of the human mitochondrial pyruvate carrier](https://doi.org/10.1126/sciadv.adw1489){:target="_blank"}**  
 Sichrovsky M, Leone V, ... Kunji ERS, *et al.*
 {:.author}
