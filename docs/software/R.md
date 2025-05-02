@@ -1,14 +1,10 @@
----
-r_version: 4.4.0
-r_path_version: 4.4
----
 # R
 
 [R](https://www.r-project.org/about.html){:target="_blank"} is a language and environment for statistical computing and graphics. The cluster has multiple versions installed with a variety of commonly used packages pre-installed.
 
 ## Package Installation
 
-R uses a central package library that contains many common packages. The location of this library is `$R_HOME/library`. Users may also install their own packages locally. The default location for local package installation is `$HOME/R/x86_64-pc-linux-gnu-library/{{ r_path_version }}`.
+R uses a central package library that contains many common packages. The location of this library is `$R_HOME/library`. Users may also install their own packages locally. The default location for local package installation is `$HOME/R/x86_64-pc-linux-gnu-library/{{ version.split(' ')[2].rsplit('.', 1)[0] }}`.
 
 !!! warning "Check installed package list first!"
     Your package installation command will not check the centrally installed packages. You should always check if your package is already installed before proceeding. RCC provides an up-to-date [list of installed R packages](r-pkg-list.md) for the most recent version.
@@ -36,13 +32,13 @@ Run the install command:
 The first attempt will warn about writing to the central library. It will ask you to create and use a personal library. Answer **yes** to both.
 
 ```R
-Installing package into ‘/hpc/apps/R/{{ r_version }}/lib64/R/library’
+Installing package into ‘/hpc/apps/R/{{ version.split(' ')[2] }}/lib64/R/library’
 (as ‘lib’ is unspecified)
 Warning in install.packages("ggplot2") :
-  'lib = "/hpc/apps/R/{{ r_version }}/lib64/R/library"' is not writable
+  'lib = "/hpc/apps/R/{{ version.split(' ')[2] }}/lib64/R/library"' is not writable
 Would you like to use a personal library instead? (yes/No/cancel) yes
 Would you like to create a personal library
-‘~/R/x86_64-pc-linux-gnu-library/{{ r_path_version }}’
+‘~/R/x86_64-pc-linux-gnu-library/{{ version.split(' ')[2].rsplit('.', 1)[0] }}’
 to install packages into? (yes/No/cancel) yes
 ```
 
@@ -84,7 +80,7 @@ Example SLURM submission script:
 #SBATCH --time=00:01:00
 #SBATCH --output=%x-%j.out
  
-module load R/{{ r_version }}
+module load R/{{ version.split(' ')[2] }}
  
 Rscript Rtest.r  
 ```
