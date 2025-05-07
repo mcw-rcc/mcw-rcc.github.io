@@ -1,10 +1,7 @@
 ---
-version: 2025-1
+version: 2025-2
 ---
 # Schrödinger
-
-!!! warning "Schrödinger licensing change"
-    Starting in January 2025, Schrödinger's license mechanism changed. Please note that versions prior to 2024-2 are no longer be supported.
 
 !!! info "Schrödinger is licensed by the Department of Biochemistry and available to all MCW investigators."
     Users interested in contributing funds or discussing Schrödinger licensing at MCW should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
@@ -17,7 +14,10 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
 ## Installation & Configuration
 
-1. Download {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
+1. Download the {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
+
+    !!! warning "Version requirements"
+        RCC currently supports version 2024-4 and above. We strongly suggest to install and use the current version documented here.
 
 2. Locate the schrodinger.hosts file:
 
@@ -35,23 +35,7 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
 3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EVyOb95k5kZDloutBAZ39aMBrPHOuvM6tnId7bDkib5tRQ?e=KndObE){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
-4. If using 2024-2, enable new Schrödinger License Manager (enabled by default on 2024-3 and above):
-
-    === "Windows"
-
-        Open a Schrödinger Command Prompt or Schrödinger Power Shell and enter:  
-        ```
-        feature_flags -e SCHRODINGER_LICENSE_MANAGER
-        ```
-
-    === "Mac"
-
-        Open a terminal and enter:  
-        ```
-        /opt/schrodinger/suites2024-3/utilities/feature_flags -e SCHRODINGER_LICENSE_MANAGER
-        ```
-
-5. Add the license server on your computer:
+4. Configure the software to connect the license server:
 
     === "Windows"
 
@@ -61,7 +45,7 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
         Open the **Configuration** tool and select **Server Identifiers**. Enter the hostname and port found in [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
 
-6. Setup remote connection to the cluster:
+5. Setup remote connection to the cluster:
 
     === "Windows"
 
@@ -71,7 +55,7 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
         Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}.
 
-7. Launch the Maestro application.
+6. Launch the Maestro application.
 
 ## Upgrading
 
