@@ -158,11 +158,11 @@ You can use Latex to display formulas within Markdown cells. To display Latex co
 
 For example, the following Markdown cell:
 
-![Latex example code](LatexExampleCode.png)
+![Latex example code](../_static/img/LatexExampleCode.png)
 
 Will generate the following output when run:
 
-![Latex example output](LatexExampleOutput.png)
+![Latex example output](../_static/img/LatexExampleOutput.png)
 
 ### Display media
 
