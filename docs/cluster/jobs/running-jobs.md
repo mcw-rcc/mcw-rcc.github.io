@@ -164,11 +164,45 @@ Job scheduling policies include resource limits on partitions and QOS's, and a f
 | --------- | ------------------ | -------------- | -------------- | ------------- | ---------------------- | -------- |
 | dev       | 8 hrs              | 1              | 8              | 1             | 7.5GB (7.5GB)          | 10000    |
 
-### Fairshare
+### Fairshare and Priority
 
-Fairshare is a scheduler algorithm that manages job priority, based on a comparison of all cluster utilization, to promote equal use of the cluster. Fairshare tracks daily usage and uses data from the previous 7 days to adjust job priority. The effect of fairshare data is reduced each day using a decay factor. In practice, when a user increases their cluster utilization, their job priority is lowered compared to other users.
+Fairshare is a scheduler algorithm that manages job priority, based on a comparison of all cluster utilization, to promote equal use of the cluster. Fairshare tracks daily cluster usage and incorporates data from the previous 7 days to adjust job priority. The effect of fairshare data is reduced each day using a decay factor. In practice, when a user increases their cluster utilization, their job priority is lowered compared to other users. Fairshare effectively allows infrequent users a fair chance to run their jobs on the cluster among the many jobs of more frequent users.
 
-Fairshare effectively allows infrequent users a fair chance to run their jobs on the cluster among the many jobs of more frequent users.
+You can print the queued job priority with the `sprio` command.
+
+```bash
+$ sprio –j 5197367
+JOBID   PARTITION  PRIORITY  SITE  AGE  FAIRSHARE  JOBSIZE  QOS TRES
+5197367 gpu        1372      0     0    8432       225      0   cpu=83,mem132,gres/
+```
+
+The **PRIORITY** column contains the value used to prioritize jobs in the queue. It is based on the values in the other columns including **AGE**, **FAIRSHARE**, **JOBSIZE**, and **TRES**. **AGE** is based on length of time queued, and helps ensure jobs do not get queued indefinitely. **FAIRSHARE** is based on previous cluster utilization. **JOBSIZE** is based on the number of nodes or CPUs a job is allocated and ensures large and small jobs are prioritized. **TRES** is based on specific resources and represents their rarity or abundance.
+
+While most priority factors are fixed, the age factor increases as job queue time increases. Therefore, a job's priority will increase over time. You can see this when we run the `sprio` command again.
+
+```bash
+$ sprio –j 5197367
+JOBID   PARTITION  PRIORITY  SITE  AGE  FAIRSHARE  JOBSIZE  QOS TRES
+5197367 gpu        1374      0     2    8432       225      0   cpu=83,mem132,gres/
+```
+
+Notice that both the priority and age have increased.
+
+You can use `sprio` to check how many jobs are ahead of yours in the corresponding partition queue. Replace `gpu` by your job partition and `5197367` by your jobId. In this example, there are 6 jobs ahead of `5197367`.
+
+```bash
+$ sprio –p gpu --sort –y | awk '{print NR-1 $0}' | less +g -p 5197367
+0 JOBID PARTITION PRIORITY SITE AGE FAIRSHARE JOBSIZE  QOS  TRES
+1 5200677 gpu     9835     0    0   7564      1353     0    cpu=118,mem=176,gres
+2 5191312 gpu     2239     0    6   111       1353     0    cpu=142,mem=3,gres/g
+3 5191332 gpu     2239     0    6   111       1353     0    cpu=142,mem=3,gres/g
+4 5168126 gpu     2239     0    6   111       1353     0    cpu=142,mem=3,gres/g
+5 5191352 gpu     2236     0    3   111       1353     0    cpu=142,mem=3,gres/g
+6 5167923 gpu     2236     0    3   111       1353     0    cpu=142,mem=3,gres/g
+7 5197367 gpu     1376     0    27  222       64       0    cpu=142,mem=28,gres/
+8 5198832 gpu     1377     0    27  222       64       0    cpu=142,mem=28,gres/
+9 5198833 gpu     1107     0    27  222       64       0    cpu=142,mem=28,gres/
+```
 
 ## Writing a Job Script
 
