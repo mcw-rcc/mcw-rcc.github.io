@@ -12,7 +12,7 @@ The {{ hpc_name }} cluster is the institution's primary computational resource, 
 
 ### ResHPC
 
-**Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA), including dbGaP projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider security requirements. Please see the [ResHPC overview](secure-computing/reshpc.md) to get started.
+**Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA). The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider security requirements. Please see the [ResHPC overview](secure-computing/reshpc.md) to get started.
 
 ### Data Storage
 
