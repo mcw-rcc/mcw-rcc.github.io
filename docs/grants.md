@@ -15,7 +15,7 @@ The High Performance Computing (HPC) environment includes 71 computational nodes
 
 ## Restricted HPC
 
-Restricted HPC (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed with security enhancements for restricted datasets that have a defined Data Use Agreement (DUA), including dbGaP projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories.
+Restricted HPC (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed with security enhancements for restricted datasets that have a defined Data Use Agreement (DUA). The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories.
 
 ## Data Storage
 
