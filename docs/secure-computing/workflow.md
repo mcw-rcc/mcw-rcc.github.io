@@ -12,7 +12,7 @@ Job submission and management uses the same commands and syntax as the HPC clust
 
 Restricted source data must be encrypted, and remain encrypted when stored in the project's `/group` directory. Source data may only be decrypted after it is copied to the project's `/scratch` directory, and only as needed for analysis.
 
-Please note that many restricted datasets will be delivered to you in an encrypted format, such as dbGaP data. Some genomics software can work directly with these encrypted files. However, there are a variety of encryption programs available if needed.
+Please note that many restricted datasets will be delivered to you in an encrypted format. Some genomics software can work directly with these encrypted files. However, there are a variety of encryption programs available if needed.
 
 Please contact {{ support_email }} with questions.
 

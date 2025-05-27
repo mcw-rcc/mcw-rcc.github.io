@@ -1,6 +1,6 @@
 # Accounts & Projects
 
-ResHPC access is based on projects. Each project corresponds to a protected dataset with a unique Data Use Agreement (DUA). For example, a PI may request a project to analyze a dbGaP dataset, with access determined by their original dbGaP DUA. Please note that only a MCW PI may establish a project.
+ResHPC access is based on projects. Each project corresponds to a protected dataset with a unique Data Use Agreement (DUA). Access is determined by the original DUA. Please note that only a MCW PI may establish a ResHPC project.
 
 !!! important "one DUA, one project"
     Each ResHPC project is specific to a single DUA. If you have more than one DUA, you will need a separate project for each.
@@ -17,7 +17,7 @@ Multiple users may have access to the same project, each with their own unique p
 
 ## Project Access
 
-Project access and accounts are based on the project's DUA. For example, access to a project working with dbGaP data will only be granted to users that are part of the dbGaP DUA.
+Project access and accounts are based on the project's DUA. Access will only be granted to users that are part of the DUA.
 
 To add a user to a project, first you must amend the DUA to include this user. Consult the data provider and/or MCW Grants & Contracts for details.
 
