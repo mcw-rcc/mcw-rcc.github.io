@@ -129,7 +129,7 @@ The `--keep-env` option leaves the environment intact. Use this option if you'd 
 
 Users should avoid mixing conda and non-conda modules in cluster jobs and workflows. For example, a pipeline requiring Python and TensorFlow should use `module load tensorflow` and not `module load tensorflow python`. The first loads the TensorFlow module which is conda based and includes Python already. The second loads the conda-based TensorFlow module and non-conda-based Python module, which may not give the desired version of Python. This simple example can be compounded with job scripts that load many modules.
 
-Users should also avoid using the `conda init` command. If you accidentally setup conda to auto-intialize via your `.bashrc` or `.bash_profile` scripts at login, unintended issues may occur. For example, subsequent module loads may not work, or system commands may conflict with packages within your auto-init conda env. Users that have this issue will see an env name in front of their username at login, i.e. `(myenv) [netid@server ~]`. You can fix this issue with `conda config --set auto_activate_base false`.
+Users should also avoid using the `conda init` command. If you accidentally setup conda to auto-initialize via your `.bashrc` or `.bash_profile` scripts at login, unintended issues may occur. For example, subsequent module loads may not work, or system commands may conflict with packages within your auto-init conda env. Users that have this issue will see an env name in front of their username at login, i.e. `(myenv) [netid@server ~]`. You can fix this issue with `conda config --set auto_activate_base false`.
 
 ## Additional help
 
