@@ -181,3 +181,7 @@ As merge conflicts get more complicated to resolve, you might need to [reset, ch
 [Moving some uncommited changes to a new branch](https://betterstack.com/community/questions/move-uncommited-work-to-new-branch/){:target="_blank"} is another option that would allow you to merge some of the changes that you made and separate the more complicated conflicts into a different branch.
 
 Finally, to investigate further all conflicts, you can [check the list of commits in the repository's history](https://www.freecodecamp.org/news/git-log-command/){:target="_blank"}.
+
+## Professional documentation
+
+You can create a professional static site like this one to host your documentation using [MkDocs](https://www.mkdocs.org/){:target="_blank"} and [MkDocs Material](https://squidfunk.github.io/mkdocs-material/){:target="_blank"}. These will allow you to use customizable themes with advanced navigation and search options.
