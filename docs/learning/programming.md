@@ -16,6 +16,8 @@ Bash and Python are among the most commonly used programming languages in data s
 
 ### IDEs
 
+#### Programming
+
 An IDE, or Integrated Development Environment, is an application for software development. It provides an interface with a code editor, a compiler, debugger and other tools that help streamline the coding process.
 
 [Jupyter Guide](jupyter.md): In this guide we explain you how to start using Jupyter in OnDemand, how to use languages other than python within your notebook, visualize documents, images and videos, export variables, and a couple other tips and tricks that will be very useful for beginners and more advanced users.
@@ -23,6 +25,18 @@ An IDE, or Integrated Development Environment, is an application for software de
 [Visual Studio Code](https://code.visualstudio.com/docs/getstarted/getting-started){:target="_blank"}: This tutorial provides all the necessary information to get you started with VS Code. You'll learn how to use and customize the user interface, write code with some editing features they provide, running and debugging code, and installing language extensions for different programming languages. To open VSCode in OnDemand, go to Interactive Apps, then click in Code Server and launch the application. Code Server is the web-based version of VS Code.
 
 [RStudio](https://www.dataquest.io/blog/tutorial-getting-started-with-r-and-rstudio/){:target="_blank"}: This is a very good starting point for someone new to R. You will find information from how to install and use RStudio, to installing and using packages, writing and running scripts, accessing build-in datasets, using R Markdown to do reports and much more. RStudio Server, which is the web-based version of RStudio, can also be found in the Interactive Apps in OnDemand.
+
+#### Designing workflows
+
+Workflow diagrams are very useful in research for designing processing pipelines. They help researchers understand the exact steps that will be taken, which aids to pinpoint potential problems, plan data collection, inform new collaborators, write research proposals and articles, and analyze data. Below is a list of free (or accessible to MCW employees) IDEs for designing workflows and pipelines:
+
+[draw.io](https://www.drawio.com/){:target="_blank"}: This tool is very easy to use, free and can be exported in different formats. Additionally, it can be downloaded as an App for most operating systems.
+
+[Microsoft Visio](https://support.microsoft.com/en-us/office/create-a-basic-flowchart-in-visio-e207d975-4a51-4bfa-a356-eeec314bd276){:target="_blank"}: Although usually not free, you can access it for free with your MCW Microsoft account. This tool will allow you to create very professional flowcharts that you can share with collaborators or use in your papers, presentations or posters.
+
+[Canva](https://www.canva.com/graphs/workflow-diagrams/){:target="_blank"}: Canva has some beautiful templates for flowcharts that you just need to edit but can get you started quick. It has many options and add-ons and can also be downloaded in different formats.
+
+[ClickUp](https://clickup.com/blog/workflow-diagram-examples/){:target="_blank"}: This tool will be explained in more detail in the [Time management section](#time-management-tools) because it is not only useful for creating diagrams but it can do many things to organize your research projects and team. This is a trully all-in-one tool.
 
 ### Version Control Tools
 
