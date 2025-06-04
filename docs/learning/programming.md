@@ -36,7 +36,7 @@ Workflow diagrams are very useful in research for designing processing pipelines
 
 [Canva](https://www.canva.com/graphs/workflow-diagrams/){:target="_blank"}: Canva has some beautiful templates for flowcharts that you just need to edit but can get you started quick. It has many options and add-ons and can also be downloaded in different formats.
 
-[ClickUp](https://clickup.com/blog/workflow-diagram-examples/){:target="_blank"}: This tool will be explained in more detail in the [Time management section](#time-management-tools) because it is not only useful for creating diagrams but it can do many things to organize your research projects and team. This is a trully all-in-one tool.
+[ClickUp](https://clickup.com/blog/workflow-diagram-examples/){:target="_blank"}: This tool will be explained in more detail in the [Time management section](#time-management-tools) because it is not only useful for creating diagrams but it can do many things to organize your research projects and team. This is a truly all-in-one tool.
 
 ### Version Control Tools
 

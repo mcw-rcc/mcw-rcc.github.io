@@ -20,7 +20,7 @@ Or in [GitHub Desktop](https://desktop.github.com/){:target="_blank"}. Here you 
 
 ![create GitPage repo](../_static/img/GitHubAdvGuide_img1.png){width="600"}
 
-Next, create an index.md or index.html file and any other files that will be part of the web page for your lab. Below is an example of what a very simple index.html file could look like. If you are new to Markdown or HTML, visit our [programming guide](programming.md) section where we have links to very good programming tutorials for different languages.
+Next, create an index.md or index.html file and any other files that will be part of the web page for your lab. Below is an example of what a very simple index.html file could look like. If you are new to Markdown or HTML, visit our [programming guide](../learning/programming.md) section where we have links to very good programming tutorials for different languages.
 
 <!-- markdownlint-disable MD046 -->
 === "index.html"
