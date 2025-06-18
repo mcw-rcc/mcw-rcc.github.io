@@ -8,15 +8,15 @@ Research Computing provides services and support for computational research at M
 
 ### HPC Cluster
 
-The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster contains over **3,800** CPU cores in a variety of compute node architectures, including large memory and GPUs. All compute nodes are connected by a 100 Gbps RoCEv2 network. The cluster also includes a **467 TB** NVMe scratch storage filesystem. Please see the [Quick Start guide](cluster/quickstart.md) for more detail.
+The {{ hpc_name }} cluster is the institution's primary computational resource, and has been available to MCW researchers since March 2021. The cluster contains a variety of compute node architectures, including large memory and GPUs, all connected by a 100 Gbps network. The cluster also includes a NVMe scratch storage filesystem. Please see the [Quick Start guide](cluster/quickstart.md) for more detail.
 
 ### ResHPC
 
-**Res**tricted **HPC** (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA). The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider security requirements. Please see the [ResHPC overview](secure-computing/reshpc.md) to get started.
+Restricted HPC (ResHPC) is a secure way to access and utilize the HPC cluster. It is specifically designed for restricted datasets that have a defined Data Use Agreement (DUA), including dbGaP projects. The ResHPC service is built on the existing HPC cluster, but incorporates a separate, secure login method, and project specific accounts and directories. With ResHPC, you can work with familiar tools while also satisfying complex data provider security requirements. Please see the [ResHPC overview](secure-computing/reshpc.md) to get started.
 
 ### Data Storage
 
-In addition to the cluster's scratch storage, RCC also provides general purpose research storage with a replicated **2.6 PB** filesystem. This persistent storage is mounted on the cluster via NFS, or provided directly to user's via NFS and SMB. Please see the [Storage Overview](storage/rcc-storage.md) for more detail.
+In addition to the cluster's scratch storage, RCC also provides general purpose research storage with a replicated filesystem. This persistent storage is mounted on the cluster via NFS, or provided directly to user's via NFS and SMB. Please see the [Storage Overview](storage/rcc-storage.md) for more detail.
 
 ### Software
 

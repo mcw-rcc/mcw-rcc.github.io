@@ -142,7 +142,7 @@ The **bigmem** partition contains the large memory nodes, hm01-hm02. Each node i
 
 #### GPU
 
-The **gpu** partition contains the gpu nodes. Nodes gn01-gn06 each have **48 cores**, **360GB RAM**, **4 V100 GPUs**, and a **480GB SSD** for local scratch. Nodes gn07-gn08 each have **48 cores**, **480GB RAM**, **4 A40 GPUs**, and a **3.84TB NVMe SSD** for local scratch. See [GPU Jobs](#gpu-jobs) below for more details.
+The **gpu** partition contains the gpu nodes. The original nodes gn01-gn06 each have **48 cores**, **360GB RAM**, **4 V100 GPUs**, and a **480GB SSD** for local scratch. Additional nodes have been added over time. Please see the [hardware guide](../hardware.md) for details.
 
 ### QOS
 
@@ -355,7 +355,7 @@ exit
 
 ## GPU Jobs
 
-The cluster includes 8 compute nodes that each have 4 GPUs. Nodes gn01-gn06 each have 48 cores, 360GB RAM, 4 V100 GPUs, and a 480GB SSD for local scratch. Nodes gn07-gn08 each have 48 cores, 480GB RAM, 4 A40 GPUs, and a 3.84TB NVMe SSD for local scratch You can add a GPU to your batch or interactive job submission with the `--gres=gpu:N` flag, where ***N*** is the number of GPUs.
+The cluster includes compute nodes that have GPUs. In SLURM these GPUs are configured as generic resources (GRES) for scheduling purposes. You can add a GPU to your batch or interactive job submission with the `--gres=gpu:N` flag, where ***N*** is the number of GPUs.
 
 In a job script add:
 
@@ -374,7 +374,7 @@ Use the `#SBATCH --partition=gpu` and `#SBATCH --gres=gpu:1` directives to have 
 
 ### GPU Type
 
-To use a specific GPU type, use `--gres=gpu:type:1`, where ***type*** is either `v100` or `a40`. Please note that most jobs will not benefit from specifying a GPU type, and this may delay scheduling of your job.
+To use a specific GPU type, use `--gres=gpu:type:1`, where ***type*** is `v100`, `a40`, `l40s`. Please note that most jobs will not benefit from specifying a GPU type, and instead it may actually delay scheduling of your job.
 
 ### GPU Compute Mode
 
