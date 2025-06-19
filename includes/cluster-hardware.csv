@@ -1,6 +1,7 @@
-﻿Nodes,Type,Cores/node,Mem/node (Gb),Disk/node (Gb),Total GPUs,Sockets/node,Cores/socket,Threads/core,CPU Vendor,CPU Model,CPU Base Freq (GHz),CPU Turbo Freq (GHz),GPU Vendor,GPU Model,GPU Mem (Gb)
+﻿Nodes,Type,Cores/node,Mem/node (Gb),Disk/node (Gb),GPUs/node,Sockets/node,Cores/socket,Threads/core,CPU Vendor,CPU Model,CPU Base Freq (GHz),CPU Turbo Freq (GHz),GPU Vendor,GPU Model,GPU Mem (Gb)
 60,CPU,48,384,440,,2,24,1,Intel,6240R,2.4,4.0,,,
 6,GPU,48,384,440,4,2,24,1,Intel,5220R,2.2,4.0,NVIDIA,Tesla V100,32
 2,GPU,48,512,440,4,2,24,1,Intel,6336Y,2.4,3.6,NVIDIA,Ampere A40,48
 1,GPU,40,512,7000,8,2,20,1,Intel,E5-2698 v4,2.2,3.6,NVIDIA,Tesla V100 SXM2,32
-2,Large mem,,1536,440,,2,24,1,Intel,6240R,2.4,4.0,,,
+2,GPU,128,750,7000,8,2,64,1,AMD,EPYC 9554,3.1,3.75,NVIDIA,Ada Lovelace L40S,48
+2,Large Mem,48,1536,440,,2,24,1,Intel,6240R,2.4,4.0,,,
