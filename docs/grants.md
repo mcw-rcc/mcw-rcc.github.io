@@ -11,7 +11,7 @@ The MCW Research Computing Center (RCC) is a division within MCW Information Ser
 
 ## High Performance Computing
 
-The High Performance Computing (HPC) environment includes 71 computational nodes, 3400 processor cores, 29.3 TB of memory, and 40 graphical processing units (GPUs). The nodes are interconnected by 100 Gb/s Ethernet, allowing efficient parallel computing for both CPU and GPU intensive workloads. All nodes run the Rocky Linux 8 operating system. Job submission and scheduling is controlled by the Simple Linux Utility for Resource Management (SLURM). SLURM is an open-source HPC scheduling system that automates job submission, controls resource access, and maintains fair use of all systems. Each compute node includes a standardized operating system image, set of compilers, math libraries, and system software. RCC also supports a variety of open-source software and containerized workloads are supported.
+The High Performance Computing (HPC) environment includes 79 computational nodes, 4,200 processor cores, and 96 graphical processing units (GPUs). The nodes are interconnected by 100 Gb/s Ethernet, allowing efficient parallel computing for both CPU and GPU intensive workloads. All nodes run the Rocky Linux 8 operating system. Job submission and scheduling is controlled by the Simple Linux Utility for Resource Management (SLURM). SLURM is an open-source HPC scheduling system that automates job submission, controls resource access, and maintains fair use of all systems. Each compute node includes a standardized operating system image, set of compilers, math libraries, and system software. RCC also supports a variety of open-source software and containerized workloads are supported.
 
 ## Restricted HPC
 
