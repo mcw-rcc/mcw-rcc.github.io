@@ -1,4 +1,4 @@
-generated: 2025-04-30T20:38:38-0500
+generated: 2025-07-01T13:37:53-0500
 packages:
 - {Package: abc, Title: Tools for Approximate Bayesian Computation (ABC), Version: 2.2.2}
 - {Package: abc.data, Title: 'Data Only: Tools for Approximate Bayesian Computation
@@ -34,6 +34,8 @@ packages:
 - {Package: apeglm, Title: Approximate posterior estimation for GLM coefficients,
   Version: 1.30.0}
 - {Package: aplot, Title: Decorate a 'ggplot' with Associated Information, Version: 0.2.5}
+- {Package: argparse, Title: Command Line Optional and Positional Argument Parser,
+  Version: 2.2.5}
 - {Package: argparser, Title: Command-Line Argument Parser, Version: 0.7.2}
 - {Package: arm, Title: Data Analysis Using Regression and Multilevel/Hierarchical
     Models, Version: 1.14-4}
@@ -174,6 +176,8 @@ packages:
 - {Package: cocor, Title: Comparing Correlations, Version: 1.1-4}
 - {Package: coda, Title: Output Analysis and Diagnostics for MCMC, Version: 0.19-4.1}
 - {Package: codetools, Title: Code Analysis Tools for R, Version: 0.2-20}
+- {Package: coin, Title: Conditional Inference Procedures in a Permutation Test Framework,
+  Version: 1.4-3}
 - {Package: colorRamp2, Title: Generate Color Mapping Functions, Version: 0.1.0}
 - {Package: colorspace, Title: A Toolbox for Manipulating and Assessing Colors and
     Palettes, Version: 2.1-1}
@@ -343,6 +347,7 @@ packages:
 - {Package: fgsea, Title: Fast Gene Set Enrichment Analysis, Version: 1.34.0}
 - {Package: fields, Title: Tools for Spatial Data, Version: 16.3.1}
 - {Package: filelock, Title: Portable File Locking, Version: 1.0.3}
+- {Package: findpython, Title: Functions to Find an Acceptable Python Binary, Version: 1.0.9}
 - {Package: fitdistrplus, Title: Help to Fit of a Parametric Distribution to Non-Censored
     or Censored Data, Version: 1.2-2}
 - {Package: flashClust, Title: Implementation of optimal hierarchical clustering,
@@ -554,6 +559,7 @@ packages:
 - {Package: hexbin, Title: Hexagonal Binning Routines, Version: 1.28.5}
 - {Package: HGNChelper, Title: Identify and Correct Invalid HGNC Human Gene Symbols
     and MGI Mouse Gene Symbols, Version: 0.8.15}
+- {Package: HiddenMarkov, Title: Hidden Markov Models, Version: 1.8-14}
 - {Package: highr, Title: Syntax Highlighting for R Source Code, Version: '0.11'}
 - {Package: Hmisc, Title: Harrell Miscellaneous, Version: 5.2-3}
 - {Package: hms, Title: Pretty Time of Day, Version: 1.1.3}
@@ -575,6 +581,8 @@ packages:
 - {Package: imager, Title: Image Processing Library Based on 'CImg', Version: 1.0.3}
 - {Package: impute, Title: 'impute: Imputation for microarray data', Version: 1.82.0}
 - {Package: infer, Title: Tidy Statistical Inference, Version: 1.0.8}
+- {Package: infercnv, Title: Infer Copy Number Variation from Single-Cell RNA-Seq
+    Data, Version: 1.24.0}
 - {Package: influenceR, Title: Software Tools to Quantify Structural Importance of
     Nodes in a Network, Version: 0.1.5}
 - {Package: ini, Title: Read and Write '.ini' Files, Version: 0.3.1}
@@ -659,6 +667,7 @@ packages:
     Function, Version: 0.1.35}
 - {Package: lfa, Title: Logistic Factor Analysis for Categorical Data, Version: 2.8.0}
 - {Package: lhs, Title: Latin Hypercube Samples, Version: 1.2.0}
+- {Package: libcoin, Title: Linear Test Statistics for Permutation Inference, Version: 1.0-10}
 - {Package: libgeos, Title: Open Source Geometry Engine ('GEOS') C API, Version: 3.11.1-3}
 - {Package: lifecycle, Title: Manage the Life Cycle of your Package Functions, Version: 1.0.4}
 - {Package: limma, Title: Linear Models for Microarray and Omics Data, Version: 3.64.0}
@@ -751,6 +760,7 @@ packages:
   Version: 0.2.0}
 - {Package: ModelMetrics, Title: Rapid Calculation of Model Metrics, Version: 1.2.2.2}
 - {Package: modelr, Title: Modelling Functions that Work with the Pipe, Version: 0.1.11}
+- {Package: modeltools, Title: Tools and Classes for Statistical Models, Version: 0.2-24}
 - {Package: monocle, Title: 'Clustering, differential expression, and trajectory analysis
     for single- cell RNA-Seq', Version: 2.36.0}
 - {Package: monocle3, Title: 'Clustering, Differential Expression, and Trajectory
@@ -841,6 +851,8 @@ packages:
 - {Package: pan, Title: Multiple Imputation for Multivariate Panel or Clustered Data,
   Version: '1.9'}
 - {Package: parallel, Title: Support for Parallel Computation in R, Version: 4.5.0}
+- {Package: parallelDist, Title: Parallel Distance Matrix Computation using Multiple
+    Threads, Version: 0.2.6}
 - {Package: parallelly, Title: Enhancing the 'parallel' Package, Version: 1.43.0}
 - {Package: parallelMap, Title: Unified Interface to Parallelization Back-Ends, Version: 1.5.1}
 - {Package: ParamHelpers, Title: 'Helpers for Parameters in Black-Box Optimization,
@@ -867,6 +879,7 @@ packages:
 - {Package: pfamAnalyzeR, Title: Identification of domain isotypes in pfam data, Version: 1.8.0}
 - {Package: pheatmap, Title: Pretty Heatmaps, Version: 1.0.12}
 - {Package: phia, Title: Post-Hoc Interaction Analysis, Version: 0.3-1}
+- {Package: phyclust, Title: Phylogenetic Clustering (Phyloclustering), Version: 0.1-34}
 - {Package: pillar, Title: Coloured Formatting for Columns, Version: 1.10.2}
 - {Package: pinfsc50, Title: 'Sequence (''FASTA''), Annotation (''GFF'') and Variants
     (''VCF'') for 17 Samples of ''P. Infestans" and 1 ''P. Mirabilis''', Version: 1.3.0}
@@ -955,6 +968,9 @@ packages:
   Version: 1.27.0}
 - {Package: R.utils, Title: Various Programming Utilities, Version: 2.13.0}
 - {Package: R2HTML, Title: HTML Exportation for R Objects, Version: 2.3.4}
+- {Package: R2jags, Title: Using R to Run 'JAGS', Version: 0.8-9}
+- {Package: R2WinBUGS, Title: Running 'WinBUGS' and 'OpenBUGS' from 'R' / 'S-PLUS',
+  Version: 2.1-22.1}
 - {Package: R6, Title: Encapsulated Classes with Reference Semantics, Version: 2.6.1}
 - {Package: ragg, Title: Graphic Devices Based on AGG, Version: 1.4.0}
 - {Package: randomForest, Title: Breiman and Cutlers Random Forests for Classification
@@ -1057,6 +1073,7 @@ packages:
   Version: 1.32.0}
 - {Package: RITANdata, Title: This package contains reference annotation and network
     data sets, Version: 1.32.0}
+- {Package: rjags, Title: Bayesian Graphical Models using MCMC, Version: 4-17}
 - {Package: rJava, Title: Low-Level R to Java Interface, Version: 1.0-11}
 - {Package: rjson, Title: JSON for R, Version: 0.2.23}
 - {Package: RJSONIO, Title: 'Serialize R Objects to JSON, JavaScript Object Notation',

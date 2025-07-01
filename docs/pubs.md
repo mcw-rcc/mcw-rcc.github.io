@@ -10,6 +10,14 @@ All you have to do is include the following statement in your publication:
 
 ## 2025
 
+**[Oscillating gradient spin echo diffusion time effects implicate variations in neurite beading for the heterogeneous reduced diffusion in human acute ischemic stroke lesions](https://doi.org/10.1002/mrm.30618){:target="_blank"}**  
+Zhou M, Budde M, ... Beaulieu C, *et al.*
+{:.author}
+
+**[Impact of breathing technique and particle size on laryngopharyngeal dose delivered by dry powder inhalers](https://doi.org/10.1016/j.jaerosci.2025.106641){:target="_blank"}**  
+Dey S, Jadcherla A, Johnston N, Bock JM, Garcia GJM
+{:.author}
+
 **[Validation and application of a finite element model simulating failure thresholds of skin during blunt puncture with varying impactor geometries](https://doi.org/10.1016/j.jmbbm.2025.107035){:target="_blank"}**  
 LeSueur J, Hampton CE, Pintar FA
 {:.author}
@@ -19,7 +27,7 @@ Sichrovsky M, Leone V, ... Kunji ERS, *et al.*
 {:.author}
 
 **[Investigating the Association of Concussion and Contact Sport Exposure History With Brain Microstructure Using Quantitative Susceptibility Mapping](https://doi.org/10.1002/hbm.70213){:target="_blank"}**  
-España LY, Brett BL, ... Meier TB,*et al.*
+España LY, Brett BL, ... Meier TB, *et al.*
 {:.author}
 
 **[The Prevalence of Undiagnosed Concussions and Their Associations With Current Symptom Reporting in Collegiate-Aged Athletes](https://doi.org/10.1097/HTR.0000000000001058){:target="_blank"}**  
