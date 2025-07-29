@@ -33,7 +33,7 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
         /opt/schrodinger/suites{{ version }}/schrodinger.hosts
         ```
 
-3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EVyOb95k5kZDloutBAZ39aMBrPHOuvM6tnId7bDkib5tRQ?e=KndObE){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
+3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/Ec1QVyNcNGVHiQgZ47Mh93EB8A5jeDXfA90gcS4MrTyxYw?e=YHfLck){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
 
 4. Configure the software to connect the license server:
 
