@@ -10,6 +10,10 @@ All you have to do is include the following statement in your publication:
 
 ## 2025
 
+**[Target-Based Design of Praziquantel Analogs at Cestode TRPM~PZQ~](https://doi.org/10.1021/acsinfecdis.5c00449){:target="_blank"}**  
+Sprague DJ, Park S, ... Marchant JS, *et al.*
+{:.author}
+
 **[Oscillating gradient spin echo diffusion time effects implicate variations in neurite beading for the heterogeneous reduced diffusion in human acute ischemic stroke lesions](https://doi.org/10.1002/mrm.30618){:target="_blank"}**  
 Zhou M, Budde M, ... Beaulieu C, *et al.*
 {:.author}
