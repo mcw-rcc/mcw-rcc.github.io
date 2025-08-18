@@ -1,25 +1,17 @@
 # Maintenance
 
-Research Computing uses scheduled maintenance windows to perform upgrades and general upkeep of all systems. Maintenance occurs the first, non-holiday Wednesday of the month from 9PM-12AM.
+Research Computing uses scheduled maintenance windows to perform upgrades and general upkeep of all systems.
 
-## 2024 Schedule
-
-- December 4, 2024
+!!! tip "Maintenance Schedule Change"
+    The maintenance schedule is changing from 3-hour monthly to 9-hour quarterly. The first quarterly maintenance window is September 16, 2025 8AM-5PM. The full 2026 maintenance schedule will be announced later this year. Please send any questions/concerns to {{ support_email }}.
 
 ## 2025 Schedule
 
-- January 8, 2025
-- February 5, 2025
-- March 5, 2025
-- April 2, 2025
-- May 7, 2025
-- June 4, 2025
-- July 2, 2025
-- August 6, 2025
-- September 3, 2025
-- October 1, 2025
-- November 5, 2025
-- December 3, 2025
+- September 16, 2025 8AM-5PM
+
+## 2026 Schedule
+
+- TBD
 
 ## Job scheduling around maintenance
 
