@@ -202,7 +202,7 @@ module load alphafold/3.0.1
 apptainer exec /hpc/containers/alphafold_3.0.1.sif python /app/alphafold/run_alphafold.py \
     --model_dir=$HOME/af3 \
     --db_dir=$DATABASES_DIR \
-    --json_path=fold_data.json \
+    --json_path=fold_input.json \
     --output_dir=$PWD \
     --norun_inference
 ```
