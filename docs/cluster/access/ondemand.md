@@ -117,14 +117,7 @@ To start a Jupyter Notebook on a cluster server:
 ![Jupyter notebook app](../../_static/img/Jupyter_notebook_app_launch.png)  
 5. To terminate your Jupyter Notebook session, go back to the **My Interactive Sessions** page and click the red **Delete** button.
 
-!!! tip "Did you know you can also use your own Python environment in your Jupyter Notebook session?"
-    If you have installed a Python environment in your home directory, then you can generate a Jupyter kernel which can then be used in your Jupyter Notebook session.
-
-    ```bash
-    # login to the cluster and run the following, replacing myenv with the name of your Python env
-    $ source activate myenv
-    $ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
-    ```
+Please see our [full Jupyter guide](../../software/jupyter.md) for additional help.
 
 ## Known Issues
 

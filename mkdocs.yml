@@ -175,6 +175,7 @@ nav:
       - software/alphafold.md
       - software/ansys.md
       - software/conda.md
+      - software/jupyter.md
       - software/lsdyna.md
       - software/matlab.md
       - software/namd.md
@@ -191,7 +192,6 @@ nav:
       - software/containers.md
       - software/git.md
       - software/advanced_git.md
-      - learning/jupyter.md
   - ResHPC:
     - Overview: secure-computing/reshpc.md
     - Accounts & Projects: secure-computing/project-account.md

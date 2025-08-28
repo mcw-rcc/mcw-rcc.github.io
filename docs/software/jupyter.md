@@ -1,4 +1,4 @@
-# Jupyter Notebook
+# Jupyter
 
 ## Connect to OnDemand
 
@@ -10,7 +10,7 @@ To open Jupyter Notebook, please follow the instructions in our [Open OnDemand G
 
 ## Import libraries
 
-The same way as when you're using Python in the Terminal or on a script, you can import libraries in Jupyter notebook, you will have access to the same libraries that you have access to in the command line. If you need to install a new library, go to the Terminal and login to the cluster. Then, load the python module and install the corresponding library. For example:
+The same way as when you're using Python in the Terminal or on a script, you can import libraries in Jupyter, you will have access to the same libraries that you have access to in the command line. If you need to install a new library, go to the Terminal and login to the cluster. Then, load the python module and install the corresponding library. For example:
 
 ```bash
 module load python
@@ -19,13 +19,23 @@ pip install matplotlib --user
 
 **You will need to restart your Kernel** in Jupyter Notebook to capture the changes. In the top menu, click Kernel and then Restart Kernel.
 
-## Activate python environment
+## Custom Python in Jupyter
 
-If you have installed a Python environment in your home directory, you can use it inside Jupyter Notebook. Go to the Terminal and login to the cluster. Then, run the following commands, replacing `myenv` by the name of your python environment. This name should be unique, if another Kernel with the same name exists, it will be replaced. If you get a `No module named ipykernel` error message, install ipykernel in the python environment, like so:
+If you have installed a Python or Conda environment in your home directory, you can use it inside Jupyter Notebook. The following examples show creation of a kernel for use in Jupyter.
+
+### Python Virtual Environment
+
+To activate:
 
 ```bash
 # Activate your python environment
 $ source myenv/bin/activate
+```
+
+To add a Jupyter kernel:
+
+```bash
+# Add a kernel
 (myenv) $ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 /home/user/myenv/bin/python: No module named ipykernel
 # Install ipykernel for your user if it isn't installed
@@ -33,19 +43,29 @@ $ source myenv/bin/activate
 # Install a Python (myenv) Kernel in your python environment
 (myenv) $ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 Installed kernelspec myenv in /home/user/.local/share/jupyter/kernels/myenv
+```
+
+To deactivate:
+
+```bash
 # Deactivate your python environment
 deactivate
 ```
 
 Now you can open a new or an existing Jupyter Notebook. In the upper menu, click on Kernel, then Change Kernel, and select "Python (myenv)". Now Jupyter Notebook will use your selected Python environment. You may need to restart the kernel to use updated packages.
 
-## Activate conda environment
+### Conda Environment
 
-If you have a Conda environment in your home directory, you can use it inside Jupyter Notebook. Go to the Terminal and login to the cluster. Then, run the following commands, replacing `mycondaenv` by the name of your conda environment. This name should be unique, if another Kernel with the same name exists, it will be replaced. The last step, deactivating your conda environment, is important. Otherwise, you will have problems opening Jupyter Notebook.
+To activate:
 
 ```bash
 # Activate your conda environment
 $ conda activate mycondaenv
+```
+
+To add a Jupyter kernel:
+
+```bash
 # Make sure you have python in your conda environment
 $ conda list | grep python
 # If you don't have python there, install it
@@ -58,6 +78,11 @@ $ conda install ipykernel
 # Install a Python (myenv) Kernel in your conda environment
 $ python -m ipykernel install --user --name mycondaenv --display-name "Python (mycondaenv)"
 Installed kernelspec mycondaenv in /home/user/.local/share/jupyter/kernels/mycondaenv
+```
+
+To deactivate:
+
+```bash
 # Deactivate your conda environment
 $ conda deactivate
 ```
@@ -131,7 +156,7 @@ IPython magic commands provide shortcuts for common tasks. To see the list of al
 
 As we saw in the table above, you can execute a cell as Bash instead of Python using the `%%bash` magic command. But you can also execute a single line as bash by preceding the line with `!`.
 
-If the current Kernel is from a [Conda environment](#activate-conda-environment), you might get `command not found` errors when trying to run binaries included in your conda environment. This is because the command is not available in the default shell environment used by Jupyter Notebook. Jupyter Notebook will not automatically activate your Conda environment when using shell commands with `!`. In order to do that you would have to add the following code to a cell and then execute it:
+If the current Kernel is from a [Conda environment](#conda-environment), you might get `command not found` errors when trying to run binaries included in your conda environment. This is because the command is not available in the default shell environment used by Jupyter Notebook. Jupyter Notebook will not automatically activate your Conda environment when using shell commands with `!`. In order to do that you would have to add the following code to a cell and then execute it:
 
 ```python
 import os
