@@ -20,7 +20,7 @@ Bash and Python are among the most commonly used programming languages in data s
 
 An IDE, or Integrated Development Environment, is an application for software development. It provides an interface with a code editor, a compiler, debugger and other tools that help streamline the coding process.
 
-[Jupyter Guide](jupyter.md): In this guide we explain you how to start using Jupyter in OnDemand, how to use languages other than python within your notebook, visualize documents, images and videos, export variables, and a couple other tips and tricks that will be very useful for beginners and more advanced users.
+[Jupyter Guide](../software/jupyter.md): In this guide we explain you how to start using Jupyter in OnDemand, how to use languages other than python within your notebook, visualize documents, images and videos, export variables, and a couple other tips and tricks that will be very useful for beginners and more advanced users.
 
 [Visual Studio Code](https://code.visualstudio.com/docs/getstarted/getting-started){:target="_blank"}: This tutorial provides all the necessary information to get you started with VS Code. You'll learn how to use and customize the user interface, write code with some editing features they provide, running and debugging code, and installing language extensions for different programming languages. To open VSCode in OnDemand, go to Interactive Apps, then click in Code Server and launch the application. Code Server is the web-based version of VS Code.
 
