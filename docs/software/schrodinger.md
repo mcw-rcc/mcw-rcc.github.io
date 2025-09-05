@@ -1,5 +1,6 @@
 ---
-version: 2025-2
+version: 2025-3
+version_future: 2025-3 or newer
 ---
 # Schrödinger
 
@@ -14,48 +15,36 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
 ## Installation & Configuration
 
-1. Download the {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
+!!! warning "Installation Changes"
+    Please note, starting with version {{ version }}, the `schrodinger.hosts` file is no longer used to connect to the cluster. This has been replaced by the Schrödinger Job Server. The steps below have been updated to reflect these changes. Please plan to update your Schrodinger to {{ version }}.
 
-    !!! warning "Version requirements"
-        RCC currently supports version 2024-4 and above. We strongly suggest to install and use the current version documented here.
+### Download and Install
 
-2. Locate the schrodinger.hosts file:
+Download the {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
 
-    === "Windows"
+### Configure licensing
 
-        ```txt
-        $INSTALLDIR\Schrodinger {{ version }}\schrodinger.hosts
-        ```
+=== "Windows"
 
-    === "Mac"
+    Open the **Configure Software** tool and select **Server Identifiers**. Enter the license server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
 
-        ```txt
-        /opt/schrodinger/suites{{ version }}/schrodinger.hosts
-        ```
+=== "Mac"
 
-3. Download the [server schrodinger.hosts file](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/Ec1QVyNcNGVHiQgZ47Mh93EB8A5jeDXfA90gcS4MrTyxYw?e=YHfLck){:target="_blank"}. Add the text from the downloaded file to your schrodinger.hosts file (you located in step #2). Replace **NetID** with your MCW username and save the file.
+    Open the **Configuration** tool and select **Server Identifiers**. Enter the license server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
 
-4. Configure the software to connect the license server:
+### Configure Cluster Connection
 
-    === "Windows"
+=== "Windows"
 
-        Open the **Configure Software** tool and select **Server Identifiers**. Enter the hostname and port found in [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
+    Open the `Remote Login Configuration` tool. Select `Generate Keys`. Select `Initialize Host Access`. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select `Initialize`.
 
-    === "Mac"
+=== "Mac"
 
-        Open the **Configuration** tool and select **Server Identifiers**. Enter the hostname and port found in [licensing info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
+    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}.
 
-5. Setup remote connection to the cluster:
+### Register Job Server
 
-    === "Windows"
-
-        Open the `Remote Login Configuration` tool. Select `Generate Keys`. Select `Initialize Host Access`. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select `Initialize`.
-
-    === "Mac"
-
-        Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}.
-
-6. Launch the Maestro application.
+Launch the Maestro application. You should be prompted with a `Register with Job Server` window. If not, select `Help > Register with Job Servers...` to open that window. Select `New server` and enter the job server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Enter your MCW username and password, and select `Register`. If the server is registered successfully, you can restart Maestro to complete the setup.
 
 ## Upgrading
 
