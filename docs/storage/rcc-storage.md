@@ -9,7 +9,7 @@ Each user has the same set of default storage paths:
 | Type                  | Path                | Quota                         | Protection            | Description                       |
 | --------------------- | ------------------- | ----------------------------- | --------------------- | --------------------------------- |
 | [`Home`](#home)       | /home/netid         | 100 GB                        | snapshot, replication | account configuration and scripts |
-| [`Group`](#group)     | /group/pi_netid     | 1 TB, expandable with payment | snapshot, replication | shared raw research data          |
+| [`Group`](#group)     | /group/pi_netid     | 5 TB, expandable with payment | snapshot, replication | shared raw research data          |
 | [`Scratch`](#scratch) | /scratch/g/pi_netid | 25 TB                         | none                  | temporary job files               |
 
 ??? tip "You can easily find your available storage paths and current utilization on the cluster  with the `mydisks` command."
@@ -33,7 +33,7 @@ The quota limit is 100 GB and data protection includes replication and snapshots
 
 ### Group
 
-Group storage is a shared space for labs to store research data in active projects. Each lab receives 1 TB for free and can expand via [additional paid storage](../storage/paid-storage.md). This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes. Data protection includes replication and snapshots. For more info on snapshots, and how you might recover a file, please see [file recovery](file-recovery.md).
+Group storage is a shared space for labs to store research data in active projects. Each lab receives 5 TB for free and can expand via [additional paid storage](../storage/paid-storage.md). This space is large scale, but low performance. It is not meant for high I/O, and so is not mounted to compute nodes. Data protection includes replication and snapshots. For more info on snapshots, and how you might recover a file, please see [file recovery](file-recovery.md).
 
 This space is organized by lab group. Each folder in `/group` represents a lab, and is named using the PI's NetID (username). For example, a PI with username "jsmith" would have a group directory located at `/group/jsmith`. Directories within that lab space are organized by purpose and controlled by unique security groups. For example, there is a default `/group/pi_netid/work` directory, which is shared space restricted to lab users. Other shared directories can be created by request for projects that require unique permissions. Additionally, you may have data directories related to your use of a MCW core. These directories will be named for the core and located at `/group/pi_netid/cores`. For example, a Mellowes Center project could be delivered to your group storage and located at `/group/pi_netid/cores/mellowes/example_project1`.
 
