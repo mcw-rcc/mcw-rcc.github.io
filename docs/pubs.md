@@ -10,6 +10,14 @@ All you have to do is include the following statement in your publication:
 
 ## 2025
 
+**[The Relationship of Prior Concussion and Contact Sport Exposure With Cortical Macro and Microstructure](https://doi.org/10.1002/hbm.70392){:target="_blank"}**  
+Meier TB, Muftuler LT, ... Brett BL, *et al.*
+{:.author}
+
+**[Multiomic Selection of Cancer-Testis Antigens as Precision Immuno-oncologic Targets in Head and Neck Cancer](https://doi.org/10.1001/jamaoto.2025.3563){:target="_blank"}**  
+Memon AA, Awan MJ, ... Zenga J, *et al.*
+{:.author}
+
 **[Target-Based Design of Praziquantel Analogs at Cestode TRPM~PZQ~](https://doi.org/10.1021/acsinfecdis.5c00449){:target="_blank"}**  
 Sprague DJ, Park S, ... Marchant JS, *et al.*
 {:.author}
