@@ -17,3 +17,51 @@
 :root {
     --md-default-fg-color--light: #414141;
 }
+
+/* Only style the menu box */
+.md-sidebar--primary .md-nav {
+    background-color: #f0f4f8; /* menu background color */
+    padding: 0.5rem;           /* space around links */
+    border-radius: 8px;        /* rounded edges */
+}
+
+/* Links inside the menu */
+.md-sidebar--primary .md-nav__link {
+    color: #222;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Hover effect */
+.md-sidebar--primary .md-nav__link:hover {
+    background-color: #dde6f0;
+    color: #222;
+    border-radius: 4px;
+}
+
+/* Sidebar itself stays normal */
+.md-sidebar--primary {
+    background: inherit;       /* or leave default */
+    padding: 1rem 0;           /* optional: space for logo/search */
+}
+
+/* Sidebar header (logo/search) */
+.md-sidebar__header {
+    background-color: #f0f4f8; /* same as menu background */
+    padding: 1rem 0;           /* optional: match spacing */
+}
+
+/* Menu list container */
+.md-sidebar--primary .md-nav__list {
+    background-color: #f0f4f8; /* same as your menu background */
+    padding: 0;                /* remove default padding that shows white behind first item */
+    margin: 0;                 /* remove default margin */
+    border-radius: 8px;        /* optional: match menu box */
+}
+
+/* Active top-level menu item */
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav__link--current {
+    background-color: #f0f4f8;  /* same as your menu background */
+    color: #222;                /* optional: match normal link color */
+    border-radius: 4px;         /* optional: match menu box style */
+}
