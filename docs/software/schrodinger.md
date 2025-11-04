@@ -20,7 +20,9 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
 ### Download and Install
 
-Download the {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer.
+Create a new account at <https://www.schrodinger.com>{:target="_blank"}. You will receive an email to verify your account before you can log in.
+
+Download the {{ version }} software from the same page under the Platform menu. Then, run the installer.
 
 ### Configure licensing
 
