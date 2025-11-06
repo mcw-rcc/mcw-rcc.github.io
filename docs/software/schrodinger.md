@@ -32,7 +32,7 @@ Download the {{ version }} software from the same page under the Platform menu. 
 
 === "Mac"
 
-    Open the **Configuration** tool and select **Server Identifiers**. Enter the license server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
+    Go to the your Applications and open the SchrodingerSuites{{ version }} folder. Then, open the **Configuration** tool and select the **Server Identifiers** tab. Enter the license server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
 
 ### Configure Cluster Connection
 
@@ -42,7 +42,7 @@ Download the {{ version }} software from the same page under the Platform menu. 
 
 === "Mac"
 
-    Configure password-less SSH for remote login. Open a terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}.
+    To configure password-less SSH for remote login, open a Terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}. Host B is the same host found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}.
 
 ### Register Job Server
 
