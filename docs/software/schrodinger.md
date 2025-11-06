@@ -1,5 +1,5 @@
 ---
-version: 2025-3
+version: 2025-4
 version_future: 2025-3 or newer
 ---
 # Schrödinger
@@ -16,27 +16,25 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 ## Installation & Configuration
 
 !!! warning "Installation Changes"
-    Please note, starting with version {{ version }}, the `schrodinger.hosts` file is no longer used to connect to the cluster. This has been replaced by the Schrödinger Job Server. The steps below have been updated to reflect these changes. Please plan to update your Schrodinger to {{ version }}.
+    Please note, starting with version {{ version }}, the `schrodinger.hosts` file is no longer used to connect to the cluster. This has been replaced by the Schrödinger Job Server. The steps below have been updated to reflect these changes.
 
 ### Download and Install
 
-Create a new account at <https://www.schrodinger.com>{:target="_blank"}. You will receive an email to verify your account before you can log in.
-
-Download the {{ version }} software from the same page under the Platform menu. Then, run the installer.
+Download the {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer. If you are a new user, you will need to create an account on Schrodinger's website.
 
 ### Configure licensing
 
 === "Windows"
 
-    Open the **Configure Software** tool and select **Server Identifiers**. Enter the license server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
-
+    Open the **Configure Software** tool and select **Server Identifiers**. Enter the license server hostname `lic01.rcc.mcw.edu` and port number `53000` and select **Install License**.
+    
 === "Mac"
 
-    Go to the your Applications and open the SchrodingerSuites{{ version }} folder. Then, open the **Configuration** tool and select the **Server Identifiers** tab. Enter the license server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
+    Open the **Configuration** tool and select **Server Identifiers**. Enter the license server hostname `lic01.rcc.mcw.edu` and port number `53000` and select **Install License**. 
 
 ### Register Job Server
 
-Launch the Maestro application. Click the button `Continue to Maestro`. Select `Help > Register with Job Servers...`. Select `New server` and enter the job server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Enter your MCW username and password, and select `Register`. If you get a warning about the server being already registered, it can be ignored. Restart Maestro to complete the setup.
+Launch the Maestro application. You should be prompted with a `Register with Job Server` window. If not, select `Help > Register with Job Servers...` to open that window. Select `New server` and enter the job server hostname `jobserver.rcc.mcw.edu` and port number `8030`. Enter your MCW username and password, and select `Register`. If you see a warning that this job server is already registered, you can ignore it. Restart Maestro to complete the setup.
 
 ## Upgrading
 
