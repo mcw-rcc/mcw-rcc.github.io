@@ -34,16 +34,6 @@ Download the {{ version }} software from the same page under the Platform menu. 
 
     Go to the your Applications and open the SchrodingerSuites{{ version }} folder. Then, open the **Configuration** tool and select the **Server Identifiers** tab. Enter the license server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"} and select **Install License**.
 
-### Configure Cluster Connection
-
-=== "Windows"
-
-    Open the `Remote Login Configuration` tool. Select `Generate Keys`. Select `Initialize Host Access`. Enter the host IP Address (this is in your schrodinger.hosts file) and your MCW username. Select `Initialize`.
-
-=== "Mac"
-
-    To configure password-less SSH for remote login, open a Terminal and follow [this guide](http://www.linuxproblem.org/art_9.html){:target="_blank"}. Host B is the same host found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}.
-
 ### Register Job Server
 
 Launch the Maestro application. You should be prompted with a `Register with Job Server` window. If not, select `Help > Register with Job Servers...` to open that window. Select `New server` and enter the job server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Enter your MCW username and password, and select `Register`. If the server is registered successfully, you can restart Maestro to complete the setup.
