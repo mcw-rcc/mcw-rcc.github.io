@@ -36,7 +36,7 @@ Download the {{ version }} software from the same page under the Platform menu. 
 
 ### Register Job Server
 
-Launch the Maestro application. You should be prompted with a `Register with Job Server` window. If not, select `Help > Register with Job Servers...` to open that window. Select `New server` and enter the job server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Enter your MCW username and password, and select `Register`. If the server is registered successfully, you can restart Maestro to complete the setup.
+Launch the Maestro application. Click the button `Continue to Maestro`. Select `Help > Register with Job Servers...`. Select `New server` and enter the job server hostname and port number found in the [configuration info](https://mcw0.sharepoint.com/:o:/s/RCCAdminSite/EmJ7D-fDCv1Dg0f_Z-_d0tsBR8_trGnDiqZaod6mUPjo8A?e=GdWCGP){:target="_blank"}. Enter your MCW username and password, and select `Register`. If you get a warning about the server being already registered, it can be ignored. Restart Maestro to complete the setup.
 
 ## Upgrading
 
