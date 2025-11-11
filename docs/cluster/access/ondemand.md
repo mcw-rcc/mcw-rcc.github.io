@@ -68,11 +68,13 @@ If you're off-campus, you'll be accessing OnDemand via Citrix browser. To upload
 
 ## Job Submission
 
-Jobs can be created, submitted, and monitored via the Jobs Menu. This is an alternative to creating and submitting job scripts in the command line.
+Jobs can be created, submitted, and monitored via the **Jobs Menu**, as an alternative to using the command line.
 
-From the **Dashboard** menu, select **Jobs > Job Composer** which will open in a new window. The **Job Composer** app has two tabs: **Jobs** and **Templates** The **Jobs** tab contains a list of all jobs previously submitted through Open OnDemand. The **Templates** tab allows you to create your own job templates.
+From the **Dashboard** menu, select **Jobs > Open Job Composer**. Select **SLURM Job Script** to start a new job. If you belong to multiple groups, choose the appropriate account and partition. The script header will automatically populate with default resources, and additional resource settings (including parallel and array jobs) can be generated. You can also choose where to save the script and what to name it.
 
-Jobs can be created from previous jobs or job templates. See [OSC's Job Management Guide](https://www.osc.edu/resources/online_portals/ondemand/job_management){:target="_blank"} for more information.
+The **History** tab in **Open Job Composer** shows details for jobs submitted through the app, including allocated resources, runtime, exit code, and more.
+
+See the [RIKEN documentation](https://riken-rccs.github.io/OpenComposer/docs/manual.html){:target="_blank"} for details.
 
 ### Create a New Job
 
