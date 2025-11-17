@@ -10,6 +10,10 @@ All you have to do is include the following statement in your publication:
 
 ## 2025
 
+**[Workflow to detect exceeded dose constraints in pancreatic stereotactic body irradiation after intrafraction motion during magnetic resonance-guided adaptive radiotherapy using a deep learning-refined contour propagation tool](https://doi.org/10.1016/j.phro.2025.100866){:target="_blank"}**  
+Sarosiek C, Amjad A, ... Paulson ES, *et al.*
+{:.author}
+
 **[The Relationship of Prior Concussion and Contact Sport Exposure With Cortical Macro and Microstructure](https://doi.org/10.1002/hbm.70392){:target="_blank"}**  
 Meier TB, Muftuler LT, ... Brett BL, *et al.*
 {:.author}
