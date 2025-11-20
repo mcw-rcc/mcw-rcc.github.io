@@ -66,37 +66,31 @@ To upload a folder, drag and drop the folder from your local desktop to your OnD
 
 If you're off-campus, you'll be accessing OnDemand via Citrix browser. To upload a folder, drag and drop the folder from your Windows File Explorer (Citrix app) to your OnDemand Files app (Citrix browser window). Again, as you drag the folder to the window, your cursor should show a copy indicator.
 
-## Job Submission
+## Open Job Composer
 
-Jobs can be created, submitted, and monitored via the **Jobs Menu**, as an alternative to using the command line.
+Jobs can be created, submitted, and monitored via the Open Job Composer tool. This is an alternative to creating and submitting job scripts in the command line.
 
-From the **Dashboard** menu, select **Jobs > Open Job Composer**. Select **SLURM Job Script** to start a new job. If you belong to multiple groups, choose the appropriate account and partition. The script header will automatically populate with default resources, and additional resource settings (including parallel and array jobs) can be generated. You can also choose where to save the script and what to name it.
-
-The **History** tab in **Open Job Composer** shows details for jobs submitted through the app, including allocated resources, runtime, exit code, and more.
-
-See the [RIKEN documentation](https://riken-rccs.github.io/OpenComposer/docs/manual.html){:target="_blank"} for details.
+From the **Dashboard** menu, select **Jobs > Open Job Composer** which will open in a new window. The **Open Job Composer** app has two functions; **Application** and **History**. The **Application** function contains a list job submission apps (default is Slurm Job Script). The **History** function contains all jobs previously submitted by you through the Open Job Composer tool.
 
 ### Create a New Job
 
-In the **Job Composer** app, select the **Jobs** tab. To create a new job script, click the **+ New Job** button and select **From Default Template** You'll see a new job script entry with status **Not Submitted**. On the right hand side you'll see the **Job Details**, including the location and name of the job script.
+In the **Open Job Composer** app, select **Application** > **Slurm Job Script**. To create a new job script, fill in the script location, script name, and job name. Next select your required resources options in the left panel. You will see new job script text generated in real-time in the right panel.
 
-#### Edit a Job Script
+The SLURM Job Script app is intended to capture most of the common job options and resources, but there may be times you need to further customize or edit the script. After you finish filling in details and selecting resources for your job script, you can edit the text in the right panel before submission.
 
-The default job template creates a new generic job script. You'll need to edit this job script so that it contains the workflow you'll submit to the cluster. To edit a job script, click the **Open Editor** button at the lower right.
-
-This will open a job editor in a new tab. You should write your job script following the normal SLURM job syntax. For information on writing SLURM job scripts, see the [Job Script Guide](../jobs/running-jobs.md#writing-a-job-script). After editing the job script, save the script and close the editor window.
-
-#### Edit job options
-
-Click the blue **Job Options** button. Here you can change the job name and the cluster where the job will run. Click **Save** or **Back** to close the job options window.
+For information on writing SLURM job scripts, see the [Job Script Guide](../jobs/running-jobs.md#writing-a-job-script).
 
 ### Submit a Job
 
-To submit a job, select a job and click the green **Submit** button. A message at the top of the window will indicate if the job submission was successful or not. After job submission, the job status will change to **Queued** or **Running** When the job completes, the status will show **Completed**
+To submit a job, select the **Submit** button. A message at the top of the window will indicate if the job submission was successful and provide the SLURM job ID.
 
-### Monitor Jobs
+### Job History
 
-From the **Dashboard** menu, select **Jobs > Active Jobs** for a live view of the cluster queue. You can view all jobs, your own jobs, and select by cluster.
+The History function of Open Job Composer contains a record of past and present jobs submitted through the tool. This is a good method for monitoring jobs, but it will not show jobs submitted outside Open Job Composer, i.e., jobs submitted via command-line. To monitor active jobs submitted outside Open Job Composer, use the [Active Jobs](#job-monitoring) tool documented below.
+
+## Job Monitoring
+
+To monitor all submitted and running jobs, use the Active Jobs tool. From the **Dashboard** menu, select **Jobs > Active Jobs**. This will open a new window with a view of all jobs currently submitted and running on the cluster. You can use filters to display all jobs or just your own.
 
 ## Interactive Applications
 
