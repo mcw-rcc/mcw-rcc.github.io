@@ -171,10 +171,16 @@ nav:
   - Software:
     - Using Modules: software/modules.md
     - Requesting Software: software/module-request.md
+    - Installed Software:
+      - Cluster Packages: software/cluster-pkg-list.md
+      - R Packages: software/r-pkg-list.md
     - Guides:
       - software/alphafold.md
       - software/ansys.md
       - software/conda.md
+      - software/containers.md
+      - software/git.md
+      - software/advanced_git.md
       - software/jupyter.md
       - software/lsdyna.md
       - software/matlab.md
@@ -185,13 +191,6 @@ nav:
       - software/R.md
       - software/schrodinger.md
       - software/tensorflow.md
-    - Installed Software:
-      - Cluster Packages: software/cluster-pkg-list.md
-      - R Packages: software/r-pkg-list.md
-    - Tools:
-      - software/containers.md
-      - software/git.md
-      - software/advanced_git.md
   - ResHPC:
     - Overview: secure-computing/reshpc.md
     - Accounts & Projects: secure-computing/project-account.md
