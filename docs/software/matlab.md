@@ -1,5 +1,5 @@
 ---
-version: R2024b
+version: R2025b
 ---
 # MATLAB Parallel Server
 
@@ -17,7 +17,7 @@ The MATLAB Parallel Server software is an extension of the Parallel Computing To
 
 ### Download Plugin Files
 
-Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/EaiUy_hfsD9KkB7BSaONsYcB2NL5tjICvKYQLLM4UyiJ_w){:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save the folder `matlab-parallel-slurm-plugin-{{ version }}` to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
+Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/IQCpNW_PRzCCRrlmNLdL-BfuAW1UXsrWcR41msHxg8O9I-k?e=prEfpC){:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save the folder `matlab-parallel-slurm-plugin-{{ version }}` to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
 
 ### Add Startup Script
 
