@@ -1,4 +1,4 @@
-# File Cleanup & Archiving
+# Cleanup & Archiving
 
 There are several tools and commands available to help you manage your data, including finding large directories that you can compress down or delete if no longer needed.  Keeping your directories free of old or unwanted files will help keep your account under your disk usage quota.
 

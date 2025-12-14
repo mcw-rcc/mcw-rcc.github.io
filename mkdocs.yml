@@ -159,14 +159,15 @@ nav:
     - storage/paid-storage.md 
     - storage/ref-data.md
     - storage/mcw-storage.md
-    - Access & Sharing:
+    - Data Transfer:
+      - storage/file-transfer.md
+      - storage/globus.md
+      - storage/rclone.md
+    - Manage & Share:
       - storage/data-access.md
       - storage/data-sharing.md
-      - storage/globus.md
-    - Manage:
       - storage/file-cleanup.md
       - storage/file-recovery.md
-      - storage/file-transfer.md
       - storage/file-permissions.md
   - Software:
     - Using Modules: software/modules.md

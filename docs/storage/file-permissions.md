@@ -1,4 +1,4 @@
-# File Permissions
+# Permission Changes
 
 !!! warning "Proceed with caution"
     When modifying file permissions in Linux, use caution and take time to fully understand the effect of your proposed permission changes. Errant permission changes can make a file unusable by yourself, or others.

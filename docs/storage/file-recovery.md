@@ -1,4 +1,4 @@
-# File Recovery
+# Data Recovery
 
 This guide explains how you might recover a file using a data protection feature called a snapshot. Snapshots are available on your home and group directories. For reference, a snapshot is an on-disk reference point of file changes from a time period. It is very similar to file versions in Microsoft products. This feature allows you to look back at previous versions of your files, and recover when needed. Below you'll find info on how to recover a file, when possible.
 
@@ -29,11 +29,12 @@ cp /home/user/.snapshot/555_Home Directory_homefs/file1 /home/user
 
 !!! tip "Commands must reference `.snapshot` directly."
     The `.snapshot/` directory is hidden from standard Linux tools. Consider the following example:
-
+    <!-- markdownlint-disable MD046 -->
     ```bash
     ls -la /home/user # will not show .snapshot/
     ls -la /home/user/.snapshot/ # displays the contents of .snapshot/
     ```
+    <!-- markdownlint-enable MD046 -->
 
 ## Windows
 
