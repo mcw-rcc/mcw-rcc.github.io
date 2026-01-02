@@ -1,17 +1,13 @@
 # Maintenance
 
-Research Computing uses scheduled maintenance windows to perform upgrades and general upkeep of all systems.
-
-!!! tip "Maintenance Schedule Change"
-    The maintenance schedule is changing from 3-hour monthly to 9-hour quarterly. The first quarterly maintenance window is September 16, 2025 8AM-5PM. The full 2026 maintenance schedule will be announced later this year. Please send any questions/concerns to {{ support_email }}.
-
-## 2025 Schedule
-
-- September 16, 2025 8AM-5PM
+Research Computing uses scheduled maintenance windows to perform upgrades and general upkeep of all systems. While every effort will be made to adhere to the published schedule, dates and times may change.
 
 ## 2026 Schedule
 
-- TBD
+- January 13, 2026 8AM-5PM
+- April 14, 2026 8AM-5PM
+- July 14, 2026 8AM-5PM
+- October 13, 2026 8AM-5PM
 
 ## Job scheduling around maintenance
 
