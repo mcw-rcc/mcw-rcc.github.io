@@ -10,6 +10,15 @@ All you have to do is include the following statement in your publication:
 
 ## 2025
 
+**[Combination Hormonal Drug Therapy Inhibits *In Vitro* Growth of Adult Ovarian Granulosa Tumor
+Cells](https://doi.org/10.1080/07357907.2025.2599380){:target="_blank"}**  
+Summey RM, Iden M, ... Hopp E, *et al.*
+{:.author}
+
+**[Biosafety assessment of engineered CCL20 locked dimers in vivo](https://doi.org/10.1007/s10565-025-10131-6){:target="_blank"}**  
+Drouillard D, Poimenidou M, ... Dwinell MB, *et al.*
+{:.author}
+
 **[Workflow to detect exceeded dose constraints in pancreatic stereotactic body irradiation after intrafraction motion during magnetic resonance-guided adaptive radiotherapy using a deep learning-refined contour propagation tool](https://doi.org/10.1016/j.phro.2025.100866){:target="_blank"}**  
 Sarosiek C, Amjad A, ... Paulson ES, *et al.*
 {:.author}
