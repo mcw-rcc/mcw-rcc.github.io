@@ -1,6 +1,5 @@
 ---
-version: 2025-4
-version_future: 2025-3 or newer
+version: 2026-1
 ---
 # Schrödinger
 
@@ -16,7 +15,7 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 ## Installation & Configuration
 
 !!! warning "Installation Changes"
-    Please note, starting with version {{ version }}, the `schrodinger.hosts` file is no longer used to connect to the cluster. This has been replaced by the Schrödinger Job Server. The steps below have been updated to reflect these changes.
+    Please note, starting with version 2025-3, the `schrodinger.hosts` file is no longer used to connect to the cluster. This has been replaced by the Schrödinger Job Server. The steps below have been updated to reflect these changes.
 
 ### Download and Install
 
@@ -46,12 +45,15 @@ Included in your install are configurations for the remote server connection to 
 
 : **server_cpu** - HPC Cluster connection for Schrödinger CPU jobs
 : **server_gpu** - HPC Cluster connection for Schrödinger GPU jobs
+: **sid_job** - HPC Cluster connection for Simulation Interaction Diagram jobs
 
 When running Schrödinger jobs, please follow these guidelines:
 
-* Run all pre-processing jobs on the localhost (your machine).
+* Run all pre-processing jobs on your machine (localhost).
 
-* Run docking, MD, etc. jobs with remote connection to HPC Cluster.
+* Run docking, MD, etc. jobs with remote connection to HPC Cluster (server_cpu or server_gpu).
+
+* For Simulation Interaction Diagram jobs that require additional memory, use remote connection to HPC Cluster (sid_job)
 
 ## Direct Job Submission
 
