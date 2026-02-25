@@ -1,0 +1,437 @@
+## 2025
+publications:
+  years:
+    - year: 2026
+      pubs:
+      - title: Multi-State Structural Genomics Enables Large-Scale, Mechanistic, and Context-Specific Classification of ABCC6 Genetic Variants Implicated in Calcification Diseases
+        date: 2026-02-14
+        authors:  Wagenknecht JB, Haque N, ... Zimmermann MT, *et al.*
+        doi: https://doi.org/10.3390/ijms27041832
+      - title: Atypical GPCR Activation Resolved by Nanobody Engineering
+        date: 2026-01-11
+        authors: Schlimgen RR, Jenjak SE, ... Volkman BF, *et al.*
+        doi: https://doi.org/10.64898/2026.01.10.698836
+    - year: 2025
+      pubs:
+      - title: Combination Hormonal Drug Therapy Inhibits In Vitro Growth of Adult Ovarian Granulosa Tumor Cells
+        date: 2025-12-15
+        authors: Summey RM, Iden M, ... Hopp E, *et al.*
+        doi: https://doi.org/10.1080/07357907.2025.2599380
+      - title: Biosafety assessment of engineered CCL20 locked dimers in vivo
+        date: 2025-11-20
+        authors: Drouillard D, Poimenidou M, ... Dwinell MB, *et al.*
+        doi: https://doi.org/10.1007/s10565-025-10131-6
+      - title: Workflow to detect exceeded dose constraints in pancreatic stereotactic body irradiation after intrafraction motion during magnetic resonance-guided adaptive radiotherapy using a deep learning-refined contour propagation tool
+        date: 2025-10-30
+        authors: Sarosiek C, Amjad A, ... Paulson ES, *et al.*
+        doi: https://doi.org/10.1016/j.phro.2025.100866
+      - title: The Relationship of Prior Concussion and Contact Sport Exposure With Cortical Macro and Microstructure
+        date: 2025-09-25
+        authors: Meier TB, Muftuler LT, ... Brett BL, *et al.*
+        doi: https://doi.org/10.1002/hbm.70392
+      - title: Multiomic Selection of Cancer-Testis Antigens as Precision Immuno-oncologic Targets in Head and Neck Cancer
+        date: 2025-08-18
+        authors: Memon AA, Awan MJ, ... Zenga J, *et al.*
+        doi: https://doi.org/10.1001/jamaoto.2025.3563
+      - title: Target-Based Design of Praziquantel Analogs at Cestode TRPM_PZQ_
+        date: 2025-07-10
+        authors: Sprague DJ, Park S, ... Marchant JS, *et al.*
+        doi: https://doi.org/10.1021/acsinfecdis.5c00449
+      - title: Oscillating gradient spin echo diffusion time effects implicate variations in neurite beading for the heterogeneous reduced diffusion in human acute ischemic stroke lesions
+        date: 2025-06-05
+        authors: Zhou M, Budde M, ... Beaulieu C, *et al.*
+        doi: https://doi.org/10.1002/mrm.30618
+      - title: Impact of breathing technique and particle size on laryngopharyngeal dose delivered by dry powder inhalers
+        date: 2025-05-01
+        authors: Dey S, Jadcherla A, Johnston N, Bock JM, Garcia GJM
+        doi: https://doi.org/10.1016/j.jaerosci.2025.106641
+      - title: Validation and application of a finite element model simulating failure thresholds of skin during blunt puncture with varying impactor geometries
+        date: 2025-04-15
+        authors: LeSueur J, Hampton CE, Pintar FA
+        doi: https://doi.org/10.1016/j.jmbbm.2025.107035
+      - title: Molecular basis of pyruvate transport and inhibition of the human mitochondrial pyruvate carrier
+        date: 2025-03-10
+        authors: Sichrovsky M, Leone V, ... Kunji ERS, *et al.*
+        doi: https://doi.org/10.1126/sciadv.adw1489
+      - title: Investigating the Association of Concussion and Contact Sport Exposure History With Brain Microstructure Using Quantitative Susceptibility Mapping
+        date: 2025-02-05
+        authors: España LY, Brett BL, ... Meier TB, *et al.*
+        doi: https://doi.org/10.1002/hbm.70213
+      - title: The Prevalence of Undiagnosed Concussions and Their Associations With Current Symptom Reporting in Collegiate-Aged Athletes
+        date: 2025-01-10
+        authors: Bartels HM. Van Bortel KM, Mayer AR, Brett BL, Meier TB
+        doi: https://doi.org/10.1097/HTR.0000000000001058
+      - title: Reutericyclin, a specialized metabolite of Limosilactobacillus reuteri, mitigates risperidone-induced weight gain in mice
+        date: 2025-01-05
+        authors: Aboulalazm FA, Kazen AB, ... Kirby JR, *et al.*
+        doi: https://doi.org/10.1080/19490976.2025.2477819
+      - title: A realistic FastQ-based framework FastQDesign for ScRNA-seq study design issues
+        date: 2025-01-02
+        authors: Wang Y, Chen Y, Ahn KW, Lin C
+        doi: https://doi.org/10.1038/s42003-025-07938-8
+      - title: "Deep learning-based quick MLC sequencing for MRI-guided online adaptive radiotherapy: a feasibility study for pancreatic cancer patients"
+        date: 2025-01-01
+        authors: Ahunbay A, Paulson E, Ahunbay E, Zhang Y
+        doi: https://doi.org/10.1088/1361-6560/adb099
+      - title: Discovery of a MET-driven monogenic cause of steatotic liver disease
+        date: 2025-01-01
+        authors: Pinto e Vairo F, Zimmermann MT, ... Lazaridis KN, *et al.*
+        doi: https://doi.org/10.1097/HEP.0000000000001249
+      - title: An Analytical Approach that Combines Knowledge from Germline and Somatic Mutations Enhances Tumor Genomic Reanalyses in Precision Oncology
+        date: 2025-01-01
+        authors: DeVoe E, Reddi HV, ... Zimmermann MT, *et al*
+        doi: https://doi.org/10.1089/cmb.2023.0461
+      - title: "Dry powder inhaler deposition in the larynx and the risk of steroid inhaler laryngitis: A computational fluid dynamics study"
+        date: 2025-01-01
+        authors: Dey S, Bock JM, Garcia GJM
+        doi: https://doi.org/10.1016/j.jaerosci.2024.106490
+    - year: 2024
+      pubs:
+      - title: Systematic analysis of the relationship between fold-dependent flexibility and artificial intelligence protein structure prediction
+        date: 2024-12-20
+        authors: Haque N, Wagenknecht JB, Ratnasinghe BD, Zimmermann MT
+        doi: https://doi.org/10.1371/journal.pone.0313308
+      - title: Expanded Functionality and Portability for the Colvars Library
+        date: 2024-11-15
+        authors: Fiorina G, Marinelli F, ... Hénin J, *et al.*
+        doi: https://doi.org/10.1021/acs.jpcb.4c05604
+      - title: Deep learning-based automatic contour quality assurance for auto-segmented abdominal MR-Linac contours
+        date: 2024-10-10
+        authors: Zarenia M, Zhang Y, Sarosiek C, Conlin R, Amjad A, Paulson ES
+        doi: https://doi.org/10.1088/1361-6560/ad87a6
+      - title: Structural basis for selectivity and antagonism in extracellular GPCR-nanobodies
+        date: 2024-09-05
+        authors: Schlimgen RR, Peterson FC, Heukers R, Smit MJ, McCorvy JD, Volkman BF
+        doi: https://doi.org/10.1038/s41467-024-49000-x
+      - title: Bhlhe40 Promotes CD4+ T Helper 1 Cell and Suppresses T Follicular Helper Cell Differentiation during Viral Infection
+        date: 2024-08-01
+        authors: Nguyen C, Kudek M, ... Cui W, *et al.*
+        doi: https://doi.org/10.4049/jimmunol.2300355
+      - title: "Single Cell RNAseq analysis of cytokine-treated human islets: Association of cellular stress with impaired cytokine responsiveness"
+        date: 2024-07-10
+        authors: Stancill JS, Kasmani MY, Cui W, Corbett JA
+        doi: https://doi.org/10.1093/function/zqae015
+      - title: Structural and Dynamic Analyses of Pathogenic Variants in PIK3R1 Reveal a Shared Mechanism Associated among Cancer, Undergrowth, and Overgrowth Syndromes
+        date: 2024-06-15
+        authors: Dsouza NR, Cottrell CE, ... Zimmermann MT, *et al.*
+        doi: https://doi.org/10.3390/life14030297
+    - year: 2023
+      pubs:
+      - title: Bi-allelic variants in HMGCR cause an autosomal-recessive progressive limb-girdle muscular dystrophy
+        date: 2023-12-20
+        authors: Morales-Rosado JA, Schwab TL, ... Klee EW, *et al.*
+        doi: https://doi.org/10.1016/j.ajhg.2023.04.006
+      - title: Tensor-valued diffusion MRI of human acute stroke
+        date: 2023-11-15
+        authors: Zhou M, Stobbe R, ... Beaulieu C, *et al.*
+        doi: https://doi.org/10.1002/mrm.29975
+      - title: Associations of prior concussion severity with brain microstructure using mean apparent propagator magnetic resonance imaging
+        date: 2023-10-10
+        authors: Goeckner BD, Brett BL, ... Meier TB, *et al.*
+        doi: https://doi.org/10.1002/hbm.26556
+      - title: Molecular and cellular basis of praziquantel action in the cardiovascular system
+        date: 2023-09-05
+        authors: Yahya NA, Lanham JK, Sprague DJ, Palygin O, McCorvy JD, Marchant JS
+        doi: https://doi.org/10.1152/ajpcell.00520.2022
+      - title: Robustness of single-cell RNA-seq for identifying differentially expressed genes
+        date: 2023-08-01
+        authors: Liu Y, Huang J, ... Liang M, *et al.*
+        doi: https://doi.org/10.1186/s12864-023-09487-y
+      - title: Effect of muscle activation scheme in human head-neck model on estimating cervical spine ligament strain from military volunteer frontal impact data 
+        date: 2023-07-10
+        authors: Gerringer JW, Somasundaram K, Pintar FA
+        doi: https://doi.org/10.1016/j.aap.2023.107157
+      - title: Conformational changes in the activation loop of a bacterial PASTA kinase
+        date: 2023-06-15
+        authors: Bluma MS, Schultz KM, Kristich CJ, Klug CS
+        doi: https://doi.org/10.1002/pro.4697
+      - title: Loss of PBAF promotes expansion and effector differentiation of CD8+ T cells during chronic viral infection and cancer
+        date: 2023-05-10
+        authors: Kharel A, Shen J, ... Cui W, *et al.*
+        doi: https://doi.org/10.1016/j.celrep.2023.112649
+      - title: The effects of cytomegalovirus on brain structure following sport-related concussion
+        date: 2023-04-05
+        authors: Savitz J, Goeckner BD, ... Meier TB, *et al.*
+        doi: https://doi.org/10.1093/brain/awad126
+      - title: Lymphocytic Choriomeningitis Virus Clone 13 Infection Results in CD8 T Cell-Mediated Host Mortality in Diacylglycerol Kinase α–Deficient Mice
+        date: 2023-03-01
+        authors: Kudek MR, Xin G, ... Cui W, *et al.*
+        doi: https://doi.org/10.4049/jimmunol.2101011
+      - title: "Nonparametric failure time: Time-to-event machine learning with heteroskedastic bayesian additive regression trees and low information omnibus dirichlet process mixtures"
+        date: 2023-02-10
+        authors: Sparapani RA, Logan BR, Maiers MJ, Laud PW, McCulloch RE
+        doi: https://doi.org/10.1111/biom.13857
+      - title: Fragment-based drug discovery of small molecule ligands for the human chemokine CCL28
+        date: 2023-01-15
+        authors: Zhou AL, Jensen DR, ... Volkman BF, *et al.*
+        doi: https://doi.org/10.1016/j.slasd.2023.02.004
+      - title: Comparison of Various Metrics of Repetitive Head Impact Exposure And Their Associations With Neurocognition in Collegiate-Aged Athletes
+        date: 2023-01-05
+        authors: Amadon GK, Goeckner BD, Brett BL, Meier TB
+        doi: https://doi.org/10.1093/arclin/acac107
+    - year: 2022
+      pubs:
+      - title: Natural variation in the binding pocket of a parasitic flatworm TRPM channel resolves the basis for praziquantel sensitivity
+        date: 2022-12-20
+        authors: Rohr CM, Sprague DJ, Park S, Marchant JS
+        doi: https://doi.org/10.1073/pnas.2217732120
+      - title: Structural studies of human fission protein FIS1 reveal a dynamic region important for GTPase DRP1 recruitment and mitochondrial fission
+        date: 2022-11-15
+        authors: Egner JM, Nolden KA, ... Hill RB, *et al.*
+        doi: https://doi.org/10.1016/j.jbc.2022.102620
+      - title: Spatial transcriptomics demonstrates the role of CD4 T cells in effector CD8 T cell differentiation during chronic viral infection
+        date: 2022-10-10
+        authors: Topchyan P, Zander R, ... Cui W, *et al.*
+        doi: https://doi.org/10.1016/j.celrep.2022.111736
+      - title: Clonal lineage tracing reveals mechanisms skewing CD8+ T cell fate decisions in chronic infection
+        date: 2022-09-05
+        authors: Kasmani MY,Zander R, ... Cui W, *et al.*
+        doi: https://doi.org/10.1084/jem.20220679
+      - title: Tension-bending risk curves for the ATD lower lumbar spine subjected to oblique impact under FAA emergency landing conditions
+        date: 2022-08-01
+        authors: Somasundaram K, Humm JR, Yoganandan N, Moorcroft DM, Pintar FA
+        doi: https://doi.org/10.1080/13588265.2022.2130611
+      - title: "Occupant Injury and Response on Oblique-Facing Aircraft Seats: A Computational Study"
+        date: 2022-07-10
+        authors: Somasundaram K, Humm JR, Khandelwal P, Umale S, Moorcroft DM, Pintar FA
+        doi: https://doi.org/10.1115/1.4055511
+      - title: Multi-Omic Integration by Machine Learning (MIMaL)
+        date: 2022-06-15
+        authors: Dickinson Q, Aufschnaiter A, Ott M, Meyer JG
+        doi: https://doi.org/10.1093/bioinformatics/btac631
+      - title: Group 3 innate lymphoid cells require BATF to regulate gut homeostasis in mice
+        date: 2022-05-10
+        authors: Wu X, Khatun A, ... Cui W, *et al.*
+        doi: https://doi.org/10.1084/jem.20211861
+      - title: A single, peri-operative antibiotic can persistently alter the post-operative gut microbiome after Roux-en-Y gastric bypass  
+        date: 2022-04-05
+        authors: Fernando DG, Saravia FL, Atkinson SN, Barron M, Kirby JR, Kindel TL
+        doi: https://doi.org/10.1007/s00464-022-09387-4
+      - title: Bias or biology? Importance of model interpretation in machine learning studies from electronic health records
+        date: 2022-03-01
+        authors: Momenzadeh A, Shamsa A, Meyer JG
+        doi: https://doi.org/10.1093/jamiaopen/ooac063
+      - title: Conformational selection guides b-arrestin recruitment at a biased G protein-coupled receptor
+        date: 2022-02-10
+        authors: Kleist AB, Jenjak S, ... Volkman BF, *et al.*
+        doi: https://doi.org/10.1126/science.abj4922
+      - title: Autoreactive CD8 T cells in NOD mice exhibit phenotypic heterogeneity but restricted TCR gene usage
+        date: 2022-01-15
+        authors: Kasmani MY, Ciecko AE, ... Cui W, *et al.*
+        doi: https://doi.org/10.26508/lsa.202201503
+      - title: Single-cell immune profiling reveals a developmentally distinct CD4+ GM-CSF+ T-cell lineage that induces GI tract GVHD
+        date: 2022-01-05
+        authors: Piper C, Hainstock E, ... Drobyski WR, *et al.*
+        doi: https://doi.org/10.1182/bloodadvances.2021006084
+      - title: Tfh-cell-derived interleukin 21 sustains effector CD8+ T cell responses during chronic viral infection
+        date: 2022-01-01
+        authors: Zander R, Kasmani MY, ... Cui W, *et al.*
+        doi: https://doi.org/10.1016/j.immuni.2022.01.018
+      - title: Cytokine and Nitric Oxide-Dependent Gene Regulation in Islet Endocrine and Nonendocrine Cells
+        date: 2022-01-01
+        authors: Stancill JS, Kasmani MY, Khatun A, Cui W, Corbett JA
+        doi: https://doi.org/10.1093/function/zqab063
+      - title: The non-ELR CXC chemokine encoded by human cytomegalovirus UL146 genotype 5 contains a C-terminal β-hairpin and induces neutrophil migration as a selective CXCR2 agonist
+        date: 2022-01-01
+        authors: Berg C, Wedemeyer MJ, ... Lüttichau HR, *et al.*
+        doi: https://doi.org/10.1371/journal.ppat.1010355
+      - title: Investigating the overlapping associations of prior concussion, default mode connectivity, and executive function-based symptoms
+        date: 2022-01-01
+        authors: Brett BL, Bryant AM, España LY, Mayer AR, Meier TB
+        doi: https://doi.org/10.1007/s11682-021-00617-2
+      - title: BATF promotes group 2 innate lymphoid cell-mediated lung tissue protection during acute respiratory virus infection
+        date: 2022-01-01
+        authors: Wu X, Kasmani MY, ... Cui W, *et al.*
+        doi: https://doi.org/10.1126/sciimmunol.abc9934
+      - title: Enhanced interpretation of 935 hotspot and non-hotspot RAS variants using evidence-based structural bioinformatics
+        date: 2022-01-01
+        authors: Tripathi S, Dsouza NR, Mathison AJ, Leverence E, Urrutia R, Zimmermann MT
+        doi: https://doi.org/10.1016/j.csbj.2021.12.007
+      - title: Improved prediction of older adult discharge after trauma using a novel machine learning paradigm
+        date: 2022-01-01
+        authors: Morris RS, Tignanelli CJ, deRoon-Cassini T, Laud P, Sparapani R
+        doi: https://doi.org/10.1016/j.jss.2021.08.021
+      - title: The association between concussion history and increased symptom severity reporting is independent of common medical comorbidities, personality factors, and sleep quality in collegiate athletes
+        date: 2022-01-01
+        authors: Brett BL, Nelson LD, Meier TB
+        doi: https://doi.org/10.1097/HTR.0000000000000724
+      - title: Positional SHAP (PoSHAP) for Interpretation of machine learning models trained from biological sequences
+        date: 2022-01-01
+        authors: Dickinson Q, Meyer JG
+        doi: https://doi.org/10.1371/journal.pcbi.1009736
+    - year: 2021
+      pubs:
+      - title: Interpreting Sequence Variation in PDAC-Predisposing Genes Using a Multi-Tier Annotation Approach Performed at the Gene, Patient, and Cohort Level
+        date: 2021-12-15
+        authors: Zimmermann MT, Mathison AJ, ... Urrutia RA, *et al.*
+        doi: https://doi.org/10.3389/fonc.2021.606820
+      - title: Structural bioinformatics enhances mechanistic interpretation of genomic variation, demonstrated through the analyses of 935 distinct RAS family mutations
+        date: 2021-11-10
+        authors: Tripathi S, Dsouza NR, Urrutia R, Zimmermann MT
+        doi: https://doi.org/10.1093/bioinformatics/btaa972
+      - title: Association of Previous Concussion with Hippocampal Volume and Symptoms in Collegiate-Aged Athletes
+        date: 2021-10-05
+        authors: Meier TB, España LY, ... Brett BL, *et al.*
+        doi: https://doi.org/10.1089/neu.2020.7143
+      - title: Association of Head Impact Exposure with White Matter Macrostructure and Microstructure Metrics
+        date: 2021-09-01
+        authors: Brett BL, Koch KM, Muftuler LT, Budde M, McCrea MA, Meier TB
+        doi: https://doi.org/10.1089/neu.2020.7376
+      - title: Acute post-concussive assessments of brain tissue magnetism using magnetic resonance imaging
+        date: 2021-08-10
+        authors: Koch KM, Nencka AS, Swearingen B, Bauer A, Meier TB, McCrea MA
+        doi: https://doi.org/10.1089/neu.2020.7322
+      - title: "P2T2: Protein Panoramic annoTation Tool for the interpretation of protein coding genetic variants"
+        date: 2021-07-15
+        authors: DeVoe E, Oliver GR, ... Zimmermann MT, *et al.*
+        doi: https://doi.org/10.1093/jamiaopen/ooab065
+      - title: "Influence of cervical spine sagittal alignment on range of motion after corpectomy: a finite element study"
+        date: 2021-06-10
+        authors: John JD, Kumar GS, Yoganandan N, Rajshekhar V
+        doi: https://doi.org/10.1007/s00701-020-04619-9
+      - title: BATF regulates progenitor to cytolytic effector CD8+ T cell transition during chronic viral infection
+        date: 2021-05-05
+        authors: Chen Y, Zander RA, ... Cui W, *et al.*
+        doi: https://doi.org/10.1038/s41590-021-00965-7
+      - title: E2A-regulated epigenetic landscape promotes memory CD8 T cell differentiation
+        date: 2021-04-01
+        authors: Schauder DM, Shen J, ... Cui W, *et al.*
+        doi: https://doi.org/10.1073/pnas.2013452118
+      - title: Single-cell RNA sequencing of mouse islets exposed to proinflammatory cytokines
+        date: 2021-03-10
+        authors: Stancill JS, Kasmani MY, Khatun A, Cui W, Corbett JA
+        doi: https://doi.org/10.26508/lsa.202000949
+      - title: Suppressive neutrophils require PIM1 for metabolic fitness and survival during chronic viral infection
+        date: 2021-02-15
+        authors: Volberding PJ, Xin G, ... Cui W, *et al.*
+        doi: https://doi.org/10.1016/j.celrep.2021.109160
+    - year: 2020
+      pubs:
+      - title: Conditional Deletion of PGC-1α Results in Energetic and Functional Defects in NK Cells
+        date: 2020-12-15
+        authors: Gerbec ZJ, Hashemi E, ... Malarkannan S, *et al.*
+        doi: https://doi.org/10.1016/j.isci.2020.101454
+      - title: "The chemokine X-factor: Structure-function analysis of the CXC motif at CXCR4 and ACKR3"
+        date: 2020-11-10
+        authors: Wedemeyer MJ, Mahn SA, ... Volkman BF, *et al.*
+        doi: https://doi.org/10.1074/jbc.RA120.014244
+      - title: Single-cell lineage mapping of a diverse virus-specific naive CD4 T cell repertoire
+        date: 2020-10-05
+        authors: Khatun A, Kasmani MY, ... Williams MA, *et al.*
+        doi: https://doi.org/10.1084/jem.20200650
+      - title: Comparative modeling and docking of chemokine-receptor interactions with Rosetta
+        date: 2020-09-01
+        authors: Wedemeyer MJ, Mueller BK, Bender BJ, Meiler J, Volkman BF
+        doi: https://doi.org/10.1016/j.bbrc.2019.12.076
+      - title: Amygdala response to emotional faces in adolescents with persistent post-concussion symptoms
+        date: 2020-08-10
+        authors: Bohorquez-Montoya L, España LY, Nader AM, Furger RE, Mayer AR, Meier TB
+        doi: https://doi.org/10.1016%2Fj.nicl.2020.102217
+      - title: Accurate segmentation of prostate cancer histomorphometric features using a weakly supervised convolutional neural network
+        date: 2020-07-15
+        authors: Bukowy JD, Foss H, ... LaViolette PS, *et al.*
+        doi: https://doi.org/10.1117/1.jmi.7.5.057501
+      - title: Systemic inflammation moderates the association of prior concussion with hippocampal volume and episodic memory in high school and collegiate athletes
+        date: 2020-06-10
+        authors: Brett BL, Savitz J, ... Meier TB, *et al.*
+        doi: https://doi.org/10.1016/j.bbi.2020.07.024
+      - title: Genetic variants in DGAT1 cause diverse clinical presentations of malnutrition through a specific molecular mechanism
+        date: 2020-05-05
+        authors: Gupta A, Dsouza NR, ... Zimmermann MT, *et al.*
+        doi: https://doi.org/10.1016/j.ejmg.2019.103817
+      - title: "Cumulative effects of prior concussion and primary sport participation on brain morphometry in collegiate athletes: a study from the NCAA-DoD CARE consortium"
+        date: 2020-04-01
+        authors: Brett BL, Bobholz SA, ... Meier TB, *et al.*
+        doi: https://doi.org/10.3389/fneur.2020.00673
+      - title: "Resting-state fMRI metrics in acute sport-related concussion and their association with clinical recovery: a study from the NCAA-DOD CARE Consortium"
+        date: 2020-03-10
+        authors: Meier TB, Giraldo-Chica M, ... McCrea MA, *et al.*
+        doi: https://doi.org/10.1089/neu.2019.6471
+      - title: Novel destabilizing Dynactin variant (DCTN1 p. Tyr78His) in patient with Perry syndrome
+        date: 2020-02-15
+        authors: Čierny M, Zimmermann MT ... Brennan R, *et al.*
+        doi: https://doi.org/10.1016/j.parkreldis.2020.06.006
+      - title: Optimization of hyperparameters for SMS reconstruction
+        date: 2020-01-10
+        authors: Muftuler LT, Arpinar VE, ... Nencka AS, *et al.*
+        doi: https://doi.org/10.1016/j.mri.2020.08.006
+      - title: "Amygdala functional connectivity features in grief: a pilot longitudinal study"
+        date: 2020-01-05
+        authors: Chen G, Ward BD, Claesges SA, Li SJ, Goveas JS
+        doi: https://doi.org/10.1016/j.jagp.2020.02.014
+      - title: Serial diffusion kurtosis magnetic resonance imaging study during acute, subacute, and recovery periods after sport-related concussion
+        date: 2020-01-01
+        authors: Muftuler LT, Meier TB, Keith M, Budde MD, Huber DL, McCrea MA
+        doi: https://doi.org/10.1089/neu.2020.6993
+      - title: Covalent-fragment screening of BRD4 identifies a ligandable site orthogonal to the acetyl-lysine binding sites
+        date: 2020-01-01
+        authors: Olp MD, Sprague DJ, ... Smith BC, *et al.*
+        doi: https://doi.org/10.1021/acschembio.0c00058
+    - year: 2019
+      pubs:
+      - title: Integration of Multi-level Molecular Scoring for the Interpretation of RAS-Family Genetic Variation
+        date: 2019-12-15
+        authors: Tripathi S, Dsouza NR, Urrutia RA, Zimmermann MT
+        doi: https://doi.org/10.1101/794131
+      - title: Modeling the complete chemokine-receptor interaction
+        date: 2019-11-10
+        authors: Wedemeyer MJ, Mueller BK, Bender BJ, Meiler J, Volkman BF
+        doi: https://doi.org/10.1016/bs.mcb.2018.09.005
+      - title: Prevalence of potentially clinically significant MRI findings in athletes with and without sport-related concussion
+        date: 2019-10-05
+        authors: Klein AP, Tetzlaff JE, ... Meier TB, *et al.*
+        doi: https://doi.org/10.1089/neu.2018.6055
+      - title: Identification and verification of ubiquitin-activated bacterial phospholipases
+        date: 2019-09-01
+        authors: Tessmer MH, Anderson DM, Pickrum AM, Riegert MO, Frank DW
+        doi: https://doi.org/10.1128/jb.00623-18
+      - title: CD4+ T cell help is required for the formation of a cytolytic CD8+ T cell subset that protects against chronic infection and cancer
+        date: 2019-08-10
+        authors: Zander R, Schauder D, ... Cui W, *et al.*
+        doi: https://doi.org/10.1016/j.immuni.2019.10.009
+    - year: 2018
+      pubs:
+      - title: The solution structure of CCL28 reveals structural lability that does not constrain antifungal activity
+        date: 2018-06-15
+        authors: Thomas MA, He J, Peterson FC, Huppler AR, Volkman BF
+        doi: https://doi.org/10.1016/j.jmb.2018.06.001
+      - title: mTORC1 and mTORC2 differentially promote natural killer cell development
+        date: 2018-05-10
+        authors: Yang C, Tsaih SW, Lemke A, Flister MJ, Thakar MS, Malarkannan S
+        doi: https://doi.org/10.7554/elife.35619
+      - title: The importance of biologic knowledge and gene expression context for genomic data interpretation
+        date: 2018-04-05
+        authors: Zimmermann MT
+        doi: https://doi.org/10.3389/fgene.2018.00670
+      - title: Region-based convolutional neural nets for localization of glomeruli in trichrome-stained whole kidney sections
+        date: 2018-03-01
+        authors: Bukowy JD, Dayton A, ... Cowley AW, *et al.*
+        doi: https://doi.org/10.1681/asn.2017111210
+      - title: Resting-state functional connectivity after concussion is associated with clinical recovery
+        date: 2018-02-10
+        authors: Kaushal M, Espana LY, ... Meier TB, *et al.*
+        doi: https://doi.org/10.1002/hbm.24440
+      - title: Transient receptor potential vanilloid 4 (TRPV4) activation by arachidonic acid requires protein kinase A-mediated phosphorylation
+        date: 2018-01-15
+        authors: Cao S, Anishkin A, ... Zhang DX, *et al.*
+        doi: https://doi.org/10.1074/jbc.m117.811075
+      - title: Simulating Airway Collapse in Obstructive Sleep Apnea using Fluid-Structure Interaction Methodologies
+        date: 2018-01-01
+        authors: Le TB, Garcia GJM
+        doi: https://doi.org/10.1115/DMD2018-6818
+    - year: 2017
+      pubs:
+      - title: Development and Validation of 2D Difference Intensity Analysis for Chemical Library Screening by Protein-Detected NMR Spectroscopy
+        date: 2017-12-15
+        authors: Egner JM, Jensen DR, ... Hill RB, *et al.*
+        doi: https://doi.org/10.1002/cbic.201700386
+      - title: Metabolically Derived Lysine Acylations and Neighboring Modifications Tune the Binding of the BET Bromodomains to Histone H4
+        date: 2017-11-10
+        authors: Olp MD, Zhu N, Smith BC
+        doi: https://doi.org/10.1021/acs.biochem.7b
+    - year: 2016
+      pubs:
+      - title: Mechanism of Sirt1 NAD+-dependent Protein Deacetylase Inhibition by Cysteine S-Nitrosation
+        date: 2016-10-15
+        authors: Kalous KS, Wynia-Smith SL, Olp MD, Smith BC
+        doi: https://doi.org/10.1074/jbc.M116.754655

@@ -77,6 +77,7 @@ plugins:
       include_yaml:
         - includes/modules.yml
         - includes/r-packages.yml
+        - includes/pub-list.yml
   - table-reader
   - redirects:
       redirect_maps:
