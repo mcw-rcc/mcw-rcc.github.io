@@ -51,7 +51,7 @@ _No publications listed for {{ y.year }}._
    | map('length')
    | sum %}
 
-Research Computing has supported research resulting in **{{ all_pub_counts }}** publications over **{{ publications.years | count }}** years. 
+Research Computing has supported research resulting in **{{ all_pub_counts }}** publications over **{{ publications.years | count }}** years.
 
 {# -------------------- Data prep for xychart -------------------- #}
 {% set years_sorted_asc = publications.years | sort(attribute='year') %}
