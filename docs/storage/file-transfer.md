@@ -72,9 +72,9 @@ Several software packages are available for data transfer using the secure file 
 
 | Tool | Platforms | Pros | Cons | Heavy transfers |
 | --- | --- | --- | --- | --- |
-| MobaXterm | [Windows](https://mobaxterm.mobatek.net/download.html){:target="_blank"} | SSH Terminal, run windowed apps from the cluster | Windows only, heavier app | Not optimized for big multi-threaded queues |
+| CoreFTP | [Windows](https://servicedesk.mcw.edu/){:target="_blank"} | Lightweight, simple GUI | Windows only, no SSH Terminal, no windowed apps | Good for heavy transfers with resume, bandwidth control and scheduling |
+| MobaXterm | [Windows](../cluster/access/mobaxterm.md) | SSH Terminal, run windowed apps from the cluster | Windows only, heavier app | Not optimized for big multi-threaded queues |
 | WinSCP | [Windows](https://winscp.net/eng/download.php){:target="_blank"} | Scripting to automate file transfers | Windows only, no SSH Terminal, no Windowed apps | Good for long SFTP jobs, reliable queues and resume |
-| FileZilla | [Windows](https://filezilla-project.org/download.php?platform=win64){:target="_blank"}, [MaxOS](https://filezilla-project.org/download.php?platform=macos-arm64){:target="_blank"}, [Linux](https://filezilla-project.org/download.php?platform=linux64){:target="_blank"} | Cross-platform, simple GUI, good queue manager | No SSH Terminal, no windowed apps | Fast and stable for large batches |
-| CoreFTP | [Windows](https://www.coreftp.com/download.html){:target="_blank"} | Lightweight, simple GUI | Windows only, no SSH Terminal, no windowed apps | Good for heavy transfers with resume, bandwidth control and scheduling |
+| Cyberduck | [Windows](https://cyberduck.io/download/){:target="_blank"}, [Mac](https://cyberduck.io/download/){:target="_blank"} | User-friendly GUI, supports multiple storage types, external editor integration | No synchronization, memory heavy, no SSH Terminal | Slow for large transfers |
 
 --8<-- "includes/abbreviations.md"
