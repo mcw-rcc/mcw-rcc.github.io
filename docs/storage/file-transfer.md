@@ -66,13 +66,15 @@ Copy a directory from the HPC Cluster:
 rsync -avz  user@login-hpc.rcc.mcw.edu:/path/to/remote_directory /path/to/local/target-directory
 ```
 
-## Desktop clients
+## FTP clients
 
 Several software packages are available for data transfer using the secure file transfer protocol (SFTP).
 
-- [CoreFTP](https://servicedesk.mcw.edu/){:target="_blank"} is recommended and licensed by MCW-IS. Use the link to login and search for CoreFTP in the Software section.
-- [MobaXterm](../cluster/access/mobaxterm.md#file-transfer) has a built-in SFTP client.
-- [WinSCP](https://winscp.net/eng/index.php){:target="_blank"} is a popular SFTP client for Windows.
-- [Cyberduck](https://cyberduck.io/){:target="_blank"} is a secure data transfer client available for Windows and Mac OS X users.
+| Tool | Platforms | Pros | Cons | Heavy transfers |
+| --- | --- | --- | --- | --- |
+| CoreFTP | [Windows](https://servicedesk.mcw.edu/){:target="_blank"} | Lightweight, simple GUI | Windows only, no SSH Terminal, no windowed apps | Good for heavy transfers with resume, bandwidth control and scheduling |
+| MobaXterm | [Windows](../cluster/access/mobaxterm.md) | SSH Terminal, run windowed apps from the cluster | Windows only, heavier app | Not optimized for big multi-threaded queues |
+| WinSCP | [Windows](https://winscp.net/eng/download.php){:target="_blank"} | Scripting to automate file transfers | Windows only, no SSH Terminal, no Windowed apps | Good for long SFTP jobs, reliable queues and resume |
+| Cyberduck | [Windows](https://cyberduck.io/download/){:target="_blank"}, [Mac](https://cyberduck.io/download/){:target="_blank"} | User-friendly GUI, supports multiple storage types, external editor integration | No synchronization, memory heavy, no SSH Terminal | Slow for large transfers |
 
 --8<-- "includes/abbreviations.md"
