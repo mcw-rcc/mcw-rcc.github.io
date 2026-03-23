@@ -158,7 +158,7 @@ Job scheduling policies include resource limits on partitions and QOS's, and a f
 | --------- | ------------------ | -------------- | -------------- | ------------- | ---------------------- | -------- |
 | normal    | 7 days (2 hrs)     | 30             | 1440           | N/A           | 7.5GB (7.5GB)          | 10       |
 | bigmem    | 7 days (2 hrs)     | 1              | 48             | N/A           | 31GB (31GB)            | 10       |
-| gpu       | 7 days (2 hrs)     | 4              | 192            | 16            | 10GB (7.5GB)           | 10       |
+| gpu       | 7 days (2 hrs)     | N/A            | 340            | 24            | 10GB (7.5GB)           | 10       |
 
 | QOS       | Max Time           | Max Nodes/User | Max Cores/User | Max GPUs/User | Max Mem/Core (default) | Priority |
 | --------- | ------------------ | -------------- | -------------- | ------------- | ---------------------- | -------- |
