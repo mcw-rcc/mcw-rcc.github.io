@@ -1,8 +1,3 @@
----
-title: Globus Connect Server (GCS) Collections
-description: How to access and use the MCW RCC Globus Connect Server mapped collections for /home, /scratch, and /group storage.
----
-
 # Globus Connect Server (GCS) - MCW RCC Collections
 
 MCW Research Computing Center provides **Globus Connect Server v5 (GCSv5)** mapped collections for fast, secure data transfer to and from RCC storage systems.  
@@ -102,12 +97,10 @@ Globus continues working even if you close the window or lose your connection.
 
 If you cannot access a directory, or you believe permissions are missing:
 
-📧 **help-rcc@mcw.edu**
+📧 **{{ support_email }}**
 
 For additional transfer methods also see:
 
 - [File Transfer](file-transfer.md)
 - [Globus Personal](globus.md)
 - [Rclone](rclone.md)
-
----
