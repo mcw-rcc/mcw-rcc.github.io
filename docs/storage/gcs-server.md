@@ -3,7 +3,7 @@ title: Globus Connect Server (GCS) Collections
 description: How to access and use the MCW RCC Globus Connect Server mapped collections for /home, /scratch, and /group storage.
 ---
 
-# Globus Connect Server (GCS) – MCW RCC Collections
+# Globus Connect Server (GCS) - MCW RCC Collections
 
 MCW Research Computing Center provides **Globus Connect Server v5 (GCSv5)** mapped collections for fast, secure data transfer to and from RCC storage systems.  
 These collections map directly to your RCC directories:
@@ -18,7 +18,7 @@ This guide walks you through logging in, finding the MCW RCC collections, and au
 
 ## 1. Log in to Globus
 
-1. Go to: **https://app.globus.org**
+1. Go to: <https://app.globus.org>{: target="_blank" }
 2. Select **Medical College of Wisconsin** from the organizational login menu.
 3. Click **Continue**.
 
