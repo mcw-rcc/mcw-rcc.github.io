@@ -440,6 +440,8 @@ Example: We want to run the same code on 50 different input files. The input fil
 command input-${SLURM_ARRAY_TASK_ID}
 ```
 
+Keep in mind that the maximum array size is 1500. This has been set based on best practices to protect the scheduler. If you need to submit more jobs than that, divide your array in multiple arrays or contact us for additional information.
+
 ## Job Scheduling and Maintenance
 
 If you submit a job before a maintenance window and the job is sitting in the queue, first check to see why with `squeue`. In the output, you'll see the last column `NODELIST(REASON)`. If your job is held for maintenance, you'll see `(ReqNodeNotAvail, Reserved for maintenance)`.
