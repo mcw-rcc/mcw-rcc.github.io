@@ -4,7 +4,7 @@ Off-campus access to RCC resources is dependent on MCW-IS standard remote access
 
 ## Citrix
 
-[Citrix](https:mcwcitrix.cloud.com){:target="_blank"} is the recommended method of remote access to RCC resources. Citrix is available off-campus using MFA for login.
+[Citrix](https://mcwcitrix.cloud.com){:target="_blank"} is the recommended method of remote access to RCC resources. Citrix is available off-campus using MFA for login.
 
 ### PuTTY in Citrix
 
