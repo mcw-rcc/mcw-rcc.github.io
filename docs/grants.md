@@ -19,7 +19,7 @@ Restricted HPC (ResHPC) is a secure way to access and utilize the HPC cluster. I
 
 ## Data Storage
 
-The system includes a 467 TB NVMe scratch file system enabling high-performance file I/O during job processing. A second 2.6 PB file system provides replicated, persistent storage for active projects. A 100 Gbps network provides fast data transfer between file systems.
+The system includes a 780 TB NVMe scratch file system enabling high-performance file I/O during job processing. A second 2.6 PB file system provides replicated, persistent storage for active projects. A 100 Gbps network provides fast data transfer between file systems.
 
 RCC provides 1 TB of persistent storage to any MCW faculty member for free. Additional persistent storage is available for a fee.
 
