@@ -163,7 +163,6 @@ nav:
     - Data Transfer:
       - storage/file-transfer.md
       - storage/globus.md
-      - storage/gcs-server.md
       - storage/rclone.md
     - Manage & Share:
       - storage/data-access.md

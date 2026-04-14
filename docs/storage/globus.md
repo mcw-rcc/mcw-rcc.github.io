@@ -1,63 +1,58 @@
 # Globus
 
-Globus is a secure file transfer tool for research data. It is popular at research institutions and commonly deployed as a server. The unique features of Globus allow file transfer between MCW systems and between MCW and other schools. We are working on a central Globus Connect Server, but do not have a timeline yet. Here we present a work-around to transfer data between MCW and other institutions that do have Globus Connect Server.
+Globus is a secure file transfer tool for research data. It is popular at research institutions and commonly deployed as a server. The unique features of Globus allow file transfer between MCW systems and between MCW and other schools.
 
 !!! info "Globus @ MCW"
-    RCC is working to deploy a Globus Connect Server. This future installation will simplify data movement inside and outside MCW. We do not yet have a firm date. Please contact {{ support_email }} with questions and stay tuned for updates.
+    Research Computing has deployed Globus with collections for home, group, and scratch storage. MCW does not have a Globus subscription and certain operations, including sharing, are not permitted.
 
-## Setup
+## Globus Connect Server
 
-We will use Globus Connect Personal running on a cluster login node, which will allow transfer of data to/from storage locations on the cluster. This is a one-time setup with future sessions requiring only to start Globus.
+MCW Research Computing provides **Globus Connect Server v5 (GCSv5)** mapped collections for fast, secure data transfer to and from RCC storage systems.  
+These collections map directly to your RCC directories:
 
-To get started, open your browser to <https://app.globus.org/collections/gcp?generate_key>{:target="_blank"}. You will be prompted to login and may have to create your account the first time. Select Medical College of Wisconsin from the drop-down menu and continue to login with your MCW credentials.
+- **Home directories** (`/home/$USER`)
+- **Group directories** (`/group/PI/work`)
+- **Scratch directories** (`/scratch/g/PI`)
 
-![Globus Login](../_static/img/globus-login.png){ width="600" }
+This guide walks you through logging in, finding the MCW RCC collections, and authorizing access the first time you use them.
 
-You will setup a new collection, i.e. endpoint. Enter a **Collection Display Name** that is memorable to you, e.g. "Cluster Dirs", and select **Generate Setup Key**.
+### Authenticate
 
-![Globus Key Setup](../_static/img/globus-key.png){ width="600" }
+Go to <https://app.globus.org>{: target="_blank" }, select **Medical College of Wisconsin** from the organizational login menu, and click **Continue**.
 
-!!! warning "As of 5/1/2024, we have identified an issue with Globus producing empty keys with the above step, and they have been notified and are working on the issue."
-    The workaround is to create the collection and get the setup key via the Globus CLI.  Run the following in a SSH session on a RCC cluster login node:
-    ```bash
-    module load globusconnect
-    globus login
-    globus gcp create mapped "Cluster Dirs"
-    ```
-The next step requires the cluster command-line. Make sure you have SSH access to a cluster login node. To proceed, load the Globus module and run the setup.
+![MCW Organization Login](../_static/img/gcs-login-org.png){ width="500" }
 
-```bash
-module load globusconnect
-globusconnect -setup GLOBUS_KEY_HERE
-```
+You will be redirected to the MCW login page. Log in using your MCW NetID and password. Once authenticated, Globus will bring you to the **File Manager**.
 
-If you see success, then you can start globusconnect.
+### Access storage
 
-```bash
-globusconnect -start
-```
+Inside File Manager, select the **Collection** search bar and type `MCW RCC`. You will see the three mapped collections matching your RCC storage locations on the HPC cluster.
 
-Verify that you see successful startup. Before the next step, stop the process with Control-C.
+![MCW RCC Collection Search Results](../_static/img/gcs-collection-search.png){ width="700" }
 
-We can add folder paths on the RCC by editing `~/.globusonline/lta/config-paths`.
+Select a collection to access your data. You may see a message about **Authentication/Consent** (required only for first access). Select **Continue**.
 
-```txt
-/scratch/g/PI_NetID,0,1
-/group/PI_NetID,0,1
-```
+![Consent Required Prompt](../_static/img/gcs-collection-consent.png){ width="600" }
 
-Run the start command again and your folders will be accessible in the globusconnect application.
+Globus will then ask for permission to (1) Manage data using Globus Transfer and (2) Access the MCW RCC collection on your behalf. Select **Use my MCW email identity**, then select **Allow**.  
 
-```bash
-globusconnect -start
-```
+![Globus Allow Access](../_static/img/gcs-allow-access.png){ width="600" }
 
-Don't forget to Control-C to disconnect/stop the session when you are done transferring data.
+After this, the collection will open normally.
 
-## Transfer data
+### Transferring data
 
-Globus data transfer is controlled via web page. To get started, open your browser to <https://app.globus.org/file-manager>.
+To begin transferring data, open the [File Manager]<https://app.globus.org/file-manager>{: target="_blank" }. For ease of use, select the middle side-by-side layout in the upper right corner. Use the collection search bars to select a source collection on the left, and a destination collection on the right. Select files and folders for transfer, then select **Start** on the left side, initiating transfer from left to right. To transfer data in the opposite direction, select files and folders for transfer, then select **Start** on the right side, initiating transfer from right to left.
 
-![Globus File Transfer](../_static/img/globus-transfer.png){ width="600" }
+!!! info "Globus Tip"
+    Globus continues working even if you close the window or lose your browser connection.
 
-In the upper right corner, you can adjust your panel layout. When transferring data between endpoints, its easiest to select the side-by-side layout. Next you can search for your collections. Start by typing your MCW username into the left side collection box, which should find collections associated with you. Select the collection we created in previous steps. In the right side, enter your destination, which might be another school, or your desktop/laptop. We suggest you transfer data left to right to keep things simple.
+## Globus Connect Personal
+
+Globus Connect Personal runs on your computer and allows data transfer to/from the cluster storage via RCC's Globus Connect Server.
+
+To get started, follow the [Windows](https://docs.globus.org/globus-connect-personal/install/windows/){: target="_blank" }, [Mac](https://docs.globus.org/globus-connect-personal/install/mac/){: target="_blank" }, or [Linux](https://docs.globus.org/globus-connect-personal/install/linux/){: target="_blank" } guide for installation on your computer.
+
+## Help
+
+Please contact {{ support_email }} for all Globus questions.
