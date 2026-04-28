@@ -6,7 +6,7 @@ PuTTY is a lightweight SSH client for Windows users. It features session and pro
 
 PuTTY is available at the link below. For Windows installation, select the **MSI (Windows Installer)** 64-bit x86 version and proceed with install. If you prefer not to install, download the **putty.exe** 64-bit x86 version in the **Alternative binary section**.
 
-[Download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){:target="_blank" .md-button .md-button--primary }
+[Download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){ .md-button .md-button--primary target="_blank" rel="noopener" }
 
 If you downloaded the no install version, make sure to save it in a place that is easy to access and will not be deleted.
 

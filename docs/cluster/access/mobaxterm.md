@@ -6,7 +6,7 @@ MobaXterm is a full-featured login tool for Windows users. It features a pseudo-
 
 MobaXterm is available at the link below. Select the Installer version and proceed with normal Windows style install. Select the Portable version if you want to run without installing.
 
-[Download MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html){:target="_blank" .md-button .md-button--primary }
+[Download MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html){ .md-button .md-button--primary target="_blank" rel="noopener" }
 
 If you downloaded the portable version, make sure to save it in a place that is easy to access and will not be deleted.
 

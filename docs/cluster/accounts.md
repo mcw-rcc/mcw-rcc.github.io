@@ -5,7 +5,7 @@ A user account is required for access to Research Computing resources, including
 !!! info "PI eligibility"
     Research Computing follows MCW policy [RS.GN.160](https://infoscope.mcw.edu/Corporate-Policies/Principal-Investigator-Eligibility.htm){:target="_blank"} when determining PI eligibility.
 
-[Request an Account](https://forms.office.com/r/98QNm6cAyt){ :target="_blank" .md-button .md-button--primary }
+[Request an Account](https://forms.office.com/r/98QNm6cAyt){ .md-button .md-button--primary target="_blank" rel="noopener" }
 
 ## Terms of Use
 
