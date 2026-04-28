@@ -1,6 +1,8 @@
 # Overview
 
-The HPC environment became available to MCW researchers in March 2021. The cluster consists of **79** compute nodes, **4,200** CPU cores, and **96** GPUs. The cluster is connected by **7** 100 Gbps switches running RoCEv2 (ethernet equivalent to Infiniband). Additionally, a **780 TB** NVMe provides scratch storage, and a **2.6 PB** scale-out NAS provides persistent storage.
+The HPC environment became available to MCW researchers in March 2021. The cluster consists of **79** compute nodes, **4,200** CPU cores, and **96** GPUs. The cluster is connected by **7** 100 Gbps switches running RoCEv2 (ethernet equivalent to Infiniband). Additionally, a **780 TB** NVMe array provides scratch storage, and a **2.6 PB** scale-out NAS provides persistent storage.
+
+[Cluster Status](https://slurmdash.rcc.mcw.edu){ .md-button .md-button--primary target="_blank" rel="noopener" }
 
 ## Cluster
 

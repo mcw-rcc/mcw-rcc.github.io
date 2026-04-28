@@ -37,7 +37,7 @@ Open OnDemand includes a command-line terminal app that connects you to the HPC 
 
 The **Files** menu contains links to common storage locations. Clicking one of the file links opens the **File Explorer** in a new browser tab.
 
-| Button      | Function                             |
+| Button | Function |
 | ----------- | ------------------------------------ |
 | `Open in Terminal` | Open current directory in a terminal window in a new browser tab |
 | `New File` | Create a new, empty file |
