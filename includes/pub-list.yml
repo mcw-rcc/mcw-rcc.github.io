@@ -3,6 +3,10 @@ publications:
   years:
     - year: 2026
       pubs:
+      - title: Mitochondria-targeted metformin analogs activate the ER stress-unfolded protein response pathway to drive apoptosis in pancreatic cancer
+        date: 2026-05-22
+        authors: Poimenidou M, Bobek JM, ... Dwinell MB, *et al.*
+        doi: https://doi.org/10.1038/s41419-026-08859-y
       - title: Multi-State Structural Genomics Enables Large-Scale, Mechanistic, and Context-Specific Classification of ABCC6 Genetic Variants Implicated in Calcification Diseases
         date: 2026-02-14
         authors:  Wagenknecht JB, Haque N, ... Zimmermann MT, *et al.*
