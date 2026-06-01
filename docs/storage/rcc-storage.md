@@ -67,7 +67,7 @@ Every lab storage path will have an associated security group consisting of the 
 
 ## Restrictions
 
-The following types of data are strictly prohibited on Research Computing systems:
+The following types of data are **strictly prohibited** on Research Computing systems:
 
 - Any data that would violate the MCW Code of Conduct, MCW Corporate Polices, or any applicable data-use agreement (i.e. IRB, federal grant regulations, etc.)
 
