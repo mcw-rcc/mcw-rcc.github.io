@@ -156,9 +156,11 @@ nav:
       - Job Metrics: cluster/jobs/xdmod.md
   - Data Storage:
     - storage/rcc-storage.md
-    - storage/paid-storage.md 
+    - storage/paid-storage.md
+    - storage/archive-storage.md
     - storage/ref-data.md
     - storage/mcw-storage.md
+
     - Data Transfer:
       - storage/file-transfer.md
       - storage/globus.md

@@ -6,16 +6,16 @@ Additional research group storage, i.e., `/group/PI_NetID`, is available through
 
 ## Cost
 
-The 2025 rate is $80/TB/year. All fees must be prepaid and minimum addition is 1 TB. Minimum duration is 1 year (January 1 to December 31), or the number of months until the start of the next calendar year. Fees will be prorated according to the number of months until December 31. Research Computing will not refund storage fees for any reason.
+The 2026 rate is $100/TB/year. All fees must be prepaid and minimum addition is 1 TB. Minimum duration is 1 year (January 1 to December 31), or the number of months until the start of the next calendar year. Fees will be prorated according to the number of months until December 31. Research Computing will not refund storage fees for any reason.
 
 !!! info "Storage price increases"
     The price of storage will increase incrementally starting in 2025 and beyond. The pricing schedule is as follows:
 
     2025 - $80/TB/year  
     2026 - $100/TB/year  
-    2027 - $120/TB/year
+    2027 - {~~$120~>$100~~}/TB/year
     
-    RCC will re-evaluate storage pricing in FY27 and welcome your feedback on this issue. For more information, please see our [recent news post about storage price changes](../news/posts/2024-10-15.md).
+    RCC will re-evaluate storage pricing in FY27 and welcome your feedback. Please send comments/concerns via email to {{ support_email }}.
 
 ## Unpaid Fees
 
