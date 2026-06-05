@@ -41,11 +41,11 @@ Storage limits can also cause this issue. Every user has access to at least thre
 
 ```txt
 $ mydisks
-=====My Lab=====
-Size  Used Avail Use% File
-47G   29G   19G  61% /home/netId
-932G  158G  774G  17% /group/pi_netId
-4.6T     0  4.6T   0% /scratch/g/pi_netId
+===== My Lab =====
+Size     Used       Avail      Use%     File
+100GB    5GB        95GB       5%       /home/user/
+1TB      100GB      900GB      10%      /group/pi/
+25TB     5TB        25TB       20%      /scratch/g/pi/
 ```
 
 Finally, if you run jobs in OnDemand often, your home directory will fill with temporary files that are created every time you start an OnDemand job. If you primarily use OnDemand and your apps are failing to start, check your home directory limit with `mydisks`. If your home directory is full, look for files in `/home/netId/ondemand`, where `netId` is your username. You can safely clean out this folder and proceed with a logout/login on OnDemand.

@@ -8,11 +8,11 @@ For example, **jsmith** is PI for project **p1234**, with project directories `/
 
     ```bash
     $ mydisks
-    =====My Storage=====
-     Size  Used Avail Use% File
-     4.7G     0  4.7G   0% /home/user.p1234
-     932G  158G  774G  17% /group/PINetID/p1234
-     4.6T   62G  4.5T   2% /scratch/g/PINetID/p1234
+    ===== My Lab =====
+    Size     Used       Avail      Use%     File
+    100GB    5GB        95GB       5%       /home/user.p1234/
+    1TB      100GB      900GB      10%      /group/pi/p1234
+    25TB     5TB        25TB       20%      /scratch/g/pi/p1234
     ```
 
 ## Encryption Requirement
