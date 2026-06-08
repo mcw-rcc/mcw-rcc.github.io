@@ -16,11 +16,11 @@ Each user has the same set of default storage paths:
 
     ```bash
     $ mydisks
-    =====My Lab=====
-    Size  Used Avail Use% File
-    47G   29G   19G  61% /home/user
-    932G  158G  774G  17% /group/pi
-    4.6T     0  4.6T   0% /scratch/g/pi
+    ===== My Lab =====
+    Size     Used       Avail      Use%     File
+    100GB    5GB        95GB       5%       /home/user/
+    1TB      100GB      900GB      10%      /group/pi/
+    25TB     5TB        25TB       20%      /scratch/g/pi/
     ```
 
 ## Storage Paths
