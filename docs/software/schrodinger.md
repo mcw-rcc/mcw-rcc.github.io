@@ -1,10 +1,10 @@
 ---
-version: 2026-2
+version: 2026-3
 ---
 # Schrödinger
 
 !!! info "Schrödinger is licensed by the Department of Biochemistry and available to all MCW investigators."
-    Users interested in contributing funds or discussing Schrödinger licensing at MCW should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
+    MCW users interested in contributing funds or discussing Schrödinger licensing should contact [Dawn Wenzel](mailto://dwenzel@mcw.edu) and [Brian Smith](mailto:brismith@mcw.edu).
 
 The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.com/suites/small-molecule-drug-discovery-suite){:target="_blank"} includes a GUI client that you can run on your Windows, Mac, or Linux desktop/laptop. This client can be configured to send jobs to the HPC Cluster. Example use includes molecular modeling, docking, molecular dynamics simulation, etc. See below for installation.
 
@@ -14,12 +14,12 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 
 ## Installation & Configuration
 
-!!! warning "Installation Changes"
+!!! tip "Installation Changes"
     Please note, starting with version 2025-3, the `schrodinger.hosts` file is no longer used to connect to the cluster. This has been replaced by the Schrödinger Job Server. The steps below have been updated to reflect these changes.
 
 ### Download and Install
 
-Download the {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer. If you are a new user, you will need to create an account on Schrodinger's website.
+Download the {{ version }} software from <https://www.schrodinger.com>{:target="_blank"} and run the installer. If you are a new user, you will need to create an account on Schrödinger's website.
 
 ### Configure licensing
 
