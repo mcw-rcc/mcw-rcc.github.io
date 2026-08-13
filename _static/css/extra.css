@@ -1,0 +1,19 @@
+/* main color */
+:root {
+    --md-primary-fg-color:#005A96;
+}
+
+/* publications */
+.author {
+    color: grey;
+}
+
+/* page width */
+.md-grid {
+    max-width: 1800px;
+}
+
+/* nav/heading readability */
+:root {
+    --md-default-fg-color--light: #414141;
+}
