@@ -24,7 +24,7 @@ An IDE, or Integrated Development Environment, is an application for software de
 
 [Visual Studio Code](https://code.visualstudio.com/docs/getstarted/getting-started){:target="_blank"}: This tutorial provides all the necessary information to get you started with VS Code. You'll learn how to use and customize the user interface, write code with some editing features they provide, running and debugging code, and installing language extensions for different programming languages. To open VSCode in OnDemand, go to Interactive Apps, then click in Code Server and launch the application. Code Server is the web-based version of VS Code.
 
-[RStudio](https://www.dataquest.io/blog/tutorial-getting-started-with-r-and-rstudio/){:target="_blank"}: This is a very good starting point for someone new to R. You will find information from how to install and use RStudio, to installing and using packages, writing and running scripts, accessing build-in datasets, using R Markdown to do reports and much more. RStudio Server, which is the web-based version of RStudio, can also be found in the Interactive Apps in OnDemand.
+[RStudio](https://www.dataquest.io/blog/tutorial-getting-started-with-r-and-rstudio/){:target="_blank"}: This is a very good starting point for someone new to R. You will find information from how to install and use RStudio, to installing and using packages, writing and running scripts, accessing built-in datasets, using R Markdown to do reports and much more. RStudio Server, which is the web-based version of RStudio, can also be found in the Interactive Apps in OnDemand.
 
 #### Designing workflows
 

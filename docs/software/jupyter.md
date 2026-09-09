@@ -146,7 +146,7 @@ IPython magic commands provide shortcuts for common tasks. To see the list of al
 | `%%markdown` | Render the current cell as Markdown. |
 | `%run path/to/script.py` | Execute a python script. |
 | `%store var` | Save the value of a variable to use in a different cell or Jupyter Notebook. |
-| `%store -r var` | Re-use a stored variable from a different Jupyter notebook. |
+| `%store -r var` | Reuse a stored variable from a different Jupyter notebook. |
 | `del var` | Remove a stored variable. |
 | `%%time` | Print the execution time of a cell. |
 | `%time` | Print the execution time of a line. |

@@ -83,7 +83,7 @@ The `-x` flags tells tar to extract.  Once the command completes, you will now h
 
 When archiving a dataset, it is often helpful to have a full manifest, or list, of the original file hierarchy. A file manifest is also a key piece of metadata.
 
-To list files in an .tar.gz achive:
+To list files in an .tar.gz archive:
 
 ```bash
 tar -tf myarchive.tar.gz

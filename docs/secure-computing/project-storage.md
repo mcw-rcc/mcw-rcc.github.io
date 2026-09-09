@@ -41,7 +41,7 @@ Users must keep source and results separate. Most DUAs are time limited and Rese
 **Snapshot**: 14 daily @ 12PM, 6 weekly @ 1PM Sunday  
 **Replication**: continuous with snapshot
 
-Every project user account has a home directory located at `/home/{NetID}.{ProjID}`. The home directory is a requirement of hte cluster's Linux operating system. You should not store data in your home directory.
+Every project user account has a home directory located at `/home/{NetID}.{ProjID}`. The home directory is a requirement of the cluster's Linux operating system. You should not store data in your home directory.
 
 !!! warning "Restricted data"
     Storing restricted data in your home directory is prohibited.

@@ -58,4 +58,4 @@ jobs:
 
       # Check spelling in docs/, excluding files under docs/_static/.
       - name: Check spelling
-        run: codespell docs/ --skip="docs/_static/*"
+        run: codespell docs/ --skip="docs/_static/*" --ignore-words-list="namd"
