@@ -51,3 +51,11 @@ jobs:
           IGNORE_GITIGNORED_FILES: true
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Install codespell to check documentation for common spelling errors.
+      - name: Install codespell
+        run: pip install codespell
+
+      # Check spelling in docs/, excluding files under docs/_static/.
+      - name: Check spelling
+        run: codespell docs/ --skip="docs/_static/*"
