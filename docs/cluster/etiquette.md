@@ -39,7 +39,7 @@ RCC clusters are shared resources. Please be respectful of your computational ne
     jobstats <jobid>
     ```
 
-    or through <a href="https://ondemand.rcc.mcw.edu/pun/sys/jobstats/">RCC JobStats in Open OnDemand</a>, which provides graphical GPU, CPU, memory, and job timeline metrics.
+    or through [RCC JobStats in Open OnDemand](https://ondemand.rcc.mcw.edu/pun/sys/jobstats/), which provides graphical GPU, CPU, memory, and job timeline metrics.
 
     Running GPU jobs that fail to use allocated GPU resources reduces GPU availability for other researchers and may substantially increase queue wait times for the community.
 
