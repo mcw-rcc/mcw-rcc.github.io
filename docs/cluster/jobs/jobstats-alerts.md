@@ -70,14 +70,11 @@ Useful flags:
 | `-f`, `--force` | Bypass cache and recalculate live |
 | `-B`, `--batch-script` | Show the submitted Slurm batch script |
 | `-n`, `--no-color` | Plain text output (useful when piping to a file) |
-| `-c`, `--cluster` | Specify a cluster other than the current default |
 
 You can also view a **graphical dashboard** for any job — with CPU, memory, GPU, and runtime
 utilization plotted over time — through Open OnDemand:
 
-```txt
-https://ondemand.rcc.mcw.edu/pun/sys/jobstats/<jobid>
-```
+[Open the JobStats dashboard](https://ondemand.rcc.mcw.edu/pun/sys/jobstats){:target="_blank"}
 
 ## Choosing CPU vs. GPU resources for your job
 

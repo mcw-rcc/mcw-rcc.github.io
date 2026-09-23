@@ -154,6 +154,7 @@ nav:
       - Software in a Job: cluster/jobs/software-job.md 
       - Troubleshoot Jobs: cluster/jobs/troubleshoot.md
       - Job Metrics: cluster/jobs/xdmod.md
+      - JobStats & Alerts: cluster/jobs/jobstats-alerts.md
   - Data Storage:
     - storage/rcc-storage.md
     - storage/paid-storage.md
