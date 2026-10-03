@@ -147,9 +147,7 @@ Sent when jobs are requesting far more walltime (`--time`) than required.
 
 ## Getting help
 
-Replying to any Job Defense Shield email will automatically open a support ticket. If you believe an alert or cancellation happened in error, please reply with additional detail. You can also reach us directly at { help_email }.
-
-If you receive an alert and aren't sure what it means for your specific job, or you'd like help improving resource utilization, **just reply to the alert email** — this automatically opens a support ticket with RCC.
+Replying to any Job Defense Shield email will automatically open a support ticket. If you believe an alert or cancellation happened in error, or you'd like help improving resource utilization, please reply with additional detail.
 
 See also:
 
@@ -157,3 +155,5 @@ See also:
   scripts
 - [User Etiquette](../etiquette.md) — general cluster usage expectations
 - [Troubleshoot Jobs](../jobs/troubleshoot.md) — diagnosing failed or misbehaving jobs
+
+Please send any additional feedback to {{ support_email }}.
