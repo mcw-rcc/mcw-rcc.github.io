@@ -85,7 +85,7 @@ Another common failure of running jobs is a job timeout. Again, you will see an 
 
 Research Computing provides a web portal with all job information called XDMoD. XDMoD collects job accounting data and node level metrics during all cluster jobs. This data can be used for troubleshooting in the event of a failed job. However, XDMoD is only useful for retrospective analysis. It collects and aggregates data once per day, rather in realtime. Jobs that run and finish one day will be available in XDMoD the following day.
 
-Please see the [XDMoD guide](../jobs/xdmod.md) for more info.
+Please see the [XDMoD guide](../monitoring/xdmod.md) for more info.
 
 ## Getting help
 

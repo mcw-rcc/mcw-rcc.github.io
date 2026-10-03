@@ -94,7 +94,7 @@ plugins:
         'user-guide/jobs/storage-job.md': 'cluster/jobs/storage-job.md'
         'user-guide/jobs/software-job.md': 'cluster/jobs/software-job.md'
         'user-guide/jobs/troubleshoot.md': 'cluster/jobs/troubleshoot.md'
-        'user-guide/jobs/xdmod.md': 'cluster/jobs/xdmod.md'
+        'user-guide/jobs/xdmod.md': 'cluster/monitoring/xdmod.md'
 
 # Extensions
 markdown_extensions:
@@ -153,8 +153,9 @@ nav:
       - Using Data in a Job: cluster/jobs/storage-job.md
       - Software in a Job: cluster/jobs/software-job.md 
       - Troubleshoot Jobs: cluster/jobs/troubleshoot.md
-      - Job Metrics: cluster/jobs/xdmod.md
-      - JobStats & Alerts: cluster/jobs/jobstats-alerts.md
+    - Job Monitoring:
+      - Jobstats: cluster/monitoring/jobstats.md
+      - XDMoD: cluster/monitoring/xdmod.md
   - Data Storage:
     - storage/rcc-storage.md
     - storage/paid-storage.md
