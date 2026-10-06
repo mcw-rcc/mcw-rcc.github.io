@@ -1,10 +1,8 @@
 [project]
-
 site_name = "MCW Research Computing"
 site_description = "A site for documenting MCW Research Computing systems and services."
 site_author = "MCW RCC"
-dev_addr = "localhost:3000"
-#site_url = "https://docs.rcc.mcw.edu"
+site_url = "https://docs.rcc.mcw.edu"
 repo_url = "https://github.com/mcw-rcc/docs.rcc.mcw.edu"
 edit_uri = "edit/main/docs/"
 
@@ -46,8 +44,11 @@ nav = [
       {"Submitting SLURM Jobs" = "cluster/jobs/running-jobs.md"},
       {"Using Data in a Job" = "cluster/jobs/storage-job.md"},
       {"Software in a Job" = "cluster/jobs/software-job.md"},
-      {"Troubleshoot Jobs" = "cluster/jobs/troubleshoot.md"},
-      {"Job Metrics" = "cluster/jobs/xdmod.md"}
+      {"Troubleshoot Jobs" = "cluster/jobs/troubleshoot.md"}
+    ]},
+    {"Job Monitoring" = [
+      {"Jobstats" = "cluster/monitoring/jobstats.md"},
+      {"XDMoD" = "cluster/monitoring/xdmod.md"}
     ]}
   ]},
   {"Data Storage" = [
@@ -250,4 +251,4 @@ categories = false
 "user-guide/jobs/storage-job.md" = "cluster/jobs/storage-job.md"
 "user-guide/jobs/software-job.md" = "cluster/jobs/software-job.md"
 "user-guide/jobs/troubleshoot.md" = "cluster/jobs/troubleshoot.md"
-"user-guide/jobs/xdmod.md" = "cluster/jobs/xdmod.md"
+"user-guide/jobs/xdmod.md" = "cluster/monitoring/xdmod.md"
