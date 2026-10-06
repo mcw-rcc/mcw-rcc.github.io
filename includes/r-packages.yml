@@ -1,4 +1,4 @@
-generated: 2026-08-11T20:50:01-0500
+generated: 2026-10-05T20:10:04-0500
 packages:
 - {Package: abc, Title: Tools for Approximate Bayesian Computation (ABC), Version: 2.2.2}
 - {Package: abc.data, Title: 'Data Only: Tools for Approximate Bayesian Computation
@@ -128,6 +128,8 @@ packages:
     ('BLOBS'), Version: 1.3.0}
 - {Package: bluster, Title: Clustering Algorithms for Bioconductor, Version: 1.22.0}
 - {Package: bmp, Title: Read Windows Bitmap (BMP) Images, Version: 0.3.1}
+- {Package: BoneMarrowMap, Title: Single cell reference mapping onto Bone Marrow Hematopoiesis,
+  Version: 0.2.0}
 - {Package: boot, Title: Bootstrap Functions, Version: 1.3-32}
 - {Package: bootnet, Title: Bootstrap Methods for Various Network Estimation Routines,
   Version: 1.9.1}
@@ -493,6 +495,8 @@ packages:
 - {Package: ggplot2movies, Title: Movies Data, Version: 0.0.1}
 - {Package: ggplotify, Title: Convert Plot to 'grob' or 'ggplot' Object, Version: 0.1.3}
 - {Package: ggpmisc, Title: Miscellaneous Extensions to 'ggplot2', Version: 1.0.0}
+- {Package: ggpointdensity, Title: A Cross Between a 2D Density Plot and a Scatter
+    Plot, Version: 0.2.1}
 - {Package: ggpp, Title: Grammar Extensions to 'ggplot2', Version: 0.6.1}
 - {Package: ggpubr, Title: '''ggplot2'' Based Publication Ready Plots', Version: 1.0.0}
 - {Package: ggraph, Title: An Implementation of Grammar of Graphics for Graphs and
@@ -598,6 +602,8 @@ packages:
   Version: 3.44.0.3}
 - {Package: h5mread, Title: A fast HDF5 reader, Version: 1.4.0}
 - {Package: hardhat, Title: Construct Modeling Packages, Version: 1.4.3}
+- {Package: harmony, Title: 'Fast, Sensitive, and Accurate Integration of Single Cell
+    Data', Version: 2.0.5}
 - {Package: hash, Title: Full Featured Implementation of Hash Tables/Associative Arrays/Dictionaries,
   Version: 2.2.6.4}
 - {Package: haven, Title: 'Import and Export ''SPSS'', ''Stata'' and ''SAS'' Files',
@@ -669,6 +675,8 @@ packages:
 - {Package: ITKR, Title: ITK in R, Version: 0.6.0.2}
 - {Package: janitor, Title: Simple Tools for Examining and Cleaning Dirty Data, Version: 2.2.1}
 - {Package: JASPAR2020, Title: Data package for JASPAR database (version 2020), Version: 0.99.10}
+- {Package: jcolors, Title: 'Colors Palettes for R and ''ggplot2'', Additional Themes
+    for ''ggplot2''', Version: 0.0.5}
 - {Package: jomo, Title: Multilevel Joint Modelling Multiple Imputation, Version: 2.7-6}
 - {Package: jose, Title: JavaScript Object Signing and Encryption, Version: 2.0.0}
 - {Package: jpeg, Title: Read and write JPEG images, Version: 0.1-11}
@@ -1442,6 +1450,8 @@ packages:
 - {Package: svgparser, Title: Read SVG as Grobs and Data Frames, Version: 0.1.2}
 - {Package: svUnit, Title: '''SciViews::R'' - Unit, Integration and System Testing',
   Version: 1.0.8}
+- {Package: symphony, Title: Efficient and Precise Single-Cell Reference Atlas Mapping,
+  Version: 0.1.3}
 - {Package: sys, Title: Powerful and Reliable Tools for Running System Commands in
     R, Version: 3.4.3}
 - {Package: sysfonts, Title: Loading Fonts into R, Version: 0.8.9}
