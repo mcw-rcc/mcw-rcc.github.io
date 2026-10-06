@@ -1,9 +1,9 @@
 ---
-version: R2025b
+version: R2026b
 ---
 # MATLAB Parallel Server
 
-The MATLAB Parallel Server software is an extension of the Parallel Computing Toolbox. The software runs on the HPC Cluster and can be used to run MATLAB jobs that are too large to run on your personal desktop/laptop computer. RCC has a license for 256 workers.
+The MATLAB Parallel Server software is an extension of the Parallel Computing Toolbox. The software runs on the HPC Cluster and can be used to run MATLAB jobs that are too large to run on your personal desktop/laptop computer. MCW has a license for 256 workers.
 
 ## Requirements
 
@@ -12,12 +12,11 @@ The MATLAB Parallel Server software is an extension of the Parallel Computing To
 
 ## Setup
 
-!!! warning "Version requirement"
-    MATLAB requires that the Parallel Server version match the client version. Please make sure your client MATLAB version is {{ version }}.
+MATLAB requires that your client version must match a Parallel Server version on the cluster. We do not support A versions, including anything newer than {{ version }}. While we will attempt to support several previous B versions, we strongly suggest to use {{ version }}.
 
 ### Download Plugin Files
 
-Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/IQCpNW_PRzCCRrlmNLdL-BfuAW1UXsrWcR41msHxg8O9I-k?e=prEfpC){:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save the folder `matlab-parallel-slurm-plugin-{{ version }}` to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
+Download the [scheduler plugin files](https://mcw0.sharepoint.com/:u:/s/RCCAdminSite/IQBJj0bn_OCHT6YDkXgdmteuAXXRHiUaaYEsKz1YN1zWLhs){:target="_blank"} that help connect your MATLAB client to the HPC cluster. Unzip and save the folder `matlab-parallel-slurm-plugin-{{ version }}` to a location of your choice. Please note, this folder should be saved in a location that will not be moved or erased.
 
 ### Add Startup Script
 
@@ -46,7 +45,7 @@ end
 
 1. Launch the MATLAB application and select **Home > Parallel > Create and Manage Clusters** to open the **Cluster Profile Manager** window. Select **Import**, browse to the location of the `matlab-parallel-slurm-plugin-{{ version }}` folder, and select the `HPC_Cluster.mlsettings` file.
 2. Locate **HPC Cluster** profile in the Cluster Profile Manager and select **Edit**.
-    - Locate the **Scheduler Plugin** section of the profile. Set the **PluginScriptsLocation** property to location of the **MATLAB_{{ version }}_Client2Cluster** folder.
+    - Locate the **Scheduler Plugin** section of the profile. Set the **PluginScriptsLocation** property to location of the **matlab-parallel-slurm-plugin-{{ version }}** folder.
     - Locate the **Additional Properties** table. Set the **RemoteJobStorageLocation** property to `/scratch/g/PI_NetID`, where `PI_NetID` is your PI's username. Set the **Username** property to your MCW username.  
 3. Select **Done** editing and set the new profile as default.
 
@@ -56,7 +55,7 @@ Select the **Validation** tab. Change the **Number of workers to use** to **1**.
 
 ## Upgrading
 
-RCC will periodically update the MATLAB Parallel Server software to the next B version. After you upgrade your client to match, follow the steps above to configure the new version.
+RCC will periodically update the MATLAB Parallel Server software to the latest B version. After you upgrade your client to match, follow the steps above to configure the new version.
 
 ## Using the Cluster
 
