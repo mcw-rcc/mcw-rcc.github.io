@@ -1,8 +1,4 @@
 name: check
-
-#############################
-# Start the job on all push #
-#############################
 on:
   push:
     branches-ignore:
@@ -11,51 +7,58 @@ on:
     branches:
       - main
     paths:
-      - 'mkdocs.yml'
+      - 'zensical.toml'
+      - 'requirements.txt'
       - 'docs/**'
       - 'includes/**'
       - 'overrides/**'
-
-###############
-# Set the Job #
-###############
+permissions:
+  contents: read
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  build:
-    # Name the Job
-    name: Lint Code Base
-    # Set the agent to run on
+  build_check:
+    name: Build Check
     runs-on: ubuntu-latest
-
-    ##################
-    # Load all steps #
-    ##################
     steps:
-      ##########################
-      # Checkout the code base #
-      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v7
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: 3.x
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Site
+        run: zensical build --clean
+  lint:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout Code
         uses: actions/checkout@v7
         with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
-
-      ################################
-      # Run Linter against code base #
-      ################################
-      - name: Lint Code Base
-        uses: super-linter/super-linter/slim@v8
+      - name: Lint Code
+        uses: super-linter/super-linter/slim@v9
         env:
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_MARKDOWN: true
           VALIDATE_YAML: true
+          VALIDATE_TOML: true
           IGNORE_GITIGNORED_FILES: true
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Install codespell to check documentation for common spelling errors.
-      - name: Install codespell
+  spelling:
+    name: Spell Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+      - name: Install Codespell
         run: pip install codespell
-
-      # Check spelling in docs/, excluding files under docs/_static/.
-      - name: Check spelling
+      - name: Check Spelling
         run: codespell docs/ --skip="docs/_static/*" --ignore-words-list="namd"
