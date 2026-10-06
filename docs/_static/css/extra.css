@@ -1,6 +1,6 @@
 /* main color */
-:root {
-    --md-primary-fg-color:#005A96;
+:root  > * {
+  --md-primary-fg-color:#005A96;
 }
 
 /* publications */
@@ -15,5 +15,5 @@
 
 /* nav/heading readability */
 :root {
-    --md-default-fg-color--light: #414141;
+    --md-default-fg-color--light:#414141;
 }
