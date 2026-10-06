@@ -3,7 +3,7 @@ site_name = "MCW Research Computing"
 site_description = "A site for documenting MCW Research Computing systems and services."
 site_author = "MCW RCC"
 site_url = "https://docs.rcc.mcw.edu"
-repo_url = "https://github.com/mcw-rcc/docs.rcc.mcw.edu"
+repo_url = "https://github.com/mcw-rcc/mcw-rcc.github.io/"
 edit_uri = "edit/main/docs/"
 
 copyright = """
@@ -193,7 +193,7 @@ property = "G-50ZTKYWP10"
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.tables]
 [project.markdown_extensions.toc]
-permalink = true
+permalink = "#"
 [project.markdown_extensions.pymdownx.arithmatex]
 generic = true
 [project.markdown_extensions.pymdownx.betterem]
@@ -235,6 +235,10 @@ pagination_per_page = 5
 blog_dir = "news"
 archive = false
 categories = false
+
+[project.plugins.rss]
+match_path = "news/posts/.*"
+date_from_meta.as_creation = "date"
 
 [project.plugins.redirects.redirect_maps]
 "user-guide/quickstart.md" = "cluster/quickstart.md"
