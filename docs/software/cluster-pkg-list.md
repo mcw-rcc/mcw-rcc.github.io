@@ -6,7 +6,7 @@
 //
 // The following code is a derivative work of https://raw.githubusercontent.com/stanford-rc/www.sherlock.stanford.edu/main/src/docs/software/list.md, which is licensed GPLv3. This code therefore is also licensed under the terms GPLv3.
 -->
-<!-- markdownlint-disable MD033 MD045 MD056 MD058 -->
+<!-- markdownlint-disable MD032 MD033 MD045 MD056 MD058 -->
 {% macro slug(name) -%}
   {{- name | lower | replace(' ', '-') -}}
 {%- endmacro %}
@@ -52,4 +52,3 @@ Field | Module Name<img style="min-width:110px"/> | Version(s)<img style="min-wi
   {% endfor -%}
 
 {% endfor %}
-<!-- markdownlint-enable MD033 MD045 MD056 MD058 -->
