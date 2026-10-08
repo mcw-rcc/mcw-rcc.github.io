@@ -6,12 +6,11 @@
 //
 // The following code is a derivative work of https://raw.githubusercontent.com/stanford-rc/www.sherlock.stanford.edu/main/src/docs/software/list.md, which is licensed GPLv3. This code therefore is also licensed under the terms GPLv3.
 -->
-
+<!-- markdownlint-disable MD033 MD045 MD056 MD058 -->
 {% macro slug(name) -%}
   {{- name | lower | replace(' ', '-') -}}
 {%- endmacro %}
 
-<!-- markdownlint-disable MD033 -->
 {% macro cat_link(name) -%}
   <a href="{{ '#' ~ slug(name) }}"><code>{{ name }}</code></a>
 {%- endmacro %}
@@ -23,7 +22,6 @@
     {%- endfor -%}
     | [Website]({{ p.url }}) | {{ p.description }}
 {%- endmacro %}
-<!-- markdownlint-enable MD033 -->
 
 ## Categories
 
@@ -35,7 +33,6 @@
 
 _We currently provide {{ all_packages | count }} software modules, in {{software_modules.categories | count }} categories, covering {{ all_fields | count }} fields of science:_
 
-<!-- markdownlint-disable MD032 -->
 {% for c in software_modules.categories|sort(attribute='name') %}
 * {{ cat_link(c.name) }} <small>
     {{ c.packages | map(attribute='categories')
@@ -43,7 +40,6 @@ _We currently provide {{ all_packages | count }} software modules, in {{software
                   | unique | sort | join(', ') }}
   </small>
 {% endfor %}
-<!-- markdownlint-enable MD032 -->
 
 {% for c in software_modules.categories|sort(attribute='name') %}
 
@@ -56,3 +52,4 @@ Field | Module Name<img style="min-width:110px"/> | Version(s)<img style="min-wi
   {% endfor -%}
 
 {% endfor %}
+<!-- markdownlint-enable MD033 MD045 MD056 MD058 -->
