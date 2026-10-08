@@ -1,0 +1,258 @@
+[project]
+site_name = "MCW Research Computing"
+site_description = "A site for documenting MCW Research Computing systems and services."
+site_author = "MCW RCC"
+site_url = "https://docs.rcc.mcw.edu"
+repo_url = "https://github.com/mcw-rcc/mcw-rcc.github.io/"
+edit_uri = "edit/main/docs/"
+
+copyright = """
+Copyright &copy; 2026 Medical College of Wisconsin
+"""
+
+extra_css = ["_static/css/extra.css"]
+extra_javascript = [
+  "_static/js/mathjax.js",
+  "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+]
+
+nav = [
+  {"Home" = [
+    {"Overview" = "index.md"},
+    {"Recent News" = "news/index.md" },
+    {"Grant Boilerplate" = "grants.md"},
+    {"Publications" = "pubs.md"},
+    {"Maintenance" = "maintenance.md"},
+    {"FAQ" = "faq.md"}
+  ]},
+  {"Cluster" = [
+    {"Quick Start" = "cluster/quickstart.md"},
+    {"Getting an Account" = "cluster/accounts.md"},
+    {"User Etiquette" = "cluster/etiquette.md"},
+    {"Hardware Specs" = "cluster/hardware.md"},
+    {"Connecting" = [
+      {"Logging in" = "cluster/access/login.md"},
+      {"Open OnDemand" = "cluster/access/ondemand.md"},
+      {"Remote Access" = "cluster/access/remote-access.md"},
+      {"SSH Clients" = [
+        {"MobaXterm" = "cluster/access/mobaxterm.md"},
+        {"PuTTY" = "cluster/access/putty.md"}
+      ]},
+      {"SSH Keys" = "cluster/access/ssh-keys.md"}
+    ]},
+    {"Running Jobs" = [
+      {"Submitting SLURM Jobs" = "cluster/jobs/running-jobs.md"},
+      {"Using Data in a Job" = "cluster/jobs/storage-job.md"},
+      {"Software in a Job" = "cluster/jobs/software-job.md"},
+      {"Troubleshoot Jobs" = "cluster/jobs/troubleshoot.md"}
+    ]},
+    {"Job Monitoring" = [
+      {"Jobstats" = "cluster/monitoring/jobstats.md"},
+      {"XDMoD" = "cluster/monitoring/xdmod.md"}
+    ]}
+  ]},
+  {"Data Storage" = [
+    "storage/rcc-storage.md",
+    "storage/paid-storage.md",
+    "storage/ref-data.md",
+    "storage/mcw-storage.md",
+    {"Data Transfer" = [
+      "storage/file-transfer.md",
+      "storage/globus.md",
+      "storage/rclone.md"
+    ]},
+    {"Manage & Share" = [
+      "storage/data-access.md",
+      "storage/data-sharing.md",
+      "storage/file-cleanup.md",
+      "storage/file-recovery.md",
+      "storage/file-permissions.md"
+    ]}
+  ]},
+  {"Software" = [
+    {"Using Modules" = "software/modules.md"},
+    {"Requesting Software" = "software/module-request.md"},
+    {"Installed Software" = [
+      {"Cluster Packages" = "software/cluster-pkg-list.md"},
+      {"R Packages" = "software/r-pkg-list.md"}
+    ]},
+    {"Guides" = [
+      "software/alphafold.md",
+      "software/ansys.md",
+      "software/conda.md",
+      "software/containers.md",
+      "software/git.md",
+      "software/advanced_git.md",
+      "software/jupyter.md",
+      "software/lsdyna.md",
+      "software/matlab.md",
+      "software/namd.md",
+      "software/nextflow.md",
+      "software/python.md",
+      "software/pytorch.md",
+      "software/R.md",
+      "software/schrodinger.md",
+      "software/tensorflow.md"
+    ]}
+  ]},
+  {"ResHPC" = [
+    {"Overview" = "secure-computing/reshpc.md"},
+    {"Accounts & Projects" = "secure-computing/project-account.md"},
+    {"Storage" = "secure-computing/project-storage.md"},
+    {"Logging in" = "secure-computing/mfa-login.md"},
+    {"Data Transfer" = "secure-computing/mfa-data-transfer.md"},
+    {"Run a Job" = "secure-computing/workflow.md"},
+    {"Software" = "secure-computing/software.md"}
+  ]},
+  {"Learning" = [
+    {"Overview" = "learning/learning.md"},
+    {"HPC" = "learning/hpc_clusters.md"},
+    {"SLURM" = "learning/slurm.md"},
+    {"Programming" = "learning/programming.md"}
+  ]}
+]
+
+[project.theme]
+variant = "classic"
+language = "en"
+custom_dir = "overrides"
+
+features = [
+    "announce.dismiss",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "search.share",
+    "search.suggest",
+]
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.theme.icon]
+logo = "material/bookshelf"
+
+[project.theme.icon.admonition]
+tip = "material/lightbulb-outline"
+
+[project.theme.font]
+text = "Roboto"
+code = "Roboto Mono"
+
+[project.extra]
+support_email = "help-rcc@mcw.edu"
+hpc_name = "HPC"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/mcw-rcc"
+
+[project.extra.consent]
+title = "Cookie consent"
+description = """
+    We use cookies to recognize your repeated visits and preferences, as well
+    as to measure the effectiveness of our documentation and whether users
+    find what they're searching for. With your consent, you're helping us to
+    make our documentation better.
+"""
+
+[project.extra.analytics]
+provider = "google"
+property = "G-50ZTKYWP10"
+
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+[project.markdown_extensions.tables]
+[project.markdown_extensions.toc]
+permalink = "#"
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+[project.markdown_extensions.pymdownx.betterem]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.critic]
+mode = "view"
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.magiclink]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+[project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions.pymdownx.snippets]
+auto_append = ["includes/abbreviations.md"]
+[project.markdown_extensions.zensical.extensions.glightbox]
+[project.markdown_extensions.zensical.extensions.macros]
+include_yaml = ["includes/r-packages.yml", "includes/modules.yml", "includes/pub-list.yml"]
+
+[project.plugins.blog]
+post_date_format = "medium"
+pagination_per_page = 5
+blog_dir = "news"
+archive = false
+categories = false
+
+[project.plugins.rss]
+match_path = "news/posts/.*"
+date_from_meta.as_creation = "date"
+
+[project.plugins.redirects.redirect_maps]
+"user-guide/quickstart.md" = "cluster/quickstart.md"
+"user-guide/accounts.md" = "cluster/accounts.md"
+"user-guide/etiquette.md" = "cluster/etiquette.md"
+"user-guide/hardware.md" = "cluster/hardware.md"
+"user-guide/access/login.md" = "cluster/access/login.md"
+"user-guide/access/ondemand.md" = "cluster/access/ondemand.md"
+"user-guide/access/remote-access.md" = "cluster/access/remote-access.md"
+"user-guide/access/mobaxterm.md" = "cluster/access/mobaxterm.md"
+"user-guide/access/putty.md" = "cluster/access/putty.md"
+"user-guide/access/ssh-keys.md" = "cluster/access/ssh-keys.md"
+"user-guide/jobs/running-jobs.md" = "cluster/jobs/running-jobs.md"
+"user-guide/jobs/storage-job.md" = "cluster/jobs/storage-job.md"
+"user-guide/jobs/software-job.md" = "cluster/jobs/software-job.md"
+"user-guide/jobs/troubleshoot.md" = "cluster/jobs/troubleshoot.md"
+"user-guide/jobs/xdmod.md" = "cluster/monitoring/xdmod.md"

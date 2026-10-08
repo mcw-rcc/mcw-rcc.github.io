@@ -3,5 +3,7 @@ site/
 includes/data/
 old/
 dev/
-venv/
+venv
+venv.mkdocs
+venv.zensical
 .vscode/
