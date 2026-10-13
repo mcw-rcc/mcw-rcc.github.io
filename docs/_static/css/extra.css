@@ -1,6 +1,6 @@
 /* main color */
-:root  > * {
-  --md-primary-fg-color:#005A96;
+:root > * {
+  --md-primary-fg-color: #005A96;
 }
 
 /* publications */
@@ -15,5 +15,21 @@
 
 /* nav/heading readability */
 :root {
-    --md-default-fg-color--light:#414141;
+    --md-default-fg-color--light: #414141;
+}
+
+/* full-width body on wide screens */
+@media only screen and (min-width: 76.25em) {
+    .md-header .md-grid {
+        max-width: none;
+        padding-left: 25px;   /* matches the sidebar's left: 25px */
+        padding-right: 25px;
+    }
+    .md-sidebar--primary {
+        left: 25px;
+    }
+    .md-sidebar--secondary {
+        right: 25px;
+        transform: none;
+    }
 }
