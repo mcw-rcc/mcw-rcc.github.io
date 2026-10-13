@@ -8,7 +8,7 @@ The HPC environment became available to MCW researchers in March 2021. The clust
 
 Detailed information is available below. Please note, the table is wide and might require side scrolling to view all data.
 
-{{ read_csv('../../includes/cluster-hardware.csv', keep_default_na=False) }}
+{{ pd_read_csv("includes/cluster-hardware.csv", skip_blank_lines=True, keep_default_na=False) | convert_to_md_table }}
 
 !!! tip "Condo hardware"
     Condo nodes are factored into the overall cluster metrics, but specific hardware details for condo systems are not listed in the table.

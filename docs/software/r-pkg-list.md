@@ -4,7 +4,7 @@
 The following {{ packages | length }} packages are installed with R {{ version.split(' ')[2] }}.
 <!-- markdownlint-enable MD011 -->
 
-Last updated: _{{ git_revision_date_localized }}_
+<!--Last updated: _{{ git_revision_date_localized }}_-->
 
 <!-- 
 // Copyright 2014-2022 Stanford Research Computing Center

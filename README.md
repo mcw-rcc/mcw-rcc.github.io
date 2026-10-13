@@ -1,8 +1,6 @@
 # MCW Research Computing documentation
 
-Using MkDocs and GitHub to host our documentation.
-
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+Using Zensical to generate and GitHub to host our documentation.
 
 ## Contributing
 
@@ -48,7 +46,7 @@ Finally, clone (i.e. download) the forked repository to your local machine using
 
     ```bash
     # MacOS/Linux
-    mkdocs serve
+    zensical serve
     ```
 
     or
@@ -56,37 +54,34 @@ Finally, clone (i.e. download) the forked repository to your local machine using
     ```bash
     # Windows command prompt
     # Modify path to your venv
-    python.exe -X utf8 D:\mcw-rcc.github.io\venv\Scripts\mkdocs.exe serve
+    python.exe -X utf8 D:\mcw-rcc.github.io\venv\Scripts\zensical.exe serve
     ```
 
 - Open a browser and enter `http://localhost:8000`
 
 ### Adding a new page
 
-To add a new page, edit the `mkdocs.yml` file and add a new entry to the `nav:` section.
+To add a new page, edit the `zensical.toml` file and add a new entry to the `nav:` section.
 
-For example, add a line to the software section:
+For example, add a line to the software guides section:
 
-```yaml
-  - Software:
-    - Using Modules: software/modules.md
-    - Requesting Software: software/module-request.md
-    - Guides:
-      - software/R.md
-      - software/python.md
-      - software/tensorflow.md
-      - software/pytorch.md
-      - software/matlab.md
-      - software/schrodinger.md
-      - software/singularity.md
-      - software/my-new-guide.md
+```toml
+  {"Guides" = [
+    "software/conda.md",
+    "software/containers.md",
+    "software/git.md",
+    "software/jupyter.md",
+    "software/python.md",
+    "software/R.md",
+    "software/my-new-guide.md"
+  ]}
 ```
 
 This will create a new entry in the site navigation for a page called `my-new-guide.md`. If you're adding a page, make sure this page name is descriptive. For example, a page about GitHub might be called `github.md`.
 
 The page title that shows in the side navbar, and at the top of the page, will be the first entry in the page.
 
-For our Github page:
+For a Github page:
 
 ```md
 # Learning GitHub
