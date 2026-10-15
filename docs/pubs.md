@@ -15,7 +15,11 @@ All you have to do is include the following statement in your publication:
 {# Render newest year first; sort by date descending within each year #}
 {% for y in publications.years | sort(attribute='year', reverse=True) %}
 
-### <a id="{{ y.year }}"></a>{{ y.year }}
+{% macro slug(name) -%}
+  {{- name | lower | replace(' ', '-') -}}
+{%- endmacro %}
+
+### {{ y.year }} {: id="{{ slug(y.year) }}" }
 
 {% set pubs_sorted = (y.pubs | default([]))
    | sort(attribute='date', reverse=True) %}
