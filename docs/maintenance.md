@@ -4,10 +4,10 @@ Research Computing uses scheduled maintenance windows to perform upgrades and ge
 
 ## 2026 Schedule
 
-- January 13, 2026 8AM-5PM
-- April 14, 2026 8AM-5PM
-- July 14, 2026 8AM-5PM
-- October 13, 2026 8AM-5PM
+- January 12, 2027 8AM-5PM
+- April 13, 2027 8AM-5PM
+- July 13, 2027 8AM-5PM
+- October 12, 2027 8AM-5PM
 
 ## Job scheduling around maintenance
 

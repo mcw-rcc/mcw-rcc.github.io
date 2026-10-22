@@ -8,28 +8,13 @@
     color: grey;
 }
 
-/* page width */
-.md-grid {
-    max-width: 1800px;
-}
-
-/* nav/heading readability */
+/* nav/heading */
 :root {
+    --site-max-width: 2000px;
     --md-default-fg-color--light: #414141;
 }
 
-/* full-width body on wide screens */
-@media only screen and (min-width: 76.25em) {
-    .md-header .md-grid {
-        max-width: none;
-        padding-left: 25px;   /* matches the sidebar's left: 25px */
-        padding-right: 25px;
-    }
-    .md-sidebar--primary {
-        left: 25px;
-    }
-    .md-sidebar--secondary {
-        right: 25px;
-        transform: none;
-    }
+/* page width: one value for everything */
+.md-grid {
+    max-width: var(--site-max-width);
 }
