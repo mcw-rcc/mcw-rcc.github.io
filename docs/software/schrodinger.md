@@ -1,5 +1,5 @@
 ---
-version: 2026-3
+version: 2026-4
 ---
 # Schrödinger
 
@@ -13,9 +13,6 @@ The [Schrödinger Small-Molecule Drug Discovery Suite](https://www.schrodinger.c
 * RCC user account
 
 ## Installation & Configuration
-
-!!! tip "Installation Changes"
-    Please note, starting with version 2025-3, the `schrodinger.hosts` file is no longer used to connect to the cluster. This has been replaced by the Schrödinger Job Server. The steps below have been updated to reflect these changes.
 
 ### Download and Install
 
